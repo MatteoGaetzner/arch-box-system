@@ -1,0 +1,21 @@
+{
+  "border": "normal",
+  "current_border_width": 3,
+  "floating": "auto_off",
+  "geometry": {
+    "height": 2092,
+    "width": 3834,
+    "x": 0,
+    "y": 0
+  },
+  "marks": [],
+  "name": "workspace-1-startup-firefox",
+  "percent": 1,
+  "swallows": [
+    {
+      "class": "^firefox$"
+    }
+  ],
+  "type": "con"
+}
+

@@ -1,0 +1,6 @@
+#! /bin/bash
+
+BLUE=$(tput setaf 4)
+NORMAL=$(tput sgr0)
+
+printf "${BLUE}[ NOTIFICATION ] ${NORMAL}${1}\n"

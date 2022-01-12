@@ -1,0 +1,1461 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/matteo/Sync/System/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+$(BIN_DIR)/$(PRG)	i3blocks/brightness/Makefile	/^$(BIN_DIR)\/$(PRG): $(OBJECTS)$/;"	t
+$(OBJ_DIR)/%.o	i3blocks/brightness/Makefile	/^$(OBJ_DIR)\/%.o: %.c$/;"	t
+$(OBJ_DIR)/%.o	i3blocks/brightness/Makefile	/^$(OBJ_DIR)\/%.o: %.s$/;"	t
+$(P)	i3blocks/bandwidth2/Makefile	/^$(P): $(OBJECTS)$/;"	t
+$(P)	i3blocks/cpu_usage2/Makefile	/^$(P): $(OBJECTS)$/;"	t
+$(P)	i3blocks/memory2/Makefile	/^$(P): $(OBJECTS)$/;"	t
+$(PRG)	i3blocks/brightness/Makefile	/^$(PRG): $(BIN_DIR)\/$(PRG)$/;"	t
+$(_BLOCKS)	i3blocks/Makefile	/^$(_BLOCKS):$/;"	t
+$(_MAKEBLOCKS)	i3blocks/Makefile	/^$(_MAKEBLOCKS):$/;"	t
+0	Neovim/nvim/coc-settings.json	/^      "build\/"$/;"	s	array:cmake.rootPatterns
+0	Neovim/nvim/coc-settings.json	/^    "args": ["--stdio"]$/;"	s	array:dockerfile.args
+0	Neovim/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
+0	Neovim/nvim/coc-settings.json	/^    "filetypes": ["cmake"],$/;"	s	array:cmake.filetypes
+0	Neovim/nvim/coc-settings.json	/^    "filetypes": ["dockerfile"],$/;"	s	array:dockerfile.filetypes
+0	Neovim/nvim/coc-settings.json	/^    "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	s	array:latex.filetypes
+0	Neovim/nvim/coc-settings.json	/^    "filetypes": ["vim", "eruby", "markdown"]$/;"	s	array:efm.filetypes
+0	Neovim/nvim/coc-settings.json	/^    "rootPatterns": ["compile_flags.txt", "compile_commands.json"],$/;"	s	array:clangd.rootPatterns
+0	i3/.i3/workspace-1-startup.json	/^    {$/;"	o	array:swallows
+0	i3/.i3/workspace-2-startup.json	/^                                {$/;"	o	array:0.nodes.0.nodes.0.swallows
+0	i3/.i3/workspace-2-startup.json	/^                                {$/;"	o	array:0.nodes.0.nodes.1.swallows
+0	i3/.i3/workspace-2-startup.json	/^                        {$/;"	o	array:0.nodes.0.nodes
+0	i3/.i3/workspace-2-startup.json	/^                        {$/;"	o	array:0.nodes.1.swallows
+0	i3/.i3/workspace-2-startup.json	/^                {$/;"	o	array:0.nodes
+0	i3/.i3/workspace-2-startup.json	/^                {$/;"	o	array:nodes.0.swallows
+0	i3/.i3/workspace-2-startup.json	/^                {$/;"	o	array:nodes.1.swallows
+0	i3/.i3/workspace-2-startup.json	/^        {$/;"	o
+0	i3/.i3/workspace-2-startup.json	/^        {$/;"	o	array:nodes
+0. Definitions.	i3blocks/afs/LICENSE.md	/^#### 0. Definitions.$/;"	t	subsection:TERMS AND CONDITIONS
+0. Definitions.	i3blocks/aur-update/LICENSE.md	/^#### 0. Definitions.$/;"	t	subsection:TERMS AND CONDITIONS
+0. Definitions.	i3blocks/backlight/LICENSE.md	/^#### 0. Definitions.$/;"	t	subsection:TERMS AND CONDITIONS
+0. Definitions.	i3blocks/eyedropper/LICENSE.md	/^#### 0. Definitions.$/;"	t	subsection:TERMS AND CONDITIONS
+1	Neovim/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
+1	Neovim/nvim/coc-settings.json	/^    "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	s	array:latex.filetypes
+1	Neovim/nvim/coc-settings.json	/^    "filetypes": ["vim", "eruby", "markdown"]$/;"	s	array:efm.filetypes
+1	Neovim/nvim/coc-settings.json	/^    "rootPatterns": ["compile_flags.txt", "compile_commands.json"],$/;"	s	array:clangd.rootPatterns
+1	i3/.i3/workspace-2-startup.json	/^                        {$/;"	o	array:0.nodes.0.nodes
+1	i3/.i3/workspace-2-startup.json	/^                {$/;"	o	array:0.nodes
+1	i3/.i3/workspace-2-startup.json	/^        {$/;"	o	array:nodes
+1. Source Code.	i3blocks/afs/LICENSE.md	/^#### 1. Source Code.$/;"	t	subsection:TERMS AND CONDITIONS
+1. Source Code.	i3blocks/aur-update/LICENSE.md	/^#### 1. Source Code.$/;"	t	subsection:TERMS AND CONDITIONS
+1. Source Code.	i3blocks/backlight/LICENSE.md	/^#### 1. Source Code.$/;"	t	subsection:TERMS AND CONDITIONS
+1. Source Code.	i3blocks/eyedropper/LICENSE.md	/^#### 1. Source Code.$/;"	t	subsection:TERMS AND CONDITIONS
+10. Automatic Licensing of Downstream Recipients.	i3blocks/afs/LICENSE.md	/^#### 10. Automatic Licensing of Downstream Recipients.$/;"	t	subsection:TERMS AND CONDITIONS
+10. Automatic Licensing of Downstream Recipients.	i3blocks/aur-update/LICENSE.md	/^#### 10. Automatic Licensing of Downstream Recipients.$/;"	t	subsection:TERMS AND CONDITIONS
+10. Automatic Licensing of Downstream Recipients.	i3blocks/backlight/LICENSE.md	/^#### 10. Automatic Licensing of Downstream Recipients.$/;"	t	subsection:TERMS AND CONDITIONS
+10. Automatic Licensing of Downstream Recipients.	i3blocks/eyedropper/LICENSE.md	/^#### 10. Automatic Licensing of Downstream Recipients.$/;"	t	subsection:TERMS AND CONDITIONS
+11. Patents.	i3blocks/afs/LICENSE.md	/^#### 11. Patents.$/;"	t	subsection:TERMS AND CONDITIONS
+11. Patents.	i3blocks/aur-update/LICENSE.md	/^#### 11. Patents.$/;"	t	subsection:TERMS AND CONDITIONS
+11. Patents.	i3blocks/backlight/LICENSE.md	/^#### 11. Patents.$/;"	t	subsection:TERMS AND CONDITIONS
+11. Patents.	i3blocks/eyedropper/LICENSE.md	/^#### 11. Patents.$/;"	t	subsection:TERMS AND CONDITIONS
+12. No Surrender of Others' Freedom.	i3blocks/afs/LICENSE.md	/^#### 12. No Surrender of Others' Freedom.$/;"	t	subsection:TERMS AND CONDITIONS
+12. No Surrender of Others' Freedom.	i3blocks/aur-update/LICENSE.md	/^#### 12. No Surrender of Others' Freedom.$/;"	t	subsection:TERMS AND CONDITIONS
+12. No Surrender of Others' Freedom.	i3blocks/backlight/LICENSE.md	/^#### 12. No Surrender of Others' Freedom.$/;"	t	subsection:TERMS AND CONDITIONS
+12. No Surrender of Others' Freedom.	i3blocks/eyedropper/LICENSE.md	/^#### 12. No Surrender of Others' Freedom.$/;"	t	subsection:TERMS AND CONDITIONS
+13. Use with the GNU Affero General Public License.	i3blocks/afs/LICENSE.md	/^#### 13. Use with the GNU Affero General Public License.$/;"	t	subsection:TERMS AND CONDITIONS
+13. Use with the GNU Affero General Public License.	i3blocks/aur-update/LICENSE.md	/^#### 13. Use with the GNU Affero General Public License.$/;"	t	subsection:TERMS AND CONDITIONS
+13. Use with the GNU Affero General Public License.	i3blocks/backlight/LICENSE.md	/^#### 13. Use with the GNU Affero General Public License.$/;"	t	subsection:TERMS AND CONDITIONS
+13. Use with the GNU Affero General Public License.	i3blocks/eyedropper/LICENSE.md	/^#### 13. Use with the GNU Affero General Public License.$/;"	t	subsection:TERMS AND CONDITIONS
+14. Revised Versions of this License.	i3blocks/afs/LICENSE.md	/^#### 14. Revised Versions of this License.$/;"	t	subsection:TERMS AND CONDITIONS
+14. Revised Versions of this License.	i3blocks/aur-update/LICENSE.md	/^#### 14. Revised Versions of this License.$/;"	t	subsection:TERMS AND CONDITIONS
+14. Revised Versions of this License.	i3blocks/backlight/LICENSE.md	/^#### 14. Revised Versions of this License.$/;"	t	subsection:TERMS AND CONDITIONS
+14. Revised Versions of this License.	i3blocks/eyedropper/LICENSE.md	/^#### 14. Revised Versions of this License.$/;"	t	subsection:TERMS AND CONDITIONS
+15. Disclaimer of Warranty.	i3blocks/afs/LICENSE.md	/^#### 15. Disclaimer of Warranty.$/;"	t	subsection:TERMS AND CONDITIONS
+15. Disclaimer of Warranty.	i3blocks/aur-update/LICENSE.md	/^#### 15. Disclaimer of Warranty.$/;"	t	subsection:TERMS AND CONDITIONS
+15. Disclaimer of Warranty.	i3blocks/backlight/LICENSE.md	/^#### 15. Disclaimer of Warranty.$/;"	t	subsection:TERMS AND CONDITIONS
+15. Disclaimer of Warranty.	i3blocks/eyedropper/LICENSE.md	/^#### 15. Disclaimer of Warranty.$/;"	t	subsection:TERMS AND CONDITIONS
+16. Limitation of Liability.	i3blocks/afs/LICENSE.md	/^#### 16. Limitation of Liability.$/;"	t	subsection:TERMS AND CONDITIONS
+16. Limitation of Liability.	i3blocks/aur-update/LICENSE.md	/^#### 16. Limitation of Liability.$/;"	t	subsection:TERMS AND CONDITIONS
+16. Limitation of Liability.	i3blocks/backlight/LICENSE.md	/^#### 16. Limitation of Liability.$/;"	t	subsection:TERMS AND CONDITIONS
+16. Limitation of Liability.	i3blocks/eyedropper/LICENSE.md	/^#### 16. Limitation of Liability.$/;"	t	subsection:TERMS AND CONDITIONS
+17. Interpretation of Sections 15 and 16.	i3blocks/afs/LICENSE.md	/^#### 17. Interpretation of Sections 15 and 16.$/;"	t	subsection:TERMS AND CONDITIONS
+17. Interpretation of Sections 15 and 16.	i3blocks/aur-update/LICENSE.md	/^#### 17. Interpretation of Sections 15 and 16.$/;"	t	subsection:TERMS AND CONDITIONS
+17. Interpretation of Sections 15 and 16.	i3blocks/backlight/LICENSE.md	/^#### 17. Interpretation of Sections 15 and 16.$/;"	t	subsection:TERMS AND CONDITIONS
+17. Interpretation of Sections 15 and 16.	i3blocks/eyedropper/LICENSE.md	/^#### 17. Interpretation of Sections 15 and 16.$/;"	t	subsection:TERMS AND CONDITIONS
+2	Neovim/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
+2	Neovim/nvim/coc-settings.json	/^    "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	s	array:latex.filetypes
+2	Neovim/nvim/coc-settings.json	/^    "filetypes": ["vim", "eruby", "markdown"]$/;"	s	array:efm.filetypes
+2. Basic Permissions.	i3blocks/afs/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
+2. Basic Permissions.	i3blocks/aur-update/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
+2. Basic Permissions.	i3blocks/backlight/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
+2. Basic Permissions.	i3blocks/eyedropper/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
+3	Neovim/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
+3	Neovim/nvim/coc-settings.json	/^    "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	s	array:latex.filetypes
+3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/afs/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
+3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/aur-update/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
+3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/backlight/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
+3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/eyedropper/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
+4	Neovim/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
+4. Conveying Verbatim Copies.	i3blocks/afs/LICENSE.md	/^#### 4. Conveying Verbatim Copies.$/;"	t	subsection:TERMS AND CONDITIONS
+4. Conveying Verbatim Copies.	i3blocks/aur-update/LICENSE.md	/^#### 4. Conveying Verbatim Copies.$/;"	t	subsection:TERMS AND CONDITIONS
+4. Conveying Verbatim Copies.	i3blocks/backlight/LICENSE.md	/^#### 4. Conveying Verbatim Copies.$/;"	t	subsection:TERMS AND CONDITIONS
+4. Conveying Verbatim Copies.	i3blocks/eyedropper/LICENSE.md	/^#### 4. Conveying Verbatim Copies.$/;"	t	subsection:TERMS AND CONDITIONS
+5	Neovim/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
+5. Conveying Modified Source Versions.	i3blocks/afs/LICENSE.md	/^#### 5. Conveying Modified Source Versions.$/;"	t	subsection:TERMS AND CONDITIONS
+5. Conveying Modified Source Versions.	i3blocks/aur-update/LICENSE.md	/^#### 5. Conveying Modified Source Versions.$/;"	t	subsection:TERMS AND CONDITIONS
+5. Conveying Modified Source Versions.	i3blocks/backlight/LICENSE.md	/^#### 5. Conveying Modified Source Versions.$/;"	t	subsection:TERMS AND CONDITIONS
+5. Conveying Modified Source Versions.	i3blocks/eyedropper/LICENSE.md	/^#### 5. Conveying Modified Source Versions.$/;"	t	subsection:TERMS AND CONDITIONS
+6. Conveying Non-Source Forms.	i3blocks/afs/LICENSE.md	/^#### 6. Conveying Non-Source Forms.$/;"	t	subsection:TERMS AND CONDITIONS
+6. Conveying Non-Source Forms.	i3blocks/aur-update/LICENSE.md	/^#### 6. Conveying Non-Source Forms.$/;"	t	subsection:TERMS AND CONDITIONS
+6. Conveying Non-Source Forms.	i3blocks/backlight/LICENSE.md	/^#### 6. Conveying Non-Source Forms.$/;"	t	subsection:TERMS AND CONDITIONS
+6. Conveying Non-Source Forms.	i3blocks/eyedropper/LICENSE.md	/^#### 6. Conveying Non-Source Forms.$/;"	t	subsection:TERMS AND CONDITIONS
+7. Additional Terms.	i3blocks/afs/LICENSE.md	/^#### 7. Additional Terms.$/;"	t	subsection:TERMS AND CONDITIONS
+7. Additional Terms.	i3blocks/aur-update/LICENSE.md	/^#### 7. Additional Terms.$/;"	t	subsection:TERMS AND CONDITIONS
+7. Additional Terms.	i3blocks/backlight/LICENSE.md	/^#### 7. Additional Terms.$/;"	t	subsection:TERMS AND CONDITIONS
+7. Additional Terms.	i3blocks/eyedropper/LICENSE.md	/^#### 7. Additional Terms.$/;"	t	subsection:TERMS AND CONDITIONS
+8. Termination.	i3blocks/afs/LICENSE.md	/^#### 8. Termination.$/;"	t	subsection:TERMS AND CONDITIONS
+8. Termination.	i3blocks/aur-update/LICENSE.md	/^#### 8. Termination.$/;"	t	subsection:TERMS AND CONDITIONS
+8. Termination.	i3blocks/backlight/LICENSE.md	/^#### 8. Termination.$/;"	t	subsection:TERMS AND CONDITIONS
+8. Termination.	i3blocks/eyedropper/LICENSE.md	/^#### 8. Termination.$/;"	t	subsection:TERMS AND CONDITIONS
+9. Acceptance Not Required for Having Copies.	i3blocks/afs/LICENSE.md	/^#### 9. Acceptance Not Required for Having Copies.$/;"	t	subsection:TERMS AND CONDITIONS
+9. Acceptance Not Required for Having Copies.	i3blocks/aur-update/LICENSE.md	/^#### 9. Acceptance Not Required for Having Copies.$/;"	t	subsection:TERMS AND CONDITIONS
+9. Acceptance Not Required for Having Copies.	i3blocks/backlight/LICENSE.md	/^#### 9. Acceptance Not Required for Having Copies.$/;"	t	subsection:TERMS AND CONDITIONS
+9. Acceptance Not Required for Having Copies.	i3blocks/eyedropper/LICENSE.md	/^#### 9. Acceptance Not Required for Having Copies.$/;"	t	subsection:TERMS AND CONDITIONS
+<<	Neovim/nvim/init.vim	/^inoremap << <Esc><<hi$/;"	m
+<C-f>	Neovim/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
+<C-j>	Neovim/nvim/init.vim	/^inoremap <C-j> <Esc>:m .+1<CR>==gi$/;"	m
+<C-j>	Neovim/nvim/init.vim	/^nnoremap <C-j> :m .+1<CR>==$/;"	m
+<C-j>	Neovim/nvim/init.vim	/^vnoremap <C-j> :m '>+1<CR>gv=gv$/;"	m
+<C-k>	Neovim/nvim/init.vim	/^inoremap <C-k> <Esc>:m .-2<CR>==gi$/;"	m
+<C-k>	Neovim/nvim/init.vim	/^nnoremap <C-k> :m .-2<CR>==$/;"	m
+<C-k>	Neovim/nvim/init.vim	/^vnoremap <C-k> :m '<-2<CR>gv=gv$/;"	m
+<C-s>	Neovim/nvim/init.vim	/^imap <C-s> :call MySpellLang()<CR>$/;"	m
+<C-s>	Neovim/nvim/init.vim	/^map <C-s> :call MySpellLang()<CR>$/;"	m
+<C-s>	Neovim/nvim/init.vim	/^nmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
+<C-s>	Neovim/nvim/init.vim	/^xmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
+<F1>	Neovim/nvim/init.vim	/^nnoremap <F1> :e ~\/.vimrc<CR>$/;"	m
+<F2>	Neovim/nvim/init.vim	/^nnoremap <F2> <C-o>:source ~\/.vimrc<CR>$/;"	m
+<Leader>v	Neovim/nvim/init.vim	/^nnoremap <silent> <Leader>v :NERDTreeFind<CR>$/;"	m
+<S-TAB>	Neovim/nvim/init.vim	/^inoremap <expr><S-TAB> pumvisible() ? \\<C-p>" : "\\<C-h>"$/;"	m
+<S-Tab>	Neovim/nvim/init.vim	/^nnoremap <S-Tab> <<2h$/;"	m
+<TAB>	Neovim/nvim/init.vim	/^inoremap <silent><expr> <TAB>$/;"	m
+<Tab>	Neovim/nvim/init.vim	/^nnoremap <Tab> >>2l$/;"	m
+<c-@>	Neovim/nvim/init.vim	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
+<c-space>	Neovim/nvim/init.vim	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<cr>	Neovim/nvim/init.vim	/^inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()$/;"	m
+<leader>a	Neovim/nvim/init.vim	/^nmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>a	Neovim/nvim/init.vim	/^xmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>ac	Neovim/nvim/init.vim	/^nmap <leader>ac  <Plug>(coc-codeaction)$/;"	m
+<leader>cl	Neovim/nvim/init.vim	/^nmap <leader>cl  <Plug>(coc-codelens-action)$/;"	m
+<leader>f	Neovim/nvim/init.vim	/^nmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+<leader>f	Neovim/nvim/init.vim	/^xmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+<leader>qf	Neovim/nvim/init.vim	/^nmap <leader>qf  <Plug>(coc-fix-current)$/;"	m
+<leader>rn	Neovim/nvim/init.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<space>a	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>$/;"	m
+<space>c	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>$/;"	m
+<space>e	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>$/;"	m
+<space>j	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>$/;"	m
+<space>k	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>$/;"	m
+<space>o	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>$/;"	m
+<space>p	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>$/;"	m
+<space>s	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>$/;"	m
+>>	Neovim/nvim/init.vim	/^inoremap >> <Esc>>>3li$/;"	m
+APPLY_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^APPLY_SYMBOL = "\\uf00c"$/;"	v
+APPLY_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^APPLY_SYMBOL = "\\uf00c"$/;"	v
+ARANDR_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^ARANDR_SYMBOL = "\\uf085"$/;"	v
+ARANDR_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^ARANDR_SYMBOL = "\\uf085"$/;"	v
+AS	i3blocks/brightness/Makefile	/^AS=as$/;"	m
+AccuracySec	Services/reflector.timer	/^AccuracySec=1us$/;"	k	section:Timer
+Actual behavior	i3blocks/ISSUE_TEMPLATE.md	/^### Actual behavior$/;"	S
+AirlyApiClient	i3blocks/airly/airly.py	/^class AirlyApiClient:$/;"	c
+Args	i3blocks/aur-update/aur-update	/^class Args(object):$/;"	c
+Arguments	i3blocks/disk_usage/README.md	/^## Arguments$/;"	s	chapter:Customizable disk block for i3blocks
+BIN_DIR	i3blocks/brightness/Makefile	/^BIN_DIR=bin$/;"	m
+BLANKED_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^BLANKED_SYMBOL = "\\uf070"$/;"	v
+BLANKED_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^BLANKED_SYMBOL = "\\uf070"$/;"	v
+BRIGHTNESS_SLIDER_HANDLE_LENGTH	i3blocks/monitor_manager/monitor_manager	/^BRIGHTNESS_SLIDER_HANDLE_LENGTH = 20$/;"	v
+BRIGHTNESS_SLIDER_HANDLE_LENGTH	i3blocks/monitor_manager/monitor_manager.py	/^BRIGHTNESS_SLIDER_HANDLE_LENGTH = 20$/;"	v
+BRIGHTNESS_SLIDER_LENGTH	i3blocks/monitor_manager/monitor_manager	/^BRIGHTNESS_SLIDER_LENGTH = 50$/;"	v
+BRIGHTNESS_SLIDER_LENGTH	i3blocks/monitor_manager/monitor_manager.py	/^BRIGHTNESS_SLIDER_LENGTH = 50$/;"	v
+BRIGHTNESS_SLIDER_WIDTH	i3blocks/monitor_manager/monitor_manager	/^BRIGHTNESS_SLIDER_WIDTH = 15$/;"	v
+BRIGHTNESS_SLIDER_WIDTH	i3blocks/monitor_manager/monitor_manager.py	/^BRIGHTNESS_SLIDER_WIDTH = 15$/;"	v
+BUFF_SIZE	i3blocks/brightness/main.c	/^#define BUFF_SIZE /;"	d	file:
+BUILD_DIR	i3blocks/brightness/Makefile	/^BUILD_DIR=build$/;"	m
+BYTE_FIVE	i3blocks/memory2/memory2.c	/^#define BYTE_FIVE /;"	d	file:
+BYTE_FOUR	i3blocks/memory2/memory2.c	/^#define BYTE_FOUR /;"	d	file:
+BYTE_ONE	i3blocks/memory2/memory2.c	/^#define BYTE_ONE /;"	d	file:
+BYTE_THREE	i3blocks/memory2/memory2.c	/^#define BYTE_THREE /;"	d	file:
+BYTE_TWO	i3blocks/memory2/memory2.c	/^#define BYTE_TWO /;"	d	file:
+Battery	i3blocks/battery-poly/battery-poly	/^class Battery:$/;"	c
+Before using this block	i3blocks/volume-pipewire/README.md	/^# Before using this block$/;"	c
+Behavior	i3blocks/metars/README.md	/^# Behavior$/;"	c
+Build	i3blocks/bandwidth2/README.md	/^## Build$/;"	s	chapter:bandwidth2
+Build	i3blocks/memory2/README.md	/^## Build$/;"	s	chapter:memory2
+CANCEL_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^CANCEL_SYMBOL = "\\uf00d"$/;"	v
+CANCEL_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^CANCEL_SYMBOL = "\\uf00d"$/;"	v
+CC	i3blocks/brightness/Makefile	/^CC=gcc$/;"	m
+CFLAGS	i3blocks/bandwidth2/Makefile	/^CFLAGS=-g -Wall -Werror -O2 -std=c11 -Wno-format-truncation$/;"	m
+CFLAGS	i3blocks/brightness/Makefile	/^CFLAGS := $(INCLUDES) $(DEFS) $(WARN_LEVEL) -pipe -O0 -g3 -std=c11$/;"	m
+CFLAGS	i3blocks/cpu_usage2/Makefile	/^CFLAGS=-g -Wall -Werror -O2 -std=gnu11$/;"	m
+CFLAGS	i3blocks/memory2/Makefile	/^CFLAGS=-g -Wall -Werror -O2 -std=c11$/;"	m
+CHARGING	i3blocks/battery-poly/battery-poly	/^    CHARGING = 1$/;"	v	class:Status
+CLONED_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^CLONED_SYMBOL = "\\uf24d"$/;"	v
+CLONED_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^CLONED_SYMBOL = "\\uf24d"$/;"	v
+COLORS	i3blocks/purpleair/README.md	/^### COLORS$/;"	S	section:Configuration""Configuration Parameters
+COLORS	i3blocks/purpleair/i3blocks.conf	/^COLORS=#85df56,#fbcf4b,#f28c33,#dd4d3c,#cf79e0,#9b2f6a$/;"	k	section:purpleair
+COMMAND_OFF	i3blocks/toggle/i3blocks.conf	/^COMMAND_OFF=kill $(ps -e -o pid -o exe | grep $(which wayvnc) | awk '{print $1}')$/;"	k	section:toggle
+COMMAND_ON	i3blocks/toggle/i3blocks.conf	/^COMMAND_ON=swaymsg -q exec wayvnc localhost$/;"	k	section:toggle
+COMMAND_STATUS	i3blocks/toggle/i3blocks.conf	/^COMMAND_STATUS=ps -eo exe | grep $(which wayvnc)$/;"	k	section:toggle
+CURRENT_CHARGE_FILENAME	i3blocks/battery-poly/battery-poly	/^CURRENT_CHARGE_FILENAME = "energy_now"$/;"	v
+CaAqhi	i3blocks/purpleair/purpleair	/^sub CaAqhi {$/;"	s
+Click events	i3blocks/disk_usage/README.md	/^## Click events$/;"	s	chapter:Customizable disk block for i3blocks
+Command line arguments	i3blocks/i3-focusedwindow/README.md	/^# Command line arguments  $/;"	c
+Command line arguments	i3blocks/sway-focusedwindow/README.md	/^# Command line arguments  $/;"	c
+Community contributed blocklets	i3blocks/README.adoc	/^= Community contributed blocklets$/;"	c
+Config	i3blocks/apt-upgrades/README.md	/^# Config$/;"	c
+Config	i3blocks/bandwidth/README.md	/^# Config$/;"	c
+Config	i3blocks/bandwidth2/README.md	/^### Config$/;"	S	section:bandwidth2""Build
+Config	i3blocks/battery-poly/README.md	/^## Config$/;"	s	chapter:battery-poly
+Config	i3blocks/battery/README.md	/^# Config$/;"	c
+Config	i3blocks/brightness/README.md	/^## Config$/;"	s	chapter:brightness
+Config	i3blocks/cpu_usage/README.md	/^# Config$/;"	c
+Config	i3blocks/cpu_usage2/README.md	/^# Config$/;"	c
+Config	i3blocks/disk/README.md	/^# Config$/;"	c
+Config	i3blocks/docker/README.md	/^# Config$/;"	c
+Config	i3blocks/dunst/README.md	/^# Config$/;"	c
+Config	i3blocks/essid/README.md	/^# Config$/;"	c
+Config	i3blocks/github/README.md	/^# Config$/;"	c
+Config	i3blocks/go/README.md	/^# Config$/;"	c
+Config	i3blocks/gpu-load/README.md	/^# Config$/;"	c
+Config	i3blocks/iface/README.md	/^# Config$/;"	c
+Config	i3blocks/kbdd_layout/README.md	/^# Config$/;"	c
+Config	i3blocks/key_light/README.md	/^# Config$/;"	c
+Config	i3blocks/kubernetes/README.md	/^# Config$/;"	c
+Config	i3blocks/load_average/README.md	/^# Config$/;"	c
+Config	i3blocks/memory/README.md	/^# Config$/;"	c
+Config	i3blocks/memory2/README.md	/^### Config$/;"	S	section:memory2""Build
+Config	i3blocks/miccontrol/README.md	/^# Config$/;"	c
+Config	i3blocks/nm-vpn/README.md	/^# Config$/;"	c
+Config	i3blocks/openvpn-systemd/README.md	/^# Config$/;"	c
+Config	i3blocks/optimus-manager/README.md	/^# Config$/;"	c
+Config	i3blocks/ssid/README.md	/^# Config$/;"	c
+Config	i3blocks/systemctl/Readme.md	/^# Config$/;"	c
+Config	i3blocks/systemd_unit/README.md	/^# Config$/;"	c
+Config	i3blocks/user/README.md	/^# Config$/;"	c
+Config	i3blocks/volume-pipewire/README.md	/^# Config$/;"	c
+Config	i3blocks/volume-pulseaudio/README.md	/^# Config$/;"	c
+Config	i3blocks/volume/README.md	/^# Config$/;"	c
+Config	i3blocks/wifi/README.md	/^# Config$/;"	c
+Config	i3blocks/wlan-dbm/README.md	/^# Config$/;"	c
+Config options	i3blocks/taskw/README.md	/^## Config options$/;"	s	chapter:Taskwarrior active task blocklet
+Configuration	i3blocks/arch-update/README.md	/^# Configuration$/;"	c
+Configuration	i3blocks/battery-poly/battery-poly	/^class Configuration:$/;"	c
+Configuration	i3blocks/calendar/README.md	/^# Configuration$/;"	c
+Configuration	i3blocks/purpleair/README.md	/^# Configuration$/;"	c
+Configuration	i3blocks/toggle/README.md	/^# Configuration$/;"	c
+Configuration	i3blocks/usb/README.md	/^# Configuration$/;"	c
+Configuration Parameters	i3blocks/purpleair/README.md	/^## Configuration Parameters$/;"	s	chapter:Configuration
+Configuration Parameters	i3blocks/toggle/README.md	/^## Configuration Parameters$/;"	s	chapter:Configuration
+Configuration option *METARSCONFIG/distanceSym*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIG\/distanceSym*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIG/distanceUnit*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIG\/distanceUnit*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIG/precipitationSym*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIG\/precipitationSym*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIG/precipitationUnit*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIG\/precipitationUnit*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIG/pressureSym*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIG\/pressureSym*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIG/pressureUnit*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIG\/pressureUnit*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIG/speedSym*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIG\/speedSym*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIG/speedUnit*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIG\/speedUnit*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIGS*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIGS*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIGS/temperatureSym*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIGS\/temperatureSym*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSCONFIGS/temperatureUnit*	i3blocks/metars/README.md	/^## Configuration option *METARSCONFIGS\/temperatureUnit*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSENABLEMENTS*	i3blocks/metars/README.md	/^## Configuration option *METARSENABLEMENTS*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSENABLEMENTS/dewpoint*	i3blocks/metars/README.md	/^## Configuration option *METARSENABLEMENTS\/dewpoint*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSENABLEMENTS/feelsLike*	i3blocks/metars/README.md	/^## Configuration option *METARSENABLEMENTS\/feelsLike*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSENABLEMENTS/temperature*	i3blocks/metars/README.md	/^## Configuration option *METARSENABLEMENTS\/temperature*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSENABLEMENTS/useInverseWind*	i3blocks/metars/README.md	/^## Configuration option *METARSENABLEMENTS\/useInverseWind*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSENABLEMENTS/visibility*	i3blocks/metars/README.md	/^## Configuration option *METARSENABLEMENTS\/visibility*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSENABLEMENTS/wind*	i3blocks/metars/README.md	/^## Configuration option *METARSENABLEMENTS\/wind*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSENABLEMENTS/windDirType*	i3blocks/metars/README.md	/^## Configuration option *METARSENABLEMENTS\/windDirType*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSSTATION*	i3blocks/metars/README.md	/^## Configuration option *METARSSTATION*$/;"	s	chapter:i3blocks configuration
+Configuration option *METARSURL*	i3blocks/metars/README.md	/^## Configuration option *METARSURL*$/;"	s	chapter:i3blocks configuration
+Configuration option *interval*	i3blocks/metars/README.md	/^## Configuration option *interval*$/;"	s	chapter:i3blocks configuration
+Configuring i3blocks	i3blocks/eyedropper/README.md	/^### Configuring i3blocks$/;"	S	chapter:Installation
+Critical Color	i3blocks/disk_usage/README.md	/^### Critical Color$/;"	S	section:Customizable disk block for i3blocks""Arguments
+Critical Threshold	i3blocks/disk_usage/README.md	/^### Critical Threshold$/;"	S	section:Customizable disk block for i3blocks""Arguments
+Customizable disk block for i3blocks	i3blocks/disk_usage/README.md	/^# Customizable disk block for i3blocks$/;"	c
+DEFAULT_FONT	i3blocks/monitor_manager/monitor_manager	/^DEFAULT_FONT = (DEFAULT_FONT_FAMILY, DEFAULT_FONT_SIZE)$/;"	v
+DEFAULT_FONT	i3blocks/monitor_manager/monitor_manager.py	/^DEFAULT_FONT = (DEFAULT_FONT_FAMILY, DEFAULT_FONT_SIZE)$/;"	v
+DEFAULT_FONT_FAMILY	i3blocks/monitor_manager/monitor_manager	/^DEFAULT_FONT_FAMILY = _default("FONT_FAMILY","DejaVu Sans Mono", str)$/;"	v
+DEFAULT_FONT_FAMILY	i3blocks/monitor_manager/monitor_manager.py	/^DEFAULT_FONT_FAMILY = _default("FONT_FAMILY","DejaVu Sans Mono", str)$/;"	v
+DEFAULT_FONT_SIZE	i3blocks/monitor_manager/monitor_manager	/^DEFAULT_FONT_SIZE = _default("FONT_SIZE", 11, int)$/;"	v
+DEFAULT_FONT_SIZE	i3blocks/monitor_manager/monitor_manager.py	/^DEFAULT_FONT_SIZE = _default("FONT_SIZE", 11, int)$/;"	v
+DEFS	i3blocks/brightness/Makefile	/^DEFS := -DVERSION=\\"0.1\\"$/;"	m
+DELAY	i3blocks/mediaplayer/mediaplayer	/^use constant DELAY => 50; # Delay in ms to let network-based players (spotify) reflect new data.$/;"	c
+DESKTOP_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^DESKTOP_SYMBOL = "\\uf108"$/;"	v
+DESKTOP_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^DESKTOP_SYMBOL = "\\uf108"$/;"	v
+DISCHARGING	i3blocks/battery-poly/battery-poly	/^    DISCHARGING = 2$/;"	v	class:Status
+DOWN_ARROW	i3blocks/monitor_manager/monitor_manager	/^DOWN_ARROW = "\\uf063"$/;"	v
+DOWN_ARROW	i3blocks/monitor_manager/monitor_manager.py	/^DOWN_ARROW = "\\uf063"$/;"	v
+Dependancies	i3blocks/disk_usage/README.md	/^## Dependancies$/;"	s	chapter:Customizable disk block for i3blocks
+Dependencies	i3blocks/afs/README.md	/^## Dependencies$/;"	s	chapter:afs
+Dependencies	i3blocks/airly/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/arch-update/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/aur-update/README.md	/^## Dependencies$/;"	s	chapter:aur-update
+Dependencies	i3blocks/backlight/README.md	/^## Dependencies$/;"	s	chapter:backlight
+Dependencies	i3blocks/battery-poly/README.md	/^## Dependencies$/;"	s	chapter:battery-poly
+Dependencies	i3blocks/battery/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/battery2/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/batterybar/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/calendar/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/cpu_usage/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/disk-io/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/docker/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/dunst/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/email/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/eyedropper/README.md	/^### Dependencies$/;"	S	chapter:Eyedropper
+Dependencies	i3blocks/github/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/go/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/gpu-load/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/key_light/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/kubernetes/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/monitor_manager/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/optimus-manager/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/rofi-calendar/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/temperature/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/time/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/user/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/volume-pipewire/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/volume-pulseaudio/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/weather_NOAA/README.md	/^# Dependencies$/;"	c
+Dependencies	i3blocks/wlan-dbm/README.md	/^# Dependencies$/;"	c
+Dependency guidelines	i3blocks/CONTRIBUTING.md	/^# Dependency guidelines$/;"	c
+Description	Services/reflector.timer	/^Description=Refresh Pacman mirrorlist weekly with Reflector.$/;"	k	section:Unit
+Description	i3blocks/brightness/README.md	/^## Description$/;"	s	chapter:brightness
+Description	i3blocks/dimmer/README.md	/^## Description$/;"	s	chapter:dimmer
+Directory guidelines	i3blocks/CONTRIBUTING.md	/^# Directory guidelines$/;"	c
+EOF	i3blocks/colorpicker/colorpicker	/^cat << EOF$/;"	h
+EOF	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^cat << EOF$/;"	h
+EuAqi	i3blocks/purpleair/purpleair	/^sub EuAqi {$/;"	s
+Example	i3blocks/disk_usage/README.md	/^## Example$/;"	s	chapter:Customizable disk block for i3blocks
+Example workflow	i3blocks/CONTRIBUTING.md	/^# Example workflow$/;"	c
+Expected behavior	i3blocks/ISSUE_TEMPLATE.md	/^### Expected behavior$/;"	S
+Eyedropper	i3blocks/eyedropper/README.md	/^# Eyedropper$/;"	c
+FA_BATTERY	i3blocks/battery2/battery2	/^    FA_BATTERY = "<span font='FontAwesome'>\\uf240<\/span>"$/;"	v
+FA_LIGHTNING	i3blocks/battery2/battery2	/^    FA_LIGHTNING = "<span color='{}'><span font='FontAwesome'>\\uf0e7<\/span><\/span>".format(co/;"	v
+FA_PLUG	i3blocks/battery2/battery2	/^    FA_PLUG = "<span font='FontAwesome'>\\uf1e6<\/span>"$/;"	v
+FA_QUESTION	i3blocks/battery2/battery2	/^    FA_QUESTION = "<span font='FontAwesome'>\\uf128<\/span>"$/;"	v
+FONTAWESOME_FONT	i3blocks/monitor_manager/monitor_manager	/^FONTAWESOME_FONT = (FONTAWESOME_FONT_FAMILY, FONTAWESOME_FONT_SIZE)$/;"	v
+FONTAWESOME_FONT	i3blocks/monitor_manager/monitor_manager.py	/^FONTAWESOME_FONT = (FONTAWESOME_FONT_FAMILY, FONTAWESOME_FONT_SIZE)$/;"	v
+FONTAWESOME_FONT_FAMILY	i3blocks/monitor_manager/monitor_manager	/^FONTAWESOME_FONT_FAMILY = "FontAwesome"$/;"	v
+FONTAWESOME_FONT_FAMILY	i3blocks/monitor_manager/monitor_manager.py	/^FONTAWESOME_FONT_FAMILY = "FontAwesome"$/;"	v
+FONTAWESOME_FONT_SIZE	i3blocks/monitor_manager/monitor_manager	/^FONTAWESOME_FONT_SIZE = 11$/;"	v
+FONTAWESOME_FONT_SIZE	i3blocks/monitor_manager/monitor_manager.py	/^FONTAWESOME_FONT_SIZE = 11$/;"	v
+Features	i3blocks/battery-poly/README.md	/^## Features$/;"	s	chapter:battery-poly
+Fields	i3blocks/disk_usage/README.md	/^#### Fields$/;"	t	subsection:Customizable disk block for i3blocks""Arguments""Output Format
+Finding a sensor ID	i3blocks/purpleair/README.md	/^## Finding a sensor ID$/;"	s	chapter:Configuration
+Fold	Neovim/nvim/init.vim	/^command! -nargs=? Fold :call     CocAction('fold', <f-args>)$/;"	c
+Format	Neovim/nvim/init.vim	/^command! -nargs=0 Format :call CocAction('format')$/;"	c
+Format	Neovim/nvim/init.vim	/^fun! Format()$/;"	f
+GNU GENERAL PUBLIC LICENSE	i3blocks/afs/LICENSE.md	/^### GNU GENERAL PUBLIC LICENSE$/;"	S
+GNU GENERAL PUBLIC LICENSE	i3blocks/aur-update/LICENSE.md	/^### GNU GENERAL PUBLIC LICENSE$/;"	S
+GNU GENERAL PUBLIC LICENSE	i3blocks/backlight/LICENSE.md	/^### GNU GENERAL PUBLIC LICENSE$/;"	S
+GNU GENERAL PUBLIC LICENSE	i3blocks/eyedropper/LICENSE.md	/^### GNU GENERAL PUBLIC LICENSE$/;"	S
+Github	i3blocks/github/README.md	/^# Github$/;"	c
+Help	i3blocks/disk_usage/README.md	/^## Help$/;"	s	chapter:Customizable disk block for i3blocks
+How to Apply These Terms to Your New Programs	i3blocks/afs/LICENSE.md	/^### How to Apply These Terms to Your New Programs$/;"	S
+How to Apply These Terms to Your New Programs	i3blocks/aur-update/LICENSE.md	/^### How to Apply These Terms to Your New Programs$/;"	S
+How to Apply These Terms to Your New Programs	i3blocks/backlight/LICENSE.md	/^### How to Apply These Terms to Your New Programs$/;"	S
+How to Apply These Terms to Your New Programs	i3blocks/eyedropper/LICENSE.md	/^### How to Apply These Terms to Your New Programs$/;"	S
+How to build	i3blocks/brightness/README.md	/^## How to build$/;"	s	chapter:brightness
+How to contribute	i3blocks/CONTRIBUTING.md	/^# How to contribute$/;"	c
+IGNORE_LIST	i3blocks/usb/usb	/^    IGNORE_LIST = list(map(lambda p:$/;"	v
+IGNORE_LIST	i3blocks/usb/usb	/^IGNORE_LIST = _default("IGNORE_LIST", "[]")$/;"	v
+INCLUDES	i3blocks/brightness/Makefile	/^INCLUDES := -Iinc$/;"	m
+INFO_TEXT_COLOR	i3blocks/usb/usb	/^INFO_TEXT_COLOR = _default("INFO_TEXT_COLOR", "white")$/;"	v
+INOTIFY_BUFF_SIZE	i3blocks/brightness/main.c	/^#define INOTIFY_BUFF_SIZE /;"	d	file:
+INOTIFY_EVENT_SIZE	i3blocks/brightness/main.c	/^#define INOTIFY_EVENT_SIZE /;"	d	file:
+INTERFACE	i3blocks/bandwidth/i3blocks.conf	/^INTERFACE=eth0$/;"	k	section:bandwidth
+Ias	i3blocks/purpleair/purpleair	/^sub Ias {$/;"	s
+Imeca	i3blocks/purpleair/purpleair	/^sub Imeca {$/;"	s
+Install	Services/reflector.timer	/^[Install]$/;"	s
+Installation	i3blocks/arch-update/README.md	/^# Installation$/;"	c
+Installation	i3blocks/battery2/README.md	/^# Installation$/;"	c
+Installation	i3blocks/batterybar/README.md	/^# Installation$/;"	c
+Installation	i3blocks/calendar/README.md	/^# Installation$/;"	c
+Installation	i3blocks/eyedropper/README.md	/^# Installation$/;"	c
+Installation	i3blocks/i3-focusedwindow/README.md	/^# Installation$/;"	c
+Installation	i3blocks/key_layout/README.md	/^# Installation$/;"	c
+Installation	i3blocks/keyindicator/README.md	/^# Installation$/;"	c
+Installation	i3blocks/mediaplayer/README.md	/^# Installation$/;"	c
+Installation	i3blocks/rofi-calendar/README.md	/^# Installation$/;"	c
+Installation	i3blocks/sway-focusedwindow/README.md	/^# Installation$/;"	c
+Installation	i3blocks/time/README.md	/^# Installation$/;"	c
+Installation	i3blocks/usb/README.md	/^# Installation$/;"	c
+Installation	i3blocks/ytdl-mpv/README.md	/^# Installation$/;"	c
+Introduction	i3blocks/metars/README.md	/^# Introduction$/;"	c
+K	Neovim/nvim/init.vim	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
+LABEL	i3blocks/battery/i3blocks.conf	/^LABEL=BAT$/;"	k	section:battery
+LABEL	i3blocks/cpu_usage/i3blocks.conf	/^LABEL=CPU $/;"	k	section:cpu_usage
+LABEL	i3blocks/disk/i3blocks.conf	/^LABEL=HOME $/;"	k	section:disk
+LABEL	i3blocks/docker/i3blocks.conf	/^LABEL=🐳 $/;"	k	section:docker
+LABEL	i3blocks/volume/i3blocks.conf	/^LABEL=VOL $/;"	k	section:volume
+LD	i3blocks/brightness/Makefile	/^LD=ld$/;"	m
+LDFLAGS	i3blocks/brightness/Makefile	/^LDFLAGS = $(LIBS) -ffunction-sections -Wl,--gc-sections$/;"	m
+LDLIBS	i3blocks/bandwidth2/Makefile	/^LDLIBS=$/;"	m
+LDLIBS	i3blocks/cpu_usage2/Makefile	/^LDLIBS=$/;"	m
+LDLIBS	i3blocks/memory2/Makefile	/^LDLIBS=$/;"	m
+LIBS	i3blocks/brightness/Makefile	/^LIBS := $/;"	m
+LINK	i3blocks/brightness/Makefile	/^LINK=$(CC)$/;"	m
+LOCKED_COLOR	i3blocks/usb/usb	/^LOCKED_COLOR = _default("LOCKED_COLOR", "gray")$/;"	v
+LOCKED_INDICATOR	i3blocks/usb/usb	/^LOCKED_INDICATOR = _default("LOCKED_INDICATOR", "\\uf023 ")$/;"	v
+MAX_CHARGE_FILENAME	i3blocks/battery-poly/battery-poly	/^MAX_CHARGE_FILENAME = "energy_full"$/;"	v
+MOUNTED_COLOR	i3blocks/usb/usb	/^MOUNTED_COLOR = _default("MOUNTED_COLOR", "green")$/;"	v
+Metars	i3blocks/metars/metars	/^class Metars:$/;"	c
+MetarsSettingsEnvironment	i3blocks/metars/metars	/^class MetarsSettingsEnvironment:$/;"	c
+MonitorManager	i3blocks/monitor_manager/monitor_manager	/^class MonitorManager():$/;"	c
+MonitorManager	i3blocks/monitor_manager/monitor_manager.py	/^class MonitorManager():$/;"	c
+MySpellLang	Neovim/nvim/init.vim	/^function! MySpellLang()$/;"	f
+NERDTreeAutoDeleteBuffer	Neovim/nvim/init.vim	/^let NERDTreeAutoDeleteBuffer = 1$/;"	v
+NERDTreeDirArrows	Neovim/nvim/init.vim	/^let NERDTreeDirArrows = 1$/;"	v
+NERDTreeMinimalUI	Neovim/nvim/init.vim	/^let NERDTreeMinimalUI = 1$/;"	v
+NERDTreeQuitOnOpen	Neovim/nvim/init.vim	/^let NERDTreeQuitOnOpen = 1$/;"	v
+NOT_CLONED_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^NOT_CLONED_SYMBOL = "\\uf096"$/;"	v
+NOT_CLONED_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^NOT_CLONED_SYMBOL = "\\uf096"$/;"	v
+NO_COLOR	i3blocks/purpleair/README.md	/^### NO_COLOR$/;"	S	section:Configuration""Configuration Parameters
+OBJCOPY	i3blocks/brightness/Makefile	/^OBJCOPY=objcopy$/;"	m
+OBJDUMP	i3blocks/brightness/Makefile	/^OBJDUMP=objdump$/;"	m
+OBJECTS	i3blocks/bandwidth2/Makefile	/^OBJECTS=$/;"	m
+OBJECTS	i3blocks/brightness/Makefile	/^OBJECTS := $(SRC_C:%.c=$(OBJ_DIR)\/%.o)$/;"	m
+OBJECTS	i3blocks/cpu_usage2/Makefile	/^OBJECTS=$/;"	m
+OBJECTS	i3blocks/memory2/Makefile	/^OBJECTS=$/;"	m
+OBJ_DIR	i3blocks/brightness/Makefile	/^OBJ_DIR=$(BUILD_DIR)\/obj$/;"	m
+OR	Neovim/nvim/init.vim	/^command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')$/;"	c
+ORANGE	i3blocks/bandwidth2/bandwidth2.c	/^#define ORANGE /;"	d	file:
+ORANGE	i3blocks/cpu_usage2/cpu_usage2.c	/^#define ORANGE /;"	d	file:
+ORANGE	i3blocks/memory2/memory2.c	/^#define ORANGE /;"	d	file:
+OnCalendar	Services/reflector.timer	/^OnCalendar=weekly$/;"	k	section:Timer
+Optional Dependencies	i3blocks/arch-update/README.md	/^# Optional Dependencies$/;"	c
+Optional Dependencies	i3blocks/eyedropper/README.md	/^### Optional Dependencies$/;"	S	chapter:Eyedropper
+Options	i3blocks/dimmer/README.md	/^## Options$/;"	s	chapter:dimmer
+Options	i3blocks/disk-io/README.md	/^# Options$/;"	c
+Options	i3blocks/keyindicator/README.md	/^# Options$/;"	c
+Options	i3blocks/openvpn/README.md	/^# Options$/;"	c
+Other configuration options	i3blocks/metars/README.md	/^## Other configuration options$/;"	s	chapter:i3blocks configuration
+Output	i3blocks/monitor_manager/monitor_manager	/^class Output:$/;"	c
+Output	i3blocks/monitor_manager/monitor_manager.py	/^class Output:$/;"	c
+Output	i3blocks/nm-vpn/README.md	/^## Output$/;"	s	chapter:Tunables
+Output Format	i3blocks/disk_usage/README.md	/^### Output Format$/;"	S	section:Customizable disk block for i3blocks""Arguments
+Output of any relevant other commands that might help diagnostics	i3blocks/ISSUE_TEMPLATE.md	/^### Output of any relevant other commands that might help diagnostics$/;"	S
+Output of blocklet(s) when run from command line	i3blocks/ISSUE_TEMPLATE.md	/^### Output of blocklet(s) when run from command line$/;"	S
+P	i3blocks/bandwidth2/Makefile	/^P=bandwidth2$/;"	m
+P	i3blocks/cpu_usage2/Makefile	/^P=cpu_usage2$/;"	m
+P	i3blocks/memory2/Makefile	/^P=memory2$/;"	m
+PARTITIONLESS_COLOR	i3blocks/usb/usb	/^PARTITIONLESS_COLOR = _default("PARTITIONLESS_COLOR", "red")$/;"	v
+PARTITIONLESS_TEXT	i3blocks/usb/usb	/^PARTITIONLESS_TEXT = _default("PARTITIONLESS_TEXT", "no partitions")$/;"	v
+PASSIVE	i3blocks/battery-poly/battery-poly	/^    PASSIVE = 3$/;"	v	class:Status
+PERCENTAGE_FORMAT	i3blocks/battery-poly/battery-poly	/^        PERCENTAGE_FORMAT = sys.argv[2]$/;"	v
+PERCENTAGE_FORMAT	i3blocks/battery-poly/battery-poly	/^PERCENTAGE_FORMAT = ".2%"$/;"	v
+PLUGGED_COLOR	i3blocks/usb/usb	/^PLUGGED_COLOR = _default("PLUGGED_COLOR", "gray")$/;"	v
+POWERLEVEL9K_DIR_CLASSES=	Zsh/.p10k.zsh	/^  typeset -g POWERLEVEL9K_DIR_CLASSES=()$/;"	f
+POWER_DRAW_FILENAME	i3blocks/battery-poly/battery-poly	/^POWER_DRAW_FILENAME = "power_now"$/;"	v
+PREFIX	i3blocks/Makefile	/^PREFIX = $(HOME)\/.local\/$/;"	m
+PRG	i3blocks/brightness/Makefile	/^PRG = brightness$/;"	m
+PRIMARY_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^PRIMARY_SYMBOL = "\\uf005"$/;"	v
+PRIMARY_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^PRIMARY_SYMBOL = "\\uf005"$/;"	v
+PSEUDO_FS_PATH	i3blocks/battery-poly/battery-poly	/^PSEUDO_FS_PATH = "\/sys\/class\/power_supply\/"$/;"	v
+Persistent	Services/reflector.timer	/^Persistent=true$/;"	k	section:Timer
+Preamble	i3blocks/afs/LICENSE.md	/^### Preamble$/;"	S
+Preamble	i3blocks/aur-update/LICENSE.md	/^### Preamble$/;"	S
+Preamble	i3blocks/backlight/LICENSE.md	/^### Preamble$/;"	S
+Preamble	i3blocks/eyedropper/LICENSE.md	/^### Preamble$/;"	S
+Pull request guidelines	i3blocks/CONTRIBUTING.md	/^# Pull request guidelines$/;"	c
+READONLY_INDICATOR	i3blocks/usb/usb	/^READONLY_INDICATOR = _default("READONLY_INDICATOR", "ro")$/;"	v
+RED	i3blocks/bandwidth2/bandwidth2.c	/^#define RED /;"	d	file:
+RED	i3blocks/cpu_usage2/cpu_usage2.c	/^#define RED /;"	d	file:
+RED	i3blocks/memory2/memory2.c	/^#define RED /;"	d	file:
+REFLECTION_NORMAL	i3blocks/monitor_manager/monitor_manager	/^REFLECTION_NORMAL = "\\uf176"$/;"	v
+REFLECTION_NORMAL	i3blocks/monitor_manager/monitor_manager.py	/^REFLECTION_NORMAL = "\\uf176"$/;"	v
+REFLECTION_X	i3blocks/monitor_manager/monitor_manager	/^REFLECTION_X = "\\uf07e"$/;"	v
+REFLECTION_X	i3blocks/monitor_manager/monitor_manager.py	/^REFLECTION_X = "\\uf07e"$/;"	v
+REFLECTION_XY	i3blocks/monitor_manager/monitor_manager	/^REFLECTION_XY = "\\uf047"$/;"	v
+REFLECTION_XY	i3blocks/monitor_manager/monitor_manager.py	/^REFLECTION_XY = "\\uf047"$/;"	v
+REFLECTION_Y	i3blocks/monitor_manager/monitor_manager	/^REFLECTION_Y = "\\uf07d"$/;"	v
+REFLECTION_Y	i3blocks/monitor_manager/monitor_manager.py	/^REFLECTION_Y = "\\uf07d"$/;"	v
+REFRESH_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^REFRESH_SYMBOL = "\\uf021"$/;"	v
+REFRESH_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^REFRESH_SYMBOL = "\\uf021"$/;"	v
+ROTATION_INVERTED	i3blocks/monitor_manager/monitor_manager	/^ROTATION_INVERTED = "\\uf150"$/;"	v
+ROTATION_INVERTED	i3blocks/monitor_manager/monitor_manager.py	/^ROTATION_INVERTED = "\\uf150"$/;"	v
+ROTATION_LEFT	i3blocks/monitor_manager/monitor_manager	/^ROTATION_LEFT = "\\uf191"$/;"	v
+ROTATION_LEFT	i3blocks/monitor_manager/monitor_manager.py	/^ROTATION_LEFT = "\\uf191"$/;"	v
+ROTATION_NORMAL	i3blocks/monitor_manager/monitor_manager	/^ROTATION_NORMAL = "\\uf151"$/;"	v
+ROTATION_NORMAL	i3blocks/monitor_manager/monitor_manager.py	/^ROTATION_NORMAL = "\\uf151"$/;"	v
+ROTATION_RIGHT	i3blocks/monitor_manager/monitor_manager	/^ROTATION_RIGHT = "\\uf152"$/;"	v
+ROTATION_RIGHT	i3blocks/monitor_manager/monitor_manager.py	/^ROTATION_RIGHT = "\\uf152"$/;"	v
+RTN	i3blocks/dunst/dunst	/^    RTN = {"full_text":"<span font='Font Awesome 5 Free Solid' color='#BE616E'>\\uf1f6<\/span>"}$/;"	v
+RandomizedDelaySec	Services/reflector.timer	/^RandomizedDelaySec=12h$/;"	k	section:Timer
+Recommended:	i3blocks/cpu_util_detailed/README.md	/^## Recommended:$/;"	s	chapter:cpu_util_detailed
+Required:	i3blocks/cpu_util_detailed/README.md	/^## Required:$/;"	s	chapter:cpu_util_detailed
+Requirements	i3blocks/apt-upgrades/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/i3-focusedwindow/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/kbdd_layout/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/nm-vpn/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/purpleair/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/shutdown_menu/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/speedtest/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/sway-focusedwindow/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/tahoe-lafs/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/toggle/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/usb/README.md	/^# Requirements$/;"	c
+Requirements	i3blocks/ytdl-mpv/README.md	/^# Requirements$/;"	c
+Requires:	i3blocks/xkb_layout/README.md	/^# Requires:$/;"	c
+Roadmap	i3blocks/brightness/README.md	/^## Roadmap$/;"	s	chapter:brightness
+SECONDARY_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^SECONDARY_SYMBOL = "\\uf006"$/;"	v
+SECONDARY_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^SECONDARY_SYMBOL = "\\uf006"$/;"	v
+SENSOR_ID	i3blocks/purpleair/i3blocks.conf	/^SENSOR_ID=78305$/;"	k	section:purpleair
+SEPARATOR	i3blocks/usb/usb	/^SEPARATOR = _default("SEPARATOR", "<span color='gray'> | <\/span>")$/;"	v
+SHOW_BLANKED	i3blocks/monitor_manager/monitor_manager	/^SHOW_BLANKED = _default("SHOW_BLANKED", "1")$/;"	v
+SHOW_BLANKED	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_BLANKED = _default("SHOW_BLANKED", "1")$/;"	v
+SHOW_BRIGHTNESS	i3blocks/monitor_manager/monitor_manager	/^SHOW_BRIGHTNESS = _default("SHOW_BRIGHTNESS", "1")$/;"	v
+SHOW_BRIGHTNESS	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_BRIGHTNESS = _default("SHOW_BRIGHTNESS", "1")$/;"	v
+SHOW_BRIGHTNESS_VALUE	i3blocks/monitor_manager/monitor_manager	/^SHOW_BRIGHTNESS_VALUE = _default("SHOW_BRIGHTNESS_VALUE", "0")$/;"	v
+SHOW_BRIGHTNESS_VALUE	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_BRIGHTNESS_VALUE = _default("SHOW_BRIGHTNESS_VALUE", "0")$/;"	v
+SHOW_DUPLICATE	i3blocks/monitor_manager/monitor_manager	/^SHOW_DUPLICATE = _default("SHOW_DUPLICATE", "1")$/;"	v
+SHOW_DUPLICATE	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_DUPLICATE = _default("SHOW_DUPLICATE", "1")$/;"	v
+SHOW_MODE	i3blocks/monitor_manager/monitor_manager	/^SHOW_MODE = _default("SHOW_MODE", "1")$/;"	v
+SHOW_MODE	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_MODE = _default("SHOW_MODE", "1")$/;"	v
+SHOW_NAMES	i3blocks/monitor_manager/monitor_manager	/^SHOW_NAMES = _default("SHOW_NAMES", "1")$/;"	v
+SHOW_NAMES	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_NAMES = _default("SHOW_NAMES", "1")$/;"	v
+SHOW_ON_OFF	i3blocks/monitor_manager/monitor_manager	/^SHOW_ON_OFF = _default("SHOW_ON_OFF","1") $/;"	v
+SHOW_ON_OFF	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_ON_OFF = _default("SHOW_ON_OFF","1") $/;"	v
+SHOW_PRIMARY	i3blocks/monitor_manager/monitor_manager	/^SHOW_PRIMARY = _default("SHOW_PRIMARY", "1")$/;"	v
+SHOW_PRIMARY	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_PRIMARY = _default("SHOW_PRIMARY", "1")$/;"	v
+SHOW_REFLECTION	i3blocks/monitor_manager/monitor_manager	/^SHOW_REFLECTION = _default("SHOW_REFLECTION", "1") $/;"	v
+SHOW_REFLECTION	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_REFLECTION = _default("SHOW_REFLECTION", "1") $/;"	v
+SHOW_ROTATION	i3blocks/monitor_manager/monitor_manager	/^SHOW_ROTATION = _default("SHOW_ROTATION", "1")$/;"	v
+SHOW_ROTATION	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_ROTATION = _default("SHOW_ROTATION", "1")$/;"	v
+SHOW_UP_DOWN	i3blocks/monitor_manager/monitor_manager	/^SHOW_UP_DOWN = _default("SHOW_UP_DOWN", "1")$/;"	v
+SHOW_UP_DOWN	i3blocks/monitor_manager/monitor_manager.py	/^SHOW_UP_DOWN = _default("SHOW_UP_DOWN", "1")$/;"	v
+SIZE	i3blocks/brightness/Makefile	/^SIZE=size$/;"	m
+SOURCE	i3blocks/miccontrol/i3blocks.conf	/^SOURCE=alsa_input.pci-0000_00_1f.3.analog-stereo$/;"	k	section:miccontrol
+SPOTIFY_STR	i3blocks/mediaplayer/mediaplayer	/^use constant SPOTIFY_STR => 'spotify';$/;"	c
+SRC_A	i3blocks/brightness/Makefile	/^SRC_A := $(wildcard src\/*.s)$/;"	m
+SRC_C	i3blocks/brightness/Makefile	/^SRC_C := $(wildcard *.c) $(wildcard src\/*.c)$/;"	m
+STATE_CRITICAL	i3blocks/bandwidth2/bandwidth2.c	/^  STATE_CRITICAL,$/;"	e	enum:__anon515c723c0103	file:
+STATE_OK	i3blocks/bandwidth2/bandwidth2.c	/^  STATE_OK,$/;"	e	enum:__anon515c723c0103	file:
+STATE_UNKNOWN	i3blocks/bandwidth2/bandwidth2.c	/^  STATE_UNKNOWN,$/;"	e	enum:__anon515c723c0103	file:
+STATE_WARNING	i3blocks/bandwidth2/bandwidth2.c	/^  STATE_WARNING,$/;"	e	enum:__anon515c723c0103	file:
+STRFTIME_FORMAT	i3blocks/time/i3blocks.conf	/^STRFTIME_FORMAT=%Y-%m-%d %R$/;"	k	section:time
+SUBSCRIBE	i3blocks/volume-pipewire/i3blocks.conf	/^SUBSCRIBE=1$/;"	k	section:volume-pipewire
+SUBSCRIBE	i3blocks/volume-pulseaudio/i3blocks.conf	/^SUBSCRIBE=1$/;"	k	section:volume-pulseaudio
+Sample Look	i3blocks/eyedropper/README.md	/^### Sample Look$/;"	S	chapter:Installation
+Screenshot	i3blocks/disk_usage/README.md	/^## Screenshot$/;"	s	chapter:Customizable disk block for i3blocks
+Setup / Usage	i3blocks/afs/README.md	/^## Setup \/ Usage$/;"	s	chapter:afs
+Setup / Usage	i3blocks/aur-update/README.md	/^## Setup \/ Usage$/;"	s	chapter:aur-update
+Setup / Usage	i3blocks/backlight/README.md	/^## Setup \/ Usage$/;"	s	chapter:backlight
+Simple usage	i3blocks/apt-upgrades/README.md	/^# Simple usage$/;"	c
+Single task taskw/timew integration	i3blocks/taskw/README.md	/^### Single task taskw\/timew integration$/;"	S	section:Taskwarrior active task blocklet""Timewarrior integration
+Status	i3blocks/battery-poly/battery-poly	/^class Status(Enum):$/;"	c
+Suggested usage	i3blocks/apt-upgrades/README.md	/^# Suggested usage$/;"	c
+TASKW_MAIN_FILTER	i3blocks/taskw/i3blocks.conf	/^TASKW_MAIN_FILTER="+ACTIVE"$/;"	k	section:taskw
+TASKW_MAX_LENGTH	i3blocks/taskw/i3blocks.conf	/^TASKW_MAX_LENGTH = 35$/;"	k	section:taskw
+TASKW_NOTASK_MSG	i3blocks/taskw/i3blocks.conf	/^TASKW_NOTASK_MSG=--No Task--$/;"	k	section:taskw
+TASKW_PENDING_TF	i3blocks/taskw/i3blocks.conf	/^TASKW_PENDING_TF=false$/;"	k	section:taskw
+TASKW_SORT_URGENCY	i3blocks/taskw/i3blocks.conf	/^TASKW_SORT_URGENCY=false$/;"	k	section:taskw
+TASKW_TF	i3blocks/taskw/i3blocks.conf	/^TASKW_TF=true$/;"	k	section:taskw
+TERMS AND CONDITIONS	i3blocks/afs/LICENSE.md	/^### TERMS AND CONDITIONS$/;"	S
+TERMS AND CONDITIONS	i3blocks/aur-update/LICENSE.md	/^### TERMS AND CONDITIONS$/;"	S
+TERMS AND CONDITIONS	i3blocks/backlight/LICENSE.md	/^### TERMS AND CONDITIONS$/;"	S
+TERMS AND CONDITIONS	i3blocks/eyedropper/LICENSE.md	/^### TERMS AND CONDITIONS$/;"	S
+TIMEW_DESC_OVERRIDE	i3blocks/taskw/i3blocks.conf	/^TIMEW_DESC_OVERRIDE=false$/;"	k	section:taskw
+TIMEW_TF	i3blocks/taskw/i3blocks.conf	/^TIMEW_TF=false$/;"	k	section:taskw
+TLP_THRESHOLD_PERCENTAGE	i3blocks/battery-poly/battery-poly	/^TLP_THRESHOLD_PERCENTAGE = 1.0$/;"	v
+TOGGLE_OFF	i3blocks/monitor_manager/monitor_manager	/^TOGGLE_OFF = "\\uf204"$/;"	v
+TOGGLE_OFF	i3blocks/monitor_manager/monitor_manager.py	/^TOGGLE_OFF = "\\uf204"$/;"	v
+TOGGLE_ON	i3blocks/monitor_manager/monitor_manager	/^TOGGLE_ON = "\\uf205"$/;"	v
+TOGGLE_ON	i3blocks/monitor_manager/monitor_manager.py	/^TOGGLE_ON = "\\uf205"$/;"	v
+TRUNCATE_FS_LABELS	i3blocks/usb/usb	/^TRUNCATE_FS_LABELS = _default("TRUNCASE_FS_LABELS", None)$/;"	v
+TYPE	i3blocks/purpleair/README.md	/^### TYPE$/;"	S	section:Configuration""Configuration Parameters
+TYPE	i3blocks/purpleair/i3blocks.conf	/^TYPE=US_AQI$/;"	k	section:purpleair
+TZONES	i3blocks/time/i3blocks.conf	/^TZONES=$DEFAULT_TZ,Brazil\/East,Australia\/Brisbane,Asia\/Calcutta$/;"	k	section:time
+TZ_LABELS	i3blocks/time/i3blocks.conf	/^TZ_LABELS=,Brazil,AU,Hyderabad$/;"	k	section:time
+Taskwarrior active task blocklet	i3blocks/taskw/README.md	/^# Taskwarrior active task blocklet$/;"	c
+Timer	Services/reflector.timer	/^[Timer]$/;"	s
+Timew standalone usage	i3blocks/taskw/README.md	/^### Timew standalone usage$/;"	S	section:Taskwarrior active task blocklet""Timewarrior integration
+Timewarrior integration	i3blocks/taskw/README.md	/^## Timewarrior integration$/;"	s	chapter:Taskwarrior active task blocklet
+Tunables	i3blocks/nm-vpn/README.md	/^# Tunables$/;"	c
+UNBLANKED_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^UNBLANKED_SYMBOL = "\\uf06e"$/;"	v
+UNBLANKED_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^UNBLANKED_SYMBOL = "\\uf06e"$/;"	v
+UNLOCKED_INDICATOR	i3blocks/usb/usb	/^UNLOCKED_INDICATOR = _default("UNLOCKED_INDICATOR", "\\uf09c ")$/;"	v
+UNLOCKED_NOT_MOUNTED_COLOR	i3blocks/usb/usb	/^UNLOCKED_NOT_MOUNTED_COLOR = _default("UNLOCKED_NOT_MOUNTED_COLOR", "yellow")$/;"	v
+UP_ARROW	i3blocks/monitor_manager/monitor_manager	/^UP_ARROW = "\\uf062"$/;"	v
+UP_ARROW	i3blocks/monitor_manager/monitor_manager.py	/^UP_ARROW = "\\uf062"$/;"	v
+USE_ALSA_NAME	i3blocks/volume-pipewire/i3blocks.conf	/^USE_ALSA_NAME=1$/;"	k	section:volume-pipewire
+USE_ALSA_NAME	i3blocks/volume-pulseaudio/i3blocks.conf	/^USE_ALSA_NAME=1$/;"	k	section:volume-pulseaudio
+Unit	Services/reflector.timer	/^[Unit]$/;"	s
+UsAqi	i3blocks/purpleair/purpleair	/^sub UsAqi {$/;"	s
+Usage	i3blocks/airly/README.md	/^# Usage$/;"	c
+Usage	i3blocks/bandwidth3/README.md	/^# Usage$/;"	c
+Usage	i3blocks/brightness/README.md	/^## Usage$/;"	s	chapter:brightness
+Usage	i3blocks/dimmer/README.md	/^## Usage$/;"	s	chapter:dimmer
+Usage	i3blocks/disk-io/README.md	/^# Usage$/;"	c
+Usage	i3blocks/dunst/README.md	/^# Usage$/;"	c
+Usage	i3blocks/email/README.md	/^# Usage$/;"	c
+Usage	i3blocks/github/README.md	/^# Usage$/;"	c
+Usage	i3blocks/miccontrol/README.md	/^# Usage$/;"	c
+Usage	i3blocks/monitor_manager/README.md	/^# Usage$/;"	c
+Usage	i3blocks/nm-vpn/README.md	/^# Usage$/;"	c
+Usage	i3blocks/openvpn/README.md	/^# Usage$/;"	c
+Usage	i3blocks/shutdown_menu/README.md	/^# Usage$/;"	c
+Usage	i3blocks/speedtest/README.md	/^# Usage$/;"	c
+Usage	i3blocks/tahoe-lafs/README.md	/^# Usage$/;"	c
+Usage	i3blocks/temperature/README.md	/^# Usage$/;"	c
+Usage	i3blocks/volume-pipewire/README.md	/^# Usage$/;"	c
+Usage	i3blocks/volume-pulseaudio/README.md	/^# Usage$/;"	c
+Usage	i3blocks/volume/README.md	/^# Usage$/;"	c
+Usage	i3blocks/weather_NOAA/README.md	/^# Usage$/;"	c
+Usage	i3blocks/wlan-dbm/README.md	/^# Usage$/;"	c
+WARNING	i3blocks/cpu_util_detailed/README.md	/^## WARNING$/;"	s	chapter:cpu_util_detailed
+WARN_LEVEL	i3blocks/brightness/Makefile	/^WARN_LEVEL = -Wall -Wextra -pedantic$/;"	m
+WINDOW_CLOSE_TO_BOUNDARY_BUFFER	i3blocks/monitor_manager/monitor_manager	/^WINDOW_CLOSE_TO_BOUNDARY_BUFFER = _default("CLOSE_TO_BOUNDARY_BUFFER", 20, int)$/;"	v
+WINDOW_CLOSE_TO_BOUNDARY_BUFFER	i3blocks/monitor_manager/monitor_manager.py	/^WINDOW_CLOSE_TO_BOUNDARY_BUFFER = _default("CLOSE_TO_BOUNDARY_BUFFER", 20, int)$/;"	v
+WantedBy	Services/reflector.timer	/^WantedBy=timers.target$/;"	k	section:Install
+Warning Color	i3blocks/disk_usage/README.md	/^### Warning Color$/;"	S	section:Customizable disk block for i3blocks""Arguments
+Warning Threshold	i3blocks/disk_usage/README.md	/^### Warning Threshold$/;"	S	section:Customizable disk block for i3blocks""Arguments
+[g	Neovim/nvim/init.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
+]g	Neovim/nvim/init.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
+_BLOCKS	i3blocks/Makefile	/^_BLOCKS := $(shell find . -type f -executable -not -path '.\/.*')$/;"	m
+_DEFAULT_SOURCE	i3blocks/bandwidth2/bandwidth2.c	/^#define _DEFAULT_SOURCE$/;"	d	file:
+_DEFAULT_SOURCE	i3blocks/memory2/memory2.c	/^#define _DEFAULT_SOURCE$/;"	d	file:
+_INSTALLDIR	i3blocks/Makefile	/^_INSTALLDIR = $(DESTDIR)$(PREFIX)\/libexec\/i3blocks\/$/;"	m
+_MAKEBLOCKS	i3blocks/Makefile	/^_MAKEBLOCKS := $(dir $(wildcard *\/Makefile))$/;"	m
+__anon515c723c0103	i3blocks/bandwidth2/bandwidth2.c	/^enum {$/;"	g	file:
+__anon9bc31ac40108	i3blocks/memory2/memory2.c	/^typedef struct {$/;"	s	file:
+__author__	i3blocks/dunst/dunst	/^__author__ = "Jessey White-Cinis <j@cin.is>"$/;"	v
+__author__	i3blocks/github/github	/^__author__ = "Adin Hodovic <hodovicadin@gmail.com>"$/;"	v
+__copyright__	i3blocks/dunst/dunst	/^__copyright__ = "Copyright (c) 2019 Jessey White-Cinis"$/;"	v
+__copyright__	i3blocks/github/github	/^__copyright__ = "Copyright (c) 2020 Adin Hodovic"$/;"	v
+__init__	i3blocks/airly/airly.py	/^    def __init__(self, config=None):$/;"	m	class:AirlyApiClient
+__init__	i3blocks/battery-poly/battery-poly	/^    def __init__(self, status, current_charge, max_charge, power_draw):$/;"	m	class:Battery
+__init__	i3blocks/battery-poly/battery-poly	/^    def __init__(self, time_to_completion, percentage, status):$/;"	m	class:Configuration
+__init__	i3blocks/metars/metars	/^    def __init__(self, settings):$/;"	m	class:Metars
+__init__	i3blocks/monitor_manager/monitor_manager	/^    def __init__(self, name=None, w=None, h=None, x=None, y=None, rate=None,$/;"	m	class:Output
+__init__	i3blocks/monitor_manager/monitor_manager	/^    def __init__(self, root):$/;"	m	class:MonitorManager
+__init__	i3blocks/monitor_manager/monitor_manager.py	/^    def __init__(self, name=None, w=None, h=None, x=None, y=None, rate=None,$/;"	m	class:Output
+__init__	i3blocks/monitor_manager/monitor_manager.py	/^    def __init__(self, root):$/;"	m	class:MonitorManager
+__license__	i3blocks/dunst/dunst	/^__license__ = "MIT"$/;"	v
+__license__	i3blocks/github/github	/^__license__ = "MIT"$/;"	v
+__str__	i3blocks/monitor_manager/monitor_manager	/^    def __str__(self):$/;"	m	class:Output
+__str__	i3blocks/monitor_manager/monitor_manager.py	/^    def __str__(self):$/;"	m	class:Output
+__version__	i3blocks/dunst/dunst	/^__version__ = "1.1.0"$/;"	v
+__version__	i3blocks/github/github	/^__version__ = "1.0.0"$/;"	v
+_default	i3blocks/afs/afs	/^def _default(name, default='', arg_type=str):$/;"	f
+_default	i3blocks/arch-update/arch-update	/^    def _default(name, default='', arg_type=str):$/;"	f	function:create_argparse	file:
+_default	i3blocks/arch-update/arch-update.py	/^    def _default(name, default='', arg_type=str):$/;"	f	function:create_argparse	file:
+_default	i3blocks/monitor_manager/monitor_manager	/^def _default(name, default='', arg_type=strbool):$/;"	f
+_default	i3blocks/monitor_manager/monitor_manager.py	/^def _default(name, default='', arg_type=strbool):$/;"	f
+_default	i3blocks/taskw/taskw	/^def _default(name, default="", arg_type=str):$/;"	f
+_default	i3blocks/usb/usb	/^def _default(name, default='', arg_type=str):$/;"	f
+_strbool	i3blocks/taskw/taskw	/^def _strbool(s):$/;"	f
+ac	Neovim/nvim/init.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
+ac	Neovim/nvim/init.vim	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
+add_argument	i3blocks/aur-update/aur-update	/^    def add_argument(self, name, default='', arg_type=str):$/;"	m	class:Args
+af	Neovim/nvim/init.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+af	Neovim/nvim/init.vim	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
+afs	i3blocks/afs/README.md	/^# afs$/;"	c
+airly	i3blocks/airly/README.md	/^# airly$/;"	c
+all	i3blocks/Makefile	/^all: build$/;"	t
+all	i3blocks/brightness/Makefile	/^all: directories $(PRG)$/;"	t
+apt-upgrades	i3blocks/apt-upgrades/README.md	/^# apt-upgrades$/;"	c
+apt-upgrades	i3blocks/apt-upgrades/i3blocks.conf	/^[apt-upgrades]$/;"	s
+arch-box-system-files# arch-box-system	README.md	/^# arch-box-system-files# arch-box-system$/;"	c
+arch-update	i3blocks/arch-update/README.md	/^# arch-update$/;"	c
+args	Neovim/nvim/coc-settings.json	/^    "args": ["--stdio"]$/;"	a	object:dockerfile
+args	Neovim/nvim/coc-settings.json	/^    "args": [],$/;"	a	object:efm
+args	i3blocks/afs/afs	/^args = parser.parse_args()$/;"	v
+args	i3blocks/arch-update/arch-update	/^args = create_argparse()$/;"	v
+args	i3blocks/arch-update/arch-update.py	/^args = create_argparse()$/;"	v
+args	i3blocks/aur-update/aur-update	/^args = Args()$/;"	v
+ask_confirmation	i3blocks/shutdown_menu/shutdown_menu	/^function ask_confirmation() {$/;"	f
+attributeMaps	i3blocks/usb/usb	/^attributeMaps = getAttributeMaps(leaves)$/;"	v
+aur-update	i3blocks/aur-update/README.md	/^# aur-update$/;"	c
+backlight	i3blocks/backlight/README.md	/^# backlight$/;"	c
+bandwidth	i3blocks/bandwidth/README.md	/^# bandwidth$/;"	c
+bandwidth	i3blocks/bandwidth/i3blocks.conf	/^[bandwidth]$/;"	s
+bandwidth2	i3blocks/bandwidth2/README.md	/^# bandwidth2$/;"	c
+bandwidth3	i3blocks/bandwidth3/README.md	/^# bandwidth3$/;"	c
+bandwidth3	i3blocks/bandwidth3/i3blocks.conf	/^[bandwidth3]$/;"	s
+battery	i3blocks/battery/README.md	/^# battery$/;"	c
+battery	i3blocks/battery/i3blocks.conf	/^[battery]$/;"	s
+battery-poly	i3blocks/battery-poly/README.md	/^# battery-poly$/;"	c
+battery2	i3blocks/battery2/README.md	/^# battery2$/;"	c
+battery2	i3blocks/battery2/i3blocks.conf	/^[battery2]$/;"	s
+batterybar	i3blocks/batterybar/README.md	/^# batterybar$/;"	c
+block_button	i3blocks/aur-update/aur-update	/^block_button = int(block_button) if block_button else None$/;"	v
+block_button	i3blocks/aur-update/aur-update	/^block_button = os.environ['BLOCK_BUTTON'] if 'BLOCK_BUTTON' in os.environ else None$/;"	v
+block_event	i3blocks/email/email	/^def block_event():$/;"	f
+border	i3/.i3/workspace-1-startup.json	/^  "border": "normal",$/;"	s
+border	i3/.i3/workspace-2-startup.json	/^                            "border": "none",$/;"	s	object:0.nodes.0.nodes.0
+border	i3/.i3/workspace-2-startup.json	/^                            "border": "normal",$/;"	s	object:0.nodes.0.nodes.1
+border	i3/.i3/workspace-2-startup.json	/^                    "border": "normal",$/;"	s	object:0.nodes.1
+border	i3/.i3/workspace-2-startup.json	/^            "border": "normal",$/;"	s	object:nodes.0
+border	i3/.i3/workspace-2-startup.json	/^            "border": "normal",$/;"	s	object:nodes.1
+brightness	i3blocks/brightness/README.md	/^# brightness$/;"	c
+browsable	Samba/smb.conf	/^browsable = yes$/;"	k	section:matteos-sambashare
+build	i3blocks/Makefile	/^build: $(_MAKEBLOCKS)$/;"	t
+buildDirectory	Neovim/nvim/coc-settings.json	/^      "buildDirectory": "build"$/;"	s	object:cmake.initializationOptions
+buttonType	i3blocks/metars/metars	/^        buttonType = os.environ['BLOCK_BUTTON']$/;"	v
+buttons	i3blocks/mediaplayer/mediaplayer	/^sub buttons {$/;"	s
+bytes	i3blocks/memory2/memory2.c	/^  char bytes[4];$/;"	m	struct:__anon9bc31ac40108	typeref:typename:char[4]	file:
+calc_display_time	i3blocks/battery-poly/battery-poly	/^def calc_display_time(status: Status, seconds: int) -> str:$/;"	f	typeref:typename:str
+calc_percentage	i3blocks/battery-poly/battery-poly	/^def calc_percentage(batteries: list) -> float:$/;"	f	typeref:typename:float
+calc_time	i3blocks/battery-poly/battery-poly	/^def calc_time(batteries: list, status: Status) -> int:$/;"	f	typeref:typename:int
+calendar	i3blocks/calendar/README.md	/^# calendar$/;"	c
+capability	i3blocks/volume/volume	/^capability() { # Return "Capture" if the device is a capture device$/;"	f
+check_launcher	i3blocks/shutdown_menu/shutdown_menu	/^function check_launcher() {$/;"	f
+check_opts	i3blocks/openvpn/openvpn	/^sub check_opts {$/;"	s
+check_proc_net_dev	i3blocks/bandwidth3/bandwidth3	/^function check_proc_net_dev {$/;"	f
+clamp	i3blocks/memory2/memory2.c	/^int clamp(int value, int min, int max) {$/;"	f	typeref:typename:int
+clangd	Neovim/nvim/coc-settings.json	/^  "clangd": {$/;"	o
+class	i3/.i3/workspace-1-startup.json	/^      "class": "^firefox$"$/;"	s	object:swallows.0
+class	i3/.i3/workspace-2-startup.json	/^                                    "class": "TelegramDesktop"$/;"	s	object:0.nodes.0.nodes.0.swallows.0
+class	i3/.i3/workspace-2-startup.json	/^                                    "class": "^whatsapp\\\\-nativefier\\\\-d40211$"$/;"	s	object:0.nodes.0.nodes.1.swallows.0
+class	i3/.i3/workspace-2-startup.json	/^                            "class": "^Spotify$"$/;"	s	object:0.nodes.1.swallows.0
+class	i3/.i3/workspace-2-startup.json	/^                    "class": "^kitty$"$/;"	s	object:nodes.1.swallows.0
+clean	i3blocks/brightness/Makefile	/^clean:$/;"	t
+clicked	i3blocks/dunst/dunst	/^def clicked():$/;"	f
+clicked	i3blocks/github/github	/^def clicked():$/;"	f
+cmake	Neovim/nvim/coc-settings.json	/^  "cmake": {$/;"	o
+cmus	i3blocks/mediaplayer/mediaplayer	/^sub cmus {$/;"	s
+color	i3blocks/battery2/battery2	/^    color = config.get("color_10", "red")$/;"	v
+color	i3blocks/battery2/battery2	/^    color = config.get("color_charging", "yellow")$/;"	v
+color	i3blocks/battery2/battery2	/^    def color(percent):$/;"	f
+color	i3blocks/docker/i3blocks.conf	/^color=#0db7ed$/;"	k	section:docker
+color	i3blocks/iface/i3blocks.conf	/^color=#00FF00$/;"	k	section:iface
+colorpicker	i3blocks/colorpicker/README.md	/^# colorpicker$/;"	c
+command	Neovim/nvim/coc-settings.json	/^    "command": "\/usr\/bin\/texlab",$/;"	s	object:latex
+command	Neovim/nvim/coc-settings.json	/^    "command": "clangd",$/;"	s	object:clangd
+command	Neovim/nvim/coc-settings.json	/^    "command": "cmake-language-server",$/;"	s	object:cmake
+command	Neovim/nvim/coc-settings.json	/^    "command": "docker-langserver",$/;"	s	object:dockerfile
+command	Neovim/nvim/coc-settings.json	/^    "command": "efm-langserver",$/;"	s	object:efm
+command	i3blocks/apt-upgrades/i3blocks.conf	/^command=$SCRIPT_DIR\/apt-upgrades$/;"	k	section:apt-upgrades
+command	i3blocks/bandwidth/i3blocks.conf	/^command=$SCRIPT_DIR\/bandwidth$/;"	k	section:bandwidth
+command	i3blocks/bandwidth3/i3blocks.conf	/^command=$SCRIPT_DIR\/bandwidth3$/;"	k	section:bandwidth3
+command	i3blocks/battery/i3blocks.conf	/^command=$SCRIPT_DIR\/battery$/;"	k	section:battery
+command	i3blocks/battery2/i3blocks.conf	/^command=$SCRIPT_DIR\/battery2$/;"	k	section:battery2
+command	i3blocks/cpu_usage/i3blocks.conf	/^command=$SCRIPT_DIR\/cpu_usage$/;"	k	section:cpu_usage
+command	i3blocks/cpu_usage2/i3blocks.conf	/^command=$SCRIPT_DIR\/cpu_usage2$/;"	k	section:cpu_usage2
+command	i3blocks/cpu_util_detailed/i3blocks.conf	/^command=$SCRIPT_DIR\/cpu_util_detailed$/;"	k	section:cpu_util_detailed
+command	i3blocks/disk/i3blocks.conf	/^command=$SCRIPT_DIR\/disk$/;"	k	section:disk
+command	i3blocks/docker/i3blocks.conf	/^command=$SCRIPT_DIR\/docker$/;"	k	section:docker
+command	i3blocks/dunst/i3blocks.conf	/^command=$SCRIPT_DIR\/dunst$/;"	k	section:dunst
+command	i3blocks/essid/i3blocks.conf	/^command=$SCRIPT_DIR\/essid$/;"	k	section:essid
+command	i3blocks/eyedropper/i3block.conf	/^command=$SCRIPT_DIR\/eyedropper$/;"	k	section:eyedropper
+command	i3blocks/github/i3blocks.conf	/^command=$SCRIPT_DIR\/github\/github$/;"	k	section:github
+command	i3blocks/go/i3blocks.conf	/^command=$SCRIPT_DIR\/go$/;"	k	section:go
+command	i3blocks/iface/i3blocks.conf	/^command=$SCRIPT_DIR\/iface$/;"	k	section:iface
+command	i3blocks/key_light/i3blocks.conf	/^command=$SCRIPT_DIR\/key_light\/key_light$/;"	k	section:key_light
+command	i3blocks/kubernetes/i3blocks.conf	/^command=$SCRIPT_DIR\/kubernetes$/;"	k	section:kubernetes
+command	i3blocks/load_average/i3blocks.conf	/^command=$SCRIPT_DIR\/load_average$/;"	k	section:load_average
+command	i3blocks/memory/i3blocks.conf	/^command=$SCRIPT_DIR\/memory$/;"	k	section:memory
+command	i3blocks/miccontrol/i3blocks.conf	/^command=$SCRIPT_DIR\/miccontrol$/;"	k	section:miccontrol
+command	i3blocks/optimus-manager/i3blocks.conf	/^command=$SCRIPT_DIR\/optimus-manager$/;"	k	section:optimus-manager
+command	i3blocks/purpleair/i3blocks.conf	/^command=$SCRIPT_DIR\/purpleair$/;"	k	section:purpleair
+command	i3blocks/shutdown_menu/i3blocks.conf	/^command=$SCRIPT_DIR\/shutdown_menu$/;"	k	section:shutdown_menu
+command	i3blocks/speedtest/i3blocks.conf	/^command=$SCRIPT_DIR\/speedtest$/;"	k	section:speedtest
+command	i3blocks/ssid/i3blocks.conf	/^command=$SCRIPT_DIR\/ssid$/;"	k	section:ssid
+command	i3blocks/systemctl/i3blocks.conf	/^command=$SCRIPT_DIR\/systemctl$/;"	k	section:systemctl
+command	i3blocks/tahoe-lafs/i3blocks.conf	/^command=$SCRIPT_DIR\/tahoe-lafs$/;"	k	section:tahoe-lafs
+command	i3blocks/taskw/i3blocks.conf	/^command=taskw$/;"	k	section:taskw
+command	i3blocks/time/i3blocks.conf	/^command=$SCRIPT_DIR\/time$/;"	k	section:time
+command	i3blocks/toggle/i3blocks.conf	/^command=$SCRIPT_DIR\/toggle$/;"	k	section:toggle
+command	i3blocks/usb/i3blocks.conf	/^command=$SCRIPT_DIR\/usb$/;"	k	section:usb
+command	i3blocks/user/i3blocks.conf	/^command=lslogins | grep $USER | awk '{print $5,$NF}'$/;"	k	section:user
+command	i3blocks/volume-pipewire/i3blocks.conf	/^command=$SCRIPT_DIR\/volume-pipewire$/;"	k	section:volume-pipewire
+command	i3blocks/volume-pulseaudio/i3blocks.conf	/^command=$SCRIPT_DIR\/volume-pulseaudio$/;"	k	section:volume-pulseaudio
+command	i3blocks/volume/i3blocks.conf	/^command=$SCRIPT_DIR\/volume$/;"	k	section:volume
+command	i3blocks/weather_NOAA/i3blocks.conf	/^command=$SCRIPT_DIR\/weather_NOAA\/weather_NOAA$/;"	k	section:weather_NOAA
+command	i3blocks/wifi/i3blocks.conf	/^command=$SCRIPT_DIR\/wifi$/;"	k	section:wifi
+command	i3blocks/ytdl-mpv/i3blocks.conf	/^command=$SCRIPT_DIR\/ytdl-mpv                                                    $/;"	k	section:ytdl-mpv
+command_exists	i3blocks/shutdown_menu/shutdown_menu	/^function command_exists() {$/;"	f
+commasplitstatus	i3blocks/battery2/battery2	/^            commasplitstatus = battery.split(", ")$/;"	v
+commasplitstatus	i3blocks/battery2/battery2	/^    commasplitstatus = commasplitstatus_batteries[0]$/;"	v
+commasplitstatus_batteries	i3blocks/battery2/battery2	/^    commasplitstatus_batteries=[]$/;"	v
+comment	Samba/smb.conf	/^comment = Matteo's Samba Share$/;"	k	section:matteos-sambashare
+compute_color	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^compute_color() {$/;"	f
+config	i3blocks/battery2/battery2	/^config = dict(os.environ)$/;"	v
+config	i3blocks/email/email	/^config = {$/;"	v
+convertCelciusTo	i3blocks/metars/metars	/^    def convertCelciusTo(self, temp):$/;"	m	class:Metars
+cpu_usage	i3blocks/cpu_usage/README.md	/^# cpu_usage$/;"	c
+cpu_usage	i3blocks/cpu_usage/i3blocks.conf	/^[cpu_usage]$/;"	s
+cpu_usage2	i3blocks/cpu_usage2/README.md	/^# cpu_usage2$/;"	c
+cpu_usage2	i3blocks/cpu_usage2/i3blocks.conf	/^[cpu_usage2]$/;"	s
+cpu_util_detailed	i3blocks/cpu_util_detailed/README.md	/^# cpu_util_detailed$/;"	c
+cpu_util_detailed	i3blocks/cpu_util_detailed/i3blocks.conf	/^[cpu_util_detailed]$/;"	s
+create mask	Samba/smb.conf	/^create mask = 0700$/;"	k	section:matteos-sambashare
+createAngleWindDirection	i3blocks/metars/metars	/^    def createAngleWindDirection(self, obs):$/;"	m	class:Metars
+createIconWindDirection	i3blocks/metars/metars	/^    def createIconWindDirection(self, obs):$/;"	m	class:Metars
+createTextWindDirection	i3blocks/metars/metars	/^    def createTextWindDirection(self, obs):$/;"	m	class:Metars
+createWeatherString	i3blocks/metars/metars	/^    def createWeatherString(self, obs):$/;"	m	class:Metars
+createWindDirection	i3blocks/metars/metars	/^    def createWindDirection(self, obs):$/;"	m	class:Metars
+create_argparse	i3blocks/arch-update/arch-update	/^def create_argparse():$/;"	f
+create_argparse	i3blocks/arch-update/arch-update.py	/^def create_argparse():$/;"	f
+current_border_width	i3/.i3/workspace-1-startup.json	/^  "current_border_width": 3,$/;"	n
+current_border_width	i3/.i3/workspace-2-startup.json	/^                            "current_border_width": 3,$/;"	n	object:0.nodes.0.nodes.0
+current_border_width	i3/.i3/workspace-2-startup.json	/^                            "current_border_width": 3,$/;"	n	object:0.nodes.0.nodes.1
+current_border_width	i3/.i3/workspace-2-startup.json	/^                    "current_border_width": 3,$/;"	n	object:0.nodes.1
+current_border_width	i3/.i3/workspace-2-startup.json	/^            "current_border_width": 3,$/;"	n	object:nodes.0
+current_border_width	i3/.i3/workspace-2-startup.json	/^            "current_border_width": 3,$/;"	n	object:nodes.1
+cycleReflection	i3blocks/monitor_manager/monitor_manager	/^    def cycleReflection(self, e):$/;"	m	class:MonitorManager
+cycleReflection	i3blocks/monitor_manager/monitor_manager.py	/^    def cycleReflection(self, e):$/;"	m	class:MonitorManager
+cycleRotation	i3blocks/monitor_manager/monitor_manager	/^    def cycleRotation(self, e):$/;"	m	class:MonitorManager
+cycleRotation	i3blocks/monitor_manager/monitor_manager.py	/^    def cycleRotation(self, e):$/;"	m	class:MonitorManager
+debug	i3blocks/brightness/Makefile	/^debug: CFLAGS += -O0 -g3$/;"	t
+debug	i3blocks/brightness/Makefile	/^debug: all$/;"	t
+decode_timew_bytes	i3blocks/taskw/taskw	/^def decode_timew_bytes(in_bytes):$/;"	f
+default_interface	i3blocks/bandwidth3/bandwidth3	/^function default_interface {$/;"	f
+dimmer	i3blocks/dimmer/README.md	/^# dimmer$/;"	c
+directories	i3blocks/brightness/Makefile	/^directories:$/;"	t
+directory	i3blocks/afs/afs	/^directory = os.environ.get('BLOCK_INSTANCE', '~\/afs\/')$/;"	v
+directory	i3blocks/afs/afs	/^directory = os.path.expanduser(directory)$/;"	v
+directory	i3blocks/afs/afs	/^directory = os.path.expandvars(directory)$/;"	v
+directory mask	Samba/smb.conf	/^directory mask = 0700$/;"	k	section:matteos-sambashare
+disk	i3blocks/disk/README.md	/^# disk$/;"	c
+disk	i3blocks/disk/i3blocks.conf	/^[disk]$/;"	s
+disk-io	i3blocks/disk-io/README.md	/^# disk-io$/;"	c
+display	i3blocks/bandwidth2/bandwidth2.c	/^void display(int const unit, int const divisor,$/;"	f	typeref:typename:void
+display	i3blocks/cpu_usage2/cpu_usage2.c	/^void display(const char *label, double used,$/;"	f	typeref:typename:void
+displayResult	i3blocks/airly/airly.py	/^    def displayResult(self,jsonData=None):$/;"	m	class:AirlyApiClient
+display_wifi_name	i3blocks/iface/i3blocks.conf	/^display_wifi_name=0$/;"	k	section:iface
+do-install	i3blocks/Makefile	/^do-install: installdirs $(_BLOCKS)$/;"	t
+doHandleApply	i3blocks/monitor_manager/monitor_manager	/^    def doHandleApply(self):$/;"	m	class:MonitorManager
+doHandleApply	i3blocks/monitor_manager/monitor_manager.py	/^    def doHandleApply(self):$/;"	m	class:MonitorManager
+docker	i3blocks/docker/README.md	/^# docker$/;"	c
+docker	i3blocks/docker/i3blocks.conf	/^[docker]$/;"	s
+dockerfile	Neovim/nvim/coc-settings.json	/^  "dockerfile": {$/;"	o
+dunst	i3blocks/dunst/README.md	/^# dunst$/;"	c
+dunst	i3blocks/dunst/i3blocks.conf	/^[dunst]$/;"	s
+efm	Neovim/nvim/coc-settings.json	/^  "efm": {$/;"	o
+email	i3blocks/email/README.md	/^# email$/;"	c
+error	i3blocks/colorpicker/colorpicker	/^error() {$/;"	f
+error	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^error() {$/;"	f
+essid	i3blocks/essid/README.md	/^# essid$/;"	c
+essid	i3blocks/essid/i3blocks.conf	/^[essid]$/;"	s
+executeXrandrCommand	i3blocks/monitor_manager/monitor_manager	/^    def executeXrandrCommand(self, command):$/;"	m	class:MonitorManager
+executeXrandrCommand	i3blocks/monitor_manager/monitor_manager.py	/^    def executeXrandrCommand(self, command):$/;"	m	class:MonitorManager
+existsPrimary	i3blocks/monitor_manager/monitor_manager	/^    def existsPrimary(self):$/;"	m	class:MonitorManager
+existsPrimary	i3blocks/monitor_manager/monitor_manager.py	/^    def existsPrimary(self):$/;"	m	class:MonitorManager
+export_pending	i3blocks/taskw/taskw	/^def export_pending():$/;"	f
+export_timew_description	i3blocks/taskw/taskw	/^def export_timew_description():$/;"	f
+extract	i3blocks/metars/metars	/^    def extract(self):$/;"	m	class:MetarsSettingsEnvironment
+extractAndUnpack	i3blocks/metars/metars	/^    def extractAndUnpack(self, settings):$/;"	m	class:MetarsSettingsEnvironment
+extractObservations	i3blocks/metars/metars	/^    def extractObservations(self, obs):$/;"	m	class:Metars
+extract_time	i3blocks/taskw/taskw	/^def extract_time(delimiter, input_string):$/;"	f
+eyedropper	i3blocks/eyedropper/i3block.conf	/^[eyedropper]$/;"	s
+fastIgnore	i3blocks/usb/usb	/^def fastIgnore(path):$/;"	f
+filetypes	Neovim/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	a	object:clangd
+filetypes	Neovim/nvim/coc-settings.json	/^    "filetypes": ["cmake"],$/;"	a	object:cmake
+filetypes	Neovim/nvim/coc-settings.json	/^    "filetypes": ["dockerfile"],$/;"	a	object:dockerfile
+filetypes	Neovim/nvim/coc-settings.json	/^    "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	a	object:latex
+filetypes	Neovim/nvim/coc-settings.json	/^    "filetypes": ["vim", "eruby", "markdown"]$/;"	a	object:efm
+floating	i3/.i3/workspace-1-startup.json	/^  "floating": "auto_off",$/;"	s
+floating	i3/.i3/workspace-2-startup.json	/^                            "floating": "auto_off",$/;"	s	object:0.nodes.0.nodes.0
+floating	i3/.i3/workspace-2-startup.json	/^                            "floating": "auto_off",$/;"	s	object:0.nodes.0.nodes.1
+floating	i3/.i3/workspace-2-startup.json	/^                    "floating": "auto_off",$/;"	s	object:0.nodes.0
+floating	i3/.i3/workspace-2-startup.json	/^                    "floating": "auto_off",$/;"	s	object:0.nodes.1
+floating	i3/.i3/workspace-2-startup.json	/^            "floating": "auto_off",$/;"	s	object:0
+floating	i3/.i3/workspace-2-startup.json	/^            "floating": "auto_off",$/;"	s	object:nodes.0
+floating	i3/.i3/workspace-2-startup.json	/^            "floating": "auto_off",$/;"	s	object:nodes.1
+floating	i3/.i3/workspace-2-startup.json	/^    "floating": "auto_off",$/;"	s
+font	i3blocks/monitor_manager/monitor_manager	/^import tkinter.font as font$/;"	I	nameref:module:tkinter.font
+font	i3blocks/monitor_manager/monitor_manager.py	/^import tkinter.font as font$/;"	I	nameref:module:tkinter.font
+form	i3blocks/battery2/battery2	/^    form =  '<span color="{}">{}%<\/span>'$/;"	v
+format	i3blocks/dunst/i3blocks.conf	/^format=json$/;"	k	section:dunst
+format	i3blocks/github/i3blocks.conf	/^format=json$/;"	k	section:github
+format	i3blocks/sway-focusedwindow/sway-focusedwindow	/^format() {$/;"	f
+format	i3blocks/volume/volume	/^format() {$/;"	f
+fs_output	i3blocks/afs/afs	/^fs_output = fs_output.split('\\n')[1]$/;"	v
+fs_output	i3blocks/afs/afs	/^fs_output = sp.check_output(['fs', 'lq', '-human', directory],$/;"	v
+full_text	i3blocks/eyedropper/i3block.conf	/^full_text=<span foreground="#ffffff"><\/span>$/;"	k	section:eyedropper
+full_text	i3blocks/key_light/i3blocks.conf	/^full_text=⌨$/;"	k	section:key_light
+full_text	i3blocks/shutdown_menu/i3blocks.conf	/^full_text=Quit$/;"	k	section:shutdown_menu
+fulltext	i3blocks/battery2/battery2	/^        fulltext = FA_BATTERY + " "$/;"	v
+fulltext	i3blocks/battery2/battery2	/^        fulltext = FA_PLUG + " "$/;"	v
+fulltext	i3blocks/battery2/battery2	/^        fulltext = FA_QUESTION + " " + FA_BATTERY + " "$/;"	v
+fulltext	i3blocks/battery2/battery2	/^    fulltext = "<span color='{}'><span font='FontAwesome'>\\uf00d \\uf240<\/span><\/span>".forma/;"	v
+func	i3blocks/monitor_manager/monitor_manager	/^    def func():$/;"	f	function:setLabelAndOutputModeFunc	file:
+func	i3blocks/monitor_manager/monitor_manager	/^    def func():$/;"	f	function:setLabelAndSameAsFunc	file:
+func	i3blocks/monitor_manager/monitor_manager.py	/^    def func():$/;"	f	function:setLabelAndOutputModeFunc	file:
+func	i3blocks/monitor_manager/monitor_manager.py	/^    def func():$/;"	f	function:setLabelAndSameAsFunc	file:
+g:UltiSnipsEditSplit	Neovim/nvim/init.vim	/^let g:UltiSnipsEditSplit="vertical"$/;"	v
+g:UltiSnipsExpandTrigger	Neovim/nvim/init.vim	/^let g:UltiSnipsExpandTrigger = "<nop>"$/;"	v
+g:UltiSnipsListSnippets	Neovim/nvim/init.vim	/^let g:UltiSnipsListSnippets="<C-l>"$/;"	v
+g:UltiSnipsSnippetDirectories	Neovim/nvim/init.vim	/^let g:UltiSnipsSnippetDirectories=[$HOME.'\/.config\/nvim\/UltiSnips']$/;"	v
+g:clipboard	Neovim/nvim/init.vim	/^let g:clipboard = {$/;"	v
+g:everforest_better_performance	Neovim/nvim/init.vim	/^let g:everforest_better_performance = 1$/;"	v
+g:everforest_cursor	Neovim/nvim/init.vim	/^let g:everforest_cursor = 'auto'$/;"	v
+g:everforest_diagnostic_line_highlight	Neovim/nvim/init.vim	/^let g:everforest_diagnostic_line_highlight = 0$/;"	v
+g:everforest_diagnostic_text_highlight	Neovim/nvim/init.vim	/^let g:everforest_diagnostic_text_highlight = 1$/;"	v
+g:everforest_enable_italic	Neovim/nvim/init.vim	/^let g:everforest_enable_italic = 1$/;"	v
+g:everforest_show_eob	Neovim/nvim/init.vim	/^let g:everforest_show_eob = 1$/;"	v
+g:everforest_transparent_background	Neovim/nvim/init.vim	/^let g:everforest_transparent_background = 1$/;"	v
+g:everforest_ui_contrast	Neovim/nvim/init.vim	/^let g:everforest_ui_contrast = 'high'$/;"	v
+g:formatdef_latexindent	Neovim/nvim/init.vim	/^let g:formatdef_latexindent = '"latexindent -"'$/;"	v
+g:livepreview_engine	Neovim/nvim/init.vim	/^let g:livepreview_engine = 'pdflatex' . ''$/;"	v
+g:livepreview_previewer	Neovim/nvim/init.vim	/^let g:livepreview_previewer = 'evince'$/;"	v
+g:livepreview_texinputs	Neovim/nvim/init.vim	/^let g:livepreview_texinputs = '.\/out\/'$/;"	v
+g:livepreview_use_biber	Neovim/nvim/init.vim	/^let g:livepreview_use_biber = 1$/;"	v
+g:mkdp_markdown_css	Neovim/nvim/init.vim	/^let g:mkdp_markdown_css='~\/.vim\/ressources\/github-markdown.css'$/;"	v
+g:mkdp_refresh_slow	Neovim/nvim/init.vim	/^let g:mkdp_refresh_slow=1$/;"	v
+g:myLang	Neovim/nvim/init.vim	/^  let g:myLang = g:myLang + 1$/;"	v
+g:myLang	Neovim/nvim/init.vim	/^let g:myLang = 0$/;"	v
+g:myLangList	Neovim/nvim/init.vim	/^let g:myLangList = [ "nospell", "de_de", "en_us" ]$/;"	v
+g:ulti_expand_or_jump_res	Neovim/nvim/init.vim	/^let g:ulti_expand_or_jump_res = 0$/;"	v
+g:vim_markdown_math	Neovim/nvim/init.vim	/^let g:vim_markdown_math = 1$/;"	v
+gconfig	i3blocks/airly/airly.py	/^gconfig = {$/;"	v
+gd	Neovim/nvim/init.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+geometry	i3/.i3/workspace-1-startup.json	/^  "geometry": {$/;"	o
+geometry	i3/.i3/workspace-2-startup.json	/^                            "geometry": {$/;"	o	object:0.nodes.0.nodes.0
+geometry	i3/.i3/workspace-2-startup.json	/^                            "geometry": {$/;"	o	object:0.nodes.0.nodes.1
+geometry	i3/.i3/workspace-2-startup.json	/^                    "geometry": {$/;"	o	object:0.nodes.1
+geometry	i3/.i3/workspace-2-startup.json	/^            "geometry": {$/;"	o	object:nodes.0
+geometry	i3/.i3/workspace-2-startup.json	/^            "geometry": {$/;"	o	object:nodes.1
+getAirQualityIndex	i3blocks/airly/airly.py	/^    def getAirQualityIndex(self, caqiMeasurement=None):$/;"	m	class:AirlyApiClient
+getAttributeMaps	i3blocks/usb/usb	/^def getAttributeMaps(paths):$/;"	f
+getCaqiMeasurement	i3blocks/airly/airly.py	/^    def getCaqiMeasurement(self, measurement=None):$/;"	m	class:AirlyApiClient
+getChillMetric	i3blocks/metars/metars	/^    def getChillMetric(self, temp, velocity):  # temp = C, velocity = km\/h$/;"	m	class:Metars
+getColor	i3blocks/airly/airly.py	/^    def getColor(self, measurement=None):$/;"	m	class:AirlyApiClient
+getCurrentMeasurement	i3blocks/airly/airly.py	/^    def getCurrentMeasurement(self, measurement=None):$/;"	m	class:AirlyApiClient
+getDeviceType	i3blocks/usb/usb	/^def getDeviceType(path):$/;"	f
+getDiskWithNoPartitionsOutput	i3blocks/usb/usb	/^def getDiskWithNoPartitionsOutput(path):$/;"	f
+getDuplicableOutputsFor	i3blocks/monitor_manager/monitor_manager	/^    def getDuplicableOutputsFor(self, output):$/;"	m	class:MonitorManager
+getDuplicableOutputsFor	i3blocks/monitor_manager/monitor_manager.py	/^    def getDuplicableOutputsFor(self, output):$/;"	m	class:MonitorManager
+getFSLabel	i3blocks/usb/usb	/^def getFSLabel(path):$/;"	f
+getFSOptions	i3blocks/usb/usb	/^def getFSOptions(path):$/;"	f
+getFSType	i3blocks/usb/usb	/^def getFSType(path):$/;"	f
+getKernelName	i3blocks/usb/usb	/^def getKernelName(path):$/;"	f
+getLeafDevicePaths	i3blocks/usb/usb	/^def getLeafDevicePaths():$/;"	f
+getLockedCryptOutput	i3blocks/usb/usb	/^def getLockedCryptOutput(path):$/;"	f
+getMeasurement	i3blocks/airly/airly.py	/^    def getMeasurement(self, config=None):$/;"	m	class:AirlyApiClient
+getMountPoint	i3blocks/usb/usb	/^def getMountPoint(path):$/;"	f
+getOutput	i3blocks/usb/usb	/^def getOutput(path):$/;"	f
+getParentKernelName	i3blocks/usb/usb	/^def getParentKernelName(path):$/;"	f
+getSpaceAvailable	i3blocks/usb/usb	/^def getSpaceAvailable(path):$/;"	f
+getStationData	i3blocks/metars/metars	/^    def getStationData(self, station):$/;"	m	class:Metars
+getSwapOutput	i3blocks/usb/usb	/^def getSwapOutput(path):$/;"	f
+getUnencryptedPartitionOutput	i3blocks/usb/usb	/^def getUnencryptedPartitionOutput(path):$/;"	f
+getUnlockedCryptOutput	i3blocks/usb/usb	/^def getUnlockedCryptOutput(path):$/;"	f
+getUserConfirmationIfDangerousConfiguration	i3blocks/monitor_manager/monitor_manager	/^    def getUserConfirmationIfDangerousConfiguration(self):$/;"	m	class:MonitorManager
+getUserConfirmationIfDangerousConfiguration	i3blocks/monitor_manager/monitor_manager.py	/^    def getUserConfirmationIfDangerousConfiguration(self):$/;"	m	class:MonitorManager
+get_PASS	i3blocks/email/email	/^def get_PASS():$/;"	f
+get_args	i3blocks/email/email	/^def get_args():$/;"	f
+get_aur_updates	i3blocks/arch-update/arch-update	/^def get_aur_updates():$/;"	f
+get_aur_updates	i3blocks/arch-update/arch-update.py	/^def get_aur_updates():$/;"	f
+get_brightness	i3blocks/key_light/key_light	/^function get_brightness {$/;"	f
+get_configuration	i3blocks/battery-poly/battery-poly	/^def get_configuration() -> Configuration:$/;"	f	typeref:typename:Configuration
+get_current_charge	i3blocks/battery-poly/battery-poly	/^def get_current_charge(bat_name: str) -> int:$/;"	f	typeref:typename:int
+get_current_date	i3blocks/rofi-calendar/rofi-calendar	/^get_current_date() {$/;"	f
+get_default_tz	i3blocks/time/time	/^sub get_default_tz {$/;"	s
+get_disk_stats	i3blocks/disk_usage/disk_usage	/^def get_disk_stats(mp):$/;"	f
+get_float_value_from_file	i3blocks/brightness/main.c	/^get_float_value_from_file(const char *path,$/;"	f	typeref:typename:bool
+get_instance	i3blocks/disk_usage/disk_usage	/^def get_instance():$/;"	f
+get_max_charge	i3blocks/battery-poly/battery-poly	/^def get_max_charge(bat_name: str) -> int:$/;"	f	typeref:typename:int
+get_notifications	i3blocks/github/github	/^def get_notifications():$/;"	f
+get_power_draw	i3blocks/battery-poly/battery-poly	/^def get_power_draw(bat_name: str) -> int:$/;"	f	typeref:typename:int
+get_status	i3blocks/battery-poly/battery-poly	/^def get_status(bat_name: str) -> Status:$/;"	f	typeref:typename:Status
+get_taskw_info	i3blocks/taskw/taskw	/^def get_taskw_info(taskw_filter=main_filter):$/;"	f
+get_taskw_json	i3blocks/taskw/taskw	/^def get_taskw_json(filter_string):$/;"	f
+get_timew_active	i3blocks/taskw/taskw	/^def get_timew_active():$/;"	f
+get_timew_bytes	i3blocks/taskw/taskw	/^def get_timew_bytes(dom_string):$/;"	f
+get_timew_string	i3blocks/taskw/taskw	/^def get_timew_string(dom_string):$/;"	f
+get_tz	i3blocks/time/time	/^sub get_tz {$/;"	s
+get_updates	i3blocks/arch-update/arch-update	/^def get_updates():$/;"	f
+get_updates	i3blocks/arch-update/arch-update.py	/^def get_updates():$/;"	f
+get_usage	i3blocks/cpu_usage2/cpu_usage2.c	/^ulli get_usage(ulli *used_jiffies)$/;"	f	typeref:typename:ulli
+get_values	i3blocks/bandwidth2/bandwidth2.c	/^void get_values(char **const ifaces, int num_ifaces, time_t * const s, ulli * const received, ul/;"	f	typeref:typename:void
+gi	Neovim/nvim/init.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+github	i3blocks/github/i3blocks.conf	/^[github]$/;"	s
+global	Samba/smb.conf	/^[global]$/;"	s
+go	i3blocks/go/README.md	/^# go$/;"	c
+go	i3blocks/go/i3blocks.conf	/^[go]$/;"	s
+gpu-load	i3blocks/gpu-load/README.md	/^# gpu-load$/;"	c
+gr	Neovim/nvim/init.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gridRow	i3blocks/monitor_manager/monitor_manager	/^    def gridRow(self, row, widgets):$/;"	m	class:MonitorManager
+gridRow	i3blocks/monitor_manager/monitor_manager.py	/^    def gridRow(self, row, widgets):$/;"	m	class:MonitorManager
+guest ok	Samba/smb.conf	/^guest ok = no$/;"	k	section:matteos-sambashare
+gy	Neovim/nvim/init.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+handleApply	i3blocks/monitor_manager/monitor_manager	/^    def handleApply(self, e=None):$/;"	m	class:MonitorManager
+handleApply	i3blocks/monitor_manager/monitor_manager.py	/^    def handleApply(self, e=None):$/;"	m	class:MonitorManager
+handleArandr	i3blocks/monitor_manager/monitor_manager	/^    def handleArandr(self, e=None):$/;"	m	class:MonitorManager
+handleArandr	i3blocks/monitor_manager/monitor_manager.py	/^    def handleArandr(self, e=None):$/;"	m	class:MonitorManager
+handleCancel	i3blocks/monitor_manager/monitor_manager	/^    def handleCancel(self, e=None):$/;"	m	class:MonitorManager
+handleCancel	i3blocks/monitor_manager/monitor_manager.py	/^    def handleCancel(self, e=None):$/;"	m	class:MonitorManager
+handleDown	i3blocks/monitor_manager/monitor_manager	/^    def handleDown(self, e):$/;"	m	class:MonitorManager
+handleDown	i3blocks/monitor_manager/monitor_manager.py	/^    def handleDown(self, e):$/;"	m	class:MonitorManager
+handleFocusOut	i3blocks/monitor_manager/monitor_manager	/^    def handleFocusOut(self, event):$/;"	m	class:MonitorManager
+handleFocusOut	i3blocks/monitor_manager/monitor_manager.py	/^    def handleFocusOut(self, event):$/;"	m	class:MonitorManager
+handleUp	i3blocks/monitor_manager/monitor_manager	/^    def handleUp(self, e):$/;"	m	class:MonitorManager
+handleUp	i3blocks/monitor_manager/monitor_manager.py	/^    def handleUp(self, e):$/;"	m	class:MonitorManager
+hardRefreshList	i3blocks/monitor_manager/monitor_manager	/^    def hardRefreshList(self, e=None):$/;"	m	class:MonitorManager
+hardRefreshList	i3blocks/monitor_manager/monitor_manager.py	/^    def hardRefreshList(self, e=None):$/;"	m	class:MonitorManager
+hash2hex	i3blocks/colorpicker/colorpicker	/^hash2hex() {$/;"	f
+height	i3/.i3/workspace-1-startup.json	/^    "height": 2092,$/;"	n	object:geometry
+height	i3/.i3/workspace-2-startup.json	/^                                "height": 2093,$/;"	n	object:0.nodes.0.nodes.1.geometry
+height	i3/.i3/workspace-2-startup.json	/^                                "height": 2125,$/;"	n	object:0.nodes.0.nodes.0.geometry
+height	i3/.i3/workspace-2-startup.json	/^                        "height": 600,$/;"	n	object:0.nodes.1.geometry
+height	i3/.i3/workspace-2-startup.json	/^                "height": 2093,$/;"	n	object:nodes.0.geometry
+height	i3/.i3/workspace-2-startup.json	/^                "height": 600,$/;"	n	object:nodes.1.geometry
+help	i3blocks/cpu_usage/cpu_usage	/^sub help {$/;"	s
+help	i3blocks/gpu-load/gpu-load	/^sub help {$/;"	s
+help	i3blocks/keyindicator/keyindicator	/^sub help {$/;"	s
+help	i3blocks/openvpn/openvpn	/^sub help {$/;"	s
+help	i3blocks/temperature/temperature	/^sub help {$/;"	s
+help	i3blocks/weather_NOAA/weather_NOAA	/^sub help {$/;"	s
+i3 Focused window	i3blocks/i3-focusedwindow/README.md	/^# i3 Focused window$/;"	c
+i3blocks config example:	i3blocks/cpu_util_detailed/README.md	/^## i3blocks config example:$/;"	s	chapter:cpu_util_detailed
+i3blocks config example:	i3blocks/xkb_layout/README.md	/^# i3blocks config example:$/;"	c
+i3blocks config relevant to blocklet(s)	i3blocks/ISSUE_TEMPLATE.md	/^### i3blocks config relevant to blocklet(s)$/;"	S
+i3blocks configuration	i3blocks/metars/README.md	/^# i3blocks configuration$/;"	c
+ic	Neovim/nvim/init.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
+ic	Neovim/nvim/init.vim	/^xmap ic <Plug>(coc-classobj-i)$/;"	m
+if	Neovim/nvim/init.vim	/^omap if <Plug>(coc-funcobj-i)$/;"	m
+if	Neovim/nvim/init.vim	/^xmap if <Plug>(coc-funcobj-i)$/;"	m
+iface	i3blocks/iface/README.md	/^# iface$/;"	c
+iface	i3blocks/iface/i3blocks.conf	/^[iface]$/;"	s
+ignore	i3blocks/usb/usb	/^def ignore(path, udev_attributes_dict):$/;"	f
+increment_month	i3blocks/rofi-calendar/rofi-calendar	/^increment_month() {$/;"	f
+info	i3blocks/arch-update/arch-update	/^      info = str(update_count) + ' update available'$/;"	v
+info	i3blocks/arch-update/arch-update.py	/^      info = str(update_count) + ' update available'$/;"	v
+initializationOptions	Neovim/nvim/coc-settings.json	/^    "initializationOptions": {$/;"	o	object:cmake
+install	i3blocks/Makefile	/^install: all do-install$/;"	t
+installdirs	i3blocks/Makefile	/^installdirs: $/;"	t
+installed_version	i3blocks/aur-update/aur-update	/^installed_version = {}$/;"	v
+instance	i3/.i3/workspace-2-startup.json	/^                    "instance": "Mail"$/;"	s	object:nodes.0.swallows.0
+instance	i3blocks/eyedropper/i3block.conf	/^instance=#ffffff$/;"	k	section:eyedropper
+instance	i3blocks/systemctl/i3blocks.conf	/^instance=docker$/;"	k	section:systemctl
+instance	i3blocks/systemctl/i3blocks.conf	/^instance=postgresql$/;"	k	section:systemctl
+instance	i3blocks/systemctl/i3blocks.conf	/^instance=redis$/;"	k	section:systemctl
+instance	i3blocks/tahoe-lafs/i3blocks.conf	/^instance=localhost:3456$/;"	k	section:tahoe-lafs
+instant_prompt_example	Zsh/.p10k.zsh	/^  function instant_prompt_example() {$/;"	f
+interval	i3blocks/apt-upgrades/i3blocks.conf	/^interval=once$/;"	k	section:apt-upgrades
+interval	i3blocks/bandwidth/i3blocks.conf	/^interval=5$/;"	k	section:bandwidth
+interval	i3blocks/bandwidth3/i3blocks.conf	/^interval=persist$/;"	k	section:bandwidth3
+interval	i3blocks/battery/i3blocks.conf	/^interval=30$/;"	k	section:battery
+interval	i3blocks/battery2/i3blocks.conf	/^interval=30$/;"	k	section:battery2
+interval	i3blocks/cpu_usage/i3blocks.conf	/^interval=10$/;"	k	section:cpu_usage
+interval	i3blocks/cpu_usage2/i3blocks.conf	/^interval=persist$/;"	k	section:cpu_usage2
+interval	i3blocks/cpu_util_detailed/i3blocks.conf	/^interval=-2$/;"	k	section:cpu_util_detailed
+interval	i3blocks/disk/i3blocks.conf	/^interval=30$/;"	k	section:disk
+interval	i3blocks/docker/i3blocks.conf	/^interval=10$/;"	k	section:docker
+interval	i3blocks/dunst/i3blocks.conf	/^interval=once$/;"	k	section:dunst
+interval	i3blocks/essid/i3blocks.conf	/^interval=60$/;"	k	section:essid
+interval	i3blocks/github/i3blocks.conf	/^interval=60$/;"	k	section:github
+interval	i3blocks/go/i3blocks.conf	/^interval=once$/;"	k	section:go
+interval	i3blocks/iface/i3blocks.conf	/^interval=10$/;"	k	section:iface
+interval	i3blocks/kubernetes/i3blocks.conf	/^interval=10$/;"	k	section:kubernetes
+interval	i3blocks/load_average/i3blocks.conf	/^interval=10$/;"	k	section:load_average
+interval	i3blocks/memory/i3blocks.conf	/^interval=30$/;"	k	section:memory
+interval	i3blocks/miccontrol/i3blocks.conf	/^interval=10$/;"	k	section:miccontrol
+interval	i3blocks/nm-vpn/i3blocks.conf	/^interval=5$/;"	k	section:nm-vpn
+interval	i3blocks/optimus-manager/i3blocks.conf	/^interval=30$/;"	k	section:optimus-manager
+interval	i3blocks/purpleair/i3blocks.conf	/^interval=60$/;"	k	section:purpleair
+interval	i3blocks/speedtest/i3blocks.conf	/^interval=300$/;"	k	section:speedtest
+interval	i3blocks/ssid/i3blocks.conf	/^interval=60$/;"	k	section:ssid
+interval	i3blocks/systemctl/i3blocks.conf	/^interval=once$/;"	k	section:systemctl
+interval	i3blocks/tahoe-lafs/i3blocks.conf	/^interval=3600$/;"	k	section:tahoe-lafs
+interval	i3blocks/taskw/i3blocks.conf	/^interval=15$/;"	k	section:taskw
+interval	i3blocks/time/i3blocks.conf	/^interval=1$/;"	k	section:time
+interval	i3blocks/toggle/i3blocks.conf	/^interval=once$/;"	k	section:toggle
+interval	i3blocks/usb/i3blocks.conf	/^interval=10$/;"	k	section:usb
+interval	i3blocks/user/i3blocks.conf	/^interval=once$/;"	k	section:user
+interval	i3blocks/volume-pipewire/i3blocks.conf	/^interval=once$/;"	k	section:volume-pipewire
+interval	i3blocks/volume-pipewire/i3blocks.conf	/^interval=persist$/;"	k	section:volume-pipewire
+interval	i3blocks/volume-pulseaudio/i3blocks.conf	/^interval=once$/;"	k	section:volume-pulseaudio
+interval	i3blocks/volume-pulseaudio/i3blocks.conf	/^interval=persist$/;"	k	section:volume-pulseaudio
+interval	i3blocks/volume/i3blocks.conf	/^interval=once$/;"	k	section:volume
+interval	i3blocks/weather_NOAA/i3blocks.conf	/^interval=600$/;"	k	section:weather_NOAA
+interval	i3blocks/wifi/i3blocks.conf	/^interval=60$/;"	k	section:wifi
+interval	i3blocks/ytdl-mpv/i3blocks.conf	/^interval=once                                                                      $/;"	k	section:ytdl-mpv
+isConfigured	i3blocks/metars/metars	/^    def isConfigured(self):$/;"	m	class:MetarsSettingsEnvironment
+isExtendedPartitionMarker	i3blocks/usb/usb	/^def isExtendedPartitionMarker(path):$/;"	f
+isLUKSPartition	i3blocks/usb/usb	/^def isLUKSPartition(path):$/;"	f
+isReadOnly	i3blocks/usb/usb	/^def isReadOnly(path):$/;"	f
+isSwapPartition	i3blocks/usb/usb	/^def isSwapPartition(path):$/;"	f
+kbdd_layout	i3blocks/kbdd_layout/README.md	/^# kbdd_layout$/;"	c
+key_layout	i3blocks/key_layout/README.md	/^# key_layout$/;"	c
+key_light	i3blocks/key_light/README.md	/^# key_light$/;"	c
+key_light	i3blocks/key_light/i3blocks.conf	/^[key_light]$/;"	s
+keyindicator	i3blocks/keyindicator/README.md	/^# keyindicator$/;"	c
+keyring_loaded	i3blocks/email/email	/^    keyring_loaded = False$/;"	v
+keyring_loaded	i3blocks/email/email	/^    keyring_loaded = True$/;"	v
+kubernetes	i3blocks/kubernetes/README.md	/^# kubernetes$/;"	c
+kubernetes	i3blocks/kubernetes/i3blocks.conf	/^[kubernetes]$/;"	s
+label	i3blocks/afs/afs	/^label = os.environ.get('LABEL', '')$/;"	v
+label	i3blocks/arch-update/arch-update	/^label = os.environ.get("LABEL","")$/;"	v
+label	i3blocks/arch-update/arch-update.py	/^label = os.environ.get("LABEL","")$/;"	v
+label	i3blocks/cpu_util_detailed/i3blocks.conf	/^label=CPU$/;"	k	section:cpu_util_detailed
+label	i3blocks/go/i3blocks.conf	/^label=/;"	k	section:go
+label	i3blocks/memory/i3blocks.conf	/^label=MEM$/;"	k	section:memory
+label	i3blocks/nm-vpn/i3blocks.conf	/^label=VPN: $/;"	k	section:nm-vpn
+label	i3blocks/purpleair/i3blocks.conf	/^label=$/;"	k	section:purpleair
+label	i3blocks/toggle/i3blocks.conf	/^label=$/;"	k	section:toggle
+label	i3blocks/user/i3blocks.conf	/^label=User: $/;"	k	section:user
+label	i3blocks/wifi/i3blocks.conf	/^label=wifi:$/;"	k	section:wifi
+latex	Neovim/nvim/coc-settings.json	/^  "latex": {$/;"	o
+launch_ncdu	i3blocks/disk_usage/disk_usage	/^def launch_ncdu(mp):$/;"	f
+layout	i3/.i3/workspace-2-startup.json	/^                    "layout": "tabbed",$/;"	s	object:0.nodes.0
+layout	i3/.i3/workspace-2-startup.json	/^            "layout": "splitv",$/;"	s	object:0
+layout	i3/.i3/workspace-2-startup.json	/^    "layout": "stacked",$/;"	s
+leaves	i3blocks/usb/usb	/^leaves = (path for path in leaves if not ignore(path, attributeMaps[path]))$/;"	v
+leaves	i3blocks/usb/usb	/^leaves = [path for path in leaves if not fastIgnore(path)]$/;"	v
+leaves	i3blocks/usb/usb	/^leaves = getLeafDevicePaths()$/;"	v
+list_devices	i3blocks/disk-io/disk-io	/^function list_devices {$/;"	f
+list_interfaces	i3blocks/bandwidth3/bandwidth3	/^function list_interfaces {$/;"	f
+load_average	i3blocks/load_average/README.md	/^# load_average$/;"	c
+load_average	i3blocks/load_average/i3blocks.conf	/^[load_average]$/;"	s
+load_bar_chars	i3blocks/memory2/memory2.c	/^void load_bar_chars(utf8_char* bar_chars, uint count, char* characters) {$/;"	f	typeref:typename:void
+main	i3blocks/airly/airly.py	/^def main(argv):$/;"	f
+main	i3blocks/bandwidth2/bandwidth2.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+main	i3blocks/battery-poly/battery-poly	/^def main():$/;"	f
+main	i3blocks/brightness/main.c	/^main(int argc, char *argv[]) {$/;"	f	typeref:typename:int
+main	i3blocks/cpu_usage2/cpu_usage2.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+main	i3blocks/disk_usage/disk_usage	/^def main():$/;"	f
+main	i3blocks/memory2/memory2.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+main	i3blocks/taskw/taskw	/^def main():$/;"	f
+main_filter	i3blocks/taskw/taskw	/^main_filter = _default("TASKW_MAIN_FILTER", default="+ACTIVE", arg_type=str)$/;"	v
+makeAttributeMap	i3blocks/usb/usb	/^def makeAttributeMap(path):$/;"	f
+makeLabelRow	i3blocks/monitor_manager/monitor_manager	/^    def makeLabelRow(self, output, row):$/;"	m	class:MonitorManager
+makeLabelRow	i3blocks/monitor_manager/monitor_manager.py	/^    def makeLabelRow(self, output, row):$/;"	m	class:MonitorManager
+manager	i3blocks/monitor_manager/monitor_manager	/^        manager = MonitorManager(root)$/;"	v
+manager	i3blocks/monitor_manager/monitor_manager.py	/^        manager = MonitorManager(root)$/;"	v
+mapleader	Neovim/nvim/init.vim	/^let mapleader = " "$/;"	v
+marks	i3/.i3/workspace-1-startup.json	/^  "marks": [],$/;"	a
+marks	i3/.i3/workspace-2-startup.json	/^                            "marks": [],$/;"	a	object:0.nodes.0.nodes.0
+marks	i3/.i3/workspace-2-startup.json	/^                            "marks": [],$/;"	a	object:0.nodes.0.nodes.1
+marks	i3/.i3/workspace-2-startup.json	/^                    "marks": [],$/;"	a	object:0.nodes.0
+marks	i3/.i3/workspace-2-startup.json	/^                    "marks": [],$/;"	a	object:0.nodes.1
+marks	i3/.i3/workspace-2-startup.json	/^            "marks": [],$/;"	a	object:0
+marks	i3/.i3/workspace-2-startup.json	/^            "marks": [],$/;"	a	object:nodes.0
+marks	i3/.i3/workspace-2-startup.json	/^            "marks": [],$/;"	a	object:nodes.1
+marks	i3/.i3/workspace-2-startup.json	/^    "marks": [],$/;"	a
+markup	i3blocks/bandwidth3/i3blocks.conf	/^markup=pango$/;"	k	section:bandwidth3
+markup	i3blocks/battery2/i3blocks.conf	/^markup=pango$/;"	k	section:battery2
+markup	i3blocks/cpu_usage2/i3blocks.conf	/^markup=pango$/;"	k	section:cpu_usage2
+markup	i3blocks/cpu_util_detailed/i3blocks.conf	/^markup=pango$/;"	k	section:cpu_util_detailed
+markup	i3blocks/dunst/i3blocks.conf	/^markup=pango$/;"	k	section:dunst
+markup	i3blocks/eyedropper/i3block.conf	/^markup=pango$/;"	k	section:eyedropper
+markup	i3blocks/github/i3blocks.conf	/^markup=pango$/;"	k	section:github
+markup	i3blocks/systemctl/i3blocks.conf	/^markup=pango$/;"	k	section:systemctl
+markup	i3blocks/usb/i3blocks.conf	/^markup=pango$/;"	k	section:usb
+markup	i3blocks/ytdl-mpv/i3blocks.conf	/^markup=pango                                                                    $/;"	k	section:ytdl-mpv
+matches	i3blocks/arch-update/arch-update	/^    matches = matching_updates(updates, args.watch)$/;"	v
+matches	i3blocks/arch-update/arch-update.py	/^    matches = matching_updates(updates, args.watch)$/;"	v
+matching_updates	i3blocks/arch-update/arch-update	/^def matching_updates(updates, watch_list):$/;"	f
+matching_updates	i3blocks/arch-update/arch-update.py	/^def matching_updates(updates, watch_list):$/;"	f
+matteos-sambashare	Samba/smb.conf	/^[matteos-sambashare]$/;"	s
+maxlen	i3blocks/taskw/taskw	/^maxlen = _default("TASKW_MAX_LENGTH", default=35, arg_type=int)$/;"	v
+mediaplayer	i3blocks/mediaplayer/README.md	/^# mediaplayer$/;"	c
+memory	i3blocks/memory/README.md	/^# memory$/;"	c
+memory	i3blocks/memory/i3blocks.conf	/^[memory]$/;"	s
+memory2	i3blocks/memory2/README.md	/^# memory2$/;"	c
+message	i3blocks/arch-update/arch-update	/^message = "{0}<span color='{1}'>{2}<\/span>"$/;"	v
+message	i3blocks/arch-update/arch-update.py	/^message = "{0}<span color='{1}'>{2}<\/span>"$/;"	v
+metars	i3blocks/metars/metars	/^    metars = Metars(settings)$/;"	v
+metarurl	i3blocks/metars/metars	/^    metarurl = 'https:\/\/tgftp.nws.noaa.gov\/data\/observations\/metar\/stations\/{}.TXT'$/;"	v	class:Metars
+miccontrol	i3blocks/miccontrol/README.md	/^# miccontrol$/;"	c
+miccontrol	i3blocks/miccontrol/i3blocks.conf	/^[miccontrol]$/;"	s
+modestr	i3blocks/monitor_manager/monitor_manager	/^    def modestr(mode):$/;"	m	class:Output
+modestr	i3blocks/monitor_manager/monitor_manager.py	/^    def modestr(mode):$/;"	m	class:Output
+monitor_manager	i3blocks/monitor_manager/README.md	/^# monitor_manager$/;"	c
+moveToMouse	i3blocks/monitor_manager/monitor_manager	/^    def moveToMouse(self):$/;"	m	class:MonitorManager
+moveToMouse	i3blocks/monitor_manager/monitor_manager.py	/^    def moveToMouse(self):$/;"	m	class:MonitorManager
+move_sinks_to_new_default	i3blocks/volume-pipewire/volume-pipewire	/^function move_sinks_to_new_default {$/;"	f
+move_sinks_to_new_default	i3blocks/volume-pulseaudio/volume-pulseaudio	/^function move_sinks_to_new_default {$/;"	f
+mpd	i3blocks/mediaplayer/mediaplayer	/^sub mpd {$/;"	s
+mrproper	i3blocks/brightness/Makefile	/^mrproper:$/;"	t
+msg	i3blocks/aur-update/aur-update	/^    msg = "<span color='{0}'>{1} AUR updates<\/span>".format(args.update_color, n_updates)$/;"	v
+msg	i3blocks/aur-update/aur-update	/^    msg = 'AUR up to date'$/;"	v
+msg	i3blocks/aur-update/aur-update	/^msg = {'full_text': msg}$/;"	v
+mute_toggle	i3blocks/dunst/dunst	/^def mute_toggle():$/;"	f
+muted	i3blocks/dunst/dunst	/^def muted():$/;"	f
+my_git_formatter	Zsh/.p10k.zsh	/^  function my_git_formatter() {$/;"	f
+mygroup	Neovim/nvim/init.vim	/^augroup mygroup$/;"	a
+n_updates	i3blocks/aur-update/aur-update	/^n_updates = len(updates)$/;"	v
+name	i3/.i3/workspace-1-startup.json	/^  "name": "workspace-1-startup-firefox",$/;"	s
+name	i3/.i3/workspace-2-startup.json	/^                            "name": "Telegram",$/;"	s	object:0.nodes.0.nodes.0
+name	i3/.i3/workspace-2-startup.json	/^                            "name": "WhatsApp",$/;"	s	object:0.nodes.0.nodes.1
+name	i3/.i3/workspace-2-startup.json	/^                    "name": "Spotify",$/;"	s	object:0.nodes.1
+name	i3/.i3/workspace-2-startup.json	/^            "name": "Mail",$/;"	s	object:nodes.0
+name	i3/.i3/workspace-2-startup.json	/^            "name": "kitty",$/;"	s	object:nodes.1
+newFastIgnore	i3blocks/usb/usb	/^        def newFastIgnore(path):$/;"	f	function:setParsedArgs	file:
+next_mode	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^next_mode() {$/;"	f
+nm-vpn	i3blocks/nm-vpn/README.md	/^# nm-vpn$/;"	c
+nm-vpn	i3blocks/nm-vpn/i3blocks.conf	/^[nm-vpn]$/;"	s
+nodes	i3/.i3/workspace-2-startup.json	/^                    "nodes": [$/;"	a	object:0.nodes.0
+nodes	i3/.i3/workspace-2-startup.json	/^            "nodes": [$/;"	a	object:0
+nodes	i3/.i3/workspace-2-startup.json	/^    "nodes": [$/;"	a
+notask_msg	i3blocks/taskw/taskw	/^notask_msg = _default("TASKW_NOTASK_MSG", default="No Task", arg_type=str)$/;"	v
+numbertoggle	Neovim/nvim/init.vim	/^augroup numbertoggle$/;"	a
+obs	i3blocks/metars/metars	/^    obs = {}$/;"	v	class:Metars
+openvpn	i3blocks/openvpn/README.md	/^# openvpn$/;"	c
+openvpn-systemd	i3blocks/openvpn-systemd/README.md	/^# openvpn-systemd$/;"	c
+optimus-manager	i3blocks/optimus-manager/README.md	/^# optimus-manager$/;"	c
+optimus-manager	i3blocks/optimus-manager/i3blocks.conf	/^[optimus-manager]$/;"	s
+output	i3blocks/afs/afs	/^        output = "<span color='%s' bgcolor='%s'>%s<\/span>" %\\$/;"	v
+output	i3blocks/afs/afs	/^output = '%s%s\/%s (%i%%)' % (label, used, quota, percentage)$/;"	v
+output	i3blocks/usb/usb	/^    output = "<span color='{}'>{}<\/span>".format(INFO_TEXT_COLOR, output)$/;"	v
+output	i3blocks/usb/usb	/^output = SEPARATOR.join(outputs)$/;"	v
+outputs	i3blocks/usb/usb	/^outputs = filter(None, map(getOutput, leaves))$/;"	v
+p	i3blocks/battery2/battery2	/^            p = int(commasplitstatus[1].rstrip("%\\n"))$/;"	v
+packages	i3blocks/aur-update/aur-update	/^packages = sp.check_output(['pacman', '-Qm']).decode('utf8')$/;"	v
+pad_time	i3blocks/taskw/taskw	/^def pad_time(s):$/;"	f
+pangoEscape	i3blocks/usb/usb	/^def pangoEscape(text):$/;"	f
+parseArguments	i3blocks/usb/usb	/^def parseArguments():$/;"	f
+parseConfig	i3blocks/airly/airly.py	/^    def parseConfig(self, instance):$/;"	m	class:AirlyApiClient
+parseInstance	i3blocks/airly/airly.py	/^    def parseInstance(self):$/;"	m	class:AirlyApiClient
+parse_args	i3blocks/disk_usage/disk_usage	/^def parse_args():$/;"	f
+parse_config	i3blocks/email/email	/^def parse_config(INSTANCE):$/;"	f
+parse_ifaces	i3blocks/bandwidth2/bandwidth2.c	/^void parse_ifaces(char *str, char ***ifaces, int *num_ifaces)$/;"	f	typeref:typename:void
+parse_instance	i3blocks/email/email	/^def parse_instance():$/;"	f
+parser	i3blocks/afs/afs	/^parser = argparse.ArgumentParser($/;"	v
+path	Samba/smb.conf	/^path = \/home\/matteo$/;"	k	section:matteos-sambashare
+pause	i3blocks/colorpicker/colorpicker	/^pause() {$/;"	f
+pause	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^pause() {$/;"	f
+pending_tasks_tf	i3blocks/taskw/taskw	/^pending_tasks_tf = _default("TASKW_PENDING_TF", default="f", arg_type=_strbool)$/;"	v
+percent	i3/.i3/workspace-1-startup.json	/^  "percent": 1,$/;"	n
+percent	i3/.i3/workspace-2-startup.json	/^                            "percent": 0.5,$/;"	n	object:0.nodes.0.nodes.0
+percent	i3/.i3/workspace-2-startup.json	/^                            "percent": 0.5,$/;"	n	object:0.nodes.0.nodes.1
+percent	i3/.i3/workspace-2-startup.json	/^                    "percent": 0.5,$/;"	n	object:0.nodes.0
+percent	i3/.i3/workspace-2-startup.json	/^                    "percent": 0.5,$/;"	n	object:0.nodes.1
+percent	i3/.i3/workspace-2-startup.json	/^            "percent": 0.5,$/;"	n	object:nodes.0
+percent	i3/.i3/workspace-2-startup.json	/^            "percent": 0.5,$/;"	n	object:nodes.1
+percent	i3/.i3/workspace-2-startup.json	/^            "percent": 1,$/;"	n	object:0
+percent	i3/.i3/workspace-2-startup.json	/^    "percent": 0.5,$/;"	n
+percentage	i3blocks/afs/afs	/^percentage = int(percentage.split('%')[0])$/;"	v
+percentage	i3blocks/afs/afs	/^quota, used, percentage = fs_output.split()[1:4]$/;"	v
+percentleft	i3blocks/battery2/battery2	/^        percentleft = int(sum(percentleft_batteries)\/len(percentleft_batteries))$/;"	v
+percentleft	i3blocks/battery2/battery2	/^    percentleft = 100$/;"	v
+percentleft_batteries	i3blocks/battery2/battery2	/^    percentleft_batteries=[]$/;"	v
+pickcolor	i3blocks/colorpicker/colorpicker	/^pickcolor() {$/;"	f
+pkg	i3blocks/aur-update/aur-update	/^    pkg, ver = pkg.split()$/;"	v
+play	i3blocks/colorpicker/colorpicker	/^play() {$/;"	f
+play	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^play() {$/;"	f
+play_pause	i3blocks/colorpicker/colorpicker	/^play_pause() {$/;"	f
+play_pause	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^play_pause() {$/;"	f
+playerctl	i3blocks/mediaplayer/mediaplayer	/^sub playerctl {$/;"	s
+populateGrid	i3blocks/monitor_manager/monitor_manager	/^    def populateGrid(self):$/;"	m	class:MonitorManager
+populateGrid	i3blocks/monitor_manager/monitor_manager.py	/^    def populateGrid(self):$/;"	m	class:MonitorManager
+prepare_launcher	i3blocks/shutdown_menu/shutdown_menu	/^function prepare_launcher() {$/;"	f
+prettify_time	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^prettify_time() {$/;"	f
+print_block	i3blocks/volume-pipewire/volume-pipewire	/^function print_block {$/;"	f
+print_block	i3blocks/volume-pulseaudio/volume-pulseaudio	/^function print_block {$/;"	f
+print_brightness_percent	i3blocks/brightness/main.c	/^print_brightness_percent(const char *actual_path,$/;"	f	typeref:typename:void
+print_format	i3blocks/volume-pipewire/volume-pipewire	/^function print_format {$/;"	f
+print_format	i3blocks/volume-pulseaudio/volume-pulseaudio	/^function print_format {$/;"	f
+print_month	i3blocks/rofi-calendar/rofi-calendar	/^print_month() {$/;"	f
+print_output	i3blocks/openvpn/openvpn	/^sub print_output {$/;"	s
+print_status	i3blocks/battery-poly/battery-poly	/^def print_status(config: Configuration):$/;"	f
+printer	i3blocks/email/email	/^def printer(new_count):$/;"	f
+process	i3blocks/sway-focusedwindow/sway-focusedwindow	/^process() {$/;"	f
+processMetars	i3blocks/metars/metars	/^    def processMetars(self, blockSelect):$/;"	m	class:Metars
+prompt_example	Zsh/.p10k.zsh	/^  function prompt_example() {$/;"	f
+purpleair	i3blocks/purpleair/README.md	/^# purpleair$/;"	c
+purpleair	i3blocks/purpleair/i3blocks.conf	/^[purpleair]$/;"	s
+quota	i3blocks/afs/afs	/^quota, used, percentage = fs_output.split()[1:4]$/;"	v
+read only	Samba/smb.conf	/^read only = no$/;"	k	section:matteos-sambashare
+realOutputs	i3blocks/monitor_manager/monitor_manager	/^    def realOutputs():$/;"	m	class:Output
+realOutputs	i3blocks/monitor_manager/monitor_manager.py	/^    def realOutputs():$/;"	m	class:Output
+reflectionSymbol	i3blocks/monitor_manager/monitor_manager	/^    def reflectionSymbol(self, reflection):$/;"	m	class:MonitorManager
+reflectionSymbol	i3blocks/monitor_manager/monitor_manager.py	/^    def reflectionSymbol(self, reflection):$/;"	m	class:MonitorManager
+registerBindings	i3blocks/monitor_manager/monitor_manager	/^    def registerBindings(self):$/;"	m	class:MonitorManager
+registerBindings	i3blocks/monitor_manager/monitor_manager.py	/^    def registerBindings(self):$/;"	m	class:MonitorManager
+release	i3blocks/brightness/Makefile	/^release: CFLAGS += -O2$/;"	t
+release	i3blocks/brightness/Makefile	/^release: all$/;"	t
+reset_times	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^reset_times() {$/;"	f
+rhythmbox	i3blocks/mediaplayer/mediaplayer	/^sub rhythmbox {$/;"	s
+rofi-calendar	i3blocks/rofi-calendar/README.md	/^# rofi-calendar$/;"	c
+root	i3blocks/monitor_manager/monitor_manager	/^        root = Tk()$/;"	v
+root	i3blocks/monitor_manager/monitor_manager.py	/^        root = Tk()$/;"	v
+rootPatterns	Neovim/nvim/coc-settings.json	/^    "rootPatterns": ["compile_flags.txt", "compile_commands.json"],$/;"	a	object:clangd
+rootPatterns	Neovim/nvim/coc-settings.json	/^    "rootPatterns": [$/;"	a	object:cmake
+rotationSymbol	i3blocks/monitor_manager/monitor_manager	/^    def rotationSymbol(self, rotation):$/;"	m	class:MonitorManager
+rotationSymbol	i3blocks/monitor_manager/monitor_manager.py	/^    def rotationSymbol(self, rotation):$/;"	m	class:MonitorManager
+run	i3blocks/metars/metars	/^    def run(self, blockSelect):$/;"	m	class:Metars
+runCommand	i3blocks/metars/metars	/^    def runCommand(self, command):$/;"	m	class:Metars
+s:check_back_space	Neovim/nvim/init.vim	/^function! s:check_back_space() abort$/;"	f
+s:show_documentation	Neovim/nvim/init.vim	/^function! s:show_documentation()$/;"	f
+sameAsPartition	i3blocks/monitor_manager/monitor_manager	/^    def sameAsPartition(self):$/;"	m	class:MonitorManager
+sameAsPartition	i3blocks/monitor_manager/monitor_manager.py	/^    def sameAsPartition(self):$/;"	m	class:MonitorManager
+serf	i3blocks/email/email	/^def serf():$/;"	f
+setInfo	i3blocks/monitor_manager/monitor_manager	/^    def setInfo(self, widget, info):$/;"	m	class:MonitorManager
+setInfo	i3blocks/monitor_manager/monitor_manager.py	/^    def setInfo(self, widget, info):$/;"	m	class:MonitorManager
+setLabelAndOutputModeFunc	i3blocks/monitor_manager/monitor_manager	/^def setLabelAndOutputModeFunc(var, label, output, i):$/;"	f
+setLabelAndOutputModeFunc	i3blocks/monitor_manager/monitor_manager.py	/^def setLabelAndOutputModeFunc(var, label, output, i):$/;"	f
+setLabelAndSameAsFunc	i3blocks/monitor_manager/monitor_manager	/^def setLabelAndSameAsFunc(var, sameAs, output):$/;"	f
+setLabelAndSameAsFunc	i3blocks/monitor_manager/monitor_manager.py	/^def setLabelAndSameAsFunc(var, sameAs, output):$/;"	f
+setMenuToDuplicate	i3blocks/monitor_manager/monitor_manager	/^    def setMenuToDuplicate(self, optionMenu):$/;"	m	class:MonitorManager
+setMenuToDuplicate	i3blocks/monitor_manager/monitor_manager.py	/^    def setMenuToDuplicate(self, optionMenu):$/;"	m	class:MonitorManager
+setMenuToOutput	i3blocks/monitor_manager/monitor_manager	/^    def setMenuToOutput(self, optionMenu, output):$/;"	m	class:MonitorManager
+setMenuToOutput	i3blocks/monitor_manager/monitor_manager.py	/^    def setMenuToOutput(self, optionMenu, output):$/;"	m	class:MonitorManager
+setMode	i3blocks/monitor_manager/monitor_manager	/^    def setMode(self, index):$/;"	m	class:Output
+setMode	i3blocks/monitor_manager/monitor_manager.py	/^    def setMode(self, index):$/;"	m	class:Output
+setParsedArgs	i3blocks/usb/usb	/^def setParsedArgs(args):$/;"	f
+setPreferredMode	i3blocks/monitor_manager/monitor_manager	/^    def setPreferredMode(self):$/;"	m	class:Output
+setPreferredMode	i3blocks/monitor_manager/monitor_manager.py	/^    def setPreferredMode(self):$/;"	m	class:Output
+setPrimary	i3blocks/monitor_manager/monitor_manager	/^    def setPrimary(self, e):$/;"	m	class:MonitorManager
+setPrimary	i3blocks/monitor_manager/monitor_manager.py	/^    def setPrimary(self, e):$/;"	m	class:MonitorManager
+set_default_playback_device_next	i3blocks/volume-pipewire/volume-pipewire	/^function set_default_playback_device_next {$/;"	f
+set_default_playback_device_next	i3blocks/volume-pulseaudio/volume-pulseaudio	/^function set_default_playback_device_next {$/;"	f
+set_mode	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^set_mode() {$/;"	f
+set_tz	i3blocks/time/time	/^sub set_tz {$/;"	s
+settings	i3blocks/metars/metars	/^    settings = MetarsSettingsEnvironment()$/;"	v
+settings	i3blocks/metars/metars	/^    settings = None$/;"	v	class:Metars
+short_info	i3blocks/arch-update/arch-update	/^      short_info = str(update_count) + ' update'$/;"	v
+short_info	i3blocks/arch-update/arch-update	/^      short_info = str(update_count) + ' updates'$/;"	v
+short_info	i3blocks/arch-update/arch-update.py	/^      short_info = str(update_count) + ' update'$/;"	v
+short_info	i3blocks/arch-update/arch-update.py	/^      short_info = str(update_count) + ' updates'$/;"	v
+shorten	i3blocks/taskw/taskw	/^def shorten(string, maxlen=maxlen):$/;"	f
+shutdown_menu	i3blocks/shutdown_menu/README.md	/^# shutdown_menu$/;"	c
+shutdown_menu	i3blocks/shutdown_menu/i3blocks.conf	/^[shutdown_menu]$/;"	s
+signal	i3blocks/apt-upgrades/i3blocks.conf	/^signal=1$/;"	k	section:apt-upgrades
+signal	i3blocks/miccontrol/i3blocks.conf	/^signal=10$/;"	k	section:miccontrol
+signal	i3blocks/usb/i3blocks.conf	/^signal=1$/;"	k	section:usb
+signal	i3blocks/volume-pipewire/i3blocks.conf	/^signal=1$/;"	k	section:volume-pipewire
+signal	i3blocks/volume-pulseaudio/i3blocks.conf	/^signal=1$/;"	k	section:volume-pulseaudio
+signal	i3blocks/volume/i3blocks.conf	/^signal=10$/;"	k	section:volume
+signal	i3blocks/ytdl-mpv/i3blocks.conf	/^signal=4$/;"	k	section:ytdl-mpv
+size	i3blocks/memory2/memory2.c	/^  int size;$/;"	m	struct:__anon9bc31ac40108	typeref:typename:int	file:
+softRefreshList	i3blocks/monitor_manager/monitor_manager	/^    def softRefreshList(self, e=None):$/;"	m	class:MonitorManager
+softRefreshList	i3blocks/monitor_manager/monitor_manager.py	/^    def softRefreshList(self, e=None):$/;"	m	class:MonitorManager
+sort_taskw_info	i3blocks/taskw/taskw	/^def sort_taskw_info(taskw_json):$/;"	f
+sp	i3blocks/afs/afs	/^import subprocess as sp$/;"	I	nameref:module:subprocess
+sp	i3blocks/aur-update/aur-update	/^import subprocess as sp$/;"	I	nameref:module:subprocess
+speedtest	i3blocks/speedtest/README.md	/^# speedtest$/;"	c
+speedtest	i3blocks/speedtest/i3blocks.conf	/^[speedtest]$/;"	s
+ssid	i3blocks/ssid/README.md	/^# ssid$/;"	c
+ssid	i3blocks/ssid/i3blocks.conf	/^[ssid]$/;"	s
+state	i3blocks/battery2/battery2	/^    state = state_batteries[0]$/;"	v
+state_batteries	i3blocks/battery2/battery2	/^    state_batteries=[]$/;"	v
+status	i3blocks/battery2/battery2	/^status = check_output(['acpi'], universal_newlines=True)$/;"	v
+status	i3blocks/monitor_manager/monitor_manager	/^    def status(self):$/;"	m	class:Output
+status	i3blocks/monitor_manager/monitor_manager.py	/^    def status(self):$/;"	m	class:Output
+strbool	i3blocks/arch-update/arch-update	/^    strbool = lambda s: s.lower() in ['t', 'true', '1']$/;"	f	function:create_argparse	file:
+strbool	i3blocks/arch-update/arch-update.py	/^    strbool = lambda s: s.lower() in ['t', 'true', '1']$/;"	f	function:create_argparse	file:
+strbool	i3blocks/monitor_manager/monitor_manager	/^strbool = lambda s: s.lower() in ['t', 'true', '1']$/;"	f
+strbool	i3blocks/monitor_manager/monitor_manager.py	/^strbool = lambda s: s.lower() in ['t', 'true', '1']$/;"	f
+strlist	i3blocks/arch-update/arch-update	/^    strlist = lambda s: s.split()$/;"	f	function:create_argparse	file:
+strlist	i3blocks/arch-update/arch-update.py	/^    strlist = lambda s: s.split()$/;"	f	function:create_argparse	file:
+subtract_colors	i3blocks/colorpicker/colorpicker	/^subtract_colors() {$/;"	f
+swallows	i3/.i3/workspace-1-startup.json	/^  "swallows": [$/;"	a
+swallows	i3/.i3/workspace-2-startup.json	/^                            "swallows": [$/;"	a	object:0.nodes.0.nodes.0
+swallows	i3/.i3/workspace-2-startup.json	/^                            "swallows": [$/;"	a	object:0.nodes.0.nodes.1
+swallows	i3/.i3/workspace-2-startup.json	/^                    "swallows": [$/;"	a	object:0.nodes.1
+swallows	i3/.i3/workspace-2-startup.json	/^            "swallows": [$/;"	a	object:nodes.0
+swallows	i3/.i3/workspace-2-startup.json	/^            "swallows": [$/;"	a	object:nodes.1
+swapOutputRows	i3blocks/monitor_manager/monitor_manager	/^    def swapOutputRows(self, row1, row2):$/;"	m	class:MonitorManager
+swapOutputRows	i3blocks/monitor_manager/monitor_manager.py	/^    def swapOutputRows(self, row1, row2):$/;"	m	class:MonitorManager
+sway-focusedwindow	i3blocks/sway-focusedwindow/README.md	/^# sway-focusedwindow$/;"	c
+sysinfo_t	i3blocks/memory2/memory2.c	/^typedef struct sysinfo sysinfo_t;$/;"	t	typeref:struct:sysinfo	file:
+systemctl	i3blocks/systemctl/Readme.md	/^# systemctl$/;"	c
+systemctl	i3blocks/systemctl/i3blocks.conf	/^[systemctl]$/;"	s
+systemd_unit	i3blocks/systemd_unit/README.md	/^# systemd_unit$/;"	c
+tahoe-lafs	i3blocks/tahoe-lafs/README.md	/^# tahoe-lafs$/;"	c
+tahoe-lafs	i3blocks/tahoe-lafs/i3blocks.conf	/^[tahoe-lafs]$/;"	s
+taskw	i3blocks/taskw/i3blocks.conf	/^[taskw]$/;"	s
+taskw_tf	i3blocks/taskw/taskw	/^taskw_tf = _default("TASKW_TF", default="t", arg_type=_strbool)$/;"	v
+temperature	i3blocks/temperature/README.md	/^# temperature$/;"	c
+time	i3blocks/battery2/battery2	/^                    time = ":".join(time.groups())$/;"	v
+time	i3blocks/battery2/battery2	/^                time = commasplitstatus[-1].strip()$/;"	v
+time	i3blocks/battery2/battery2	/^                time = re.match(r"(\\d+):(\\d+)", time)$/;"	v
+time	i3blocks/battery2/battery2	/^    time = ""$/;"	v
+time	i3blocks/time/README.md	/^# time$/;"	c
+time	i3blocks/time/i3blocks.conf	/^[time]$/;"	s
+timeleft	i3blocks/battery2/battery2	/^                    timeleft = " ({})".format(time)$/;"	v
+timeleft	i3blocks/battery2/battery2	/^        timeleft = ""$/;"	v
+timer_and_stopwatch	i3blocks/timer_and_stopwatch/README.md	/^# timer_and_stopwatch$/;"	c
+timew_desc_override	i3blocks/taskw/taskw	/^timew_desc_override = _default("TIMEW_DESC_OVERRIDE", default="f", arg_type=_strbool)$/;"	v
+timew_tf	i3blocks/taskw/taskw	/^    timew_tf = True$/;"	v
+timew_tf	i3blocks/taskw/taskw	/^timew_tf = _default("TIMEW_TF", default="f", arg_type=_strbool)$/;"	v
+toggle	i3blocks/toggle/README.md	/^# toggle$/;"	c
+toggle	i3blocks/toggle/i3blocks.conf	/^[toggle]$/;"	s
+toggleActive	i3blocks/monitor_manager/monitor_manager	/^    def toggleActive(self, e):$/;"	m	class:MonitorManager
+toggleActive	i3blocks/monitor_manager/monitor_manager.py	/^    def toggleActive(self, e):$/;"	m	class:MonitorManager
+toggleBlanked	i3blocks/monitor_manager/monitor_manager	/^    def toggleBlanked(self, e):$/;"	m	class:MonitorManager
+toggleBlanked	i3blocks/monitor_manager/monitor_manager.py	/^    def toggleBlanked(self, e):$/;"	m	class:MonitorManager
+toggleDuplicate	i3blocks/monitor_manager/monitor_manager	/^    def toggleDuplicate(self, e):$/;"	m	class:MonitorManager
+toggleDuplicate	i3blocks/monitor_manager/monitor_manager.py	/^    def toggleDuplicate(self, e):$/;"	m	class:MonitorManager
+translate_timew_string	i3blocks/taskw/taskw	/^def translate_timew_string(timew_in_str):$/;"	f
+type	i3/.i3/workspace-1-startup.json	/^  "type": "con"$/;"	s
+type	i3/.i3/workspace-2-startup.json	/^                            "type": "con"$/;"	s	object:0.nodes.0.nodes.0
+type	i3/.i3/workspace-2-startup.json	/^                            "type": "con"$/;"	s	object:0.nodes.0.nodes.1
+type	i3/.i3/workspace-2-startup.json	/^                    "type": "con"$/;"	s	object:0.nodes.1
+type	i3/.i3/workspace-2-startup.json	/^                    "type": "con",$/;"	s	object:0.nodes.0
+type	i3/.i3/workspace-2-startup.json	/^            "type": "con"$/;"	s	object:nodes.0
+type	i3/.i3/workspace-2-startup.json	/^            "type": "con"$/;"	s	object:nodes.1
+type	i3/.i3/workspace-2-startup.json	/^            "type": "con",$/;"	s	object:0
+type	i3/.i3/workspace-2-startup.json	/^    "type": "con",$/;"	s
+uint	i3blocks/memory2/memory2.c	/^typedef unsigned int uint;$/;"	t	typeref:typename:unsigned int	file:
+ulli	i3blocks/bandwidth2/bandwidth2.c	/^typedef unsigned long long int ulli;$/;"	t	typeref:typename:unsigned long long int	file:
+ulli	i3blocks/cpu_usage2/cpu_usage2.c	/^typedef unsigned long long int ulli;$/;"	t	typeref:typename:unsigned long long int	file:
+ulong	i3blocks/memory2/memory2.c	/^typedef unsigned long ulong;$/;"	t	typeref:typename:unsigned long	file:
+unArg	i3blocks/usb/usb	/^    def unArg(flag, text, default, *args, **kwargs):$/;"	f	function:parseArguments	file:
+unArgs	i3blocks/usb/usb	/^    def unArgs(flagTempl, textTempl, vals):$/;"	f	function:parseArguments	file:
+uninstall	i3blocks/Makefile	/^uninstall:$/;"	t
+updateBrightness	i3blocks/monitor_manager/monitor_manager	/^    def updateBrightness(self, e):$/;"	m	class:MonitorManager
+updateBrightness	i3blocks/monitor_manager/monitor_manager.py	/^    def updateBrightness(self, e):$/;"	m	class:MonitorManager
+update_count	i3blocks/arch-update/arch-update	/^update_count = len(updates)$/;"	v
+update_count	i3blocks/arch-update/arch-update.py	/^update_count = len(updates)$/;"	v
+updates	i3blocks/arch-update/arch-update	/^updates = get_updates()$/;"	v
+updates	i3blocks/arch-update/arch-update.py	/^updates = get_updates()$/;"	v
+updates	i3blocks/aur-update/aur-update	/^        updates = os.environ['_update_cache']$/;"	v
+updates	i3blocks/aur-update/aur-update	/^updates = []$/;"	v
+urgency_tf	i3blocks/taskw/taskw	/^urgency_tf = _default("TASKW_SORT_URGENCY", default="f", arg_type=_strbool)$/;"	v
+usage	i3blocks/bandwidth2/bandwidth2.c	/^void usage(char *argv[])$/;"	f	typeref:typename:void
+usage	i3blocks/brightness/main.c	/^static void usage(void) {$/;"	f	typeref:typename:void	file:
+usage	i3blocks/cpu_usage2/cpu_usage2.c	/^void usage(char *argv[])$/;"	f	typeref:typename:void
+usb	i3blocks/usb/README.md	/^# usb$/;"	c
+usb	i3blocks/usb/i3blocks.conf	/^[usb]$/;"	s
+used	i3blocks/afs/afs	/^quota, used, percentage = fs_output.split()[1:4]$/;"	v
+user	i3blocks/user/README.md	/^# user$/;"	c
+user	i3blocks/user/i3blocks.conf	/^[user]$/;"	s
+utf8_char	i3blocks/memory2/memory2.c	/^} utf8_char;$/;"	t	typeref:struct:__anon9bc31ac40108	file:
+utf8_char_count	i3blocks/memory2/memory2.c	/^uint utf8_char_count(const char* str)$/;"	f	typeref:typename:uint
+v_aur	i3blocks/aur-update/aur-update	/^    v_aur = version_in_aur(pkg)$/;"	v
+v_inst	i3blocks/aur-update/aur-update	/^    v_inst = installed_version[pkg]$/;"	v
+vcompress	Compression/_vdcompress.sh	/^vcompress() {$/;"	f
+vcs_version	i3blocks/aur-update/aur-update	/^def vcs_version(pkg, ver):$/;"	f
+ver	i3blocks/aur-update/aur-update	/^    pkg, ver = pkg.split()$/;"	v
+version_in_aur	i3blocks/aur-update/aur-update	/^def version_in_aur(pkg):$/;"	f
+volume	i3blocks/volume/README.md	/^# volume$/;"	c
+volume	i3blocks/volume/i3blocks.conf	/^[volume]$/;"	s
+volume	i3blocks/volume/volume	/^volume() {$/;"	f
+volume-pipewire	i3blocks/volume-pipewire/README.md	/^# volume-pipewire$/;"	c
+volume-pipewire	i3blocks/volume-pipewire/i3blocks.conf	/^[volume-pipewire]$/;"	s
+volume-pulseaudio	i3blocks/volume-pulseaudio/README.md	/^# volume-pulseaudio$/;"	c
+volume-pulseaudio	i3blocks/volume-pulseaudio/i3blocks.conf	/^[volume-pulseaudio]$/;"	s
+weather_NOAA	i3blocks/weather_NOAA/README.md	/^# weather_NOAA$/;"	c
+weather_NOAA	i3blocks/weather_NOAA/i3blocks.conf	/^[weather_NOAA]$/;"	s
+width	i3/.i3/workspace-1-startup.json	/^    "width": 3834,$/;"	n	object:geometry
+width	i3/.i3/workspace-2-startup.json	/^                                "width": 3834,$/;"	n	object:0.nodes.0.nodes.1.geometry
+width	i3/.i3/workspace-2-startup.json	/^                                "width": 3840,$/;"	n	object:0.nodes.0.nodes.0.geometry
+width	i3/.i3/workspace-2-startup.json	/^                        "width": 800,$/;"	n	object:0.nodes.1.geometry
+width	i3/.i3/workspace-2-startup.json	/^                "width": 3834,$/;"	n	object:nodes.0.geometry
+width	i3/.i3/workspace-2-startup.json	/^                "width": 800,$/;"	n	object:nodes.1.geometry
+wifi	i3blocks/wifi/README.md	/^# wifi$/;"	c
+wifi	i3blocks/wifi/i3blocks.conf	/^[wifi]$/;"	s
+wlan-dbm	i3blocks/wlan-dbm/README.md	/^# wlan-dbm$/;"	c
+writeable	Samba/smb.conf	/^writeable = yes$/;"	k	section:matteos-sambashare
+x	i3/.i3/workspace-1-startup.json	/^    "x": 0,$/;"	n	object:geometry
+x	i3/.i3/workspace-2-startup.json	/^                                "x": 3,$/;"	n	object:0.nodes.0.nodes.1.geometry
+x	i3/.i3/workspace-2-startup.json	/^                                "x": 3840,$/;"	n	object:0.nodes.0.nodes.0.geometry
+x	i3/.i3/workspace-2-startup.json	/^                        "x": 0,$/;"	n	object:0.nodes.1.geometry
+x	i3/.i3/workspace-2-startup.json	/^                "x": 0,$/;"	n	object:nodes.0.geometry
+x	i3/.i3/workspace-2-startup.json	/^                "x": 0,$/;"	n	object:nodes.1.geometry
+xkb_layout	i3blocks/xkb_layout/README.md	/^# xkb_layout$/;"	c
+y	i3/.i3/workspace-1-startup.json	/^    "y": 0$/;"	n	object:geometry
+y	i3/.i3/workspace-2-startup.json	/^                                "y": 0$/;"	n	object:0.nodes.0.nodes.0.geometry
+y	i3/.i3/workspace-2-startup.json	/^                                "y": 33$/;"	n	object:0.nodes.0.nodes.1.geometry
+y	i3/.i3/workspace-2-startup.json	/^                        "y": 0$/;"	n	object:0.nodes.1.geometry
+y	i3/.i3/workspace-2-startup.json	/^                "y": 0$/;"	n	object:nodes.0.geometry
+y	i3/.i3/workspace-2-startup.json	/^                "y": 0$/;"	n	object:nodes.1.geometry
+ytdl-mpv	i3blocks/ytdl-mpv/README.md	/^# ytdl-mpv$/;"	c
+ytdl-mpv	i3blocks/ytdl-mpv/i3blocks.conf	/^[ytdl-mpv]                                                                         $/;"	s
