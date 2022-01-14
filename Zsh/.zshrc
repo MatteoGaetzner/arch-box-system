@@ -71,9 +71,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Binary paths
 path+=('/usr/local/bin')
-path+=('/home/matteo/.local/bin')
+path+=("$HOME/.local/bin")
 # Optional
-path+=("$HOME/.local/lib/arm-toolchain/bin/")
+path+=("$HOME/.local/share/bsprak.toolchain/bin")
 export PATH
 
 # Dynamic library path i.e. where the OS finds *.so files
@@ -225,6 +225,7 @@ alias vime="nvim ~/.config/nvim/init.vim"
 alias vimep="nvim ~/.config/nvim/vim-plug/plugins.vim"
 alias vifme="nvim ~/.config/vifm/vifmrc"
 alias i3e="nvim ~/.config/i3/config"
+alias i3be="nvim ~/.config/i3blocks/config"
 alias xinite="sudo nvim ~/.xinitrc"
 
 alias vt="nvim *.tex"

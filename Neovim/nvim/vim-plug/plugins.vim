@@ -8,6 +8,7 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/NERDTree'
 Plug 'SirVer/ultisnips'
@@ -24,11 +25,13 @@ Plug 'tpope/vim-surround'
 Plug 'vim-autoformat/vim-autoformat'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
-
+Plug 'neomake/neomake'
+Plug 'skywind3000/asyncrun.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 
 call plug#end()

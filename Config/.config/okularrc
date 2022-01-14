@@ -1,0 +1,32 @@
+[Desktop Entry]
+FullScreen=false
+shouldShowMenuBarComingFromFullScreen=true
+shouldShowToolBarComingFromFullScreen=true
+
+[MainWindow]
+HDMI-0 DP-0 Height 1920x1080=971
+HDMI-0 DP-0 Height 3840x2160=2116
+HDMI-0 DP-0 Width 1920x1080=957
+HDMI-0 DP-0 Width 3840x2160=1276
+HDMI-0 DP-0 XPosition 1920x1080=2
+HDMI-0 DP-0 XPosition 3840x2160=6402
+HDMI-0 DP-0 YPosition 1920x1080=60
+HDMI-0 DP-0 YPosition 3840x2160=20
+HDMI-0 Height 1920x1080=1046
+HDMI-0 Width 1920x1080=1917
+HDMI-0 XPosition 1920x1080=1922
+HDMI-0 YPosition 1920x1080=15
+State=AAAA/wAAAAD9AAAAAAAAB30AAAPfAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Sync/Work/SHK-CA/CA Tutorial/4. Kernels/Exercise/Assignment4_Kernels_Solution.pdf
+File2[$e]=$HOME/Documents/Marriage/visa_bian.pdf
+File3[$e]=$HOME/Documents/Marriage/martial_status_certificate.pdf
+File4[$e]=$HOME/Sync/Programs/Self/Deep.Learning/Documents/Dlwpt/Deep-Learning-with-PyTorch.pdf
+File5[$e]=$HOME/Isis/Courses/(WiSe.20.21).Machine.Learning.1/lecture8.pdf
+Name1[$e]=Assignment4_Kernels_Solution.pdf
+Name2[$e]=visa_bian.pdf
+Name3[$e]=martial_status_certificate.pdf
+Name4[$e]=Deep-Learning-with-PyTorch.pdf
+Name5[$e]=lecture8.pdf

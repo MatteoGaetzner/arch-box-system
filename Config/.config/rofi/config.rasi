@@ -1,0 +1,9 @@
+configuration {
+modi: "window,drun,ssh,combi";
+font: "hack 27";
+       icon-theme: "Papirus";
+       combi-modi: "window,drun,ssh";
+       show-icons: true;
+}
+
+@theme "Arc-Dark-Custom"

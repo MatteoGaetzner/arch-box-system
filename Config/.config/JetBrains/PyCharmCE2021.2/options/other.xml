@@ -1,0 +1,47 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="fontScale" value="1.75" />
+    <option name="fontSize" value="21" />
+  </component>
+  <component name="ProjectPluginTrackerManager">
+    <trackers>
+      <map>
+        <entry key="21xOt75PoGrp4vD8zCk7VMRjncu">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="InstalledPluginsSearchHistory" value="jupyt" />
+    <property name="MarketplacePluginsSearchHistory" value="jupyt&#10;jupyte&#10;jupyter&#10;jup" />
+    <property name="NextRunPlatformUpdateBuild" value="PC-213.5744.248/2021.3" />
+    <property name="NextRunPlatformUpdateVersion" value="2021.3" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="PyCharm.InitialConfiguration" value="true" />
+    <property name="PyCharm.InitialConfiguration.V2" value="true" />
+    <property name="PyCharm.InitialConfiguration.V3" value="true" />
+    <property name="PyCharm.InitialConfiguration.V4" value="true" />
+    <property name="PyCharm.InitialConfiguration.V5" value="true" />
+    <property name="PyCharm.InitialConfiguration.V6" value="true" />
+    <property name="PyCharm.InitialConfiguration.V7" value="true" />
+    <property name="appcds.runOnSecondStart" value="PC-212.5457.59-0dcf0ec194dc64f76116003fb4a161dfc1ab82a20205936e0cb7fed9f968007d" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="experimentalFeature.terminal.shell.command.handling" value="false" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/.local/share/anaconda3/bin/conda&#10;/home/matteo/Sync/University/Cognitive.Algorithms/Solutions/Exercise_02" />
+    <property name="file.gist.reindex.count" value="1701" />
+    <property name="fileTypeChangedCounter" value="2" />
+    <property name="fileTypeDetectors" value="com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="ide.updates.previous.build.number" value="PC-212.5457.59" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.local/share/anaconda3/bin/conda" />
+    <property name="registry.to.advanced.settings.migration.build" value="PC-212.5457.59" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+  </component>
+  <component name="ToolbarSettingsService">
+    <option name="NEW_TOOLBAR_SETTINGS" value="OLD_NAVBAR" />
+  </component>
+</application>

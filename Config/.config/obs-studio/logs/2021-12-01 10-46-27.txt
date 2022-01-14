@@ -1,0 +1,221 @@
+10:46:27 AM.707: CPU Name: AMD Ryzen 5 5600X 6-Core Processor
+10:46:27 AM.707: CPU Speed: 2200.000MHz
+10:46:27 AM.724: Physical Cores: 6, Logical Cores: 12
+10:46:27 AM.724: Physical Memory: 15985MB Total, 12176MB Free
+10:46:27 AM.724: Kernel Version: Linux 5.15.5-arch1-1
+10:46:27 AM.724: Distribution: "Arch Linux" Unknown
+10:46:27 AM.724: Session Type: tty
+10:46:27 AM.724: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+10:46:27 AM.724: Portable mode: false
+10:46:27 AM.744: OBS 27.1.3-1 (linux)
+10:46:27 AM.744: ---------------------------------
+10:46:27 AM.744: ---------------------------------
+10:46:27 AM.744: audio settings reset:
+10:46:27 AM.744: 	samples per sec: 48000
+10:46:27 AM.744: 	speakers:        2
+10:46:27 AM.745: ---------------------------------
+10:46:27 AM.745: Initializing OpenGL...
+10:46:27 AM.829: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2
+10:46:27 AM.829: OpenGL loaded successfully, version 3.3.0 NVIDIA 495.44, shading language 3.30 NVIDIA via Cg compiler
+10:46:27 AM.834: ---------------------------------
+10:46:27 AM.834: video settings reset:
+10:46:27 AM.834: 	base resolution:   3840x2160
+10:46:27 AM.834: 	output resolution: 3840x2160
+10:46:27 AM.834: 	downscale filter:  Bicubic
+10:46:27 AM.834: 	fps:               60/1
+10:46:27 AM.834: 	format:            NV12
+10:46:27 AM.834: 	YUV mode:          709/Partial
+10:46:27 AM.834: NV12 texture support not available
+10:46:27 AM.834: Audio monitoring device:
+10:46:27 AM.834: 	name: Default
+10:46:27 AM.834: 	id: default
+10:46:27 AM.834: ---------------------------------
+10:46:27 AM.836: Failed to load 'en-US' text for module: 'decklink-captions.so'
+10:46:27 AM.836: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+10:46:27 AM.837: os_dlopen(/usr//lib/obs-plugins/frontend-tools.so->/usr//lib/obs-plugins/frontend-tools.so): libluajit-5.1.so.2: cannot open shared object file: No such file or directory
+10:46:27 AM.837: 
+10:46:27 AM.837: Module '/usr//lib/obs-plugins/frontend-tools.so' not loaded
+10:46:27 AM.839: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+10:46:27 AM.839: No blackmagic support
+10:46:27 AM.844: v4l2loopback not installed, virtual camera disabled
+10:46:27 AM.846: NVENC supported
+10:46:27 AM.846: FFMPEG VAAPI supported
+10:46:27 AM.850: os_dlopen(/usr//lib/obs-plugins/sndio.so->/usr//lib/obs-plugins/sndio.so): libsndio.so.7: cannot open shared object file: No such file or directory
+10:46:27 AM.850: 
+10:46:27 AM.850: Module '/usr//lib/obs-plugins/sndio.so' not loaded
+10:46:27 AM.850: ---------------------------------
+10:46:27 AM.850:   Loaded Modules:
+10:46:27 AM.850:     text-freetype2.so
+10:46:27 AM.850:     rtmp-services.so
+10:46:27 AM.850:     obs-x264.so
+10:46:27 AM.850:     obs-transitions.so
+10:46:27 AM.850:     obs-outputs.so
+10:46:27 AM.850:     obs-libfdk.so
+10:46:27 AM.850:     obs-filters.so
+10:46:27 AM.850:     obs-ffmpeg.so
+10:46:27 AM.850:     linux-v4l2.so
+10:46:27 AM.850:     linux-pulseaudio.so
+10:46:27 AM.850:     linux-jack.so
+10:46:27 AM.850:     linux-decklink.so
+10:46:27 AM.850:     linux-capture.so
+10:46:27 AM.850:     linux-alsa.so
+10:46:27 AM.850:     image-source.so
+10:46:27 AM.850:     decklink-ouput-ui.so
+10:46:27 AM.850:     decklink-captions.so
+10:46:27 AM.850: ---------------------------------
+10:46:27 AM.850: ==== Startup complete ===============================================
+10:46:27 AM.854: All scene data cleared
+10:46:27 AM.854: ------------------------------------------------
+10:46:27 AM.857: pulse-input: Server name: 'pulseaudio 15.0'
+10:46:27 AM.857: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+10:46:27 AM.857: pulse-input: Started recording from 'alsa_output.pci-0000_2d_00.4.iec958-stereo.monitor'
+10:46:27 AM.857: [Loaded global audio device]: 'Desktop Audio'
+10:46:27 AM.857: pulse-input: Server name: 'pulseaudio 15.0'
+10:46:27 AM.857: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+10:46:27 AM.857: pulse-input: Started recording from 'alsa_input.usb-046d_0825_B7E149C0-02.mono-fallback'
+10:46:27 AM.857: [Loaded global audio device]: 'Mic/Aux'
+10:46:27 AM.862: xcompcap: [window-capture: 'Window Capture (Xcomposite)'] update settings:
+10:46:27 AM.862: 	title: DIP Exercise — Mozilla Firefox
+10:46:27 AM.862: 	class: Navigator
+10:46:27 AM.862: 	Bit depth: 32
+10:46:27 AM.862: 	Found proper GLXFBConfig (in 9): yes
+10:46:27 AM.862: 
+10:46:27 AM.862: Switched to scene 'Scene'
+10:46:27 AM.862: ------------------------------------------------
+10:46:27 AM.862: Loaded scenes:
+10:46:27 AM.862: - scene 'Scene':
+10:46:27 AM.862:     - source: 'Window Capture (Xcomposite)' (xcomposite_input)
+10:46:27 AM.862: ------------------------------------------------
+10:46:27 AM.892: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+10:46:27 AM.894: xcompcap: [window-capture: 'Window Capture (Xcomposite)'] update settings:
+10:46:27 AM.894: 	title: DIP Exercise — Mozilla Firefox
+10:46:27 AM.894: 	class: Navigator
+10:46:27 AM.894: 	Bit depth: 32
+10:46:27 AM.894: 	Found proper GLXFBConfig (in 9): yes
+10:46:27 AM.894: 
+10:46:28 AM.376: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+10:46:28 AM.376: 
+10:46:33 AM.444: ---------------------------------
+10:46:33 AM.444: [NVENC encoder: 'simple_h264_recording'] settings:
+10:46:33 AM.444: 	rate_control: CQP
+10:46:33 AM.444: 	bitrate:      0
+10:46:33 AM.444: 	cqp:          23
+10:46:33 AM.444: 	keyint:       250
+10:46:33 AM.444: 	preset:       hq
+10:46:33 AM.444: 	profile:      high
+10:46:33 AM.444: 	width:        3840
+10:46:33 AM.444: 	height:       2160
+10:46:33 AM.444: 	2-pass:       false
+10:46:33 AM.444: 	b-frames:     2
+10:46:33 AM.444: 	psycho-aq:    1
+10:46:33 AM.444: 	GPU:          0
+10:46:33 AM.444: 
+10:46:33 AM.836: libfdk_aac encoder created
+10:46:33 AM.836: libfdk_aac bitrate: 192, channels: 2
+10:46:33 AM.837: ==== Recording Start ===============================================
+10:46:33 AM.837: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/matteo/2021-12-01 10-46-33.mkv'...
+12:18:28 PM.769: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/matteo/2021-12-01 10-46-33.mkv' stopped
+12:18:28 PM.769: Output 'simple_file_output': stopping
+12:18:28 PM.769: Output 'simple_file_output': Total frames output: 330859
+12:18:28 PM.769: Output 'simple_file_output': Total drawn frames: 330896
+12:18:28 PM.769: ==== Recording Stop ================================================
+12:18:29 PM.305: libfdk_aac encoder destroyed
+12:18:44 PM.207: ==== Shutting down ==================================================
+12:18:44 PM.208: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+12:18:44 PM.210: pulse-input: Stopped recording from 'alsa_output.pci-0000_2d_00.4.iec958-stereo.monitor'
+12:18:44 PM.210: pulse-input: Got 945095 packets with 244152131 frames
+12:18:44 PM.210: pulse-input: Stopped recording from 'alsa_input.usb-046d_0825_B7E149C0-02.mono-fallback'
+12:18:44 PM.210: pulse-input: Got 555946 packets with 265764594 frames
+12:18:44 PM.210: All scene data cleared
+12:18:44 PM.210: ------------------------------------------------
+12:18:44 PM.217: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647215
+12:18:44 PM.217: Failed to make context current.
+12:18:44 PM.242: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647217
+12:18:44 PM.242: Failed to make context current.
+12:18:44 PM.242: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647219
+12:18:44 PM.242: Failed to make context current.
+12:18:44 PM.258: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647221
+12:18:44 PM.258: Failed to make context current.
+12:18:44 PM.258: Failed to fetch parent window geometry!
+12:18:44 PM.259: X Error: BadDrawable (invalid Pixmap or Window parameter), Major opcode: 152, Minor opcode: BadLength (poly request too large or internal Xlib length error), Serial: 5647223
+12:18:44 PM.259: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: BadAlloc (insufficient resources for operation), Serial: 5647224
+12:18:44 PM.259: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647226
+12:18:44 PM.259: Failed to make context current.
+12:18:44 PM.259: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647228
+12:18:44 PM.259: Failed to make context current.
+12:18:44 PM.259: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647230
+12:18:44 PM.259: Failed to make context current.
+12:18:44 PM.259: Failed to fetch parent window geometry!
+12:18:44 PM.259: X Error: BadDrawable (invalid Pixmap or Window parameter), Major opcode: 152, Minor opcode: BadLength (poly request too large or internal Xlib length error), Serial: 5647232
+12:18:44 PM.259: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: BadAlloc (insufficient resources for operation), Serial: 5647233
+12:18:44 PM.259: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647235
+12:18:44 PM.259: Failed to make context current.
+12:18:44 PM.259: X Error: GLXBadDrawable, Major opcode: 152, Minor opcode: 26, Serial: 5647237
+12:18:44 PM.259: Failed to make context current.
+12:18:44 PM.307: Freeing OBS context data
+12:18:44 PM.321: == Profiler Results =============================
+12:18:44 PM.321: run_program_init: 220.516 ms
+12:18:44 PM.321:  ┣OBSApp::AppInit: 1.03 ms
+12:18:44 PM.321:  ┃ ┗OBSApp::InitLocale: 0.406 ms
+12:18:44 PM.321:  ┗OBSApp::OBSInit: 204.869 ms
+12:18:44 PM.321:    ┣obs_startup: 31.23 ms
+12:18:44 PM.321:    ┗OBSBasic::OBSInit: 154.071 ms
+12:18:44 PM.321:      ┣OBSBasic::InitBasicConfig: 0.046 ms
+12:18:44 PM.321:      ┣OBSBasic::ResetAudio: 0.077 ms
+12:18:44 PM.321:      ┣OBSBasic::ResetVideo: 90.248 ms
+12:18:44 PM.321:      ┣OBSBasic::InitOBSCallbacks: 0.002 ms
+12:18:44 PM.321:      ┣OBSBasic::InitHotkeys: 0.022 ms
+12:18:44 PM.321:      ┣obs_load_all_modules: 15.921 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(decklink-captions.so): 0.015 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(decklink-ouput-ui.so): 0.274 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(image-source.so): 0.002 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(linux-alsa.so): 0.001 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(linux-capture.so): 0.133 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(linux-decklink.so): 0.041 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(linux-jack.so): 0 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(linux-v4l2.so): 2.524 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(obs-ffmpeg.so): 0.201 ms
+12:18:44 PM.321:      ┃ ┃ ┗nvenc_check: 0.179 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(obs-filters.so): 0.01 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(obs-libfdk.so): 0 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(obs-outputs.so): 0.001 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(obs-transitions.so): 0.003 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(obs-x264.so): 0 ms
+12:18:44 PM.321:      ┃ ┣obs_init_module(rtmp-services.so): 0.361 ms
+12:18:44 PM.321:      ┃ ┗obs_init_module(text-freetype2.so): 0.004 ms
+12:18:44 PM.321:      ┣OBSBasic::ResetOutputs: 0.045 ms
+12:18:44 PM.321:      ┣OBSBasic::CreateHotkeys: 0.02 ms
+12:18:44 PM.321:      ┣OBSBasic::InitService: 0.652 ms
+12:18:44 PM.321:      ┣OBSBasic::InitPrimitives: 2.347 ms
+12:18:44 PM.321:      ┗OBSBasic::Load: 9.005 ms
+12:18:44 PM.321: obs_hotkey_thread(25 ms): min=0.037 ms, median=0.079 ms, max=24.341 ms, 99th percentile=0.295 ms, 100% below 25 ms
+12:18:44 PM.321: audio_thread(Audio): min=0 ms, median=0.104 ms, max=2.706 ms, 99th percentile=0.347 ms
+12:18:44 PM.321:  ┗receive_audio: min=0.001 ms, median=0.062 ms, max=2.659 ms, 99th percentile=0.294 ms
+12:18:44 PM.321:    ┣buffer_audio: min=0 ms, median=0 ms, max=0.034 ms, 99th percentile=0.001 ms
+12:18:44 PM.321:    ┗do_encode: min=0.034 ms, median=0.06 ms, max=2.657 ms, 99th percentile=0.293 ms
+12:18:44 PM.321:      ┣encode(simple_aac_recording): min=0.033 ms, median=0.058 ms, max=0.541 ms, 99th percentile=0.287 ms
+12:18:44 PM.321:      ┗send_packet: min=0 ms, median=0.002 ms, max=2.596 ms, 99th percentile=0.008 ms
+12:18:44 PM.321: obs_graphics_thread(16.6667 ms): min=0.096 ms, median=1.231 ms, max=41.142 ms, 99th percentile=3.171 ms, 99.9991% below 16.667 ms
+12:18:44 PM.321:  ┣tick_sources: min=0 ms, median=0.095 ms, max=7.026 ms, 99th percentile=0.131 ms
+12:18:44 PM.321:  ┣output_frame: min=0.044 ms, median=0.841 ms, max=5.892 ms, 99th percentile=2.706 ms
+12:18:44 PM.321:  ┃ ┣gs_context(video->graphics): min=0.044 ms, median=0.146 ms, max=2.771 ms, 99th percentile=0.2 ms
+12:18:44 PM.321:  ┃ ┃ ┣render_video: min=0.002 ms, median=0.101 ms, max=2.715 ms, 99th percentile=0.14 ms
+12:18:44 PM.321:  ┃ ┃ ┃ ┣render_main_texture: min=0.001 ms, median=0.041 ms, max=1.182 ms, 99th percentile=0.058 ms
+12:18:44 PM.321:  ┃ ┃ ┃ ┣render_convert_texture: min=0.021 ms, median=0.032 ms, max=0.638 ms, 99th percentile=0.05 ms
+12:18:44 PM.321:  ┃ ┃ ┃ ┗stage_output_texture: min=0.015 ms, median=0.021 ms, max=2.032 ms, 99th percentile=0.036 ms
+12:18:44 PM.321:  ┃ ┃ ┣gs_flush: min=0 ms, median=0.003 ms, max=0.315 ms, 99th percentile=0.018 ms
+12:18:44 PM.321:  ┃ ┃ ┗download_frame: min=0 ms, median=0.001 ms, max=0.084 ms, 99th percentile=0.002 ms
+12:18:44 PM.321:  ┃ ┗output_video_data: min=0.605 ms, median=0.692 ms, max=3.697 ms, 99th percentile=2.548 ms
+12:18:44 PM.321:  ┗render_displays: min=0.024 ms, median=0.188 ms, max=40.331 ms, 99th percentile=0.299 ms
+12:18:44 PM.321: video_thread(video): min=1.313 ms, median=1.701 ms, max=3.967 ms, 99th percentile=2.202 ms
+12:18:44 PM.321:  ┗receive_video: min=1.313 ms, median=1.701 ms, max=3.966 ms, 99th percentile=2.201 ms
+12:18:44 PM.321:    ┗do_encode: min=1.312 ms, median=1.701 ms, max=3.965 ms, 99th percentile=2.201 ms
+12:18:44 PM.321:      ┣encode(simple_h264_recording): min=1.304 ms, median=1.697 ms, max=3.96 ms, 99th percentile=2.196 ms
+12:18:44 PM.321:      ┗send_packet: min=0.001 ms, median=0.002 ms, max=0.792 ms, 99th percentile=0.009 ms
+12:18:44 PM.321: =================================================
+12:18:44 PM.321: == Profiler Time Between Calls ==================
+12:18:44 PM.321: obs_hotkey_thread(25 ms): min=25.053 ms, median=25.138 ms, max=49.402 ms, 99.781% within ±2% of 25 ms (0% lower, 0.218954% higher)
+12:18:44 PM.321: obs_graphics_thread(16.6667 ms): min=8.858 ms, median=16.667 ms, max=41.144 ms, 99.9886% within ±2% of 16.667 ms (0.00541868% lower, 0.00602076% higher)
+12:18:44 PM.321: =================================================
+12:18:44 PM.338: Number of memory leaks: 0

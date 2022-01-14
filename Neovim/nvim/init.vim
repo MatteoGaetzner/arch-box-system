@@ -45,10 +45,13 @@ inoremap << <Esc><<hi
 nnoremap <Tab> >>2l
 nnoremap <S-Tab> <<2h
 
+" gm -> add mark
+nnoremap gm m
+
 "--------------  Vimrc Editing  ------------------
 
-nnoremap <F1> :e ~/.vimrc<CR>
-nnoremap <F2> <C-o>:source ~/.vimrc<CR>
+nnoremap <F1> :e ~/.config/nvim/init.vim<CR>
+nnoremap <F2> <C-o>:source ~/.config/nvim/init.vim<CR>
 
 "--------------  Moving Lines  -------------------
 
@@ -111,8 +114,8 @@ function! MySpellLang()
   echo "language:" g:myLangList[g:myLang]
 endf
 
-map <C-s> :call MySpellLang()<CR>
-imap <C-s> :call MySpellLang()<CR>
+map <F12> :call MySpellLang()<CR>
+imap <F12> :call MySpellLang()<CR>
 
 "--------------  Windows  ------------------------
 
@@ -230,20 +233,6 @@ if has("nvim-0.5.0") || has("patch-8.1.1564")
 else
   set signcolumn=yes
 endif
-
-"Use tab for trigger completion with characters ahead and navigate.
-"NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-"other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? \<C-n>" :
-      \ <SID>check_back_space() ? \<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? \<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
 
 "Use <c-space> to trigger completion.
 if has('nvim')
@@ -383,14 +372,14 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_next = '<tab>'
 
 "--------------  UltiSnips  ----------------------
 
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 au BufRead,BufNewFile *.snippets setfiletype snippets
 let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsExpandTrigger = "<nop>"
+let g:UltiSnipsExpandTrigger = "<s-tab>"
 let g:UltiSnipsListSnippets="<C-l>"
 let g:ulti_expand_or_jump_res = 0
 
@@ -429,15 +418,15 @@ autocmd BufWritePre * call Format()
 " vim-latex-live-preview
 set updatetime=500
 let g:livepreview_engine = 'pdflatex' . ''
-let g:livepreview_previewer = 'evince'
+let g:livepreview_previewer = 'okular'
 let g:livepreview_texinputs = './out/'
-let g:livepreview_use_biber = 1
+" let g:livepreview_use_biber = 1
 
 " Quick compilation
 autocmd FileType tex nnoremap <C-c> :!rm out/*; latexmk -pdf -output-directory=out %<CR>
 
 " Autoformat Formating
-let g:formatdef_latexindent = '"latexindent -"'
+" let g:formatdef_latexindent = '"latexindent -"'
 
 " Start latex live preview session
 "autocmd FileType tex nnoremap <C-m> :!alacritty --working-directory=$(pwd) -e bash -c 'latexmk -pvc -pdf -outdir=out' &<CR><CR>
@@ -453,6 +442,14 @@ autocmd FileType cpp nnoremap <C-m> :!make && ./bin/main.out<CR>
 
 autocmd FileType sh nnoremap <C-c> :!bash %<CR>
 
+"--------------  Python  -------------------------
+
+autocmd FileType python nnoremap <F3> :AsyncRun make <CR>
+autocmd FileType python nnoremap <F4> :AsyncRun make run <CR>
+autocmd FileType python nnoremap <F5> :AsyncRun make test <CR>
+
+let g:asyncrun_open = 10
+
 "--------------  Markdown  -----------------------
 
 autocmd FileType markdown normal zR
@@ -464,3 +461,5 @@ let g:mkdp_markdown_css='~/.vim/ressources/github-markdown.css'
 
 autocmd FileType c set shiftwidth=4
 autocmd FileType c set tabstop=4
+autocmd FileType c nnoremap <F3> :Neomake qemu <CR>
+autocmd FileType c nnoremap <F4> :Neomake debug <CR>

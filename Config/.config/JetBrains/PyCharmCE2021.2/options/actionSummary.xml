@@ -1,0 +1,31 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="EditorBackSpace">
+      <i c="25" l="1638879673888" />
+    </e>
+    <e n="EditorEnter">
+      <i c="3" l="1638879664820" />
+    </e>
+    <e n="EditorSplitLine">
+      <i c="1" l="1638879674339" />
+    </e>
+    <e n="EditorStartNewLine">
+      <i c="1" l="1638879673283" />
+    </e>
+    <e n="FileChooser.ShowHiddens">
+      <i c="1" l="1638879449378" />
+    </e>
+    <e n="NewFile">
+      <i c="1" l="1638879631039" />
+    </e>
+    <e n="Run">
+      <i c="1" l="1638879676720" />
+    </e>
+    <e n="ShowSettings">
+      <i c="1" l="1638879596269" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.ActionGroupPanelWrapper$5">
+      <i c="1" l="1638879367380" />
+    </e>
+  </component>
+</application>
