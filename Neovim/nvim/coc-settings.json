@@ -1,39 +1,44 @@
-"languageserver": {
-  "clangd": {
-    "command": "clangd",
-    "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
-  },
-  "cmake": {
-    "command": "cmake-language-server",
-    "filetypes": ["cmake"],
-    "rootPatterns": [
-      "build/"
-    ],
-    "initializationOptions": {
-      "buildDirectory": "build"
+{
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+    },
+    "cmake": {
+      "command": "cmake-language-server",
+      "filetypes": ["cmake"],
+      "rootPatterns": [
+        "build/"
+      ],
+      "initializationOptions": {
+        "buildDirectory": "build"
+      }
+    },
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    },
+    "latex": {
+      "command": "/usr/bin/texlab",
+      "filetypes": ["tex", "bib", "plaintex", "context"]
+    },
+    "intelephense": {
+      "command": "intelephense",
+      "args": ["--stdio"],
+      "filetypes": ["php"],
+      "initializationOptions": {
+        "storagePath": "/tmp/intelephense"
+      }
+    },
+    "efm": {
+      "command": "efm-langserver",
+      "args": [],
+      "filetypes": ["vim", "eruby", "markdown"]
     }
   },
-  "dockerfile": {
-    "command": "docker-langserver",
-    "filetypes": ["dockerfile"],
-    "args": ["--stdio"]
-  },
-  "latex": {
-    "command": "/usr/bin/texlab",
-    "filetypes": ["tex", "bib", "plaintex", "context"]
-  }
-  "intelephense": {
-    "command": "intelephense",
-    "args": ["--stdio"],
-    "filetypes": ["php"],
-    "initializationOptions": {
-      "storagePath": "/tmp/intelephense"
-    }
-  },
-  "efm": {
-    "command": "efm-langserver",
-    "args": [],
-    "filetypes": ["vim", "eruby", "markdown"]
+  "snippets.extends": {
+    "latex": ["tex"]
   }
 }

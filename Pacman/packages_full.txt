@@ -95,6 +95,7 @@ filesystem
 findutils
 firefox
 flac
+flameshot
 flex
 fmt
 fontconfig
@@ -792,6 +793,7 @@ signon-kwallet-extension
 signon-plugin-oauth2
 signon-ui
 signond
+slack-desktop
 slang
 smbclient
 snappy

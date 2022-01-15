@@ -19,6 +19,7 @@ set number relativenumber
 set nu rnu
 set hidden
 set nostartofline
+set timeout ttimeoutlen=25
 let mapleader = " "
 syntax on
 
@@ -48,25 +49,26 @@ nnoremap <S-Tab> <<2h
 " gm -> add mark
 nnoremap gm m
 
+nnoremap <Enter> :AsyncRun make <CR>
+
+"--------------  Moving Lines  -------------------
+
+" vim-latex maps c-j, so these mappings happen
+" after loading plugins
+augroup vimrc
+  au!
+  au VimEnter * nnoremap <C-J> :m .+1<CR>==
+  au VimEnter * nnoremap <C-K> :m .-2<CR>==
+  au VimEnter * inoremap <C-J> <Esc>:m .+1<CR>==gi
+  au VimEnter * inoremap <C-K> <Esc>:m .-2<CR>==gi
+  au VimEnter * vnoremap <C-J> :m '>+1<CR>gv=gv
+  au VimEnter * vnoremap <C-K> :m '<-2<CR>gv=gv
+augroup END
+
 "--------------  Vimrc Editing  ------------------
 
 nnoremap <F1> :e ~/.config/nvim/init.vim<CR>
 nnoremap <F2> <C-o>:source ~/.config/nvim/init.vim<CR>
-
-"--------------  Moving Lines  -------------------
-
-set timeout ttimeoutlen=25
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
-inoremap <C-j> <Esc>:m .+1<CR>==gi
-inoremap <C-k> <Esc>:m .-2<CR>==gi
-vnoremap <C-j> :m '>+1<CR>gv=gv
-vnoremap <C-k> :m '<-2<CR>gv=gv
-
-"nnoremap <C-J> <C-W><C-J>
-"nnoremap <C-K> <C-W><C-K>
-"nnoremap <C-L> <C-W><C-L>
-"nnoremap <C-H> <C-W><C-H>
 
 "--------------  Clipboard  ----------------------
 
@@ -372,7 +374,7 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-let g:coc_snippet_next = '<tab>'
+" let g:coc_snippet_next = '<tab>'
 
 "--------------  UltiSnips  ----------------------
 
@@ -382,6 +384,9 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger = "<s-tab>"
 let g:UltiSnipsListSnippets="<C-l>"
 let g:ulti_expand_or_jump_res = 0
+let g:UltiSnipsJumpForwardTrigger="<nop>"
+let g:UltiSnipsJumpBackwardTrigger="<nop>"
+
 
 "--------------  Formating  ----------------------
 
@@ -420,7 +425,7 @@ set updatetime=500
 let g:livepreview_engine = 'pdflatex' . ''
 let g:livepreview_previewer = 'okular'
 let g:livepreview_texinputs = './out/'
-" let g:livepreview_use_biber = 1
+let g:livepreview_use_biber = 1
 
 " Quick compilation
 autocmd FileType tex nnoremap <C-c> :!rm out/*; latexmk -pdf -output-directory=out %<CR>
@@ -444,7 +449,6 @@ autocmd FileType sh nnoremap <C-c> :!bash %<CR>
 
 "--------------  Python  -------------------------
 
-autocmd FileType python nnoremap <F3> :AsyncRun make <CR>
 autocmd FileType python nnoremap <F4> :AsyncRun make run <CR>
 autocmd FileType python nnoremap <F5> :AsyncRun make test <CR>
 
@@ -463,3 +467,4 @@ autocmd FileType c set shiftwidth=4
 autocmd FileType c set tabstop=4
 autocmd FileType c nnoremap <F3> :Neomake qemu <CR>
 autocmd FileType c nnoremap <F4> :Neomake debug <CR>
+

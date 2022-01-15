@@ -21,6 +21,7 @@ efibootmgr
 exa
 fakeroot
 firefox
+flameshot
 flex
 gcc
 gdb
@@ -74,6 +75,7 @@ rofi
 rsync
 rust-analyzer
 samba
+slack-desktop
 spotify
 sudo
 telegram-desktop

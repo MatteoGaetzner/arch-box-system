@@ -71,6 +71,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Binary paths
 path+=('/usr/local/bin')
+path+=("$HOME/.local/share/go/bin")
 path+=("$HOME/.local/bin")
 # Optional
 path+=("$HOME/.local/share/bsprak.toolchain/bin")
@@ -126,9 +127,6 @@ function update {
   pnotify "Starting to upgrade user repository packages ..."
   yay --noconfirm -Syu
   psuccess "Upgrade of user repository packages done.\n"
-  # TODO: Add updating nvim plugins
-  # pnotify "Starting to upgrade nvim plugins ..."
-  # psuccess "Upgrade of nvim plugins done."
 }
 
 alias npmi="npm i --prefix $HOME/.local/share/npm"
@@ -187,7 +185,10 @@ bindkey '^l' autosuggest-accept
 bindkey '^j' autosuggest-execute
 
 # Open files easily
-alias open="nohup xdg-open $@ 1>/dev/null 2>/dev/null"
+function o {
+  xdg-open $@ >/dev/null 2>/dev/null &
+  disown
+}
 
 # Enable z.lua fast cd
 eval "$(lua $HOME/.local/share/z.lua/z.lua --init zsh)"
@@ -227,6 +228,7 @@ alias vifme="nvim ~/.config/vifm/vifmrc"
 alias i3e="nvim ~/.config/i3/config"
 alias i3be="nvim ~/.config/i3blocks/config"
 alias xinite="sudo nvim ~/.xinitrc"
+alias kittye="nvim ~/.config/kitty/kitty.conf; killall -s SIGUSR1 kitty"
 
 alias vt="nvim *.tex"
 
