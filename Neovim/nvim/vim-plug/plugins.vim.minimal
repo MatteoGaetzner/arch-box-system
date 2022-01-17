@@ -2,7 +2,8 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall
+  "autocmd VimEnter * PlugInstall
+  "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
@@ -13,6 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 Plug 'honza/vim-snippets'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 'markdown' }
 Plug 'lervag/vimtex'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -22,10 +24,12 @@ Plug 'sainnhe/everforest'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 Plug 'scrooloose/NERDTree'
 Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'vim-autoformat/vim-autoformat'
 Plug 'vim-scripts/ReplaceWithRegister'

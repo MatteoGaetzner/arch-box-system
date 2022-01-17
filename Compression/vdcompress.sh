@@ -7,13 +7,14 @@ unset perc
 
 case $# in
   0 )
-    perc=100 ;;
+    cpulimit -l $(( $(nproc) * 100 )) -i _vdcompress ;;
   1 )
-    perc=$1 ;;
+    cpulimit -l $(( $(nproc) * $1 )) -i _vdcompress ;;
+  2 )
+    cpulimit -l $(( $(nproc) * $1 )) -i _vdcompress $2 ;;
   * )
-    pwarn "Usage: vdcompress <cpu usage in percent>; e.g. vdcompress 42"
+    pwarn "Usage: vdcompress <cpu usage in percent>; e.g. vdcompress 42 <optional:encoder>"
     return 1
     ;;
 esac
 
-cpulimit -l $(( $(nproc) * $perc )) -i _vdcompress

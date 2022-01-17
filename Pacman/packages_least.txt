@@ -9,10 +9,10 @@ bat
 bison
 bluez-utils
 chromium
+cpulimit
 ctags
 cups
 exa
-fakeroot
 firefox
 flameshot
 flex
@@ -25,7 +25,9 @@ network-manager-applet
 nextcloud-client
 ninja
 nvidia
+nvtop
 okular
+pacman-contrib
 papirus-icon-theme
 pass-otp
 patch
@@ -58,7 +60,6 @@ tldr
 ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols
 usbutils
-vim-latexsuite
 vlc
 wget
 whatsapp-nativefier
@@ -101,5 +102,6 @@ xorg-xwininfo
 xorg-xwud
 yarn
 yay
+zotero
 zsh-autosuggestions
 zsh-syntax-highlighting

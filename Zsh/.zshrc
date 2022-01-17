@@ -50,6 +50,7 @@ eval "$(pyenv init --path)"
 plugins=(
   pass
   pip
+  pyenv
   emoji
   dotenv
   pip
@@ -73,8 +74,18 @@ source $ZSH/oh-my-zsh.sh
 path+=('/usr/local/bin')
 path+=("$HOME/.local/share/go/bin")
 path+=("$HOME/.local/bin")
+path+=("$HOME/.local/share/gem/ruby/3.0.0/bin/")
+
+# Perl
+PATH="$HOME/.local/share/perl5/bin${PATH:+:${PATH}}"
+PERL5LIB="$HOME/.local/share/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="$HOME/.loca/share/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"$HOME/.local/share/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=$HOME/.local/share/perl5"; export PERL_MM_OPT;
+
 # Optional
 path+=("$HOME/.local/share/bsprak.toolchain/bin")
+
 export PATH
 
 # Dynamic library path i.e. where the OS finds *.so files
@@ -224,6 +235,7 @@ alias v="nvim"
 alias zshe="nvim ~/.zshrc; source ~/.zshrc"
 alias vime="nvim ~/.config/nvim/init.vim"
 alias vimep="nvim ~/.config/nvim/vim-plug/plugins.vim"
+alias vimec="nvim ~/.config/nvim/coc-settings.json"
 alias vifme="nvim ~/.config/vifm/vifmrc"
 alias i3e="nvim ~/.config/i3/config"
 alias i3be="nvim ~/.config/i3blocks/config"
@@ -252,7 +264,13 @@ function u {
   argc=${#1}
   course=${1:0:1}
   subdir=${1:1:1}
-  exercise_num=${1:2:1}
+
+  if [[ $argc -ge 3 ]]; then
+    exercise_num=${1:2:$(( $argc - 2 ))}
+  else
+    exercise_num=0
+  fi
+
 
   case $course in
     [Cc]s* )
@@ -290,7 +308,7 @@ function u {
           cl "${ISISDL_DIR}/${COURSE}/"
       esac
       ;;
-    3 )
+    [34] )
       cl $(find ${WORK_DIR}/${COURSE_CLEAN}/Solutions -maxdepth 1 -type d -name "*${exercise_num}" | head -n 1)
       ;;
     *)
@@ -404,3 +422,5 @@ function cpp_cmake_debug {
 # Zsh syntax highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+

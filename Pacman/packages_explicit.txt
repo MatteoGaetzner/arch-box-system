@@ -13,6 +13,7 @@ bluez-utils
 btrfs-progs
 chromium
 clang
+cpulimit
 ctags
 cups
 dialog
@@ -43,7 +44,6 @@ lua
 m4
 make
 neovim
-neovim-symlinks
 network-manager-applet
 networkmanager
 nextcloud-client
@@ -53,7 +53,9 @@ npm
 nvidia
 nvidia-settings
 nvidia-utils
+nvtop
 okular
+pacman-contrib
 papirus-icon-theme
 pass
 pass-otp
@@ -73,6 +75,7 @@ r
 reflector
 rofi
 rsync
+ruby
 rust-analyzer
 samba
 slack-desktop
@@ -106,7 +109,6 @@ tldr
 ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols
 usbutils
-vim-latexsuite
 vlc
 wget
 whatsapp-nativefier
@@ -160,6 +162,7 @@ xorg-xwud
 xsel
 yarn
 yay
+zotero
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting

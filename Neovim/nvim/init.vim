@@ -420,6 +420,16 @@ autocmd BufWritePre * call Format()
 
 "--------------  Latex  --------------------------
 
+syntax enable
+
+let g:tex_flavor = "latex"
+
+" Or with a generic interface:
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+
+let g:vimtex_compiler_method = 'latexmk'
+
 " vim-latex-live-preview
 set updatetime=500
 let g:livepreview_engine = 'pdflatex' . ''
@@ -430,11 +440,6 @@ let g:livepreview_use_biber = 1
 " Quick compilation
 autocmd FileType tex nnoremap <C-c> :!rm out/*; latexmk -pdf -output-directory=out %<CR>
 
-" Autoformat Formating
-" let g:formatdef_latexindent = '"latexindent -"'
-
-" Start latex live preview session
-"autocmd FileType tex nnoremap <C-m> :!alacritty --working-directory=$(pwd) -e bash -c 'latexmk -pvc -pdf -outdir=out' &<CR><CR>
 
 "--------------  C++  ----------------------------
 
@@ -456,10 +461,13 @@ let g:asyncrun_open = 10
 
 "--------------  Markdown  -----------------------
 
-autocmd FileType markdown normal zR
-let g:vim_markdown_math = 1
-let g:mkdp_refresh_slow=1
-let g:mkdp_markdown_css='~/.vim/ressources/github-markdown.css'
+" autocmd FileType markdown normal zR
+" let g:vim_markdown_math = 1
+" let g:mkdp_refresh_slow=1
+" let g:mkdp_markdown_css='~/.vim/ressources/github-markdown.css'
+let g:mkdp_browser = 'firefox'
+let $NVIM_MKDP_LOG_FILE = expand('~/mkdp-log.log')
+let $NVIM_MKDP_LOG_LEVEL = 'debug'
 
 "--------------  Betriebssystem Praktikum  -------
 
