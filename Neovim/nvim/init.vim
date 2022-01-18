@@ -282,7 +282,7 @@ nmap <leader>rn <Plug>(coc-rename)
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
-augroup mygroup
+augroup cocgroup0
   autocmd!
   "  Setup formatexpr specified filetype(s).
   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
@@ -456,6 +456,12 @@ autocmd FileType sh nnoremap <C-c> :!bash %<CR>
 
 autocmd FileType python nnoremap <F4> :AsyncRun make run <CR>
 autocmd FileType python nnoremap <F5> :AsyncRun make test <CR>
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 let g:asyncrun_open = 10
 

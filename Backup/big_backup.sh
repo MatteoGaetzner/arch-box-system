@@ -27,7 +27,7 @@ pnotify "Backing up to external drive ..."
 
 # mount drive
 if ! grep -qs '/mnt/backup ' /proc/mounts; then
-  sudo mount UUID=$_UUID /mnt/backup >/dev/null 2>/dev/null
+  sudo mount UUID=$_UUID /mnt/backup
 fi
 
 # run this process with real low priority
@@ -37,7 +37,7 @@ renice +12  -p $$ >/dev/null
 
 # sync
 
-rsync $OPTS $SRC $SNAP/latest >> $SNAP/rsync.log
+rsync $OPTS $SRC $SNAP/latest >> $SNAP/rsync.log >/dev/null 2>/dev/null
 
 # check if enough has changed and if so
 # make a hardlinked copy named as the date
@@ -55,5 +55,3 @@ fi
 
 # cleanup
 sudo umount /mnt/backup
-
-psuccess "Backup to external drive done."

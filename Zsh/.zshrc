@@ -88,6 +88,8 @@ path+=("$HOME/.local/share/bsprak.toolchain/bin")
 
 export PATH
 
+XDG_DATA_HOME=$HOME/.local/share
+
 # Dynamic library path i.e. where the OS finds *.so files
 LD_LIBRARY_PATH=/usr/lib
 export LD_LIBRARY_PATH
@@ -117,9 +119,7 @@ function backup_full {
 function pm {
   case $1 in
     -Syu)
-      pnotify "Starting system upgrade ..."
-      sudo pacman "$@"
-      psuccess "System upgrade done." ;;
+      sudo pacman "$@" ;;
     -S | -D | -S[^sih]* | -R* | -U*)
       sudo pacman "$@" ;;
     *)
@@ -329,7 +329,14 @@ function setup_latex {
   cp $HOME/Sync/Programs/Self/Latex/Templates/Generic/main.tex main.tex
 }
 
-alias jl='jupyter-lab'
+function jl {
+  jupyter-lab $1
+}
+
+function jn {
+  jupyter notebook $1
+}
+
 
 ###############  VPN  ############################
 
@@ -394,6 +401,26 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 function csv_to_unix {
   tr -d '\15\32' < $1 > unix_$1
 }
+
+function pyasc_create {
+  python -m jupyter_ascending.scripts.make_pair --base $1
+}
+
+function pyasc_sync {
+  python -m jupyter_ascending.requests.sync --filename $1
+}
+
+function pyasc_setup {
+  pyasc_create $1
+  pyasc_sync $1.py
+}
+
+function pyasc_setup_run {
+  pyasc_create $1
+  pyasc_sync $1.py
+  jupyter notebook $1.ipynb
+}
+
 
 ###############  C++
 
