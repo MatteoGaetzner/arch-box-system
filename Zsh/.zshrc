@@ -100,6 +100,9 @@ export GOPATH
 
 ###############  System Utils  ###################
 
+alias sudo='doas'
+alias sudoedit='doas rnano'
+
 # Backup to Github, and timeshift
 function backup_fast {
   pnotify "Starting timeshift snapshot creation ..."
@@ -118,8 +121,6 @@ function backup_full {
 # This evaluates to `pacman ...` or `sudo pacman ...` if needed
 function pm {
   case $1 in
-    -Syu)
-      sudo pacman "$@" ;;
     -S | -D | -S[^sih]* | -R* | -U*)
       sudo pacman "$@" ;;
     *)
@@ -395,6 +396,11 @@ export R_LIBS
 alias activate="source *_env/bin/activate"
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+function pyasc_edit {
+  python -m jupyter_ascending.requests.sync --filename $1
+  nvim $1
+}
 
 ###############  Deep Learning  ##################
 

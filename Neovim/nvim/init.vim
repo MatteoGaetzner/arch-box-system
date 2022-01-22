@@ -41,15 +41,11 @@ set undodir=~/.vim/undo//
 
 "--------------  Key Tweaks  ---------------------
 
-inoremap >> <Esc>>>3li
-inoremap << <Esc><<hi
 nnoremap <Tab> >>2l
 nnoremap <S-Tab> <<2h
 
 " gm -> add mark
 nnoremap gm m
-
-nnoremap <Enter> :AsyncRun make <CR>
 
 "--------------  Moving Lines  -------------------
 
@@ -447,6 +443,7 @@ autocmd FileType tex nnoremap <C-c> :!rm out/*; latexmk -pdf -output-directory=o
 autocmd FileType cpp nnoremap <C-c> :!g++ -std=c++11 % -Wall -g -o %.out && ./%.out<CR>
 autocmd FileType cpp nnoremap <C-s> :!make && gdb -tui ./bin/main.out<CR>
 autocmd FileType cpp nnoremap <C-m> :!make && ./bin/main.out<CR>
+autocmd FileType cpp nnoremap <CR> :!cmake -S src -B release ; make --directory=release ; ./release/main images/lena.jpg $@
 
 "--------------  Bash  ---------------------------
 
