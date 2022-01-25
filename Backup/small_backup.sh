@@ -18,7 +18,7 @@ rsync -av ~/.zprofile ~/Sync/System/Zsh/
 rsync -av ~/.zshrc ~/Sync/System/Zsh/
 
 # ssh
-gpg -e --quiet --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
+gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
 rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
 
 # Neovim
@@ -69,10 +69,10 @@ dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then
   perror "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
 else
-  git -C ~/Sync/System pull -q
+  git -C ~/Sync/System pull
   git -C ~/Sync/System add .
   git -C ~/Sync/System commit -m "automatic update - $(date --rfc-2822)"
-  git -C ~/Sync/System push -q
+  git -C ~/Sync/System push
 fi
 
 psuccess "Backup to GitHub done."

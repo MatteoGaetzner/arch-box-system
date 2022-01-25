@@ -105,6 +105,7 @@ slack-desktop
 spotify
 sudo
 telegram-desktop
+tex-match
 texinfo
 texlab
 texlive-bibtexextra

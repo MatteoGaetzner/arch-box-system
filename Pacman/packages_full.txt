@@ -1100,6 +1100,7 @@ telegram-desktop
 tensorflow
 tesseract
 tevent
+tex-match
 texinfo
 texlab
 texlive-bibtexextra

@@ -1044,12 +1044,6 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 99	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 99	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 <<	Config/.config/nvim/init.vim	/^inoremap << <Esc><<hi$/;"	m
-<C-J>	Neovim/nvim/init.vim	/^inoremap <C-J> <Esc>:m .+1<CR>==gi$/;"	m
-<C-J>	Neovim/nvim/init.vim	/^nnoremap <C-J> :m .+1<CR>==$/;"	m
-<C-J>	Neovim/nvim/init.vim	/^vnoremap <C-J> :m '>+1<CR>gv=gv$/;"	m
-<C-K>	Neovim/nvim/init.vim	/^inoremap <C-K> <Esc>:m .-2<CR>==gi$/;"	m
-<C-K>	Neovim/nvim/init.vim	/^nnoremap <C-K> :m .-2<CR>==$/;"	m
-<C-K>	Neovim/nvim/init.vim	/^vnoremap <C-K> :m '<-2<CR>gv=gv$/;"	m
 <C-f>	Config/.config/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
 <C-f>	Neovim/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
 <C-j>	Config/.config/nvim/init.vim	/^inoremap <C-j> <Esc>:m .+1<CR>==gi$/;"	m

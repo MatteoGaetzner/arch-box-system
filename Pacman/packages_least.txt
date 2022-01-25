@@ -52,6 +52,7 @@ reflector
 rust-analyzer
 slack-desktop
 spotify
+tex-match
 texlab
 texlive-bibtexextra
 texlive-fontsextra
