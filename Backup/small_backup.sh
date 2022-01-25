@@ -62,7 +62,7 @@ rsync -av ~/.local/bin/psuccess ~/Sync/System/Print.Scripts/psuccess
 rsync -av ~/.i3 ~/Sync/System/i3
 
 # git
-rsync -av ~/.gitignore ~/Sync/System/git/.gitignore
+rsync -av ~/.gitignore ~/Sync/System/Git/.gitignore
 
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 

@@ -164,9 +164,10 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 0	Neovim/nvim/coc-settings.json	/^        "filetypes": ["cmake"],$/;"	s	array:languageserver.cmake.filetypes
 0	Neovim/nvim/coc-settings.json	/^        "filetypes": ["dockerfile"],$/;"	s	array:languageserver.dockerfile.filetypes
 0	Neovim/nvim/coc-settings.json	/^        "filetypes": ["php"],$/;"	s	array:languageserver.intelephense.filetypes
-0	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	s	array:languageserver.latex.filetypes
-0	Neovim/nvim/coc-settings.json	/^        "filetypes": ["vim", "eruby", "markdown"]$/;"	s	array:languageserver.efm.filetypes
+0	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
+0	Neovim/nvim/coc-settings.json	/^        "filetypes": ["vim", "eruby"]$/;"	s	array:languageserver.efm.filetypes
 0	Neovim/nvim/coc-settings.json	/^      "latex": ["tex"]$/;"	s	array:snippets.extends.latex
+0	Neovim/nvim/coc-settings.json	/^      "tex",$/;"	s	array:coc.source.vimtex.filetypes
 0	i3/.i3/workspace-1-startup.json	/^    {$/;"	o	array:swallows
 0	i3/.i3/workspace-2-startup.json	/^                                {$/;"	o	array:0.nodes.0.nodes.0.swallows
 0	i3/.i3/workspace-2-startup.json	/^                                {$/;"	o	array:0.nodes.0.nodes.1.swallows
@@ -248,8 +249,9 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 1	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 1	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 1	Neovim/nvim/coc-settings.json	/^          "-vv",$/;"	s	array:languageserver.python.args
-1	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	s	array:languageserver.latex.filetypes
-1	Neovim/nvim/coc-settings.json	/^        "filetypes": ["vim", "eruby", "markdown"]$/;"	s	array:languageserver.efm.filetypes
+1	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
+1	Neovim/nvim/coc-settings.json	/^        "filetypes": ["vim", "eruby"]$/;"	s	array:languageserver.efm.filetypes
+1	Neovim/nvim/coc-settings.json	/^      "plaintex",$/;"	s	array:coc.source.vimtex.filetypes
 1	i3/.i3/workspace-2-startup.json	/^                        {$/;"	o	array:0.nodes.0.nodes
 1	i3/.i3/workspace-2-startup.json	/^                {$/;"	o	array:0.nodes
 1	i3/.i3/workspace-2-startup.json	/^        {$/;"	o	array:nodes
@@ -466,8 +468,8 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 2	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 2	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 2	Neovim/nvim/coc-settings.json	/^          "--log-file",$/;"	s	array:languageserver.python.args
-2	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	s	array:languageserver.latex.filetypes
-2	Neovim/nvim/coc-settings.json	/^        "filetypes": ["vim", "eruby", "markdown"]$/;"	s	array:languageserver.efm.filetypes
+2	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
+2	Neovim/nvim/coc-settings.json	/^      "latex"$/;"	s	array:coc.source.vimtex.filetypes
 2. Basic Permissions.	i3blocks/afs/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
 2. Basic Permissions.	i3blocks/aur-update/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
 2. Basic Permissions.	i3blocks/backlight/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -598,7 +600,6 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 3	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 3	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 3	Neovim/nvim/coc-settings.json	/^          "\/tmp\/lsp_python.log"$/;"	s	array:languageserver.python.args
-3	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	s	array:languageserver.latex.filetypes
 3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/afs/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
 3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/aur-update/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
 3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/backlight/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -1043,6 +1044,12 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 99	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 99	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 <<	Config/.config/nvim/init.vim	/^inoremap << <Esc><<hi$/;"	m
+<C-J>	Neovim/nvim/init.vim	/^inoremap <C-J> <Esc>:m .+1<CR>==gi$/;"	m
+<C-J>	Neovim/nvim/init.vim	/^nnoremap <C-J> :m .+1<CR>==$/;"	m
+<C-J>	Neovim/nvim/init.vim	/^vnoremap <C-J> :m '>+1<CR>gv=gv$/;"	m
+<C-K>	Neovim/nvim/init.vim	/^inoremap <C-K> <Esc>:m .-2<CR>==gi$/;"	m
+<C-K>	Neovim/nvim/init.vim	/^nnoremap <C-K> :m .-2<CR>==$/;"	m
+<C-K>	Neovim/nvim/init.vim	/^vnoremap <C-K> :m '<-2<CR>gv=gv$/;"	m
 <C-f>	Config/.config/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
 <C-f>	Neovim/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
 <C-j>	Config/.config/nvim/init.vim	/^inoremap <C-j> <Esc>:m .+1<CR>==gi$/;"	m
@@ -2121,6 +2128,7 @@ cmake	Config/.config/nvim/coc-settings.json	/^  "cmake": {$/;"	o
 cmake	Neovim/nvim/coc-settings.json	/^      "cmake": {$/;"	o	object:languageserver
 cmd-hist	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	a
 cmus	i3blocks/mediaplayer/mediaplayer	/^sub cmus {$/;"	s
+coc.source.vimtex.filetypes	Neovim/nvim/coc-settings.json	/^    "coc.source.vimtex.filetypes": [$/;"	a
 cocgroup0	Neovim/nvim/init.vim	/^augroup cocgroup0$/;"	a
 codeassists.quickdefinition	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="codeassists.quickdefinition" count="0" last-shown="0" last-used="0" shown-count/;"	i
 codeassists.quickdefinition.lookup	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="codeassists.quickdefinition.lookup" count="0" last-shown="0" last-used="0" show/;"	i
@@ -2154,7 +2162,7 @@ command	Config/.config/nvim/coc-settings.json	/^    "command": "digestif",$/;"	s
 command	Config/.config/nvim/coc-settings.json	/^    "command": "docker-langserver",$/;"	s	object:dockerfile
 command	Config/.config/nvim/coc-settings.json	/^    "command": "efm-langserver",$/;"	s	object:efm
 command	Config/.config/nvim/coc-settings.json	/^    "command": "intelephense",$/;"	s	object:intelephense
-command	Neovim/nvim/coc-settings.json	/^        "command": "\/usr\/bin\/texlab",$/;"	s	object:languageserver.latex
+command	Neovim/nvim/coc-settings.json	/^        "command": "\/home\/matteo\/.local\/bin\/digestif",$/;"	s	object:languageserver.digestif
 command	Neovim/nvim/coc-settings.json	/^        "command": "cmake-language-server",$/;"	s	object:languageserver.cmake
 command	Neovim/nvim/coc-settings.json	/^        "command": "docker-langserver",$/;"	s	object:languageserver.dockerfile
 command	Neovim/nvim/coc-settings.json	/^        "command": "efm-langserver",$/;"	s	object:languageserver.efm
@@ -2355,6 +2363,7 @@ deviceID	Config/.config/zoomus.conf	/^deviceID=2C:F0:5D:8D:11:B8$/;"	k	section:G
 device_id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s	object:AuxAudioDevice1.settings
 device_id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s	object:DesktopAudioDevice1.settings
 digestif	Config/.config/nvim/coc-settings.json	/^  "digestif": {$/;"	o
+digestif	Neovim/nvim/coc-settings.json	/^      "digestif": {$/;"	o	object:languageserver
 dimmer	i3blocks/dimmer/README.md	/^# dimmer$/;"	c
 dir	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	object:gtabs.0.panes.0.ptabs.0.history.0
 dir	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	object:gtabs.0.panes.0.ptabs.0.history.1
@@ -2885,8 +2894,8 @@ filetypes	Config/.config/nvim/coc-settings.json	/^    "filetypes": ["vim", "erub
 filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["cmake"],$/;"	a	object:languageserver.cmake
 filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["dockerfile"],$/;"	a	object:languageserver.dockerfile
 filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["php"],$/;"	a	object:languageserver.intelephense
-filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "bib", "plaintex", "context"]$/;"	a	object:languageserver.latex
-filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["vim", "eruby", "markdown"]$/;"	a	object:languageserver.efm
+filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	a	object:languageserver.digestif
+filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["vim", "eruby"]$/;"	a	object:languageserver.efm
 filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": [$/;"	a	object:languageserver.python
 filters	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	object:gtabs.0.panes.0.ptabs.0
 filters	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	object:gtabs.0.panes.1.ptabs.0
@@ -2973,7 +2982,6 @@ g:everforest_ui_contrast	Config/.config/nvim/init.vim	/^let g:everforest_ui_cont
 g:everforest_ui_contrast	Neovim/nvim/init.vim	/^let g:everforest_ui_contrast = 'high'$/;"	v
 g:formatdef_latexindent	Config/.config/nvim/init.vim	/^let g:formatdef_latexindent = '"latexindent -"'$/;"	v
 g:livepreview_engine	Config/.config/nvim/init.vim	/^let g:livepreview_engine = 'pdflatex' . ''$/;"	v
-g:livepreview_engine	Neovim/nvim/init.vim	/^let g:livepreview_engine = 'pdflatex' . ''$/;"	v
 g:livepreview_previewer	Config/.config/nvim/init.vim	/^let g:livepreview_previewer = 'evince'$/;"	v
 g:livepreview_previewer	Neovim/nvim/init.vim	/^let g:livepreview_previewer = 'okular'$/;"	v
 g:livepreview_texinputs	Config/.config/nvim/init.vim	/^let g:livepreview_texinputs = '.\/out\/'$/;"	v
@@ -3342,7 +3350,6 @@ last-location	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[
 last-location	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	object:gtabs.0.panes.1.ptabs.0
 lastVisited	Config/.config/QtProject.conf	/^lastVisited=file:\/\/\/home\/matteo\/Documents\/Marriage\/summary$/;"	k	section:FileDialog
 latex	Neovim/nvim/coc-settings.json	/^      "latex": ["tex"]$/;"	a	object:snippets.extends
-latex	Neovim/nvim/coc-settings.json	/^      "latex": {$/;"	o	object:languageserver
 launch_ncdu	i3blocks/disk_usage/disk_usage	/^def launch_ncdu(mp):$/;"	f
 layout	i3/.i3/workspace-2-startup.json	/^                    "layout": "tabbed",$/;"	s	object:0.nodes.0
 layout	i3/.i3/workspace-2-startup.json	/^            "layout": "splitv",$/;"	s	object:0
@@ -6146,7 +6153,6 @@ versioned_id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDe
 versioned_id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s	object:sources.0
 versioned_id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s	object:sources.1
 viewMode	Config/.config/QtProject.conf	/^viewMode=Detail$/;"	k	section:FileDialog
-vimrc	Neovim/nvim/init.vim	/^augroup vimrc$/;"	a
 visible	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	b	object:sources.1.settings.items.0
 visible	Config/.config/vlc/vlc-qt-interface.conf	/^playlist-visible=false$/;"	k	section:MainWindow
 visible	Config/.config/vlc/vlc-qt-interface.conf	/^status-bar-visible=false$/;"	k	section:MainWindow
