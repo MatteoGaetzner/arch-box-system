@@ -61,6 +61,9 @@ rsync -av ~/.local/bin/psuccess ~/Sync/System/Print.Scripts/psuccess
 # i3 layout
 rsync -av ~/.i3 ~/Sync/System/i3
 
+# git
+rsync -av ~/.gitignore ~/Sync/System/git/.gitignore
+
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 
 if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then

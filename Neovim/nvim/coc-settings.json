@@ -31,11 +31,11 @@
       "efm": {
         "command": "efm-langserver",
         "args": [],
-        "filetypes": ["vim", "eruby", "markdown"]
+        "filetypes": ["vim", "eruby"]
       },
-      "latex": {
-        "command": "/usr/bin/texlab",
-        "filetypes": ["tex", "bib", "plaintex", "context"]
+      "digestif": {
+        "command": "/home/matteo/.local/bin/digestif",
+        "filetypes": ["tex", "plaintex", "context"]
       },
       "python": {
         "command": "python",
@@ -109,4 +109,9 @@
       "latex": ["tex"]
     },
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
+    "coc.source.vimtex.filetypes": [
+      "tex",
+      "plaintex",
+      "latex"
+    ]
   }

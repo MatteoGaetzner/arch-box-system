@@ -15,6 +15,7 @@ cmake
 cpulimit
 ctags
 cups
+evince
 exa
 firefox
 flameshot
@@ -28,10 +29,9 @@ linux-headers
 lvtk
 make
 ncdu
+neofetch
 network-manager-applet
 nextcloud-client
-nitrogen
-numactl
 nvidia
 nvidia-cg-toolkit
 nvtop
@@ -43,6 +43,7 @@ pass-otp
 patch
 pavucontrol
 pdfgrep
+pdftk
 playerctl
 pulsemixer
 pyenv-virtualenv
@@ -97,7 +98,6 @@ xorg-x11perf
 xorg-xbacklight
 xorg-xcmsdb
 xorg-xcursorgen
-xorg-xdpyinfo
 xorg-xdriinfo
 xorg-xev
 xorg-xgamma
@@ -114,7 +114,6 @@ xorg-xsetroot
 xorg-xvinfo
 xorg-xwayland
 xorg-xwd
-xorg-xwininfo
 xorg-xwud
 yarn
 yay

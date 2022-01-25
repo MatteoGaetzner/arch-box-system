@@ -49,17 +49,12 @@ nnoremap gm m
 
 "--------------  Moving Lines  -------------------
 
-" vim-latex maps c-j, so these mappings happen
-" after loading plugins
-augroup vimrc
-  au!
-  au VimEnter * nnoremap <C-J> :m .+1<CR>==
-  au VimEnter * nnoremap <C-K> :m .-2<CR>==
-  au VimEnter * inoremap <C-J> <Esc>:m .+1<CR>==gi
-  au VimEnter * inoremap <C-K> <Esc>:m .-2<CR>==gi
-  au VimEnter * vnoremap <C-J> :m '>+1<CR>gv=gv
-  au VimEnter * vnoremap <C-K> :m '<-2<CR>gv=gv
-augroup END
+nnoremap <C-J> :m .+1<CR>==
+nnoremap <C-K> :m .-2<CR>==
+inoremap <C-J> <Esc>:m .+1<CR>==gi
+inoremap <C-K> <Esc>:m .-2<CR>==gi
+vnoremap <C-J> :m '>+1<CR>gv=gv
+vnoremap <C-K> :m '<-2<CR>gv=gv
 
 "--------------  Vimrc Editing  ------------------
 
@@ -409,7 +404,7 @@ endfun
 " File formatting settings
 autocmd FileType h,c,cpp let b:useClangFormat=1
 autocmd FileType html,javascript,vue,css let b:usePrettier=1
-autocmd FileType "",yaml,vifm,conf let b:dontFormat=1
+autocmd FileType "",yaml,vifm,conf,markdown let b:dontFormat=1
 autocmd BufWritePre *.rasi let b:dontFormat=1
 autocmd BufWritePre *.snippets let b:dontFormat=1
 autocmd BufWritePre * call Format()
@@ -428,13 +423,12 @@ let g:vimtex_compiler_method = 'latexmk'
 
 " vim-latex-live-preview
 set updatetime=500
-let g:livepreview_engine = 'pdflatex' . ''
 let g:livepreview_previewer = 'okular'
 let g:livepreview_texinputs = './out/'
 let g:livepreview_use_biber = 1
 
 " Quick compilation
-autocmd FileType tex nnoremap <C-c> :!rm out/*; latexmk -pdf -output-directory=out %<CR>
+autocmd FileType tex nnoremap <CR> :!rm out/*; latexmk -pdf -output-directory=out %<CR>
 
 
 "--------------  C++  ----------------------------
@@ -451,8 +445,8 @@ autocmd FileType sh nnoremap <C-c> :!bash %<CR>
 
 "--------------  Python  -------------------------
 
-autocmd FileType python nnoremap <F4> :AsyncRun make run <CR>
-autocmd FileType python nnoremap <F5> :AsyncRun make test <CR>
+autocmd FileType python nnoremap <CR> :AsyncRun make run ARGS="%"<CR>
+autocmd FileType python nnoremap <F4> :AsyncRun make test <CR>
 
 augroup numbertoggle
   autocmd!
@@ -464,6 +458,7 @@ let g:asyncrun_open = 10
 
 "--------------  Markdown  -----------------------
 
+autocmd BufWritePre *.md call CocActionAsync('runCommand', 'markdownlint.fixAll')
 " autocmd FileType markdown normal zR
 " let g:vim_markdown_math = 1
 " let g:mkdp_refresh_slow=1

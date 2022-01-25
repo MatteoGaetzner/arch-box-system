@@ -20,6 +20,10 @@ bindsym Print exec flameshot gui
 # No titlebar
 for_window [class="^.*"] border pixel 1
 
+# Prevent screen timeout
+exec xset s off
+exec xset -dpms
+
 ###############  Startup Applications  ###########
 
 # Wallpaper

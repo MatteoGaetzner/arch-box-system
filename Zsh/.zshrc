@@ -230,7 +230,7 @@ function findit {
 }
 
 # ipython
-alias i="ipython"
+alias i="/home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit"
 
 alias v="nvim"
 alias zshe="nvim ~/.zshrc; source ~/.zshrc"
@@ -396,6 +396,14 @@ export R_LIBS
 alias activate="source *_env/bin/activate"
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+function pyasc_setup {
+  python -m jupyter_ascending.scripts.make_pair --base $1
+}
+
+function pyasc_sync {
+  python -m jupyter_ascending.requests.sync --filename $1
+}
 
 function pyasc_edit {
   python -m jupyter_ascending.requests.sync --filename $1
