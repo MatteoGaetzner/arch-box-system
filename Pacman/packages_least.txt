@@ -24,6 +24,7 @@ grub-customizer
 htop
 i3blocks
 john
+kdenlive
 kitty
 linux-headers
 lvtk
@@ -36,7 +37,6 @@ nvidia
 nvidia-cg-toolkit
 nvtop
 okular
-opencv-cuda
 pacman-contrib
 papirus-icon-theme
 pass-otp

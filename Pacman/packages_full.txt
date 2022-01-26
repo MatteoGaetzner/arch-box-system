@@ -27,6 +27,7 @@ at-spi2-atk
 at-spi2-core
 atk
 atkmm
+attica
 attr
 audit
 autoconf
@@ -46,6 +47,7 @@ bluez-libs
 bluez-utils
 boost-libs
 botan
+breeze-icons
 brotli
 btrfs-progs
 bubblewrap
@@ -70,6 +72,7 @@ cmake
 cmocka
 codec2
 compiler-rt
+convertlit
 coreutils
 cpulimit
 cronie
@@ -102,6 +105,7 @@ dosfstools
 double-conversion
 doxygen
 e2fsprogs
+ebook-tools
 ed
 efibootmgr
 efivar
@@ -390,7 +394,9 @@ kcrash
 kdbusaddons
 kdeclarative
 kded
+kdenlive
 keyutils
+kfilemetadata
 kglobalaccel
 kguiaddons
 ki18n
@@ -404,7 +410,9 @@ kitty-terminfo
 kjobwidgets
 kjs
 kmod
+knewstuff
 knotifications
+knotifyconfig
 kpackage
 kparts
 kpty
@@ -467,6 +475,7 @@ libde265
 libdrm
 libdvbpsi
 libebml
+libebur128
 libedit
 libelf
 libepoxy
@@ -581,6 +590,7 @@ libthai
 libtheora
 libtiff
 libtirpc
+libtommath
 libtool
 libunistring
 libunwind
@@ -637,6 +647,7 @@ libxv
 libxxf86vm
 libyaml
 libyuv
+libzip
 licenses
 lilv
 linux
@@ -671,6 +682,7 @@ meson
 minizip
 mkinitcpio
 mkinitcpio-busybox
+mlt
 mobile-broadband-provider-info
 mpfr
 mpg123
@@ -1003,6 +1015,7 @@ qt5-declarative
 qt5-graphicaleffects
 qt5-location
 qt5-multimedia
+qt5-networkauth
 qt5-quickcontrols
 qt5-quickcontrols2
 qt5-speech
@@ -1062,6 +1075,7 @@ signon-ui
 signond
 slack-desktop
 slang
+smartmontools
 smbclient
 snappy
 sndio
@@ -1085,6 +1099,7 @@ svt-av1
 svt-hevc
 svt-vp9
 swig
+syndication
 sysfsutils
 systemd
 systemd-libs
@@ -1230,6 +1245,7 @@ xorg-xkbutils
 xorg-xkill
 xorg-xlsatoms
 xorg-xlsclients
+xorg-xmessage
 xorg-xmodmap
 xorg-xpr
 xorg-xprop

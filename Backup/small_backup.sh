@@ -23,7 +23,7 @@ rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
 
 # Neovim
 rsync -av \
-  --exclude={after,autoload,spell} \
+  --exclude={after,autoload,spell,UltiSnips} \
   ~/.config/nvim ~/Sync/System/Neovim
 
 # X

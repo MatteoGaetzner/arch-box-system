@@ -1044,6 +1044,12 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 99	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 99	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 <<	Config/.config/nvim/init.vim	/^inoremap << <Esc><<hi$/;"	m
+<C-H>	Neovim/nvim/init.vim	/^inoremap <C-H> <Esc>:m .+1<CR>==gi$/;"	m
+<C-H>	Neovim/nvim/init.vim	/^nnoremap <C-H> :m .+1<CR>==$/;"	m
+<C-H>	Neovim/nvim/init.vim	/^vnoremap <C-H> :m '>+1<CR>gv=gv$/;"	m
+<C-L>	Neovim/nvim/init.vim	/^inoremap <C-L> <Esc>:m .-2<CR>==gi$/;"	m
+<C-L>	Neovim/nvim/init.vim	/^nnoremap <C-L> :m .-2<CR>==$/;"	m
+<C-L>	Neovim/nvim/init.vim	/^vnoremap <C-L> :m '<-2<CR>gv=gv$/;"	m
 <C-f>	Config/.config/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
 <C-f>	Neovim/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
 <C-j>	Config/.config/nvim/init.vim	/^inoremap <C-j> <Esc>:m .+1<CR>==gi$/;"	m
@@ -2950,7 +2956,6 @@ g:UltiSnipsExpandTrigger	Neovim/nvim/init.vim	/^let g:UltiSnipsExpandTrigger = "
 g:UltiSnipsJumpBackwardTrigger	Neovim/nvim/init.vim	/^let g:UltiSnipsJumpBackwardTrigger="<nop>"$/;"	v
 g:UltiSnipsJumpForwardTrigger	Neovim/nvim/init.vim	/^let g:UltiSnipsJumpForwardTrigger="<nop>"$/;"	v
 g:UltiSnipsListSnippets	Config/.config/nvim/init.vim	/^let g:UltiSnipsListSnippets="<C-l>"$/;"	v
-g:UltiSnipsListSnippets	Neovim/nvim/init.vim	/^let g:UltiSnipsListSnippets="<C-l>"$/;"	v
 g:UltiSnipsSnippetDirectories	Config/.config/nvim/init.vim	/^let g:UltiSnipsSnippetDirectories=[$HOME.'\/.vim\/UltiSnips']$/;"	v
 g:UltiSnipsSnippetDirectories	Neovim/nvim/init.vim	/^let g:UltiSnipsSnippetDirectories=[$HOME.'\/.config\/nvim\/UltiSnips']$/;"	v
 g:_plug_bang	Config/.config/nvim/autoload/plug.vim	/^    let g:_plug_bang = (s:is_win && has('gui_running') ? 'silent ' : '').'!'.escape(cmd, '#!%')$/;"	v

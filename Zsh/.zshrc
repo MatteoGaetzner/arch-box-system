@@ -113,7 +113,7 @@ function backup_fast {
 
 # Backup to external drive, Github, and timeshift
 function backup_full {
-  sudo big_backup
+  doas big_backup
   printf "\n"
   backup_fast
 }
