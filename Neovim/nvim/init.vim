@@ -49,12 +49,12 @@ nnoremap gm m
 
 "--------------  Moving Lines  -------------------
 
-" nnoremap <C-J> :m .+1<CR>==
-" nnoremap <C-K> :m .-2<CR>==
-" inoremap <C-J> <Esc>:m .+1<CR>==gi
-" inoremap <C-K> <Esc>:m .-2<CR>==gi
-" vnoremap <C-J> :m '>+1<CR>gv=gv
-" vnoremap <C-K> :m '<-2<CR>gv=gv
+nnoremap <C-H> :m .+1<CR>==
+nnoremap <C-L> :m .-2<CR>==
+inoremap <C-H> <Esc>:m .+1<CR>==gi
+inoremap <C-L> <Esc>:m .-2<CR>==gi
+vnoremap <C-H> :m '>+1<CR>gv=gv
+vnoremap <C-L> :m '<-2<CR>gv=gv
 
 "--------------  Vimrc Editing  ------------------
 
@@ -373,7 +373,6 @@ let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 au BufRead,BufNewFile *.snippets setfiletype snippets
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger = "<s-tab>"
-let g:UltiSnipsListSnippets="<C-l>"
 let g:ulti_expand_or_jump_res = 0
 let g:UltiSnipsJumpForwardTrigger="<nop>"
 let g:UltiSnipsJumpBackwardTrigger="<nop>"
