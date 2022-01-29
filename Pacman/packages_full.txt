@@ -89,6 +89,7 @@ davs2
 db
 dbus
 dbus-glib
+dbus-python
 dconf
 decklink-sdk
 desktop-file-utils
@@ -168,6 +169,7 @@ gnu-free-fonts
 gnupg
 gnutls
 go
+gobject-introspection-runtime
 gpgme
 gpm
 gptfdisk
@@ -340,6 +342,7 @@ i3-wm
 i3blocks
 i3lock
 iana-etc
+ibus
 icu
 ijs
 imagemagick
@@ -461,6 +464,7 @@ libcdio
 libcdio-paranoia
 libcloudproviders
 libcolord
+libconfig
 libcroco
 libcups
 libcurl-gnutls
@@ -592,6 +596,7 @@ libtiff
 libtirpc
 libtommath
 libtool
+libtorrent-rasterbar
 libunistring
 libunwind
 libupnp
@@ -706,6 +711,7 @@ node-gyp
 nodejs
 nodejs-nativefier
 nodejs-nopt
+nordvpn-bin
 npm
 npth
 nspr
@@ -724,6 +730,7 @@ oniguruma
 openal
 opencl-headers
 opencl-nvidia
+openconnect
 opencore-amr
 opencv-cuda
 opendoas
@@ -754,6 +761,7 @@ pavucontrol
 pciutils
 pcre
 pcre2
+pcsclite
 pdfgrep
 pdftk
 perl
@@ -881,6 +889,7 @@ perl-xml-sax-base
 perl-xml-writer
 phonon-qt5
 phonon-qt5-gstreamer
+picom
 pinentry
 pipewire
 pixman
@@ -936,6 +945,7 @@ python-distro
 python-dnspython
 python-entrypoints
 python-executing
+python-gobject
 python-greenlet
 python-html5lib
 python-idna
@@ -1008,6 +1018,7 @@ python-webencodings
 python-websocket-client
 python-wheel
 python-zipp
+qbittorrent
 qpdf
 qrencode
 qt5-base
@@ -1093,6 +1104,7 @@ sqlite
 sratom
 srt
 startup-notification
+stoken
 subversion
 sudo
 svt-av1
@@ -1174,6 +1186,7 @@ vlc
 vmaf
 vo-amrwbenc
 volume_key
+vpnc
 vte-common
 vte3
 vtk
@@ -1200,6 +1213,7 @@ xcb-util-renderutil
 xcb-util-wm
 xcb-util-xrm
 xclip
+xcompmgr
 xdg-user-dirs
 xdg-utils
 xf86-input-libinput
@@ -1274,6 +1288,7 @@ zip
 zita-alsa-pcmi
 zita-resampler
 zlib
+zoom
 zotero
 zsh
 zsh-autosuggestions

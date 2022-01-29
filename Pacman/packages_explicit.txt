@@ -63,6 +63,7 @@ nextcloud-client
 ninja
 nitrogen
 nodejs
+nordvpn-bin
 npm
 numactl
 nvidia
@@ -71,6 +72,7 @@ nvidia-settings
 nvidia-utils
 nvtop
 okular
+openconnect
 opencv-cuda
 opendoas
 pacman-contrib
@@ -83,6 +85,7 @@ pavucontrol
 pdfgrep
 pdftk
 perl-anyevent-i3
+picom
 pkgconf
 playerctl
 pugixml
@@ -94,6 +97,7 @@ pyenv-virtualenv
 python-pip
 python-pynvim
 python-wheel
+qbittorrent
 qwinff
 r
 reflector
@@ -145,6 +149,7 @@ whatsapp-nativefier
 which
 wpa_supplicant
 xclip
+xcompmgr
 xdg-user-dirs
 xdg-utils
 xf86-video-vesa
@@ -192,6 +197,7 @@ xorg-xwud
 xsel
 yarn
 yay
+zoom
 zotero
 zsh
 zsh-autosuggestions

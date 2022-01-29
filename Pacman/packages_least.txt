@@ -33,10 +33,12 @@ ncdu
 neofetch
 network-manager-applet
 nextcloud-client
+nordvpn-bin
 nvidia
 nvidia-cg-toolkit
 nvtop
 okular
+openconnect
 pacman-contrib
 papirus-icon-theme
 pass-otp
@@ -47,6 +49,7 @@ pdftk
 playerctl
 pulsemixer
 pyenv-virtualenv
+qbittorrent
 qwinff
 reflector
 rust-analyzer
@@ -118,6 +121,7 @@ xorg-xwd
 xorg-xwud
 yarn
 yay
+zoom
 zotero
 zsh-autosuggestions
 zsh-syntax-highlighting
