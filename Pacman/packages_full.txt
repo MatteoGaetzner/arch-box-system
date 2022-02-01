@@ -38,6 +38,7 @@ base
 bash
 bat
 bc
+bear
 biber
 binutils
 bison
@@ -47,6 +48,7 @@ bluez-libs
 bluez-utils
 boost-libs
 botan
+box2d
 breeze-icons
 brotli
 btrfs-progs
@@ -68,6 +70,7 @@ chromium
 cifs-utils
 cjson
 clang
+clucene
 cmake
 cmocka
 codec2
@@ -75,6 +78,7 @@ compiler-rt
 convertlit
 coreutils
 cpulimit
+cpupower-gui
 cronie
 crypto++
 cryptsetup
@@ -98,6 +102,7 @@ dialog
 diffutils
 discount
 djvulibre
+dkms
 dmraid
 dnssec-anchors
 docbook-xml
@@ -120,8 +125,10 @@ exiv2
 expat
 faad2
 fakeroot
-ffmpeg-full
+ffmpeg
+ffmpegthumbnailer
 ffnvcodec-headers
+ffnvcodec-headers8.1
 fftw
 file
 filesystem
@@ -137,6 +144,7 @@ freetype2
 frei0r-plugins
 fribidi
 fuse-common
+fuse2
 fuse3
 gavl
 gawk
@@ -178,6 +186,7 @@ graphite
 graphviz
 grep
 groff
+grpc
 grub
 grub-btrfs
 grub-customizer
@@ -185,6 +194,7 @@ gsettings-desktop-schemas
 gsfonts
 gsm
 gspell
+gst-libav
 gst-plugins-base
 gst-plugins-base-libs
 gstreamer
@@ -338,6 +348,7 @@ http-parser
 hunspell
 hwdata
 hwloc
+hyphen
 i3-wm
 i3blocks
 i3lock
@@ -353,6 +364,7 @@ intel-gmmlib
 intel-media-driver
 intel-media-sdk
 intel-mkl
+intltool
 iproute2
 iptables
 iputils
@@ -362,6 +374,7 @@ jack2
 jansson
 jasper
 java-runtime-common
+jaxx-liberty-appimage
 jbig2dec
 jemalloc
 john
@@ -437,6 +450,7 @@ ldns
 lensfun-git
 leptonica
 less
+libabw
 libaccounts-glib
 libaccounts-qt
 libaec
@@ -447,6 +461,7 @@ libass
 libassuan
 libasyncns
 libatasmart
+libatomic_ops
 libavc1394
 libavif
 libb2
@@ -462,6 +477,8 @@ libcap-ng
 libcddb
 libcdio
 libcdio-paranoia
+libcdr
+libclc
 libcloudproviders
 libcolord
 libconfig
@@ -476,21 +493,27 @@ libdbusmenu-qt5
 libdc1394
 libdca
 libde265
+libdispatch
 libdrm
 libdvbpsi
+libe-book
 libebml
 libebur128
 libedit
 libelf
 libepoxy
+libepubgen
+libetonyek
 libev
 libevdev
 libevent
 libexif
+libexttextcat
 libfdk-aac
 libffi
 libfontenc
 libfreeaptx
+libfreehand
 libgcrypt
 libgee
 libgit2
@@ -511,14 +534,18 @@ libidn
 libidn2
 libiec61883
 libilbc
+libimagequant
 libimobiledevice
 libindicator-gtk3
 libinih
 libinput
+libixion
 libjpeg-turbo
 libkexiv2
+libkeybinder3
 libklvanc-git
 libksba
+liblangtag
 libldac
 libldap
 liblouis
@@ -528,6 +555,7 @@ libmad
 libmatroska
 libmd
 libmfx
+libmicrohttpd
 libmm-glib
 libmng
 libmnl
@@ -535,6 +563,8 @@ libmodplug
 libmpc
 libmpcdec
 libmpeg2
+libmspub
+libmwaw
 libmysofa
 libndp
 libnet
@@ -548,10 +578,14 @@ libnm
 libnma
 libnotify
 libnsl
+libnumbertext
+libodfgen
 libogg
 libomxil-bellagio
 libopenmpt-svn
+liborcus
 libp11-kit
+libpagemaker
 libpaper
 libpcap
 libpciaccess
@@ -563,9 +597,12 @@ libpng
 libproxy
 libpsl
 libpulse
+libqxp
 librabbitmq-c
 libraqm
 libraw1394
+libreoffice-fresh
+librevenge
 librist
 librsvg
 libsamplerate
@@ -583,6 +620,7 @@ libsoxr
 libspectre
 libssh
 libssh2
+libstaroffice
 libstemmer
 libsynctex
 libsysprof-capture
@@ -609,12 +647,17 @@ libutf8proc
 libuv
 libva
 libvdpau
+libvisio
 libvisual
 libvorbis
 libvpx
 libvterm
 libwacom
 libwebp
+libwnck3
+libwpd
+libwpg
+libwps
 libx11
 libx86emu
 libxau
@@ -643,6 +686,7 @@ libxnvctrl
 libxpm
 libxrandr
 libxrender
+libxres
 libxshmfence
 libxslt
 libxss
@@ -653,6 +697,7 @@ libxxf86vm
 libyaml
 libyuv
 libzip
+libzmf
 licenses
 lilv
 linux
@@ -664,6 +709,7 @@ lldb
 llvm-libs
 lm_sensors
 lmdb
+lpsolve
 lua
 lua52
 lua53
@@ -698,6 +744,7 @@ ncdu
 ncurses
 ndctl
 neofetch
+neon
 neovim
 netpbm
 nettle
@@ -706,6 +753,7 @@ networkmanager
 nextcloud-client
 ninja
 nitrogen
+nlohmann-json
 nm-connection-editor
 node-gyp
 nodejs
@@ -723,6 +771,7 @@ nvidia-settings
 nvidia-utils
 nvtop
 oath-toolkit
+obs-studio
 ocl-icd
 okular
 onednn
@@ -802,9 +851,12 @@ perl-eval-closure
 perl-exception-class
 perl-exporter-tiny
 perl-ffi-checklib
+perl-file-basedir
 perl-file-chdir
+perl-file-desktopentry
 perl-file-find-rule
 perl-file-listing
+perl-file-mimeinfo
 perl-file-sharedir
 perl-file-sharedir-install
 perl-file-slurp-tiny
@@ -822,6 +874,7 @@ perl-io-html
 perl-io-socket-ssl
 perl-io-string
 perl-ipc-run3
+perl-ipc-system-simple
 perl-json-xs
 perl-libwww
 perl-lingua-translit
@@ -904,6 +957,7 @@ poppler-qt5
 popt
 portaudio
 potrace
+powertop
 procps-ng
 protobuf
 psmisc
@@ -929,6 +983,7 @@ python-backcall
 python-black
 python-bleach
 python-cachecontrol
+python-cairo
 python-cffi
 python-chardet
 python-click
@@ -942,7 +997,9 @@ python-defusedxml
 python-deprecation
 python-distlib
 python-distro
+python-distutils-extra
 python-dnspython
+python-docopt
 python-entrypoints
 python-executing
 python-gobject
@@ -977,6 +1034,7 @@ python-pathspec
 python-pep517
 python-pexpect
 python-pickleshare
+python-pillow
 python-pip
 python-platformdirs
 python-ply
@@ -992,6 +1050,7 @@ python-pyopenssl
 python-pyparsing
 python-pyrsistent
 python-pytz
+python-pyxdg
 python-pyzmq
 python-requests
 python-requests-unixsocket
@@ -1017,6 +1076,7 @@ python-wcwidth
 python-webencodings
 python-websocket-client
 python-wheel
+python-xlib
 python-zipp
 qbittorrent
 qpdf
@@ -1048,9 +1108,12 @@ qtkeychain-qt5
 qtws-base
 qwinff
 r
+raptor
+rasqal
 rav1e
 re2
 readline
+redland
 reflector
 rest
 rhash
@@ -1095,6 +1158,7 @@ sonnet
 sord
 sound-theme-freedesktop
 source-highlight
+spdlog
 speex
 speexdsp
 sphinxbase
@@ -1126,6 +1190,8 @@ tdb
 telegram-desktop
 tensorflow
 tesseract
+tesseract-data-afr
+tesseract-data-osd
 tevent
 tex-match
 texinfo
@@ -1171,6 +1237,7 @@ twolame
 tzdata
 uavs3d-git
 udisks2
+ueberzug
 unibilium
 unzip
 upower
@@ -1182,6 +1249,7 @@ v4l-utils
 vala
 vapoursynth
 vid.stab
+vifm
 vlc
 vmaf
 vo-amrwbenc
@@ -1221,6 +1289,8 @@ xf86-video-vesa
 xfsprogs
 xkeyboard-config
 xmlsec
+xmrig-cuda
+xmrig-donateless
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
@@ -1288,7 +1358,6 @@ zip
 zita-alsa-pcmi
 zita-resampler
 zlib
-zoom
 zotero
 zsh
 zsh-autosuggestions

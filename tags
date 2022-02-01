@@ -18,7 +18,9 @@ $(P)	i3blocks/memory2/Makefile	/^$(P): $(OBJECTS)$/;"	t
 $(PRG)	i3blocks/brightness/Makefile	/^$(PRG): $(BIN_DIR)\/$(PRG)$/;"	t
 $(_BLOCKS)	i3blocks/Makefile	/^$(_BLOCKS):$/;"	t
 $(_MAKEBLOCKS)	i3blocks/Makefile	/^$(_MAKEBLOCKS):$/;"	t
+$NVIM_MKDP_LOG_FILE	Neovim/init.vim	/^let $NVIM_MKDP_LOG_FILE = expand('~\/mkdp-log.log')$/;"	v
 $NVIM_MKDP_LOG_FILE	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_FILE = expand('~\/mkdp-log.log')$/;"	v
+$NVIM_MKDP_LOG_LEVEL	Neovim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/;"	v
 $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/;"	v
 0	Config/.config/QtProject.conf	/^customColors\\0=4278190080$/;"	k	section:Qt
 0	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^Window\\Standard\\TreeSection\\0=478$/;"	k	section:5.3
@@ -155,6 +157,19 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 0	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 0	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 0	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	array:regs.\\"
+0	Neovim/coc-settings.json	/^              "pycodestyle"$/;"	s	array:languageserver.python.settings.pyls.configurationSources
+0	Neovim/coc-settings.json	/^          "-mpyls",$/;"	s	array:languageserver.python.args
+0	Neovim/coc-settings.json	/^          "build\/"$/;"	s	array:languageserver.cmake.rootPatterns
+0	Neovim/coc-settings.json	/^          "python"$/;"	s	array:languageserver.python.filetypes
+0	Neovim/coc-settings.json	/^        "args": ["--stdio"]$/;"	s	array:languageserver.dockerfile.args
+0	Neovim/coc-settings.json	/^        "args": ["--stdio"],$/;"	s	array:languageserver.intelephense.args
+0	Neovim/coc-settings.json	/^        "filetypes": ["cmake"],$/;"	s	array:languageserver.cmake.filetypes
+0	Neovim/coc-settings.json	/^        "filetypes": ["dockerfile"],$/;"	s	array:languageserver.dockerfile.filetypes
+0	Neovim/coc-settings.json	/^        "filetypes": ["php"],$/;"	s	array:languageserver.intelephense.filetypes
+0	Neovim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
+0	Neovim/coc-settings.json	/^        "filetypes": ["vim", "eruby"]$/;"	s	array:languageserver.efm.filetypes
+0	Neovim/coc-settings.json	/^      "latex": ["tex"]$/;"	s	array:snippets.extends.latex
+0	Neovim/coc-settings.json	/^      "tex",$/;"	s	array:coc.source.vimtex.filetypes
 0	Neovim/nvim/coc-settings.json	/^              "pycodestyle"$/;"	s	array:languageserver.python.settings.pyls.configurationSources
 0	Neovim/nvim/coc-settings.json	/^          "-mpyls",$/;"	s	array:languageserver.python.args
 0	Neovim/nvim/coc-settings.json	/^          "build\/"$/;"	s	array:languageserver.cmake.rootPatterns
@@ -248,6 +263,10 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 1	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 1	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 1	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+1	Neovim/coc-settings.json	/^          "-vv",$/;"	s	array:languageserver.python.args
+1	Neovim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
+1	Neovim/coc-settings.json	/^        "filetypes": ["vim", "eruby"]$/;"	s	array:languageserver.efm.filetypes
+1	Neovim/coc-settings.json	/^      "plaintex",$/;"	s	array:coc.source.vimtex.filetypes
 1	Neovim/nvim/coc-settings.json	/^          "-vv",$/;"	s	array:languageserver.python.args
 1	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
 1	Neovim/nvim/coc-settings.json	/^        "filetypes": ["vim", "eruby"]$/;"	s	array:languageserver.efm.filetypes
@@ -467,6 +486,9 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 2	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 2	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 2	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+2	Neovim/coc-settings.json	/^          "--log-file",$/;"	s	array:languageserver.python.args
+2	Neovim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
+2	Neovim/coc-settings.json	/^      "latex"$/;"	s	array:coc.source.vimtex.filetypes
 2	Neovim/nvim/coc-settings.json	/^          "--log-file",$/;"	s	array:languageserver.python.args
 2	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
 2	Neovim/nvim/coc-settings.json	/^      "latex"$/;"	s	array:coc.source.vimtex.filetypes
@@ -599,6 +621,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 3	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 3	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 3	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+3	Neovim/coc-settings.json	/^          "\/tmp\/lsp_python.log"$/;"	s	array:languageserver.python.args
 3	Neovim/nvim/coc-settings.json	/^          "\/tmp\/lsp_python.log"$/;"	s	array:languageserver.python.args
 3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/afs/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
 3. Protecting Users' Legal Rights From Anti-Circumvention Law.	i3blocks/aur-update/LICENSE.md	/^#### 3. Protecting Users' Legal Rights From Anti-Circumvention Law.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -1044,13 +1067,20 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 99	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 99	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 <<	Config/.config/nvim/init.vim	/^inoremap << <Esc><<hi$/;"	m
+<C-H>	Neovim/init.vim	/^inoremap <C-H> <Esc>:m .+1<CR>==gi$/;"	m
+<C-H>	Neovim/init.vim	/^nnoremap <C-H> :m .+1<CR>==$/;"	m
+<C-H>	Neovim/init.vim	/^vnoremap <C-H> :m '>+1<CR>gv=gv$/;"	m
 <C-H>	Neovim/nvim/init.vim	/^inoremap <C-H> <Esc>:m .+1<CR>==gi$/;"	m
 <C-H>	Neovim/nvim/init.vim	/^nnoremap <C-H> :m .+1<CR>==$/;"	m
 <C-H>	Neovim/nvim/init.vim	/^vnoremap <C-H> :m '>+1<CR>gv=gv$/;"	m
+<C-L>	Neovim/init.vim	/^inoremap <C-L> <Esc>:m .-2<CR>==gi$/;"	m
+<C-L>	Neovim/init.vim	/^nnoremap <C-L> :m .-2<CR>==$/;"	m
+<C-L>	Neovim/init.vim	/^vnoremap <C-L> :m '<-2<CR>gv=gv$/;"	m
 <C-L>	Neovim/nvim/init.vim	/^inoremap <C-L> <Esc>:m .-2<CR>==gi$/;"	m
 <C-L>	Neovim/nvim/init.vim	/^nnoremap <C-L> :m .-2<CR>==$/;"	m
 <C-L>	Neovim/nvim/init.vim	/^vnoremap <C-L> :m '<-2<CR>gv=gv$/;"	m
 <C-f>	Config/.config/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
+<C-f>	Neovim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
 <C-f>	Neovim/nvim/init.vim	/^nmap <C-f> :NERDTreeToggle<CR>$/;"	m
 <C-j>	Config/.config/nvim/init.vim	/^inoremap <C-j> <Esc>:m .+1<CR>==gi$/;"	m
 <C-j>	Config/.config/nvim/init.vim	/^nnoremap <C-j> :m .+1<CR>==$/;"	m
@@ -1062,69 +1092,98 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 <C-s>	Config/.config/nvim/init.vim	/^map <C-s> :call MySpellLang()<CR>$/;"	m
 <C-s>	Config/.config/nvim/init.vim	/^nmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
 <C-s>	Config/.config/nvim/init.vim	/^xmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
+<C-s>	Neovim/init.vim	/^nmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
+<C-s>	Neovim/init.vim	/^xmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
 <C-s>	Neovim/nvim/init.vim	/^nmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
 <C-s>	Neovim/nvim/init.vim	/^xmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
 <CR>	Config/.config/nvim/init.vim	/^inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\\<CR>"$/;"	m
 <Down>	Config/.config/nvim/init.vim	/^  inoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? \\<c-r>=coc#float#scroll(1)\\</;"	m
 <Down>	Config/.config/nvim/init.vim	/^  nnoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? coc#float#scroll(1) : \\<Down>/;"	m
 <Down>	Config/.config/nvim/init.vim	/^  vnoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? coc#float#scroll(1) : \\<Down>/;"	m
+<F12>	Neovim/init.vim	/^imap <F12> :call MySpellLang()<CR>$/;"	m
+<F12>	Neovim/init.vim	/^map <F12> :call MySpellLang()<CR>$/;"	m
 <F12>	Neovim/nvim/init.vim	/^imap <F12> :call MySpellLang()<CR>$/;"	m
 <F12>	Neovim/nvim/init.vim	/^map <F12> :call MySpellLang()<CR>$/;"	m
 <F1>	Config/.config/nvim/init.vim	/^nnoremap <F1> :e ~\/.vimrc<CR>$/;"	m
+<F1>	Neovim/init.vim	/^nnoremap <F1> :e ~\/.config\/nvim\/init.vim<CR>$/;"	m
 <F1>	Neovim/nvim/init.vim	/^nnoremap <F1> :e ~\/.config\/nvim\/init.vim<CR>$/;"	m
 <F2>	Config/.config/nvim/init.vim	/^nnoremap <F2> <C-o>:source ~\/.vimrc<CR>$/;"	m
+<F2>	Neovim/init.vim	/^nnoremap <F2> <C-o>:source ~\/.config\/nvim\/init.vim<CR>$/;"	m
 <F2>	Neovim/nvim/init.vim	/^nnoremap <F2> <C-o>:source ~\/.config\/nvim\/init.vim<CR>$/;"	m
 <Leader>v	Config/.config/nvim/init.vim	/^nnoremap <silent> <Leader>v :NERDTreeFind<CR>$/;"	m
+<Leader>v	Neovim/init.vim	/^nnoremap <silent> <Leader>v :NERDTreeFind<CR>$/;"	m
 <Leader>v	Neovim/nvim/init.vim	/^nnoremap <silent> <Leader>v :NERDTreeFind<CR>$/;"	m
 <S-TAB>	Config/.config/nvim/init.vim	/^inoremap <expr><S-TAB> pumvisible() ? \\<C-p>" : "\\<C-h>"$/;"	m
 <S-Tab>	Config/.config/nvim/init.vim	/^nnoremap <S-Tab> <<2h$/;"	m
+<S-Tab>	Neovim/init.vim	/^nnoremap <S-Tab> <<2h$/;"	m
 <S-Tab>	Neovim/nvim/init.vim	/^nnoremap <S-Tab> <<2h$/;"	m
 <TAB>	Config/.config/nvim/init.vim	/^inoremap <silent><expr> <TAB>$/;"	m
+<TAB>	Neovim/init.vim	/^inoremap <silent><expr> <TAB>$/;"	m
 <TAB>	Neovim/nvim/init.vim	/^inoremap <silent><expr> <TAB>$/;"	m
 <Tab>	Config/.config/nvim/init.vim	/^nnoremap <Tab> >>2l$/;"	m
+<Tab>	Neovim/init.vim	/^nnoremap <Tab> >>2l$/;"	m
 <Tab>	Neovim/nvim/init.vim	/^nnoremap <Tab> >>2l$/;"	m
 <Up>	Config/.config/nvim/init.vim	/^  inoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? \\<c-r>=coc#float#scroll(0)\\<cr/;"	m
 <Up>	Config/.config/nvim/init.vim	/^  nnoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? coc#float#scroll(0) : \\<Up>"$/;"	m
 <Up>	Config/.config/nvim/init.vim	/^  vnoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? coc#float#scroll(0) : \\<Up>"$/;"	m
 <c-@>	Config/.config/nvim/init.vim	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
+<c-@>	Neovim/init.vim	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
 <c-@>	Neovim/nvim/init.vim	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
 <c-space>	Config/.config/nvim/init.vim	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<c-space>	Neovim/init.vim	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
 <c-space>	Neovim/nvim/init.vim	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
 <cr>	Config/.config/nvim/autoload/plug.vim	/^      nmap <buffer> <cr> <plug>(plug-preview)$/;"	m
 <cr>	Config/.config/nvim/init.vim	/^inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()$/;"	m
+<cr>	Neovim/init.vim	/^inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()$/;"	m
 <cr>	Neovim/nvim/init.vim	/^inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()$/;"	m
 <leader>a	Config/.config/nvim/init.vim	/^nmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
 <leader>a	Config/.config/nvim/init.vim	/^xmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>a	Neovim/init.vim	/^nmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>a	Neovim/init.vim	/^xmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
 <leader>a	Neovim/nvim/init.vim	/^nmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
 <leader>a	Neovim/nvim/init.vim	/^xmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
 <leader>ac	Config/.config/nvim/init.vim	/^nmap <leader>ac  <Plug>(coc-codeaction)$/;"	m
+<leader>ac	Neovim/init.vim	/^nmap <leader>ac  <Plug>(coc-codeaction)$/;"	m
 <leader>ac	Neovim/nvim/init.vim	/^nmap <leader>ac  <Plug>(coc-codeaction)$/;"	m
 <leader>cl	Config/.config/nvim/init.vim	/^nmap <leader>cl  <Plug>(coc-codelens-action)$/;"	m
+<leader>cl	Neovim/init.vim	/^nmap <leader>cl  <Plug>(coc-codelens-action)$/;"	m
 <leader>cl	Neovim/nvim/init.vim	/^nmap <leader>cl  <Plug>(coc-codelens-action)$/;"	m
 <leader>f	Config/.config/nvim/init.vim	/^nmap <leader>f  <Plug>(coc-format-selected)$/;"	m
 <leader>f	Config/.config/nvim/init.vim	/^xmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+<leader>f	Neovim/init.vim	/^nmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+<leader>f	Neovim/init.vim	/^xmap <leader>f  <Plug>(coc-format-selected)$/;"	m
 <leader>f	Neovim/nvim/init.vim	/^nmap <leader>f  <Plug>(coc-format-selected)$/;"	m
 <leader>f	Neovim/nvim/init.vim	/^xmap <leader>f  <Plug>(coc-format-selected)$/;"	m
 <leader>qf	Config/.config/nvim/init.vim	/^nmap <leader>qf  <Plug>(coc-fix-current)$/;"	m
+<leader>qf	Neovim/init.vim	/^nmap <leader>qf  <Plug>(coc-fix-current)$/;"	m
 <leader>qf	Neovim/nvim/init.vim	/^nmap <leader>qf  <Plug>(coc-fix-current)$/;"	m
 <leader>rn	Config/.config/nvim/init.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<leader>rn	Neovim/init.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
 <leader>rn	Neovim/nvim/init.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
 <plug>(plug-preview)	Config/.config/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> <plug>(plug-preview) :silent! call <SID>preview_commit()<cr>$/;"	m
 <space>a	Config/.config/nvim/init.vim	/^nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>$/;"	m
+<space>a	Neovim/init.vim	/^nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>$/;"	m
 <space>a	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>$/;"	m
 <space>c	Config/.config/nvim/init.vim	/^nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>$/;"	m
+<space>c	Neovim/init.vim	/^nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>$/;"	m
 <space>c	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>$/;"	m
 <space>e	Config/.config/nvim/init.vim	/^nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>$/;"	m
+<space>e	Neovim/init.vim	/^nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>$/;"	m
 <space>e	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>$/;"	m
 <space>j	Config/.config/nvim/init.vim	/^nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>$/;"	m
+<space>j	Neovim/init.vim	/^nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>$/;"	m
 <space>j	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>$/;"	m
 <space>k	Config/.config/nvim/init.vim	/^nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>$/;"	m
+<space>k	Neovim/init.vim	/^nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>$/;"	m
 <space>k	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>$/;"	m
 <space>o	Config/.config/nvim/init.vim	/^nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>$/;"	m
+<space>o	Neovim/init.vim	/^nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>$/;"	m
 <space>o	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>$/;"	m
 <space>p	Config/.config/nvim/init.vim	/^nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>$/;"	m
+<space>p	Neovim/init.vim	/^nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>$/;"	m
 <space>p	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>$/;"	m
 <space>s	Config/.config/nvim/init.vim	/^nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>$/;"	m
+<space>s	Neovim/init.vim	/^nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>$/;"	m
 <space>s	Neovim/nvim/init.vim	/^nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>$/;"	m
 >>	Config/.config/nvim/init.vim	/^inoremap >> <Esc>>>3li$/;"	m
 APPLY_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^APPLY_SYMBOL = "\\uf00c"$/;"	v
@@ -1372,9 +1431,12 @@ Find	Config/.config/JetBrains/PyCharmCE2021.2/workspace/21xOt75PoGrp4vD8zCk7VMRj
 Finding a sensor ID	i3blocks/purpleair/README.md	/^## Finding a sensor ID$/;"	s	chapter:Configuration
 FirstRun	Config/.config/obs-studio/global.ini	/^FirstRun=true$/;"	k	section:General
 Fold	Config/.config/nvim/init.vim	/^command! -nargs=? Fold :call     CocAction('fold', <f-args>)$/;"	c
+Fold	Neovim/init.vim	/^command! -nargs=? Fold :call     CocAction('fold', <f-args>)$/;"	c
 Fold	Neovim/nvim/init.vim	/^command! -nargs=? Fold :call     CocAction('fold', <f-args>)$/;"	c
 Format	Config/.config/nvim/init.vim	/^command! -nargs=0 Format :call CocAction('format')$/;"	c
 Format	Config/.config/nvim/init.vim	/^fun! Format()$/;"	f
+Format	Neovim/init.vim	/^command! -nargs=0 Format :call CocAction('format')$/;"	c
+Format	Neovim/init.vim	/^fun! Format()$/;"	f
 Format	Neovim/nvim/init.vim	/^command! -nargs=0 Format :call CocAction('format')$/;"	c
 Format	Neovim/nvim/init.vim	/^fun! Format()$/;"	f
 FullScreen	Config/.config/vlc/vlc-qt-interface.conf	/^[FullScreen]$/;"	s
@@ -1440,6 +1502,7 @@ Installation	i3blocks/ytdl-mpv/README.md	/^# Installation$/;"	c
 Introduction	i3blocks/metars/README.md	/^# Introduction$/;"	c
 JavaRunner	Config/.config/JetBrains/PyCharmCE2021.2/options/runner.layout.xml	/^    <runner id="JavaRunner">$/;"	i
 K	Config/.config/nvim/init.vim	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
+K	Neovim/init.vim	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
 K	Neovim/nvim/init.vim	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
 L	Config/.config/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
 L	Config/.config/nvim/autoload/plug.vim	/^    xnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
@@ -1472,14 +1535,19 @@ Mode	Config/.config/obs-studio/basic/profiles/Untitled/basic.ini	/^Mode=Simple$/
 MonitorManager	i3blocks/monitor_manager/monitor_manager	/^class MonitorManager():$/;"	c
 MonitorManager	i3blocks/monitor_manager/monitor_manager.py	/^class MonitorManager():$/;"	c
 MySpellLang	Config/.config/nvim/init.vim	/^function! MySpellLang()$/;"	f
+MySpellLang	Neovim/init.vim	/^function! MySpellLang()$/;"	f
 MySpellLang	Neovim/nvim/init.vim	/^function! MySpellLang()$/;"	f
 NERDTreeAutoDeleteBuffer	Config/.config/nvim/init.vim	/^let NERDTreeAutoDeleteBuffer = 1$/;"	v
+NERDTreeAutoDeleteBuffer	Neovim/init.vim	/^let NERDTreeAutoDeleteBuffer = 1$/;"	v
 NERDTreeAutoDeleteBuffer	Neovim/nvim/init.vim	/^let NERDTreeAutoDeleteBuffer = 1$/;"	v
 NERDTreeDirArrows	Config/.config/nvim/init.vim	/^let NERDTreeDirArrows = 1$/;"	v
+NERDTreeDirArrows	Neovim/init.vim	/^let NERDTreeDirArrows = 1$/;"	v
 NERDTreeDirArrows	Neovim/nvim/init.vim	/^let NERDTreeDirArrows = 1$/;"	v
 NERDTreeMinimalUI	Config/.config/nvim/init.vim	/^let NERDTreeMinimalUI = 1$/;"	v
+NERDTreeMinimalUI	Neovim/init.vim	/^let NERDTreeMinimalUI = 1$/;"	v
 NERDTreeMinimalUI	Neovim/nvim/init.vim	/^let NERDTreeMinimalUI = 1$/;"	v
 NERDTreeQuitOnOpen	Config/.config/nvim/init.vim	/^let NERDTreeQuitOnOpen = 1$/;"	v
+NERDTreeQuitOnOpen	Neovim/init.vim	/^let NERDTreeQuitOnOpen = 1$/;"	v
 NERDTreeQuitOnOpen	Neovim/nvim/init.vim	/^let NERDTreeQuitOnOpen = 1$/;"	v
 NOT_CLONED_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^NOT_CLONED_SYMBOL = "\\uf096"$/;"	v
 NOT_CLONED_SYMBOL	i3blocks/monitor_manager/monitor_manager.py	/^NOT_CLONED_SYMBOL = "\\uf096"$/;"	v
@@ -1495,6 +1563,7 @@ OBJECTS	i3blocks/memory2/Makefile	/^OBJECTS=$/;"	m
 OBJ_DIR	i3blocks/brightness/Makefile	/^OBJ_DIR=$(BUILD_DIR)\/obj$/;"	m
 OBSBasic.SelectScene	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	a	object:sources.1.hotkeys
 OR	Config/.config/nvim/init.vim	/^command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')$/;"	c
+OR	Neovim/init.vim	/^command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')$/;"	c
 OR	Neovim/nvim/init.vim	/^command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')$/;"	c
 ORANGE	i3blocks/bandwidth2/bandwidth2.c	/^#define ORANGE /;"	d	file:
 ORANGE	i3blocks/cpu_usage2/cpu_usage2.c	/^#define ORANGE /;"	d	file:
@@ -1823,10 +1892,12 @@ Warning Threshold	i3blocks/disk_usage/README.md	/^### Warning Threshold$/;"	S	se
 X	Config/.config/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> X :call <SID>revert()<cr>$/;"	m
 [[	Config/.config/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> [[ :silent! call <SID>section('b')<cr>$/;"	m
 [g	Config/.config/nvim/init.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
+[g	Neovim/init.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
 [g	Neovim/nvim/init.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
 \\"	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	a	object:regs
 ]]	Config/.config/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> ]] :silent! call <SID>section('')<cr>$/;"	m
 ]g	Config/.config/nvim/init.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
+]g	Neovim/init.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
 ]g	Neovim/nvim/init.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
 _BLOCKS	i3blocks/Makefile	/^_BLOCKS := $(shell find . -type f -executable -not -path '.\/.*')$/;"	m
 _DEFAULT_SOURCE	i3blocks/bandwidth2/bandwidth2.c	/^#define _DEFAULT_SOURCE$/;"	d	file:
@@ -1928,12 +1999,16 @@ a	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[
 abTestingGroup	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^abTestingGroup=2$/;"	k	section:5.3
 ac	Config/.config/nvim/init.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
 ac	Config/.config/nvim/init.vim	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
+ac	Neovim/init.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
+ac	Neovim/init.vim	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
 ac	Neovim/nvim/init.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
 ac	Neovim/nvim/init.vim	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
 active-pane	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	n	object:gtabs.0
 add_argument	i3blocks/aur-update/aur-update	/^    def add_argument(self, name, default='', arg_type=str):$/;"	m	class:Args
 af	Config/.config/nvim/init.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
 af	Config/.config/nvim/init.vim	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
+af	Neovim/init.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+af	Neovim/init.vim	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
 af	Neovim/nvim/init.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
 af	Neovim/nvim/init.vim	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
 afs	i3blocks/afs/README.md	/^# afs$/;"	c
@@ -1941,6 +2016,7 @@ airly	i3blocks/airly/README.md	/^# airly$/;"	c
 align	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:sources.1.settings.items.0
 all	i3blocks/Makefile	/^all: build$/;"	t
 all	i3blocks/brightness/Makefile	/^all: directories $(PRG)$/;"	t
+all_scopes	Neovim/coc-settings.json	/^                "all_scopes": true$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_symbols
 all_scopes	Neovim/nvim/coc-settings.json	/^                "all_scopes": true$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_symbols
 alt_names	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	a	object:services.14
 alt_names	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	a	object:services.19
@@ -1955,6 +2031,10 @@ arch-update	i3blocks/arch-update/README.md	/^# arch-update$/;"	c
 args	Config/.config/nvim/coc-settings.json	/^    "args": ["--stdio"]$/;"	a	object:dockerfile
 args	Config/.config/nvim/coc-settings.json	/^    "args": ["--stdio"],$/;"	a	object:intelephense
 args	Config/.config/nvim/coc-settings.json	/^    "args": [],$/;"	a	object:efm
+args	Neovim/coc-settings.json	/^        "args": ["--stdio"]$/;"	a	object:languageserver.dockerfile
+args	Neovim/coc-settings.json	/^        "args": ["--stdio"],$/;"	a	object:languageserver.intelephense
+args	Neovim/coc-settings.json	/^        "args": [$/;"	a	object:languageserver.python
+args	Neovim/coc-settings.json	/^        "args": [],$/;"	a	object:languageserver.efm
 args	Neovim/nvim/coc-settings.json	/^        "args": ["--stdio"]$/;"	a	object:languageserver.dockerfile
 args	Neovim/nvim/coc-settings.json	/^        "args": ["--stdio"],$/;"	a	object:languageserver.intelephense
 args	Neovim/nvim/coc-settings.json	/^        "args": [$/;"	a	object:languageserver.python
@@ -2098,6 +2178,7 @@ brightness	i3blocks/brightness/README.md	/^# brightness$/;"	c
 browsable	Samba/smb.conf	/^browsable = yes$/;"	k	section:matteos-sambashare
 build	i3blocks/Makefile	/^build: $(_MAKEBLOCKS)$/;"	t
 buildDirectory	Config/.config/nvim/coc-settings.json	/^      "buildDirectory": "build"$/;"	s	object:cmake.initializationOptions
+buildDirectory	Neovim/coc-settings.json	/^          "buildDirectory": "build"$/;"	s	object:languageserver.cmake.initializationOptions
 buildDirectory	Neovim/nvim/coc-settings.json	/^          "buildDirectory": "build"$/;"	s	object:languageserver.cmake.initializationOptions
 buttonType	i3blocks/metars/metars	/^        buttonType = os.environ['BLOCK_BUTTON']$/;"	v
 buttons	i3blocks/mediaplayer/mediaplayer	/^sub buttons {$/;"	s
@@ -2115,6 +2196,7 @@ check_opts	i3blocks/openvpn/openvpn	/^sub check_opts {$/;"	s
 check_proc_net_dev	i3blocks/bandwidth3/bandwidth3	/^function check_proc_net_dev {$/;"	f
 clamp	i3blocks/memory2/memory2.c	/^int clamp(int value, int min, int max) {$/;"	f	typeref:typename:int
 clangd	Config/.config/nvim/coc-settings.json	/^  "clangd": {$/;"	o
+clangd.path	Neovim/coc-settings.json	/^    "clangd.path": "~\/.config\/coc\/extensions\/coc-clangd-data\/install\/13.0.0\/clangd_13.0.0/;"	s
 clangd.path	Neovim/nvim/coc-settings.json	/^    "clangd.path": "~\/.config\/coc\/extensions\/coc-clangd-data\/install\/13.0.0\/clangd_13.0.0/;"	s
 class	i3/.i3/workspace-1-startup.json	/^      "class": "^firefox$"$/;"	s	object:swallows.0
 class	i3/.i3/workspace-2-startup.json	/^                                    "class": "TelegramDesktop"$/;"	s	object:0.nodes.0.nodes.0.swallows.0
@@ -2125,10 +2207,13 @@ clean	i3blocks/brightness/Makefile	/^clean:$/;"	t
 clicked	i3blocks/dunst/dunst	/^def clicked():$/;"	f
 clicked	i3blocks/github/github	/^def clicked():$/;"	f
 cmake	Config/.config/nvim/coc-settings.json	/^  "cmake": {$/;"	o
+cmake	Neovim/coc-settings.json	/^      "cmake": {$/;"	o	object:languageserver
 cmake	Neovim/nvim/coc-settings.json	/^      "cmake": {$/;"	o	object:languageserver
 cmd-hist	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	a
 cmus	i3blocks/mediaplayer/mediaplayer	/^sub cmus {$/;"	s
+coc.source.vimtex.filetypes	Neovim/coc-settings.json	/^    "coc.source.vimtex.filetypes": [$/;"	a
 coc.source.vimtex.filetypes	Neovim/nvim/coc-settings.json	/^    "coc.source.vimtex.filetypes": [$/;"	a
+cocgroup0	Neovim/init.vim	/^augroup cocgroup0$/;"	a
 cocgroup0	Neovim/nvim/init.vim	/^augroup cocgroup0$/;"	a
 codeassists.quickdefinition	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="codeassists.quickdefinition" count="0" last-shown="0" last-used="0" shown-count/;"	i
 codeassists.quickdefinition.lookup	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="codeassists.quickdefinition.lookup" count="0" last-shown="0" last-used="0" show/;"	i
@@ -2162,6 +2247,12 @@ command	Config/.config/nvim/coc-settings.json	/^    "command": "digestif",$/;"	s
 command	Config/.config/nvim/coc-settings.json	/^    "command": "docker-langserver",$/;"	s	object:dockerfile
 command	Config/.config/nvim/coc-settings.json	/^    "command": "efm-langserver",$/;"	s	object:efm
 command	Config/.config/nvim/coc-settings.json	/^    "command": "intelephense",$/;"	s	object:intelephense
+command	Neovim/coc-settings.json	/^        "command": "\/home\/matteo\/.local\/bin\/digestif",$/;"	s	object:languageserver.digestif
+command	Neovim/coc-settings.json	/^        "command": "cmake-language-server",$/;"	s	object:languageserver.cmake
+command	Neovim/coc-settings.json	/^        "command": "docker-langserver",$/;"	s	object:languageserver.dockerfile
+command	Neovim/coc-settings.json	/^        "command": "efm-langserver",$/;"	s	object:languageserver.efm
+command	Neovim/coc-settings.json	/^        "command": "intelephense",$/;"	s	object:languageserver.intelephense
+command	Neovim/coc-settings.json	/^        "command": "python",$/;"	s	object:languageserver.python
 command	Neovim/nvim/coc-settings.json	/^        "command": "\/home\/matteo\/.local\/bin\/digestif",$/;"	s	object:languageserver.digestif
 command	Neovim/nvim/coc-settings.json	/^        "command": "cmake-language-server",$/;"	s	object:languageserver.cmake
 command	Neovim/nvim/coc-settings.json	/^        "command": "docker-langserver",$/;"	s	object:languageserver.dockerfile
@@ -2207,6 +2298,7 @@ command	i3blocks/volume/i3blocks.conf	/^command=$SCRIPT_DIR\/volume$/;"	k	sectio
 command	i3blocks/weather_NOAA/i3blocks.conf	/^command=$SCRIPT_DIR\/weather_NOAA\/weather_NOAA$/;"	k	section:weather_NOAA
 command	i3blocks/wifi/i3blocks.conf	/^command=$SCRIPT_DIR\/wifi$/;"	k	section:wifi
 command	i3blocks/ytdl-mpv/i3blocks.conf	/^command=$SCRIPT_DIR\/ytdl-mpv                                                    $/;"	k	section:ytdl-mpv
+commandPath	Neovim/coc-settings.json	/^            "commandPath": "",$/;"	s	object:languageserver.python.settings.pyls
 commandPath	Neovim/nvim/coc-settings.json	/^            "commandPath": "",$/;"	s	object:languageserver.python.settings.pyls
 command_exists	i3blocks/shutdown_menu/shutdown_menu	/^function command_exists() {$/;"	f
 commasplitstatus	i3blocks/battery2/battery2	/^            commasplitstatus = battery.split(", ")$/;"	v
@@ -2227,6 +2319,7 @@ compression	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^DataFile\\co
 compute_color	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^compute_color() {$/;"	f
 config	i3blocks/battery2/battery2	/^config = dict(os.environ)$/;"	v
 config	i3blocks/email/email	/^config = {$/;"	v
+configurationSources	Neovim/coc-settings.json	/^            "configurationSources": [$/;"	a	object:languageserver.python.settings.pyls
 configurationSources	Neovim/nvim/coc-settings.json	/^            "configurationSources": [$/;"	a	object:languageserver.python.settings.pyls
 controls	Config/.config/vlc/vlc-qt-interface.conf	/^adv-controls=0$/;"	k	section:MainWindow
 convertCelciusTo	i3blocks/metars/metars	/^    def convertCelciusTo(self, temp):$/;"	m	class:Metars
@@ -2363,6 +2456,7 @@ deviceID	Config/.config/zoomus.conf	/^deviceID=2C:F0:5D:8D:11:B8$/;"	k	section:G
 device_id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s	object:AuxAudioDevice1.settings
 device_id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s	object:DesktopAudioDevice1.settings
 digestif	Config/.config/nvim/coc-settings.json	/^  "digestif": {$/;"	o
+digestif	Neovim/coc-settings.json	/^      "digestif": {$/;"	o	object:languageserver
 digestif	Neovim/nvim/coc-settings.json	/^      "digestif": {$/;"	o	object:languageserver
 dimmer	i3blocks/dimmer/README.md	/^# dimmer$/;"	c
 dir	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	object:gtabs.0.panes.0.ptabs.0.history.0
@@ -2599,6 +2693,7 @@ doHandleApply	i3blocks/monitor_manager/monitor_manager.py	/^    def doHandleAppl
 docker	i3blocks/docker/README.md	/^# docker$/;"	c
 docker	i3blocks/docker/i3blocks.conf	/^[docker]$/;"	s
 dockerfile	Config/.config/nvim/coc-settings.json	/^  "dockerfile": {$/;"	o
+dockerfile	Neovim/coc-settings.json	/^      "dockerfile": {$/;"	o	object:languageserver
 dockerfile	Neovim/nvim/coc-settings.json	/^      "dockerfile": {$/;"	o	object:languageserver
 dontSaveStdLib	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^DataFormat\\dontSaveStdLib=true$/;"	k	section:5.3
 dot	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	b	object:gtabs.0.panes.0.ptabs.0.filters
@@ -2621,8 +2716,10 @@ editing.completion.finishByCtrlDot	Config/.config/JetBrains/PyCharmCE2021.2/opti
 editing.completion.replace	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="editing.completion.replace" count="0" last-shown="1638879672502" last-used="0" /;"	i
 editing.select.word	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="editing.select.word" count="0" last-shown="0" last-used="0" shown-count="0" \/>$/;"	i
 efm	Config/.config/nvim/coc-settings.json	/^  "efm": {$/;"	o
+efm	Neovim/coc-settings.json	/^      "efm": {$/;"	o	object:languageserver
 efm	Neovim/nvim/coc-settings.json	/^      "efm": {$/;"	o	object:languageserver
 email	i3blocks/email/README.md	/^# email$/;"	c
+enable	Neovim/coc-settings.json	/^            "enable": true,$/;"	b	object:languageserver.python.settings.pyls
 enable	Neovim/nvim/coc-settings.json	/^            "enable": true,$/;"	b	object:languageserver.python.settings.pyls
 enableAlphaBuffer	Config/.config/zoomus.conf	/^enableAlphaBuffer=true$/;"	k	section:General
 enableCloudSwitch	Config/.config/zoomus.conf	/^enableCloudSwitch=false$/;"	k	section:General
@@ -2637,6 +2734,18 @@ enabled	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1
 enabled	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	b	object:DesktopAudioDevice1
 enabled	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	b	object:sources.0
 enabled	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	b	object:sources.1
+enabled	Neovim/coc-settings.json	/^                "enabled": false,$/;"	b	object:languageserver.python.settings.pyls.plugins.pydocstyle
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_completion
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_hover
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_references
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_signature_help
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.preload
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.pycodestyle
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.pyflakes
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.rope_completion
+enabled	Neovim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.yapf
+enabled	Neovim/coc-settings.json	/^                "enabled": true,$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_symbols
+enabled	Neovim/coc-settings.json	/^                "enabled": true,$/;"	b	object:languageserver.python.settings.pyls.plugins.mccabe
 enabled	Neovim/nvim/coc-settings.json	/^                "enabled": false,$/;"	b	object:languageserver.python.settings.pyls.plugins.pydocstyle
 enabled	Neovim/nvim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_completion
 enabled	Neovim/nvim/coc-settings.json	/^                "enabled": true$/;"	b	object:languageserver.python.settings.pyls.plugins.jedi_hover
@@ -2891,6 +3000,12 @@ filetypes	Config/.config/nvim/coc-settings.json	/^    "filetypes": ["dockerfile"
 filetypes	Config/.config/nvim/coc-settings.json	/^    "filetypes": ["php"],$/;"	a	object:intelephense
 filetypes	Config/.config/nvim/coc-settings.json	/^    "filetypes": ["tex", "plaintex", "context"]$/;"	a	object:digestif
 filetypes	Config/.config/nvim/coc-settings.json	/^    "filetypes": ["vim", "eruby", "markdown"]$/;"	a	object:efm
+filetypes	Neovim/coc-settings.json	/^        "filetypes": ["cmake"],$/;"	a	object:languageserver.cmake
+filetypes	Neovim/coc-settings.json	/^        "filetypes": ["dockerfile"],$/;"	a	object:languageserver.dockerfile
+filetypes	Neovim/coc-settings.json	/^        "filetypes": ["php"],$/;"	a	object:languageserver.intelephense
+filetypes	Neovim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	a	object:languageserver.digestif
+filetypes	Neovim/coc-settings.json	/^        "filetypes": ["vim", "eruby"]$/;"	a	object:languageserver.efm
+filetypes	Neovim/coc-settings.json	/^        "filetypes": [$/;"	a	object:languageserver.python
 filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["cmake"],$/;"	a	object:languageserver.cmake
 filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["dockerfile"],$/;"	a	object:languageserver.dockerfile
 filetypes	Neovim/nvim/coc-settings.json	/^        "filetypes": ["php"],$/;"	a	object:languageserver.intelephense
@@ -2950,68 +3065,96 @@ func	i3blocks/monitor_manager/monitor_manager.py	/^    def func():$/;"	f	functio
 func	i3blocks/monitor_manager/monitor_manager.py	/^    def func():$/;"	f	function:setLabelAndSameAsFunc	file:
 fwbuilder_gui	Config/.config/netcitadel.com/FirewallBuilder.ini	/^[fwbuilder_gui]$/;"	s
 g:UltiSnipsEditSplit	Config/.config/nvim/init.vim	/^let g:UltiSnipsEditSplit="vertical"$/;"	v
+g:UltiSnipsEditSplit	Neovim/init.vim	/^let g:UltiSnipsEditSplit="vertical"$/;"	v
 g:UltiSnipsEditSplit	Neovim/nvim/init.vim	/^let g:UltiSnipsEditSplit="vertical"$/;"	v
 g:UltiSnipsExpandTrigger	Config/.config/nvim/init.vim	/^let g:UltiSnipsExpandTrigger = "<nop>"$/;"	v
+g:UltiSnipsExpandTrigger	Neovim/init.vim	/^let g:UltiSnipsExpandTrigger = "<s-tab>"$/;"	v
 g:UltiSnipsExpandTrigger	Neovim/nvim/init.vim	/^let g:UltiSnipsExpandTrigger = "<s-tab>"$/;"	v
+g:UltiSnipsJumpBackwardTrigger	Neovim/init.vim	/^let g:UltiSnipsJumpBackwardTrigger="<nop>"$/;"	v
 g:UltiSnipsJumpBackwardTrigger	Neovim/nvim/init.vim	/^let g:UltiSnipsJumpBackwardTrigger="<nop>"$/;"	v
+g:UltiSnipsJumpForwardTrigger	Neovim/init.vim	/^let g:UltiSnipsJumpForwardTrigger="<nop>"$/;"	v
 g:UltiSnipsJumpForwardTrigger	Neovim/nvim/init.vim	/^let g:UltiSnipsJumpForwardTrigger="<nop>"$/;"	v
 g:UltiSnipsListSnippets	Config/.config/nvim/init.vim	/^let g:UltiSnipsListSnippets="<C-l>"$/;"	v
 g:UltiSnipsSnippetDirectories	Config/.config/nvim/init.vim	/^let g:UltiSnipsSnippetDirectories=[$HOME.'\/.vim\/UltiSnips']$/;"	v
+g:UltiSnipsSnippetDirectories	Neovim/init.vim	/^let g:UltiSnipsSnippetDirectories=[$HOME.'\/.config\/nvim\/UltiSnips']$/;"	v
 g:UltiSnipsSnippetDirectories	Neovim/nvim/init.vim	/^let g:UltiSnipsSnippetDirectories=[$HOME.'\/.config\/nvim\/UltiSnips']$/;"	v
 g:_plug_bang	Config/.config/nvim/autoload/plug.vim	/^    let g:_plug_bang = (s:is_win && has('gui_running') ? 'silent ' : '').'!'.escape(cmd, '#!%')$/;"	v
+g:asyncrun_open	Neovim/init.vim	/^let g:asyncrun_open = 10$/;"	v
 g:asyncrun_open	Neovim/nvim/init.vim	/^let g:asyncrun_open = 10$/;"	v
+g:clipboard	Neovim/init.vim	/^let g:clipboard = {$/;"	v
 g:clipboard	Neovim/nvim/init.vim	/^let g:clipboard = {$/;"	v
 g:coc_snippet_next	Config/.config/nvim/init.vim	/^let g:coc_snippet_next = '<tab>'$/;"	v
 g:everforest_better_performance	Config/.config/nvim/init.vim	/^let g:everforest_better_performance = 1$/;"	v
+g:everforest_better_performance	Neovim/init.vim	/^let g:everforest_better_performance = 1$/;"	v
 g:everforest_better_performance	Neovim/nvim/init.vim	/^let g:everforest_better_performance = 1$/;"	v
 g:everforest_cursor	Config/.config/nvim/init.vim	/^let g:everforest_cursor = 'auto'$/;"	v
+g:everforest_cursor	Neovim/init.vim	/^let g:everforest_cursor = 'auto'$/;"	v
 g:everforest_cursor	Neovim/nvim/init.vim	/^let g:everforest_cursor = 'auto'$/;"	v
 g:everforest_diagnostic_line_highlight	Config/.config/nvim/init.vim	/^let g:everforest_diagnostic_line_highlight = 0$/;"	v
+g:everforest_diagnostic_line_highlight	Neovim/init.vim	/^let g:everforest_diagnostic_line_highlight = 0$/;"	v
 g:everforest_diagnostic_line_highlight	Neovim/nvim/init.vim	/^let g:everforest_diagnostic_line_highlight = 0$/;"	v
 g:everforest_diagnostic_text_highlight	Config/.config/nvim/init.vim	/^let g:everforest_diagnostic_text_highlight = 1$/;"	v
+g:everforest_diagnostic_text_highlight	Neovim/init.vim	/^let g:everforest_diagnostic_text_highlight = 1$/;"	v
 g:everforest_diagnostic_text_highlight	Neovim/nvim/init.vim	/^let g:everforest_diagnostic_text_highlight = 1$/;"	v
 g:everforest_enable_italic	Config/.config/nvim/init.vim	/^let g:everforest_enable_italic = 1$/;"	v
+g:everforest_enable_italic	Neovim/init.vim	/^let g:everforest_enable_italic = 1$/;"	v
 g:everforest_enable_italic	Neovim/nvim/init.vim	/^let g:everforest_enable_italic = 1$/;"	v
 g:everforest_last_modified	Config/.config/nvim/after/ftplugin/text/everforest.vim	/^let g:everforest_last_modified = 'Tue Nov 30 08:09:25 UTC 2021'$/;"	v
 g:everforest_show_eob	Config/.config/nvim/init.vim	/^let g:everforest_show_eob = 1$/;"	v
+g:everforest_show_eob	Neovim/init.vim	/^let g:everforest_show_eob = 1$/;"	v
 g:everforest_show_eob	Neovim/nvim/init.vim	/^let g:everforest_show_eob = 1$/;"	v
 g:everforest_transparent_background	Config/.config/nvim/init.vim	/^let g:everforest_transparent_background = 1$/;"	v
+g:everforest_transparent_background	Neovim/init.vim	/^let g:everforest_transparent_background = 1$/;"	v
 g:everforest_transparent_background	Neovim/nvim/init.vim	/^let g:everforest_transparent_background = 1$/;"	v
 g:everforest_ui_contrast	Config/.config/nvim/init.vim	/^let g:everforest_ui_contrast = 'high'$/;"	v
+g:everforest_ui_contrast	Neovim/init.vim	/^let g:everforest_ui_contrast = 'high'$/;"	v
 g:everforest_ui_contrast	Neovim/nvim/init.vim	/^let g:everforest_ui_contrast = 'high'$/;"	v
 g:formatdef_latexindent	Config/.config/nvim/init.vim	/^let g:formatdef_latexindent = '"latexindent -"'$/;"	v
 g:livepreview_engine	Config/.config/nvim/init.vim	/^let g:livepreview_engine = 'pdflatex' . ''$/;"	v
 g:livepreview_previewer	Config/.config/nvim/init.vim	/^let g:livepreview_previewer = 'evince'$/;"	v
+g:livepreview_previewer	Neovim/init.vim	/^let g:livepreview_previewer = 'okular'$/;"	v
 g:livepreview_previewer	Neovim/nvim/init.vim	/^let g:livepreview_previewer = 'okular'$/;"	v
 g:livepreview_texinputs	Config/.config/nvim/init.vim	/^let g:livepreview_texinputs = '.\/out\/'$/;"	v
+g:livepreview_texinputs	Neovim/init.vim	/^let g:livepreview_texinputs = '.\/out\/'$/;"	v
 g:livepreview_texinputs	Neovim/nvim/init.vim	/^let g:livepreview_texinputs = '.\/out\/'$/;"	v
 g:livepreview_use_biber	Config/.config/nvim/init.vim	/^let g:livepreview_use_biber = 1$/;"	v
+g:livepreview_use_biber	Neovim/init.vim	/^let g:livepreview_use_biber = 1$/;"	v
 g:livepreview_use_biber	Neovim/nvim/init.vim	/^let g:livepreview_use_biber = 1$/;"	v
 g:loaded_plug	Config/.config/nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:mkdp_browser	Neovim/init.vim	/^let g:mkdp_browser = 'firefox'$/;"	v
 g:mkdp_browser	Neovim/nvim/init.vim	/^let g:mkdp_browser = 'firefox'$/;"	v
 g:mkdp_markdown_css	Config/.config/nvim/init.vim	/^let g:mkdp_markdown_css='~\/.vim\/ressources\/github-markdown.css'$/;"	v
 g:mkdp_refresh_slow	Config/.config/nvim/init.vim	/^let g:mkdp_refresh_slow=1$/;"	v
 g:myLang	Config/.config/nvim/init.vim	/^  let g:myLang = g:myLang + 1$/;"	v
 g:myLang	Config/.config/nvim/init.vim	/^let g:myLang = 0$/;"	v
+g:myLang	Neovim/init.vim	/^  let g:myLang = g:myLang + 1$/;"	v
+g:myLang	Neovim/init.vim	/^let g:myLang = 0$/;"	v
 g:myLang	Neovim/nvim/init.vim	/^  let g:myLang = g:myLang + 1$/;"	v
 g:myLang	Neovim/nvim/init.vim	/^let g:myLang = 0$/;"	v
 g:myLangList	Config/.config/nvim/init.vim	/^let g:myLangList = [ "nospell", "de_de", "en_us" ]$/;"	v
+g:myLangList	Neovim/init.vim	/^let g:myLangList = [ "nospell", "de_de", "en_us" ]$/;"	v
 g:myLangList	Neovim/nvim/init.vim	/^let g:myLangList = [ "nospell", "de_de", "en_us" ]$/;"	v
 g:plug_home	Config/.config/nvim/autoload/plug.vim	/^  let g:plug_home = home$/;"	v
 g:plugs	Config/.config/nvim/autoload/plug.vim	/^    let g:plugs[name] = spec$/;"	v
 g:plugs	Config/.config/nvim/autoload/plug.vim	/^  let g:plugs = {}$/;"	v
 g:plugs_order	Config/.config/nvim/autoload/plug.vim	/^  let g:plugs_order = []$/;"	v
 g:plugs_order	Config/.config/nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:tex_flavor	Neovim/init.vim	/^let g:tex_flavor = "latex"$/;"	v
 g:tex_flavor	Neovim/nvim/init.vim	/^let g:tex_flavor = "latex"$/;"	v
 g:ulti_expand_or_jump_res	Config/.config/nvim/init.vim	/^let g:ulti_expand_or_jump_res = 0$/;"	v
+g:ulti_expand_or_jump_res	Neovim/init.vim	/^let g:ulti_expand_or_jump_res = 0$/;"	v
 g:ulti_expand_or_jump_res	Neovim/nvim/init.vim	/^let g:ulti_expand_or_jump_res = 0$/;"	v
 g:vim_markdown_math	Config/.config/nvim/init.vim	/^let g:vim_markdown_math = 1$/;"	v
+g:vimtex_compiler_method	Neovim/init.vim	/^let g:vimtex_compiler_method = 'latexmk'$/;"	v
 g:vimtex_compiler_method	Neovim/nvim/init.vim	/^let g:vimtex_compiler_method = 'latexmk'$/;"	v
+g:vimtex_view_general_options	Neovim/init.vim	/^let g:vimtex_view_general_options = '--unique file:@pdf\\#src:@line@tex'$/;"	v
 g:vimtex_view_general_options	Neovim/nvim/init.vim	/^let g:vimtex_view_general_options = '--unique file:@pdf\\#src:@line@tex'$/;"	v
+g:vimtex_view_general_viewer	Neovim/init.vim	/^let g:vimtex_view_general_viewer = 'okular'$/;"	v
 g:vimtex_view_general_viewer	Neovim/nvim/init.vim	/^let g:vimtex_view_general_viewer = 'okular'$/;"	v
 gap	Config/.config/neofetch/config.conf	/^gap=3$/;"	k
 gconfig	i3blocks/airly/airly.py	/^gconfig = {$/;"	v
 gd	Config/.config/nvim/init.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gd	Neovim/init.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
 gd	Neovim/nvim/init.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
 geometry	Config/.config/obs-studio/global.ini	/^geometry=AdnQywADAAAAAA8AAAAADgAAFoAAAAQnAAAPAgAAAA4AABZ+AAAEJQAAAAEAAAAAB4AAAA8CAAAADgAAFn4AAAQ/;"	k	section:BasicWindow
 geometry	Config/.config/vlc/vlc-qt-interface.conf	/^geometry=@ByteArray(\\x1\\xd9\\xd0\\xcb\\0\\x3\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\a\\x7f\\0\\0/;"	k	section:General
@@ -3081,9 +3224,11 @@ get_updates	i3blocks/arch-update/arch-update.py	/^def get_updates():$/;"	f
 get_usage	i3blocks/cpu_usage2/cpu_usage2.c	/^ulli get_usage(ulli *used_jiffies)$/;"	f	typeref:typename:ulli
 get_values	i3blocks/bandwidth2/bandwidth2.c	/^void get_values(char **const ifaces, int num_ifaces, time_t * const s, ulli * const received, ul/;"	f	typeref:typename:void
 gi	Config/.config/nvim/init.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gi	Neovim/init.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
 gi	Neovim/nvim/init.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
 github	i3blocks/github/i3blocks.conf	/^[github]$/;"	s
 global	Samba/smb.conf	/^[global]$/;"	s
+gm	Neovim/init.vim	/^nnoremap gm m$/;"	m
 gm	Neovim/nvim/init.vim	/^nnoremap gm m$/;"	m
 go	i3blocks/go/README.md	/^# go$/;"	c
 go	i3blocks/go/i3blocks.conf	/^[go]$/;"	s
@@ -3091,6 +3236,7 @@ gpu-load	i3blocks/gpu-load/README.md	/^# gpu-load$/;"	c
 gpu_brand	Config/.config/neofetch/config.conf	/^gpu_brand="on"$/;"	k
 gpu_type	Config/.config/neofetch/config.conf	/^gpu_type="all"$/;"	k
 gr	Config/.config/nvim/init.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gr	Neovim/init.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
 gr	Neovim/nvim/init.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
 grab	Config/.config/zoomus.conf	/^enable.host.auto.grab=true$/;"	k	section:General
 gridMode	Config/.config/obs-studio/global.ini	/^gridMode=false$/;"	k	section:BasicWindow
@@ -3104,6 +3250,7 @@ gtk3	Config/.config/neofetch/config.conf	/^gtk3="on"$/;"	k
 gtk_shorthand	Config/.config/neofetch/config.conf	/^gtk_shorthand="off"$/;"	k
 guest ok	Samba/smb.conf	/^guest ok = no$/;"	k	section:matteos-sambashare
 gy	Config/.config/nvim/init.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+gy	Neovim/init.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
 gy	Neovim/nvim/init.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
 h	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	object:marks
 handleApply	i3blocks/monitor_manager/monitor_manager	/^    def handleApply(self, e=None):$/;"	m	class:MonitorManager
@@ -3154,6 +3301,8 @@ i3blocks config relevant to blocklet(s)	i3blocks/ISSUE_TEMPLATE.md	/^### i3block
 i3blocks configuration	i3blocks/metars/README.md	/^# i3blocks configuration$/;"	c
 ic	Config/.config/nvim/init.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
 ic	Config/.config/nvim/init.vim	/^xmap ic <Plug>(coc-classobj-i)$/;"	m
+ic	Neovim/init.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
+ic	Neovim/init.vim	/^xmap ic <Plug>(coc-classobj-i)$/;"	m
 ic	Neovim/nvim/init.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
 ic	Neovim/nvim/init.vim	/^xmap ic <Plug>(coc-classobj-i)$/;"	m
 id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:quick_transitions.0
@@ -3167,6 +3316,8 @@ id	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"b
 id_counter	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:sources.1.settings
 if	Config/.config/nvim/init.vim	/^omap if <Plug>(coc-funcobj-i)$/;"	m
 if	Config/.config/nvim/init.vim	/^xmap if <Plug>(coc-funcobj-i)$/;"	m
+if	Neovim/init.vim	/^omap if <Plug>(coc-funcobj-i)$/;"	m
+if	Neovim/init.vim	/^xmap if <Plug>(coc-funcobj-i)$/;"	m
 if	Neovim/nvim/init.vim	/^omap if <Plug>(coc-funcobj-i)$/;"	m
 if	Neovim/nvim/init.vim	/^xmap if <Plug>(coc-funcobj-i)$/;"	m
 iface	i3blocks/iface/README.md	/^# iface$/;"	c
@@ -3182,6 +3333,8 @@ info	i3blocks/arch-update/arch-update.py	/^      info = str(update_count) + ' up
 ingests	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^    "ingests": [$/;"	a
 initializationOptions	Config/.config/nvim/coc-settings.json	/^    "initializationOptions": {$/;"	o	object:cmake
 initializationOptions	Config/.config/nvim/coc-settings.json	/^    "initializationOptions": {$/;"	o	object:intelephense
+initializationOptions	Neovim/coc-settings.json	/^        "initializationOptions": {$/;"	o	object:languageserver.cmake
+initializationOptions	Neovim/coc-settings.json	/^        "initializationOptions": {$/;"	o	object:languageserver.intelephense
 initializationOptions	Neovim/nvim/coc-settings.json	/^        "initializationOptions": {$/;"	o	object:languageserver.cmake
 initializationOptions	Neovim/nvim/coc-settings.json	/^        "initializationOptions": {$/;"	o	object:languageserver.intelephense
 install	i3blocks/Makefile	/^install: all do-install$/;"	t
@@ -3195,6 +3348,7 @@ instance	i3blocks/systemctl/i3blocks.conf	/^instance=redis$/;"	k	section:systemc
 instance	i3blocks/tahoe-lafs/i3blocks.conf	/^instance=localhost:3456$/;"	k	section:tahoe-lafs
 instant_prompt_example	Zsh/.p10k.zsh	/^  function instant_prompt_example() {$/;"	f
 intelephense	Config/.config/nvim/coc-settings.json	/^  "intelephense": {$/;"	o
+intelephense	Neovim/coc-settings.json	/^      "intelephense": {$/;"	o	object:languageserver
 intelephense	Neovim/nvim/coc-settings.json	/^      "intelephense": {$/;"	o	object:languageserver
 interval	Config/.config/zoomus.conf	/^host.auto.grab.interval=10$/;"	k	section:General
 interval	i3blocks/apt-upgrades/i3blocks.conf	/^interval=once$/;"	k	section:apt-upgrades
@@ -3247,10 +3401,15 @@ isSwapPartition	i3blocks/usb/usb	/^def isSwapPartition(path):$/;"	f
 isTransCoding	Config/.config/zoomus.conf	/^isTransCoding=false$/;"	k	section:General
 items	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	a	object:sources.1.settings
 j	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	object:marks
+jedi_completion	Neovim/coc-settings.json	/^              "jedi_completion": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 jedi_completion	Neovim/nvim/coc-settings.json	/^              "jedi_completion": {$/;"	o	object:languageserver.python.settings.pyls.plugins
+jedi_hover	Neovim/coc-settings.json	/^              "jedi_hover": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 jedi_hover	Neovim/nvim/coc-settings.json	/^              "jedi_hover": {$/;"	o	object:languageserver.python.settings.pyls.plugins
+jedi_references	Neovim/coc-settings.json	/^              "jedi_references": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 jedi_references	Neovim/nvim/coc-settings.json	/^              "jedi_references": {$/;"	o	object:languageserver.python.settings.pyls.plugins
+jedi_signature_help	Neovim/coc-settings.json	/^              "jedi_signature_help": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 jedi_signature_help	Neovim/nvim/coc-settings.json	/^              "jedi_signature_help": {$/;"	o	object:languageserver.python.settings.pyls.plugins
+jedi_symbols	Neovim/coc-settings.json	/^              "jedi_symbols": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 jedi_symbols	Neovim/nvim/coc-settings.json	/^              "jedi_symbols": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 k	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	object:marks
 kbdd_layout	i3blocks/kbdd_layout/README.md	/^# kbdd_layout$/;"	c
@@ -3344,10 +3503,12 @@ label	i3blocks/purpleair/i3blocks.conf	/^label=$/;"	k	section:purpleair
 label	i3blocks/toggle/i3blocks.conf	/^label=$/;"	k	section:toggle
 label	i3blocks/user/i3blocks.conf	/^label=User: $/;"	k	section:user
 label	i3blocks/wifi/i3blocks.conf	/^label=wifi:$/;"	k	section:wifi
+languageserver	Neovim/coc-settings.json	/^    "languageserver": {$/;"	o
 languageserver	Neovim/nvim/coc-settings.json	/^    "languageserver": {$/;"	o
 last-location	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	object:gtabs.0.panes.0.ptabs.0
 last-location	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	object:gtabs.0.panes.1.ptabs.0
 lastVisited	Config/.config/QtProject.conf	/^lastVisited=file:\/\/\/home\/matteo\/Documents\/Marriage\/summary$/;"	k	section:FileDialog
+latex	Neovim/coc-settings.json	/^      "latex": ["tex"]$/;"	a	object:snippets.extends
 latex	Neovim/nvim/coc-settings.json	/^      "latex": ["tex"]$/;"	a	object:snippets.extends
 launch_ncdu	i3blocks/disk_usage/disk_usage	/^def launch_ncdu(mp):$/;"	f
 layout	i3/.i3/workspace-2-startup.json	/^                    "layout": "tabbed",$/;"	s	object:0.nodes.0
@@ -3394,6 +3555,7 @@ manager	i3blocks/monitor_manager/monitor_manager.py	/^        manager = MonitorM
 manual	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	object:gtabs.0.panes.0.ptabs.0.filters
 manual	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	s	object:gtabs.0.panes.1.ptabs.0.filters
 mapleader	Config/.config/nvim/init.vim	/^let mapleader = " "$/;"	v
+mapleader	Neovim/init.vim	/^let mapleader = " "$/;"	v
 mapleader	Neovim/nvim/init.vim	/^let mapleader = " "$/;"	v
 marks	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o
 marks	i3/.i3/workspace-1-startup.json	/^  "marks": [],$/;"	a
@@ -3415,7 +3577,9 @@ markup	i3blocks/github/i3blocks.conf	/^markup=pango$/;"	k	section:github
 markup	i3blocks/systemctl/i3blocks.conf	/^markup=pango$/;"	k	section:systemctl
 markup	i3blocks/usb/i3blocks.conf	/^markup=pango$/;"	k	section:usb
 markup	i3blocks/ytdl-mpv/i3blocks.conf	/^markup=pango                                                                    $/;"	k	section:ytdl-mpv
+match	Neovim/coc-settings.json	/^                "match": "(?!test_).*\\\\.py",$/;"	s	object:languageserver.python.settings.pyls.plugins.pydocstyle
 match	Neovim/nvim/coc-settings.json	/^                "match": "(?!test_).*\\\\.py",$/;"	s	object:languageserver.python.settings.pyls.plugins.pydocstyle
+matchDir	Neovim/coc-settings.json	/^                "matchDir": "[^\\\\.].*"$/;"	s	object:languageserver.python.settings.pyls.plugins.pydocstyle
 matchDir	Neovim/nvim/coc-settings.json	/^                "matchDir": "[^\\\\.].*"$/;"	s	object:languageserver.python.settings.pyls.plugins.pydocstyle
 matches	i3blocks/arch-update/arch-update	/^    matches = matching_updates(updates, args.watch)$/;"	v
 matches	i3blocks/arch-update/arch-update.py	/^    matches = matching_updates(updates, args.watch)$/;"	v
@@ -3577,6 +3741,7 @@ max video bitrate	Config/.config/obs-studio/plugin_config/rtmp-services/services
 max video bitrate	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	n	object:services.87.recommended
 maximized	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^Window\\maximized=1$/;"	k	section:5.3
 maxlen	i3blocks/taskw/taskw	/^maxlen = _default("TASKW_MAX_LENGTH", default=35, arg_type=int)$/;"	v
+mccabe	Neovim/coc-settings.json	/^              "mccabe": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 mccabe	Neovim/nvim/coc-settings.json	/^              "mccabe": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 mediaplayer	i3blocks/mediaplayer/README.md	/^# mediaplayer$/;"	c
 memory	i3blocks/memory/README.md	/^# memory$/;"	c
@@ -4176,6 +4341,7 @@ nodes	i3/.i3/workspace-2-startup.json	/^            "nodes": [$/;"	a	object:0
 nodes	i3/.i3/workspace-2-startup.json	/^    "nodes": [$/;"	a
 notask_msg	i3blocks/taskw/taskw	/^notask_msg = _default("TASKW_NOTASK_MSG", default="No Task", arg_type=str)$/;"	v
 numbertoggle	Config/.config/nvim/init.vim	/^augroup numbertoggle$/;"	a
+numbertoggle	Neovim/init.vim	/^augroup numbertoggle$/;"	a
 numbertoggle	Neovim/nvim/init.vim	/^augroup numbertoggle$/;"	a
 o	Config/.config/nvim/autoload/plug.vim	/^      nmap <buffer> o <plug>(plug-preview)$/;"	m
 objTooltips	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^UI\\objTooltips=true$/;"	k	section:5.3
@@ -4274,12 +4440,14 @@ plug#end	Config/.config/nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
 plug#helptags	Config/.config/nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
 plug#load	Config/.config/nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
 plug#shellescape	Config/.config/nvim/autoload/plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
+plugins	Neovim/coc-settings.json	/^            "plugins": {$/;"	o	object:languageserver.python.settings.pyls
 plugins	Neovim/nvim/coc-settings.json	/^            "plugins": {$/;"	o	object:languageserver.python.settings.pyls
 populateGrid	i3blocks/monitor_manager/monitor_manager	/^    def populateGrid(self):$/;"	m	class:MonitorManager
 populateGrid	i3blocks/monitor_manager/monitor_manager.py	/^    def populateGrid(self):$/;"	m	class:MonitorManager
 pos	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	o	object:sources.1.settings.items.0
 pos	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	n	object:gtabs.0.splitter
 pos	Config/.config/vlc/vlc-qt-interface.conf	/^pos=@Point(560 1016)$/;"	k	section:FullScreen
+preload	Neovim/coc-settings.json	/^              "preload": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 preload	Neovim/nvim/coc-settings.json	/^              "preload": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 prepare_launcher	i3blocks/shutdown_menu/shutdown_menu	/^function prepare_launcher() {$/;"	f
 prettify_time	i3blocks/timer_and_stopwatch/timer_and_stopwatch	/^prettify_time() {$/;"	f
@@ -4422,10 +4590,15 @@ push-to-talk-delay	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxA
 push-to-talk-delay	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:DesktopAudioDevice1
 push-to-talk-delay	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:sources.0
 push-to-talk-delay	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:sources.1
+pycodestyle	Neovim/coc-settings.json	/^              "pycodestyle": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 pycodestyle	Neovim/nvim/coc-settings.json	/^              "pycodestyle": {$/;"	o	object:languageserver.python.settings.pyls.plugins
+pydocstyle	Neovim/coc-settings.json	/^              "pydocstyle": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 pydocstyle	Neovim/nvim/coc-settings.json	/^              "pydocstyle": {$/;"	o	object:languageserver.python.settings.pyls.plugins
+pyflakes	Neovim/coc-settings.json	/^              "pyflakes": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 pyflakes	Neovim/nvim/coc-settings.json	/^              "pyflakes": {$/;"	o	object:languageserver.python.settings.pyls.plugins
+pyls	Neovim/coc-settings.json	/^          "pyls": {$/;"	o	object:languageserver.python.settings
 pyls	Neovim/nvim/coc-settings.json	/^          "pyls": {$/;"	o	object:languageserver.python.settings
+python	Neovim/coc-settings.json	/^      "python": {$/;"	o	object:languageserver
 python	Neovim/nvim/coc-settings.json	/^      "python": {$/;"	o	object:languageserver
 q	Config/.config/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :call <SID>close_pane()<cr>$/;"	m
 q	Config/.config/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :q<cr>$/;"	m
@@ -4739,7 +4912,9 @@ root	i3blocks/monitor_manager/monitor_manager	/^        root = Tk()$/;"	v
 root	i3blocks/monitor_manager/monitor_manager.py	/^        root = Tk()$/;"	v
 rootPatterns	Config/.config/nvim/coc-settings.json	/^    "rootPatterns": ["compile_flags.txt", "compile_commands.json"],$/;"	a	object:clangd
 rootPatterns	Config/.config/nvim/coc-settings.json	/^    "rootPatterns": [$/;"	a	object:cmake
+rootPatterns	Neovim/coc-settings.json	/^        "rootPatterns": [$/;"	a	object:languageserver.cmake
 rootPatterns	Neovim/nvim/coc-settings.json	/^        "rootPatterns": [$/;"	a	object:languageserver.cmake
+rope_completion	Neovim/coc-settings.json	/^              "rope_completion": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 rope_completion	Neovim/nvim/coc-settings.json	/^              "rope_completion": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 rot	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:sources.1.settings.items.0
 rotationSymbol	i3blocks/monitor_manager/monitor_manager	/^    def rotationSymbol(self, rotation):$/;"	m	class:MonitorManager
@@ -4757,6 +4932,7 @@ s:bar	Config/.config/nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
 s:base_spec	Config/.config/nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': '', 'frozen': 0 }$/;"	v
 s:batchfile	Config/.config/nvim/autoload/plug.vim	/^  function! s:batchfile(cmd)$/;"	f
 s:check_back_space	Config/.config/nvim/init.vim	/^function! s:check_back_space() abort$/;"	f
+s:check_back_space	Neovim/init.vim	/^function! s:check_back_space() abort$/;"	f
 s:check_back_space	Neovim/nvim/init.vim	/^function! s:check_back_space() abort$/;"	f
 s:check_ruby	Config/.config/nvim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
 s:checkout	Config/.config/nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
@@ -4882,6 +5058,7 @@ s:shellesc_cmd	Config/.config/nvim/autoload/plug.vim	/^function! s:shellesc_cmd(
 s:shellesc_ps1	Config/.config/nvim/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
 s:shellesc_sh	Config/.config/nvim/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
 s:show_documentation	Config/.config/nvim/init.vim	/^function! s:show_documentation()$/;"	f
+s:show_documentation	Neovim/init.vim	/^function! s:show_documentation()$/;"	f
 s:show_documentation	Neovim/nvim/init.vim	/^function! s:show_documentation()$/;"	f
 s:snapshot	Config/.config/nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
 s:source	Config/.config/nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
@@ -4930,6 +5107,7 @@ screen	Config/.config/vlc/vlc-qt-interface.conf	/^screen=@Rect(0 0 1920 1080)$/;
 search-hist	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	a
 separator	Config/.config/neofetch/config.conf	/^separator=":"$/;"	k
 serf	i3blocks/email/email	/^def serf():$/;"	f
+server	Neovim/coc-settings.json	/^              "server": "verbose"$/;"	s	object:languageserver.python.settings.pyls.trace
 server	Neovim/nvim/coc-settings.json	/^              "server": "verbose"$/;"	s	object:languageserver.python.settings.pyls.trace
 servers	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	a	object:services.0
 servers	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	a	object:services.1
@@ -5046,6 +5224,7 @@ settings	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice
 settings	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	o	object:DesktopAudioDevice1
 settings	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	o	object:sources.0
 settings	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	o	object:sources.1
+settings	Neovim/coc-settings.json	/^        "settings": {$/;"	o	object:languageserver.python
 settings	Neovim/nvim/coc-settings.json	/^        "settings": {$/;"	o	object:languageserver.python
 settings	i3blocks/metars/metars	/^    settings = MetarsSettingsEnvironment()$/;"	v
 settings	i3blocks/metars/metars	/^    settings = None$/;"	v	class:Metars
@@ -5073,6 +5252,7 @@ signal	i3blocks/volume/i3blocks.conf	/^signal=10$/;"	k	section:volume
 signal	i3blocks/ytdl-mpv/i3blocks.conf	/^signal=4$/;"	k	section:ytdl-mpv
 size	Config/.config/vlc/vlc-qt-interface.conf	/^size=6$/;"	k	section:ToolbarProfiles
 size	i3blocks/memory2/memory2.c	/^  int size;$/;"	m	struct:__anon9bc31ac40108	typeref:typename:int	file:
+snippets.extends	Neovim/coc-settings.json	/^    "snippets.extends": {$/;"	o
 snippets.extends	Neovim/nvim/coc-settings.json	/^    "snippets.extends": {$/;"	o
 softRefreshList	i3blocks/monitor_manager/monitor_manager	/^    def softRefreshList(self, e=None):$/;"	m	class:MonitorManager
 softRefreshList	i3blocks/monitor_manager/monitor_manager.py	/^    def softRefreshList(self, e=None):$/;"	m	class:MonitorManager
@@ -5105,6 +5285,7 @@ status	i3blocks/monitor_manager/monitor_manager	/^    def status(self):$/;"	m	cl
 status	i3blocks/monitor_manager/monitor_manager.py	/^    def status(self):$/;"	m	class:Output
 stdout	Config/.config/neofetch/config.conf	/^stdout="off"$/;"	k
 storagePath	Config/.config/nvim/coc-settings.json	/^      "storagePath": "\/tmp\/intelephense"$/;"	s	object:intelephense.initializationOptions
+storagePath	Neovim/coc-settings.json	/^          "storagePath": "\/tmp\/intelephense"$/;"	s	object:languageserver.intelephense.initializationOptions
 storagePath	Neovim/nvim/coc-settings.json	/^          "storagePath": "\/tmp\/intelephense"$/;"	s	object:languageserver.intelephense.initializationOptions
 strbool	i3blocks/arch-update/arch-update	/^    strbool = lambda s: s.lower() in ['t', 'true', '1']$/;"	f	function:create_argparse	file:
 strbool	i3blocks/arch-update/arch-update.py	/^    strbool = lambda s: s.lower() in ['t', 'true', '1']$/;"	f	function:create_argparse	file:
@@ -5247,6 +5428,7 @@ text_red	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^ColorLabels\\te
 text_yellow	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^ColorLabels\\text_yellow=Yellow$/;"	k	section:5.3
 theme	Config/.config/gtk-3.0/settings.ini	/^gtk-application-prefer-dark-theme=0$/;"	k	section:Settings
 theme	Config/.config/gtk-4.0/settings.ini	/^gtk-application-prefer-dark-theme=0$/;"	k	section:Settings
+threshold	Neovim/coc-settings.json	/^                "threshold": 15$/;"	n	object:languageserver.python.settings.pyls.plugins.mccabe
 threshold	Neovim/nvim/coc-settings.json	/^                "threshold": 15$/;"	n	object:languageserver.python.settings.pyls.plugins.mccabe
 thumbnail_dir	Config/.config/neofetch/config.conf	/^thumbnail_dir="${XDG_CACHE_HOME:-${HOME}\/.cache}\/thumbnails\/neofetch"$/;"	k
 time	i3blocks/battery2/battery2	/^                    time = ":".join(time.groups())$/;"	v
@@ -5272,7 +5454,9 @@ toggleBlanked	i3blocks/monitor_manager/monitor_manager	/^    def toggleBlanked(s
 toggleBlanked	i3blocks/monitor_manager/monitor_manager.py	/^    def toggleBlanked(self, e):$/;"	m	class:MonitorManager
 toggleDuplicate	i3blocks/monitor_manager/monitor_manager	/^    def toggleDuplicate(self, e):$/;"	m	class:MonitorManager
 toggleDuplicate	i3blocks/monitor_manager/monitor_manager.py	/^    def toggleDuplicate(self, e):$/;"	m	class:MonitorManager
+trace	Neovim/coc-settings.json	/^            "trace": {$/;"	o	object:languageserver.python.settings.pyls
 trace	Neovim/nvim/coc-settings.json	/^            "trace": {$/;"	o	object:languageserver.python.settings.pyls
+trace.server	Neovim/coc-settings.json	/^        "trace.server": "verbose",$/;"	s	object:languageserver.python
 trace.server	Neovim/nvim/coc-settings.json	/^        "trace.server": "verbose",$/;"	s	object:languageserver.python
 transition_duration	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n
 transitions	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	a
@@ -6230,6 +6414,7 @@ y	i3/.i3/workspace-2-startup.json	/^                                "y": 33$/;"	
 y	i3/.i3/workspace-2-startup.json	/^                        "y": 0$/;"	n	object:0.nodes.1.geometry
 y	i3/.i3/workspace-2-startup.json	/^                "y": 0$/;"	n	object:nodes.0.geometry
 y	i3/.i3/workspace-2-startup.json	/^                "y": 0$/;"	n	object:nodes.1.geometry
+yapf	Neovim/coc-settings.json	/^              "yapf": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 yapf	Neovim/nvim/coc-settings.json	/^              "yapf": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 yoffset	Config/.config/neofetch/config.conf	/^yoffset=0$/;"	k
 ytdl-mpv	i3blocks/ytdl-mpv/README.md	/^# ytdl-mpv$/;"	c

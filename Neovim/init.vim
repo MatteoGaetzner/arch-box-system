@@ -67,17 +67,17 @@ autocmd VimLeave * call system("xsel -ib", getreg('+'))
 
 set clipboard+=unnamedplus
 let g:clipboard = {
-      \   'name': 'xsel_override',
-      \   'copy': {
-        \      '+': 'xsel --input --clipboard',
-        \      '*': 'xsel --input --primary',
-        \    },
-        \   'paste': {
-          \      '+': 'xsel --output --clipboard',
-          \      '*': 'xsel --output --primary',
-          \   },
-          \   'cache_enabled': 1,
-          \ }
+            \   'name': 'xsel_override',
+            \   'copy': {
+                \      '+': 'xsel --input --clipboard',
+                \      '*': 'xsel --input --primary',
+                \    },
+                \   'paste': {
+                    \      '+': 'xsel --output --clipboard',
+                    \      '*': 'xsel --output --primary',
+                    \   },
+                    \   'cache_enabled': 1,
+                    \ }
 
 "--------------  Vim-Localrc  --------------------
 
@@ -87,9 +87,9 @@ au BufReadPost *.vimlocal set filetype=vim
 "--------------  Line Numbers  -------------------
 
 augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
 "--------------  Spelling and Grammar  -----------
@@ -98,13 +98,13 @@ augroup END
 let g:myLang = 0
 let g:myLangList = [ "nospell", "de_de", "en_us" ]
 function! MySpellLang()
-  " loop through languages
-  let g:myLang = g:myLang + 1
-  if g:myLang >= len(g:myLangList) | let g:myLang = 0 | endif
-  if g:myLang == 0 | set nospell | endif
-  if g:myLang == 1 | setlocal spell spelllang=de_de | endif
-  if g:myLang == 2 | setlocal spell spelllang=en_us | endif
-  echo "language:" g:myLangList[g:myLang]
+    " loop through languages
+    let g:myLang = g:myLang + 1
+    if g:myLang >= len(g:myLangList) | let g:myLang = 0 | endif
+    if g:myLang == 0 | set nospell | endif
+    if g:myLang == 1 | setlocal spell spelllang=de_de | endif
+    if g:myLang == 2 | setlocal spell spelllang=en_us | endif
+    echo "language:" g:myLangList[g:myLang]
 endf
 
 map <F12> :call MySpellLang()<CR>
@@ -118,7 +118,7 @@ autocmd VimResized * if &equalalways | wincmd = | endif
 "--------------  Themes  -------------------------
 
 if has('termguicolors')
-  set termguicolors
+    set termguicolors
 endif
 
 " For dark version.
@@ -141,42 +141,42 @@ colorscheme everforest
 
 lua << END
 require('lualine').setup {
-  options = {
-    icons_enabled = true,
-    theme = 'auto',
-    component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = ''},
-    disabled_filetypes = {},
-    always_divide_middle = true,
-    },
-  sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'}
-    },
-  inactive_sections = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {'location'},
-    lualine_y = {},
-    lualine_z = {}
-    },
-  tabline = {},
-  extensions = {}
-  }
+    options = {
+        icons_enabled = true,
+        theme = 'auto',
+        component_separators = { left = '', right = ''},
+        section_separators = { left = '', right = ''},
+        disabled_filetypes = {},
+        always_divide_middle = true,
+        },
+    sections = {
+        lualine_a = {'mode'},
+        lualine_b = {'branch', 'diff', 'diagnostics'},
+        lualine_c = {'filename'},
+        lualine_x = {'encoding', 'fileformat', 'filetype'},
+        lualine_y = {'progress'},
+        lualine_z = {'location'}
+        },
+    inactive_sections = {
+        lualine_a = {},
+        lualine_b = {},
+        lualine_c = {'filename'},
+        lualine_x = {'location'},
+        lualine_y = {},
+        lualine_z = {}
+        },
+    tabline = {},
+    extensions = {}
+    }
 END
 
 "--------------  Text Objects  -------------------
 
 for s:char in [ '_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', '$' ]
-  execute 'xnoremap i' . s:char . ' :<C-u>normal! T' . s:char . 'vt' . s:char . '<CR>'
-  execute 'onoremap i' . s:char . ' :normal vi' . s:char . '<CR>'
-  execute 'xnoremap a' . s:char . ' :<C-u>normal! F' . s:char . 'vf' . s:char . '<CR>'
-  execute 'onoremap a' . s:char . ' :normal va' . s:char . '<CR>'
+    execute 'xnoremap i' . s:char . ' :<C-u>normal! T' . s:char . 'vt' . s:char . '<CR>'
+    execute 'onoremap i' . s:char . ' :normal vi' . s:char . '<CR>'
+    execute 'xnoremap a' . s:char . ' :<C-u>normal! F' . s:char . 'vf' . s:char . '<CR>'
+    execute 'onoremap a' . s:char . ' :normal va' . s:char . '<CR>'
 endfor
 
 "--------------  Nerdtree  -----------------------
@@ -196,7 +196,7 @@ let NERDTreeAutoDeleteBuffer = 1
 
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-      \ quit | endif
+            \ quit | endif
 
 "--------------  Coc  ----------------------------
 
@@ -221,23 +221,23 @@ set shortmess+=c
 "Always show the signcolumn, otherwise it would shift the text each time
 "diagnostics appear/become resolved.
 if has("nvim-0.5.0") || has("patch-8.1.1564")
-  "  Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
+    "  Recently vim can merge signcolumn and number column into one
+    set signcolumn=number
 else
-  set signcolumn=yes
+    set signcolumn=yes
 endif
 
 "Use <c-space> to trigger completion.
 if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
+    inoremap <silent><expr> <c-space> coc#refresh()
 else
-  inoremap <silent><expr> <c-@> coc#refresh()
+    inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+            \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 "Use `[g` and `]g` to navigate diagnostics
 "Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -254,13 +254,13 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
-    call CocActionAsync('doHover')
-  else
-    execute '!' . &keywordprg .  " . expand('<cword>')
-  endif
+    if (index(['vim','help'], &filetype) >= 0)
+        execute 'h '.expand('<cword>')
+    elseif (coc#rpc#ready())
+        call CocActionAsync('doHover')
+    else
+        execute '!' . &keywordprg .  " . expand('<cword>')
+    endif
 endfunction
 
 "Highlight the symbol and its references when holding the cursor.
@@ -274,11 +274,11 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup cocgroup0
-  autocmd!
-  "  Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  "  Update signature help on jump placeholder.
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+    autocmd!
+    "  Setup formatexpr specified filetype(s).
+    autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+    "  Update signature help on jump placeholder.
+    autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
 "Applying codeAction to the selected region.
@@ -355,14 +355,14 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "--------------  Coc-Snippets  -------------------
 
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+            \ pumvisible() ? coc#_select_confirm() :
+            \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+            \ <SID>check_back_space() ? "\<TAB>" :
+            \ coc#refresh()
 
 function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 " let g:coc_snippet_next = '<tab>'
@@ -382,22 +382,22 @@ let g:UltiSnipsJumpBackwardTrigger="<nop>"
 
 " Selects correct formating app the given file
 fun! Format()
-  if exists('b:useClangFormat')
-    let l:lines="all"
-    if has('python3')
-      py3f ~/.config/llvm/clang-format.py
-    elseif has('python')
-      pyf ~/.config/llvm/clang-format.py
+    if exists('b:useClangFormat')
+        let l:lines="all"
+        if has('python3')
+            py3f ~/.config/llvm/clang-format.py
+        elseif has('python')
+            pyf ~/.config/llvm/clang-format.py
+        endif
     endif
-  endif
-  if exists('b:usePrettier')
-    Prettier
-    return
-  endif
-  if exists('b:dontFormat')
-    return
-  endif
-  Autoformat
+    if exists('b:usePrettier')
+        Prettier
+        return
+    endif
+    if exists('b:dontFormat')
+        return
+    endif
+    Autoformat
 endfun
 
 " File formatting settings
@@ -448,9 +448,9 @@ autocmd FileType python nnoremap <CR> :AsyncRun make run ARGS="%"<CR>
 autocmd FileType python nnoremap <F4> :AsyncRun make test <CR>
 
 augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
 let g:asyncrun_open = 10
@@ -468,8 +468,11 @@ let $NVIM_MKDP_LOG_LEVEL = 'debug'
 
 "--------------  Betriebssystem Praktikum  -------
 
-autocmd FileType c set shiftwidth=4
-autocmd FileType c set tabstop=4
-autocmd FileType c nnoremap <F3> :Neomake qemu <CR>
-autocmd FileType c nnoremap <F4> :Neomake debug <CR>
-
+augroup bsprak
+    autocmd!
+    autocmd FileType c,h set shiftwidth=4
+    autocmd FileType c,h set tabstop=4
+    autocmd FileType c,h set nowrap
+    autocmd FileType c,h nnoremap <F3> :AsyncRun make qemu <CR>
+    autocmd FileType c,h nnoremap <F4> :AsyncRun make debug <CR>
+augroup END

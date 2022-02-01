@@ -8,6 +8,7 @@ autoconf
 automake
 base
 bat
+bear
 biber
 bison
 bluez
@@ -17,6 +18,7 @@ chromium
 clang
 cmake
 cpulimit
+cpupower-gui
 ctags
 cups
 dialog
@@ -25,7 +27,9 @@ efibootmgr
 evince
 exa
 fakeroot
-ffmpeg-full
+ffmpeg
+ffmpegthumbnailer
+ffnvcodec-headers8.1
 firefox
 flameshot
 flex
@@ -42,9 +46,12 @@ htop
 i3-wm
 i3blocks
 i3lock
+jaxx-liberty-appimage
 john
 kdenlive
 kitty
+libclc
+libreoffice-fresh
 libtool
 linux
 linux-firmware
@@ -71,6 +78,7 @@ nvidia-cg-toolkit
 nvidia-settings
 nvidia-utils
 nvtop
+obs-studio
 okular
 openconnect
 opencv-cuda
@@ -85,9 +93,11 @@ pavucontrol
 pdfgrep
 pdftk
 perl-anyevent-i3
+perl-file-mimeinfo
 picom
 pkgconf
 playerctl
+powertop
 pugixml
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -141,7 +151,9 @@ ttf-fira-mono
 ttf-fira-sans
 ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols
+ueberzug
 usbutils
+vifm
 vlc
 vtk
 wget
@@ -153,6 +165,8 @@ xcompmgr
 xdg-user-dirs
 xdg-utils
 xf86-video-vesa
+xmrig-cuda
+xmrig-donateless
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
@@ -197,7 +211,6 @@ xorg-xwud
 xsel
 yarn
 yay
-zoom
 zotero
 zsh
 zsh-autosuggestions

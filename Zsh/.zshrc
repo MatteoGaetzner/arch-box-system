@@ -84,7 +84,7 @@ PERL_MB_OPT="--install_base \"$HOME/.local/share/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=$HOME/.local/share/perl5"; export PERL_MM_OPT;
 
 # Optional
-path+=("$HOME/.local/share/bsprak.toolchain/bin")
+path+=("$HOME/.local/share/bsprak.toolchain/arm/bin")
 
 export PATH
 
@@ -143,6 +143,10 @@ function update {
 
 alias npmi="npm i --prefix $HOME/.local/share/npm"
 
+function mine {
+  sudo xmrig --cuda --donate-level 0 -o de.haven.herominers.com:1110 -u $(pass havenprotocol.org/address) -p my_xmrig_worker -a cn-heavy/xhv -k
+}
+
 ###############  Bluetooth  ######################
 
 alias blue="bluetoothctl connect"
@@ -198,7 +202,7 @@ bindkey '^j' autosuggest-execute
 
 # Open files easily
 function o {
-  xdg-open $@ >/dev/null 2>/dev/null &
+  mimeopen -n $@ >/dev/null 2>/dev/null &
   disown
 }
 
