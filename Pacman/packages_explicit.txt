@@ -86,6 +86,7 @@ opendoas
 pacman-contrib
 pandoc
 papirus-icon-theme
+parallel
 pass
 pass-otp
 patch

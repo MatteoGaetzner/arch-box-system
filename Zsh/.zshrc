@@ -20,8 +20,8 @@ UNDERLINE=$(tput smul)
 ###############  P10K  ###########################
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
+[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -214,7 +214,7 @@ alias c="xclip -sel c <"
 alias v="xclip -sel c -o >"
 
 # Run vifm with image and video preview support
-alias vifm="~/.local/bin/vifmrun"
+alias vifm="$HOME/.local/bin/vifmrun"
 
 # Fast tree
 alias t="tree"
@@ -235,18 +235,25 @@ function findit {
 
 # ipython
 alias i="/home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit"
-
 alias v="nvim"
-alias zshe="nvim ~/.zshrc; source ~/.zshrc"
-alias vime="nvim ~/.config/nvim/init.vim"
-alias vimed="nvim ~/.config/nvim/"
-alias vimep="nvim ~/.config/nvim/vim-plug/plugins.vim"
-alias vimec="nvim ~/.config/nvim/coc-settings.json"
-alias vifme="nvim ~/.config/vifm/vifmrc"
-alias i3e="nvim ~/.config/i3/config"
-alias i3be="nvim ~/.config/i3blocks/config"
-alias xinite="sudo nvim ~/.xinitrc"
-alias kittye="nvim ~/.config/kitty/kitty.conf; killall -s SIGUSR1 kitty"
+
+alias vime="nvim $HOME/.config/nvim/init.vim"
+alias vimed="nvim $HOME/.config/nvim/"
+alias vimep="nvim $HOME/.config/nvim/vim-plug/plugins.vim"
+alias vimec="nvim $HOME/.config/nvim/coc-settings.json"
+
+alias vifme="nvim $HOME/.config/vifm/vifmrc"
+
+alias zshe="nvim $HOME/.zshrc; source $HOME/.zshrc"
+
+alias i3e="nvim $HOME/.config/i3/config"
+alias i3be="nvim $HOME/.config/i3blocks/config"
+
+alias kittye="nvim $HOME/.config/kitty/kitty.conf; killall -s SIGUSR1 kitty"
+
+alias xinite="sudo nvim $HOME/.xinitrc"
+
+alias backupe="nvim $HOME/Sync/System/Backup/small_backup.sh"
 
 alias vt="nvim *.tex"
 
@@ -295,30 +302,28 @@ function u {
       COURSE='WiSe2021MachineLearning1' ;;
     [Mm]* )
       COURSE='WiSe2122MachineLearning1' ;;
-    *)
-      return
   esac
 
   COURSE_CLEAN=$(clean_course $COURSE)
 
   case $argc in
     1 )
-      cl "${ISISDL_DIR}/${COURSE}/" ;;
+      cl "$ISISDL_DIR/$COURSE/" ;;
     2 )
       case $subdir in
         s )
-          cl "${WORK_DIR}/${COURSE_CLEAN}/Solutions/" ;;
+          cl "$WORK_DIR/$COURSE_CLEAN/Solutions/" ;;
         v )
-          cl "${ISISDL_DIR}/${COURSE}/Videos/" ;;
+          cl "$ISISDL_DIR/$COURSE/Videos/" ;;
         *)
-          cl "${ISISDL_DIR}/${COURSE}/"
+          cl "$ISISDL_DIR/$COURSE/"
       esac
       ;;
     [34] )
-      cl $(find ${WORK_DIR}/${COURSE_CLEAN}/Solutions -maxdepth 1 -type d -name "*${exercise_num}" | head -n 1)
+      cl $(find $WORK_DIR/$COURSE_CLEAN/Solutions -maxdepth 1 -type d -name "*$exercise_num" | head -n 1)
       ;;
     *)
-      return
+      cl $ISISDL_DIR/$COURSE
       ;;
   esac
 }

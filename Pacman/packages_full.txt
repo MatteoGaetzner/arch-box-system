@@ -113,6 +113,7 @@ doxygen
 e2fsprogs
 ebook-tools
 ed
+editline
 efibootmgr
 efivar
 egl-wayland
@@ -482,6 +483,7 @@ libclc
 libcloudproviders
 libcolord
 libconfig
+libcpuid
 libcroco
 libcups
 libcurl-gnutls
@@ -709,6 +711,7 @@ lldb
 llvm-libs
 lm_sensors
 lmdb
+lowdown
 lpsolve
 lua
 lua52
@@ -802,6 +805,7 @@ pandoc
 pango
 pangomm
 papirus-icon-theme
+parallel
 parted
 pass
 pass-otp

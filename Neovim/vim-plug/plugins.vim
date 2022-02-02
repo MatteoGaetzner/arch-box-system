@@ -31,6 +31,7 @@ Plug 'vim-autoformat/vim-autoformat'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'python-rope/ropevim'
+Plug 'mboughaba/i3config.vim'
 
 Plug 'untitled-ai/jupyter_ascending.vim'
 

@@ -49,8 +49,10 @@ rsync -av ~/.config/kitty/ ~/Sync/System/kitty/
 # samba
 rsync -av /etc/samba/smb.conf ~/Sync/System/Samba/smb.conf
 
-# services
+# services (don't forget to chmod a+x resume and enable the services)
 rsync -av /usr/lib/systemd/system/reflector.timer ~/Sync/System/Services/reflector.timer
+rsync -av /etc/systemd/system/resume@.service ~/Sync/System/Services/resume@.service
+rsync -av ~/.local/bin/resume ~/Sync/System/Services/resume
 
 # print scripts
 rsync -av ~/.local/bin/pnotify ~/Sync/System/Print.Scripts/pnotify

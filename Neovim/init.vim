@@ -466,6 +466,13 @@ let g:mkdp_browser = 'firefox'
 let $NVIM_MKDP_LOG_FILE = expand('~/mkdp-log.log')
 let $NVIM_MKDP_LOG_LEVEL = 'debug'
 
+"--------------  i3-config  ----------------------
+
+aug i3config_ft_detection
+    au!
+    au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
+aug end
+
 "--------------  Betriebssystem Praktikum  -------
 
 augroup bsprak
@@ -473,6 +480,6 @@ augroup bsprak
     autocmd FileType c,h set shiftwidth=4
     autocmd FileType c,h set tabstop=4
     autocmd FileType c,h set nowrap
-    autocmd FileType c,h nnoremap <F3> :AsyncRun make qemu <CR>
-    autocmd FileType c,h nnoremap <F4> :AsyncRun make debug <CR>
+    autocmd FileType c,h,make nnoremap <F3> :AsyncRun make qemu <CR>
+    autocmd FileType c,h,make nnoremap <F4> :AsyncRun make debug <CR>
 augroup END

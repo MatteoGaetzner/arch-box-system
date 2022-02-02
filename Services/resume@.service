@@ -1,0 +1,12 @@
+[Unit]
+Description=User resume actions
+After=suspend.target
+
+[Service]
+User=%I
+Type=simple
+ExecStartPre=/usr/bin/sleep 10
+ExecStart=/home/%I/.local/bin/resume
+
+[Install]
+WantedBy=suspend.target

@@ -47,6 +47,7 @@ okular
 openconnect
 pacman-contrib
 papirus-icon-theme
+parallel
 pass-otp
 pavucontrol
 pdfgrep
