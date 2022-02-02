@@ -193,6 +193,14 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 0	i3/.i3/workspace-2-startup.json	/^                {$/;"	o	array:nodes.1.swallows
 0	i3/.i3/workspace-2-startup.json	/^        {$/;"	o
 0	i3/.i3/workspace-2-startup.json	/^        {$/;"	o	array:nodes
+0	i3/layouts/bsprak_left.json	/^                        {$/;"	o	array:nodes.2.nodes.0.swallows
+0	i3/layouts/bsprak_left.json	/^                        {$/;"	o	array:nodes.2.nodes.1.swallows
+0	i3/layouts/bsprak_left.json	/^                {$/;"	o	array:nodes.0.swallows
+0	i3/layouts/bsprak_left.json	/^                {$/;"	o	array:nodes.1.swallows
+0	i3/layouts/bsprak_left.json	/^                {$/;"	o	array:nodes.2.nodes
+0	i3/layouts/bsprak_left.json	/^        {$/;"	o	array:nodes
+0	i3/layouts/bsprak_right.json	/^        {$/;"	o
+0	i3/layouts/bsprak_right.json	/^        {$/;"	o	array:swallows
 0	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	array:gtabs.0.panes.0.ptabs.0.sorting
 0	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	array:gtabs.0.panes.1.ptabs.0.sorting
 0	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:cmd-hist
@@ -284,6 +292,8 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 1	i3/.i3/workspace-2-startup.json	/^                        {$/;"	o	array:0.nodes.0.nodes
 1	i3/.i3/workspace-2-startup.json	/^                {$/;"	o	array:0.nodes
 1	i3/.i3/workspace-2-startup.json	/^        {$/;"	o	array:nodes
+1	i3/layouts/bsprak_left.json	/^                {$/;"	o	array:nodes.2.nodes
+1	i3/layouts/bsprak_left.json	/^        {$/;"	o	array:nodes
 1	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:cmd-hist
 1	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes
 1	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
@@ -334,6 +344,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 11	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 11	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 11	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+11	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 11. Patents.	i3blocks/afs/LICENSE.md	/^#### 11. Patents.$/;"	t	subsection:TERMS AND CONDITIONS
 11. Patents.	i3blocks/aur-update/LICENSE.md	/^#### 11. Patents.$/;"	t	subsection:TERMS AND CONDITIONS
 11. Patents.	i3blocks/backlight/LICENSE.md	/^#### 11. Patents.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -354,6 +365,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 12	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 12	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 12	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+12	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 12. No Surrender of Others' Freedom.	i3blocks/afs/LICENSE.md	/^#### 12. No Surrender of Others' Freedom.$/;"	t	subsection:TERMS AND CONDITIONS
 12. No Surrender of Others' Freedom.	i3blocks/aur-update/LICENSE.md	/^#### 12. No Surrender of Others' Freedom.$/;"	t	subsection:TERMS AND CONDITIONS
 12. No Surrender of Others' Freedom.	i3blocks/backlight/LICENSE.md	/^#### 12. No Surrender of Others' Freedom.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -374,6 +386,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 13	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 13	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 13	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+13	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 13. Use with the GNU Affero General Public License.	i3blocks/afs/LICENSE.md	/^#### 13. Use with the GNU Affero General Public License.$/;"	t	subsection:TERMS AND CONDITIONS
 13. Use with the GNU Affero General Public License.	i3blocks/aur-update/LICENSE.md	/^#### 13. Use with the GNU Affero General Public License.$/;"	t	subsection:TERMS AND CONDITIONS
 13. Use with the GNU Affero General Public License.	i3blocks/backlight/LICENSE.md	/^#### 13. Use with the GNU Affero General Public License.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -392,6 +405,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 14	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 14	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 14	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+14	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 14. Revised Versions of this License.	i3blocks/afs/LICENSE.md	/^#### 14. Revised Versions of this License.$/;"	t	subsection:TERMS AND CONDITIONS
 14. Revised Versions of this License.	i3blocks/aur-update/LICENSE.md	/^#### 14. Revised Versions of this License.$/;"	t	subsection:TERMS AND CONDITIONS
 14. Revised Versions of this License.	i3blocks/backlight/LICENSE.md	/^#### 14. Revised Versions of this License.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -410,6 +424,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 15	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 15	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 15	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+15	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 15. Disclaimer of Warranty.	i3blocks/afs/LICENSE.md	/^#### 15. Disclaimer of Warranty.$/;"	t	subsection:TERMS AND CONDITIONS
 15. Disclaimer of Warranty.	i3blocks/aur-update/LICENSE.md	/^#### 15. Disclaimer of Warranty.$/;"	t	subsection:TERMS AND CONDITIONS
 15. Disclaimer of Warranty.	i3blocks/backlight/LICENSE.md	/^#### 15. Disclaimer of Warranty.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -425,6 +440,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 16	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 16	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 16	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+16	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 16. Limitation of Liability.	i3blocks/afs/LICENSE.md	/^#### 16. Limitation of Liability.$/;"	t	subsection:TERMS AND CONDITIONS
 16. Limitation of Liability.	i3blocks/aur-update/LICENSE.md	/^#### 16. Limitation of Liability.$/;"	t	subsection:TERMS AND CONDITIONS
 16. Limitation of Liability.	i3blocks/backlight/LICENSE.md	/^#### 16. Limitation of Liability.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -440,6 +456,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 17	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 17	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 17	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+17	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 17. Interpretation of Sections 15 and 16.	i3blocks/afs/LICENSE.md	/^#### 17. Interpretation of Sections 15 and 16.$/;"	t	subsection:TERMS AND CONDITIONS
 17. Interpretation of Sections 15 and 16.	i3blocks/aur-update/LICENSE.md	/^#### 17. Interpretation of Sections 15 and 16.$/;"	t	subsection:TERMS AND CONDITIONS
 17. Interpretation of Sections 15 and 16.	i3blocks/backlight/LICENSE.md	/^#### 17. Interpretation of Sections 15 and 16.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -455,6 +472,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 18	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 18	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
 18	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+18	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 19	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 19	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 19	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.14.servers
@@ -465,6 +483,8 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 19	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 19	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 19	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+19	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+19	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 1Defaults	Config/.config/obs-studio/global.ini	/^Pre24.1Defaults=false$/;"	k	section:General
 2	Config/.config/QtProject.conf	/^customColors\\2=4278190207$/;"	k	section:Qt
 2	Config/.config/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
@@ -517,9 +537,11 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 2	Neovim/nvim/coc-settings.json	/^          "--log-file",$/;"	s	array:languageserver.python.args
 2	Neovim/nvim/coc-settings.json	/^        "filetypes": ["tex", "plaintex", "context"]$/;"	s	array:languageserver.digestif.filetypes
 2	Neovim/nvim/coc-settings.json	/^      "latex"$/;"	s	array:coc.source.vimtex.filetypes
+2	i3/layouts/bsprak_left.json	/^        {$/;"	o	array:nodes
 2	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:cmd-hist
 2	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 2	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+2	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:search-hist
 2. Basic Permissions.	i3blocks/afs/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
 2. Basic Permissions.	i3blocks/aur-update/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
 2. Basic Permissions.	i3blocks/backlight/LICENSE.md	/^#### 2. Basic Permissions.$/;"	t	subsection:TERMS AND CONDITIONS
@@ -534,6 +556,8 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 20	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 20	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 20	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+20	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
+20	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 21	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 21	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 21	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.14.servers
@@ -543,6 +567,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 21	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 21	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 21	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+21	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 22	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 22	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 22	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.14.servers
@@ -552,6 +577,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 22	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 22	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 22	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+22	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 23	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 23	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 23	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.14.servers
@@ -561,6 +587,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 23	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 23	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 23	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+23	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 24	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 24	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 24	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.14.servers
@@ -570,6 +597,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 24	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 24	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 24	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+24	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 25	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 25	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 25	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.14.servers
@@ -579,6 +607,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 25	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 25	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 25	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+25	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 26	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 26	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 26	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -587,6 +616,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 26	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 26	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 26	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+26	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 27	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 27	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 27	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -595,6 +625,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 27	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 27	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 27	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+27	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 28	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 28	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 28	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -603,6 +634,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 28	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 28	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 28	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+28	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 29	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 29	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 29	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -611,6 +643,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 29	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 29	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 29	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+29	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 3	Config/.config/QtProject.conf	/^customColors\\3=4294967295$/;"	k	section:Qt
 3	Config/.config/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
 3	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
@@ -665,6 +698,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 30	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 30	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
 30	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:trash
+30	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 31	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 31	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 31	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -672,6 +706,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 31	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 31	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 31	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+31	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 32	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 32	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 32	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -679,6 +714,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 32	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 32	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 32	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+32	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 33	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 33	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 33	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -686,6 +722,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 33	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 33	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 33	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+33	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 34	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 34	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 34	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -693,6 +730,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 34	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 34	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 34	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+34	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 35	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 35	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 35	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -700,6 +738,7 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 35	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 35	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 35	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+35	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 36	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 36	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 36	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -707,24 +746,28 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 36	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 36	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 36	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+36	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 37	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 37	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 37	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 37	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 37	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 37	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+37	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 38	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 38	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 38	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 38	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 38	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 38	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+38	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 39	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 39	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 39	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 39	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 39	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 39	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+39	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 4	Config/.config/QtProject.conf	/^customColors\\4=4289331455$/;"	k	section:Qt
 4	Config/.config/nvim/coc-settings.json	/^    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]$/;"	s	array:clangd.filetypes
 4	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
@@ -769,26 +812,31 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 40	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 40	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
 40	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:search-hist
+40	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 41	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 41	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 41	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 41	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 41	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+41	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 42	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 42	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 42	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 42	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 42	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+42	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 43	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 43	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 43	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 43	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 43	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+43	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 44	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 44	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 44	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 44	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 44	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+44	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 45	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 45	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
 45	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
@@ -1239,6 +1287,7 @@ AccuracySec	Services/reflector.timer	/^AccuracySec=1us$/;"	k	section:Timer
 Actual behavior	i3blocks/ISSUE_TEMPLATE.md	/^### Actual behavior$/;"	S
 AddNewTorrentDialog	Config/.config/qBittorrent/qBittorrent.conf	/^[AddNewTorrentDialog]$/;"	s
 AdvOut	Config/.config/obs-studio/basic/profiles/Untitled/basic.ini	/^[AdvOut]$/;"	s
+After	Services/resume@.service	/^After=suspend.target$/;"	k	section:Unit
 AirlyApiClient	i3blocks/airly/airly.py	/^class AirlyApiClient:$/;"	c
 AllStats	Config/.config/qBittorrent/qBittorrent-data.conf	/^AllStats=@Variant(\\0\\0\\0\\x1c\\0\\0\\0\\x2\\0\\0\\0\\x12\\0\\x41\\0l\\0l\\0t\\0i\\0m\\0\\x65\\/;"	k	section:Stats
 AlwaysOnTop	Config/.config/obs-studio/global.ini	/^AlwaysOnTop=false$/;"	k	section:BasicWindow
@@ -1418,6 +1467,7 @@ Dependencies	i3blocks/weather_NOAA/README.md	/^# Dependencies$/;"	c
 Dependencies	i3blocks/wlan-dbm/README.md	/^# Dependencies$/;"	c
 Dependency guidelines	i3blocks/CONTRIBUTING.md	/^# Dependency guidelines$/;"	c
 Description	Services/reflector.timer	/^Description=Refresh Pacman mirrorlist weekly with Reflector.$/;"	k	section:Unit
+Description	Services/resume@.service	/^Description=User resume actions$/;"	k	section:Unit
 Description	i3blocks/brightness/README.md	/^## Description$/;"	s	chapter:brightness
 Description	i3blocks/dimmer/README.md	/^## Description$/;"	s	chapter:dimmer
 DesktopAudioDevice1	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	o
@@ -1434,6 +1484,8 @@ EuAqi	i3blocks/purpleair/purpleair	/^sub EuAqi {$/;"	s
 Event Log	Config/.config/JetBrains/PyCharmCE2021.2/workspace/21xOt75PoGrp4vD8zCk7VMRjncu.xml	/^      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" \/>$/;"	i
 Example	i3blocks/disk_usage/README.md	/^## Example$/;"	s	chapter:Customizable disk block for i3blocks
 Example workflow	i3blocks/CONTRIBUTING.md	/^# Example workflow$/;"	c
+ExecStart	Services/resume@.service	/^ExecStart=\/home\/%I\/.local\/bin\/resume$/;"	k	section:Service
+ExecStartPre	Services/resume@.service	/^ExecStartPre=\/usr\/bin\/sleep 10$/;"	k	section:Service
 ExpandSnippetOrCarriageReturn	Config/.config/nvim/init.vim	/^function ExpandSnippetOrCarriageReturn()$/;"	f
 ExpandedTreeItems	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^Window\\Standard\\ExpandedTreeItems="stdid05,stdid09"$/;"	k	section:5.3
 ExpandedTreeItems	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^Window\\User\\ExpandedTreeItems=$/;"	k	section:5.3
@@ -1527,6 +1579,7 @@ InfoWindowStyle	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^UI\\Info
 Inspection	Config/.config/JetBrains/PyCharmCE2021.2/options/window.state.xml	/^      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" \/>$/;"	i
 Inspection	Config/.config/JetBrains/PyCharmCE2021.2/workspace/21xOt75PoGrp4vD8zCk7VMRjncu.xml	/^      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" \/>$/;"	i
 Install	Services/reflector.timer	/^[Install]$/;"	s
+Install	Services/resume@.service	/^[Install]$/;"	s
 Installation	i3blocks/arch-update/README.md	/^# Installation$/;"	c
 Installation	i3blocks/battery2/README.md	/^# Installation$/;"	c
 Installation	i3blocks/batterybar/README.md	/^# Installation$/;"	c
@@ -1790,6 +1843,7 @@ Scope	Config/.config/JetBrains/PyCharmCE2021.2/workspace/21xOt75PoGrp4vD8zCk7VMR
 Screenshot	i3blocks/disk_usage/README.md	/^## Screenshot$/;"	s	chapter:Customizable disk block for i3blocks
 SearchEverywhere	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="SearchEverywhere" count="0" last-shown="0" last-used="0" shown-count="0" \/>$/;"	i
 SensitiveInfoMaskOn	Config/.config/zoomus.conf	/^SensitiveInfoMaskOn=true$/;"	k	section:General
+Service	Services/resume@.service	/^[Service]$/;"	s
 Services	Config/.config/JetBrains/PyCharmCE2021.2/workspace/21xOt75PoGrp4vD8zCk7VMRjncu.xml	/^      <window_info anchor="bottom" id="Services" order="6" show_stripe_button="false" \/>$/;"	i
 Settings	Config/.config/gtk-3.0/settings.ini	/^[Settings]$/;"	s
 Settings	Config/.config/gtk-4.0/settings.ini	/^[Settings]$/;"	s
@@ -1880,6 +1934,7 @@ TrackIndex	Config/.config/obs-studio/basic/profiles/Untitled/basic.ini	/^TrackIn
 TransferList	Config/.config/qBittorrent/qBittorrent.conf	/^[TransferList]$/;"	s
 TreeFont	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^UI\\Fonts\\TreeFont="Sans Serif,9,-1,5,50,0,0,0,0,0"$/;"	k	section:5.3
 Tunables	i3blocks/nm-vpn/README.md	/^# Tunables$/;"	c
+Type	Services/resume@.service	/^Type=simple$/;"	k	section:Service
 U	Config/.config/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
 U	Config/.config/nvim/autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
 UNBLANKED_SYMBOL	i3blocks/monitor_manager/monitor_manager	/^UNBLANKED_SYMBOL = "\\uf06e"$/;"	v
@@ -1892,6 +1947,7 @@ USE_ALSA_NAME	i3blocks/volume-pipewire/i3blocks.conf	/^USE_ALSA_NAME=1$/;"	k	sec
 USE_ALSA_NAME	i3blocks/volume-pulseaudio/i3blocks.conf	/^USE_ALSA_NAME=1$/;"	k	section:volume-pulseaudio
 UiFont	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^UI\\Fonts\\UiFont="Sans Serif,9,-1,5,50,0,0,0,0,0"$/;"	k	section:5.3
 Unit	Services/reflector.timer	/^[Unit]$/;"	s
+Unit	Services/resume@.service	/^[Unit]$/;"	s
 UsAqi	i3blocks/purpleair/purpleair	/^sub UsAqi {$/;"	s
 Usage	i3blocks/airly/README.md	/^# Usage$/;"	c
 Usage	i3blocks/bandwidth3/README.md	/^# Usage$/;"	c
@@ -1914,6 +1970,7 @@ Usage	i3blocks/volume-pulseaudio/README.md	/^# Usage$/;"	c
 Usage	i3blocks/volume/README.md	/^# Usage$/;"	c
 Usage	i3blocks/weather_NOAA/README.md	/^# Usage$/;"	c
 Usage	i3blocks/wlan-dbm/README.md	/^# Usage$/;"	c
+User	Services/resume@.service	/^User=%I$/;"	k	section:Service
 Value	Config/.config/vlc/vlc-qt-interface.conf	/^1\\Value="0|64;39;64;38;65;|0-2;64;3;1;4;64;7;9;64;10;20;19;64-4;37;65;35-4;|12;11;13;14;|43;33-/;"	k	section:ToolbarProfiles
 Value	Config/.config/vlc/vlc-qt-interface.conf	/^2\\Value="0|64;39;64;38;65;|0-2;64;3;1;4;64;7;10;9;64-4;20;19;64-4;37;65;35-4;|12;11;13;14;|5-1;/;"	k	section:ToolbarProfiles
 Value	Config/.config/vlc/vlc-qt-interface.conf	/^3\\Value="1|64;39-1;64;38;|2-1;32-4;0-5;1-5;32-5;3-5;5-5;6-5;4-5;32-5;10-1;64-1;35-1;65;|12-1;11/;"	k	section:ToolbarProfiles
@@ -1929,6 +1986,7 @@ WARN_LEVEL	i3blocks/brightness/Makefile	/^WARN_LEVEL = -Wall -Wextra -pedantic$/
 WINDOW_CLOSE_TO_BOUNDARY_BUFFER	i3blocks/monitor_manager/monitor_manager	/^WINDOW_CLOSE_TO_BOUNDARY_BUFFER = _default("CLOSE_TO_BOUNDARY_BUFFER", 20, int)$/;"	v
 WINDOW_CLOSE_TO_BOUNDARY_BUFFER	i3blocks/monitor_manager/monitor_manager.py	/^WINDOW_CLOSE_TO_BOUNDARY_BUFFER = _default("CLOSE_TO_BOUNDARY_BUFFER", 20, int)$/;"	v
 WantedBy	Services/reflector.timer	/^WantedBy=timers.target$/;"	k	section:Install
+WantedBy	Services/resume@.service	/^WantedBy=suspend.target$/;"	k	section:Install
 Warning Color	i3blocks/disk_usage/README.md	/^### Warning Color$/;"	S	section:Customizable disk block for i3blocks""Arguments
 Warning Threshold	i3blocks/disk_usage/README.md	/^### Warning Threshold$/;"	S	section:Customizable disk block for i3blocks""Arguments
 X	Config/.config/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> X :call <SID>revert()<cr>$/;"	m
@@ -2218,6 +2276,13 @@ border	i3/.i3/workspace-2-startup.json	/^                            "border": "
 border	i3/.i3/workspace-2-startup.json	/^                    "border": "normal",$/;"	s	object:0.nodes.1
 border	i3/.i3/workspace-2-startup.json	/^            "border": "normal",$/;"	s	object:nodes.0
 border	i3/.i3/workspace-2-startup.json	/^            "border": "normal",$/;"	s	object:nodes.1
+border	i3/layouts/bsprak_left.json	/^                    "border": "pixel",$/;"	s	object:nodes.2.nodes.0
+border	i3/layouts/bsprak_left.json	/^                    "border": "pixel",$/;"	s	object:nodes.2.nodes.1
+border	i3/layouts/bsprak_left.json	/^            "border": "normal",$/;"	s	object:nodes.2
+border	i3/layouts/bsprak_left.json	/^            "border": "pixel",$/;"	s	object:nodes.0
+border	i3/layouts/bsprak_left.json	/^            "border": "pixel",$/;"	s	object:nodes.1
+border	i3/layouts/bsprak_left.json	/^    "border": "normal",$/;"	s
+border	i3/layouts/bsprak_right.json	/^    "border": "pixel",$/;"	s
 bounds	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	o	object:sources.1.settings.items.0
 bounds_align	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:sources.1.settings.items.0
 bounds_type	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	n	object:sources.1.settings.items.0
@@ -2251,6 +2316,12 @@ class	i3/.i3/workspace-2-startup.json	/^                                    "cla
 class	i3/.i3/workspace-2-startup.json	/^                                    "class": "^whatsapp\\\\-nativefier\\\\-d40211$"$/;"	s	object:0.nodes.0.nodes.1.swallows.0
 class	i3/.i3/workspace-2-startup.json	/^                            "class": "^Spotify$"$/;"	s	object:0.nodes.1.swallows.0
 class	i3/.i3/workspace-2-startup.json	/^                    "class": "^kitty$"$/;"	s	object:nodes.1.swallows.0
+class	i3/layouts/bsprak_left.json	/^                            "class": "^kitty$"$/;"	s	object:nodes.2.nodes.0.swallows.0
+class	i3/layouts/bsprak_left.json	/^                            "class": "^kitty$"$/;"	s	object:nodes.2.nodes.1.swallows.0
+class	i3/layouts/bsprak_left.json	/^                    "class": "^firefox$"$/;"	s	object:nodes.0.swallows.0
+class	i3/layouts/bsprak_left.json	/^                    "class": "^kitty$"$/;"	s	object:nodes.1.swallows.0
+class	i3/layouts/bsprak_right.json	/^            "class": "^firefox$"$/;"	s	object:0
+class	i3/layouts/bsprak_right.json	/^            "class": "^kitty$"$/;"	s	object:swallows.0
 clean	i3blocks/brightness/Makefile	/^clean:$/;"	t
 cleanup	vifm/scripts/vifmrun	/^function cleanup {$/;"	f
 clicked	i3blocks/dunst/dunst	/^def clicked():$/;"	f
@@ -2405,6 +2476,11 @@ current_border_width	i3/.i3/workspace-2-startup.json	/^                         
 current_border_width	i3/.i3/workspace-2-startup.json	/^                    "current_border_width": 3,$/;"	n	object:0.nodes.1
 current_border_width	i3/.i3/workspace-2-startup.json	/^            "current_border_width": 3,$/;"	n	object:nodes.0
 current_border_width	i3/.i3/workspace-2-startup.json	/^            "current_border_width": 3,$/;"	n	object:nodes.1
+current_border_width	i3/layouts/bsprak_left.json	/^                    "current_border_width": 2,$/;"	n	object:nodes.2.nodes.0
+current_border_width	i3/layouts/bsprak_left.json	/^                    "current_border_width": 2,$/;"	n	object:nodes.2.nodes.1
+current_border_width	i3/layouts/bsprak_left.json	/^            "current_border_width": 2,$/;"	n	object:nodes.0
+current_border_width	i3/layouts/bsprak_left.json	/^            "current_border_width": 2,$/;"	n	object:nodes.1
+current_border_width	i3/layouts/bsprak_right.json	/^    "current_border_width": 2,$/;"	n
 current_program_scene	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s
 current_scene	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s
 current_transition	Config/.config/obs-studio/basic/scenes/Untitled.json	/^{"AuxAudioDevice1":{"balance":0.5,"deinterlace_field_order":0,"deinterlace_mode":0,"enabled":tru/;"	s
@@ -2729,9 +2805,35 @@ dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/hom
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.16
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.17
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.18
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.19
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.2
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.20
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.21
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.22
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.23
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.24
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.25
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.26
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.27
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.28
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.29
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.3
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.30
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.31
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.32
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.33
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.34
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.35
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.36
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.37
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.38
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.39
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.4
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.40
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.41
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.42
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.43
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.44
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.5
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.6
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.7
@@ -2740,7 +2842,17 @@ dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/hom
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.0
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.1
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.10
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.11
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.12
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.13
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.14
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.15
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.16
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.17
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.18
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.19
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.2
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.20
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.3
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.4
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.5
@@ -3090,9 +3202,35 @@ file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/ho
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.16
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.17
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.18
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.19
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.2
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.20
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.21
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.22
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.23
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.24
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.25
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.26
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.27
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.28
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.29
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.3
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.30
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.31
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.32
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.33
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.34
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.35
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.36
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.37
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.38
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.39
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.4
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.40
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.41
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.42
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.43
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.44
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.5
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.6
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.7
@@ -3101,7 +3239,17 @@ file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/ho
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.0
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.1
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.10
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.11
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.12
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.13
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.14
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.15
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.16
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.17
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.18
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.19
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.2
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.20
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.3
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.4
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.1.ptabs.0.history.5
@@ -3151,6 +3299,13 @@ floating	i3/.i3/workspace-2-startup.json	/^            "floating": "auto_off",$/
 floating	i3/.i3/workspace-2-startup.json	/^            "floating": "auto_off",$/;"	s	object:nodes.0
 floating	i3/.i3/workspace-2-startup.json	/^            "floating": "auto_off",$/;"	s	object:nodes.1
 floating	i3/.i3/workspace-2-startup.json	/^    "floating": "auto_off",$/;"	s
+floating	i3/layouts/bsprak_left.json	/^                    "floating": "auto_off",$/;"	s	object:nodes.2.nodes.0
+floating	i3/layouts/bsprak_left.json	/^                    "floating": "auto_off",$/;"	s	object:nodes.2.nodes.1
+floating	i3/layouts/bsprak_left.json	/^            "floating": "auto_off",$/;"	s	object:nodes.0
+floating	i3/layouts/bsprak_left.json	/^            "floating": "auto_off",$/;"	s	object:nodes.1
+floating	i3/layouts/bsprak_left.json	/^            "floating": "auto_off",$/;"	s	object:nodes.2
+floating	i3/layouts/bsprak_left.json	/^    "floating": "auto_off",$/;"	s
+floating	i3/layouts/bsprak_right.json	/^    "floating": "auto_off",$/;"	s
 font	i3blocks/monitor_manager/monitor_manager	/^import tkinter.font as font$/;"	I	nameref:module:tkinter.font
 font	i3blocks/monitor_manager/monitor_manager.py	/^import tkinter.font as font$/;"	I	nameref:module:tkinter.font
 forceEnableTrayIcon	Config/.config/zoomus.conf	/^forceEnableTrayIcon=true$/;"	k	section:General
@@ -3289,6 +3444,11 @@ geometry	i3/.i3/workspace-2-startup.json	/^                            "geometry
 geometry	i3/.i3/workspace-2-startup.json	/^                    "geometry": {$/;"	o	object:0.nodes.1
 geometry	i3/.i3/workspace-2-startup.json	/^            "geometry": {$/;"	o	object:nodes.0
 geometry	i3/.i3/workspace-2-startup.json	/^            "geometry": {$/;"	o	object:nodes.1
+geometry	i3/layouts/bsprak_left.json	/^                    "geometry": {$/;"	o	object:nodes.2.nodes.0
+geometry	i3/layouts/bsprak_left.json	/^                    "geometry": {$/;"	o	object:nodes.2.nodes.1
+geometry	i3/layouts/bsprak_left.json	/^            "geometry": {$/;"	o	object:nodes.0
+geometry	i3/layouts/bsprak_left.json	/^            "geometry": {$/;"	o	object:nodes.1
+geometry	i3/layouts/bsprak_right.json	/^    "geometry": {$/;"	o
 getAirQualityIndex	i3blocks/airly/airly.py	/^    def getAirQualityIndex(self, caqiMeasurement=None):$/;"	m	class:AirlyApiClient
 getAttributeMaps	i3blocks/usb/usb	/^def getAttributeMaps(paths):$/;"	f
 getCaqiMeasurement	i3blocks/airly/airly.py	/^    def getCaqiMeasurement(self, measurement=None):$/;"	m	class:AirlyApiClient
@@ -3400,6 +3560,12 @@ height	i3/.i3/workspace-2-startup.json	/^                                "height
 height	i3/.i3/workspace-2-startup.json	/^                        "height": 600,$/;"	n	object:0.nodes.1.geometry
 height	i3/.i3/workspace-2-startup.json	/^                "height": 2093,$/;"	n	object:nodes.0.geometry
 height	i3/.i3/workspace-2-startup.json	/^                "height": 600,$/;"	n	object:nodes.1.geometry
+height	i3/layouts/bsprak_left.json	/^                        "height": 2121,$/;"	n	object:nodes.2.nodes.0.geometry
+height	i3/layouts/bsprak_left.json	/^                        "height": 2121,$/;"	n	object:nodes.2.nodes.1.geometry
+height	i3/layouts/bsprak_left.json	/^                "height": 2063,$/;"	n	object:nodes.0.geometry
+height	i3/layouts/bsprak_left.json	/^                "height": 2121,$/;"	n	object:nodes.1.geometry
+height	i3/layouts/bsprak_right.json	/^        "height": 2121,$/;"	n
+height	i3/layouts/bsprak_right.json	/^        "height": 2121,$/;"	n	object:geometry
 help	i3blocks/cpu_usage/cpu_usage	/^sub help {$/;"	s
 help	i3blocks/gpu-load/gpu-load	/^sub help {$/;"	s
 help	i3blocks/keyindicator/keyindicator	/^sub help {$/;"	s
@@ -3424,6 +3590,7 @@ i3blocks config example:	i3blocks/cpu_util_detailed/README.md	/^## i3blocks conf
 i3blocks config example:	i3blocks/xkb_layout/README.md	/^# i3blocks config example:$/;"	c
 i3blocks config relevant to blocklet(s)	i3blocks/ISSUE_TEMPLATE.md	/^### i3blocks config relevant to blocklet(s)$/;"	S
 i3blocks configuration	i3blocks/metars/README.md	/^# i3blocks configuration$/;"	c
+i3config_ft_detection	Neovim/init.vim	/^aug i3config_ft_detection$/;"	a
 ic	Config/.config/nvim/init.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
 ic	Config/.config/nvim/init.vim	/^xmap ic <Plug>(coc-classobj-i)$/;"	m
 ic	Neovim/init.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
@@ -3643,6 +3810,8 @@ launch_ncdu	i3blocks/disk_usage/disk_usage	/^def launch_ncdu(mp):$/;"	f
 layout	i3/.i3/workspace-2-startup.json	/^                    "layout": "tabbed",$/;"	s	object:0.nodes.0
 layout	i3/.i3/workspace-2-startup.json	/^            "layout": "splitv",$/;"	s	object:0
 layout	i3/.i3/workspace-2-startup.json	/^    "layout": "stacked",$/;"	s
+layout	i3/layouts/bsprak_left.json	/^            "layout": "splith",$/;"	s	object:nodes.2
+layout	i3/layouts/bsprak_left.json	/^    "layout": "stacked",$/;"	s
 leaves	i3blocks/usb/usb	/^leaves = (path for path in leaves if not ignore(path, attributeMaps[path]))$/;"	v
 leaves	i3blocks/usb/usb	/^leaves = [path for path in leaves if not fastIgnore(path)]$/;"	v
 leaves	i3blocks/usb/usb	/^leaves = getLeafDevicePaths()$/;"	v
@@ -3698,6 +3867,13 @@ marks	i3/.i3/workspace-2-startup.json	/^            "marks": [],$/;"	a	object:0
 marks	i3/.i3/workspace-2-startup.json	/^            "marks": [],$/;"	a	object:nodes.0
 marks	i3/.i3/workspace-2-startup.json	/^            "marks": [],$/;"	a	object:nodes.1
 marks	i3/.i3/workspace-2-startup.json	/^    "marks": [],$/;"	a
+marks	i3/layouts/bsprak_left.json	/^                    "marks": [],$/;"	a	object:nodes.2.nodes.0
+marks	i3/layouts/bsprak_left.json	/^                    "marks": [],$/;"	a	object:nodes.2.nodes.1
+marks	i3/layouts/bsprak_left.json	/^            "marks": [],$/;"	a	object:nodes.0
+marks	i3/layouts/bsprak_left.json	/^            "marks": [],$/;"	a	object:nodes.1
+marks	i3/layouts/bsprak_left.json	/^            "marks": [],$/;"	a	object:nodes.2
+marks	i3/layouts/bsprak_left.json	/^    "marks": [],$/;"	a
+marks	i3/layouts/bsprak_right.json	/^    "marks": [],$/;"	a
 marks	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o
 markup	i3blocks/bandwidth3/i3blocks.conf	/^markup=pango$/;"	k	section:bandwidth3
 markup	i3blocks/battery2/i3blocks.conf	/^markup=pango$/;"	k	section:battery2
@@ -4451,6 +4627,11 @@ name	i3/.i3/workspace-2-startup.json	/^                            "name": "What
 name	i3/.i3/workspace-2-startup.json	/^                    "name": "Spotify",$/;"	s	object:0.nodes.1
 name	i3/.i3/workspace-2-startup.json	/^            "name": "Mail",$/;"	s	object:nodes.0
 name	i3/.i3/workspace-2-startup.json	/^            "name": "kitty",$/;"	s	object:nodes.1
+name	i3/layouts/bsprak_left.json	/^                    "name": "matteo@arch-box:~",$/;"	s	object:nodes.2.nodes.0
+name	i3/layouts/bsprak_left.json	/^                    "name": "matteo@arch-box:~",$/;"	s	object:nodes.2.nodes.1
+name	i3/layouts/bsprak_left.json	/^            "name": "Mozilla Firefox",$/;"	s	object:nodes.0
+name	i3/layouts/bsprak_left.json	/^            "name": "v user",$/;"	s	object:nodes.1
+name	i3/layouts/bsprak_right.json	/^    "name": "i3-save-tree --workspace=9 > .config\/i3\/layouts\/bsprak_right.json",$/;"	s
 navigation.goto.declaration	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="navigation.goto.declaration" count="0" last-shown="0" last-used="0" shown-count/;"	i
 navigation.goto.inspection	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="navigation.goto.inspection" count="0" last-shown="0" last-used="0" shown-count=/;"	i
 navigation.goto.usages	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="navigation.goto.usages" count="0" last-shown="0" last-used="0" shown-count="0" /;"	i
@@ -4471,6 +4652,8 @@ nm-vpn	i3blocks/nm-vpn/i3blocks.conf	/^[nm-vpn]$/;"	s
 nodes	i3/.i3/workspace-2-startup.json	/^                    "nodes": [$/;"	a	object:0.nodes.0
 nodes	i3/.i3/workspace-2-startup.json	/^            "nodes": [$/;"	a	object:0
 nodes	i3/.i3/workspace-2-startup.json	/^    "nodes": [$/;"	a
+nodes	i3/layouts/bsprak_left.json	/^            "nodes": [$/;"	a	object:nodes.2
+nodes	i3/layouts/bsprak_left.json	/^    "nodes": [$/;"	a
 notask_msg	i3blocks/taskw/taskw	/^notask_msg = _default("TASKW_NOTASK_MSG", default="No Task", arg_type=str)$/;"	v
 numbertoggle	Config/.config/nvim/init.vim	/^augroup numbertoggle$/;"	a
 numbertoggle	Neovim/init.vim	/^augroup numbertoggle$/;"	a
@@ -4553,6 +4736,13 @@ percent	i3/.i3/workspace-2-startup.json	/^            "percent": 0.5,$/;"	n	obje
 percent	i3/.i3/workspace-2-startup.json	/^            "percent": 0.5,$/;"	n	object:nodes.1
 percent	i3/.i3/workspace-2-startup.json	/^            "percent": 1,$/;"	n	object:0
 percent	i3/.i3/workspace-2-startup.json	/^    "percent": 0.5,$/;"	n
+percent	i3/layouts/bsprak_left.json	/^                    "percent": 0.5,$/;"	n	object:nodes.2.nodes.0
+percent	i3/layouts/bsprak_left.json	/^                    "percent": 0.5,$/;"	n	object:nodes.2.nodes.1
+percent	i3/layouts/bsprak_left.json	/^            "percent": 0.333333333333333,$/;"	n	object:nodes.0
+percent	i3/layouts/bsprak_left.json	/^            "percent": 0.333333333333333,$/;"	n	object:nodes.1
+percent	i3/layouts/bsprak_left.json	/^            "percent": 0.333333333333333,$/;"	n	object:nodes.2
+percent	i3/layouts/bsprak_left.json	/^    "percent": null,$/;"	z
+percent	i3/layouts/bsprak_right.json	/^    "percent": 0.5,$/;"	n
 percentage	i3blocks/afs/afs	/^percentage = int(percentage.split('%')[0])$/;"	v
 percentage	i3blocks/afs/afs	/^quota, used, percentage = fs_output.split()[1:4]$/;"	v
 percentleft	i3blocks/battery2/battery2	/^        percentleft = int(sum(percentleft_batteries)\/len(percentleft_batteries))$/;"	v
@@ -5048,9 +5238,35 @@ relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.16
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.17
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.18
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.19
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.2
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.20
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.21
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.22
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.23
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.24
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.25
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.26
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.27
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.28
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.29
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.3
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.30
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.31
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.32
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.33
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.34
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.35
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.36
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.37
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.38
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.39
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.4
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.40
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.41
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.42
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.43
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.44
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.5
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.6
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.7
@@ -5059,7 +5275,17 @@ relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.0
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.1
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.10
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.11
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.12
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.13
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.14
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.15
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.16
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.17
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.18
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.19
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.2
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.20
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.3
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.4
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.5
@@ -5501,6 +5727,11 @@ swallows	i3/.i3/workspace-2-startup.json	/^                            "swallows
 swallows	i3/.i3/workspace-2-startup.json	/^                    "swallows": [$/;"	a	object:0.nodes.1
 swallows	i3/.i3/workspace-2-startup.json	/^            "swallows": [$/;"	a	object:nodes.0
 swallows	i3/.i3/workspace-2-startup.json	/^            "swallows": [$/;"	a	object:nodes.1
+swallows	i3/layouts/bsprak_left.json	/^                    "swallows": [$/;"	a	object:nodes.2.nodes.0
+swallows	i3/layouts/bsprak_left.json	/^                    "swallows": [$/;"	a	object:nodes.2.nodes.1
+swallows	i3/layouts/bsprak_left.json	/^            "swallows": [$/;"	a	object:nodes.0
+swallows	i3/layouts/bsprak_left.json	/^            "swallows": [$/;"	a	object:nodes.1
+swallows	i3/layouts/bsprak_right.json	/^    "swallows": [$/;"	a
 swapOutputRows	i3blocks/monitor_manager/monitor_manager	/^    def swapOutputRows(self, row1, row2):$/;"	m	class:MonitorManager
 swapOutputRows	i3blocks/monitor_manager/monitor_manager.py	/^    def swapOutputRows(self, row1, row2):$/;"	m	class:MonitorManager
 sway-focusedwindow	i3blocks/sway-focusedwindow/README.md	/^# sway-focusedwindow$/;"	c
@@ -5601,6 +5832,7 @@ text	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/ho
 text	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:cmd-hist.2
 text	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:search-hist.0
 text	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:search-hist.1
+text	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:search-hist.2
 text_blue	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^ColorLabels\\text_blue=Blue$/;"	k	section:5.3
 text_gray	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^ColorLabels\\text_gray=Gray$/;"	k	section:5.3
 text_green	Config/.config/netcitadel.com/FirewallBuilder5.3.conf	/^ColorLabels\\text_green=Green$/;"	k	section:5.3
@@ -5978,9 +6210,35 @@ ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.16
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.17
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.18
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.19
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.2
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.20
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.21
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.22
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.23
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.24
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.25
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.26
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.27
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.28
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.29
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.3
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.30
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.31
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.32
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.33
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.34
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.35
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.36
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.37
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.38
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.39
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.4
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.40
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.41
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.42
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.43
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.44
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.5
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.6
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.7
@@ -5989,7 +6247,17 @@ ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.0
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.1
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.10
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.11
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.12
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.13
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.14
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.15
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.16
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.17
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.18
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.19
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.2
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.20
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.3
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.4
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.1.ptabs.0.history.5
@@ -6001,6 +6269,7 @@ ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:marks.h
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:search-hist.0
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:search-hist.1
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:search-hist.2
 type	Config/.config/zoomus.conf	/^system.audio.type=default$/;"	k	section:General
 type	i3/.i3/workspace-1-startup.json	/^  "type": "con"$/;"	s
 type	i3/.i3/workspace-2-startup.json	/^                            "type": "con"$/;"	s	object:0.nodes.0.nodes.0
@@ -6011,6 +6280,13 @@ type	i3/.i3/workspace-2-startup.json	/^            "type": "con"$/;"	s	object:no
 type	i3/.i3/workspace-2-startup.json	/^            "type": "con"$/;"	s	object:nodes.1
 type	i3/.i3/workspace-2-startup.json	/^            "type": "con",$/;"	s	object:0
 type	i3/.i3/workspace-2-startup.json	/^    "type": "con",$/;"	s
+type	i3/layouts/bsprak_left.json	/^                    "type": "con"$/;"	s	object:nodes.2.nodes.0
+type	i3/layouts/bsprak_left.json	/^                    "type": "con"$/;"	s	object:nodes.2.nodes.1
+type	i3/layouts/bsprak_left.json	/^            "type": "con"$/;"	s	object:nodes.0
+type	i3/layouts/bsprak_left.json	/^            "type": "con"$/;"	s	object:nodes.1
+type	i3/layouts/bsprak_left.json	/^            "type": "con",$/;"	s	object:nodes.2
+type	i3/layouts/bsprak_left.json	/^    "type": "con",$/;"	s
+type	i3/layouts/bsprak_right.json	/^    "type": "con"$/;"	s
 ui.horizontal.scrolling	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="ui.horizontal.scrolling" count="0" last-shown="0" last-used="0" shown-count="0"/;"	i
 ui.recentchanges	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="ui.recentchanges" count="0" last-shown="0" last-used="0" shown-count="0" \/>$/;"	i
 ui.scheme.quickswitch	Config/.config/JetBrains/PyCharmCE2021.2/options/features.usage.statistics.xml	/^    <feature id="ui.scheme.quickswitch" count="0" last-shown="0" last-used="0" shown-count="0" \//;"	i
@@ -6582,6 +6858,12 @@ width	i3/.i3/workspace-2-startup.json	/^                                "width":
 width	i3/.i3/workspace-2-startup.json	/^                        "width": 800,$/;"	n	object:0.nodes.1.geometry
 width	i3/.i3/workspace-2-startup.json	/^                "width": 3834,$/;"	n	object:nodes.0.geometry
 width	i3/.i3/workspace-2-startup.json	/^                "width": 800,$/;"	n	object:nodes.1.geometry
+width	i3/layouts/bsprak_left.json	/^                        "width": 1916,$/;"	n	object:nodes.2.nodes.0.geometry
+width	i3/layouts/bsprak_left.json	/^                        "width": 1916,$/;"	n	object:nodes.2.nodes.1.geometry
+width	i3/layouts/bsprak_left.json	/^                "width": 1276,$/;"	n	object:nodes.1.geometry
+width	i3/layouts/bsprak_left.json	/^                "width": 1916,$/;"	n	object:nodes.0.geometry
+width	i3/layouts/bsprak_right.json	/^        "width": 3836,$/;"	n
+width	i3/layouts/bsprak_right.json	/^        "width": 3836,$/;"	n	object:geometry
 wifi	i3blocks/wifi/README.md	/^# wifi$/;"	c
 wifi	i3blocks/wifi/i3blocks.conf	/^[wifi]$/;"	s
 winBounds	Config/.config/GeoGebra/config.json	/^	"winBounds": {$/;"	o
@@ -6598,6 +6880,12 @@ x	i3/.i3/workspace-2-startup.json	/^                                "x": 3840,$/
 x	i3/.i3/workspace-2-startup.json	/^                        "x": 0,$/;"	n	object:0.nodes.1.geometry
 x	i3/.i3/workspace-2-startup.json	/^                "x": 0,$/;"	n	object:nodes.0.geometry
 x	i3/.i3/workspace-2-startup.json	/^                "x": 0,$/;"	n	object:nodes.1.geometry
+x	i3/layouts/bsprak_left.json	/^                        "x": 0,$/;"	n	object:nodes.2.nodes.0.geometry
+x	i3/layouts/bsprak_left.json	/^                        "x": 0,$/;"	n	object:nodes.2.nodes.1.geometry
+x	i3/layouts/bsprak_left.json	/^                "x": 0,$/;"	n	object:nodes.0.geometry
+x	i3/layouts/bsprak_left.json	/^                "x": 0,$/;"	n	object:nodes.1.geometry
+x	i3/layouts/bsprak_right.json	/^        "x": 0,$/;"	n
+x	i3/layouts/bsprak_right.json	/^        "x": 0,$/;"	n	object:geometry
 x264opts	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	s	object:services.0.recommended
 x264opts	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	s	object:services.15.recommended
 x264opts	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	s	object:services.26.recommended
@@ -6634,6 +6922,12 @@ y	i3/.i3/workspace-2-startup.json	/^                                "y": 33$/;"	
 y	i3/.i3/workspace-2-startup.json	/^                        "y": 0$/;"	n	object:0.nodes.1.geometry
 y	i3/.i3/workspace-2-startup.json	/^                "y": 0$/;"	n	object:nodes.0.geometry
 y	i3/.i3/workspace-2-startup.json	/^                "y": 0$/;"	n	object:nodes.1.geometry
+y	i3/layouts/bsprak_left.json	/^                        "y": 0$/;"	n	object:nodes.2.nodes.0.geometry
+y	i3/layouts/bsprak_left.json	/^                        "y": 0$/;"	n	object:nodes.2.nodes.1.geometry
+y	i3/layouts/bsprak_left.json	/^                "y": 0$/;"	n	object:nodes.0.geometry
+y	i3/layouts/bsprak_left.json	/^                "y": 0$/;"	n	object:nodes.1.geometry
+y	i3/layouts/bsprak_right.json	/^        "y": 0$/;"	n
+y	i3/layouts/bsprak_right.json	/^        "y": 0$/;"	n	object:geometry
 yapf	Neovim/coc-settings.json	/^              "yapf": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 yapf	Neovim/nvim/coc-settings.json	/^              "yapf": {$/;"	o	object:languageserver.python.settings.pyls.plugins
 yoffset	Config/.config/neofetch/config.conf	/^yoffset=0$/;"	k

@@ -31,11 +31,7 @@ rsync -av ~/.xinitrc ~/Sync/System/X/.xinitrc
 rsync -av ~/.Xresources ~/Sync/System/X/.Xresources
 
 # i3blocks
-git -C ~/.config/i3blocks/ pull -q
-git -C ~/.config/i3blocks/ add .
-git -C ~/.config/i3blocks/ commit -m "update" -q
-git -C ~/.config/i3blocks/ push -q
-rsync -av ~/.config/i3blocks/ ~/Sync/System/i3blocks/
+rsync -av ~/.config/i3blocks/config ~/Sync/System/i3blocks/config
 
 # i3
 rsync -av ~/.config/i3/ ~/Sync/System/i3/
