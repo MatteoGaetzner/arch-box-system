@@ -163,8 +163,6 @@ alias la='exa -la --color=always --group-directories-first --icons'  # all files
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
 alias l.="exa -a | egrep '^\.'"
 
-alias tree="tree -C -a --dirsfirst"
-
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 ###############  VI MODE  ########################
@@ -217,7 +215,7 @@ alias v="xclip -sel c -o >"
 alias vifm="$HOME/.local/bin/vifmrun"
 
 # Fast tree
-alias t="tree"
+alias t="tree -C -a --dirsfirst"
 
 # ls after cd
 function cl {
@@ -231,6 +229,10 @@ function cl {
 # find things
 function findit {
   sudo find / -name "$1"
+}
+
+function pg {
+  pdfgrep -r --color auto --ignore-case --regexp="$1" .
 }
 
 # ipython

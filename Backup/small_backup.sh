@@ -62,6 +62,9 @@ rsync -av ~/.i3 ~/Sync/System/i3
 # git
 rsync -av ~/.gitignore ~/Sync/System/Git/.gitignore
 
+# login message
+rsync -av /etc/issue ~/Sync/System/Login/issue
+
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 
 if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then

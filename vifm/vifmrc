@@ -469,7 +469,7 @@ nnoremap cc cw<c-u>
 nnoremap A cw
 
 " Open console in current directory
-nnoremap ,t :!alacritty &<cr>
+nnoremap ,t :!kitty &<cr>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | edit $MYVIFMRC | restart full<cr>
@@ -523,7 +523,7 @@ nnoremap <c-u> <c-w>x
 " --------------  Custom  ------------------------
 
 " Default to vertical split with preview
-view
+set vifminfo+=tui
 
 " Single stroke to access command line
 nmap ; :
