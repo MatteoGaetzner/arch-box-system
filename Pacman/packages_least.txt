@@ -17,6 +17,7 @@ cpulimit
 cpupower-gui
 ctags
 cups
+detox
 evince
 exa
 ffmpegthumbnailer
@@ -24,6 +25,7 @@ ffnvcodec-headers8.1
 firefox
 flameshot
 flex
+gnome-tweaks
 grub-customizer
 htop
 i3blocks
@@ -33,6 +35,7 @@ kitty
 libclc
 libreoffice-fresh
 lvtk
+nautilus
 ncdu
 neofetch
 network-manager-applet

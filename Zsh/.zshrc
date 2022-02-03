@@ -147,6 +147,8 @@ function mine {
   sudo xmrig --cuda --donate-level 0 -o de.haven.herominers.com:1110 -u $(pass havenprotocol.org/address) -p my_xmrig_worker -a cn-heavy/xhv -k
 }
 
+alias sc="kitty +kitten ssh cluster"
+
 ###############  Bluetooth  ######################
 
 alias blue="bluetoothctl connect"

@@ -97,6 +97,7 @@ dbus-python
 dconf
 decklink-sdk
 desktop-file-utils
+detox
 device-mapper
 dialog
 diffutils
@@ -122,6 +123,7 @@ elfutils
 enchant
 evince
 exa
+exempi
 exiv2
 expat
 faad2
@@ -159,6 +161,8 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
+geoclue
+geocode-glib
 gettext
 ghc-libs
 ghostscript
@@ -173,7 +177,11 @@ glibmm
 glslang
 glu
 gmp
+gnome-autoar
 gnome-desktop
+gnome-settings-daemon
+gnome-themes-extra
+gnome-tweaks
 gnu-free-fonts
 gnupg
 gnutls
@@ -201,6 +209,8 @@ gst-plugins-base-libs
 gstreamer
 gtest
 gtk-doc
+gtk-engine-murrine
+gtk-engines
 gtk-update-icon-cache
 gtk2
 gtk3
@@ -208,6 +218,7 @@ gtkmm
 gtkmm3
 gts
 guile
+gupnp-dlna
 gvfs
 gzip
 harfbuzz
@@ -484,6 +495,7 @@ libcolord
 libconfig
 libcpuid
 libcroco
+libcue
 libcups
 libcurl-gnutls
 libdaemon
@@ -517,13 +529,17 @@ libfreeaptx
 libfreehand
 libgcrypt
 libgee
+libgexiv2
 libgit2
 libglvnd
 libgme
 libgnomekbd
 libgpg-error
 libgphoto2
+libgrss
+libgsf
 libgudev
+libgweather
 libgxps
 libhandy
 libheif
@@ -540,6 +556,7 @@ libimobiledevice
 libindicator-gtk3
 libinih
 libinput
+libiptcdata
 libixion
 libjpeg-turbo
 libkexiv2
@@ -567,6 +584,7 @@ libmpeg2
 libmspub
 libmwaw
 libmysofa
+libnautilus-extension
 libndp
 libnet
 libnetfilter_conntrack
@@ -585,6 +603,7 @@ libogg
 libomxil-bellagio
 libopenmpt-svn
 liborcus
+libosinfo
 libp11-kit
 libpagemaker
 libpaper
@@ -595,6 +614,8 @@ libpipeline
 libplacebo
 libplist
 libpng
+libportal
+libportal-gtk3
 libproxy
 libpsl
 libpulse
@@ -742,6 +763,7 @@ mpg123
 msgpack-c
 mtdev
 nasm
+nautilus
 ncdu
 ncurses
 ndctl
@@ -793,6 +815,7 @@ openssh
 openssl
 opus
 orc
+osinfo-db
 p11-kit
 pacman
 pacman-contrib
@@ -1225,7 +1248,9 @@ timeshift
 timeshift-autosnap
 tk
 tldr
+totem-pl-parser
 tracker3
+tracker3-miners
 tree
 tree-sitter
 tslib

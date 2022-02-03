@@ -21,6 +21,7 @@ cpulimit
 cpupower-gui
 ctags
 cups
+detox
 dialog
 dosfstools
 efibootmgr
@@ -37,6 +38,7 @@ gcc
 gdb
 git
 glew
+gnome-tweaks
 groff
 grub
 grub-btrfs
@@ -60,6 +62,7 @@ lua
 lvtk
 m4
 make
+nautilus
 ncdu
 neofetch
 neovim

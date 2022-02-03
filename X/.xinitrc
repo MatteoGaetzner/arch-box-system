@@ -40,4 +40,6 @@ xrandr --output HDMI-0 --primary --output DP-2 --right-of HDMI-0 &
 xrandr --auto
 xmodmap $HOME/.Xmodmap
 
+/bin/sudo /bin/systemctl start smb.service nmb.service & 
+
 exec i3
