@@ -411,7 +411,6 @@ kcrash
 kdbusaddons
 kdeclarative
 kded
-kdenlive
 keyutils
 kfilemetadata
 kglobalaccel

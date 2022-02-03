@@ -48,7 +48,6 @@ i3blocks
 i3lock
 jaxx-liberty-appimage
 john
-kdenlive
 kitty
 libclc
 libreoffice-fresh

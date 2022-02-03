@@ -239,7 +239,7 @@ function fl {
 
 function pg {
   tmpstr="$@"
-  pdfgrep -r --color auto --ignore-case --regexp="$tmpstr" .
+  pdfgrep -r --cache --color auto --ignore-case --regexp="$tmpstr" .
 }
 
 # ipython
