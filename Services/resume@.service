@@ -5,7 +5,7 @@ After=suspend.target
 [Service]
 User=%I
 Type=simple
-ExecStartPre=/usr/bin/sleep 10
+ExecStartPre=/usr/bin/sleep 20
 ExecStart=/home/%I/.local/bin/resume
 
 [Install]
