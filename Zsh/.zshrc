@@ -229,12 +229,12 @@ function cl {
 # find things
 function f {
   tmpstr="$@"
-  sudo find / -name "$tmpstr"
+  sudo find / -name "$tmpstr" -exec ls --color -d {} \;
 }
 
-function f. {
-tmpstr="$@"
-find . -name "$tmpstr"
+function fl {
+  tmpstr="$@"
+  find . -name "$tmpstr" -exec ls --color -d {} \;
 }
 
 function pg {
