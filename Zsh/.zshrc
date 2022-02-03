@@ -227,12 +227,19 @@ function cl {
 }
 
 # find things
-function findit {
-  sudo find / -name "$1"
+function f {
+  tmpstr="$@"
+  sudo find / -name "$tmpstr"
+}
+
+function f. {
+tmpstr="$@"
+find . -name "$tmpstr"
 }
 
 function pg {
-  pdfgrep -r --color auto --ignore-case --regexp="$1" .
+  tmpstr="$@"
+  pdfgrep -r --color auto --ignore-case --regexp="$tmpstr" .
 }
 
 # ipython
@@ -246,7 +253,7 @@ alias vimec="nvim $HOME/.config/nvim/coc-settings.json"
 
 alias vifme="nvim $HOME/.config/vifm/vifmrc"
 
-alias zshe="nvim $HOME/.zshrc; source $HOME/.zshrc"
+alias zshe="nvim $HOME/.zshrc; zsh"
 
 alias i3e="nvim $HOME/.config/i3/config"
 alias i3be="nvim $HOME/.config/i3blocks/config"
