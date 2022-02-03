@@ -40,7 +40,4 @@ xrandr --output HDMI-0 --primary --output DP-2 --right-of HDMI-0 &
 xrandr --auto
 xmodmap $HOME/.Xmodmap
 
-# Do small backup
-$HOME/.local/bin/small_backup
-
 exec i3
