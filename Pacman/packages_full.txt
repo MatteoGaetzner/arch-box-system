@@ -149,7 +149,6 @@ fribidi
 fuse-common
 fuse2
 fuse3
-fzf
 gavl
 gawk
 gc
@@ -1381,6 +1380,7 @@ yajl
 yarn
 yasm
 yay
+zbar
 zeromq
 zimg
 zip

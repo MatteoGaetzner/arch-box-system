@@ -65,6 +65,9 @@ rsync -av ~/.gitignore ~/Sync/System/Git/.gitignore
 # login message
 rsync -av /etc/issue ~/Sync/System/Login/issue
 
+# ipython profile (setup: ipython profile create default, then replace in ~/.ipython...)
+rsync -av ~/.ipython/profile_default/ipython_config.py ~/Sync/System/ipython/ipython_config.py
+
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 
 if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then

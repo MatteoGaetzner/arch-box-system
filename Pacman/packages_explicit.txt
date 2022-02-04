@@ -34,7 +34,6 @@ ffnvcodec-headers8.1
 firefox
 flameshot
 flex
-fzf
 gcc
 gdb
 git
@@ -215,6 +214,7 @@ xorg-xwud
 xsel
 yarn
 yay
+zbar
 zotero
 zsh
 zsh-autosuggestions

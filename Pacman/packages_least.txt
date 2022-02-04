@@ -25,7 +25,6 @@ ffnvcodec-headers8.1
 firefox
 flameshot
 flex
-fzf
 gnome-tweaks
 grub-customizer
 htop
@@ -136,6 +135,7 @@ xorg-xwd
 xorg-xwud
 yarn
 yay
+zbar
 zotero
 zsh-autosuggestions
 zsh-syntax-highlighting

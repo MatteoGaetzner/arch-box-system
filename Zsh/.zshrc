@@ -252,9 +252,11 @@ function pg {
   pdfgrep -r --cache --color auto --ignore-case --regexp="$tmpstr" .
 }
 
-# ipython
 alias i="/home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit"
 alias v="nvim"
+
+alias pc="pass -c"
+alias poc="pass otp -c"
 
 alias vime="nvim $HOME/.config/nvim/init.vim"
 alias vimed="nvim $HOME/.config/nvim/"
