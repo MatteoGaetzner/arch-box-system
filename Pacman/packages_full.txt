@@ -149,6 +149,7 @@ fribidi
 fuse-common
 fuse2
 fuse3
+fzf
 gavl
 gawk
 gc

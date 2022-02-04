@@ -25,6 +25,7 @@ ffnvcodec-headers8.1
 firefox
 flameshot
 flex
+fzf
 gnome-tweaks
 grub-customizer
 htop

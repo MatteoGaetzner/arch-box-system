@@ -282,6 +282,19 @@ function smbe {
   sudo systemctl restart smb nmb
 }
 
+function s {
+  pathpattern="."
+  for substr in "$@"
+  do
+    pathpattern+="/*$substr*"
+  done
+  pathres=$(find . -maxdepth $# -type d -ipath "$pathpattern" | head -n 1)
+  if [[ $pathres != "" ]]; then
+    cd "$pathres"
+    t -L 2
+  fi
+}
+
 ###############  University  #####################
 
 function clean_course {
