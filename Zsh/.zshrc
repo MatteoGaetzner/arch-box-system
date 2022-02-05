@@ -100,9 +100,6 @@ export GOPATH
 
 ###############  System Utils  ###################
 
-alias sudo='doas'
-alias sudoedit='doas rnano'
-
 # Backup to Github, and timeshift
 function backup_fast {
   pnotify "Starting timeshift snapshot creation ..."
@@ -113,7 +110,7 @@ function backup_fast {
 
 # Backup to external drive, Github, and timeshift
 function backup_full {
-  doas big_backup
+  sudo big_backup
   printf "\n"
   backup_fast
 }
@@ -133,6 +130,9 @@ alias pmb="backup_full; printf '\n';  pm $@"
 # Shutdown/Reboot + backup
 alias sdown="backup_full; shutdown now"
 alias rboot="backup_full; systemctl reboot"
+
+# Rebuild grub
+alias grubmk="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 function update {
   pmb -Syu
@@ -278,6 +278,10 @@ alias backupe="nvim $HOME/Sync/System/Backup/small_backup.sh"
 
 alias vt="nvim *.tex"
 
+alias gu="git add -u; git commit -m \"$@\"; git push"
+alias gul="git add -u; git commit-status; git push"
+alias gcos="git commit-status"
+
 function smbe {
   sudo nvim /etc/samba/smb.conf
   sudo smbcontrol all reload-config
@@ -381,6 +385,12 @@ function jn {
   jupyter notebook $1
 }
 
+###############  Techlabs  #######################
+
+function mgmt_onboarding {
+  firefox -url "https://www.notion.so/techlabs/c30ffb07ffe5419caa51a7b36ab208d3?v=309bfe26069749228921a296d7d99eee" "https://www.notion.so/techlabs/Non-Disclosure-Agreement-NDA-5e844ea9f1944036a0a103a463e1c2ae" "https://admin.google.com/u/1/ac/users?action_id=ADD_USER" "https://admin.google.com/u/1/ac/groups/03whwml41tspvjp" "https://admin.google.com/u/1/ac/groups/035nkun22iwi22l" "https://techlabs-mgmt.slack.com/admin" "https://techlabs-mgmt.slack.com/admin/user_groups" "https://techlabs-community.slack.com/admin" "https://techlabs-community.slack.com/admin/user_groups"
+  pnotify "Don't forget to add the new member to NOTION and write an EMAIL!"
+}
 
 ###############  VPN  ############################
 
@@ -456,7 +466,7 @@ function pyasc_edit {
 ###############  Deep Learning  ##################
 
 function csv_to_unix {
-  tr -d '\15\32' < $1 > unix_$1
+  tr -d '"\15\32' < $1 > unix_$1
 }
 
 function pyasc_create {

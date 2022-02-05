@@ -16,6 +16,7 @@ set $mod Mod1
 # Keyboard shortcuts
 bindsym $mod+f exec firefox
 bindsym $mod+b exec /home/matteo/.config/i3/scripts/bsprak.sh
+bindsym $mod+i exec kitty /home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit
 bindsym Print exec flameshot gui
 
 # No titlebar

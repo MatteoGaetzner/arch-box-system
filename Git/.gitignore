@@ -3,6 +3,7 @@
 *.out
 *.toc
 *.dvi
+*.synctex.gz
 *.fdb_latexmk
 *.fls
 tags

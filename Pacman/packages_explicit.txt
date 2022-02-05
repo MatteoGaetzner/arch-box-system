@@ -42,7 +42,6 @@ gnome-tweaks
 groff
 grub
 grub-btrfs
-grub-customizer
 hdf5-openmpi
 htop
 i3-wm
@@ -84,7 +83,6 @@ obs-studio
 okular
 openconnect
 opencv-cuda
-opendoas
 pacman-contrib
 pandoc
 papirus-icon-theme

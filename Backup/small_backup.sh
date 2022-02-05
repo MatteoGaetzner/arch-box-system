@@ -75,7 +75,7 @@ if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then
 else
   git -C ~/Sync/System pull
   git -C ~/Sync/System add .
-  git -C ~/Sync/System commit -m "automatic update - $(date --rfc-2822)"
+  git -C ~/Sync/System commit-status
   git -C ~/Sync/System push
 fi
 

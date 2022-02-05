@@ -26,7 +26,6 @@ firefox
 flameshot
 flex
 gnome-tweaks
-grub-customizer
 htop
 i3blocks
 jaxx-liberty-appimage

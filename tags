@@ -2319,6 +2319,7 @@ buildDirectory	Neovim/nvim/coc-settings.json	/^          "buildDirectory": "buil
 buttonType	i3blocks/metars/metars	/^        buttonType = os.environ['BLOCK_BUTTON']$/;"	v
 buttons	i3blocks/mediaplayer/mediaplayer	/^sub buttons {$/;"	s
 bytes	i3blocks/memory2/memory2.c	/^  char bytes[4];$/;"	m	struct:__anon9bc31ac40108	typeref:typename:char[4]	file:
+c	ipython/ipython_config.py	/^c = get_config()$/;"	v
 calc_display_time	i3blocks/battery-poly/battery-poly	/^def calc_display_time(status: Status, seconds: int) -> str:$/;"	f	typeref:typename:str
 calc_percentage	i3blocks/battery-poly/battery-poly	/^def calc_percentage(batteries: list) -> float:$/;"	f	typeref:typename:float
 calc_time	i3blocks/battery-poly/battery-poly	/^def calc_time(batteries: list, status: Status) -> int:$/;"	f	typeref:typename:int

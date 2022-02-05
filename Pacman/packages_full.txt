@@ -198,7 +198,6 @@ groff
 grpc
 grub
 grub-btrfs
-grub-customizer
 gsettings-desktop-schemas
 gsfonts
 gsm
@@ -806,7 +805,6 @@ opencl-nvidia
 openconnect
 opencore-amr
 opencv-cuda
-opendoas
 openexr
 openh264
 openjpeg2
