@@ -20,6 +20,7 @@ cups
 detox
 evince
 exa
+exodus
 ffmpegthumbnailer
 ffnvcodec-headers8.1
 firefox

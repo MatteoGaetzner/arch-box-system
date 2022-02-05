@@ -125,6 +125,7 @@ evince
 exa
 exempi
 exiv2
+exodus
 expat
 faad2
 fakeroot
