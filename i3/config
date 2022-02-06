@@ -18,6 +18,7 @@ bindsym $mod+f exec firefox
 bindsym $mod+b exec /home/matteo/.config/i3/scripts/bsprak.sh
 bindsym $mod+i exec kitty /home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit
 bindsym Print exec flameshot gui
+bindsym $mod+n exec --no-startup-id flash_window
 
 # No titlebar
 for_window [class="^.*"] border pixel 1
@@ -27,6 +28,8 @@ exec xset s off
 exec xset -dpms
 
 ###############  Startup Applications  ###########
+
+exec_always --no-startup-id flashfocus --flash-opacity 0.95 --flash-lone-windows on_switch
 
 # Wallpaper
 exec --no-startup-id nitrogen --restore

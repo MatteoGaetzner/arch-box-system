@@ -23,6 +23,7 @@ ctags
 cups
 detox
 dialog
+dmidecode
 dosfstools
 efibootmgr
 evince
@@ -34,6 +35,7 @@ ffmpegthumbnailer
 ffnvcodec-headers8.1
 firefox
 flameshot
+flashfocus-git
 flex
 gcc
 gdb

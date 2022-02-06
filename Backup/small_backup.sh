@@ -68,6 +68,9 @@ rsync -av /etc/issue ~/Sync/System/Login/issue
 # ipython profile (setup: ipython profile create default, then replace in ~/.ipython...)
 rsync -av ~/.ipython/profile_default/ipython_config.py ~/Sync/System/ipython/ipython_config.py
 
+# flashfocus, picom
+rsync -av ~/.config/picom/picom.conf ~/Sync/System/Picom/picom.conf
+
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 
 if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then

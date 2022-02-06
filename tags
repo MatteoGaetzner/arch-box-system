@@ -951,10 +951,12 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 58	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 58	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 58	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+58	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 59	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 59	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 59	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 59	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+59	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 6	Config/.config/QtProject.conf	/^customColors\\6=4294967295$/;"	k	section:Qt
 6	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 6	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services.0.servers
@@ -993,10 +995,12 @@ $NVIM_MKDP_LOG_LEVEL	Neovim/nvim/init.vim	/^let $NVIM_MKDP_LOG_LEVEL = 'debug'$/
 60	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 60	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 60	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+60	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 61	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 61	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 61	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 61	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.1.ptabs.0.history
+61	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	o	array:gtabs.0.panes.0.ptabs.0.history
 62	Config/.config/obs-studio/plugin_config/rtmp-services/services.json	/^{"format_version":3,"services":[{"name":"Twitch","common":true,"stream_key_link":"https:\/\/dash/;"	o	array:services
 62	Config/.config/obs-studio/plugin_config/rtmp-services/twitch_ingests.json	/^        {$/;"	o	array:ingests
 62	Config/.config/vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo\/Sync\/University\/Digital.Imag/;"	o	array:gtabs.0.panes.0.ptabs.0.history
@@ -2872,7 +2876,11 @@ dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/hom
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.55
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.56
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.57
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.58
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.59
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.6
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.60
+dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.61
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.7
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.8
 dir	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.9
@@ -3288,7 +3296,11 @@ file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/ho
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.55
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.56
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.57
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.58
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.59
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.6
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.60
+file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.61
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.7
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.8
 file	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	s	object:gtabs.0.panes.0.ptabs.0.history.9
@@ -5343,7 +5355,11 @@ relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.55
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.56
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.57
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.58
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.59
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.6
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.60
+relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.61
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.7
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.8
 relpos	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.9
@@ -6342,7 +6358,11 @@ ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.55
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.56
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.57
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.58
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.59
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.6
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.60
+ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.61
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.7
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.8
 ts	vifm/vifminfo.json	/^{"gtabs":[{"panes":[{"ptabs":[{"history":[{"dir":"\/home\/matteo","file":"Documents","relpos":1,/;"	n	object:gtabs.0.panes.0.ptabs.0.history.9

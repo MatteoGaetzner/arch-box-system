@@ -238,15 +238,15 @@ function cl {
 
 # find things
 function f {
-  sudo find / -iname "*$@*" -exec ls --color -d {} \;
+  tmp="$@"; sudo find / -iname "*$tmp*" -exec ls --color -d {} \;
 }
 
 function fl {
-  find . -iname "*$@*" -exec ls --color -d {} \;
+  tmp="$@"; find . -iname "*$tmp*" -exec ls --color -d {} \;
 }
 
 function pg {
-  pdfgrep -r --cache --color auto --ignore-case --regexp="$@" .
+  tmp="$@"; pdfgrep -r --cache --color auto --ignore-case --regexp="$tmp"
 }
 
 alias i="/home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit"

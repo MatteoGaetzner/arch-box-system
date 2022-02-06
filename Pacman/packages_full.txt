@@ -104,6 +104,7 @@ diffutils
 discount
 djvulibre
 dkms
+dmidecode
 dmraid
 dnssec-anchors
 docbook-xml
@@ -140,6 +141,7 @@ findutils
 firefox
 flac
 flameshot
+flashfocus-git
 flex
 flite1-patched
 fmt
@@ -1030,6 +1032,7 @@ python-executing
 python-gobject
 python-greenlet
 python-html5lib
+python-i3ipc
 python-idna
 python-importlib-metadata
 python-ipykernel
@@ -1045,6 +1048,7 @@ python-jupyterlab_server
 python-lxml
 python-markdown
 python-markupsafe
+python-marshmallow
 python-matplotlib-inline
 python-mistune1
 python-more-itertools
@@ -1101,7 +1105,10 @@ python-wcwidth
 python-webencodings
 python-websocket-client
 python-wheel
+python-xcffib
 python-xlib
+python-xpybutil
+python-yaml
 python-zipp
 qbittorrent
 qpdf
