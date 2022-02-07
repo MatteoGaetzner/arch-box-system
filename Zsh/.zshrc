@@ -119,9 +119,9 @@ function backup_full {
 function pm {
   case $1 in
     -S | -D | -S[^sih]* | -R* | -U*)
-      sudo pacman "$@" ;;
+      sudo pacman --noconfirm "$@" ;;
     *)
-      pacman "$@" ;;
+      pacman --noconfirm "$@" ;;
   esac
 }
 
