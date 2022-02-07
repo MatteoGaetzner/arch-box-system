@@ -125,7 +125,7 @@ function pm {
   esac
 }
 
-alias pmb="backup_full; printf '\n';  pm $@"
+alias pmb="backup_full; printf '\n'; pm $@"
 
 # Shutdown/Reboot + backup
 alias sdown="backup_full; shutdown now"
