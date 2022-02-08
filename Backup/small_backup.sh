@@ -1,6 +1,6 @@
 #! /bin/sh
 
-DIRSIZE_LIMIT=20000
+DIRSIZE_LIMIT=25000
 
 pnotify "Backing up to GitHub ..."
 
@@ -18,8 +18,8 @@ rsync -av ~/.zprofile ~/Sync/System/Zsh/
 rsync -av ~/.zshrc ~/Sync/System/Zsh/
 
 # ssh
-gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
-rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
+# gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
+# rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
 
 # Neovim
 rsync -av \
