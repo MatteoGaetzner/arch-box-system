@@ -9,14 +9,19 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+###############  Custom Configs  #################
+
 set $mod Mod1
 
-###############  Custom Configs  #################
+set $home /home/matteo
+
+# Set font
+font pango:MesloLGS NF 10
 
 # Keyboard shortcuts
 bindsym $mod+f exec firefox
-bindsym $mod+b exec /home/matteo/.config/i3/scripts/bsprak.sh
-bindsym $mod+i exec kitty /home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit
+bindsym $mod+b exec $home/.config/i3/scripts/bsprak.sh
+bindsym $mod+i exec kitty $home/.pyenv/versions/ml/bin/ipython --no-confirm-exit
 bindsym Print exec flameshot gui
 bindsym $mod+n exec --no-startup-id flash_window
 
@@ -31,7 +36,7 @@ exec xset -dpms
 exec xset r rate 220 30
 
 # Remap keys
-exec xmodmap /home/matteo/.Xmodmap
+exec xmodmap $home/.Xmodmap
 
 # Start samba
 exec sudo /bin/systemctl start smb.service nmb.service
@@ -47,11 +52,11 @@ exec --no-startup-id flashfocus
 exec --no-startup-id nitrogen --restore
 
 # Workspace 1
-exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/matteo/.i3/workspace-1-startup.json'"
+exec --no-startup-id "i3-msg 'workspace 1; append_layout $home/.i3/workspace-1-startup.json'"
 exec --no-startup-id "i3-msg 'workspace 1; exec firefox -url https://tasksboard.com/app https://isis.tu-berlin.de/my/'"
 
 # Workspace 2
-exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/matteo/.i3/workspace-2-startup.json'"
+exec --no-startup-id "i3-msg 'workspace 2; append_layout $home/.i3/workspace-2-startup.json'"
 exec --no-startup-id "i3-msg 'workspace 2; exec whatsapp-nativefier'"
 exec --no-startup-id "i3-msg 'workspace 2; exec telegram-desktop'"
 exec --no-startup-id "i3-msg 'workspace 2; exec thunderbird'"
@@ -225,6 +230,6 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    font pango:MesloLGS NF 11
+    font pango:MesloLGS NF 10
     status_command i3blocks
 }

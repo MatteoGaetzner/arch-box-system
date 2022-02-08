@@ -94,6 +94,7 @@ ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols
 ueberzug
 usbutils
+vi
 vifm
 vlc
 wget

@@ -1282,6 +1282,7 @@ util-linux-libs
 v4l-utils
 vala
 vapoursynth
+vi
 vid.stab
 vifm
 vlc

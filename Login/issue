@@ -1,19 +1,19 @@
-           _nnnn_ 
-          dGGGGMMb     ,"""""""""""""".   TTY                      \l 
-         @p~qp~~qMb    | Linux Rules! |   Hostname                 \n 
-         M|@||@) M|   _;..............'   Domainname               \o 
-         @,----.JM| -'
-        JS^\\__/  qKL                      System name              \s 
-       dZP        qKRb                    Architecture             \m 
-      dZP          qKKb                   OS release number        \r 
-     fZP            SMMb                  OS build date            \v 
-     HZM            MMMM
-     FqM            MMMM                  Baudrate                 \b 
-   __| ".        |\\ S"qML                 Date                     \d 
-   |    `.       | `' \\Zq                 Current time             \t 
-  _)      \\.___.,|     .'
-  \\____   )MMMMMM|   .' 
-       `-'       `--' hjm                 Welcome my Friend!
+           [1;39m_nnnn_
+          [1;39mdGGGGMMb     [0;34m,"""""""""""""".   [0;35mTTY                      [1;31m\l[0m 
+         [1;39m@p~qp~~qMb    [0;34m| [1;33mLinux Rules![0;34m |   [0;35mHostname                 [1;31m\n[0m
+         [1;39mM|@||@) M|   [0;34m_;..............'   [0;35mDomainname               [1;31m\o[0m 
+         [1;39m@,----.JM| [0;34m-'[0m
+        [1;39mJS^\\__/  qKL                      [0;35mSystem name              [1;31m\s[0m 
+       [1;39mdZP        qKRb                    [0;35mArchitecture             [1;31m\m[0m 
+      [1;39mdZP          qKKb                   [0;35mOS release number        [1;31m\r[0m 
+     [1;39mfZP            SMMb                  [0;35mOS build date            [1;31m\v[0m 
+     [1;39mHZM            MMMM
+     [1;39mFqM            MMMM                  [0;35mBaudrate                 [1;31m\b[0m 
+   [1;39m__| ".        |\\ S"qML                 [0;35mDate                     [1;31m\d[0m 
+   [1;39m|    `.       | `' \\Zq                 [0;35mCurrent time             [1;31m\t[0m 
+  [1;39m_)      \\.___.,|     .'
+  [1;39m\\____   )MMMMMM|   .' 
+       [1;39m`-'       `--' hjm                 [1;33mWelcome my Friend![0m 
 
 
 
