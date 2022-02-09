@@ -101,18 +101,12 @@ export GOPATH
 ###############  System Utils  ###################
 
 # Backup to Github, and timeshift
-function backup_fast {
-  pnotify "Starting timeshift snapshot creation ..."
-  sudo timeshift --create
-  psuccess "Timeshift snapshot creation done.\n"
-  small_backup
-}
 
 # Backup to external drive, Github, and timeshift
 function backup_full {
   sudo big_backup
   printf "\n"
-  backup_fast
+  small_backup
 }
 
 # This evaluates to `pacman ...` or `sudo pacman ...` if needed
@@ -127,19 +121,19 @@ function pm {
 
 alias pmb="backup_full; printf '\n'; pm $@"
 
-# Shutdown/Reboot + backup
-alias sdown="backup_full; shutdown now"
-alias rboot="backup_full; systemctl reboot"
-
-# Rebuild grub
-alias grubmk="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-
 function update {
   pmb -Syu
   pnotify "Starting to upgrade user repository packages ..."
   yay --noconfirm -Syu
   psuccess "Upgrade of user repository packages done.\n"
 }
+
+# Shutdown/Reboot + backup
+alias sdown="backup_full; shutdown now"
+alias rboot="backup_full; systemctl reboot"
+
+# Rebuild grub
+alias grubmk="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 alias npmi="npm i --prefix $HOME/.local/share/npm"
 
