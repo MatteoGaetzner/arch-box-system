@@ -315,21 +315,21 @@ function u {
 
 
   case $course in
-    [Cc]s* )
+    c* )
       COURSE='CognitiveAlgorithms' ;;
-    [Cc]* )
+    C* )
       COURSE='SoSe21CognitiveAlgorithms' ;;
-    [Dd]* )
+    d* )
       COURSE='DigitalImageProcessingWS2122' ;;
-    [Ii]* )
+    i* )
       COURSE='WS21InformationGovernance' ;;
-    [Bb]o* )
+    B* )
       COURSE='WS2021Betriebssystempraktikum' ;;
-    [Bb]* )
+    b* )
       COURSE='WS2122Betriebssystempraktikum' ;;
-    [Mm]o* )
+    M* )
       COURSE='WiSe2021MachineLearning1' ;;
-    [Mm]* )
+    m* )
       COURSE='WiSe2122MachineLearning1' ;;
   esac
 
