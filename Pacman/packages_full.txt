@@ -574,9 +574,11 @@ libluv
 libmad
 libmatroska
 libmd
+libmediainfo
 libmfx
 libmicrohttpd
 libmm-glib
+libmms
 libmng
 libmnl
 libmodplug
@@ -720,6 +722,7 @@ libxv
 libxxf86vm
 libyaml
 libyuv
+libzen
 libzip
 libzmf
 licenses
@@ -753,6 +756,7 @@ mbedtls
 md4c
 mdadm
 media-player-info
+mediainfo
 mesa
 meson
 minizip
@@ -1252,6 +1256,7 @@ threadweaver
 thunderbird
 timeshift
 timeshift-autosnap
+tinyxml2
 tk
 tldr
 totem-pl-parser

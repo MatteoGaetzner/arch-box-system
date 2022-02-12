@@ -37,7 +37,8 @@ rsync -av ~/.config/i3blocks/config ~/Sync/System/i3blocks/config
 rsync -av ~/.config/i3/ ~/Sync/System/i3/
 
 # vifm
-rsync -av ~/.config/vifm/ ~/Sync/System/vifm/
+rsync -av ~/.config/vifm/vifmrc ~/Sync/System/vifm/vifmrc
+rsync -av ~/.config/vifm/scripts/ ~/Sync/System/vifm/scripts/
 
 # kitty
 rsync -av ~/.config/kitty/ ~/Sync/System/kitty/

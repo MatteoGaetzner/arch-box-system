@@ -64,6 +64,7 @@ lua
 lvtk
 m4
 make
+mediainfo
 nautilus
 ncdu
 neofetch

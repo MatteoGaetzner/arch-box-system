@@ -37,6 +37,7 @@ kitty
 libclc
 libreoffice-fresh
 lvtk
+mediainfo
 nautilus
 ncdu
 neofetch

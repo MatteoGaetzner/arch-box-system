@@ -143,6 +143,9 @@ function mine {
 
 alias sc="kitty +kitten ssh cluster"
 
+alias dus="du -hs $@ | sort -h"
+alias dusl="du -hs * | sort -h"
+
 ###############  Bluetooth  ######################
 
 alias blue="bluetoothctl connect"

@@ -7,3 +7,5 @@
 *.fdb_latexmk
 *.fls
 *tags
+.python-version
+__pycache__
