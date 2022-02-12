@@ -100,7 +100,8 @@ export GOPATH
 
 ###############  System Utils  ###################
 
-# Backup to Github, and timeshift
+# Update i3blocks package status
+alias updatei3b="pkill -SIGRTMIN+10 i3blocks; pkill -SIGRTMIN+11 i3blocks"
 
 # Backup to external drive, Github, and timeshift
 function backup_full {
@@ -117,6 +118,7 @@ function pm {
     *)
       pacman --noconfirm "$@" ;;
   esac
+  updatei3b
 }
 
 alias pmb="backup_full; printf '\n'; pm $@"
@@ -126,6 +128,7 @@ function update {
   pnotify "Starting to upgrade user repository packages ..."
   yay --noconfirm -Syu
   psuccess "Upgrade of user repository packages done.\n"
+  updatei3b
 }
 
 # Shutdown/Reboot + backup

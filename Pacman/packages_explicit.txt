@@ -28,7 +28,6 @@ dosfstools
 efibootmgr
 evince
 exa
-exodus
 fakeroot
 ffmpeg
 ffmpegthumbnailer
