@@ -151,6 +151,7 @@ timeshift
 timeshift-autosnap
 tk
 tldr
+translate-shell
 ttf-fira-code
 ttf-fira-mono
 ttf-fira-sans

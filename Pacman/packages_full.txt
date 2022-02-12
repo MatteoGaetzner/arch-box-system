@@ -1262,6 +1262,7 @@ tldr
 totem-pl-parser
 tracker3
 tracker3-miners
+translate-shell
 tree
 tree-sitter
 tslib

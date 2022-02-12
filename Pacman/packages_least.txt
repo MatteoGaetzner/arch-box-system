@@ -88,6 +88,7 @@ texlive-science
 thunderbird
 timeshift-autosnap
 tldr
+translate-shell
 ttf-fira-code
 ttf-fira-mono
 ttf-fira-sans
