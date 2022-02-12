@@ -78,6 +78,7 @@ compiler-rt
 convertlit
 coreutils
 cpulimit
+cpupower
 cpupower-gui
 cronie
 crypto++
@@ -126,6 +127,7 @@ evince
 exa
 exempi
 exiv2
+exodus
 expat
 faad2
 fakeroot

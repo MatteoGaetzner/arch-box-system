@@ -18,6 +18,7 @@ chromium
 clang
 cmake
 cpulimit
+cpupower
 cpupower-gui
 ctags
 cups
@@ -28,6 +29,7 @@ dosfstools
 efibootmgr
 evince
 exa
+exodus
 fakeroot
 ffmpeg
 ffmpegthumbnailer

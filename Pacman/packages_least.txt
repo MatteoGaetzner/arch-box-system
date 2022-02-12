@@ -14,6 +14,7 @@ bluez-utils
 chromium
 cmake
 cpulimit
+cpupower
 cpupower-gui
 ctags
 cups
@@ -21,6 +22,7 @@ detox
 dmidecode
 evince
 exa
+exodus
 ffmpegthumbnailer
 ffnvcodec-headers8.1
 firefox
