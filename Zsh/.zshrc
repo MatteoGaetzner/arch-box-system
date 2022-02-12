@@ -143,9 +143,6 @@ function mine {
 
 alias sc="kitty +kitten ssh cluster"
 
-alias dus="du -hs $@ | sort -h"
-alias dusl="du -hs * | sort -h"
-
 ###############  Bluetooth  ######################
 
 alias blue="bluetoothctl connect"
@@ -209,6 +206,15 @@ bindkey "^j" autosuggest-execute
 function o {
   mimeopen -n $@ >/dev/null 2>/dev/null &
   disown
+}
+
+# Sorted du
+alias dus="du -hs $@ | sort -h"
+alias dusl="du -hs * | sort -h"
+
+# Translation
+function tl {
+  tmp="$@"; trans "$tmp"
 }
 
 # Enable z.lua fast cd
