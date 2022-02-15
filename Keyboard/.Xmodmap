@@ -4,4 +4,7 @@ keycode 30 = u U udiaeresis Udiaeresis
 keycode 32 = o O odiaeresis Odiaeresis
 keycode 39 = s S ssharp
 
-keycode 111 = Up Up a b
+keycode 113 = Left Left U2190 U2190
+keycode 114 = Right Right U2192 U2192
+keycode 111 = Up Up U2191 U2191
+keycode 116 = Down Down U2193 U2193
