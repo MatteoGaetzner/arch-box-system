@@ -62,6 +62,7 @@ rsync -av ~/.i3 ~/Sync/System/i3
 
 # git
 rsync -av ~/.gitignore ~/Sync/System/Git/.gitignore
+rsync -av ~/.gitconfig ~/Sync/System/Git/.gitconfig
 
 # login message
 rsync -av /etc/issue ~/Sync/System/Login/issue

@@ -20,7 +20,6 @@ ctags
 cups
 detox
 dmidecode
-evince
 exa
 exodus
 ffmpegthumbnailer
@@ -69,6 +68,7 @@ reflector
 rust-analyzer
 slack-desktop
 spotify
+sqlitebrowser
 tex-match
 texlab
 texlive-bibtexextra

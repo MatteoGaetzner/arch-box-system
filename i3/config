@@ -16,7 +16,7 @@ set $mod Mod1
 set $home /home/matteo
 
 # Set font
-font pango:MesloLGS NF 10
+font pango:Fira Code 10
 
 # Keyboard shortcuts
 bindsym $mod+f exec firefox

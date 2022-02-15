@@ -87,7 +87,7 @@ nvtop
 obs-studio
 okular
 openconnect
-opencv-cuda
+opencv
 pacman-contrib
 pandoc
 papirus-icon-theme
@@ -124,6 +124,7 @@ rust-analyzer
 samba
 slack-desktop
 spotify
+sqlitebrowser
 sudo
 telegram-desktop
 tex-match

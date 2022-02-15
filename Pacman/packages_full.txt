@@ -16,6 +16,7 @@ alsa-ucm-conf
 alsa-utils
 amd-ucode
 amf-headers
+ant
 aom
 appstream-glib
 apr
@@ -388,12 +389,15 @@ iso-codes
 jack2
 jansson
 jasper
+java-environment-common
 java-runtime-common
 jaxx-liberty-appimage
 jbig2dec
+jdk-openjdk
 jemalloc
 john
 jq
+jre-openjdk
 jre-openjdk-headless
 js78
 json-c
@@ -549,6 +553,7 @@ libheif
 libibus
 libical
 libice
+libicns
 libid3tag
 libidn
 libidn2
@@ -812,7 +817,7 @@ opencl-headers
 opencl-nvidia
 openconnect
 opencore-amr
-opencv-cuda
+opencv
 openexr
 openh264
 openjpeg2
@@ -1006,6 +1011,7 @@ python
 python-anyio
 python-anytree
 python-appdirs
+python-argon2-cffi-bindings
 python-argon2_cffi
 python-asttokens
 python-async_generator
@@ -1202,6 +1208,7 @@ sphinxbase
 spirv-tools
 spotify
 sqlite
+sqlitebrowser
 sratom
 srt
 startup-notification

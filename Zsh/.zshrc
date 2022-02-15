@@ -101,7 +101,7 @@ export GOPATH
 ###############  System Utils  ###################
 
 # Update i3blocks package status
-alias updatei3b="pkill -SIGRTMIN+10 i3blocks; pkill -SIGRTMIN+11 i3blocks"
+alias updatei3b="pkill -SIGRTMIN+11 i3blocks"
 
 # Backup to external drive, Github, and timeshift
 function backup_full {
@@ -150,6 +150,8 @@ alias sc="kitty +kitten ssh cluster"
 
 alias blue="bluetoothctl connect"
 alias blued="bluetoothctl disconnect"
+
+alias bluer="sudo systemctl restart bluetooth; sleep 0.3 && blue C0:28:8D:05:C4:B5"
 
 ###############  Beauty  #########################
 
