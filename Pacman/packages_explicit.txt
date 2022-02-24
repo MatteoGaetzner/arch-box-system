@@ -222,6 +222,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xournalpp
 xsel
 yarn
 yay

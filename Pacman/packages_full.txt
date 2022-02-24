@@ -1402,6 +1402,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xorgproto
+xournalpp
 xsel
 xvidcore
 xxhash
