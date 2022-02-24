@@ -25,7 +25,7 @@ rsync -av ~/.zshrc ~/Sync/System/Zsh/
 rsync -av \
   --exclude={after,autoload,spell,UltiSnips} \
   ~/.config/nvim/ ~/Sync/System/Neovim/
-/bin/ls ~/.config/coc/extensions/node_modules > ~/Sync/System/Neovim/coc-extensions.txt
+/bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
 
 # X
 rsync -av ~/.xinitrc ~/Sync/System/X/.xinitrc
