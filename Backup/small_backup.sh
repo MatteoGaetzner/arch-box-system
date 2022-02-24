@@ -76,6 +76,9 @@ rsync -av ~/.config/picom/picom.conf ~/Sync/System/Picom/picom.conf
 # cpupower frequency scaling
 rsync -av /etc/default/cpupower ~/Sync/System/cpupower/cpupower
 
+# make
+rsync -av /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
+
 
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 

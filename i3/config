@@ -21,7 +21,7 @@ font pango:Fira Code 10
 # Keyboard shortcuts
 bindsym $mod+f exec firefox
 bindsym $mod+b exec $home/.config/i3/scripts/bsprak.sh
-bindsym $mod+i exec kitty $home/.pyenv/versions/ml/bin/ipython --no-confirm-exit
+bindsym XF86Calculator exec kitty $home/.pyenv/versions/ml/bin/ipython --no-confirm-exit
 bindsym Print exec flameshot gui
 bindsym $mod+n exec --no-startup-id flash_window
 
@@ -33,10 +33,8 @@ exec xset s off
 exec xset -dpms
 
 # Set key repeat delay (20 ms) and repeat rate (30 repeats/s)
-exec xset r rate 220 30
-
-# Remap keys
-exec xmodmap $home/.Xmodmap
+# and remap keys
+exec --no-startup-id $home/.local/bin/resume
 
 # Start samba
 exec sudo /bin/systemctl start smb.service nmb.service

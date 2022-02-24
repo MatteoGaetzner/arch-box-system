@@ -101,7 +101,7 @@ export GOPATH
 ###############  System Utils  ###################
 
 # Update i3blocks package status
-alias updatei3b="pkill -SIGRTMIN+11 i3blocks"
+alias updatei3barchupdate="pkill -SIGRTMIN+11 i3blocks"
 
 # Backup to external drive, Github, and timeshift
 function backup_full {
@@ -118,7 +118,7 @@ function pm {
     *)
       pacman --noconfirm "$@" ;;
   esac
-  updatei3b
+  updatei3barchupdate
 }
 
 alias pmb="backup_full; printf '\n'; pm $@"
@@ -128,7 +128,6 @@ function update {
   pnotify "Starting to upgrade user repository packages ..."
   yay --noconfirm -Syu
   psuccess "Upgrade of user repository packages done.\n"
-  updatei3b
 }
 
 # Shutdown/Reboot + backup
@@ -151,7 +150,11 @@ alias sc="kitty +kitten ssh cluster"
 alias blue="bluetoothctl connect"
 alias blued="bluetoothctl disconnect"
 
-alias bluer="sudo systemctl restart bluetooth; sleep 0.3 && blue C0:28:8D:05:C4:B5"
+function bluer {
+  sudo systemctl restart bluetooth
+  sleep 0.3
+  blue $(history | grep '  blue [29CE]' | tail -1 | sed 's/.*  blue //')
+}
 
 ###############  Beauty  #########################
 
@@ -165,6 +168,18 @@ alias lt='exa -aT --color=always --group-directories-first --icons' # tree listi
 alias l.="exa -a | egrep '^\.'"
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+cd() {
+  builtin cd "$@"
+  git rev-parse 2>/dev/null
+
+  if [ $? -eq 0 ]; then
+    if [ "$LAST_REPO" != $(basename $(git rev-parse --show-toplevel)) ]; then
+      onefetch
+      LAST_REPO=$(basename $(git rev-parse --show-toplevel))
+    fi
+  fi
+}
 
 ###############  VI MODE  ########################
 
@@ -376,7 +391,10 @@ function latexmk_preview {
 }
 
 function setup_latex {
-  mkdir out images
+  mkdir -p {out,images,sections/out}
+  ln -s ../images sections/images
+  ln -s ../general.sty sections/general.sty
+  ln -s ../specific.sty sections/specific.sty
   ln $HOME/Sync/Programs/Self/Latex/Packages/general.sty general.sty
   cp $HOME/Sync/Programs/Self/Latex/Packages/specific.sty specific.sty
   cp $HOME/Sync/Programs/Self/Latex/Templates/Generic/main.tex main.tex
@@ -399,19 +417,21 @@ function mgmt_onboarding {
 
 ###############  VPN  ############################
 
+alias updatei3bip="pkill -SIGRTMIN+12 i3blocks"
+
 # Connect to the VPN of Technische Universität Berlin
 # alias vpnt='openconnect https://vpn.tu-berlin.de/ -b'
 function vpnt {
   pnotify "Connecting to the VPN of Technische Universität Berlin ..."
   vpnnd >/dev/null
   sudo openconnect https://vpn.tu-berlin.de/ -q -b -u matteo
-  psuccess "Connection established."
+  updatei3bip
 }
 
 # Disconnect from the VPN of Technische Universität Berlin
 function vpntd {
   sudo pkill openconnect
-  psuccess "Disconnected from the VPN of Technische Universität Berlin."
+  updatei3bip
 }
 
 # Connect to the VPN of NordVPN
@@ -427,13 +447,22 @@ function vpnn {
     nordvpn login
   fi
   nordvpn connect $@
+  updatei3bip
 }
 
 # Disconnect from NordVPN
 function vpnnd {
   nordvpn disconnect
-  psuccess "Disconnected from NordVPN."
+  updatei3bip
 }
+
+###############  Raspberry  ######################
+
+function berryd {
+  rdesktop -g 1920x1080 -5 -K -r clipboard:CLIPBOARD -u matteo 192.168.0.242 -p $(pass raspberry_pi/matteo)
+}
+
+alias berrys="kitty +kitten ssh matteo@192.168.0.242"
 
 ###############  Exports  ########################
 

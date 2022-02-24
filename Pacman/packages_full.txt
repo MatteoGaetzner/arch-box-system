@@ -122,6 +122,7 @@ efibootmgr
 efivar
 egl-wayland
 eglexternalplatform
+electron
 elfutils
 enchant
 evince
@@ -141,6 +142,7 @@ file
 filesystem
 findutils
 firefox
+firefox-sync
 flac
 flameshot
 flashfocus-git
@@ -168,6 +170,7 @@ gdbm
 gdk-pixbuf2
 geoclue
 geocode-glib
+geogebra
 gettext
 ghc-libs
 ghostscript
@@ -473,6 +476,7 @@ libaccounts-glib
 libaccounts-qt
 libaec
 libaio
+libao
 libappindicator-gtk3
 libarchive
 libass
@@ -545,6 +549,7 @@ libgpg-error
 libgphoto2
 libgrss
 libgsf
+libgssglue
 libgudev
 libgweather
 libgxps
@@ -811,6 +816,7 @@ obs-studio
 ocl-icd
 okular
 onednn
+onefetch
 oniguruma
 openal
 opencl-headers
@@ -1134,6 +1140,7 @@ qt5-quickcontrols
 qt5-quickcontrols2
 qt5-speech
 qt5-svg
+qt5-tools
 qt5-translations
 qt5-wayland
 qt5-webchannel
@@ -1154,6 +1161,7 @@ r
 raptor
 rasqal
 rav1e
+rdesktop
 re2
 readline
 redland
@@ -1163,6 +1171,7 @@ rhash
 rnnoise
 rockchip-mpp
 rofi
+rpi-imager
 rsync
 rtkit
 rtmpdump

@@ -24,10 +24,11 @@ exa
 exodus
 ffmpegthumbnailer
 ffnvcodec-headers8.1
-firefox
+firefox-sync
 flameshot
 flashfocus-git
 flex
+geogebra
 gnome-tweaks
 htop
 i3blocks
@@ -49,6 +50,7 @@ nvidia-cg-toolkit
 nvtop
 obs-studio
 okular
+onefetch
 openconnect
 pacman-contrib
 papirus-icon-theme
@@ -64,7 +66,9 @@ pulsemixer
 pyenv-virtualenv
 qbittorrent
 qwinff
+rdesktop
 reflector
+rpi-imager
 rust-analyzer
 slack-desktop
 spotify

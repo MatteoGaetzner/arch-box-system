@@ -35,11 +35,13 @@ ffmpeg
 ffmpegthumbnailer
 ffnvcodec-headers8.1
 firefox
+firefox-sync
 flameshot
 flashfocus-git
 flex
 gcc
 gdb
+geogebra
 git
 glew
 gnome-tweaks
@@ -86,6 +88,7 @@ nvidia-utils
 nvtop
 obs-studio
 okular
+onefetch
 openconnect
 opencv
 pacman-contrib
@@ -116,8 +119,10 @@ python-wheel
 qbittorrent
 qwinff
 r
+rdesktop
 reflector
 rofi
+rpi-imager
 rsync
 ruby
 rust-analyzer

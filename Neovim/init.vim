@@ -49,12 +49,12 @@ nnoremap gm m
 
 "--------------  Moving Lines  -------------------
 
-nnoremap <C-H> :m .+1<CR>==
-nnoremap <C-L> :m .-2<CR>==
-inoremap <C-H> <Esc>:m .+1<CR>==gi
-inoremap <C-L> <Esc>:m .-2<CR>==gi
-vnoremap <C-H> :m '>+1<CR>gv=gv
-vnoremap <C-L> :m '<-2<CR>gv=gv
+nnoremap <C-l> :m .+1<CR>==
+nnoremap <C-h> :m .-2<CR>==
+inoremap <C-l> <Esc>:m .+1<CR>==gi
+inoremap <C-h> <Esc>:m .-2<CR>==gi
+vnoremap <C-l> :m '>+1<CR>gv=gv
+vnoremap <C-h> :m '<-2<CR>gv=gv
 
 "--------------  Vimrc Editing  ------------------
 
@@ -67,17 +67,17 @@ autocmd VimLeave * call system("xsel -ib", getreg('+'))
 
 set clipboard+=unnamedplus
 let g:clipboard = {
-            \   'name': 'xsel_override',
-            \   'copy': {
-                \      '+': 'xsel --input --clipboard',
-                \      '*': 'xsel --input --primary',
-                \    },
-                \   'paste': {
-                    \      '+': 'xsel --output --clipboard',
-                    \      '*': 'xsel --output --primary',
-                    \   },
-                    \   'cache_enabled': 1,
-                    \ }
+      \   'name': 'xsel_override',
+      \   'copy': {
+        \      '+': 'xsel --input --clipboard',
+        \      '*': 'xsel --input --primary',
+        \    },
+        \   'paste': {
+          \      '+': 'xsel --output --clipboard',
+          \      '*': 'xsel --output --primary',
+          \   },
+          \   'cache_enabled': 1,
+          \ }
 
 "--------------  Vim-Localrc  --------------------
 
@@ -87,9 +87,9 @@ au BufReadPost *.vimlocal set filetype=vim
 "--------------  Line Numbers  -------------------
 
 augroup numbertoggle
-    autocmd!
-    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
 "--------------  Spelling and Grammar  -----------
@@ -98,13 +98,13 @@ augroup END
 let g:myLang = 0
 let g:myLangList = [ "nospell", "de_de", "en_us" ]
 function! MySpellLang()
-    " loop through languages
-    let g:myLang = g:myLang + 1
-    if g:myLang >= len(g:myLangList) | let g:myLang = 0 | endif
-    if g:myLang == 0 | set nospell | endif
-    if g:myLang == 1 | setlocal spell spelllang=de_de | endif
-    if g:myLang == 2 | setlocal spell spelllang=en_us | endif
-    echo "language:" g:myLangList[g:myLang]
+  " loop through languages
+  let g:myLang = g:myLang + 1
+  if g:myLang >= len(g:myLangList) | let g:myLang = 0 | endif
+  if g:myLang == 0 | set nospell | endif
+  if g:myLang == 1 | setlocal spell spelllang=de_de | endif
+  if g:myLang == 2 | setlocal spell spelllang=en_us | endif
+  echo "language:" g:myLangList[g:myLang]
 endf
 
 map <F12> :call MySpellLang()<CR>
@@ -118,7 +118,7 @@ autocmd VimResized * if &equalalways | wincmd = | endif
 "--------------  Themes  -------------------------
 
 if has('termguicolors')
-    set termguicolors
+  set termguicolors
 endif
 
 " For dark version.
@@ -141,42 +141,42 @@ colorscheme everforest
 
 lua << END
 require('lualine').setup {
-    options = {
-        icons_enabled = true,
-        theme = 'auto',
-        component_separators = { left = '', right = ''},
-        section_separators = { left = '', right = ''},
-        disabled_filetypes = {},
-        always_divide_middle = true,
-        },
-    sections = {
-        lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
-        lualine_c = {'filename'},
-        lualine_x = {'encoding', 'fileformat', 'filetype'},
-        lualine_y = {'progress'},
-        lualine_z = {'location'}
-        },
-    inactive_sections = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = {'filename'},
-        lualine_x = {'location'},
-        lualine_y = {},
-        lualine_z = {}
-        },
-    tabline = {},
-    extensions = {}
-    }
+  options = {
+    icons_enabled = true,
+    theme = 'auto',
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
+    disabled_filetypes = {},
+    always_divide_middle = true,
+    },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch', 'diff', 'diagnostics'},
+    lualine_c = {'filename'},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+    },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {'location'},
+    lualine_y = {},
+    lualine_z = {}
+    },
+  tabline = {},
+  extensions = {}
+  }
 END
 
 "--------------  Text Objects  -------------------
 
 for s:char in [ '_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', '$' ]
-    execute 'xnoremap i' . s:char . ' :<C-u>normal! T' . s:char . 'vt' . s:char . '<CR>'
-    execute 'onoremap i' . s:char . ' :normal vi' . s:char . '<CR>'
-    execute 'xnoremap a' . s:char . ' :<C-u>normal! F' . s:char . 'vf' . s:char . '<CR>'
-    execute 'onoremap a' . s:char . ' :normal va' . s:char . '<CR>'
+  execute 'xnoremap i' . s:char . ' :<C-u>normal! T' . s:char . 'vt' . s:char . '<CR>'
+  execute 'onoremap i' . s:char . ' :normal vi' . s:char . '<CR>'
+  execute 'xnoremap a' . s:char . ' :<C-u>normal! F' . s:char . 'vf' . s:char . '<CR>'
+  execute 'onoremap a' . s:char . ' :normal va' . s:char . '<CR>'
 endfor
 
 "--------------  Nerdtree  -----------------------
@@ -196,7 +196,7 @@ let NERDTreeAutoDeleteBuffer = 1
 
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-            \ quit | endif
+      \ quit | endif
 
 "--------------  Coc  ----------------------------
 
@@ -221,23 +221,23 @@ set shortmess+=c
 "Always show the signcolumn, otherwise it would shift the text each time
 "diagnostics appear/become resolved.
 if has("nvim-0.5.0") || has("patch-8.1.1564")
-    "  Recently vim can merge signcolumn and number column into one
-    set signcolumn=number
+  "  Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
 else
-    set signcolumn=yes
+  set signcolumn=yes
 endif
 
 "Use <c-space> to trigger completion.
 if has('nvim')
-    inoremap <silent><expr> <c-space> coc#refresh()
+  inoremap <silent><expr> <c-space> coc#refresh()
 else
-    inoremap <silent><expr> <c-@> coc#refresh()
+  inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-            \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 "Use `[g` and `]g` to navigate diagnostics
 "Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -254,13 +254,13 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-    if (index(['vim','help'], &filetype) >= 0)
-        execute 'h '.expand('<cword>')
-    elseif (coc#rpc#ready())
-        call CocActionAsync('doHover')
-    else
-        execute '!' . &keywordprg .  " . expand('<cword>')
-    endif
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg .  " . expand('<cword>')
+  endif
 endfunction
 
 "Highlight the symbol and its references when holding the cursor.
@@ -274,11 +274,11 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup cocgroup0
-    autocmd!
-    "  Setup formatexpr specified filetype(s).
-    autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-    "  Update signature help on jump placeholder.
-    autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+  autocmd!
+  "  Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  "  Update signature help on jump placeholder.
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
 "Applying codeAction to the selected region.
@@ -355,14 +355,14 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "--------------  Coc-Snippets  -------------------
 
 inoremap <silent><expr> <TAB>
-            \ pumvisible() ? coc#_select_confirm() :
-            \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-            \ <SID>check_back_space() ? "\<TAB>" :
-            \ coc#refresh()
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
 
 function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 " let g:coc_snippet_next = '<tab>'
@@ -382,28 +382,27 @@ let g:UltiSnipsJumpBackwardTrigger="<nop>"
 
 " Selects correct formating app the given file
 fun! Format()
-    if exists('b:useClangFormat')
-        let l:lines="all"
-        if has('python3')
-            py3f ~/.config/llvm/clang-format.py
-        elseif has('python')
-            pyf ~/.config/llvm/clang-format.py
-        endif
+  if exists('b:useClangFormat')
+    let l:lines="all"
+    if has('python3')
+      py3f ~/.config/llvm/clang-format.py
+    elseif has('python')
+      pyf ~/.config/llvm/clang-format.py
     endif
-    if exists('b:usePrettier')
-        Prettier
-        return
-    endif
-    if exists('b:dontFormat')
-        return
-    endif
+  endif
+  if exists('b:usePrettier')
+    Prettier
+    return
+  endif
+  if exists('b:autoformat')
     Autoformat
+  endif
 endfun
 
 " File formatting settings
 autocmd FileType h,c,cpp let b:useClangFormat=1
 autocmd FileType html,javascript,vue,css let b:usePrettier=1
-autocmd FileType "",yaml,vifm,conf,markdown let b:dontFormat=1
+" autocmd FileType "",yaml,vifm,conf,markdown let b:dontFormat=1
 autocmd BufWritePre *.rasi let b:dontFormat=1
 autocmd BufWritePre *.snippets let b:dontFormat=1
 autocmd BufWritePre * call Format()
@@ -421,7 +420,7 @@ let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 let g:vimtex_compiler_method = 'latexmk'
 
 " vim-latex-live-preview
-set updatetime=1000
+set updatetime=500
 let g:livepreview_engine = 'pdflatex'
 let g:livepreview_previewer = 'okular'
 let g:livepreview_texinputs = './out/'
@@ -449,9 +448,9 @@ autocmd FileType python nnoremap <CR> :AsyncRun make run ARGS="%"<CR>
 autocmd FileType python nnoremap <F4> :AsyncRun make test <CR>
 
 augroup numbertoggle
-    autocmd!
-    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
 let g:asyncrun_open = 10
@@ -459,10 +458,7 @@ let g:asyncrun_open = 10
 "--------------  Markdown  -----------------------
 
 autocmd BufWritePre *.md call CocActionAsync('runCommand', 'markdownlint.fixAll')
-" autocmd FileType markdown normal zR
-" let g:vim_markdown_math = 1
-" let g:mkdp_refresh_slow=1
-" let g:mkdp_markdown_css='~/.vim/ressources/github-markdown.css'
+let g:mkdp_auto_close = 1
 let g:mkdp_browser = 'firefox'
 let $NVIM_MKDP_LOG_FILE = expand('~/mkdp-log.log')
 let $NVIM_MKDP_LOG_LEVEL = 'debug'
@@ -470,17 +466,17 @@ let $NVIM_MKDP_LOG_LEVEL = 'debug'
 "--------------  i3-config  ----------------------
 
 aug i3config_ft_detection
-    au!
-    au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
+  au!
+  au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
 aug end
 
 "--------------  Betriebssystem Praktikum  -------
 
 augroup bsprak
-    autocmd!
-    autocmd FileType c,h set shiftwidth=4
-    autocmd FileType c,h set tabstop=4
-    autocmd FileType c,h set nowrap
-    autocmd FileType c,h,make nnoremap <F3> :AsyncRun make qemu <CR>
-    autocmd FileType c,h,make nnoremap <F4> :AsyncRun make debug <CR>
+  autocmd!
+  autocmd FileType c,h set shiftwidth=4
+  autocmd FileType c,h set tabstop=4
+  autocmd FileType c,h set nowrap
+  autocmd FileType c,h,make nnoremap <F3> :AsyncRun make qemu <CR>
+  autocmd FileType c,h,make nnoremap <F4> :AsyncRun make debug <CR>
 augroup END

@@ -21,7 +21,7 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'sainnhe/everforest'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 Plug 'scrooloose/NERDTree'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'tpope/vim-commentary'
@@ -32,6 +32,7 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'python-rope/ropevim'
 Plug 'mboughaba/i3config.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 Plug 'untitled-ai/jupyter_ascending.vim'
 
