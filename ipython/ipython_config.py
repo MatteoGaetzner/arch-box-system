@@ -5,7 +5,8 @@ c.TerminalIPythonApp.display_banner = True
 c.InteractiveShellApp.log_level = 20
 c.InteractiveShellApp.exec_lines = [
     "from numpy import *",
-    "import torch as tr",
+    "import torch",
+    "import math",
 ]
 
 c.InteractiveShell.autoindent = True

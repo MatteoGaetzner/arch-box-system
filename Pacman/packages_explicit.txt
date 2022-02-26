@@ -36,6 +36,7 @@ ffmpegthumbnailer
 ffnvcodec-headers8.1
 firefox
 firefox-sync
+firewalld
 flameshot
 flashfocus-git
 flex
@@ -48,11 +49,14 @@ gnome-tweaks
 groff
 grub
 grub-btrfs
+gvim
 hdf5-openmpi
 htop
 i3-wm
 i3blocks
 i3lock
+ipset
+iptables-nft
 jaxx-liberty-appimage
 john
 kitty
@@ -130,6 +134,7 @@ samba
 slack-desktop
 spotify
 sqlitebrowser
+sshpass
 sudo
 telegram-desktop
 tex-match

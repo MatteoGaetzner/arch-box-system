@@ -403,8 +403,7 @@ endfun
 autocmd FileType h,c,cpp let b:useClangFormat=1
 autocmd FileType html,javascript,vue,css let b:usePrettier=1
 " autocmd FileType "",yaml,vifm,conf,markdown let b:dontFormat=1
-autocmd BufWritePre *.rasi let b:dontFormat=1
-autocmd BufWritePre *.snippets let b:dontFormat=1
+autocmd FileType tex,python let b:autoformat=1
 autocmd BufWritePre * call Format()
 
 "--------------  Latex  --------------------------
@@ -428,7 +427,13 @@ let g:livepreview_use_biber = 1
 
 " Quick compilation
 autocmd FileType tex nnoremap <CR> :AsyncRun rm out/*; latexmk -pdf -output-directory=out %<CR>
+autocmd FileType tex nnoremap <F9> :call CleanLabel()<CR>
 
+function CleanLabel()
+  :silent! s/[. ,]/_/g
+  :silent! s/*_/_/g
+  :execute "normal! guu"
+endfunction
 
 "--------------  C++  ----------------------------
 

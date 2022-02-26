@@ -329,7 +329,7 @@ function clean_course {
 
 function u {
   WORK_DIR=/home/matteo/Sync/University
-  ISISDL_DIR=/home/matteo/Isis/Courses
+  ISISDL_DIR=/home/matteo/Isis
   unset COURSE
   unset COURSE_CLEAN
   argc=${#1}
@@ -458,11 +458,15 @@ function vpnnd {
 
 ###############  Raspberry  ######################
 
+BERRYIP="192.168.0.242"
+
 function berryd {
-  rdesktop -g 1920x1080 -5 -K -r clipboard:CLIPBOARD -u matteo 192.168.0.242 -p $(pass raspberry_pi/matteo)
+    rdesktop -g 1920x1080 -5 -K -r clipboard:CLIPBOARD -u matteo $BERRYIP -p $(pass raspberry_pi/matteo)
 }
 
-alias berrys="kitty +kitten ssh matteo@192.168.0.242"
+function berrys {
+  sshpass -p $(pass raspberry_pi/matteo) ssh matteo@$BERRYIP
+}
 
 ###############  Exports  ########################
 

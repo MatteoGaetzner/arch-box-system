@@ -118,6 +118,7 @@ e2fsprogs
 ebook-tools
 ed
 editline
+editorconfig-core-c
 efibootmgr
 efivar
 egl-wayland
@@ -134,6 +135,7 @@ expat
 faad2
 fakeroot
 ffmpeg
+ffmpeg4.4
 ffmpegthumbnailer
 ffnvcodec-headers
 ffnvcodec-headers8.1
@@ -143,6 +145,7 @@ filesystem
 findutils
 firefox
 firefox-sync
+firewalld
 flac
 flameshot
 flashfocus-git
@@ -227,6 +230,7 @@ gts
 guile
 gupnp-dlna
 gvfs
+gvim
 gzip
 harfbuzz
 harfbuzz-icu
@@ -385,7 +389,8 @@ intel-media-sdk
 intel-mkl
 intltool
 iproute2
-iptables
+ipset
+iptables-nft
 iputils
 ipython
 iso-codes
@@ -455,7 +460,9 @@ kparts
 kpty
 krb5
 kservice
+ktexteditor
 ktextwidgets
+kuserfeedback
 kvazaar
 kwallet
 kwidgetsaddons
@@ -792,6 +799,7 @@ nettle
 network-manager-applet
 networkmanager
 nextcloud-client
+nftables
 ninja
 nitrogen
 nlohmann-json
@@ -1220,6 +1228,7 @@ sqlite
 sqlitebrowser
 sratom
 srt
+sshpass
 startup-notification
 stoken
 subversion
@@ -1229,6 +1238,7 @@ svt-hevc
 svt-vp9
 swig
 syndication
+syntax-highlighting
 sysfsutils
 systemd
 systemd-libs
@@ -1277,6 +1287,7 @@ tinyxml2
 tk
 tldr
 totem-pl-parser
+tpm2-tss
 tracker3
 tracker3-miners
 translate-shell
@@ -1308,6 +1319,7 @@ vapoursynth
 vi
 vid.stab
 vifm
+vim-runtime
 vlc
 vmaf
 vo-amrwbenc
