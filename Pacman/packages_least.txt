@@ -6,6 +6,7 @@ alsa-utils
 amd-ucode
 autoconf
 automake
+balena-etcher
 base
 bat
 bear

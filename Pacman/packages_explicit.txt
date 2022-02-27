@@ -6,6 +6,7 @@ alsa-utils
 amd-ucode
 autoconf
 automake
+balena-etcher
 base
 bat
 bear
@@ -81,7 +82,6 @@ networkmanager
 nextcloud-client
 ninja
 nitrogen
-nodejs
 nordvpn-bin
 npm
 numactl

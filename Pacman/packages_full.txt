@@ -35,6 +35,7 @@ autoconf
 automake
 avahi
 avisynthplus
+balena-etcher
 base
 bash
 bat
@@ -124,6 +125,7 @@ efivar
 egl-wayland
 eglexternalplatform
 electron
+electron12
 elfutils
 enchant
 evince
@@ -805,7 +807,7 @@ nitrogen
 nlohmann-json
 nm-connection-editor
 node-gyp
-nodejs
+nodejs-lts-erbium
 nodejs-nativefier
 nodejs-nopt
 nordvpn-bin
@@ -1135,6 +1137,7 @@ python-xlib
 python-xpybutil
 python-yaml
 python-zipp
+python2
 qbittorrent
 qpdf
 qrencode
