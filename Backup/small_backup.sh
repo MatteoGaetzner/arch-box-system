@@ -34,6 +34,7 @@ rsync -av ~/.Xresources ~/Sync/System/X/.Xresources
 # i3blocks
 rsync -av ~/.config/i3blocks/config ~/Sync/System/i3blocks/config
 rsync -av ~/.config/i3blocks/gpu-load/gpu-load ~/Sync/System/i3blocks/gpu-load/gpu-load
+rsync -av ~/.config/i3blocks/arch-update/arch-update.py ~/Sync/System/i3blocks/arch-update/arch-update.py
 
 # i3
 rsync -av ~/.config/i3/ ~/Sync/System/i3/
