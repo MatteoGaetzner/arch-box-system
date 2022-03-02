@@ -572,6 +572,7 @@ libid3tag
 libidn
 libidn2
 libiec61883
+libieee1284
 libilbc
 libimagequant
 libimobiledevice
@@ -579,6 +580,7 @@ libindicator-gtk3
 libinih
 libinput
 libiptcdata
+libisl
 libixion
 libjpeg-turbo
 libkexiv2
@@ -771,6 +773,7 @@ m4
 mailcap
 make
 man-db
+masterpdfeditor
 mathjax2
 mbedtls
 md4c
@@ -796,6 +799,7 @@ ndctl
 neofetch
 neon
 neovim
+net-snmp
 netpbm
 nettle
 network-manager-applet
@@ -859,6 +863,7 @@ parted
 pass
 pass-otp
 patch
+patchelf
 pavucontrol
 pciutils
 pcre
@@ -1196,6 +1201,7 @@ rust
 rust-analyzer
 rust-src
 samba
+sane
 sbc
 sdl2
 sed
@@ -1257,6 +1263,8 @@ telegram-desktop
 tensorflow
 tesseract
 tesseract-data-afr
+tesseract-data-deu
+tesseract-data-eng
 tesseract-data-osd
 tevent
 tex-match

@@ -365,8 +365,6 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" let g:coc_snippet_next = '<tab>'
-
 "--------------  UltiSnips  ----------------------
 
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
@@ -376,6 +374,11 @@ let g:UltiSnipsExpandTrigger = "<s-tab>"
 let g:ulti_expand_or_jump_res = 0
 let g:UltiSnipsJumpForwardTrigger="<nop>"
 let g:UltiSnipsJumpBackwardTrigger="<nop>"
+
+
+"--------------  Git-Gutter  ---------------------
+
+let g:gitgutter_signs = 0
 
 
 "--------------  Formating  ----------------------

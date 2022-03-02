@@ -124,10 +124,8 @@ function pm {
 alias pmb="backup_full; printf '\n'; pm $@"
 
 function update {
-  pmb -Syu
-  pnotify "Starting to upgrade user repository packages ..."
-  yay --noconfirm -Syu
-  psuccess "Upgrade of user repository packages done.\n"
+  yay --ask --combinedupgrade -Syu
+  updatei3barchupdate
 }
 
 # Shutdown/Reboot + backup
