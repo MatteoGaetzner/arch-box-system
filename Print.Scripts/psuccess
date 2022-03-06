@@ -1,6 +1,0 @@
-#! /bin/bash
-
-GREEN=$(tput setaf 2)
-NORMAL=$(tput sgr0)
-
-printf "${GREEN}[ SUCCESS ] ${NORMAL}${1}\n"

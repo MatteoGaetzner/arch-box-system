@@ -1,6 +1,0 @@
-#! /bin/bash
-
-RED=$(tput setaf 1)
-NORMAL=$(tput sgr0)
-
-printf "${RED}[ ERROR ] ${NORMAL}${1}\n"
