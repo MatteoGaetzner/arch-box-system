@@ -30,9 +30,11 @@ Plug 'tpope/vim-surround'
 Plug 'vim-autoformat/vim-autoformat'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
-Plug 'python-rope/ropevim'
+" Plug 'python-rope/ropevim'
+" Plug 'davidhalter/jedi-vim'
 Plug 'mboughaba/i3config.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'kevinoid/vim-jsonc'
 
 Plug 'untitled-ai/jupyter_ascending.vim'
 

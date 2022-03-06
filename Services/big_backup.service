@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for the big_backup script
+Wants=big_backup.timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/matteo/.local/bin/big_backup
+
+[Install]
+WantedBy=multi-user.target

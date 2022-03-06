@@ -208,6 +208,9 @@ preexec() { echo -ne '\e[6 q' ;} # Use beam shape cursor for each new prompt.
 
 ###############  SPEED  ##########################
 
+# Don't ask for confirmation before `rm path/*`
+setopt rm_starsilent
+
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 autoload -U history-search-end
@@ -283,7 +286,7 @@ alias vimec="nvim $HOME/.config/nvim/coc-settings.json"
 
 alias vifme="nvim $HOME/.config/vifm/vifmrc"
 
-alias zshe="nvim $HOME/.zshrc; zsh"
+alias zshe="nvim $HOME/.zshrc; reset"
 
 alias i3e="nvim $HOME/.config/i3/config"
 alias i3be="nvim $HOME/.config/i3blocks/config"
@@ -384,6 +387,13 @@ function u {
   esac
 }
 
+# Extract zipped, signed machine learning 1 notebooks
+function ml1_extract {
+  sha=$(shasum $1 | sed 's/\s.*$//')
+  gpg -d $1 > /tmp/$sha 
+  unzip /tmp/$sha -d .
+}
+
 function latexmk_preview {
   latexmk -outdir=out -pvc -pdf
 }
@@ -396,6 +406,19 @@ function setup_latex {
   ln $HOME/Sync/Programs/Self/Latex/Packages/general.sty general.sty
   cp $HOME/Sync/Programs/Self/Latex/Packages/specific.sty specific.sty
   cp $HOME/Sync/Programs/Self/Latex/Templates/Generic/main.tex main.tex
+}
+
+function cleanup_latex {
+  rm -f out/*
+}
+
+function compile_latex {
+  latexmk -pdf -output-directory=out $1
+}
+
+function clean_compile_latex {
+  cleanup_latex
+  compile_latex $1 
 }
 
 function jl {
@@ -497,6 +520,10 @@ function pyasc_sync {
 function pyasc_edit {
   python -m jupyter_ascending.requests.sync --filename $1
   nvim $1
+}
+
+function make_py_setup {
+  echo "run: \n\tpython3 \$(ARGS)" > Makefile 
 }
 
 ###############  Deep Learning  ##################

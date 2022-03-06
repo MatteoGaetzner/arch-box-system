@@ -200,6 +200,9 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 "--------------  Coc  ----------------------------
 
+" Correct comment highlighting
+autocmd FileType json syntax match Comment +\/\/.\+$+
+
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8

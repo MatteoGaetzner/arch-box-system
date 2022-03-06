@@ -419,6 +419,7 @@ jupyter-nbclient
 jupyter-nbconvert
 jupyter-nbformat
 jupyter-notebook
+jupyter-notebook-shim
 jupyter-server
 jupyter-widgetsnbextension
 jupyter_console

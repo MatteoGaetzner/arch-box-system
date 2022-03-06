@@ -1,120 +1,48 @@
-// "clangd": {
-  //   "command": "clangd",
-  //   "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-  //   "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
-  // },
-  {
-    "languageserver": {
-      "cmake": {
-        "command": "cmake-language-server",
-        "filetypes": ["cmake"],
-        "rootPatterns": [
-          "build/"
-        ],
-        "initializationOptions": {
-          "buildDirectory": "build"
-        }
-      },
-      "dockerfile": {
-        "command": "docker-langserver",
-        "filetypes": ["dockerfile"],
-        "args": ["--stdio"]
-      },
-      "intelephense": {
-        "command": "intelephense",
-        "args": ["--stdio"],
-        "filetypes": ["php"],
-        "initializationOptions": {
-          "storagePath": "/tmp/intelephense"
-        }
-      },
-      "efm": {
-        "command": "efm-langserver",
-        "args": [],
-        "filetypes": ["vim", "eruby"]
-      },
-      "digestif": {
-        "command": "/home/matteo/.local/bin/digestif",
-        "filetypes": ["tex", "plaintex", "context"]
-      },
-      "python": {
-        "command": "python",
-        "args": [
-          "-mpyls",
-          "-vv",
-          "--log-file",
-          "/tmp/lsp_python.log"
-        ],
-        "trace.server": "verbose",
-        "filetypes": [
-          "python"
-        ],
-        "settings": {
-          "pyls": {
-            "enable": true,
-            "trace": {
-              "server": "verbose"
-            },
-            "commandPath": "",
-            "configurationSources": [
-              "pycodestyle"
-            ],
-            "plugins": {
-              "pyls_isort": {
-                "enabled": true
-              },
-              "jedi_completion": {
-                "enabled": true
-              },
-              "jedi_hover": {
-                "enabled": true
-              },
-              "jedi_references": {
-                "enabled": true
-              },
-              "jedi_signature_help": {
-                "enabled": true
-              },
-              "jedi_symbols": {
-                "enabled": true,
-                "all_scopes": true
-              },
-              "mccabe": {
-                "enabled": true,
-                "threshold": 15
-              },
-              "preload": {
-                "enabled": true
-              },
-              "pycodestyle": {
-                "enabled": true
-              },
-              "pydocstyle": {
-                "enabled": false,
-                "match": "(?!test_).*\\.py",
-                "matchDir": "[^\\.].*"
-              },
-              "pyflakes": {
-                "enabled": true
-              },
-              "rope_completion": {
-                "enabled": true
-              },
-              "yapf": {
-                "enabled": true
-              }
-            }
-          }
-        }
+{
+  "languageserver": {
+    "cmake": {
+      "command": "cmake-language-server",
+      "filetypes": ["cmake"],
+      "rootPatterns": [
+        "build/"
+      ],
+      "initializationOptions": {
+        "buildDirectory": "build"
       }
     },
-    "snippets.extends": {
-      "latex": ["tex"]
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
     },
-    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
-    "coc.source.vimtex.filetypes": [
-      "tex",
-      "plaintex",
-      "latex"
-    ]
-  }
+    "intelephense": {
+      "command": "intelephense",
+      "args": ["--stdio"],
+      "filetypes": ["php"],
+      "initializationOptions": {
+        "storagePath": "/tmp/intelephense"
+      }
+    },
+    "efm": {
+      "command": "efm-langserver",
+      "args": [],
+      "filetypes": ["vim", "eruby"]
+    },
+    "digestif": {
+      "command": "/home/matteo/.local/bin/digestif",
+      "filetypes": ["tex", "plaintex", "context"]
+    }
+  },
+  "python.formatting.provider": "yapf",
+  "python.linting.pylamaEnabled": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "snippets.extends": {
+    "latex": ["tex"]
+  },
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
+  "coc.source.vimtex.filetypes": [
+    "tex",
+    "plaintex",
+    "latex"
+  ]
+}

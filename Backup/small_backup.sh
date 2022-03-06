@@ -2,7 +2,7 @@
 
 DIRSIZE_LIMIT=25000
 
-pnotify "Backing up to GitHub ..."
+log_notify "Backing up to GitHub ..."
 
 # installed packages
 pacman -Q | awk '{print $1}' > ~/Sync/System/Pacman/packages_full.txt
@@ -50,15 +50,17 @@ rsync -av ~/.config/kitty/ ~/Sync/System/kitty/
 rsync -av /etc/samba/smb.conf ~/Sync/System/Samba/smb.conf
 
 # services (don't forget to chmod a+x resume and enable the services)
+rsync -av /etc/systemd/system/big_backup.timer ~/Sync/System/Services/big_backup.timer
+rsync -av /etc/systemd/system/big_backup.service ~/Sync/System/Services/big_backup.service
 rsync -av /usr/lib/systemd/system/reflector.timer ~/Sync/System/Services/reflector.timer
 rsync -av /etc/systemd/system/resume@.service ~/Sync/System/Services/resume@.service
 rsync -av ~/.local/bin/resume ~/Sync/System/Services/resume
 
 # print scripts
-rsync -av ~/.local/bin/pnotify ~/Sync/System/Print.Scripts/pnotify
-rsync -av ~/.local/bin/pwarn ~/Sync/System/Print.Scripts/pwarn
-rsync -av ~/.local/bin/perror ~/Sync/System/Print.Scripts/perror
-rsync -av ~/.local/bin/psuccess ~/Sync/System/Print.Scripts/psuccess
+rsync -av /bin/log_notify ~/Sync/System/Print.Scripts/log_notify
+rsync -av /bin/log_warn ~/Sync/System/Print.Scripts/log_warn
+rsync -av /bin/log_error ~/Sync/System/Print.Scripts/log_error
+rsync -av /bin/log_success ~/Sync/System/Print.Scripts/log_success
 
 # i3 layout
 rsync -av ~/.i3 ~/Sync/System/i3
@@ -86,7 +88,7 @@ rsync -av /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 
 if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then
-  perror "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
+  log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
 else
   git -C ~/Sync/System pull
   git -C ~/Sync/System add .
@@ -94,4 +96,4 @@ else
   git -C ~/Sync/System push
 fi
 
-psuccess "Backup to GitHub done."
+log_success "Backup to GitHub done."
