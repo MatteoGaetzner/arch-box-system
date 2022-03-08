@@ -7,7 +7,6 @@
 
 SRC="/home/matteo/" #dont forget trailing slash!
 SNAP="/mnt/backup/matteo"
-HOME="/root/"
 MAXN_SNAPS=4
 OPTS="-rltgoi --delay-updates --delete --chmod=a-w"
 _UUID=12f39b90-3fd5-4811-a2db-21d51e9ab864

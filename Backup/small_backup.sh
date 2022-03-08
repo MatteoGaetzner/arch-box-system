@@ -21,6 +21,9 @@ rsync -av ~/.zshrc ~/Sync/System/Zsh/
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
 # rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
 
+# Backup scripts
+rsync -av /bin/big_backup ~/Sync/System/Backup/big_backup.sh
+
 # Neovim
 rsync -av \
   --exclude={after,autoload,spell,UltiSnips} \
