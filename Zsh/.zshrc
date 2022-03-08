@@ -223,6 +223,12 @@ bindkey "^[[B" history-beginning-search-forward-end
 bindkey "^l" autosuggest-accept
 bindkey "^j" autosuggest-execute
 
+# Use aliases with sudo 
+alias sudo='sudo '
+
+# Once key stroke cd 
+alias c='cd'
+
 # Open files easily
 function o {
   mimeopen -n $@ >/dev/null 2>/dev/null &
@@ -242,8 +248,8 @@ function tl {
 eval "$(lua $HOME/.local/share/z.lua/z.lua --init zsh)"
 
 # Copying and pasting from command line
-alias c="xclip -sel c <"
-alias v="xclip -sel c -o >"
+alias cpy="xclip -sel c <"
+alias pst="xclip -sel c -o >"
 
 # Run vifm with image and video preview support
 alias vifm="$HOME/.local/bin/vifmrun"
@@ -286,7 +292,7 @@ alias vimec="nvim $HOME/.config/nvim/coc-settings.json"
 
 alias vifme="nvim $HOME/.config/vifm/vifmrc"
 
-alias zshe="nvim $HOME/.zshrc; reset"
+alias zshe="nvim $HOME/.zshrc; zsh"
 
 alias i3e="nvim $HOME/.config/i3/config"
 alias i3be="nvim $HOME/.config/i3blocks/config"
@@ -433,7 +439,7 @@ function jn {
 
 function mgmt_onboarding {
   firefox -url "https://www.notion.so/techlabs/c30ffb07ffe5419caa51a7b36ab208d3?v=309bfe26069749228921a296d7d99eee" "https://www.notion.so/techlabs/Non-Disclosure-Agreement-NDA-5e844ea9f1944036a0a103a463e1c2ae" "https://admin.google.com/u/1/ac/users?action_id=ADD_USER" "https://admin.google.com/u/1/ac/groups/03whwml41tspvjp" "https://admin.google.com/u/1/ac/groups/035nkun22iwi22l" "https://techlabs-mgmt.slack.com/admin" "https://techlabs-mgmt.slack.com/admin/user_groups" "https://techlabs-community.slack.com/admin" "https://techlabs-community.slack.com/admin/user_groups"
-  pnotify "Don't forget to add the new member to NOTION and write an EMAIL!"
+  log_notify "Don't forget to add the new member to NOTION and write an EMAIL!"
 }
 
 ###############  VPN  ############################
@@ -443,7 +449,7 @@ alias updatei3bip="pkill -SIGRTMIN+12 i3blocks"
 # Connect to the VPN of Technische Universität Berlin
 # alias vpnt='openconnect https://vpn.tu-berlin.de/ -b'
 function vpnt {
-  pnotify "Connecting to the VPN of Technische Universität Berlin ..."
+  log_notify "Connecting to the VPN of Technische Universität Berlin ..."
   vpnnd >/dev/null
   sudo openconnect https://vpn.tu-berlin.de/ -q -b -u matteo
   updatei3bip
@@ -457,7 +463,7 @@ function vpntd {
 
 # Connect to the VPN of NordVPN
 function vpnn {
-  pnotify "Connecting to NordVPN ..."
+  log_notify "Connecting to NordVPN ..."
   if [[ $(pidof openconnect >/dev/null && echo $?) == 0 ]]; then
     vpntd >/dev/null
   fi

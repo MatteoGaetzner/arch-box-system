@@ -4,7 +4,7 @@ Wants=big_backup.timer
 
 [Service]
 Type=oneshot
-ExecStart=/home/matteo/.local/bin/big_backup
+ExecStart=/bin/big_backup
 
 [Install]
 WantedBy=multi-user.target
