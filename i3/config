@@ -39,6 +39,9 @@ exec --no-startup-id $home/.local/bin/resume
 # Start samba
 exec sudo /bin/systemctl start smb.service nmb.service
 
+# Start autostart apps 
+exec dex -a
+
 
 ###############  Startup Applications  ###########
 

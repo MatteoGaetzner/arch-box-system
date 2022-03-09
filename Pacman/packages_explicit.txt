@@ -24,6 +24,7 @@ cpupower-gui
 ctags
 cups
 detox
+dex
 dialog
 dmidecode
 dosfstools
@@ -93,7 +94,6 @@ nvidia-utils
 nvtop
 obs-studio
 okular
-onefetch
 openconnect
 opencv
 pacman-contrib

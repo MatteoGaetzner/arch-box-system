@@ -167,18 +167,6 @@ alias l.="exa -a | egrep '^\.'"
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-cd() {
-  builtin cd "$@"
-  git rev-parse 2>/dev/null
-
-  if [ $? -eq 0 ]; then
-    if [ "$LAST_REPO" != $(basename $(git rev-parse --show-toplevel)) ]; then
-      onefetch
-      LAST_REPO=$(basename $(git rev-parse --show-toplevel))
-    fi
-  fi
-}
-
 ###############  VI MODE  ########################
 
 # vi mode
@@ -425,6 +413,11 @@ function compile_latex {
 function clean_compile_latex {
   cleanup_latex
   compile_latex $1 
+}
+
+function latex_compile_all {
+  cleanup_latex
+  latexmk -pdf -output-directory=out *.tex
 }
 
 function jl {

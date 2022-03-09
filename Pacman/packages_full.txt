@@ -102,6 +102,7 @@ decklink-sdk
 desktop-file-utils
 detox
 device-mapper
+dex
 dialog
 diffutils
 discount
@@ -831,7 +832,6 @@ obs-studio
 ocl-icd
 okular
 onednn
-onefetch
 oniguruma
 openal
 opencl-headers

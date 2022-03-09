@@ -20,6 +20,7 @@ cpupower-gui
 ctags
 cups
 detox
+dex
 dmidecode
 exa
 exodus
@@ -53,7 +54,6 @@ nvidia-cg-toolkit
 nvtop
 obs-studio
 okular
-onefetch
 openconnect
 pacman-contrib
 papirus-icon-theme
