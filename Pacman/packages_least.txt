@@ -31,7 +31,6 @@ flameshot
 flashfocus-git
 flex
 geogebra
-gnome-tweaks
 htop
 i3blocks
 ipset
@@ -67,6 +66,7 @@ playerctl
 powertop
 pulsemixer
 pyenv-virtualenv
+python-fangfrisch
 qbittorrent
 qwinff
 rdesktop

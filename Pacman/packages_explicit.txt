@@ -16,6 +16,7 @@ bluez
 bluez-utils
 btrfs-progs
 chromium
+clamav
 clang
 cmake
 cpulimit
@@ -47,7 +48,6 @@ gdb
 geogebra
 git
 glew
-gnome-tweaks
 groff
 grub
 grub-btrfs
@@ -118,6 +118,7 @@ pulseaudio-bluetooth
 pulsemixer
 pyenv
 pyenv-virtualenv
+python-fangfrisch
 python-pip
 python-pynvim
 python-wheel

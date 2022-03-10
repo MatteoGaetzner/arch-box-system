@@ -71,6 +71,7 @@ chromaprint-fftw
 chromium
 cifs-utils
 cjson
+clamav
 clang
 clucene
 cmake
@@ -195,7 +196,6 @@ gnome-autoar
 gnome-desktop
 gnome-settings-daemon
 gnome-themes-extra
-gnome-tweaks
 gnu-free-fonts
 gnupg
 gnutls
@@ -609,6 +609,7 @@ libmodplug
 libmpc
 libmpcdec
 libmpeg2
+libmspack
 libmspub
 libmwaw
 libmysofa
@@ -1062,6 +1063,7 @@ python-dnspython
 python-docopt
 python-entrypoints
 python-executing
+python-fangfrisch
 python-gobject
 python-greenlet
 python-html5lib
@@ -1123,6 +1125,7 @@ python-setuptools
 python-shtab
 python-six
 python-sniffio
+python-sqlalchemy
 python-stack-data
 python-termcolor
 python-terminado
