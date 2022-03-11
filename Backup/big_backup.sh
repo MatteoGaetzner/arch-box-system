@@ -36,13 +36,13 @@ ionice -c 3 -p $$ >/dev/null
 renice +12  -p $$ >/dev/null
 
 # delete oldest snapshot if there are at least MAXN_SNAPS present
-let "nsnaps = $(/bin/ls -d ${SNAP}/*/ | wc -l) - 1"
+let "nsnaps = $(/bin/ls -l  | grep -c ^d) - 1"
 if [ $nsnaps -ge $MAXN_SNAPS ]; then
   rm -rf $(/bin/ls -d --sort=time -r $SNAP/*/ | head -1)
 fi
 
 # sync
-rsync $OPTS $SRC $SNAP/latest >> $SNAP/rsync.log >/dev/null 2>/dev/null
+rsync $OPTS $SRC $SNAP/latest >> $SNAP/rsync.log
 
 # check if enough has changed and if so
 # make a hardlinked copy named as the date

@@ -1335,6 +1335,7 @@ vi
 vid.stab
 vifm
 vim-runtime
+vimiv
 vlc
 vmaf
 vo-amrwbenc

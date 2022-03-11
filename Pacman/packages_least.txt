@@ -107,6 +107,7 @@ ueberzug
 usbutils
 vi
 vifm
+vimiv
 vlc
 wget
 whatsapp-nativefier

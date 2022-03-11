@@ -143,6 +143,11 @@ function mine {
 
 alias sc="kitty +kitten ssh cluster"
 
+# Full system scan
+function full_clamscan () {
+  clamscan --max-filesize=4000M --max-scansize=4000M --move=/home/matteo/.local/share/clamscan/quarantine  -l /home/matteo/.local/share/clamscan/$(date --iso-8601=date).log --recursive --infected --exclude-dir='^/sys|^/dev' /
+}
+
 ###############  Bluetooth  ######################
 
 alias blue="bluetoothctl connect"
@@ -152,6 +157,16 @@ function bluer {
   sudo systemctl restart bluetooth
   sleep 0.3
   blue $(history | grep '  blue [29CE]' | tail -1 | sed 's/.*  blue //')
+}
+
+function airc {
+  blue 94:16:25:50:A2:58 &
+  blue E4:90:FD:40:B9:06 &
+}
+
+function aird {
+  blued 94:16:25:50:A2:58 &
+  blued E4:90:FD:40:B9:06 &
 }
 
 ###############  Beauty  #########################
@@ -402,22 +417,31 @@ function setup_latex {
   cp $HOME/Sync/Programs/Self/Latex/Templates/Generic/main.tex main.tex
 }
 
-function cleanup_latex {
+# latex_cleanup
+function lcl {
   rm -f out/*
 }
 
-function compile_latex {
+# latex compile 
+function lco {
   latexmk -pdf -output-directory=out $1
 }
 
-function clean_compile_latex {
-  cleanup_latex
-  compile_latex $1 
+# latex clean compile
+function lcc {
+  lcl
+  lco $1 
 }
 
-function latex_compile_all {
-  cleanup_latex
-  latexmk -pdf -output-directory=out *.tex
+# latex compile all
+function lca {
+  lco *.tex
+}
+
+# latex clean compile all
+function lcca {
+  lcl
+  lco *.tex
 }
 
 function jl {
@@ -521,7 +545,7 @@ function pyasc_edit {
   nvim $1
 }
 
-function make_py_setup {
+function setup_python {
   echo "run: \n\tpython3 \$(ARGS)" > Makefile 
 }
 

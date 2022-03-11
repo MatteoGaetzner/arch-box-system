@@ -177,6 +177,7 @@ ueberzug
 usbutils
 vi
 vifm
+vimiv
 vlc
 vtk
 wget
