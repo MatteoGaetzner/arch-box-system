@@ -106,6 +106,7 @@ device-mapper
 dex
 dialog
 diffutils
+discord
 discount
 djvulibre
 dkms

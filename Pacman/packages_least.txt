@@ -21,6 +21,7 @@ ctags
 cups
 detox
 dex
+discord
 dmidecode
 exa
 exodus
