@@ -383,6 +383,9 @@ let g:UltiSnipsJumpBackwardTrigger="<nop>"
 
 let g:gitgutter_signs = 0
 
+"--------------  Gutentags  ----------------------
+
+let g:gutentags_cache_dir = '~/.cache/gutentags_cache_dir/'
 
 "--------------  Formating  ----------------------
 
