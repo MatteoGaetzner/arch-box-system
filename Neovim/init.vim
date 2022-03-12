@@ -411,6 +411,7 @@ autocmd FileType html,javascript,vue,css let b:usePrettier=1
 " autocmd FileType "",yaml,vifm,conf,markdown let b:dontFormat=1
 autocmd FileType tex,python let b:autoformat=1
 autocmd BufWritePre * call Format()
+let g:formatdef_latexindent = '"latexindent -"'
 
 "--------------  Latex  --------------------------
 

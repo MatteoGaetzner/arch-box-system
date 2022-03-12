@@ -91,6 +91,7 @@ texlive-langextra
 texlive-langgreek
 texlive-langjapanese
 texlive-langkorean
+texlive-latexindent-meta
 texlive-music
 texlive-pstricks
 texlive-publishers

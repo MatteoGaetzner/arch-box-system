@@ -904,6 +904,7 @@ perl-datetime-format-builder
 perl-datetime-format-strptime
 perl-datetime-locale
 perl-datetime-timezone
+perl-devel-globaldestruction
 perl-devel-stacktrace
 perl-dist-checkconflicts
 perl-encode-locale
@@ -916,6 +917,7 @@ perl-file-basedir
 perl-file-chdir
 perl-file-desktopentry
 perl-file-find-rule
+perl-file-homedir
 perl-file-listing
 perl-file-mimeinfo
 perl-file-sharedir
@@ -945,6 +947,7 @@ perl-list-moreutils-xs
 perl-list-someutils
 perl-list-utilsby
 perl-locale-gettext
+perl-log-dispatch
 perl-log-log4perl
 perl-lwp-mediatypes
 perl-lwp-protocol-https
@@ -981,6 +984,7 @@ perl-sub-identify
 perl-sub-install
 perl-sub-name
 perl-test-fatal
+perl-test-needs
 perl-text-bibtex
 perl-text-csv
 perl-text-glob
@@ -1001,6 +1005,7 @@ perl-xml-parser
 perl-xml-sax
 perl-xml-sax-base
 perl-xml-writer
+perl-yaml-tiny
 phonon-qt5
 phonon-qt5-gstreamer
 picom
@@ -1289,6 +1294,7 @@ texlive-langgreek
 texlive-langjapanese
 texlive-langkorean
 texlive-latexextra
+texlive-latexindent-meta
 texlive-music
 texlive-pictures
 texlive-pstricks

@@ -158,6 +158,7 @@ texlive-langgreek
 texlive-langjapanese
 texlive-langkorean
 texlive-latexextra
+texlive-latexindent-meta
 texlive-music
 texlive-pictures
 texlive-pstricks

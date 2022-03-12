@@ -307,6 +307,7 @@ alias xinite="sudo nvim $HOME/.xinitrc"
 alias backupe="nvim $HOME/Sync/System/Backup/small_backup.sh"
 
 alias vt="nvim *.tex"
+alias vp="nvim *.py"
 
 alias gu="git add -u; git commit -m \"$@\"; git push"
 alias gul="git add -u; git commit-status; git push"
@@ -403,11 +404,7 @@ function ml1_extract {
   unzip /tmp/$sha -d .
 }
 
-function latexmk_preview {
-  latexmk -outdir=out -pvc -pdf
-}
-
-function setup_latex {
+function latex_setup {
   mkdir -p {out,images,sections/out}
   ln -s ../images sections/images
   ln -s ../general.sty sections/general.sty
