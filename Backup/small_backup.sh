@@ -22,7 +22,7 @@ rsync -av ~/.zshrc ~/Sync/System/Zsh/
 # rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
 
 # Fangfrisch (for clamav)
-gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Fangfrisch/fangfrisch.conf.gpg --yes /etc/fangfrisch/fangfrisch.conf
+# gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Fangfrisch/fangfrisch.conf.gpg --yes /etc/fangfrisch/fangfrisch.conf
 
 # Backup scripts
 rsync -av /bin/big_backup ~/Sync/System/Backup/big_backup.sh
