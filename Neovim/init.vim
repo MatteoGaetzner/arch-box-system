@@ -21,7 +21,7 @@ set hidden
 set nostartofline
 set timeout ttimeoutlen=25
 let mapleader = " "
-syntax on
+set syntax=on
 
 " Performance
 set lazyredraw
@@ -93,6 +93,9 @@ augroup numbertoggle
 augroup END
 
 "--------------  Spelling and Grammar  -----------
+
+" Show nine spell checking candidates at most
+set spellsuggest=best,9
 
 " switch spellcheck languages
 let g:myLang = 0
@@ -197,6 +200,7 @@ let NERDTreeAutoDeleteBuffer = 1
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
       \ quit | endif
+
 
 "--------------  Coc  ----------------------------
 
@@ -385,7 +389,8 @@ let g:gitgutter_signs = 0
 
 "--------------  Gutentags  ----------------------
 
-let g:gutentags_cache_dir = '~/.cache/gutentags_cache_dir/'
+let g:gutentags_cache_dir = '~/.cache/gutentags/'
+let g:gutentags_resolve_symlinks = 1
 
 "--------------  Formating  ----------------------
 
@@ -417,8 +422,6 @@ autocmd BufWritePre * call Format()
 let g:formatdef_latexindent = '"latexindent -"'
 
 "--------------  Latex  --------------------------
-
-syntax enable
 
 let g:tex_flavor = "latex"
 
