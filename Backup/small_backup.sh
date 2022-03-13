@@ -81,6 +81,9 @@ rsync -av /etc/issue ~/Sync/System/Login/issue
 # ipython profile (setup: ipython profile create default, then replace in ~/.ipython...)
 rsync -av ~/.ipython/profile_default/ipython_config.py ~/Sync/System/ipython/ipython_config.py
 
+# pylintrc
+rsync -av ~/.pylintrc ~/Sync/System/Python/.pylintrc
+
 # flashfocus, picom
 rsync -av ~/.config/picom/picom.conf ~/Sync/System/Picom/picom.conf
 

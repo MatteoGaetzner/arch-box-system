@@ -39,6 +39,7 @@
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": true,
   "python.analysis.typeCheckingMode": "basic",
+  "pyright.organizeimports.provider": "isort",
   "snippets.extends": {
     "latex": ["tex"]
   },

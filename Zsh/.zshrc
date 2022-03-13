@@ -529,6 +529,7 @@ alias activate="source *_env/bin/activate"
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PYTHONPYCACHEPREFIX=~/.cache/python/
+export MYPY_CACHE_DIR=~/.cache/mypy/
 
 function pyasc_setup {
   python -m jupyter_ascending.scripts.make_pair --base $1
