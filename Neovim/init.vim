@@ -63,7 +63,10 @@ nnoremap <F2> <C-o>:source ~/.config/nvim/init.vim<CR>
 
 "--------------  Clipboard  ----------------------
 
-autocmd VimLeave * call system("xsel -ib", getreg('+'))
+augroup clipboardgroup
+  autocmd!
+  autocmd VimLeave * call system("xsel -ib", getreg('+'))
+augroup END
 
 set clipboard+=unnamedplus
 let g:clipboard = {
@@ -82,7 +85,7 @@ let g:clipboard = {
 "--------------  Vim-Localrc  --------------------
 
 silent! so .vimlocal
-au BufReadPost *.vimlocal set filetype=vim
+autocmd BufReadPost *.vimlocal set filetype=vim
 
 "--------------  Line Numbers  -------------------
 
@@ -116,7 +119,10 @@ imap <F12> :call MySpellLang()<CR>
 "--------------  Windows  ------------------------
 
 " Make windows always equal size after resize
-autocmd VimResized * if &equalalways | wincmd = | endif
+augroup windowsgroup
+  autocmd!
+  autocmd VimResized * if &equalalways | wincmd = | endif
+augroup END
 
 "--------------  Themes  -------------------------
 
@@ -198,8 +204,11 @@ let NERDTreeQuitOnOpen = 1
 let NERDTreeAutoDeleteBuffer = 1
 
 " Exit Vim if NERDTree is the only window left.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-      \ quit | endif
+augroup nerdtreegroup
+  autocmd!
+  autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+        \ quit | endif
+augroup END
 
 
 "--------------  Coc  ----------------------------
@@ -374,8 +383,12 @@ endfunction
 
 "--------------  UltiSnips  ----------------------
 
+augroup ultisnipsgroup
+  autocmd!
+  autocmd BufRead,BufNewFile *.snippets setfiletype snippets
+augroup END
+
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
-au BufRead,BufNewFile *.snippets setfiletype snippets
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger = "<s-tab>"
 let g:ulti_expand_or_jump_res = 0
@@ -414,11 +427,14 @@ fun! Format()
 endfun
 
 " File formatting settings
-autocmd FileType h,c,cpp let b:useClangFormat=1
-autocmd FileType html,javascript,vue,css let b:usePrettier=1
-" autocmd FileType "",yaml,vifm,conf,markdown let b:dontFormat=1
-autocmd FileType tex,python let b:autoformat=1
-autocmd BufWritePre * call Format()
+augroup formatgroup
+  autocmd!
+  autocmd FileType h,c,cpp let b:useClangFormat=1
+  autocmd FileType html,javascript,vue,css let b:usePrettier=1
+  autocmd FileType tex,python let b:autoformat=1
+  autocmd BufWritePre * call Format()
+augroup END
+
 let g:formatdef_latexindent = '"latexindent -"'
 
 "--------------  Latex  --------------------------
@@ -439,8 +455,11 @@ let g:livepreview_texinputs = './out/'
 let g:livepreview_use_biber = 1
 
 " Quick compilation
-autocmd FileType tex nnoremap <CR> :AsyncRun rm out/*; latexmk -pdf -output-directory=out %<CR>
-autocmd FileType tex nnoremap <F9> :call CleanLabel()<CR>
+augroup latexgroup
+  autocmd!
+  autocmd FileType tex nnoremap <CR> :AsyncRun rm out/*; latexmk -pdf -output-directory=out %<CR>
+  autocmd FileType tex nnoremap <F9> :call CleanLabel()<CR>
+augroup END
 
 function CleanLabel()
   :silent! s/[. ,]/_/g
@@ -450,11 +469,14 @@ endfunction
 
 "--------------  C++  ----------------------------
 
-" Quick compile && run
-autocmd FileType cpp nnoremap <C-c> :!g++ -std=c++11 % -Wall -g -o %.out && ./%.out<CR>
-autocmd FileType cpp nnoremap <C-s> :!make && gdb -tui ./bin/main.out<CR>
-autocmd FileType cpp nnoremap <C-m> :!make && ./bin/main.out<CR>
-autocmd FileType cpp nnoremap <CR> :!cmake -S src -B release ; make --directory=release ; ./release/main images/lena.jpg $@
+augroup cppgroup
+  autocmd!
+  " Quick compile && run
+  autocmd FileType cpp nnoremap <C-c> :!g++ -std=c++11 % -Wall -g -o %.out && ./%.out<CR>
+  autocmd FileType cpp nnoremap <C-s> :!make && gdb -tui ./bin/main.out<CR>
+  autocmd FileType cpp nnoremap <C-m> :!make && ./bin/main.out<CR>
+  autocmd FileType cpp nnoremap <CR> :!cmake -S src -B release ; make --directory=release ; ./release/main images/lena.jpg $@
+augroup END
 
 "--------------  Bash  ---------------------------
 
@@ -462,20 +484,22 @@ autocmd FileType sh nnoremap <C-c> :!bash %<CR>
 
 "--------------  Python  -------------------------
 
-autocmd FileType python nnoremap <CR> :AsyncRun make run ARGS="%"<CR>
-autocmd FileType python nnoremap <F4> :AsyncRun make test <CR>
-
-augroup numbertoggle
+augroup pythongroup
   autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+  autocmd FileType python nnoremap <CR> :AsyncRun make run ARGS="%"<CR>
+  autocmd FileType python nnoremap <F4> :AsyncRun make test <CR>
+  autocmd BufWritePre *.py :CocCommand python.sortImports
 augroup END
 
 let g:asyncrun_open = 10
 
 "--------------  Markdown  -----------------------
 
-autocmd BufWritePre *.md call CocActionAsync('runCommand', 'markdownlint.fixAll')
+augroup markdowngroup
+  autocmd!
+  autocmd BufWritePre *.md call CocActionAsync('runCommand', 'markdownlint.fixAll')
+augroup END
+
 let g:mkdp_auto_close = 1
 let g:mkdp_browser = 'firefox'
 let $NVIM_MKDP_LOG_FILE = expand('~/mkdp-log.log')
@@ -483,10 +507,10 @@ let $NVIM_MKDP_LOG_LEVEL = 'debug'
 
 "--------------  i3-config  ----------------------
 
-aug i3config_ft_detection
-  au!
-  au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
-aug end
+augroup i3configgroup
+  autocmd!
+  autocmd BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
+augroup END
 
 "--------------  Betriebssystem Praktikum  -------
 
