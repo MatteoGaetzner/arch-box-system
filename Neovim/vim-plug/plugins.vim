@@ -7,8 +7,10 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'SirVer/ultisnips'
+Plug 'SmiteshP/nvim-gps'
 Plug 'airblade/vim-gitgutter'
 Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 Plug 'honza/vim-snippets'
@@ -21,10 +23,13 @@ Plug 'mboughaba/i3config.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neomake/neomake'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+Plug 'p00f/nvim-ts-rainbow'
+Plug 'romgrk/nvim-treesitter-context'
 Plug 'sainnhe/everforest'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 Plug 'scrooloose/NERDTree'
-Plug 'sheerun/vim-polyglot'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'tpope/vim-commentary'

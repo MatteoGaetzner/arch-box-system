@@ -21,7 +21,7 @@ set hidden
 set nostartofline
 set timeout ttimeoutlen=25
 let mapleader = " "
-set syntax=on
+" set syntax=on
 
 " Performance
 set lazyredraw
@@ -42,19 +42,19 @@ set undodir=~/.vim/undo//
 "--------------  Key Tweaks  ---------------------
 
 nnoremap <Tab> >>2l
-nnoremap <S-Tab> <<2h
+nnoremap <S-T> <<2h
 
 " gm -> add mark
 nnoremap gm m
 
 "--------------  Moving Lines  -------------------
 
-nnoremap <C-l> :m .+1<CR>==
-nnoremap <C-h> :m .-2<CR>==
-inoremap <C-l> <Esc>:m .+1<CR>==gi
-inoremap <C-h> <Esc>:m .-2<CR>==gi
-vnoremap <C-l> :m '>+1<CR>gv=gv
-vnoremap <C-h> :m '<-2<CR>gv=gv
+nnoremap <C-l> :move .+1<CR>==
+nnoremap <C-h> :move .-2<CR>==
+inoremap <C-l> <Esc>:move .+1<CR>==gi
+inoremap <C-h> <Esc>:move .-2<CR>==gi
+vnoremap <C-l> :move '>+1<CR>gv=gv
+vnoremap <C-h> :move '<-2<CR>gv=gv
 
 "--------------  Vimrc Editing  ------------------
 
@@ -66,7 +66,7 @@ nnoremap <F2> <C-o>:source ~/.config/nvim/init.vim<CR>
 augroup clipboardgroup
   autocmd!
   autocmd VimLeave * call system("xsel -ib", getreg('+'))
-augroup END
+augroup end
 
 set clipboard+=unnamedplus
 let g:clipboard = {
@@ -93,7 +93,7 @@ augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
+augroup end
 
 "--------------  Spelling and Grammar  -----------
 
@@ -111,7 +111,7 @@ function! MySpellLang()
   if g:myLang == 1 | setlocal spell spelllang=de_de | endif
   if g:myLang == 2 | setlocal spell spelllang=en_us | endif
   echo "language:" g:myLangList[g:myLang]
-endf
+endfun
 
 map <F12> :call MySpellLang()<CR>
 imap <F12> :call MySpellLang()<CR>
@@ -122,7 +122,7 @@ imap <F12> :call MySpellLang()<CR>
 augroup windowsgroup
   autocmd!
   autocmd VimResized * if &equalalways | wincmd = | endif
-augroup END
+augroup end
 
 "--------------  Themes  -------------------------
 
@@ -149,6 +149,96 @@ colorscheme everforest
 "--------------  Lualine  ------------------------
 
 lua << END
+-- Customized config
+require("nvim-gps").setup({
+
+	disable_icons = false,           -- Setting it to true will disable all icons
+
+	icons = {
+		["class-name"] = ' ',      -- Classes and class-like objects
+		["function-name"] = ' ',   -- Functions
+		["method-name"] = ' ',     -- Methods (functions inside class-like objects)
+		["container-name"] = '⛶ ',  -- Containers (example: lua tables)
+		["tag-name"] = '炙'         -- Tags (example: html tags)
+	},
+
+	-- Add custom configuration per language or
+	-- Disable the plugin for a language
+	-- Any language not disabled here is enabled by default
+	languages = {
+		-- Some languages have custom icons
+		["json"] = {
+			icons = {
+				["array-name"] = ' ',
+				["object-name"] = ' ',
+				["null-name"] = '[] ',
+				["boolean-name"] = 'ﰰﰴ ',
+				["number-name"] = '# ',
+				["string-name"] = ' '
+			}
+		},
+		["toml"] = {
+			icons = {
+				["table-name"] = ' ',
+				["array-name"] = ' ',
+				["boolean-name"] = 'ﰰﰴ ',
+				["date-name"] = ' ',
+				["date-time-name"] = ' ',
+				["float-name"] = ' ',
+				["inline-table-name"] = ' ',
+				["integer-name"] = '# ',
+				["string-name"] = ' ',
+				["time-name"] = ' '
+			}
+		},
+		["verilog"] = {
+			icons = {
+				["module-name"] = ' '
+			}
+		},
+		["yaml"] = {
+			icons = {
+				["mapping-name"] = ' ',
+				["sequence-name"] = ' ',
+				["null-name"] = '[] ',
+				["boolean-name"] = 'ﰰﰴ ',
+				["integer-name"] = '# ',
+				["float-name"] = ' ',
+				["string-name"] = ' '
+			}
+		},
+
+		-- Disable for particular languages
+		-- ["bash"] = false, -- disables nvim-gps for bash
+		-- ["go"] = false,   -- disables nvim-gps for golang
+
+		-- Override default setting for particular languages
+		-- ["ruby"] = {
+		--	separator = '|', -- Overrides default separator with '|'
+		--	icons = {
+		--		-- Default icons not specified in the lang config
+		--		-- will fallback to the default value
+		--		-- "container-name" will fallback to default because it's not set
+		--		["function-name"] = '',    -- to ensure empty values, set an empty string
+		--		["tag-name"] = ''
+		--		["class-name"] = '::',
+		--		["method-name"] = '#',
+		--	}
+		--}
+	},
+
+	separator = ' > ',
+
+	-- limit for amount of context shown
+	-- 0 means no limit
+	depth = 0,
+
+	-- indicator used when context hits depth limit
+	depth_limit_indicator = ".."
+})
+
+local gps = require("nvim-gps")
+
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -161,17 +251,17 @@ require('lualine').setup {
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
+    lualine_c = { { gps.get_location, cond = gps.is_available }, },
+    lualine_x = {'filename'},
+    lualine_y = {'filetype'},
     lualine_z = {'location'}
     },
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {'location'},
-    lualine_y = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {'location'},
     lualine_z = {}
     },
   tabline = {},
@@ -208,8 +298,107 @@ augroup nerdtreegroup
   autocmd!
   autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
         \ quit | endif
-augroup END
+augroup end
 
+"--------------  Treesitter  ---------------------
+
+lua << END
+require'nvim-treesitter.configs'.setup {
+  -- One of "all", "maintained" (parsers with maintainers), or a list of languages
+  ensure_installed = "maintained",
+
+  -- Install languages synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+
+  -- List of parsers to ignore installing
+  ignore_install = {},
+
+  highlight = {
+    -- `false` will disable the whole extension
+    enable = true,
+
+    -- list of language that will be disabled
+    disable = {},
+
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = true,
+  },
+
+  -- Incremental selection based on the named nodes from the grammar.
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+  
+  -- Indentation
+  indent = {
+    enable = true
+  },
+
+  -- Treesitter text objects
+  textobjects = {
+    -- Swap text objects
+    swap = {
+      enable = true,
+      swap_next = {
+        ["<leader>a"] = "@parameter.inner",
+      },
+      swap_previous = {
+        ["<leader>A"] = "@parameter.inner",
+      },
+    },
+    -- peek definitions
+    lsp_interop = {
+      enable = true,
+      border = 'none',
+      peek_definition_code = {
+        ["<leader>df"] = "@function.outer",
+        ["<leader>dF"] = "@class.outer",
+      },
+    },
+  },
+  rainbow = {
+    enable = true,
+    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+    max_file_lines = nil, -- Do not enable for files with more than n lines, int
+    -- colors = {}, -- table of hex strings
+    -- termcolors = {} -- table of colour name strings
+  },
+
+  -- Support for comments in embedded programming languages
+  context_commentstring = {
+    enable = true
+  },
+
+}
+END
+
+
+"--------------  Treesitter-Context  -------------
+
+lua << END
+require'treesitter-context'.setup {
+    enable = true,
+    throttle = false,
+    max_lines = 0, 
+    patterns = { 
+        default = {
+            'class',
+            'function',
+            'method',
+        },
+    },
+}
+END
 
 "--------------  Coc  ----------------------------
 
@@ -277,7 +466,7 @@ function! s:show_documentation()
   else
     execute '!' . &keywordprg .  " . expand('<cword>')
   endif
-endfunction
+endfun
 
 "Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -379,14 +568,14 @@ inoremap <silent><expr> <TAB>
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
+endfun
 
 "--------------  UltiSnips  ----------------------
 
 augroup ultisnipsgroup
   autocmd!
   autocmd BufRead,BufNewFile *.snippets setfiletype snippets
-augroup END
+augroup end
 
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 let g:UltiSnipsEditSplit="vertical"
@@ -408,7 +597,7 @@ let g:gutentags_resolve_symlinks = 1
 "--------------  Formating  ----------------------
 
 " Selects correct formating app the given file
-fun! Format()
+function! Format()
   if exists('b:useClangFormat')
     let l:lines="all"
     if has('python3')
@@ -433,7 +622,7 @@ augroup formatgroup
   autocmd FileType html,javascript,vue,css let b:usePrettier=1
   autocmd FileType tex,python let b:autoformat=1
   autocmd BufWritePre * call Format()
-augroup END
+augroup end
 
 let g:formatdef_latexindent = '"latexindent -"'
 
@@ -459,13 +648,13 @@ augroup latexgroup
   autocmd!
   autocmd FileType tex nnoremap <CR> :AsyncRun rm out/*; latexmk -pdf -output-directory=out %<CR>
   autocmd FileType tex nnoremap <F9> :call CleanLabel()<CR>
-augroup END
+augroup end
 
 function CleanLabel()
   :silent! s/[. ,]/_/g
   :silent! s/*_/_/g
   :execute "normal! guu"
-endfunction
+endfun
 
 "--------------  C++  ----------------------------
 
@@ -476,7 +665,7 @@ augroup cppgroup
   autocmd FileType cpp nnoremap <C-s> :!make && gdb -tui ./bin/main.out<CR>
   autocmd FileType cpp nnoremap <C-m> :!make && ./bin/main.out<CR>
   autocmd FileType cpp nnoremap <CR> :!cmake -S src -B release ; make --directory=release ; ./release/main images/lena.jpg $@
-augroup END
+augroup end
 
 "--------------  Bash  ---------------------------
 
@@ -489,7 +678,7 @@ augroup pythongroup
   autocmd FileType python nnoremap <CR> :AsyncRun make run ARGS="%"<CR>
   autocmd FileType python nnoremap <F4> :AsyncRun make test <CR>
   autocmd BufWritePre *.py :CocCommand python.sortImports
-augroup END
+augroup end
 
 let g:asyncrun_open = 10
 
@@ -498,7 +687,7 @@ let g:asyncrun_open = 10
 augroup markdowngroup
   autocmd!
   autocmd BufWritePre *.md call CocActionAsync('runCommand', 'markdownlint.fixAll')
-augroup END
+augroup end
 
 let g:mkdp_auto_close = 1
 let g:mkdp_browser = 'firefox'
@@ -510,7 +699,7 @@ let $NVIM_MKDP_LOG_LEVEL = 'debug'
 augroup i3configgroup
   autocmd!
   autocmd BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
-augroup END
+augroup end
 
 "--------------  Betriebssystem Praktikum  -------
 
@@ -521,4 +710,4 @@ augroup bsprak
   autocmd FileType c,h set nowrap
   autocmd FileType c,h,make nnoremap <F3> :AsyncRun make qemu <CR>
   autocmd FileType c,h,make nnoremap <F4> :AsyncRun make debug <CR>
-augroup END
+augroup end

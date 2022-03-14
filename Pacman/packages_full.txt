@@ -1047,6 +1047,7 @@ python-async_generator
 python-attrs
 python-babel
 python-backcall
+python-beautifulsoup4
 python-black
 python-bleach
 python-cachecontrol
@@ -1131,6 +1132,7 @@ python-setuptools
 python-shtab
 python-six
 python-sniffio
+python-soupsieve
 python-sqlalchemy
 python-stack-data
 python-termcolor
