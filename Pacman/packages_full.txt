@@ -802,7 +802,7 @@ ncurses
 ndctl
 neofetch
 neon
-neovim
+neovim-nightly-bin
 net-snmp
 netpbm
 nettle

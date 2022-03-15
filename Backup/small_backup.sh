@@ -33,6 +33,10 @@ rsync -av \
   ~/.config/nvim/ ~/Sync/System/Neovim/
 /bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
 
+# Latex indentconfig
+rsync -av ~/.config/latexindent/indentconfig.yaml ~/Sync/System/Latex/indentconfig.yaml
+
+
 # X
 rsync -av ~/.xinitrc ~/Sync/System/X/.xinitrc
 rsync -av ~/.Xresources ~/Sync/System/X/.Xresources

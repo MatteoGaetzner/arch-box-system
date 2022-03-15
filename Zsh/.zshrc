@@ -544,7 +544,7 @@ function pyasc_edit {
   nvim $1
 }
 
-function setup_python {
+function python_setup {
   echo "run: \n\tpython3 \$(ARGS)" > Makefile 
 }
 

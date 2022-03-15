@@ -315,7 +315,7 @@ require'nvim-treesitter.configs'.setup {
 
   highlight = {
     -- `false` will disable the whole extension
-    enable = true,
+    enable = false,
 
     -- list of language that will be disabled
     disable = {},
@@ -340,7 +340,7 @@ require'nvim-treesitter.configs'.setup {
   
   -- Indentation
   indent = {
-    enable = true
+    enable = true,
   },
 
   -- Treesitter text objects
@@ -596,6 +596,10 @@ let g:gutentags_resolve_symlinks = 1
 
 "--------------  Formating  ----------------------
 
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
+
 " Selects correct formating app the given file
 function! Format()
   if exists('b:useClangFormat')
@@ -624,7 +628,7 @@ augroup formatgroup
   autocmd BufWritePre * call Format()
 augroup end
 
-let g:formatdef_latexindent = '"latexindent -"'
+let g:formatdef_latexindent = '"latexindent --local=~/.config/latexindent/settings.yaml -"'
 
 "--------------  Latex  --------------------------
 
@@ -648,6 +652,7 @@ augroup latexgroup
   autocmd!
   autocmd FileType tex nnoremap <CR> :AsyncRun rm out/*; latexmk -pdf -output-directory=out %<CR>
   autocmd FileType tex nnoremap <F9> :call CleanLabel()<CR>
+  autocmd FileType tex set nowrap
 augroup end
 
 function CleanLabel()

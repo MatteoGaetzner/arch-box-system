@@ -38,7 +38,9 @@ renice +12  -p $$ >/dev/null
 # delete oldest snapshot if there are at least MAXN_SNAPS present
 let "nsnaps = $(/bin/ls -l  | grep -c ^d) - 1"
 if [ $nsnaps -ge $MAXN_SNAPS ]; then
-  rm -rf $(/bin/ls -d --sort=time -r $SNAP/*/ | head -1)
+  oldest=$(/bin/ls -d --sort=time -r $SNAP/*/ | head -1)
+  log_notify "Deleting oldest snapshot: $oldest"
+  rm -rf $oldest
 fi
 
 # sync
@@ -50,6 +52,7 @@ COUNT=$( wc -l $SNAP/rsync.log|cut -d" " -f1 )
 if [ $COUNT -gt $MINCHANGES ] ; then
   DATETAG=$(date +%Y-%m-%d)
   if [ ! -e $SNAP/$DATETAG ] ; then
+    log_notify "Creating new snapshot: $DATETAG"
     cp -al $SNAP/latest $SNAP/$DATETAG
     chmod u+w $SNAP/$DATETAG
     mv $SNAP/rsync.log $SNAP/$DATETAG

@@ -79,7 +79,7 @@ mediainfo
 nautilus
 ncdu
 neofetch
-neovim
+neovim-nightly-bin
 network-manager-applet
 networkmanager
 nextcloud-client
