@@ -421,24 +421,22 @@ function lcl {
 
 # latex compile 
 function lco {
-  latexmk -pdf -output-directory=out $1
+  parallel latexmk -pdf -output-directory=out {} ::: $@
 }
 
 # latex clean compile
 function lcc {
-  lcl
-  lco $1 
+  lcl; lco $1 
 }
 
 # latex compile all
 function lca {
-  lco *.tex
+  parallel latexmk -pdf -output-directory=out {} ::: **/*.tex
 }
 
 # latex clean compile all
 function lcca {
-  lcl
-  lco *.tex
+  lcl; lca
 }
 
 function jl {

@@ -17,6 +17,10 @@ rsync -av /etc/X11/xorg.conf.d/00-keyboard.conf ~/Sync/System/Keyboard/00-keyboa
 rsync -av ~/.zprofile ~/Sync/System/Zsh/
 rsync -av ~/.zshrc ~/Sync/System/Zsh/
 
+# parallel
+rsync -av ~/.parallel/config ~/Sync/System/Parallel/config
+
+
 # ssh
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
 # rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
@@ -32,10 +36,6 @@ rsync -av \
   --exclude={after,autoload,spell,UltiSnips} \
   ~/.config/nvim/ ~/Sync/System/Neovim/
 /bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
-
-# Latex indentconfig
-rsync -av ~/.config/latexindent/indentconfig.yaml ~/Sync/System/Latex/indentconfig.yaml
-
 
 # X
 rsync -av ~/.xinitrc ~/Sync/System/X/.xinitrc

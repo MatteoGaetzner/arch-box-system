@@ -37,7 +37,7 @@ renice +12  -p $$ >/dev/null
 
 # delete oldest snapshot if there are at least MAXN_SNAPS present
 let "nsnaps = $(/bin/ls -l  | grep -c ^d) - 1"
-if [ $nsnaps -ge $MAXN_SNAPS ]; then
+if [ $nsnaps -gt $MAXN_SNAPS ]; then
   oldest=$(/bin/ls -d --sort=time -r $SNAP/*/ | head -1)
   log_notify "Deleting oldest snapshot: $oldest"
   rm -rf $oldest

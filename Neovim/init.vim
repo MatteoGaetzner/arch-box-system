@@ -20,6 +20,7 @@ set nu rnu
 set hidden
 set nostartofline
 set timeout ttimeoutlen=25
+set colorcolumn=100
 let mapleader = " "
 " set syntax=on
 
@@ -32,6 +33,13 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 " Use Python3
 if has('python3')
 endif
+
+
+set foldmethod=syntax
+set foldlevelstart=1
+
+let sh_fold_enabled=1         " sh
+let vimsyn_folding='af'       " Vim script
 
 "--------------  Auxiliary Files  ----------------
 
@@ -315,7 +323,7 @@ require'nvim-treesitter.configs'.setup {
 
   highlight = {
     -- `false` will disable the whole extension
-    enable = false,
+    enable = true,
 
     -- list of language that will be disabled
     disable = {},
@@ -368,7 +376,7 @@ require'nvim-treesitter.configs'.setup {
   rainbow = {
     enable = true,
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
-    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+    extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
     max_file_lines = nil, -- Do not enable for files with more than n lines, int
     -- colors = {}, -- table of hex strings
     -- termcolors = {} -- table of colour name strings
@@ -596,10 +604,6 @@ let g:gutentags_resolve_symlinks = 1
 
 "--------------  Formating  ----------------------
 
-let g:autoformat_autoindent = 0
-let g:autoformat_retab = 0
-let g:autoformat_remove_trailing_spaces = 0
-
 " Selects correct formating app the given file
 function! Format()
   if exists('b:useClangFormat')
@@ -627,8 +631,6 @@ augroup formatgroup
   autocmd FileType tex,python let b:autoformat=1
   autocmd BufWritePre * call Format()
 augroup end
-
-let g:formatdef_latexindent = '"latexindent --local=~/.config/latexindent/settings.yaml -"'
 
 "--------------  Latex  --------------------------
 
@@ -660,6 +662,8 @@ function CleanLabel()
   :silent! s/*_/_/g
   :execute "normal! guu"
 endfun
+
+let g:formatdef_latexindent = '"latexindent -"'
 
 "--------------  C++  ----------------------------
 
