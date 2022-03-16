@@ -599,7 +599,7 @@ let g:gitgutter_signs = 0
 
 "--------------  Gutentags  ----------------------
 
-let g:gutentags_cache_dir = '~/.cache/gutentags/'
+let g:gutentags_cache_dir = '/tmp/'
 let g:gutentags_resolve_symlinks = 1
 
 "--------------  Formating  ----------------------

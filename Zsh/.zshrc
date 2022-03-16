@@ -17,6 +17,8 @@ BLINK=$(tput blink)
 REVERSE=$(tput smso)
 UNDERLINE=$(tput smul)
 
+TMPDIR=/tmp/
+
 ###############  P10K  ###########################
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -526,8 +528,8 @@ export R_LIBS
 alias activate="source *_env/bin/activate"
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-export PYTHONPYCACHEPREFIX=~/.cache/python/
-export MYPY_CACHE_DIR=~/.cache/mypy/
+export PYTHONPYCACHEPREFIX=$TMPDIR
+export MYPY_CACHE_DIR=$TMPDIR
 
 function pyasc_setup {
   python -m jupyter_ascending.scripts.make_pair --base $1

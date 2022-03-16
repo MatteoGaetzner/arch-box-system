@@ -20,7 +20,6 @@ rsync -av ~/.zshrc ~/Sync/System/Zsh/
 # parallel
 rsync -av ~/.parallel/config ~/Sync/System/Parallel/config
 
-
 # ssh
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
 # rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
@@ -60,10 +59,12 @@ rsync -av ~/.config/kitty/ ~/Sync/System/kitty/
 rsync -av /etc/samba/smb.conf ~/Sync/System/Samba/smb.conf
 
 # services (don't forget to chmod a+x resume and enable the services)
-rsync -av /etc/systemd/system/big_backup.timer ~/Sync/System/Services/big_backup.timer
 rsync -av /etc/systemd/system/big_backup.service ~/Sync/System/Services/big_backup.service
-rsync -av /usr/lib/systemd/system/reflector.timer ~/Sync/System/Services/reflector.timer
+rsync -av /etc/systemd/system/big_backup.timer ~/Sync/System/Services/big_backup.timer
+rsync -av /etc/systemd/system/btrfs_defrag.service ~/Sync/System/Services/btrfs_defrag.service
+rsync -av /etc/systemd/system/btrfs_defrag.timer ~/Sync/System/Services/btrfs_defrag.timer
 rsync -av /etc/systemd/system/resume@.service ~/Sync/System/Services/resume@.service
+rsync -av /usr/lib/systemd/system/reflector.timer ~/Sync/System/Services/reflector.timer
 rsync -av ~/.local/bin/resume ~/Sync/System/Services/resume
 
 # print scripts

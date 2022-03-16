@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for running btrfs defragmentation
+Wants=btrfs_defrag.timer
+
+[Service]
+Type=oneshot
+ExecStart=/bin/btrfs filesystem defragment -r /
+
+[Install]
+WantedBy=multi-user.target
