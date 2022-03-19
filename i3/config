@@ -37,10 +37,19 @@ exec xset -dpms
 exec --no-startup-id $home/.local/bin/resume
 
 # Start samba
-exec sudo /bin/systemctl start smb.service nmb.service
+exec --no-startup-id sudo systemctl start smb.service nmb.service
 
 # Start asd
-exec sudo /bin/systemctl start asd.service
+exec --no-startup-id sudo systemctl start asd.service
+
+# Start firewall
+exec --no-startup-id sudo systemctl start firewalld.service
+
+# Start cpupower
+exec --no-startup-id sudo systemctl start cpupower.service
+
+# Start speech dispatcher daemon
+# exec --no-startup-id sudo systemctl start speech-dispatcher.service
 
 # Start autostart apps 
 exec dex -a
