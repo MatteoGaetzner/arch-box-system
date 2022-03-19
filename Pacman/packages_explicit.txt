@@ -4,6 +4,7 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
+anything-sync-daemon
 autoconf
 automake
 balena-etcher
@@ -31,6 +32,7 @@ discord
 dmidecode
 dosfstools
 efibootmgr
+espeak-ng
 evince
 exa
 exodus
@@ -39,7 +41,6 @@ ffmpeg
 ffmpegthumbnailer
 ffnvcodec-headers8.1
 firefox
-firefox-sync
 firewalld
 flameshot
 flashfocus-git
@@ -49,6 +50,7 @@ gdb
 geogebra
 git
 glew
+gnome-keyring
 groff
 grub
 grub-btrfs
@@ -113,6 +115,7 @@ picom
 pkgconf
 playerctl
 powertop
+profile-sync-daemon
 pugixml
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -134,7 +137,9 @@ rsync
 ruby
 rust-analyzer
 samba
+seahorse
 slack-desktop
+speech-dispatcher
 spotify
 sqlitebrowser
 sshpass

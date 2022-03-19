@@ -17,7 +17,7 @@ BLINK=$(tput blink)
 REVERSE=$(tput smso)
 UNDERLINE=$(tput smul)
 
-TMPDIR=/tmp/
+CACHEDIR=~/.cache/
 
 ###############  P10K  ###########################
 
@@ -423,7 +423,7 @@ function lcl {
 
 # latex compile 
 function lco {
-  parallel latexmk -pdf -output-directory=out {} ::: $@
+  latexmk -pdf -output-directory=out $@
 }
 
 # latex clean compile
@@ -528,8 +528,8 @@ export R_LIBS
 alias activate="source *_env/bin/activate"
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-export PYTHONPYCACHEPREFIX=$TMPDIR
-export MYPY_CACHE_DIR=$TMPDIR
+export PYTHONPYCACHEPREFIX=$CACHEDIR/python/
+export MYPY_CACHE_DIR=$CACHEDIR/mypy/
 
 function pyasc_setup {
   python -m jupyter_ascending.scripts.make_pair --base $1
@@ -599,8 +599,15 @@ function cpp_cmake_debug {
 
 ###############  Last minute  ####################
 
+if [ ! -f /tmp/loggedin ]; then 
+    read -qsn "choice?Enter [Y/y] to update: "
+    case $choice in 
+      n) echo "No update performed." ;;
+      *) echo ""; update; 
+    esac
+    touch /tmp/loggedin
+fi
+
 # Zsh syntax highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-

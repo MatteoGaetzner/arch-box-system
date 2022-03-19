@@ -17,6 +17,7 @@ alsa-utils
 amd-ucode
 amf-headers
 ant
+anything-sync-daemon
 aom
 appstream-glib
 apr
@@ -83,6 +84,7 @@ coreutils
 cpulimit
 cpupower
 cpupower-gui
+cracklib
 cronie
 crypto++
 cryptsetup
@@ -116,6 +118,7 @@ dnssec-anchors
 docbook-xml
 docbook-xsl
 dosfstools
+dotconf
 double-conversion
 doxygen
 e2fsprogs
@@ -131,6 +134,7 @@ electron
 electron12
 elfutils
 enchant
+espeak-ng
 evince
 exa
 exempi
@@ -149,7 +153,6 @@ file
 filesystem
 findutils
 firefox
-firefox-sync
 firewalld
 flac
 flameshot
@@ -195,6 +198,7 @@ glu
 gmp
 gnome-autoar
 gnome-desktop
+gnome-keyring
 gnome-settings-daemon
 gnome-themes-extra
 gnu-free-fonts
@@ -295,9 +299,15 @@ haskell-haddock-library
 haskell-hashable
 haskell-hourglass
 haskell-hslua
+haskell-hslua-classes
+haskell-hslua-core
+haskell-hslua-marshalling
 haskell-hslua-module-path
 haskell-hslua-module-system
 haskell-hslua-module-text
+haskell-hslua-module-version
+haskell-hslua-objectorientation
+haskell-hslua-packaging
 haskell-hsyaml
 haskell-http-client
 haskell-http-client-tls
@@ -308,6 +318,8 @@ haskell-iproute
 haskell-ipynb
 haskell-jira-wiki-markup
 haskell-juicypixels
+haskell-lexer
+haskell-lua
 haskell-memory
 haskell-mime-types
 haskell-mono-traversable
@@ -317,6 +329,7 @@ haskell-old-locale
 haskell-old-time
 haskell-pandoc-types
 haskell-pem
+haskell-pretty-show
 haskell-primitive
 haskell-quickcheck
 haskell-random
@@ -649,6 +662,7 @@ libportal-gtk3
 libproxy
 libpsl
 libpulse
+libpwquality
 libqxp
 librabbitmq-c
 libraqm
@@ -670,6 +684,7 @@ libsoup
 libsoup3
 libsoxr
 libspectre
+libspeechd
 libssh
 libssh2
 libstaroffice
@@ -868,6 +883,7 @@ pass-otp
 patch
 patchelf
 pavucontrol
+pcaudiolib
 pciutils
 pcre
 pcre2
@@ -1025,6 +1041,7 @@ portaudio
 potrace
 powertop
 procps-ng
+profile-sync-daemon
 protobuf
 psmisc
 pugixml
@@ -1112,6 +1129,7 @@ python-ply
 python-progress
 python-prometheus_client
 python-prompt_toolkit
+python-psutil
 python-ptyprocess
 python-pure-eval
 python-pycparser
@@ -1216,6 +1234,7 @@ samba
 sane
 sbc
 sdl2
+seahorse
 sed
 semver
 serd
@@ -1240,6 +1259,7 @@ sord
 sound-theme-freedesktop
 source-highlight
 spdlog
+speech-dispatcher
 speex
 speexdsp
 sphinxbase

@@ -13,6 +13,12 @@ pacman -Qet | awk '{print $1}' > ~/Sync/System/Pacman/packages_least.txt
 rsync -av ~/.Xmodmap ~/Sync/System/Keyboard/.Xmodmap
 rsync -av /etc/X11/xorg.conf.d/00-keyboard.conf ~/Sync/System/Keyboard/00-keyboard.conf
 
+# fstab
+rsync -av /etc/fstab ~/Sync/System/Fstab/fstab
+
+# pacman conf
+rsync -av /etc/pacman.conf ~/Sync/System/Pacman/pacman.conf
+
 # zsh
 rsync -av ~/.zprofile ~/Sync/System/Zsh/
 rsync -av ~/.zshrc ~/Sync/System/Zsh/

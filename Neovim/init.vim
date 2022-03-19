@@ -21,6 +21,7 @@ set hidden
 set nostartofline
 set timeout ttimeoutlen=25
 set colorcolumn=100
+set scrolloff=10
 let mapleader = " "
 " set syntax=on
 
@@ -54,6 +55,11 @@ nnoremap <S-T> <<2h
 
 " gm -> add mark
 nnoremap gm m
+
+"--------------  Custom Commands -----------------
+
+cnoremap -complete=file -nargs=1 O execute 'silent! !xdg-open <args>'
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 "--------------  Moving Lines  -------------------
 
@@ -518,15 +524,15 @@ omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 
-"Remap <C-f> and <C-b> for scroll float windows/popups.
-" if has('nvim-0.4.0') || has('patch-8.2.0750')
-"   nnoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? coc#float#scroll(1) : \<Down>"
-"   nnoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? coc#float#scroll(0) : \<Up>"
-"   inoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? \<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-"   inoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? \<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-"   vnoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? coc#float#scroll(1) : \<Down>"
-"   vnoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? coc#float#scroll(0) : \<Up>"
-" endif
+" Remap <C-f> and <C-b> for scroll float windows/popups.
+if has('nvim-0.4.0') || has('patch-8.2.0750')
+  nnoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? coc#float#scroll(1) : "\<Down>"
+  nnoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? coc#float#scroll(0) : "\<Up>"
+  inoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  vnoremap <silent><nowait><expr> <Down> coc#float#has_scroll() ? coc#float#scroll(1) : "\<Down>"
+  vnoremap <silent><nowait><expr> <Up> coc#float#has_scroll() ? coc#float#scroll(0) : "\<Up>"
+endif
 
 "Use CTRL-S for selections ranges.
 "Requires 'textDocument/selectionRange' support of language server.
@@ -580,11 +586,6 @@ endfun
 
 "--------------  UltiSnips  ----------------------
 
-augroup ultisnipsgroup
-  autocmd!
-  autocmd BufRead,BufNewFile *.snippets setfiletype snippets
-augroup end
-
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger = "<s-tab>"
@@ -599,7 +600,7 @@ let g:gitgutter_signs = 0
 
 "--------------  Gutentags  ----------------------
 
-let g:gutentags_cache_dir = '/tmp/'
+let g:gutentags_cache_dir = '~/.cache/gutentags/'
 let g:gutentags_resolve_symlinks = 1
 
 "--------------  Formating  ----------------------
@@ -663,7 +664,7 @@ function CleanLabel()
   :execute "normal! guu"
 endfun
 
-let g:formatdef_latexindent = '"latexindent -"'
+let g:formatdef_latexindent = '"latexindent -c=/tmp -"'
 
 "--------------  C++  ----------------------------
 
@@ -684,8 +685,8 @@ autocmd FileType sh nnoremap <C-c> :!bash %<CR>
 
 augroup pythongroup
   autocmd!
-  autocmd FileType python nnoremap <CR> :AsyncRun make run ARGS="%"<CR>
-  autocmd FileType python nnoremap <F4> :AsyncRun make test <CR>
+  autocmd FileType python nnoremap <CR> :w <CR> <bar> :AsyncRun make run ARGS="%"<CR>
+  autocmd FileType python nnoremap <F4> :w <CR> <bar> :AsyncRun make test <CR>
   autocmd BufWritePre *.py :CocCommand python.sortImports
 augroup end
 

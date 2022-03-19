@@ -4,6 +4,7 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
+anything-sync-daemon
 autoconf
 automake
 balena-etcher
@@ -27,7 +28,7 @@ exa
 exodus
 ffmpegthumbnailer
 ffnvcodec-headers8.1
-firefox-sync
+firefox
 flameshot
 flashfocus-git
 flex
@@ -65,6 +66,7 @@ pdftk
 picom
 playerctl
 powertop
+profile-sync-daemon
 pulsemixer
 pyenv-virtualenv
 python-fangfrisch

@@ -40,6 +40,8 @@
   "python.linting.pylintEnabled": true,
   "python.analysis.typeCheckingMode": "basic",
   "pyright.organizeimports.provider": "isort",
+  "python.analysis.stubPath": "~/.cache/pyright-stubs/",
+  "python.venvPath": "~/.pyenv/versions/",
   "snippets.extends": {
     "latex": ["tex"]
   },
