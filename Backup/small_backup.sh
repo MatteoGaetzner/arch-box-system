@@ -36,6 +36,9 @@ rsync -av ~/.parallel/config ~/Sync/System/Parallel/config
 # Backup scripts
 rsync -av /bin/big_backup ~/Sync/System/Backup/big_backup.sh
 
+# Anything-sync-daemon
+rsync -av /etc/asd.conf ~/Sync/System/Asd/asd.conf
+
 # Neovim
 rsync -av \
   --exclude={after,autoload,spell,UltiSnips} \
