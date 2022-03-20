@@ -319,6 +319,7 @@ haskell-ipynb
 haskell-jira-wiki-markup
 haskell-juicypixels
 haskell-lexer
+haskell-libyaml
 haskell-lua
 haskell-memory
 haskell-mime-types
@@ -377,6 +378,7 @@ haskell-x509-validation
 haskell-xml
 haskell-xml-conduit
 haskell-xml-types
+haskell-yaml
 haskell-zip-archive
 haskell-zlib
 hdf5-openmpi
@@ -420,6 +422,7 @@ jaxx-liberty-appimage
 jbig2dec
 jdk-openjdk
 jemalloc
+jnettop
 john
 jq
 jre-openjdk

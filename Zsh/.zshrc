@@ -599,15 +599,6 @@ function cpp_cmake_debug {
 
 ###############  Last minute  ####################
 
-if [ ! -f /tmp/loggedin ]; then 
-    read -qsn "choice?Enter [Y/y] to update: "
-    case $choice in 
-      n) echo "No update performed." ;;
-      *) echo ""; update; 
-    esac
-    touch /tmp/loggedin
-fi
-
 # Zsh syntax highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

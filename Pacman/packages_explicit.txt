@@ -63,6 +63,7 @@ i3lock
 ipset
 iptables-nft
 jaxx-liberty-appimage
+jnettop
 john
 kitty
 libclc

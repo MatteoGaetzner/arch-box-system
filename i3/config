@@ -40,7 +40,7 @@ exec --no-startup-id $home/.local/bin/resume
 exec --no-startup-id sudo systemctl start smb.service nmb.service
 
 # Start asd
-exec --no-startup-id sudo systemctl start asd.service
+exec --no-startup-id sudo systemctl start asd.service asd-resync.service
 
 # Start firewall
 exec --no-startup-id sudo systemctl start firewalld.service
