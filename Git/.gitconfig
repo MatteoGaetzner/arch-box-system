@@ -1,18 +1,23 @@
 [user]
 	email = m.gaetzner@gmx.de
 	name = Matteo Gätzner
+
 [core]
 	excludesfile = /home/matteo/.gitignore
+
 [credential]
 	helper = cache --timeout=1200
 
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  interactive = auto
-  ui = true
-  pager = true
+	diff = always
+	status = always
+	branch = always
+	interactive = always
+	ui = always
+	pager = true
+	grep = always
+	decorate = always
+	showbranch = always
 
 [alias]
 	# commit-status: generate a commit with message from git-status (staged changes).
