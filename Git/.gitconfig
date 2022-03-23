@@ -9,15 +9,15 @@
 	helper = cache --timeout=1200
 
 [color]
-	diff = always
-	status = always
-	branch = always
-	interactive = always
-	ui = always
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
 	pager = true
-	grep = always
-	decorate = always
-	showbranch = always
+	grep = auto
+	decorate = auto
+	showbranch = auto
 
 [alias]
 	# commit-status: generate a commit with message from git-status (staged changes).
