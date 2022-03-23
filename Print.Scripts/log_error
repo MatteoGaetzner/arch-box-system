@@ -1,6 +1,8 @@
 #! /bin/bash
 
-RED=$(tput setaf 1)
-NORMAL=$(tput sgr0)
+if [ -z ${TERM+x} ]; then
+	RED=$(tput setaf 1)
+	NORMAL=$(tput sgr0)
+fi
 
 printf "${RED}[ ERROR ] ${NORMAL}${1}\n"

@@ -1,6 +1,8 @@
 #! /bin/bash
 
-NORMAL=$(tput sgr0)
-YELLOW=$(tput setaf 3)
+if [ -z ${TERM+x} ]; then
+	NORMAL=$(tput sgr0)
+	YELLOW=$(tput setaf 3)
+fi
 
 printf "${YELLOW}[ WARNING ] ${NORMAL}${1}\n"

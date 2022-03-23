@@ -16,7 +16,6 @@ UUID=7880eb4c-5b13-46fe-8909-b01a7a27fa4e	/opt      	btrfs     	rw,noatime,ssd,s
 
 # /dev/nvme0n1p3
 #UUID=7880eb4c-5b13-46fe-8909-b01a7a27fa4e	/tmp      	btrfs     	rw,noatime,ssd,space_cache=v2,subvolid=260,subvol=/@tmp	0 0
-tmpfs   /tmp         tmpfs   rw,nodev,nosuid,uid=matteo,gid=matteo,mode=1777    0  0
 
 # /dev/nvme0n1p3
 UUID=7880eb4c-5b13-46fe-8909-b01a7a27fa4e	/.snapshots	btrfs     	rw,noatime,ssd,space_cache=v2,subvolid=261,subvol=/@.snapshots	0 0
@@ -26,4 +25,9 @@ UUID=7880eb4c-5b13-46fe-8909-b01a7a27fa4e	/var      	btrfs     	rw,relatime,ssd,
 
 # /dev/nvme0n1p2
 UUID=71807e91-acfb-4367-b920-f9f08c6e9b53	none      	swap      	defaults  	0 0
+
+# RAM
+tmpfs   					/tmp         	tmpfs   	rw,nodev,nosuid,uid=matteo,gid=matteo,mode=1777    0  0
+
+tmpfs      					/dev/shm        tmpfs   	defaults,size=12G	0 0
 

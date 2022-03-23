@@ -143,6 +143,7 @@ exodus
 expat
 faad2
 fakeroot
+ffcall
 ffmpeg
 ffmpeg4.4
 ffmpegthumbnailer
@@ -284,6 +285,7 @@ haskell-data-default-instances-containers
 haskell-data-default-instances-dlist
 haskell-data-default-instances-old-locale
 haskell-data-fix
+haskell-diff
 haskell-digest
 haskell-distributive
 haskell-dlist
@@ -299,6 +301,7 @@ haskell-haddock-library
 haskell-hashable
 haskell-hourglass
 haskell-hslua
+haskell-hslua-aeson
 haskell-hslua-classes
 haskell-hslua-core
 haskell-hslua-marshalling
@@ -320,6 +323,7 @@ haskell-jira-wiki-markup
 haskell-juicypixels
 haskell-lexer
 haskell-libyaml
+haskell-lpeg
 haskell-lua
 haskell-memory
 haskell-mime-types
@@ -328,12 +332,15 @@ haskell-network
 haskell-network-uri
 haskell-old-locale
 haskell-old-time
+haskell-pandoc-lua-marshal
 haskell-pandoc-types
 haskell-pem
 haskell-pretty-show
 haskell-primitive
 haskell-quickcheck
 haskell-random
+haskell-regex-base
+haskell-regex-tdfa
 haskell-resourcet
 haskell-safe
 haskell-scientific
@@ -785,6 +792,7 @@ lpsolve
 lua
 lua52
 lua53
+lua53-lpeg
 luajit
 lv2
 lvm2
@@ -1245,6 +1253,7 @@ serf
 shaderc
 shadow
 shared-mime-info
+shellcheck
 shine
 signon-kwallet-extension
 signon-plugin-oauth2

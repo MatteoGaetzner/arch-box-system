@@ -1,3 +1,5 @@
+#! /bin/zsh
+
 ###############  Variables  ######################
 
 # Colors
@@ -18,6 +20,7 @@ REVERSE=$(tput smso)
 UNDERLINE=$(tput smul)
 
 CACHEDIR=~/.cache/
+ZSHUPDATEDFILE=/tmp/zsh.updated45a4586f367a83116277a3e81b87756b6ba1b6c9
 
 ###############  P10K  ###########################
 
@@ -327,6 +330,7 @@ function s {
   do
     pathpattern+="/*$substr*"
   done
+  echo $pathpattern
   pathres=$(find . -maxdepth $# -type d -ipath "$pathpattern" | head -n 1)
   if [[ $pathres != "" ]]; then
     cd "$pathres"
@@ -602,3 +606,18 @@ function cpp_cmake_debug {
 # Zsh syntax highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Ask for update after startup
+if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
+  BOOTTIME=$(who -b | sed 's/.*\(..:..\)$/\1/' | sed 's/://')
+  NOWTIME=$(date +%H%M)
+  let "PREVMIN = $NOWTIME - 1"
+  if ! [[ ($BOOTTIME = $NOWTIME) || ($BOOTTIME = $PREVMIN) ]]; then
+   read -qsn "?Wanna update? "; 
+   if [[ $REPLY =~ [Yy] ]]; then
+     sleep 1
+     update;
+   fi
+   touch $ZSHUPDATEDFILE
+  fi
+fi

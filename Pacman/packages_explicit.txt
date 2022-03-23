@@ -139,6 +139,7 @@ ruby
 rust-analyzer
 samba
 seahorse
+shellcheck
 slack-desktop
 speech-dispatcher
 spotify

@@ -1,6 +1,8 @@
 #! /bin/bash
 
-BLUE=$(tput setaf 4)
-NORMAL=$(tput sgr0)
+if [ -z ${TERM+x} ]; then
+	BLUE=$(tput setaf 4)
+	NORMAL=$(tput sgr0)
+fi
 
 printf "${BLUE}[ NOTIFICATION ] ${NORMAL}${1}\n"

@@ -1,1 +1,1 @@
-coc-clangd coc-cmake coc-html coc-json coc-julia coc-markdownlint coc-perl coc-pyright coc-rust-analyzer coc-snippets coc-texlab coc-tsserver coc-vetur coc-vimtex 
+coc-clangd coc-cmake coc-diagnostic coc-html coc-json coc-julia coc-markdownlint coc-perl coc-pyright coc-rust-analyzer coc-snippets coc-texlab coc-tsserver coc-vetur coc-vimtex 

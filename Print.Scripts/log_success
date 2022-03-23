@@ -1,6 +1,8 @@
 #! /bin/bash
 
-GREEN=$(tput setaf 2)
-NORMAL=$(tput sgr0)
+if [ -z ${TERM+x} ]; then
+	GREEN=$(tput setaf 2)
+	NORMAL=$(tput sgr0)
+fi
 
 printf "${GREEN}[ SUCCESS ] ${NORMAL}${1}\n"
