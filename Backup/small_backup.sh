@@ -53,6 +53,7 @@ rsync -av ~/.Xresources ~/Sync/System/X/.Xresources
 rsync -av ~/.config/i3blocks/config ~/Sync/System/i3blocks/config
 rsync -av ~/.config/i3blocks/gpu-load/gpu-load ~/Sync/System/i3blocks/gpu-load/gpu-load
 rsync -av ~/.config/i3blocks/arch-update/arch-update ~/Sync/System/i3blocks/arch-update/arch-update
+rsync -av ~/.config/i3blocks/disk/disk ~/Sync/System/i3blocks/disk/disk
 
 # i3
 rsync -av ~/.config/i3/ ~/Sync/System/i3/
