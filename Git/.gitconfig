@@ -6,6 +6,14 @@
 [credential]
 	helper = cache --timeout=1200
 
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+
 [alias]
 	# commit-status: generate a commit with message from git-status (staged changes).
 	# Source: https://gist.github.com/erikw/654386d35ecfdb0354cd2b71763f19ae
