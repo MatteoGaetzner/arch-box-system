@@ -1,5 +1,7 @@
 #! /bin/sh
 
+RSYNCOPTS="-navhP --stats --progress"
+
 DIRSIZE_LIMIT=25000
 
 log_notify "Backing up to GitHub ..."
@@ -10,105 +12,105 @@ pacman -Qe | awk '{print $1}' > ~/Sync/System/Pacman/packages_explicit.txt
 pacman -Qet | awk '{print $1}' > ~/Sync/System/Pacman/packages_least.txt
 
 # keyboard (http://anti.teamidiot.de/mrtweek/2006/10/deutsche_umlaute_auf_tastatur_mit_us-layout/)
-rsync -av ~/.Xmodmap ~/Sync/System/Keyboard/.Xmodmap
-rsync -av /etc/X11/xorg.conf.d/00-keyboard.conf ~/Sync/System/Keyboard/00-keyboard.conf
+rsync $RSYNCOPTS ~/.Xmodmap ~/Sync/System/Keyboard/.Xmodmap
+rsync $RSYNCOPTS /etc/X11/xorg.conf.d/00-keyboard.conf ~/Sync/System/Keyboard/00-keyboard.conf
 
 # fstab
-rsync -av /etc/fstab ~/Sync/System/Fstab/fstab
+rsync $RSYNCOPTS /etc/fstab ~/Sync/System/Fstab/fstab
 
 # pacman conf
-rsync -av /etc/pacman.conf ~/Sync/System/Pacman/pacman.conf
+rsync $RSYNCOPTS /etc/pacman.conf ~/Sync/System/Pacman/pacman.conf
 
 # zsh
-rsync -av ~/.zprofile ~/Sync/System/Zsh/
-rsync -av ~/.zshrc ~/Sync/System/Zsh/
+rsync $RSYNCOPTS ~/.zprofile ~/Sync/System/Zsh/
+rsync $RSYNCOPTS ~/.zshrc ~/Sync/System/Zsh/
 
 # parallel
-rsync -av ~/.parallel/config ~/Sync/System/Parallel/config
+rsync $RSYNCOPTS ~/.parallel/config ~/Sync/System/Parallel/config
 
 # ssh
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
-# rsync -av ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
+# rsync $RSYNCOPTS ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
 
 # Fangfrisch (for clamav)
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Fangfrisch/fangfrisch.conf.gpg --yes /etc/fangfrisch/fangfrisch.conf
 
 # Backup scripts
-rsync -av /bin/big_backup ~/Sync/System/Backup/big_backup.sh
+rsync $RSYNCOPTS /bin/big_backup ~/Sync/System/Backup/big_backup.sh
 
 # Anything-sync-daemon
-rsync -av /etc/asd.conf ~/Sync/System/Asd/asd.conf
+rsync $RSYNCOPTS /etc/asd.conf ~/Sync/System/Asd/asd.conf
 
 # Neovim
-rsync -av \
+rsync $RSYNCOPTS \
   --exclude={after,autoload,spell,UltiSnips} \
   ~/.config/nvim/ ~/Sync/System/Neovim/
 /bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
 
 # X
-rsync -av ~/.xinitrc ~/Sync/System/X/.xinitrc
-rsync -av ~/.Xresources ~/Sync/System/X/.Xresources
+rsync $RSYNCOPTS ~/.xinitrc ~/Sync/System/X/.xinitrc
+rsync $RSYNCOPTS ~/.Xresources ~/Sync/System/X/.Xresources
 
 # i3blocks
-rsync -av ~/.config/i3blocks/config ~/Sync/System/i3blocks/config
-rsync -av ~/.config/i3blocks/gpu-load/gpu-load ~/Sync/System/i3blocks/gpu-load/gpu-load
-rsync -av ~/.config/i3blocks/arch-update/arch-update ~/Sync/System/i3blocks/arch-update/arch-update
-rsync -av ~/.config/i3blocks/mymemory/mymemory ~/Sync/System/i3blocks/mymemory/mymemory
-rsync -av ~/.config/i3blocks/mydisk/mydisk ~/Sync/System/i3blocks/mydisk/mydisk
-rsync -av ~/.config/i3blocks/backup/backup ~/Sync/System/i3blocks/backup/backup
+rsync $RSYNCOPTS ~/.config/i3blocks/config ~/Sync/System/i3blocks/config
+rsync $RSYNCOPTS ~/.config/i3blocks/gpu-load/gpu-load ~/Sync/System/i3blocks/gpu-load/gpu-load
+rsync $RSYNCOPTS ~/.config/i3blocks/arch-update/arch-update ~/Sync/System/i3blocks/arch-update/arch-update
+rsync $RSYNCOPTS ~/.config/i3blocks/mymemory/mymemory ~/Sync/System/i3blocks/mymemory/mymemory
+rsync $RSYNCOPTS ~/.config/i3blocks/mydisk/mydisk ~/Sync/System/i3blocks/mydisk/mydisk
+rsync $RSYNCOPTS ~/.config/i3blocks/backup/backup ~/Sync/System/i3blocks/backup/backup
 
 # i3
-rsync -av ~/.config/i3/ ~/Sync/System/i3/
+rsync $RSYNCOPTS ~/.config/i3/ ~/Sync/System/i3/
 
 # vifm
-rsync -av ~/.config/vifm/vifmrc ~/Sync/System/vifm/vifmrc
-rsync -av ~/.config/vifm/scripts/ ~/Sync/System/vifm/scripts/
+rsync $RSYNCOPTS ~/.config/vifm/vifmrc ~/Sync/System/vifm/vifmrc
+rsync $RSYNCOPTS ~/.config/vifm/scripts/ ~/Sync/System/vifm/scripts/
 
 # kitty
-rsync -av ~/.config/kitty/ ~/Sync/System/kitty/
+rsync $RSYNCOPTS ~/.config/kitty/ ~/Sync/System/kitty/
 
 # samba
-rsync -av /etc/samba/smb.conf ~/Sync/System/Samba/smb.conf
+rsync $RSYNCOPTS /etc/samba/smb.conf ~/Sync/System/Samba/smb.conf
 
 # services (don't forget to chmod a+x resume and enable the services)
-rsync -av /etc/systemd/system/big_backup.service ~/Sync/System/Services/big_backup.service
-rsync -av /etc/systemd/system/big_backup.timer ~/Sync/System/Services/big_backup.timer
-rsync -av /etc/systemd/system/btrfs_defrag.service ~/Sync/System/Services/btrfs_defrag.service
-rsync -av /etc/systemd/system/btrfs_defrag.timer ~/Sync/System/Services/btrfs_defrag.timer
-rsync -av /etc/systemd/system/resume@.service ~/Sync/System/Services/resume@.service
-rsync -av /usr/lib/systemd/system/reflector.timer ~/Sync/System/Services/reflector.timer
-rsync -av ~/.local/bin/resume ~/Sync/System/Services/resume
+rsync $RSYNCOPTS /etc/systemd/system/big_backup.service ~/Sync/System/Services/big_backup.service
+rsync $RSYNCOPTS /etc/systemd/system/big_backup.timer ~/Sync/System/Services/big_backup.timer
+rsync $RSYNCOPTS /etc/systemd/system/btrfs_defrag.service ~/Sync/System/Services/btrfs_defrag.service
+rsync $RSYNCOPTS /etc/systemd/system/btrfs_defrag.timer ~/Sync/System/Services/btrfs_defrag.timer
+rsync $RSYNCOPTS /etc/systemd/system/resume@.service ~/Sync/System/Services/resume@.service
+rsync $RSYNCOPTS /usr/lib/systemd/system/reflector.timer ~/Sync/System/Services/reflector.timer
+rsync $RSYNCOPTS ~/.local/bin/resume ~/Sync/System/Services/resume
 
 # print scripts
-rsync -av /bin/log_notify ~/Sync/System/Print.Scripts/log_notify
-rsync -av /bin/log_warn ~/Sync/System/Print.Scripts/log_warn
-rsync -av /bin/log_error ~/Sync/System/Print.Scripts/log_error
-rsync -av /bin/log_success ~/Sync/System/Print.Scripts/log_success
+rsync $RSYNCOPTS /bin/log_notify ~/Sync/System/Print.Scripts/log_notify
+rsync $RSYNCOPTS /bin/log_warn ~/Sync/System/Print.Scripts/log_warn
+rsync $RSYNCOPTS /bin/log_error ~/Sync/System/Print.Scripts/log_error
+rsync $RSYNCOPTS /bin/log_success ~/Sync/System/Print.Scripts/log_success
 
 # i3 layout
-rsync -av ~/.i3 ~/Sync/System/i3
+rsync $RSYNCOPTS ~/.i3 ~/Sync/System/i3
 
 # git
-rsync -av ~/.gitignore ~/Sync/System/Git/.gitignore
-rsync -av ~/.gitconfig ~/Sync/System/Git/.gitconfig
+rsync $RSYNCOPTS ~/.gitignore ~/Sync/System/Git/.gitignore
+rsync $RSYNCOPTS ~/.gitconfig ~/Sync/System/Git/.gitconfig
 
 # login message
-rsync -av /etc/issue ~/Sync/System/Login/issue
+rsync $RSYNCOPTS /etc/issue ~/Sync/System/Login/issue
 
 # ipython profile (setup: ipython profile create default, then replace in ~/.ipython...)
-rsync -av ~/.ipython/profile_default/ipython_config.py ~/Sync/System/ipython/ipython_config.py
+rsync $RSYNCOPTS ~/.ipython/profile_default/ipython_config.py ~/Sync/System/ipython/ipython_config.py
 
 # pylintrc
-rsync -av ~/.pylintrc ~/Sync/System/Python/.pylintrc
+rsync $RSYNCOPTS ~/.pylintrc ~/Sync/System/Python/.pylintrc
 
 # flashfocus, picom
-rsync -av ~/.config/picom/picom.conf ~/Sync/System/Picom/picom.conf
+rsync $RSYNCOPTS ~/.config/picom/picom.conf ~/Sync/System/Picom/picom.conf
 
 # cpupower frequency scaling
-rsync -av /etc/default/cpupower ~/Sync/System/cpupower/cpupower
+rsync $RSYNCOPTS /etc/default/cpupower ~/Sync/System/cpupower/cpupower
 
 # make
-rsync -av /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
+rsync $RSYNCOPTS /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
 
 
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
