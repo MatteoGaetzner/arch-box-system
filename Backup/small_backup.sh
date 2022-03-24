@@ -1,6 +1,6 @@
 #! /bin/sh
 
-RSYNCOPTS="-navhP --stats --progress"
+RSYNCOPTS="-av"
 
 DIRSIZE_LIMIT=25000
 

@@ -1,0 +1,129 @@
+command=~/.config/i3blocks/${BLOCK_NAME}/${BLOCK_NAME}
+separator_block_width=40
+markup=pango
+
+
+# [aur-update]
+# markup=pango
+# format=json
+# BASE_COLOR=#ffffff
+# UPDATE_COLOR=#FFFF85
+# QUIET=1
+# IGNORE=root vidyodesktop
+# CACHE_UPDATES=1
+# interval=once
+# signal=10
+
+
+[arch-update]
+markup=pango
+interval=once
+WATCH=^linux.* ^pacman.*
+BASE_COLOR=#ffffff
+UPDATE_COLOR=#FFFF85
+signal=11
+
+
+[iface]
+markup=pango
+label=IP  
+interval=once
+display_wifi_name=0
+signal=12
+
+
+[bandwidth2]
+interval=persist
+markup=pango
+WARN_RX=20971520
+CRIT_RX=52428800
+
+
+[backup]
+markup=pango
+interval=1
+
+
+[mydisk]
+markup=pango
+interval=1
+
+
+[mymemory]
+markup=pango
+label=RAM  
+interval=1
+
+
+[gpu-load]
+markup=pango
+label=GPU  
+interval=1
+GPU_BRAND=NVIDIA
+min_width=GPU 100%
+short_text=true
+T_WARN=70
+T_CRIT=90
+
+
+[cpu_usage2]
+markup=pango
+interval=persist
+LABEL=CPU 
+WARN_PERCENT=70
+CRIT_PERCENT=90
+separator_block_width=20
+separator=false
+DECIMALS=0
+
+
+[temperature]
+markup=pango
+interval=1
+T_WARN=70
+T_CRIT=90
+
+
+[volume]
+markup=pango
+label=♪  
+interval=1
+signal=10
+STEP=5%
+
+
+[time]
+markup=pango
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
+
+
+
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+# Change $SCRIPT_DIR to the location of your scripts!
+
