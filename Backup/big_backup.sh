@@ -56,6 +56,9 @@ else
 	log_notify "External drive has enough available space ($SPACEONDISK bytes) to store approximately $TRANSFERREDBYTES additional bytes."
 fi
 
+# Save space on disk to 
+df /dev/sda1 | tail -1 > "$SRC/.config/i3blocks/backup/backup.space.info"
+
 # sync
 log_notify "Starting to syncing data with rsync"
 rsync $OPTS $SRC $SNAP/latest >> $SNAP/rsync.log

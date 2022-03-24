@@ -256,7 +256,7 @@ local gps = require("nvim-gps")
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'auto',
+    theme = 'everforest',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {},
@@ -589,6 +589,10 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfun
+
+"--------------  Coc-Explorer  -------------------
+
+nnoremap <space>e <Cmd>CocCommand explorer<CR>
 
 "--------------  UltiSnips  ----------------------
 
