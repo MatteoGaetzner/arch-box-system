@@ -16,6 +16,7 @@
 
 DISK=/dev/nvme0n1p3
 LOGFILE="$HOME/.config/i3blocks/backup/backup.space.info"
+MOUNTPOINT="/mnt/backup"
 
 if ! [[ -f $LOGFILE ]]; then
   exit 0
@@ -36,6 +37,6 @@ then
 elif [[ $USE_PERCENT -gt 80 ]]
 then
   printf "#D9BB80\n"
-else
-  printf ""
+elif grep -qs "$MOUNTPOINT " /proc/mounts ; then
+  printf "#83b6af\n"
 fi
