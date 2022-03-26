@@ -63,12 +63,12 @@ cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 "--------------  Moving Lines  -------------------
 
-nnoremap <C-l> :move .+1<CR>==
-nnoremap <C-h> :move .-2<CR>==
-inoremap <C-l> <Esc>:move .+1<CR>==gi
-inoremap <C-h> <Esc>:move .-2<CR>==gi
-vnoremap <C-l> :move '>+1<CR>gv=gv
-vnoremap <C-h> :move '<-2<CR>gv=gv
+nnoremap <C-J> :move .+1<CR>==
+nnoremap <C-K> :move .-2<CR>==
+inoremap <C-J> <Esc>:move .+1<CR>==gi
+inoremap <C-K> <Esc>:move .-2<CR>==gi
+vnoremap <C-J> :move '>+1<CR>gv=gv
+vnoremap <C-K> :move '<-2<CR>gv=gv
 
 "--------------  Vimrc Editing  ------------------
 
@@ -294,25 +294,31 @@ endfor
 
 "--------------  Nerdtree  -----------------------
 
-" Open Nerdtree shortcuts
-nmap <C-f> :NERDTreeToggle<CR>
-nnoremap <silent> <Leader>v :NERDTreeFind<CR>
-set modifiable
+" " Open Nerdtree shortcuts
+" nmap <C-f> :NERDTreeToggle<CR>
+" nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+" set modifiable
 
-" Beauty
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
+" " Beauty
+" let NERDTreeMinimalUI = 1
+" let NERDTreeDirArrows = 1
 
-" Convenience
-let NERDTreeQuitOnOpen = 1
-let NERDTreeAutoDeleteBuffer = 1
+" " Convenience
+" let NERDTreeQuitOnOpen = 1
+" let NERDTreeAutoDeleteBuffer = 1
 
-" Exit Vim if NERDTree is the only window left.
-augroup nerdtreegroup
-  autocmd!
-  autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-        \ quit | endif
-augroup end
+" " Exit Vim if NERDTree is the only window left.
+" augroup nerdtreegroup
+"   autocmd!
+"   autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+"         \ quit | endif
+" augroup end
+
+"--------------  Github-Copilot  -----------------
+
+imap <silent><script><expr> <C-L> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
+
 
 "--------------  Treesitter  ---------------------
 
@@ -639,7 +645,7 @@ augroup formatgroup
   autocmd!
   autocmd FileType h,c,cpp let b:useClangFormat=1
   autocmd FileType html,javascript,vue,css let b:usePrettier=1
-  autocmd FileType tex,python let b:autoformat=1
+  autocmd FileType tex let b:autoformat=1
   autocmd BufWritePre * call Format()
 augroup end
 

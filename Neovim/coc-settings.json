@@ -33,19 +33,26 @@
       "filetypes": ["tex", "plaintex", "context"]
     }
   },
+  "texlab.formatterLineLength": 80,
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": ["python"],
+  "pyright.enable": true,
   "python.formatting.provider": "yapf",
+  "python.formatting.autopep8Path": "/home/matteo/.pyenv/versions/ml/bin/autopep8",
+  "python.formatting.yapfPath": "/home/matteo/.pyenv/versions/ml/bin/yapf",
+  "python.formatting.blackPath": "/home/matteo/.pyenv/versions/ml/bin/black",
   "python.linting.enabled": true,
   "python.linting.mypyEnabled": true,
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": true,
   "python.analysis.typeCheckingMode": "basic",
-  "pyright.organizeimports.provider": "isort",
-  "python.analysis.stubPath": "~/.cache/pyright-stubs/",
-  "python.venvPath": "~/.pyenv/versions/",
+  "pyright.organizeimports.provider": "pyright",
+  "python.analysis.stubPath": "/home/matteo/.cache/pyright-stubs/",
+  "python.venvPath": "${env:HOME}/.pyenv/versions",
   "snippets.extends": {
     "latex": ["tex"]
   },
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
+  "clangd.path": "/home/matteo/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
   "coc.source.vimtex.filetypes": [
     "tex",
     "plaintex",

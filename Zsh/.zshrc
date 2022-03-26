@@ -160,8 +160,8 @@ alias blued="bluetoothctl disconnect"
 
 function bluer {
   sudo systemctl restart bluetooth
-  sleep 0.3
   blue $(history | grep '  blue [29CE]' | tail -1 | sed 's/.*  blue //')
+  configure_keyboard
 }
 
 function airc {
@@ -462,26 +462,27 @@ function mgmt_onboarding {
 
 ###############  VPN  ############################
 
+
 alias updatei3bip="pkill -SIGRTMIN+12 i3blocks"
+alias delayed_updatei3bip="( ( sleep 3 && updatei3bip ) & )"
+
 
 # Connect to the VPN of Technische Universität Berlin
 # alias vpnt='openconnect https://vpn.tu-berlin.de/ -b'
 function vpnt {
-  log_notify "Connecting to the VPN of Technische Universität Berlin ..."
   vpnnd >/dev/null
   sudo openconnect https://vpn.tu-berlin.de/ -q -b -u matteo
-  updatei3bip
+  delayed_updatei3bip
 }
 
 # Disconnect from the VPN of Technische Universität Berlin
 function vpntd {
   sudo pkill openconnect
-  updatei3bip
+  delayed_updatei3bip
 }
 
 # Connect to the VPN of NordVPN
 function vpnn {
-  log_notify "Connecting to NordVPN ..."
   if [[ $(pidof openconnect >/dev/null && echo $?) == 0 ]]; then
     vpntd >/dev/null
   fi
@@ -492,13 +493,13 @@ function vpnn {
     nordvpn login
   fi
   nordvpn connect $@
-  updatei3bip
+  delayed_updatei3bip
 }
 
 # Disconnect from NordVPN
 function vpnnd {
   nordvpn disconnect
-  updatei3bip
+  delayed_updatei3bip
 }
 
 ###############  Raspberry  ######################
@@ -612,7 +613,7 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
   BOOTTIME=$(who -b | sed 's/.*\(..:..\)$/\1/' | sed 's/://')
   NOWTIME=$(date +%H%M)
   let "PREVMIN = $NOWTIME - 1"
-  if ! [[ ($BOOTTIME = $NOWTIME) || ($BOOTTIME = $PREVMIN) ]]; then
+  if ! [[ ($BOOTTIME = $NOWTIME) && ($BOOTTIME = $PREVMIN) ]]; then
    read -qsn "?Wanna update? "; 
    if [[ $REPLY =~ [Yy] ]]; then
      sleep 1
