@@ -6,7 +6,7 @@ After=suspend.target
 User=%I
 Type=simple
 ExecStartPre=/usr/bin/sleep 20
-ExecStart=/home/%I/.local/bin/resume
+ExecStart=/home/%I/.local/bin/configure_keyboard
 
 [Install]
 WantedBy=suspend.target

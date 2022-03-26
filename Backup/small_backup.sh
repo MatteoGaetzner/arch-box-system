@@ -79,7 +79,7 @@ rsync $RSYNCOPTS /etc/systemd/system/btrfs_defrag.service ~/Sync/System/Services
 rsync $RSYNCOPTS /etc/systemd/system/btrfs_defrag.timer ~/Sync/System/Services/btrfs_defrag.timer
 rsync $RSYNCOPTS /etc/systemd/system/resume@.service ~/Sync/System/Services/resume@.service
 rsync $RSYNCOPTS /usr/lib/systemd/system/reflector.timer ~/Sync/System/Services/reflector.timer
-rsync $RSYNCOPTS ~/.local/bin/resume ~/Sync/System/Services/resume
+rsync $RSYNCOPTS ~/.local/bin/configure_keyboard ~/Sync/System/Services/configure_keyboard
 
 # print scripts
 rsync $RSYNCOPTS /bin/log_notify ~/Sync/System/Print.Scripts/log_notify
