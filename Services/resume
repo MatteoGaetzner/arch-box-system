@@ -1,5 +1,0 @@
-#!/bin/bash
-
-export DISPLAY=:0
-xset r rate 220 30 >> $HOME/.log 2>> $HOME/.log
-xmodmap $HOME/.Xmodmap  >> $HOME/.log 2>> $HOME/.log
