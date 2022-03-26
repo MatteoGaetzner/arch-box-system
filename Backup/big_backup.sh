@@ -46,7 +46,7 @@ fi
 
 # Check whether there is enough space on the disk
 rsync --dry-run --stats $OPTS $SRC $SNAP/latest > $TMPLOGFILE
-TRANSFERREDBYTES=$(grep "Total transferred file size: " /tmp/rsynclogfile123456.log | sed 's/,//g' | sed 's/.*: \([0-9]*\).*$/\1/')
+TRANSFERREDBYTES=$(grep "Total transferred file size: " $TMPLOGFILE | sed 's/,//g' | sed 's/.*: \([0-9]*\).*$/\1/')
 BLOCKSONDISK=$(df /dev/$SDANAME | tail -1 | awk '{print $4}')
 let "SPACEONDISK = $BLOCKSONDISK * 1000" 
 if [[ $SPACEONDISK -lt $TRANSFERREDBYTES ]]; then

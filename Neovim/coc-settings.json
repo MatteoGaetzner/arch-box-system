@@ -37,7 +37,7 @@
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": ["python"],
   "pyright.enable": true,
-  "python.formatting.provider": "yapf",
+  "python.formatting.provider": "autopep8",
   "python.formatting.autopep8Path": "/home/matteo/.pyenv/versions/ml/bin/autopep8",
   "python.formatting.yapfPath": "/home/matteo/.pyenv/versions/ml/bin/yapf",
   "python.formatting.blackPath": "/home/matteo/.pyenv/versions/ml/bin/black",
@@ -46,7 +46,6 @@
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pylintEnabled": true,
   "python.analysis.typeCheckingMode": "basic",
-  "pyright.organizeimports.provider": "pyright",
   "python.analysis.stubPath": "/home/matteo/.cache/pyright-stubs/",
   "python.venvPath": "${env:HOME}/.pyenv/versions",
   "snippets.extends": {
