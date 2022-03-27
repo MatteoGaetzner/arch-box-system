@@ -388,6 +388,8 @@ function u {
       case $subdir in
         s )
           cl "$WORK_DIR/$COURSE_CLEAN/Solutions/" ;;
+        . )
+          cl "$WORK_DIR/$COURSE_CLEAN/" ;;
         v )
           cl "$ISISDL_DIR/$COURSE/Videos/" ;;
         *)

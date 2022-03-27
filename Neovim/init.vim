@@ -609,6 +609,7 @@ let g:ulti_expand_or_jump_res = 0
 let g:UltiSnipsJumpForwardTrigger="<nop>"
 let g:UltiSnipsJumpBackwardTrigger="<nop>"
 
+nnoremap <space>u <Cmd>UltiSnipsEdit<CR>
 
 "--------------  Git-Gutter  ---------------------
 
@@ -671,7 +672,7 @@ augroup latexgroup
   autocmd!
   autocmd FileType tex nnoremap <CR> :AsyncRun rm out/*; latexmk -pdf -output-directory=out %<CR>
   autocmd FileType tex nnoremap <F9> :call CleanLabel()<CR>
-  autocmd FileType tex set nowrap
+  " autocmd FileType tex set nowrap
 augroup end
 
 function CleanLabel()

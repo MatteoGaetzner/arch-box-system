@@ -15,18 +15,6 @@ _UUID=12f39b90-3fd5-4811-a2db-21d51e9ab864
 SDANAME=$(lsblk --output NAME,UUID | grep '12f39b90-3fd5-4811-a2db-21d51e9ab864' | awk '{ print $1 }' | sed 's/.*\(sda.*\)/\1/')
 MINCHANGES=100
 
-# check whether this is run with sudo privileges
-#if [ `id -u` -ne 0 ]; then
-#  log_error "Missing sudo privileges to perform backup."
-#  exit 1
-#fi
-
-# check whether external disk is connected
-#if [ ! -L "/dev/disk/by-uuid/${_UUID}" ]; then
-#  log_error "External drive with UUID: '${_UUID}' is not connected."
-#  exit 1
-#fi
-
 # mount drive
 if ! grep -qs '/mnt/backup $SNAP' /proc/mounts; then
   sudo mount UUID=$_UUID /mnt/backup
@@ -46,14 +34,20 @@ fi
 
 # Check whether there is enough space on the disk
 rsync --dry-run --stats $OPTS $SRC $SNAP/latest > $TMPLOGFILE
-TRANSFERREDBYTES=$(grep "Total transferred file size: " $TMPLOGFILE | sed 's/,//g' | sed 's/.*: \([0-9]*\).*$/\1/')
+TRANSFERRED_BYTES=$(grep "Total transferred file size: " $TMPLOGFILE | sed 's/,//g' | sed 's/.*: \([0-9]*\).*$/\1/')
 BLOCKSONDISK=$(df /dev/$SDANAME | tail -1 | awk '{print $4}')
-let "SPACEONDISK = $BLOCKSONDISK * 1000" 
-if [[ $SPACEONDISK -lt $TRANSFERREDBYTES ]]; then
-  log_warn "External drive doesn't have enough available space ($SPACEONDISK bytes) to store $TRANSFERREDBYTES additional bytes. Exiting!"
+
+let "SPACEONDISK_BYTES = $BLOCKSONDISK * 1000" 
+
+# Get human readable space
+TRANSFERRED_F=$(numfmt --to iec --format "%.1f" $TRANSFERRED_BYTES)
+SPACEONDISK_F=$(df -h /dev/$SDANAME | tail -1 | awk '{print $4}')
+
+if [[ $SPACEONDISK_BYTES -lt $TRANSFERRED_BYTES ]]; then
+  log_warn "External drive doesn't have enough available space, $SPACEONDISK_F, to store $TRANSFERRED_F. Exiting!"
   exit 0
 else
-	log_notify "External drive has enough available space ($SPACEONDISK bytes) to store approximately $TRANSFERREDBYTES additional bytes."
+  log_notify "External drive still enough available space, $SPACEONDISK_F, to store approximately $TRANSFERRED_F."
 fi
 
 # Save space on disk to 
