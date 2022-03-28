@@ -7,17 +7,47 @@ log_notify "Execution of backup script started"
 
 # config vars
 SRC="/home/matteo/" #dont forget trailing slash!
+MOUNTPOINT="/mnt/backup/"
 SNAP="/mnt/backup/matteo"
-TMPLOGFILE="/tmp/rsynctmplog9713849571234978234879.log"
+TMPLOGFILE="/tmp/rsynctmplog9713849571234978234879test.log"
 MAXN_SNAPS=70
 OPTS="-rltgoi --delay-updates --delete --chmod=a-w"
 _UUID=12f39b90-3fd5-4811-a2db-21d51e9ab864
 SDANAME=$(lsblk --output NAME,UUID | grep '12f39b90-3fd5-4811-a2db-21d51e9ab864' | awk '{ print $1 }' | sed 's/.*\(sda.*\)/\1/')
 MINCHANGES=100
 
+function bytesToHuman {
+  echo "$(numfmt --to iec --format "%.1f" $1)"
+}
+
+function getBytesOnDisk {
+  BLOCKSONDISK=$(df /dev/$SDANAME | tail -1 | awk '{print $4}')
+  local SPACEONDISK_BYTES=$(($BLOCKSONDISK * 1000))
+  echo "$SPACEONDISK_BYTES"
+}
+
+function removeOldest {
+  oldest=$(/bin/ls -d --sort=time -r $SNAP/*/ | head -1)
+  log_notify "Deleting oldest snapshot: $oldest"
+  rm -rf $oldest
+}
+
+function makeSpace {
+  local TRANSFER_SIZE=$1
+  local SIZE=$(getBytesOnDisk)
+  log_notify "Removing enough backups to save $TRANSFER_SIZE additional bytes."
+  if [[ $1 -gt 0 ]]; then
+    while [[ $SIZE -gt $TRANSFER_SIZE ]]; do
+      removeOldest
+      SIZE=$(getBytesOnDisk)
+      log_notify "There are $(bytesToHuman "$SIZE") left on the the device."
+    done
+  fi
+}
+
 # mount drive
-if ! grep -qs '/mnt/backup $SNAP' /proc/mounts; then
-  sudo mount UUID=$_UUID /mnt/backup
+if ! grep -qs "$MOUNTPOINT " /proc/mounts; then   
+  sudo mount UUID=$_UUID "$MOUNTPOINT"
 fi
 
 # run this process with real low priority
@@ -35,17 +65,18 @@ fi
 # Check whether there is enough space on the disk
 rsync --dry-run --stats $OPTS $SRC $SNAP/latest > $TMPLOGFILE
 TRANSFERRED_BYTES=$(grep "Total transferred file size: " $TMPLOGFILE | sed 's/,//g' | sed 's/.*: \([0-9]*\).*$/\1/')
-BLOCKSONDISK=$(df /dev/$SDANAME | tail -1 | awk '{print $4}')
+#BLOCKSONDISK=$(df /dev/$SDANAME | tail -1 | awk '{print $4}')
 
-let "SPACEONDISK_BYTES = $BLOCKSONDISK * 1000" 
+#let "SPACEONDISK_BYTES = $BLOCKSONDISK * 1000" 
+SPACEONDISK_BYTES=$(getBytesOnDisk)
 
 # Get human readable space
 TRANSFERRED_F=$(numfmt --to iec --format "%.1f" $TRANSFERRED_BYTES)
 SPACEONDISK_F=$(df -h /dev/$SDANAME | tail -1 | awk '{print $4}')
 
 if [[ $SPACEONDISK_BYTES -lt $TRANSFERRED_BYTES ]]; then
-  log_warn "External drive doesn't have enough available space, $SPACEONDISK_F, to store $TRANSFERRED_F. Exiting!"
-  exit 0
+  log_warn "External drive doesn't have enough available space, $SPACEONDISK_F, to store $TRANSFERRED_F."
+  makeSpace "$TRANSFERRED_BYTES"
 else
   log_notify "External drive still enough available space, $SPACEONDISK_F, to store approximately $TRANSFERRED_F."
 fi
@@ -73,4 +104,4 @@ fi
 
 # cleanup
 log_notify "Unmounting drive"
-sudo umount /mnt/backup
+sudo umount $MOUNTPOINT
