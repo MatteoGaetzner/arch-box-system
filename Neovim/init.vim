@@ -664,6 +664,7 @@ let g:livepreview_use_biber = 1
 " Quick compilation
 augroup latexgroup
   autocmd!
+  autocmd FileType tex nnoremap <C-l> :LLPStartPreview<CR>
   autocmd FileType tex nnoremap <CR> :AsyncRun rm out/*; latexmk -pdf -output-directory=out %<CR>
   autocmd FileType tex nnoremap <F9> :call CleanLabel()<CR>
   " autocmd FileType tex set nowrap
@@ -690,7 +691,11 @@ augroup end
 
 "--------------  Bash  ---------------------------
 
-autocmd FileType sh nnoremap <C-c> :!bash %<CR>
+augroup bashgroup
+  autocmd!
+  autocmd FileType sh nnoremap <CR> :!bash %<CR>
+augroup end
+
 
 "--------------  Python  -------------------------
 

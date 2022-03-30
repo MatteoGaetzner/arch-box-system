@@ -316,6 +316,8 @@ alias mutt="neomutt "
 alias mutte="nvim $HOME/.config/mutt/muttrc"
 
 alias vt="nvim *.tex"
+alias vtp="nvim *.tex -c ':LLPStartPreview'"
+
 alias vp="nvim *.py"
 
 alias gu="git add -u; git commit -m \"$@\"; git push"

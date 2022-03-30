@@ -24,6 +24,11 @@ UPDATE_COLOR=#FFFF85
 signal=11
 
 
+[mail]
+markup=pango
+interval=10
+
+
 [iface]
 markup=pango
 label=IP  

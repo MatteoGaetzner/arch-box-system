@@ -63,6 +63,7 @@ rsync $RSYNCOPTS ~/.config/i3blocks/arch-update/arch-update ~/Sync/System/i3bloc
 rsync $RSYNCOPTS ~/.config/i3blocks/mymemory/mymemory ~/Sync/System/i3blocks/mymemory/mymemory
 rsync $RSYNCOPTS ~/.config/i3blocks/mydisk/mydisk ~/Sync/System/i3blocks/mydisk/mydisk
 rsync $RSYNCOPTS ~/.config/i3blocks/backup/backup ~/Sync/System/i3blocks/backup/backup
+rsync $RSYNCOPTS ~/.config/i3blocks/mail/mail ~/Sync/System/i3blocks/mail/mail
 
 # i3
 rsync $RSYNCOPTS ~/.config/i3/ ~/Sync/System/i3/
