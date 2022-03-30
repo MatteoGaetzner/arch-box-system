@@ -1,0 +1,18 @@
+#!/bin/bash 
+
+NNEWMAILS_GMX=$(find /home/matteo/.local/share/mail/m.gaetzner@gmx.de/INBOX/new -type f | wc -l)
+NNEWMAILS_UNI=$(find /home/matteo/.local/share/mail/gaetzner@tu-berlin.de/INBOX/new -type f | wc -l)
+NNEWMAILS_TEL=$(find /home/matteo/.local/share/mail/matteo.gaetzner@techlabs.org/INBOX/new -type f | wc -l)
+NNEWMAILS_GGL=$(find /home/matteo/.local/share/mail/blaalblab@gmail.com/INBOX/new -type f | wc -l)
+
+let "NNEWMAILS = NNEWMAILS_GMX + NNEWMAILS_GGL + NNEWMAILS_UNI + NNEWMAILS_TEL"
+
+printf "GMX %2s  UNI %2s  GGL %2s  TEL %2s\n" $NNEWMAILS_GMX $NNEWMAILS_UNI $NNEWMAILS_TEL $NNEWMAILS_GGL
+printf "NEW MAILS: %2s\n" $NNEWMAILS
+if [[ $NNEWMAILS -gt 15 ]]
+then
+  printf "#E68183\n"
+elif [[ $USE_PERCENT -gt 10 ]]
+then
+  printf "#D9BB80\n"
+fi
