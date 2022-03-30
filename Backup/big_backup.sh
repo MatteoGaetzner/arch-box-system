@@ -36,13 +36,26 @@ function makeSpace {
   local TRANSFER_SIZE=$1
   local SIZE=$(getBytesOnDisk)
   log_notify "Removing enough backups to save $TRANSFER_SIZE additional bytes."
-  if [[ $1 -gt 0 ]]; then
-    while [[ $SIZE -gt $TRANSFER_SIZE ]]; do
-      removeOldest
-      SIZE=$(getBytesOnDisk)
-      log_notify "There are $(bytesToHuman "$SIZE") left on the the device."
-    done
+
+  # Sanity check whether correct input (greater than zero) was given
+  if ! [[ $1 -gt 0 ]]; then
+	  log_error "Sanity check failed: Called makeSpace() with a transfer size of $1 bytes!"
+	  exit 1
   fi
+
+  while [[ $SIZE -gt $TRANSFER_SIZE ]]; do
+
+    # Sanity check: Leave at least 4 snapshots
+    local NSNAPS=$(( $(/bin/ls -l $SNAP | grep -c ^d) - 1 ))
+    if [[ $NSNAPS -lt 5 ]]; then
+      log_error "Sanity check failed: Only $NSNAPS left!"
+      exit 1
+    fi
+
+    removeOldest
+    SIZE=$(getBytesOnDisk)
+    log_notify "There are $(bytesToHuman "$SIZE") left on the the device."
+  done
 }
 
 # mount drive
@@ -85,7 +98,7 @@ fi
 df /dev/sda1 | tail -1 > "$SRC/.config/i3blocks/backup/backup.space.info"
 
 # sync
-log_notify "Starting to syncing data with rsync"
+log_notify "Starting to transfer data with rsync"
 rsync $OPTS $SRC $SNAP/latest >> $SNAP/rsync.log
 
 # check if enough has changed and if so

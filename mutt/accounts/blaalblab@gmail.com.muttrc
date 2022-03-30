@@ -1,0 +1,39 @@
+# vim: filetype=neomuttrc
+# muttrc file for account blaalblab@gmail.com
+set realname = "Matteo Gätzner"
+set from = "blaalblab@gmail.com"
+set sendmail = "msmtp -a blaalblab@gmail.com"
+alias me Matteo Gätzner <blaalblab@gmail.com>
+set folder = "/home/matteo/.local/share/mail/blaalblab@gmail.com"
+set header_cache = /home/matteo/.cache/mutt-wizard/blaalblab@gmail.com/headers
+set message_cachedir = /home/matteo/.cache/mutt-wizard/blaalblab@gmail.com/bodies
+set mbox_type = Maildir
+set hostname = "gmail.com"
+source /usr/share/mutt-wizard/switch.muttrc
+set spoolfile = +INBOX
+set postponed = +Drafts
+set trash = +Trash
+set record = +Sent
+
+###############  Fast Folder Switching  ##########
+
+bind index,pager g  noop
+bind index,pager gs  noop
+bind index,pager ga  noop
+bind index,pager gd  noop
+bind index,pager gt  noop
+bind index,pager gj  noop
+
+macro index,pager gs "<change-folder>=Sent Mail<enter>" "go to archive"
+macro index,pager ga "<change-folder>=Archive<enter>" "go to archive"
+macro index,pager gd "<change-folder>=Drafts<enter>" "go to drafts"
+macro index,pager gt "<change-folder>=Trash<enter>" "go to trash"
+macro index,pager gj "<change-folder>=Junk<enter>" "go to junk"
+
+###############  Mutt-Wizard Things  #############
+
+macro index o "<shell-escape>mw -y blaalblab@gmail.com<enter>" "run mbsync to sync blaalblab@gmail.com"
+macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a blaalblab@gmail.com<enter>"  "publish GPG key to WKS provider"
+macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a blaalblab@gmail.com<enter>" "confirm GPG publication"
+
+mailboxes "=INBOX" "=Notes" "=[Gmail]/All Mail" "=[Gmail]/Bin" "=[Gmail]/Drafts" "=[Gmail]/Important" "=[Gmail]/Sent Mail" "=[Gmail]/Spam" "=[Gmail]/Starred"

@@ -1,0 +1,43 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+        "height": 2121,
+        "width": 3836,
+        "x": 0,
+        "y": 0
+    },
+    "marks": [],
+    "name": "i3-save-tree --workspace=9 > .config/i3/layouts/bsprak_right.json",
+    "percent": 0.5,
+    "swallows": [
+        {
+            "class": "^kitty$"
+        }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+        "height": 2121,
+        "width": 3836,
+        "x": 0,
+        "y": 0
+    },
+    "marks": [],
+    "name": "i3: Layout saving in i3 — Mozilla Firefox",
+    "percent": 0.5,
+    "swallows": [
+        {
+            "class": "^firefox$"
+        }
+    ],
+    "type": "con"
+}
+

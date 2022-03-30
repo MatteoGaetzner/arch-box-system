@@ -1,4 +1,5 @@
 a52dec
+abook
 abseil-cpp
 accounts-qml-module
 acl
@@ -134,6 +135,7 @@ electron
 electron12
 elfutils
 enchant
+eog
 espeak-ng
 evince
 exa
@@ -196,6 +198,7 @@ glibc
 glibmm
 glslang
 glu
+gmime3
 gmp
 gnome-autoar
 gnome-desktop
@@ -218,6 +221,7 @@ groff
 grpc
 grub
 grub-btrfs
+gsasl
 gsettings-desktop-schemas
 gsfonts
 gsm
@@ -420,6 +424,7 @@ iptables-nft
 iputils
 ipython
 iso-codes
+isync
 jack2
 jansson
 jasper
@@ -496,6 +501,7 @@ kwallet
 kwidgetsaddons
 kwindowsystem
 kxmlgui
+kyotocabinet
 l-smash
 ladspa
 lame
@@ -620,6 +626,7 @@ liblouis
 liblqr
 libluv
 libmad
+libmanette
 libmatroska
 libmd
 libmediainfo
@@ -648,6 +655,7 @@ libnghttp2
 libnl
 libnm
 libnma
+libnma-common
 libnotify
 libnsl
 libnumbertext
@@ -662,6 +670,7 @@ libpagemaker
 libpaper
 libpcap
 libpciaccess
+libpeas
 libpgm
 libpipeline
 libplacebo
@@ -676,6 +685,7 @@ libpwquality
 libqxp
 librabbitmq-c
 libraqm
+libraw
 libraw1394
 libreoffice-fresh
 librevenge
@@ -733,6 +743,7 @@ libwacom
 libwebp
 libwnck3
 libwpd
+libwpe
 libwpg
 libwps
 libx11
@@ -790,13 +801,16 @@ lmdb
 lowdown
 lpsolve
 lua
+lua51-filesystem
 lua52
 lua53
 lua53-lpeg
 luajit
+luakit
 lv2
 lvm2
 lvtk
+lynx
 lz4
 lzo
 m4
@@ -820,13 +834,16 @@ mobile-broadband-provider-info
 mpfr
 mpg123
 msgpack-c
+msmtp
 mtdev
+mutt-wizard-git
 nasm
 nautilus
 ncdu
 ncurses
 ndctl
 neofetch
+neomutt
 neon
 neovim-nightly-bin
 net-snmp
@@ -844,7 +861,11 @@ node-gyp
 nodejs-lts-erbium
 nodejs-nativefier
 nodejs-nopt
+nomacs
 nordvpn-bin
+notmuch
+notmuch-mutt
+notmuch-runtime
 npm
 npth
 nspr
@@ -858,6 +879,7 @@ nvtop
 oath-toolkit
 obs-studio
 ocl-icd
+offlineimap
 okular
 onednn
 oniguruma
@@ -933,6 +955,8 @@ perl-datetime-locale
 perl-datetime-timezone
 perl-devel-globaldestruction
 perl-devel-stacktrace
+perl-digest-hmac
+perl-digest-sha1
 perl-dist-checkconflicts
 perl-encode-locale
 perl-error
@@ -947,6 +971,7 @@ perl-file-find-rule
 perl-file-homedir
 perl-file-listing
 perl-file-mimeinfo
+perl-file-remove
 perl-file-sharedir
 perl-file-sharedir-install
 perl-file-slurp-tiny
@@ -963,6 +988,7 @@ perl-inc-latest
 perl-io-html
 perl-io-socket-ssl
 perl-io-string
+perl-io-stringy
 perl-ipc-run3
 perl-ipc-system-simple
 perl-json-xs
@@ -978,9 +1004,12 @@ perl-log-dispatch
 perl-log-log4perl
 perl-lwp-mediatypes
 perl-lwp-protocol-https
+perl-mail-box
+perl-mail-message
 perl-mailtools
 perl-math-round
 perl-mime-charset
+perl-mime-types
 perl-module-build
 perl-module-implementation
 perl-module-runtime
@@ -991,6 +1020,7 @@ perl-namespace-clean
 perl-net-http
 perl-net-ssleay
 perl-number-compare
+perl-object-realize-later
 perl-package-deprecationmanager
 perl-package-stash
 perl-package-stash-xs
@@ -1005,11 +1035,13 @@ perl-regexp-common
 perl-role-tiny
 perl-sort-key
 perl-specio
+perl-string-shellquote
 perl-sub-exporter
 perl-sub-exporter-progressive
 perl-sub-identify
 perl-sub-install
 perl-sub-name
+perl-term-readline-gnu
 perl-test-fatal
 perl-test-needs
 perl-text-bibtex
@@ -1022,6 +1054,7 @@ perl-try-tiny
 perl-types-serialiser
 perl-unicode-linebreak
 perl-uri
+perl-user-identity
 perl-variable-magic
 perl-www-robotrules
 perl-xml-libxml
@@ -1104,6 +1137,7 @@ python-greenlet
 python-html5lib
 python-i3ipc
 python-idna
+python-imaplib2
 python-importlib-metadata
 python-ipykernel
 python-ipywidgets
@@ -1156,6 +1190,7 @@ python-requests
 python-requests-unixsocket
 python-resolvelib
 python-retrying
+python-rfc6555
 python-send2trash
 python-setuptools
 python-shtab
@@ -1213,6 +1248,7 @@ qt6-translations
 qt6-wayland
 qtkeychain-qt5
 qtws-base
+quazip-qt5
 qwinff
 r
 raptor
@@ -1353,6 +1389,7 @@ tslib
 ttf-fira-code
 ttf-fira-mono
 ttf-fira-sans
+ttf-joypixels
 ttf-liberation
 ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols
@@ -1365,6 +1402,7 @@ ueberzug
 unibilium
 unzip
 upower
+urlview
 usbmuxd
 usbutils
 util-linux
@@ -1376,7 +1414,6 @@ vi
 vid.stab
 vifm
 vim-runtime
-vimiv
 vlc
 vmaf
 vo-amrwbenc
@@ -1389,13 +1426,17 @@ vulkan-headers
 vulkan-icd-loader
 wayland
 wayland-protocols
+webkit2gtk
 webrtc-audio-processing
 wget
 whatsapp-nativefier
 which
+woff2
 wpa_supplicant
+wpebackend-fdo
 x264
 x265
+xapian-core
 xapp
 xavs
 xavs2
@@ -1409,6 +1450,7 @@ xcb-util-wm
 xcb-util-xrm
 xclip
 xcompmgr
+xdg-dbus-proxy
 xdg-user-dirs
 xdg-utils
 xf86-input-libinput

@@ -62,14 +62,13 @@ exec --no-startup-id flashfocus
 exec --no-startup-id nitrogen --restore
 
 # Workspace 1
-exec --no-startup-id "i3-msg 'workspace 1; append_layout $home/.i3/workspace-1-startup.json'"
+exec --no-startup-id "i3-msg 'workspace 1; append_layout $home/.config/i3/layouts/workspace-1-startup.i3config'"
 exec --no-startup-id "i3-msg 'workspace 1; exec firefox -url https://tasksboard.com/app https://isis.tu-berlin.de/my/'"
 
 # Workspace 2
-exec --no-startup-id "i3-msg 'workspace 2; append_layout $home/.i3/workspace-2-startup.json'"
+exec --no-startup-id "i3-msg 'workspace 2; append_layout $home/.config/i3/layouts/workspace-2-startup.i3config'"
 exec --no-startup-id "i3-msg 'workspace 2; exec whatsapp-nativefier'"
 exec --no-startup-id "i3-msg 'workspace 2; exec telegram-desktop'"
-exec --no-startup-id "i3-msg 'workspace 2; exec thunderbird'"
 exec --no-startup-id "i3-msg 'workspace 2; exec spotify'"
 exec --no-startup-id "i3-msg 'workspace 2; exec kitty'"
 

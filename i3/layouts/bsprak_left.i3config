@@ -1,0 +1,101 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "marks": [],
+    "percent": null,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+                "height": 2063,
+                "width": 1916,
+                "x": 0,
+                "y": 0
+            },
+            "marks": [],
+            "name": "Mozilla Firefox",
+            "percent": 0.333333333333333,
+            "swallows": [
+                {
+                    "class": "^firefox$"
+                }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+                "height": 2121,
+                "width": 1276,
+                "x": 0,
+                "y": 0
+            },
+            "marks": [],
+            "name": "v user",
+            "percent": 0.333333333333333,
+            "swallows": [
+                {
+                    "class": "^kitty$"
+                }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "marks": [],
+            "percent": 0.333333333333333,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                        "height": 2121,
+                        "width": 1916,
+                        "x": 0,
+                        "y": 0
+                    },
+                    "marks": [],
+                    "name": "matteo@arch-box:~",
+                    "percent": 0.5,
+                    "swallows": [
+                        {
+                            "class": "^kitty$"
+                        }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                        "height": 2121,
+                        "width": 1916,
+                        "x": 0,
+                        "y": 0
+                    },
+                    "marks": [],
+                    "name": "matteo@arch-box:~",
+                    "percent": 0.5,
+                    "swallows": [
+                        {
+                            "class": "^kitty$"
+                        }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+

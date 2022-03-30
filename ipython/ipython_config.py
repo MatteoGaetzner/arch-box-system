@@ -4,7 +4,7 @@ c = get_config()
 c.TerminalIPythonApp.display_banner = True
 c.InteractiveShellApp.log_level = 20
 c.InteractiveShellApp.exec_lines = [
-    "from numpy import *",
+    "import numpy",
     "import torch",
     "import math",
 ]

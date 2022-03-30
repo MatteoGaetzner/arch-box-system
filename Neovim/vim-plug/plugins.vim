@@ -40,5 +40,7 @@ Plug 'vim-autoformat/vim-autoformat'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'jiangmiao/auto-pairs'
+Plug 'godlygeek/tabular'
+Plug 'adborden/vim-notmuch-address'
 
 call plug#end()

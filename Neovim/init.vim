@@ -314,12 +314,6 @@ endfor
 "         \ quit | endif
 " augroup end
 
-"--------------  Github-Copilot  -----------------
-
-imap <silent><script><expr> <C-L> copilot#Accept("\<CR>")
-let g:copilot_no_tab_map = v:true
-
-
 "--------------  Treesitter  ---------------------
 
 lua << END
@@ -726,6 +720,14 @@ let $NVIM_MKDP_LOG_LEVEL = 'debug'
 augroup i3configgroup
   autocmd!
   autocmd BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
+augroup end
+
+"--------------  Mutt  ---------------------------
+
+augroup muttgroup
+  autocmd!
+  autocmd BufReadPost *.mutt set filetype=muttrc
+  autocmd BufRead,BufNewFile *mutt-* setfiletype mail
 augroup end
 
 "--------------  Betriebssystem Praktikum  -------

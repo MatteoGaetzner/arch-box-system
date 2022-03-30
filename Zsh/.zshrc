@@ -21,6 +21,7 @@ UNDERLINE=$(tput smul)
 
 CACHEDIR=~/.cache/
 ZSHUPDATEDFILE=/tmp/zsh.updated45a4586f367a83116277a3e81b87756b6ba1b6c9
+XDG_CONFIG_HOME=$HOME/.config/
 
 ###############  P10K  ###########################
 
@@ -311,6 +312,9 @@ alias xinite="sudo nvim $HOME/.xinitrc"
 
 alias backupe="nvim $HOME/Sync/System/Backup/small_backup.sh"
 
+alias mutt="neomutt "
+alias mutte="nvim $HOME/.config/mutt/muttrc"
+
 alias vt="nvim *.tex"
 alias vp="nvim *.py"
 
@@ -524,6 +528,9 @@ export EDITOR=nvim
 
 # Make gpg work, check `man gpg-agent`
 export GPG_TTY=$TTY
+
+# Eliminate delay on cancelling mutt operations with <ESC>
+export ESCDELAY=0
 
 ###############  R  ##############################
 

@@ -28,6 +28,8 @@ rsync $RSYNCOPTS ~/.zshrc ~/Sync/System/Zsh/
 # parallel
 rsync $RSYNCOPTS ~/.parallel/config ~/Sync/System/Parallel/config
 
+# mutt
+rsync $RSYNCOPTS ~/.config/mutt/ ~/Sync/System/mutt/
 # ssh
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
 # rsync $RSYNCOPTS ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
