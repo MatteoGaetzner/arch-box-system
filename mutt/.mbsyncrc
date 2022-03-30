@@ -1,0 +1,104 @@
+
+IMAPStore blaalblab@gmail.com-remote
+Host imap.gmail.com
+Port 993
+User blaalblab@gmail.com
+PassCmd "pass blaalblab@gmail.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore blaalblab@gmail.com-local
+Subfolders Verbatim
+Path /home/matteo/.local/share/mail/blaalblab@gmail.com/
+Inbox /home/matteo/.local/share/mail/blaalblab@gmail.com/INBOX
+
+Channel blaalblab@gmail.com
+Expunge Both
+Far :blaalblab@gmail.com-remote:
+Near :blaalblab@gmail.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore gaetzner@tu-berlin.de-remote
+Host mail.tu-berlin.de
+Port 993
+User matteo@tu-berlin.de
+PassCmd "pass gaetzner@tu-berlin.de"
+AuthMechs LOGIN
+SSLType IMAPS
+PipelineDepth 1
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore gaetzner@tu-berlin.de-local
+Subfolders Verbatim
+Path /home/matteo/.local/share/mail/gaetzner@tu-berlin.de/
+Inbox /home/matteo/.local/share/mail/gaetzner@tu-berlin.de/INBOX
+
+Channel matteo@tu-berlin.de
+Expunge Both
+Far :gaetzner@tu-berlin.de-remote:
+Near :gaetzner@tu-berlin.de-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore m.gaetzner@gmx.de-remote
+Host imap.gmx.net
+Port 993
+User m.gaetzner@gmx.de
+PassCmd "pass m.gaetzner@gmx.de"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore m.gaetzner@gmx.de-local
+Subfolders Verbatim
+Path /home/matteo/.local/share/mail/m.gaetzner@gmx.de/
+Inbox /home/matteo/.local/share/mail/m.gaetzner@gmx.de/INBOX
+
+Channel m.gaetzner@gmx.de
+Expunge Both
+Far :m.gaetzner@gmx.de-remote:
+Near :m.gaetzner@gmx.de-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore matteo.gaetzner@techlabs.org-remote
+Host imap.gmail.com
+Port 993
+User matteo.gaetzner@techlabs.org
+PassCmd "pass matteo.gaetzner@techlabs.org"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore matteo.gaetzner@techlabs.org-local
+Subfolders Verbatim
+Path /home/matteo/.local/share/mail/matteo.gaetzner@techlabs.org/
+Inbox /home/matteo/.local/share/mail/matteo.gaetzner@techlabs.org/INBOX
+
+Channel matteo.gaetzner@techlabs.org
+Expunge Both
+Far :matteo.gaetzner@techlabs.org-remote:
+Near :matteo.gaetzner@techlabs.org-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+

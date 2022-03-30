@@ -1,0 +1,48 @@
+account blaalblab@gmail.com
+host smtp.gmail.com
+port 587
+from blaalblab@gmail.com
+user blaalblab@gmail.com
+passwordeval "pass blaalblab@gmail.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/matteo/.config/msmtp/msmtp.log
+# tls_starttls
+
+account gaetzner@tu-berlin.de
+host mail.tu-berlin.de
+port 587
+from gaetzner@tu-berlin.de
+user matteo@tu-berlin.de
+passwordeval "pass gaetzner@tu-berlin.de"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/matteo/.config/msmtp/msmtp.log
+# tls_starttls
+
+account m.gaetzner@gmx.de
+host mail.gmx.net
+port 587
+from m.gaetzner@gmx.de
+user m.gaetzner@gmx.de
+passwordeval "pass m.gaetzner@gmx.de"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/matteo/.config/msmtp/msmtp.log
+# tls_starttls
+
+account matteo.gaetzner@techlabs.org
+host smtp.gmail.com
+port 465
+from matteo.gaetzner@techlabs.org
+user matteo.gaetzner@techlabs.org
+passwordeval "pass matteo.gaetzner@techlabs.org"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/matteo/.config/msmtp/msmtp.log
+tls_starttls off
+
