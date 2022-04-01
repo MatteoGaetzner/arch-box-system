@@ -47,6 +47,7 @@ luakit
 lvtk
 masterpdfeditor
 mediainfo
+mkvtoolnix-gui
 mutt-wizard-git
 nautilus
 ncdu

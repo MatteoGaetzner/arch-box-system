@@ -1,5 +1,5 @@
 
-IMAPStore blaalblab@gmail.com-remote
+IMAPStore blaalblab@gmail.com
 Host imap.gmail.com
 Port 993
 User blaalblab@gmail.com
@@ -15,7 +15,7 @@ Inbox /home/matteo/.local/share/mail/blaalblab@gmail.com/INBOX
 
 Channel blaalblab@gmail.com
 Expunge Both
-Far :blaalblab@gmail.com-remote:
+Far :blaalblab@gmail.com:
 Near :blaalblab@gmail.com-local:
 Patterns * !"[Gmail]/All Mail"
 Create Both
@@ -24,7 +24,7 @@ MaxMessages 0
 ExpireUnread no
 # End profile
 
-IMAPStore gaetzner@tu-berlin.de-remote
+IMAPStore gaetzner@tu-berlin.de
 Host mail.tu-berlin.de
 Port 993
 User matteo@tu-berlin.de
@@ -41,7 +41,7 @@ Inbox /home/matteo/.local/share/mail/gaetzner@tu-berlin.de/INBOX
 
 Channel matteo@tu-berlin.de
 Expunge Both
-Far :gaetzner@tu-berlin.de-remote:
+Far :gaetzner@tu-berlin.de:
 Near :gaetzner@tu-berlin.de-local:
 Patterns * !"[Gmail]/All Mail"
 Create Both
@@ -51,7 +51,7 @@ ExpireUnread no
 # End profile
 
 
-IMAPStore m.gaetzner@gmx.de-remote
+IMAPStore m.gaetzner@gmx.de
 Host imap.gmx.net
 Port 993
 User m.gaetzner@gmx.de
@@ -67,7 +67,7 @@ Inbox /home/matteo/.local/share/mail/m.gaetzner@gmx.de/INBOX
 
 Channel m.gaetzner@gmx.de
 Expunge Both
-Far :m.gaetzner@gmx.de-remote:
+Far :m.gaetzner@gmx.de:
 Near :m.gaetzner@gmx.de-local:
 Patterns * !"[Gmail]/All Mail"
 Create Both
@@ -77,7 +77,7 @@ ExpireUnread no
 # End profile
 
 
-IMAPStore matteo.gaetzner@techlabs.org-remote
+IMAPStore matteo.gaetzner@techlabs.org
 Host imap.gmail.com
 Port 993
 User matteo.gaetzner@techlabs.org
@@ -93,7 +93,7 @@ Inbox /home/matteo/.local/share/mail/matteo.gaetzner@techlabs.org/INBOX
 
 Channel matteo.gaetzner@techlabs.org
 Expunge Both
-Far :matteo.gaetzner@techlabs.org-remote:
+Far :matteo.gaetzner@techlabs.org:
 Near :matteo.gaetzner@techlabs.org-local:
 Patterns * !"[Gmail]/All Mail"
 Create Both

@@ -534,6 +534,13 @@ export GPG_TTY=$TTY
 # Eliminate delay on cancelling mutt operations with <ESC>
 export ESCDELAY=0
 
+# To make much mailsync work
+export MBSYNCRC=$HOME/.mbsyncrc
+export PASSWORD_STORE_DIR=$HOME/.password-store
+export NOTMUCH_CONFIG=$HOME/.notmuch-config
+export GNUPGHOME=$HOME/.gnupg/
+
+
 ###############  R  ##############################
 
 R_LIBS=$HOME/.local/share/R/lib/

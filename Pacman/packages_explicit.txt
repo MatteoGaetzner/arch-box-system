@@ -83,6 +83,8 @@ m4
 make
 masterpdfeditor
 mediainfo
+mkvtoolnix-cli
+mkvtoolnix-gui
 msmtp
 mutt-wizard-git
 nautilus
