@@ -24,6 +24,7 @@ rsync $RSYNCOPTS /etc/pacman.conf ~/Sync/System/Pacman/pacman.conf
 # zsh
 rsync $RSYNCOPTS ~/.zprofile ~/Sync/System/Zsh/
 rsync $RSYNCOPTS ~/.zshrc ~/Sync/System/Zsh/
+rsync $RSYNCOPTS ~/.config/zsh/completion_settings.zsh ~/Sync/System/Zsh/completion_settings.zsh
 
 # parallel
 rsync $RSYNCOPTS ~/.parallel/config ~/Sync/System/Parallel/config

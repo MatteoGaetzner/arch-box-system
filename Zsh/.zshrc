@@ -23,6 +23,14 @@ CACHEDIR=~/.cache/
 ZSHUPDATEDFILE=/tmp/zsh.updated45a4586f367a83116277a3e81b87756b6ba1b6c9
 XDG_CONFIG_HOME=$HOME/.config/
 
+##############  Zsh Options  #####################
+
+setopt HIST_IGNORE_SPACE
+source ~/.config/zsh/completion_settings.zsh
+
+# Don't ask for confirmation before `rm path/*`
+setopt rm_starsilent
+
 ###############  P10K  ###########################
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -217,9 +225,6 @@ preexec() { echo -ne '\e[6 q' ;} # Use beam shape cursor for each new prompt.
 
 ###############  SPEED  ##########################
 
-# Don't ask for confirmation before `rm path/*`
-setopt rm_starsilent
-
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 autoload -U history-search-end
@@ -231,6 +236,12 @@ bindkey "^[[B" history-beginning-search-forward-end
 # Execute current suggestion with ctrl+j, accept with ctrl-l
 bindkey "^l" autosuggest-accept
 bindkey "^j" autosuggest-execute
+
+execute-clear-screen () { echo; clear; zle redisplay }
+zle -N execute-clear-screen
+bindkey '^h' execute-clear-screen
+
+bindkey -s "^x" 'ls\n'
 
 # Use aliases with sudo 
 alias sudo='sudo '
@@ -515,7 +526,7 @@ function vpnnd {
 BERRYIP="192.168.0.242"
 
 function berryd {
-    rdesktop -g 1920x1080 -5 -K -r clipboard:CLIPBOARD -u matteo $BERRYIP -p $(pass raspberry_pi/matteo)
+  rdesktop -g 1920x1080 -5 -K -r clipboard:CLIPBOARD -u matteo $BERRYIP -p $(pass raspberry_pi/matteo)
 }
 
 function berrys {
@@ -540,6 +551,20 @@ export PASSWORD_STORE_DIR=$HOME/.password-store
 export NOTMUCH_CONFIG=$HOME/.notmuch-config
 export GNUPGHOME=$HOME/.gnupg/
 
+###############  Mutt  ###########################
+
+function start_mailsync_daemon {
+  MAILSYNC_PYTHONBIN=~/.pyenv/versions/mailsync-daemon-env-3.10.3/bin/python3
+  MAILSYNC_DAEMONBIN=~/Sync/Programs/Self/isync/mailsync-daemon/mailsync-daemon.py
+
+  # First kill all running instances, 
+  if [[ $(pgrep -f mailsync-daemon) ]]; then 
+    parallel kill ::: $(pgrep -f mailsync-daemon)
+  fi
+
+  # then start the new daemon
+  $MAILSYNC_PYTHONBIN $MAILSYNC_DAEMONBIN --quiet
+}
 
 ###############  R  ##############################
 
@@ -632,11 +657,26 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
   NOWTIME=$(date +%H%M)
   let "PREVMIN = $NOWTIME - 1"
   if ! [[ ($BOOTTIME = $NOWTIME) && ($BOOTTIME = $PREVMIN) ]]; then
+   read -qsn "?Wanna copy gpg password in buffer? "
+   if [[ $REPLY =~ [Yy] ]]; then
+     pass -c master-password
+   fi
+   echo "\n"
+   sleep 1
+
+   read -qsn "?Wanna start mailsync-daemon "
+   if [[ $REPLY =~ [Yy] ]]; then
+     start_mailsync_daemon
+   fi
+   sleep 1
+   echo "\n"
+
    read -qsn "?Wanna update? "; 
    if [[ $REPLY =~ [Yy] ]]; then
      sleep 1
      update;
    fi
+
    touch $ZSHUPDATEDFILE
   fi
 fi

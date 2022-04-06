@@ -212,8 +212,6 @@ xcompmgr
 xdg-user-dirs
 xdg-utils
 xf86-video-vesa
-xmrig-cuda
-xmrig-donateless
 xorg-bdftopcf
 xorg-docs
 xorg-font-util

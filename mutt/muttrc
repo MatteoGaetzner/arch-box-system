@@ -3,7 +3,6 @@
 ###############  Key Bindings  ###################
 
 
-
 set abort_key = "<ESC>"
 
 # Security setting (See 'Security concern' here: https://wiki.archlinux.org/title/mutt)

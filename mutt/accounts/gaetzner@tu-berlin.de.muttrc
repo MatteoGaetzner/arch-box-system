@@ -23,6 +23,7 @@ bind index,pager ga  noop
 bind index,pager gd  noop
 bind index,pager gt  noop
 bind index,pager gj  noop
+bind index gg first-entry
 
 macro index,pager gs "<change-folder>=Sent<enter>"       "open sent folder"
 macro index,pager ga "<change-folder>=Archive<enter>"       "open archive folder"

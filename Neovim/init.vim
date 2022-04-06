@@ -37,7 +37,7 @@ endif
 
 
 set foldmethod=syntax
-set foldlevelstart=1
+set foldlevelstart=2
 
 let sh_fold_enabled=1         " sh
 let vimsyn_folding='af'       " Vim script
@@ -592,7 +592,58 @@ endfun
 
 "--------------  Coc-Explorer  -------------------
 
-nnoremap <space>e <Cmd>CocCommand explorer<CR>
+let g:coc_explorer_global_presets = {
+\   '.vim': {
+\     'root-uri': '~/.vim',
+\   },
+\   'cocConfig': {
+\      'root-uri': '~/.config/coc',
+\   },
+\   'tab': {
+\     'position': 'tab',
+\     'quit-on-open': v:true,
+\   },
+\   'tab:$': {
+\     'position': 'tab:$',
+\     'quit-on-open': v:true,
+\   },
+\   'floating': {
+\     'position': 'floating',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingTop': {
+\     'position': 'floating',
+\     'floating-position': 'center-top',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingLeftside': {
+\     'position': 'floating',
+\     'floating-position': 'left-center',
+\     'floating-width': 50,
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingRightside': {
+\     'position': 'floating',
+\     'floating-position': 'right-center',
+\     'floating-width': 50,
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'simplify': {
+\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\   },
+\   'buffer': {
+\     'sources': [{'name': 'buffer', 'expand': v:true}]
+\   },
+\ }
+
+" Use preset argument to open it
+nmap <space>ed <Cmd>CocCommand explorer --preset .vim<CR>
+nmap <space>ef <Cmd>CocCommand explorer --preset floating<CR>
+nmap <space>ec <Cmd>CocCommand explorer --preset cocConfig<CR>
+nmap <space>eb <Cmd>CocCommand explorer --preset buffer<CR>
+nmap <space>ee  <Cmd>CocCommand explorer --preset buffer<CR>
+nmap <C-e>      <Cmd>CocCommand explorer<CR>
+
 
 "--------------  UltiSnips  ----------------------
 
@@ -689,6 +740,18 @@ augroup cppgroup
   autocmd FileType cpp nnoremap <CR> :!cmake -S src -B release ; make --directory=release ; ./release/main images/lena.jpg $@
 augroup end
 
+"--------------  C  ------------------------------
+
+" Make *.h files C header files by default
+let g:c_syntax_for_h = 1
+
+augroup cppgroup
+  autocmd!
+  " Quick compile && run
+  autocmd FileType cpp nnoremap <C-c> :!gcc -std=c11 % -Wall -g -o %.out && ./%.out<CR>
+  autocmd FileType cpp nnoremap <C-s> :!make && gdb -tui ./bin/%.out<CR>
+augroup end
+
 "--------------  Bash  ---------------------------
 
 augroup bashgroup
@@ -733,15 +796,4 @@ augroup muttgroup
   autocmd!
   autocmd BufReadPost *.mutt set filetype=muttrc
   autocmd BufRead,BufNewFile *mutt-* setfiletype mail
-augroup end
-
-"--------------  Betriebssystem Praktikum  -------
-
-augroup bsprak
-  autocmd!
-  autocmd FileType c,h set shiftwidth=4
-  autocmd FileType c,h set tabstop=4
-  autocmd FileType c,h set nowrap
-  autocmd FileType c,h,make nnoremap <F3> :AsyncRun make qemu <CR>
-  autocmd FileType c,h,make nnoremap <F4> :AsyncRun make debug <CR>
 augroup end

@@ -134,6 +134,7 @@ egl-wayland
 eglexternalplatform
 electron
 electron12
+electron17
 elfutils
 enchant
 eog
@@ -444,7 +445,6 @@ js78
 json-c
 json-glib
 jsoncpp
-jupyter
 jupyter-nbclassic
 jupyter-nbclient
 jupyter-nbconvert
@@ -1100,6 +1100,7 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulsemixer
 purpose
+pv
 pybind11
 pyenv
 pyenv-virtualenv
@@ -1138,6 +1139,7 @@ python-docopt
 python-entrypoints
 python-executing
 python-fangfrisch
+python-fastjsonschema
 python-gobject
 python-greenlet
 python-html5lib
@@ -1464,8 +1466,6 @@ xf86-video-vesa
 xfsprogs
 xkeyboard-config
 xmlsec
-xmrig-cuda
-xmrig-donateless
 xorg-bdftopcf
 xorg-docs
 xorg-font-util

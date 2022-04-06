@@ -12,5 +12,6 @@
 *.synctex.gz
 *.toc
 *tags
+compile_commands.json
 .python-version
 __pycache__

@@ -30,7 +30,7 @@ Plug 'p00f/nvim-ts-rainbow'
 Plug 'romgrk/nvim-treesitter-context'
 Plug 'sainnhe/everforest'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
-Plug 'scrooloose/NERDTree'
+" Plug 'scrooloose/NERDTree'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'tpope/vim-commentary'

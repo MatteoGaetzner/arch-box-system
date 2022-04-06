@@ -128,7 +128,6 @@ whatsapp-nativefier
 xcompmgr
 xdg-user-dirs
 xf86-video-vesa
-xmrig-cuda
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
