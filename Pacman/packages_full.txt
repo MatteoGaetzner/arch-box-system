@@ -204,6 +204,7 @@ gmime3
 gmp
 gnome-autoar
 gnome-desktop
+gnome-desktop-common
 gnome-keyring
 gnome-settings-daemon
 gnome-themes-extra
@@ -454,6 +455,7 @@ jupyter-notebook-shim
 jupyter-server
 jupyter-widgetsnbextension
 jupyter_console
+jupyterlab
 jupyterlab_pygments
 kaccounts-integration
 kactivities
@@ -595,6 +597,7 @@ libgsf
 libgssglue
 libgudev
 libgweather
+libgweather-4
 libgxps
 libhandy
 libheif

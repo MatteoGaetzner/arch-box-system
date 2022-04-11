@@ -1,40 +1,41 @@
 # vim: filetype=neomuttrc
 # muttrc file for account m.gaetzner@gmx.de
-set realname = "Matteo Gätzner"
-set from = "m.gaetzner@gmx.de"
-set sendmail = "msmtp -a m.gaetzner@gmx.de"
+set realname         = "Matteo Gätzner"
+set from             = "m.gaetzner@gmx.de"
+set sendmail         = "msmtp -a m.gaetzner@gmx.de"
+set folder           = "/home/matteo/.local/share/mail/m.gaetzner@gmx.de"
+set header_cache     = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/headers"
+set message_cachedir = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/bodies"
+set mbox_type        = Maildir
+set hostname         = "gmx.de"
+set spoolfile        = +INBOX
+set postponed        = +Drafts
+set trash            = +Trash
+set record           = +Sent
+
 alias me Matteo Gätzner <m.gaetzner@gmx.de>
-set folder = "/home/matteo/.local/share/mail/m.gaetzner@gmx.de"
-set header_cache = /home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/headers
-set message_cachedir = /home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/bodies
-set mbox_type = Maildir
-set hostname = "gmx.de"
 source /usr/share/mutt-wizard/switch.muttrc
-set spoolfile = +INBOX
-set postponed = +Drafts
-set trash = +Trash
-set record = +Sent
 
 ###############  Fast Folder Switching  ##########
 
-bind index,pager g  noop
-bind index,pager gs  noop
-bind index,pager ga  noop
-bind index,pager gd  noop
-bind index,pager gt  noop
-bind index,pager gj  noop
-bind index gg first-entry
+bind    index,pager   ga   noop
+bind    index,pager   gd   noop
+bind    index,pager   gs   noop
+bind    index,pager   gt   noop
+bind    index,pager   gj   noop
+bind    index         gg   first-entry
+bind    index,pager   g    noop
 
-macro index,pager gs "<change-folder>=Gesendet<enter>"       "open sent folder"
-macro index,pager ga "<change-folder>=Archiv<enter>"       "open archive folder"
-macro index,pager gd "<change-folder>=Entw&APw-rfe<enter>"       "open german folder"
-macro index,pager gt "<change-folder>=Gel&APY-scht<enter>"       "open trash folder"
-macro index,pager gj "<change-folder>=Spamverdacht<enter>"       "open junk folder"
+macro   index,pager   gs   "<change-folder>=Gesendet<enter>"       "open   sent      folder"
+macro   index,pager   ga   "<change-folder>=Archiv<enter>"         "open   archive   folder"
+macro   index,pager   gd   "<change-folder>=Entw&APw-rfe<enter>"   "open   german    folder"
+macro   index,pager   gt   "<change-folder>=Gel&APY-scht<enter>"   "open   trash     folder"
+macro   index,pager   gj   "<change-folder>=Spamverdacht<enter>"   "open   junk      folder"
 
-###############  Mutt-Wizard Things  #############
+############### Mutt-Wizard Things #############
 
-macro index o "<shell-escape>mw -y m.gaetzner@gmx.de<enter>" "run mbsync to sync m.gaetzner@gmx.de"
-macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a m.gaetzner@gmx.de<enter>"  "publish GPG key to WKS provider"
-macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a m.gaetzner@gmx.de<enter>" "confirm GPG publication"
+macro   index   o   "<shell-escape>mw -y m.gaetzner@gmx.de<enter>" "run mbsync to sync m.gaetzner@gmx.de"
+macro   index   \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a m.gaetzner@gmx.de<enter>" "publish GPG key to WKS provider"
+macro   index   \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a m.gaetzner@gmx.de<enter>" "confirm GPG publication"
 
 mailboxes "=INBOX" "=Gesendet" "=Archiv" "=Entw&APw-rfe" "=Spamverdacht" "=Gel&APY-scht"

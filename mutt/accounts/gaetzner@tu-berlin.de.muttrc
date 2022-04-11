@@ -1,40 +1,42 @@
 # vim: filetype=neomuttrc
 # muttrc file for account gaetzner@tu-berlin.de
-set realname = "Matteo Gätzner"
-set from = "gaetzner@tu-berlin.de"
-set sendmail = "msmtp -a gaetzner@tu-berlin.de"
+set realname         = "Matteo Gätzner"
+set from             = "gaetzner@tu-berlin.de"
+set sendmail         = "msmtp -a gaetzner@tu-berlin.de"
+set folder           = "/home/matteo/.local/share/mail/gaetzner@tu-berlin.de"
+set header_cache     = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/header"s
+set message_cachedir = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/bodie"s
+set mbox_type        = Maildir
+set hostname         = "mail.tu-berlin.de"
+set spoolfile        = +INBOX
+set postponed        = +Drafts
+set trash            = +Trash
+set record           = +Sent
+
 alias me Matteo Gätzner <gaetzner@tu-berlin.de>
-set folder = "/home/matteo/.local/share/mail/gaetzner@tu-berlin.de"
-set header_cache = /home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/headers
-set message_cachedir = /home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/bodies
-set mbox_type = Maildir
-set hostname = "mail.tu-berlin.de"
 source /usr/share/mutt-wizard/switch.muttrc
-set spoolfile = +INBOX
-set postponed = +Drafts
-set trash = +Trash
-set record = +Sent
 
 ###############  Fast Folder Switching  ##########
 
-bind index,pager g  noop
-bind index,pager gs  noop
-bind index,pager ga  noop
-bind index,pager gd  noop
-bind index,pager gt  noop
-bind index,pager gj  noop
-bind index gg first-entry
 
-macro index,pager gs "<change-folder>=Sent<enter>"       "open sent folder"
-macro index,pager ga "<change-folder>=Archive<enter>"       "open archive folder"
-macro index,pager gd "<change-folder>=Entw&APw-rfe<enter>"       "open german folder"
-macro index,pager gt "<change-folder>=Trash<enter>"       "open trash folder"
-macro index,pager gj "<change-folder>=Junk-E-Mail<enter>"       "open junk folder"
+bind    index         gg   first-entry
+bind    index,pager   ga   noop
+bind    index,pager   gd   noop
+bind    index,pager   gj   noop
+bind    index,pager   gs   noop
+bind    index,pager   gt   noop
+bind    index,pager   g    noop
+
+macro   index,pager   gs   "<change-folder>=Sent<enter>"           "open   sent      folder"
+macro   index,pager   ga   "<change-folder>=Archive<enter>"        "open   archive   folder"
+macro   index,pager   gd   "<change-folder>=Entw&APw-rfe<enter>"   "open   german    folder"
+macro   index,pager   gt   "<change-folder>=Trash<enter>"          "open   trash     folder"
+macro   index,pager   gj   "<change-folder>=Junk-E-Mail<enter>"    "open   junk      folder"
 
 ###############  Mutt-Wizard Things  #############
 
-macro index o "<shell-escape>mw -y gaetzner@tu-berlin.de<enter>" "run mbsync to sync gaetzner@tu-berlin.de"
-macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a gaetzner@tu-berlin.de<enter>"  "publish GPG key to WKS provider"
-macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a gaetzner@tu-berlin.de<enter>" "confirm GPG publication"
+macro   index   o   "<shell-escape>mw -y gaetzner@tu-berlin.de<enter>" "run mbsync to sync gaetzner@tu-berlin.de"
+macro   index   \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a gaetzner@tu-berlin.de<enter>"  "publish GPG key to WKS provider"
+macro   index   \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a gaetzner@tu-berlin.de<enter>" "confirm GPG publication"
 
-mailboxes "=INBOX" "=Sent" "=Archive" "=Entw&APw-rfe" "=Gesendete Elemente" "=Junk-E-Mail" "=Trash"
+mailboxes   "=INBOX" "=Sent" "=Archive" "=Entw&APw-rfe" "=Gesendete Elemente" "=Junk-E-Mail" "=Trash"

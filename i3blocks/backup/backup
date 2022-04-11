@@ -24,9 +24,11 @@ fi
 
 FILESYSTEM=$(cat $LOGFILE | awk '{print $1}')
 SIZE=$(cat $LOGFILE | awk '{print $2}')
-SIZE=$(numfmt --to iec --format "%.1f" $(($SIZE * 1000)))
+let "SIZE_MB = $SIZE * 1000"
+SIZE=$(numfmt --to iec --format "%.1f" $SIZE_MB)
 USED=$(cat $LOGFILE | awk '{print $3}')
-USED=$(numfmt --to iec --format "%.1f" $(($USED * 1000)))
+let "USED_MB = $USED * 1000"
+USED=$(numfmt --to iec --format "%.1f" $USED_MB)
 USE_PERCENT=$(cat $LOGFILE | awk '{print $5}' | sed 's/%//')
 
 printf "%s  %s / %s  %s%%\n" "$FILESYSTEM" "$USED" "$SIZE"  "$USE_PERCENT"

@@ -46,10 +46,10 @@ exec --no-startup-id sudo systemctl start firewalld.service
 exec --no-startup-id sudo systemctl start cpupower.service
 
 # Start speech dispatcher daemon
-# exec --no-startup-id sudo systemctl start speech-dispatcher.service
+exec --no-startup-id sudo systemctl start speech-dispatcher.service
 
 # Start autostart apps 
-# exec dex -a
+exec dex -a
 
 
 ###############  Startup Applications  ###########

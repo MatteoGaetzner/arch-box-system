@@ -1,39 +1,40 @@
 # vim: filetype=neomuttrc
 # muttrc file for account matteo.gaetzner@techlabs.org
-set realname = "matteo.gaetzner"
-set from = "matteo.gaetzner@techlabs.org"
-set sendmail = "msmtp -a matteo.gaetzner@techlabs.org"
-alias me matteo.gaetzner <matteo.gaetzner@techlabs.org>
-set folder = "/home/matteo/.local/share/mail/matteo.gaetzner@techlabs.org"
-set header_cache = /home/matteo/.cache/mutt-wizard/matteo.gaetzner@techlabs.org/headers
-set message_cachedir = /home/matteo/.cache/mutt-wizard/matteo.gaetzner@techlabs.org/bodies
-set mbox_type = Maildir
-set hostname = "techlabs.org"
+set realname         = "matteo.gaetzner"
+set from             = "matteo.gaetzner@techlabs.org"
+set sendmail         = "msmtp -a matteo.gaetzner@techlabs.org"
+set folder           = "/home/matteo/.local/share/mail/matteo.gaetzner@techlabs.org"
+set header_cache     = "/home/matteo/.cache/mutt-wizard/matteo.gaetzner@techlabs.org/headers"
+set message_cachedir = "/home/matteo/.cache/mutt-wizard/matteo.gaetzner@techlabs.org/bodies"
+set mbox_type        = Maildir
+set hostname         = "techlabs.org"
+set spoolfile        = +INBOX
+set postponed        = +Drafts
+set trash            = +Trash
+set record           = +Sent
+
 source /usr/share/mutt-wizard/switch.muttrc
-set spoolfile = +INBOX
-set postponed = +Drafts
-set trash = +Trash
-set record = +Sent
+alias me matteo.gaetzner <matteo.gaetzner@techlabs.org>
 
 ###############  Fast Folder Switching  ##########
 
-bind index,pager g  noop
-bind index,pager gs  noop
-bind index,pager ga  noop
-bind index,pager gd  noop
-bind index,pager gt  noop
-bind index,pager gj  noop
-bind index gg first-entry
+bind    index,pager   gs   noop
+bind    index,pager   ga   noop
+bind    index,pager   gd   noop
+bind    index,pager   gt   noop
+bind    index,pager   gj   noop
+bind    index         gg   first-entry
+bind    index,pager   g    noop
 
-macro index,pager gs "<change-folder>=Sent Mail<enter>" "go to sent"
-macro index,pager ga "<change-folder>=Archive<enter>" "go to archive"
-macro index,pager gd "<change-folder>=Drafts<enter>" "go to drafts"
-macro index,pager gt "<change-folder>=Trash<enter>" "go to trash"
-macro index,pager gj "<change-folder>=Junk<enter>" "go to junk"
+macro   index,pager   gs   "<change-folder>=Sent Mail<enter>" "go   to  sent"
+macro   index,pager   ga   "<change-folder>=Archive<enter>"   "go   to  archive"
+macro   index,pager   gd   "<change-folder>=Drafts<enter>"    "go   to  drafts"
+macro   index,pager   gt   "<change-folder>=Trash<enter>"     "go   to  trash"
+macro   index,pager   gj   "<change-folder>=Junk<enter>"      "go   to  junk"
 
 ###############  Mutt-Wizard Things  #############
-macro index o "<shell-escape>mw -y matteo.gaetzner@techlabs.org<enter>" "run mbsync to sync matteo.gaetzner@techlabs.org"
-macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a matteo.gaetzner@techlabs.org<enter>"  "publish GPG key to WKS provider"
-macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a matteo.gaetzner@techlabs.org<enter>" "confirm GPG publication"
+macro   index   o     "<shell-escape>mw -y matteo.gaetzner@techlabs.org<enter>" "run mbsync to sync matteo.gaetzner@techlabs.org"
+macro   index   \eg   "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a matteo.gaetzner@techlabs.org<enter>" "publish GPG key to WKS provider"
+macro   index   \eh   "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a matteo.gaetzner@techlabs.org<enter>" "confirm GPG publication"
 
 mailboxes "=INBOX" "=Notes" "=Templates" "=[Gmail]/All Mail" "=[Gmail]/Drafts" "=[Gmail]/Important" "=[Gmail]/Sent Mail" "=[Gmail]/Spam" "=[Gmail]/Starred" "=[Gmail]/Trash"

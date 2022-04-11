@@ -563,6 +563,7 @@ function start_mailsync_daemon {
   fi
 
   # then start the new daemon
+  # $MAILSYNC_PYTHONBIN $MAILSYNC_DAEMONBIN --quiet
   $MAILSYNC_PYTHONBIN $MAILSYNC_DAEMONBIN --quiet
 }
 
