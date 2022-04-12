@@ -34,6 +34,9 @@ rsync $RSYNCOPTS ~/.config/mutt/ ~/Sync/System/mutt/
 rsync $RSYNCOPTS ~/.mbsyncrc ~/Sync/System/mutt/.mbsyncrc
 rsync $RSYNCOPTS ~/.config/msmtp/ ~/Sync/System/mutt/msmtp/
 
+# crontabs
+rsync $RSYNCOPTS /var/spool/cron/matteo ~/Sync/System/cron/matteo
+
 # ssh
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
 # rsync $RSYNCOPTS ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
