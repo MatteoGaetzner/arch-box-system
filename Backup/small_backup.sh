@@ -22,9 +22,9 @@ rsync $RSYNCOPTS /etc/fstab ~/Sync/System/Fstab/fstab
 rsync $RSYNCOPTS /etc/pacman.conf ~/Sync/System/Pacman/pacman.conf
 
 # zsh
-rsync $RSYNCOPTS ~/.zprofile ~/Sync/System/Zsh/
-rsync $RSYNCOPTS ~/.zshrc ~/Sync/System/Zsh/
-rsync $RSYNCOPTS ~/.config/zsh/completion_settings.zsh ~/Sync/System/Zsh/completion_settings.zsh
+rsync $RSYNCOPTS ~/.zprofile ~/Sync/System/Zsh/.zprofile
+rsync $RSYNCOPTS ~/.zshrc ~/Sync/System/Zsh/.zshrc
+rsync $RSYNCOPTS ~/.config/zsh/completions/ ~/Sync/System/Zsh/completions/
 
 # parallel
 rsync $RSYNCOPTS ~/.parallel/config ~/Sync/System/Parallel/config
