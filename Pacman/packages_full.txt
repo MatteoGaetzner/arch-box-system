@@ -172,6 +172,7 @@ fribidi
 fuse-common
 fuse2
 fuse3
+fzf
 gavl
 gawk
 gc
@@ -533,6 +534,7 @@ libavif
 libb2
 libblockdev
 libbluray
+libbpf
 libbs2b
 libbsd
 libbytesize
@@ -1541,7 +1543,6 @@ zlib
 zotero
 zsh
 zsh-autosuggestions
-zsh-syntax-highlighting
 zstd
 zvbi
 zxing-cpp

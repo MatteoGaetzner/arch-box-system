@@ -33,6 +33,7 @@ firefox
 flameshot
 flashfocus-git
 flex
+fzf
 geogebra
 htop
 i3blocks
@@ -167,4 +168,3 @@ yay
 zbar
 zotero
 zsh-autosuggestions
-zsh-syntax-highlighting

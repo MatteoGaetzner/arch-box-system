@@ -47,6 +47,7 @@ firewalld
 flameshot
 flashfocus-git
 flex
+fzf
 gcc
 gdb
 geogebra
@@ -261,4 +262,3 @@ zbar
 zotero
 zsh
 zsh-autosuggestions
-zsh-syntax-highlighting

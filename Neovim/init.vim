@@ -695,6 +695,7 @@ augroup formatgroup
   autocmd BufWritePre * call Format()
 augroup end
 
+
 "--------------  Latex  --------------------------
 
 let g:tex_flavor = "latex"

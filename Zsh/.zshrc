@@ -26,7 +26,7 @@ XDG_CONFIG_HOME=$HOME/.config/
 ##############  Zsh Options  #####################
 
 setopt HIST_IGNORE_SPACE
-source ~/.config/zsh/completion_settings.zsh
+source ~/.config/zsh/completions/completion_settings.zsh
 
 # Don't ask for confirmation before `rm path/*`
 setopt rm_starsilent
@@ -41,6 +41,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+###############  Pyenv  ##########################
+
+# Load pyenv; must do that before loading the plugin
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export ZSH_PYENV_VIRTUALENV=true
+export ZSH_PYENV_QUIET=false
+source ~/.config/zsh/completions/pyenv.zsh
+eval "$(pyenv init --path)"
 
 ###############  OMZ  ############################
 
@@ -57,22 +66,18 @@ COMPLETION_WAITING_DOTS="true"
 # Command execution time shown in the history command output.
 HIST_STAMPS="dd.mm.yyyy"
 
-# Ugly, but pyenv needs to be loaded before loading the corresponding OMZ plugin
-eval "$(pyenv init --path)"
-
 # Plugins
 plugins=(
+  archlinux
+  dotenv
+  emoji
+  git
+  git-extras
   pass
   pip
   pyenv
-  emoji
-  dotenv
-  pip
-  pyenv
-  git
-  git-extras
-  archlinux
   zsh-autosuggestions
+  zsh-syntax-highlighting
   zsh-vi-mode
 )
 
@@ -563,7 +568,6 @@ function start_mailsync_daemon {
   fi
 
   # then start the new daemon
-  # $MAILSYNC_PYTHONBIN $MAILSYNC_DAEMONBIN --quiet
   $MAILSYNC_PYTHONBIN $MAILSYNC_DAEMONBIN --quiet
 }
 
@@ -648,36 +652,25 @@ function cpp_cmake_debug {
 
 ###############  Last minute  ####################
 
-# Zsh syntax highlighting
-# https://github.com/zsh-users/zsh-syntax-highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Ask for update after startup
-if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
-  BOOTTIME=$(who -b | sed 's/.*\(..:..\)$/\1/' | sed 's/://')
-  NOWTIME=$(date +%H%M)
-  let "PREVMIN = $NOWTIME - 1"
-  if ! [[ ($BOOTTIME = $NOWTIME) && ($BOOTTIME = $PREVMIN) ]]; then
-   read -qsn "?Wanna copy gpg password in buffer? "
-   if [[ $REPLY =~ [Yy] ]]; then
-     pass -c master-password
-   fi
-   echo "\n"
-   sleep 1
+# if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
+#   BOOTTIME=$(who -b | sed 's/.*\(..:..\)$/\1/' | sed 's/://')
+#   NOWTIME=$(date +%H%M)
+#   let "PREVMIN = $NOWTIME - 1"
+#   if ! [[ ($BOOTTIME = $NOWTIME) && ($BOOTTIME = $PREVMIN) ]]; then
+#     read -q "?Wanna copy gpg password in buffer? "
+#     if [[ $REPLY =~ [Yy] ]]; then
+#       pass -c master-password
+#     fi
+#     echo -e "\033[2K"
 
-   read -qsn "?Wanna start mailsync-daemon "
-   if [[ $REPLY =~ [Yy] ]]; then
-     start_mailsync_daemon
-   fi
-   sleep 1
-   echo "\n"
+#     read -q "?Wanna start mailsync-daemon "
+#     if [[ $REPLY =~ [Yy] ]]; then
+#       start_mailsync_daemon
+#     fi
+#     echo -e "\033[2K"
 
-   read -qsn "?Wanna update? "; 
-   if [[ $REPLY =~ [Yy] ]]; then
-     sleep 1
-     update;
-   fi
+#     touch $ZSHUPDATEDFILE
+#   fi
+# fi
 
-   touch $ZSHUPDATEDFILE
-  fi
-fi
