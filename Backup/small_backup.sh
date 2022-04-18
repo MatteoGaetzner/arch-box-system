@@ -50,9 +50,6 @@ rsync $RSYNCOPTS /var/spool/cron/matteo ~/Sync/System/cron/matteo
 # Backup scripts
 rsync $RSYNCOPTS /bin/big_backup ~/Sync/System/Backup/big_backup.sh
 
-# Anything-sync-daemon
-rsync $RSYNCOPTS /etc/asd.conf ~/Sync/System/Asd/asd.conf
-
 # Neovim
 rsync $RSYNCOPTS \
   --exclude={after,autoload,spell,UltiSnips} \
