@@ -18,7 +18,6 @@ alsa-utils
 amd-ucode
 amf-headers
 ant
-anything-sync-daemon
 aom
 appstream-glib
 apr
@@ -397,6 +396,7 @@ haskell-yaml
 haskell-zip-archive
 haskell-zlib
 hdf5-openmpi
+hdparm
 help2man
 hicolor-icon-theme
 hidapi
@@ -429,6 +429,7 @@ iputils
 ipython
 iso-codes
 isync
+iw
 jack2
 jansson
 jasper
@@ -807,6 +808,7 @@ lm_sensors
 lmdb
 lowdown
 lpsolve
+lshw
 lua
 lua51-filesystem
 lua52
@@ -1442,6 +1444,7 @@ webrtc-audio-processing
 wget
 whatsapp-nativefier
 which
+wireless-regdb
 woff2
 wpa_supplicant
 wpebackend-fdo

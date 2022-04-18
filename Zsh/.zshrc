@@ -511,7 +511,7 @@ function vpnn {
     vpntd >/dev/null
   fi
   if [[ $(systemctl status nordvpnd) != *"active (running)"* ]]; then
-    sudo systemctl enable nordvpnd
+    sudo systemctl start nordvpnd.service nordvpnd.socket
   fi
   if [[ $(nordvpn connect) == *"not logged in"* ]]; then
     nordvpn login

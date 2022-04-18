@@ -40,17 +40,11 @@ exec --no-startup-id $home/.local/bin/configure_keyboard
 # Start samba
 exec --no-startup-id sudo systemctl start smb.service nmb.service
 
+# Start firewall
 exec --no-startup-id sudo systemctl start firewalld.service
 
 # Start cpupower
 exec --no-startup-id sudo systemctl start cpupower.service
-
-# Start speech dispatcher daemon
-exec --no-startup-id sudo systemctl start speech-dispatcher.service
-
-# Start autostart apps 
-# exec dex -a
-
 
 ###############  Startup Applications  ###########
 

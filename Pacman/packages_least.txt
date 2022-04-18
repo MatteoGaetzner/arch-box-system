@@ -4,7 +4,6 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
-anything-sync-daemon
 autoconf
 automake
 balena-etcher
@@ -35,6 +34,7 @@ flashfocus-git
 flex
 fzf
 geogebra
+hdparm
 htop
 i3blocks
 ipset
@@ -45,6 +45,7 @@ jupyter-notebook
 kitty
 libclc
 libreoffice-fresh
+lshw
 luakit
 lvtk
 masterpdfeditor
@@ -56,6 +57,7 @@ ncdu
 neofetch
 network-manager-applet
 nextcloud-client
+nodejs-nativefier
 nomacs
 nordvpn-bin
 notmuch

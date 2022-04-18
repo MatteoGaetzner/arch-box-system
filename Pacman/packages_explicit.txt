@@ -5,7 +5,6 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
-anything-sync-daemon
 autoconf
 automake
 balena-etcher
@@ -59,6 +58,7 @@ grub
 grub-btrfs
 gvim
 hdf5-openmpi
+hdparm
 htop
 i3-wm
 i3blocks
@@ -78,6 +78,7 @@ linux
 linux-firmware
 linux-headers
 lldb
+lshw
 lua
 luakit
 lvtk
@@ -100,6 +101,7 @@ networkmanager
 nextcloud-client
 ninja
 nitrogen
+nodejs-nativefier
 nomacs
 nordvpn-bin
 notmuch
@@ -209,6 +211,7 @@ vtk
 wget
 whatsapp-nativefier
 which
+wireless-regdb
 wpa_supplicant
 xclip
 xcompmgr

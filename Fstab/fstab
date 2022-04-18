@@ -29,5 +29,5 @@ UUID=71807e91-acfb-4367-b920-f9f08c6e9b53	none      	swap      	defaults  	0 0
 # RAM
 tmpfs   					/tmp         	tmpfs   	rw,nodev,nosuid,uid=matteo,gid=matteo,mode=1777    0  0
 
-tmpfs      					/dev/shm        tmpfs   	defaults,size=12G	0 0
+tmpfs      					/dev/shm        tmpfs   	defaults	0 0
 
