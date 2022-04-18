@@ -41,6 +41,7 @@ ipset
 jaxx-liberty-appimage
 jnettop
 john
+jupyter-notebook
 kitty
 libclc
 libreoffice-fresh

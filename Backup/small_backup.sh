@@ -15,6 +15,9 @@ pacman -Qet | awk '{print $1}' > ~/Sync/System/Pacman/packages_least.txt
 rsync $RSYNCOPTS ~/.Xmodmap ~/Sync/System/Keyboard/.Xmodmap
 rsync $RSYNCOPTS /etc/X11/xorg.conf.d/00-keyboard.conf ~/Sync/System/Keyboard/00-keyboard.conf
 
+# watchdog timer 
+rsync $RSYNCOPTS /etc/modprobe.d/sp5100_tco.conf ~/Sync/System/Motherboard/sp5100_tco.conf
+
 # fstab
 rsync $RSYNCOPTS /etc/fstab ~/Sync/System/Fstab/fstab
 

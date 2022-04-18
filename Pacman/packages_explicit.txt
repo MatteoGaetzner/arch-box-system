@@ -68,6 +68,8 @@ iptables-nft
 jaxx-liberty-appimage
 jnettop
 john
+jupyter-notebook
+jupyterlab
 kitty
 libclc
 libreoffice-fresh

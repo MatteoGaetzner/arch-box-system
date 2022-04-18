@@ -447,14 +447,12 @@ js78
 json-c
 json-glib
 jsoncpp
-jupyter-nbclassic
 jupyter-nbclient
 jupyter-nbconvert
 jupyter-nbformat
 jupyter-notebook
 jupyter-notebook-shim
 jupyter-server
-jupyter-widgetsnbextension
 jupyter_console
 jupyterlab
 jupyterlab_pygments
