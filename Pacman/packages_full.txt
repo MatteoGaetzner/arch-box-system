@@ -802,6 +802,7 @@ linux-api-headers
 linux-firmware
 linux-firmware-whence
 linux-headers
+linux-lts
 lldb
 llvm-libs
 lm_sensors
@@ -884,6 +885,7 @@ nss
 numactl
 nvidia
 nvidia-cg-toolkit
+nvidia-lts
 nvidia-settings
 nvidia-utils
 nvtop

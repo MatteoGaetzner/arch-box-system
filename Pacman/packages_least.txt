@@ -64,6 +64,7 @@ notmuch
 notmuch-mutt
 nvidia
 nvidia-cg-toolkit
+nvidia-lts
 nvtop
 obs-studio
 offlineimap

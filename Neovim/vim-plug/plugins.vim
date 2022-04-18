@@ -27,10 +27,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'andymass/vim-matchup'
 Plug 'p00f/nvim-ts-rainbow'
-Plug 'romgrk/nvim-treesitter-context'
 Plug 'sainnhe/everforest'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
-" Plug 'scrooloose/NERDTree'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'svermeulen/vim-easyclip'
 Plug 'tpope/vim-commentary'
@@ -42,5 +40,10 @@ Plug 'xuhdev/vim-latex-live-preview'
 Plug 'jiangmiao/auto-pairs'
 Plug 'godlygeek/tabular'
 Plug 'adborden/vim-notmuch-address'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
+" Wait for this to get fixed
+" Plug 'romgrk/nvim-treesitter-context'
+"
 call plug#end()
