@@ -21,6 +21,7 @@ set hidden
 set nostartofline
 set timeout ttimeoutlen=25
 set colorcolumn=100
+set textwidth=100
 set scrolloff=10
 set belloff=all
 let mapleader=" "
@@ -866,12 +867,23 @@ augroup end
 
 "--------------  Python  -------------------------
 
+function! StartPDB()
+  " Start PDB
+  :execute "GdbStartPDB python -m pdb % <CR><Esc>"
+  " Move PDB window to the right
+  :silent! execute "wincmd L"
+  " Return focus to original window
+  :silent! execute "wincmd h"
+  " Exit insert mode after function call
+  call feedkeys("\<Esc>")
+endfun
+
 augroup pythongroup
   autocmd!
   autocmd FileType python nnoremap <CR> :w <CR> <bar> :AsyncRun make run ARGS="%" <CR>
   autocmd FileType python nnoremap <F4> :w <CR> <bar> :AsyncRun make test <CR>
   autocmd BufWritePre *.py :CocCommand python.sortImports
-  autocmd FileType python nnoremap <leader>dd :GdbStartPDB python -m pdb % <CR>
+  autocmd FileType python nnoremap <leader>dd :call StartPDB()<CR><ESC>
   autocmd FileType python nnoremap <leader><space> :GdbBreakpointToggle <CR>
   autocmd FileType python nnoremap <leader><c> :GdbCreateWatch 
 augroup end
