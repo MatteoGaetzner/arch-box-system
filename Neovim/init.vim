@@ -22,7 +22,8 @@ set nostartofline
 set timeout ttimeoutlen=25
 set colorcolumn=100
 set scrolloff=10
-let mapleader = " "
+set belloff=all
+let mapleader=" "
 " set syntax=on
 
 " Performance
@@ -345,16 +346,9 @@ let g:nvim_tree_icons = {
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
-" More available functions:
-" NvimTreeOpen
-" NvimTreeClose
-" NvimTreeFocus
-" NvimTreeFindFileToggle
-" NvimTreeResize
-" NvimTreeCollapse
-" NvimTreeCollapseKeepBuffers
 
-set termguicolors " this variable must be enabled for colors to be applied properly
+" Autoclose Nvim-Tree if it is the last buffer
+autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
 
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue
@@ -551,49 +545,37 @@ require'nvim-treesitter.configs'.setup {
   context_commentstring = {
     enable = true
   },
-   matchup = {
-    enable = true,              -- mandatory, false will disable the whole extension
-    disable = {},  -- optional, list of language that will be disabled
-    disable_virtual_text = true,
-    include_match_words = true
-  },
+  -- NOTE: Waiting for this plugin to get fixed
+   -- matchup = {
+   --  enable = true,              -- mandatory, false will disable the whole extension
+   --  disable = {},  -- optional, list of language that will be disabled
+   --  disable_virtual_text = true,
+   --  include_match_words = true
+  -- },
 }
 END
 
 
 "--------------  Treesitter-Context  -------------
 
+" NOTE: Waiting for this plugin to get fixed
+
 " lua << END
-" require'treesitter-context'.setup {
-"     enable = true,
-"     throttle = false,
-"     max_lines = 0, 
-"     patterns = { 
+" require'treesitter-context'.setup{
+"     enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
+"     throttle = true, -- Throttles plugin updates (may improve performance)
+"     max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.
+"     patterns = { -- Match patterns for TS nodes. These get wrapped to match at word boundaries.
 "         default = {
 "             'class',
 "             'function',
 "             'method',
 "         },
 "     },
+"     exact_patterns = {
+"     }
 " }
 " END
-
-lua << END
-require'treesitter-context'.setup{
-    enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
-    throttle = true, -- Throttles plugin updates (may improve performance)
-    max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.
-    patterns = { -- Match patterns for TS nodes. These get wrapped to match at word boundaries.
-        default = {
-            'class',
-            'function',
-            'method',
-        },
-    },
-    exact_patterns = {
-    }
-}
-END
 
 "--------------  Coc  ----------------------------
 
@@ -886,9 +868,12 @@ augroup end
 
 augroup pythongroup
   autocmd!
-  autocmd FileType python nnoremap <CR> :w <CR> <bar> :AsyncRun make run ARGS="%"<CR>
+  autocmd FileType python nnoremap <CR> :w <CR> <bar> :AsyncRun make run ARGS="%" <CR>
   autocmd FileType python nnoremap <F4> :w <CR> <bar> :AsyncRun make test <CR>
   autocmd BufWritePre *.py :CocCommand python.sortImports
+  autocmd FileType python nnoremap <leader>dd :GdbStartPDB python -m pdb % <CR>
+  autocmd FileType python nnoremap <leader><space> :GdbBreakpointToggle <CR>
+  autocmd FileType python nnoremap <leader><c> :GdbCreateWatch 
 augroup end
 
 let g:asyncrun_open = 10

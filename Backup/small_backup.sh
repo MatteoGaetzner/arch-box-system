@@ -18,6 +18,9 @@ rsync $RSYNCOPTS /etc/X11/xorg.conf.d/00-keyboard.conf ~/Sync/System/Keyboard/00
 # watchdog timer 
 rsync $RSYNCOPTS /etc/modprobe.d/sp5100_tco.conf ~/Sync/System/Motherboard/sp5100_tco.conf
 
+# turn off bell sounds in terminal
+rsync $RSYNCOPTS /etc/inputrc ~/Sync/System/Zsh/inputrc
+
 # fstab
 rsync $RSYNCOPTS /etc/fstab ~/Sync/System/Fstab/fstab
 

@@ -31,6 +31,13 @@ source ~/.config/zsh/completions/completion_settings.zsh
 # Don't ask for confirmation before `rm path/*`
 setopt rm_starsilent
 
+# Turn off all beeps
+unsetopt BEEP
+# Turn off autocomplete beeps
+# unsetopt LIST_BEEP
+# Turn off beeps when going beyond history 
+# unsetopt HIST_BEEP
+
 ###############  P10K  ###########################
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -281,6 +288,12 @@ alias vifm="$HOME/.local/bin/vifmrun"
 
 # Fast tree
 alias t="tree -C -a --dirsfirst"
+
+# Ripgrep with syntax highlighting
+function hg {
+    command hgrep --theme ayu-mirage --term-width "$COLUMNS" "$@" | less -R
+    test "${pipestatus[1]}" -eq 0
+}
 
 # ls after cd
 function cl {
@@ -653,24 +666,26 @@ function cpp_cmake_debug {
 ###############  Last minute  ####################
 
 # Ask for update after startup
-# if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
-#   BOOTTIME=$(who -b | sed 's/.*\(..:..\)$/\1/' | sed 's/://')
-#   NOWTIME=$(date +%H%M)
-#   let "PREVMIN = $NOWTIME - 1"
-#   if ! [[ ($BOOTTIME = $NOWTIME) && ($BOOTTIME = $PREVMIN) ]]; then
-#     read -q "?Wanna copy gpg password in buffer? "
-#     if [[ $REPLY =~ [Yy] ]]; then
-#       pass -c master-password
-#     fi
-#     echo -e "\033[2K"
+if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
+  BOOTTIME=$(who -b | sed 's/.*\(..:..\)$/\1/' | sed 's/://')
+  NOWTIME=$(date +%H%M)
+  let "PREVMIN = $NOWTIME - 1"
+  if ! [[ ($BOOTTIME = $NOWTIME) && ($BOOTTIME = $PREVMIN) ]]; then
+    read -q "?Wanna copy gpg password in buffer? "
+    if [[ $REPLY =~ [Yy] ]]; then
+      pass -c master-password
+    fi
+    echo -e "\033[2K"
 
-#     read -q "?Wanna start mailsync-daemon "
-#     if [[ $REPLY =~ [Yy] ]]; then
-#       start_mailsync_daemon
-#     fi
-#     echo -e "\033[2K"
+    read -q "?Wanna start mailsync-daemon "
+    if [[ $REPLY =~ [Yy] ]]; then
+      start_mailsync_daemon
+    fi
+    echo -e "\033[2K"
 
-#     touch $ZSHUPDATEDFILE
-#   fi
-# fi
+    touch $ZSHUPDATEDFILE
+  fi
+fi
 
+# Let direnv hook into the shell
+eval "$(direnv hook zsh)"

@@ -25,7 +25,6 @@ Plug 'neomake/neomake'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-Plug 'andymass/vim-matchup'
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'sainnhe/everforest'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
@@ -43,7 +42,8 @@ Plug 'adborden/vim-notmuch-address'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
-" Wait for this to get fixed
+" Wait for these plugins to get fixed
 " Plug 'romgrk/nvim-treesitter-context'
-"
+" Plug 'andymass/vim-matchup'
+
 call plug#end()

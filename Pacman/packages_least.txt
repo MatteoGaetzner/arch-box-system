@@ -21,6 +21,7 @@ ctags
 cups
 detox
 dex
+direnv
 discord
 dmidecode
 eog
@@ -35,6 +36,7 @@ flex
 fzf
 geogebra
 hdparm
+hgrep-bin
 htop
 i3blocks
 ipset
@@ -83,11 +85,14 @@ powertop
 profile-sync-daemon
 pulsemixer
 pyenv-virtualenv
+pypy
+pypy3
 python-fangfrisch
 qbittorrent
 qwinff
 rdesktop
 reflector
+ripgrep
 rpi-imager
 rust-analyzer
 shellcheck

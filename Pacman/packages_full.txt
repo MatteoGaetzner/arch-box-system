@@ -109,6 +109,7 @@ device-mapper
 dex
 dialog
 diffutils
+direnv
 discord
 discount
 djvulibre
@@ -398,6 +399,7 @@ haskell-zlib
 hdf5-openmpi
 hdparm
 help2man
+hgrep-bin
 hicolor-icon-theme
 hidapi
 htop
@@ -1111,6 +1113,8 @@ pv
 pybind11
 pyenv
 pyenv-virtualenv
+pypy
+pypy3
 python
 python-anyio
 python-anytree
@@ -1217,6 +1221,7 @@ python-stack-data
 python-termcolor
 python-terminado
 python-testpath
+python-tinycss2
 python-toml
 python-tomli
 python-tomlkit
@@ -1224,6 +1229,7 @@ python-tornado
 python-traitlets
 python-typing_extensions
 python-urllib3
+python-urwid
 python-wcwidth
 python-webencodings
 python-websocket-client
@@ -1276,6 +1282,7 @@ redland
 reflector
 rest
 rhash
+ripgrep
 rnnoise
 rockchip-mpp
 rofi

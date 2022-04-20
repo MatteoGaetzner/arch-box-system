@@ -28,6 +28,7 @@ cups
 detox
 dex
 dialog
+direnv
 discord
 dmidecode
 dosfstools
@@ -59,6 +60,7 @@ grub-btrfs
 gvim
 hdf5-openmpi
 hdparm
+hgrep-bin
 htop
 i3-wm
 i3blocks
@@ -143,6 +145,8 @@ pulseaudio-bluetooth
 pulsemixer
 pyenv
 pyenv-virtualenv
+pypy
+pypy3
 python-fangfrisch
 python-pip
 python-pynvim
@@ -152,6 +156,7 @@ qwinff
 r
 rdesktop
 reflector
+ripgrep
 rofi
 rpi-imager
 rsync
