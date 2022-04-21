@@ -53,6 +53,7 @@ boost-libs
 botan
 box2d
 breeze-icons
+broot
 brotli
 btrfs-progs
 bubblewrap

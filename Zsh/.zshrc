@@ -573,7 +573,7 @@ export GNUPGHOME=$HOME/.gnupg/
 
 function start_mailsync_daemon {
   MAILSYNC_PYTHONBIN=~/.pyenv/versions/mailsync-daemon-env-3.10.3/bin/python3
-  MAILSYNC_DAEMONBIN=~/Sync/Programs/Self/isync/mailsync-daemon/mailsync-daemon.py
+  MAILSYNC_DAEMON_BIN=~/Sync/Programs/Self/isync/mailsync-daemon/mailsync-daemon.py
 
   # First kill all running instances, 
   if [[ $(pgrep -f mailsync-daemon) ]]; then 
@@ -581,7 +581,7 @@ function start_mailsync_daemon {
   fi
 
   # then start the new daemon
-  $MAILSYNC_PYTHONBIN $MAILSYNC_DAEMONBIN --quiet
+  $MAILSYNC_PYTHONBIN $MAILSYNC_DAEMON_BIN
 }
 
 ###############  R  ##############################
@@ -689,3 +689,5 @@ fi
 
 # Let direnv hook into the shell
 eval "$(direnv hook zsh)"
+
+source /home/matteo/.config/broot/launcher/bash/br

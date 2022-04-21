@@ -344,7 +344,7 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>t :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
 
@@ -884,7 +884,7 @@ augroup pythongroup
   autocmd!
   autocmd FileType python nnoremap <CR> :w <CR> <bar> :AsyncRun make run ARGS="%" <CR>
   autocmd FileType python nnoremap <F4> :w <CR> <bar> :AsyncRun make test <CR>
-  autocmd BufWritePre *.py :CocCommand python.sortImports
+  autocmd BufWritePre *.py silent! :call CocAction('runCommand', 'pyright.organizeimports')
   autocmd FileType python nnoremap <leader>dd :call StartPDB()<CR><ESC>
   autocmd FileType python nnoremap <leader><space> :GdbBreakpointToggle <CR>
   autocmd FileType python nnoremap <leader><c> :GdbCreateWatch 

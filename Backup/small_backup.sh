@@ -32,6 +32,9 @@ rsync $RSYNCOPTS ~/.zprofile ~/Sync/System/Zsh/.zprofile
 rsync $RSYNCOPTS ~/.zshrc ~/Sync/System/Zsh/.zshrc
 rsync $RSYNCOPTS ~/.config/zsh/completions/ ~/Sync/System/Zsh/completions/
 
+# broot
+rsync $RSYNCOPTS ~/.config/broot/conf.hjson ~/Sync/System/broot/conf.hjson
+
 # parallel
 rsync $RSYNCOPTS ~/.parallel/config ~/Sync/System/Parallel/config
 

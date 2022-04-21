@@ -38,6 +38,7 @@
   "coc.preferences.formatOnSaveFiletypes": ["python"],
   "pyright.enable": true,
   "python.formatting.provider": "black",
+  "pyright.organizeimports.provider": "pyright",
   "python.formatting.autopep8Path": "/home/matteo/.pyenv/versions/ml/bin/autopep8",
   "python.formatting.yapfPath": "/home/matteo/.pyenv/versions/ml/bin/yapf",
   "python.formatting.blackPath": "/home/matteo/.pyenv/versions/ml/bin/black",

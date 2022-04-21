@@ -11,6 +11,11 @@ bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' no
 
 set beep = no
 
+# Sorting
+set sort         = threads
+set sort_browser = reverse-date
+set sort_aux     = last-date-received
+
 ###############  Abook  ##########################
 
 set query_command= "abook --mutt-query '%s'"

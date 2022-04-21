@@ -12,6 +12,7 @@ bat
 bear
 bison
 bluez-utils
+broot
 chromium
 cmake
 cpulimit

@@ -15,6 +15,7 @@ biber
 bison
 bluez
 bluez-utils
+broot
 btrfs-progs
 chromium
 clamav
