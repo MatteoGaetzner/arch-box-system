@@ -73,6 +73,7 @@ john
 jupyter-notebook
 jupyterlab
 kitty
+lib32-gnutls
 libclc
 libreoffice-fresh
 libtool
@@ -218,6 +219,8 @@ vtk
 wget
 whatsapp-nativefier
 which
+wine
+winetricks
 wireless-regdb
 wpa_supplicant
 xclip

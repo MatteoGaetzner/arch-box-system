@@ -18,7 +18,6 @@ cpulimit
 cpupower
 cpupower-gui
 ctags
-cups
 detox
 dex
 direnv
@@ -135,6 +134,7 @@ vifm
 vlc
 wget
 whatsapp-nativefier
+winetricks
 xcompmgr
 xdg-user-dirs
 xf86-video-vesa

@@ -11,6 +11,12 @@ bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' no
 
 set beep = no
 
+###############  Abook  ##########################
+
+set query_command= "abook --mutt-query '%s'"
+macro index,pager  a "<pipe-message>abook --add-email-quiet<return>" "Add this sender to Abook"
+bind editor        <Tab> complete-query
+
 ###############  Sourcing  #######################
 
 

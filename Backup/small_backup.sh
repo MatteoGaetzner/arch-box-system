@@ -46,6 +46,7 @@ rsync $RSYNCOPTS /var/spool/cron/matteo ~/Sync/System/cron/matteo
 # ssh
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Ssh/id_rsa.gpg --yes ~/.ssh/id_rsa
 # rsync $RSYNCOPTS ~/.ssh/id_rsa.pub ~/Sync/System/Ssh/
+rsync $RSYNCOPTS ~/.ssh/config ~/Sync/System/Ssh/config
 
 # Fangfrisch (for clamav)
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Fangfrisch/fangfrisch.conf.gpg --yes /etc/fangfrisch/fangfrisch.conf

@@ -37,7 +37,7 @@
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": ["python"],
   "pyright.enable": true,
-  "python.formatting.provider": "autopep8",
+  "python.formatting.provider": "black",
   "python.formatting.autopep8Path": "/home/matteo/.pyenv/versions/ml/bin/autopep8",
   "python.formatting.yapfPath": "/home/matteo/.pyenv/versions/ml/bin/yapf",
   "python.formatting.blackPath": "/home/matteo/.pyenv/versions/ml/bin/black",
@@ -57,4 +57,8 @@
     "plaintex",
     "latex"
   ],
+  "markdownlint.config": {
+    "default": true,
+    "line-length": false
+  }
 }

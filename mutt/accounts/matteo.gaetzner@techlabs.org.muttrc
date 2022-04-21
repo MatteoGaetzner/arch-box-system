@@ -18,13 +18,14 @@ alias me matteo.gaetzner <matteo.gaetzner@techlabs.org>
 
 ###############  Fast Folder Switching  ##########
 
+bind    index,pager   g    noop
 bind    index,pager   gs   noop
 bind    index,pager   ga   noop
 bind    index,pager   gd   noop
 bind    index,pager   gt   noop
 bind    index,pager   gj   noop
 bind    index         gg   first-entry
-bind    index,pager   g    noop
+bind    pager,browser gg   top-page
 
 macro   index,pager   gs   "<change-folder>=Sent Mail<enter>" "go   to  sent"
 macro   index,pager   ga   "<change-folder>=Archive<enter>"   "go   to  archive"

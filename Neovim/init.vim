@@ -869,11 +869,13 @@ augroup end
 
 function! StartPDB()
   " Start PDB
-  :execute "GdbStartPDB python -m pdb % <CR><Esc>"
+  execute "GdbStartPDB python -m pdb % <CR><Esc>"
   " Move PDB window to the right
-  :silent! execute "wincmd L"
+  silent! execute "wincmd L"
   " Return focus to original window
-  :silent! execute "wincmd h"
+  silent! execute "wincmd h"
+  " let line=search('main')
+  " call cursor(line)
   " Exit insert mode after function call
   call feedkeys("\<Esc>")
 endfun

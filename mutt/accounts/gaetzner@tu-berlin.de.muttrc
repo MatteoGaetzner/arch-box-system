@@ -19,13 +19,14 @@ source /usr/share/mutt-wizard/switch.muttrc
 ###############  Fast Folder Switching  ##########
 
 
-bind    index         gg   first-entry
+bind    index,pager   g    noop
 bind    index,pager   ga   noop
 bind    index,pager   gd   noop
 bind    index,pager   gj   noop
 bind    index,pager   gs   noop
 bind    index,pager   gt   noop
-bind    index,pager   g    noop
+bind    index         gg   first-entry
+bind    pager,browser gg   top-page
 
 macro   index,pager   gs   "<change-folder>=Sent<enter>"           "open   sent      folder"
 macro   index,pager   ga   "<change-folder>=Archive<enter>"        "open   archive   folder"

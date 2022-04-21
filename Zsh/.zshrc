@@ -548,7 +548,7 @@ function berryd {
 }
 
 function berrys {
-  sshpass -p $(pass raspberry_pi/matteo) ssh matteo@$BERRYIP
+  sshpass -p $(pass raspberry_pi/matteo) ssh -Y matteo@$BERRYIP
 }
 
 ###############  Exports  ########################
