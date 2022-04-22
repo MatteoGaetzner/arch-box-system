@@ -37,7 +37,6 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 if has('python3')
 endif
 
-
 set foldmethod=syntax
 set foldlevelstart=2
 
@@ -811,7 +810,7 @@ let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 let g:vimtex_compiler_method = 'latexmk'
 
 " vim-latex-live-preview
-set updatetime=500
+set updatetime=1000
 let g:livepreview_engine = 'pdflatex'
 let g:livepreview_previewer = 'okular'
 let g:livepreview_texinputs = './out/'

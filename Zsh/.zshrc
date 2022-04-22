@@ -452,9 +452,9 @@ function latex_setup {
   ln -s ../images sections/images
   ln -s ../general.sty sections/general.sty
   ln -s ../specific.sty sections/specific.sty
-  ln $HOME/Sync/Programs/Self/Latex/Packages/general.sty general.sty
-  cp $HOME/Sync/Programs/Self/Latex/Packages/specific.sty specific.sty
-  cp $HOME/Sync/Programs/Self/Latex/Templates/Generic/main.tex main.tex
+  ln $HOME/Sync/Programs/Self/latex/Packages/general.sty general.sty
+  cp $HOME/Sync/Programs/Self/latex/Packages/specific.sty specific.sty
+  cp $HOME/Sync/Programs/Self/latex/Templates/Generic/main.tex main.tex
 }
 
 # latex_cleanup

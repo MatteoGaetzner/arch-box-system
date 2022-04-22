@@ -8,10 +8,10 @@ set header_cache     = "/home/matteo/.cache/mutt-wizard/matteo.gaetzner@techlabs
 set message_cachedir = "/home/matteo/.cache/mutt-wizard/matteo.gaetzner@techlabs.org/bodies"
 set mbox_type        = Maildir
 set hostname         = "techlabs.org"
-set spoolfile        = +INBOX
-set postponed        = +Drafts
-set trash            = +Trash
-set record           = +Sent
+set spoolfile        = +"INBOX"
+set postponed        = +"Drafts"
+set trash            = +"Trash"
+set record           = +"Sent Mail"
 
 source /usr/share/mutt-wizard/switch.muttrc
 alias me matteo.gaetzner <matteo.gaetzner@techlabs.org>

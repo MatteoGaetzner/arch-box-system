@@ -9,9 +9,9 @@ set message_cachedir = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/bodies
 set mbox_type        = Maildir
 set hostname         = "gmx.de"
 set spoolfile        = +INBOX
-set postponed        = +Drafts
-set trash            = +Trash
-set record           = +Sent
+set postponed        = +"Entw&APw-rfe"
+set trash            = +"Gel&APY-scht"
+set record           = +"Gesendet"
 
 alias me Matteo Gätzner <m.gaetzner@gmx.de>
 source /usr/share/mutt-wizard/switch.muttrc

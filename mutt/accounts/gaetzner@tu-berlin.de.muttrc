@@ -8,10 +8,10 @@ set header_cache     = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/header
 set message_cachedir = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/bodie"s
 set mbox_type        = Maildir
 set hostname         = "mail.tu-berlin.de"
-set spoolfile        = +INBOX
-set postponed        = +Drafts
-set trash            = +Trash
-set record           = +Sent
+set spoolfile        = +"INBOX"
+set postponed        = +"Entw&APw-rfe"
+set trash            = +"Trash"
+set record           = +"Sent"
 
 alias me Matteo Gätzner <gaetzner@tu-berlin.de>
 source /usr/share/mutt-wizard/switch.muttrc
