@@ -914,6 +914,6 @@ augroup end
 
 augroup muttgroup
   autocmd!
-  autocmd BufReadPost *.mutt set filetype=muttrc
+  autocmd BufReadPost *.muttrc set filetype=neomuttrc
   autocmd BufRead,BufNewFile *mutt-* setfiletype mail
 augroup end

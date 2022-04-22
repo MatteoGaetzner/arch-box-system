@@ -1,32 +1,20 @@
 # vim: filetype=neomuttrc
 # muttrc file for account gaetzner@tu-berlin.de
-set realname         = "Matteo Gätzner"
 set from             = "gaetzner@tu-berlin.de"
 set sendmail         = "msmtp -a gaetzner@tu-berlin.de"
 set folder           = "/home/matteo/.local/share/mail/gaetzner@tu-berlin.de"
 set header_cache     = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/header"s
 set message_cachedir = "/home/matteo/.cache/mutt-wizard/m.gaetzner@gmx.de/bodie"s
-set mbox_type        = Maildir
 set hostname         = "mail.tu-berlin.de"
-set spoolfile        = +"INBOX"
 set postponed        = +"Entw&APw-rfe"
 set trash            = +"Trash"
 set record           = +"Sent"
 
 alias me Matteo Gätzner <gaetzner@tu-berlin.de>
-source /usr/share/mutt-wizard/switch.muttrc
 
 ###############  Fast Folder Switching  ##########
 
-
-bind    index,pager   g    noop
-bind    index,pager   ga   noop
-bind    index,pager   gd   noop
-bind    index,pager   gj   noop
-bind    index,pager   gs   noop
-bind    index,pager   gt   noop
-bind    index         gg   first-entry
-bind    pager,browser gg   top-page
+source ../mailbox_reset.muttrc
 
 macro   index,pager   gs   "<change-folder>=Sent<enter>"           "open   sent      folder"
 macro   index,pager   ga   "<change-folder>=Archive<enter>"        "open   archive   folder"

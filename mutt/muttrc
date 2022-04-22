@@ -1,20 +1,39 @@
 # vim: filetype=neomuttrc
 
+###############  Sourcing  #######################
+
+# Source MW defaults
+source /usr/share/mutt-wizard/mutt-wizard.muttrc
+
+# Source default inbox
+source /home/matteo/.config/mutt/accounts/m.gaetzner@gmx.de.muttrc
+
 ###############  Key Bindings  ###################
 
-set abort_key = "<ESC>"
+set   abort_key   =   "<ESC>"
+# bind  index       D   purge-message
 
 # Security setting (See 'Security concern' here: https://wiki.archlinux.org/title/mutt)
-bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
+bind  generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
+
+# Inbox switching
+macro index,pager i3 '<sync-mailbox><enter-command>source /home/matteo/.config/mutt/accounts/blaalblab@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to blaalblab@gmail.com"
+macro index,pager i2 '<sync-mailbox><enter-command>source /home/matteo/.config/mutt/accounts/gaetzner@tu-berlin.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to gaetzner@tu-berlin.de"
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/matteo/.config/mutt/accounts/m.gaetzner@gmx.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to m.gaetzner@gmx.de"
+macro index,pager i4 '<sync-mailbox><enter-command>source /home/matteo/.config/mutt/accounts/matteo.gaetzner@techlabs.org.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to matteo.gaetzner@techlabs.org"
 
 ###############  General Setting  ################
 
+# No annoying beeping
 set beep = no
 
+# Don't prompt for purging confirmation
+set delete = yes
+
 # Sorting
-set sort         = threads
+set sort = reverse-threads
 set sort_browser = reverse-date
-set sort_aux     = last-date-received
+set sort_aux = last-date-received                           
 
 ###############  Abook  ##########################
 
@@ -22,16 +41,3 @@ set query_command= "abook --mutt-query '%s'"
 macro index,pager  a "<pipe-message>abook --add-email-quiet<return>" "Add this sender to Abook"
 bind editor        <Tab> complete-query
 
-###############  Sourcing  #######################
-
-
-# Source default inbox
-source /home/matteo/.config/mutt/accounts/m.gaetzner@gmx.de.muttrc
-
-###############  Mutt-Wizard Things  #############
-
-source /usr/share/mutt-wizard/mutt-wizard.muttrc
-macro index,pager i3 '<sync-mailbox><enter-command>source /home/matteo/.config/mutt/accounts/blaalblab@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to blaalblab@gmail.com"
-macro index,pager i2 '<sync-mailbox><enter-command>source /home/matteo/.config/mutt/accounts/gaetzner@tu-berlin.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to gaetzner@tu-berlin.de"
-macro index,pager i1 '<sync-mailbox><enter-command>source /home/matteo/.config/mutt/accounts/m.gaetzner@gmx.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to m.gaetzner@gmx.de"
-macro index,pager i4 '<sync-mailbox><enter-command>source /home/matteo/.config/mutt/accounts/matteo.gaetzner@techlabs.org.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to matteo.gaetzner@techlabs.org"

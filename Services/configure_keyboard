@@ -1,6 +1,5 @@
 #!/bin/sh
 
-echo "RUN: at `date` by `whoami` act $ACTION $1 DEVPATH $DEVPATH DEVNAME $DEVNAME"
 echo "Re-configuring keyboard!"
 
 export DISPLAY=:0
