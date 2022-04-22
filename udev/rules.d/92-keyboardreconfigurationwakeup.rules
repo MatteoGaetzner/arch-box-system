@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="8087", ATTRS{idProduct}=="0029" RUN+="/bin/sh -c '/opt/bin/configure_keyboard.sh %p'" 

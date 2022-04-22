@@ -27,6 +27,9 @@ rsync $RSYNCOPTS /etc/fstab ~/Sync/System/Fstab/fstab
 # pacman conf
 rsync $RSYNCOPTS /etc/pacman.conf ~/Sync/System/Pacman/pacman.conf
 
+# udev rules
+rsync $RSYNCOPTS /etc/udev/rules.d/ ~/Sync/System/udev/rules.d/
+
 # zsh
 rsync $RSYNCOPTS ~/.zprofile ~/Sync/System/Zsh/.zprofile
 rsync $RSYNCOPTS ~/.zshrc ~/Sync/System/Zsh/.zshrc
