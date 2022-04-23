@@ -24,6 +24,7 @@ dex
 direnv
 discord
 dmidecode
+element-desktop
 eog
 exa
 exodus
@@ -53,6 +54,7 @@ lvtk
 masterpdfeditor
 mediainfo
 mkvtoolnix-gui
+moreutils
 mutt-wizard-git
 nautilus
 ncdu

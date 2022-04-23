@@ -137,6 +137,8 @@ eglexternalplatform
 electron
 electron12
 electron17
+element-desktop
+element-web
 elfutils
 enchant
 eog
@@ -488,6 +490,7 @@ ki18n
 kiconthemes
 kio
 kirigami2
+kitemmodels
 kitemviews
 kitty
 kitty-shell-integration
@@ -501,6 +504,7 @@ knotifyconfig
 kpackage
 kparts
 kpty
+kquickimageeditor
 krb5
 kservice
 ktexteditor
@@ -776,6 +780,7 @@ libpsl
 libpulse
 libpwquality
 libqtxdg
+libquotient
 libqxp
 librabbitmq-c
 libraqm
@@ -929,6 +934,7 @@ mkvtoolnix-cli
 mkvtoolnix-gui
 mlt
 mobile-broadband-provider-info
+moreutils
 mpfr
 mpg123
 msgpack-c
@@ -1088,6 +1094,8 @@ perl-io-html
 perl-io-socket-ssl
 perl-io-string
 perl-io-stringy
+perl-io-tty
+perl-ipc-run
 perl-ipc-run3
 perl-ipc-system-simple
 perl-json-xs
@@ -1148,6 +1156,7 @@ perl-text-csv
 perl-text-glob
 perl-text-roman
 perl-tie-cycle
+perl-time-duration
 perl-timedate
 perl-try-tiny
 perl-types-serialiser
@@ -1326,6 +1335,7 @@ python-zipp
 python2
 qbittorrent
 qpdf
+qqc2-desktop-style
 qrencode
 qt5-base
 qt5-declarative

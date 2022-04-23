@@ -2,14 +2,14 @@
 source /usr/share/mutt-wizard/switch.muttrc
 
 # Unbinding keys for switch between folders
-bind    index         gg   first-entry
-bind    pager,browser gg   top-page
 bind    index,pager   ga   noop
 bind    index,pager   gd   noop
 bind    index,pager   gj   noop
 bind    index,pager   gs   noop
 bind    index,pager   gt   noop
 bind    index,pager   g    noop
+bind    index         gg   first-entry
+bind    pager,browser gg   top-page
 
 set spoolfile        = +"INBOX"
 set realname         = "Matteo Gätzner"

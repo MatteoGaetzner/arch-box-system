@@ -34,6 +34,7 @@ discord
 dmidecode
 dosfstools
 efibootmgr
+element-desktop
 eog
 espeak-ng
 evince
@@ -94,6 +95,7 @@ masterpdfeditor
 mediainfo
 mkvtoolnix-cli
 mkvtoolnix-gui
+moreutils
 msmtp
 mutt-wizard-git
 nautilus

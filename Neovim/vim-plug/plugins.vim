@@ -40,7 +40,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'godlygeek/tabular'
 Plug 'adborden/vim-notmuch-address'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
-Plug 'kyazdani42/nvim-tree.lua'
 
 " Wait for these plugins to get fixed
 " Plug 'romgrk/nvim-treesitter-context'

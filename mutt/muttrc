@@ -24,6 +24,9 @@ macro index,pager i4 '<sync-mailbox><enter-command>source /home/matteo/.config/m
 
 ###############  General Setting  ################
 
+# Automatically add emails
+set display_filter = "pee 'abook --add-email-quiet' 'cat -'"
+
 # No annoying beeping
 set beep = no
 

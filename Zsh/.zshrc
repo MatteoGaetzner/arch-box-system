@@ -373,6 +373,9 @@ function s {
   fi
 }
 
+# Fast note with markdown
+alias fn="nvim $(date +%Y-%m-%d_%H:%M:%S).md"
+
 ###############  University  #####################
 
 function clean_course {
@@ -572,16 +575,13 @@ export GNUPGHOME=$HOME/.gnupg/
 ###############  Mutt  ###########################
 
 function start_mailsync_daemon {
-  MAILSYNC_PYTHONBIN=~/.pyenv/versions/mailsync-daemon-env-3.10.3/bin/python3
-  MAILSYNC_DAEMON_BIN=~/Sync/Programs/Self/isync/mailsync-daemon/mailsync-daemon.py
-
   # First kill all running instances, 
   if [[ $(pgrep -f mailsync-daemon) ]]; then 
     parallel kill ::: $(pgrep -f mailsync-daemon)
   fi
 
   # then start the new daemon
-  $MAILSYNC_PYTHONBIN $MAILSYNC_DAEMON_BIN
+  mailsync_daemon
 }
 
 ###############  R  ##############################
