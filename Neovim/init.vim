@@ -10,11 +10,11 @@ set expandtab
 set ic is
 set ignorecase
 set linebreak
-set shiftwidth=2
+set shiftwidth=4
 set shortmess+=c
 set smartcase
 set smartindent
-set tabstop=2
+set tabstop=4
 set number relativenumber
 set nu rnu
 set hidden
