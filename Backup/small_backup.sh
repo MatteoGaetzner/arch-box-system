@@ -123,6 +123,9 @@ rsync $RSYNCOPTS ~/.ipython/profile_default/ipython_config.py ~/Sync/System/ipyt
 # pylintrc
 rsync $RSYNCOPTS ~/.pylintrc ~/Sync/System/Python/.pylintrc
 
+# pre-commit
+rsync $RSYNCOPTS ~/.config/pre-commit/ ~/Sync/System/Python/pre-commit/
+
 # flashfocus, picom
 rsync $RSYNCOPTS ~/.config/picom/picom.conf ~/Sync/System/Picom/picom.conf
 
