@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 5d1ab6d7f3e8f928c896232d2fb0ff95b3563ca6
+    hooks:
+      - id: check-added-large-files
