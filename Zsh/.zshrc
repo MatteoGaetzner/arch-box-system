@@ -33,10 +33,6 @@ setopt rm_starsilent
 
 # Turn off all beeps
 unsetopt BEEP
-# Turn off autocomplete beeps
-# unsetopt LIST_BEEP
-# Turn off beeps when going beyond history 
-# unsetopt HIST_BEEP
 
 ###############  P10K  ###########################
 
@@ -173,6 +169,33 @@ alias sc="kitty +kitten ssh cluster"
 function full_clamscan () {
   clamscan --max-filesize=4000M --max-scansize=4000M --move=/home/matteo/.local/share/clamscan/quarantine  -l /home/matteo/.local/share/clamscan/$(date --iso-8601=date).log --recursive --infected --exclude-dir='^/sys|^/dev' /
 }
+
+# Adjust webcam brightness (takes percent)
+function webcam_list_options {
+    v4l2-ctl -d /dev/video0 --list-ctrls
+}
+
+# Adjust webcam brightness (takes percent)
+function webcam_configure {
+    v4l2-ctl -d /dev/video0 --set-ctrl=brightness=180,contrast=32,saturation=40,white_balance_temperature_auto=1,gain=180,power_line_frequency=2,sharpness=200,backlight_compensation=1,exposure_auto_priority=1
+}
+
+# 
+# function webcam_configure_defaults {
+#     v4l2-ctl -d /dev/video0 --set-ctrl=brightness=70
+#         ,contrast=32
+#         ,saturation=32
+#         ,white_balance_temperature_auto=1
+#         ,gain=19
+#         ,power_line_frequency=2
+#         ,white_balance_temperature=8120
+#         ,sharpness=24
+#         ,backlight_compensation=1
+#         ,exposure_auto=3
+#         ,exposure_absolute=254
+#         ,exposure_auto_priority=1
+# }
+
 
 ###############  Bluetooth  ######################
 
@@ -374,7 +397,11 @@ function s {
 }
 
 # Fast note with markdown
-alias fn="nvim $(date +%Y-%m-%d_%H:%M:%S).md"
+function fn {
+    DATE=$(date +%Y-%m-%d_%H:%M:%S)
+    echo "# $DATE" >> $DATE.md
+    nvim $DATE.md
+}
 
 ###############  University  #####################
 

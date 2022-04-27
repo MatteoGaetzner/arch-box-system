@@ -52,7 +52,7 @@
   "python.formatting.blackPath": "/home/matteo/.pyenv/versions/ml/bin/black",
   "python.linting.enabled": true,
   "python.linting.mypyEnabled": true,
-  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pycodestyleEnabled": false,
   "python.linting.pylintEnabled": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.stubPath": "/home/matteo/.cache/pyright-stubs/",

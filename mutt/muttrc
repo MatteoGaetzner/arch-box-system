@@ -11,7 +11,10 @@ source /home/matteo/.config/mutt/accounts/m.gaetzner@gmx.de.muttrc
 ###############  Key Bindings  ###################
 
 set   abort_key   =   "<ESC>"
-# bind  index       D   purge-message
+
+# urlview
+macro index,pager \cl "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \cl "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
 # Security setting (See 'Security concern' here: https://wiki.archlinux.org/title/mutt)
 bind  generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop

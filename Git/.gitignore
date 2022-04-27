@@ -15,4 +15,3 @@
 compile_commands.json
 .python-version
 __pycache__
-.pre-commit-config.yaml

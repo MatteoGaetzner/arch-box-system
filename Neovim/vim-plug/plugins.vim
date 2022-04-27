@@ -11,12 +11,16 @@ Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'SirVer/ultisnips'
 Plug 'SmiteshP/nvim-gps'
+Plug 'adborden/vim-notmuch-address'
 Plug 'airblade/vim-gitgutter'
 Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+Plug 'godlygeek/tabular'
 Plug 'honza/vim-snippets'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'jiangmiao/auto-pairs'
 Plug 'kevinoid/vim-jsonc'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'lervag/vimtex'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mboughaba/i3config.vim'
@@ -30,16 +34,14 @@ Plug 'sainnhe/everforest'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 Plug 'skywind3000/asyncrun.vim'
 Plug 'svermeulen/vim-easyclip'
+Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 Plug 'vim-autoformat/vim-autoformat'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
-Plug 'jiangmiao/auto-pairs'
-Plug 'godlygeek/tabular'
-Plug 'adborden/vim-notmuch-address'
-Plug 'kyazdani42/nvim-web-devicons' " for file icons
 
 " Wait for these plugins to get fixed
 " Plug 'romgrk/nvim-treesitter-context'

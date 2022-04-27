@@ -20,11 +20,11 @@ set nu rnu
 set hidden
 set nostartofline
 set timeout ttimeoutlen=25
-set colorcolumn=100
-set textwidth=100
+set colorcolumn=88
+set textwidth=88
 set scrolloff=10
 set belloff=all
-let mapleader="<space>"
+let mapleader=" "
 " set syntax=on
 
 " Performance
@@ -561,6 +561,26 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 "Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+"--------------  Coc-Extensions  -----------------
+
+let g:coc_global_extensions = [
+            \'coc-clangd',
+            \'coc-cmake',
+            \'coc-explorer',
+            \'coc-json',
+            \'coc-julia',
+            \'coc-markdownlint',
+            \'coc-perl',
+            \'coc-pyright',
+            \'coc-rust-analyzer',
+            \'coc-snippets',
+            \'coc-texlab',
+            \'coc-tsserver',
+            \'coc-vimtex',
+            \'coc-marketplace',
+            \'coc-grammarly',
+      \]
+
 "--------------  Coc-Explorer  -------------------
 
 let g:coc_explorer_global_presets = {
@@ -608,9 +628,9 @@ let g:coc_explorer_global_presets = {
 \ }
 
 " Use preset argument to open it
-nnoremap <space>ee <Cmd>CocCommand explorer<CR>
-nnoremap <space>ef <Cmd>CocCommand explorer --preset floating<CR>
-nmap <space>er <Cmd>call CocAction('runCommand', 'explorer.doAction', 'closest', ['reveal:0'], [['relative', 0, 'file']])<CR>
+nnoremap <leader>ee <Cmd>CocCommand explorer<CR>
+nnoremap <leader>ef <Cmd>CocCommand explorer --preset floating<CR>
+nmap <leader>er <Cmd>call CocAction('runCommand', 'explorer.doAction', 'closest', ['reveal:0'], [['relative', 0, 'file']])<CR>
 
 
 "--------------  Coc-Snippets  -------------------
