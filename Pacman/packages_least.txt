@@ -11,6 +11,7 @@ base
 bat
 bear
 bison
+bluez-tools
 bluez-utils
 broot
 chromium
@@ -54,11 +55,13 @@ lvtk
 masterpdfeditor
 mediainfo
 mkvtoolnix-gui
+mokutil
 moreutils
 mutt-wizard-git
 nautilus
 ncdu
 neofetch
+nethogs
 network-manager-applet
 nextcloud-client
 nodejs-nativefier

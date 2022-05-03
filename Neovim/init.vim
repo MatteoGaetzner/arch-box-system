@@ -373,12 +373,12 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   },
   -- NOTE: Waiting for this plugin to get fixed
-   -- matchup = {
-   --  enable = true,              -- mandatory, false will disable the whole extension
-   --  disable = {},  -- optional, list of language that will be disabled
-   --  disable_virtual_text = true,
-   --  include_match_words = true
-  -- },
+   matchup = {
+    enable = true,              -- mandatory, false will disable the whole extension
+    disable = {},  -- optional, list of language that will be disabled
+    disable_virtual_text = true,
+    include_match_words = true
+  },
 }
 END
 
@@ -387,22 +387,22 @@ END
 
 " NOTE: Waiting for this plugin to get fixed
 
-" lua << END
-" require'treesitter-context'.setup{
-"     enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
-"     throttle = true, -- Throttles plugin updates (may improve performance)
-"     max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.
-"     patterns = { -- Match patterns for TS nodes. These get wrapped to match at word boundaries.
-"         default = {
-"             'class',
-"             'function',
-"             'method',
-"         },
-"     },
-"     exact_patterns = {
-"     }
-" }
-" END
+lua << END
+require'treesitter-context'.setup{
+    enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
+    throttle = true, -- Throttles plugin updates (may improve performance)
+    max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.
+    patterns = { -- Match patterns for TS nodes. These get wrapped to match at word boundaries.
+        default = {
+            'class',
+            'function',
+            'method',
+        },
+    },
+    exact_patterns = {
+    }
+}
+END
 
 "--------------  Coc  ----------------------------
 
@@ -577,8 +577,7 @@ let g:coc_global_extensions = [
             \'coc-texlab',
             \'coc-tsserver',
             \'coc-vimtex',
-            \'coc-marketplace',
-            \'coc-grammarly',
+            \'coc-marketplace'
       \]
 
 "--------------  Coc-Explorer  -------------------
@@ -693,7 +692,7 @@ augroup formatgroup
   autocmd!
   autocmd FileType h,c,cpp let b:useClangFormat=1
   autocmd FileType html,javascript,vue,css let b:usePrettier=1
-  autocmd FileType tex let b:autoformat=1
+  autocmd FileType tex,sh,bash,zsh let b:autoformat=1
   autocmd BufWritePre * call Format()
 augroup end
 
@@ -719,7 +718,7 @@ let g:livepreview_use_biber = 1
 augroup latexgroup
   autocmd!
   autocmd FileType tex nnoremap <C-l> :LLPStartPreview<CR>
-  autocmd FileType tex nnoremap <CR> :AsyncRun rm out/*; latexmk -pdf -output-directory=out %<CR>
+  autocmd FileType tex nnoremap <CR> :AsyncRun rm -f out/*; latexmk -pdf -output-directory=out %<CR>
   autocmd FileType tex nnoremap <F9> :call CleanLabel()<CR>
   " autocmd FileType tex set nowrap
 augroup end
@@ -731,6 +730,9 @@ function CleanLabel()
 endfun
 
 let g:formatdef_latexindent = '"latexindent -c=/tmp -"'
+
+" coc-ltex 
+let g:coc_filetype_map = {'tex': 'latex'}
 
 "--------------  C++  ----------------------------
 

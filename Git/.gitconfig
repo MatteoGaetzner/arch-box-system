@@ -52,3 +52,5 @@
 		git commit -F $TMPFILE; \
 		rm -f $TMPFILE \
 		"
+[pull]
+	rebase = false

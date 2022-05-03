@@ -14,6 +14,8 @@ bear
 biber
 bison
 bluez
+bluez-libs
+bluez-tools
 bluez-utils
 broot
 btrfs-progs
@@ -95,6 +97,7 @@ masterpdfeditor
 mediainfo
 mkvtoolnix-cli
 mkvtoolnix-gui
+mokutil
 moreutils
 msmtp
 mutt-wizard-git
@@ -103,6 +106,7 @@ ncdu
 neofetch
 neomutt
 neovim-nightly-bin
+nethogs
 network-manager-applet
 networkmanager
 nextcloud-client
@@ -213,6 +217,7 @@ ttf-joypixels
 ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols
 ueberzug
+unrar
 urlview
 usbutils
 vi

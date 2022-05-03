@@ -1,73 +1,71 @@
 {
-  "languageserver": {
-    "cmake": {
-      "command": "cmake-language-server",
-      "filetypes": ["cmake"],
-      "rootPatterns": [
-        "build/"
-      ],
-      "initializationOptions": {
-        "buildDirectory": "build"
-      }
-    },
-    "dockerfile": {
-      "command": "docker-langserver",
-      "filetypes": ["dockerfile"],
-      "args": ["--stdio"]
-    },
-    "intelephense": {
-      "command": "intelephense",
-      "args": ["--stdio"],
-      "filetypes": ["php"],
-      "initializationOptions": {
-        "storagePath": "/tmp/intelephense"
-      }
-    },
-    "efm": {
-      "command": "efm-langserver",
-      "args": [],
-      "filetypes": ["vim", "eruby"]
-    },
-    "digestif": {
-      "command": "/home/matteo/.local/bin/digestif",
-      "filetypes": ["tex", "plaintex", "context"]
-    }
-  },
-  "texlab.formatterLineLength": 80,
-  "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python"],
-  "explorer.width": 30,
-  "explorer.buffer.root.template": "[icon & 1] OPEN EDITORS",
-  "explorer.file.root.template": "[icon & 1] PROJECT ([root])",
-  "explorer.file.child.template": "[git | 2] [selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
-  "explorer.file.showHiddenFiles": true,
-  "explorer.file.reveal.auto": true,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "pyright.enable": true,
-  "python.formatting.provider": "black",
-  "pyright.organizeimports.provider": "pyright",
-  "python.formatting.autopep8Path": "/home/matteo/.pyenv/versions/ml/bin/autopep8",
-  "python.formatting.yapfPath": "/home/matteo/.pyenv/versions/ml/bin/yapf",
-  "python.formatting.blackPath": "/home/matteo/.pyenv/versions/ml/bin/black",
-  "python.linting.enabled": true,
-  "python.linting.mypyEnabled": true,
-  "python.linting.pycodestyleEnabled": false,
-  "python.linting.pylintEnabled": true,
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.stubPath": "/home/matteo/.cache/pyright-stubs/",
-  "python.venvPath": "${env:HOME}/.pyenv/versions",
-  "snippets.extends": {
-    "latex": ["tex"]
-  },
-  "clangd.path": "/home/matteo/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
-  "coc.source.vimtex.filetypes": [
-    "tex",
-    "plaintex",
-    "latex"
-  ],
-  "markdownlint.config": {
-    "default": true,
-    "line-length": false
-  }
+	"languageserver": {
+		"bash": {
+			"command": "bash-language-server",
+			"args": ["start"],
+			"filetypes": ["sh","zsh",".zsh"],
+			"ignoredRootPaths": ["~"]
+		},
+		"cmake": {
+			"command": "cmake-language-server",
+			"filetypes": ["cmake"],
+			"rootPatterns": [
+				"build/"
+			],
+			"initializationOptions": {
+				"buildDirectory": "build"
+			}
+		},
+		"dockerfile": {
+			"command": "docker-langserver",
+			"filetypes": ["dockerfile"],
+			"args": ["--stdio"]
+		},
+		"intelephense": {
+			"command": "intelephense",
+			"args": ["--stdio"],
+			"filetypes": ["php"],
+			"initializationOptions": {
+				"storagePath": "/tmp/intelephense"
+			}
+		},
+		"efm": {
+			"command": "efm-langserver",
+			"args": [],
+			"filetypes": ["vim", "eruby"]
+		},
+		"digestif": {
+			"command": "/home/matteo/.local/bin/digestif",
+			"filetypes": ["tex", "plaintex", "context"]
+		}
+	},
+	"clangd.path": "/home/matteo/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
+	"coc.preferences.formatOnSaveFiletypes": ["python"],
+	"coc.preferences.formatOnType": true,
+	"coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex" ],
+	"explorer.buffer.root.template": "[icon & 1] OPEN EDITORS",
+	"explorer.file.child.template": "[git | 2] [selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
+	"explorer.file.reveal.auto": true,
+	"explorer.file.root.template": "[icon & 1] PROJECT ([root])",
+	"explorer.file.showHiddenFiles": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.previewAction.onHover": false,
+	"explorer.width": 30,
+	"markdownlint.config": { "default": true, "line-length": false },
+	"pyright.enable": true,
+	"pyright.organizeimports.provider": "pyright",
+	"python.analysis.stubPath": "/home/matteo/.cache/pyright-stubs/",
+	"python.analysis.typeCheckingMode": "basic",
+	"python.formatting.autopep8Path": "/home/matteo/.pyenv/versions/ml/bin/autopep8",
+	"python.formatting.blackPath": "/home/matteo/.pyenv/versions/ml/bin/black",
+	"python.formatting.provider": "black",
+	"python.formatting.yapfPath": "/home/matteo/.pyenv/versions/ml/bin/yapf",
+	"python.linting.enabled": true,
+	"python.linting.mypyEnabled": true,
+	"python.linting.pycodestyleEnabled": false,
+	"python.linting.pylintEnabled": true,
+	"python.venvPath": "${env:HOME}/.pyenv/versions",
+	"snippets.extends": { "latex": ["tex"] },
+	"texlab.formatterLineLength": 80,
+	"ltex.enabled": true,
 }

@@ -16,6 +16,11 @@ set   abort_key   =   "<ESC>"
 macro index,pager \cl "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \cl "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
+# mark all as read
+macro index A \
+    "<tag-pattern>~N<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" \
+    "mark all new as read"
+
 # Security setting (See 'Security concern' here: https://wiki.archlinux.org/title/mutt)
 bind  generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
 

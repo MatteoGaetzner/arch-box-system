@@ -36,4 +36,8 @@ fi
 xrandr --output HDMI-0 --primary --output DP-2 --right-of HDMI-0 &
 xrandr --auto
 
+# Configure Keyboard
+export DISPLAY=:0
+xset r rate 220 30
+
 exec i3

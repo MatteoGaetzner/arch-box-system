@@ -44,7 +44,7 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
 
 " Wait for these plugins to get fixed
-" Plug 'romgrk/nvim-treesitter-context'
-" Plug 'andymass/vim-matchup'
+Plug 'romgrk/nvim-treesitter-context'
+Plug 'andymass/vim-matchup'
 
 call plug#end()
