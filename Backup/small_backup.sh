@@ -14,8 +14,9 @@ pacman -Qet | awk '{print $1}' > ~/Sync/System/Pacman/packages_least.txt
 # keyboard (http://anti.teamidiot.de/mrtweek/2006/10/deutsche_umlaute_auf_tastatur_mit_us-layout/)
 rsync $RSYNCOPTS ~/.Xmodmap ~/Sync/System/Keyboard/.Xmodmap
 rsync $RSYNCOPTS /etc/X11/xorg.conf.d/00-keyboard.conf ~/Sync/System/Keyboard/00-keyboard.conf
+rsync $RSYNCOPTS /etc/udev/rules.d/{81-bluetooth-disable-controller.rules,91-keyboardmousewakeup.rules,92-keyboardreconfigurationwakeup.rules} ~/Sync/System/Keyboard/
 
-# watchdog timer 
+# watchdog timer
 rsync $RSYNCOPTS /etc/modprobe.d/sp5100_tco.conf ~/Sync/System/Motherboard/sp5100_tco.conf
 
 # turn off bell sounds in terminal
@@ -62,9 +63,9 @@ rsync $RSYNCOPTS /bin/big_backup ~/Sync/System/Backup/big_backup.sh
 
 # Neovim
 rsync $RSYNCOPTS \
-  --exclude={after,autoload,spell,UltiSnips} \
-  ~/.config/nvim/ ~/Sync/System/Neovim/
-/bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
+	--exclude={after,autoload,spell,UltiSnips} \
+	~/.config/nvim/ ~/Sync/System/Neovim/
+	/bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
 
 # X
 rsync $RSYNCOPTS ~/.xinitrc ~/Sync/System/X/.xinitrc
@@ -139,12 +140,12 @@ rsync $RSYNCOPTS /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 
 if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then
-  log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
+	log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
 else
-  git -C ~/Sync/System pull
-  git -C ~/Sync/System add .
-  git -C ~/Sync/System commit-status
-  git -C ~/Sync/System push
+	git -C ~/Sync/System pull
+	git -C ~/Sync/System add .
+	git -C ~/Sync/System commit-status
+	git -C ~/Sync/System push
 fi
 
 log_success "Backup to GitHub done."

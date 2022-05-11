@@ -1,30 +1,32 @@
 "-------------  General Settings  --------------
 
 filetype plugin indent on
+let mapleader=" "
 set backspace=indent,eol,start
+set belloff=all
+set colorcolumn=88
 set complete+=kspell
-set nohlsearch
 set completeopt=menuone,longest
 set conceallevel=2
 set expandtab
+set hidden
 set ic is
 set ignorecase
 set linebreak
+set nohlsearch
+set nostartofline
+set nu rnu
+set number relativenumber
+set paste
+set scrolloff=10
 set shiftwidth=4
 set shortmess+=c
 set smartcase
+set smarttab
 set smartindent
 set tabstop=4
-set number relativenumber
-set nu rnu
-set hidden
-set nostartofline
-set timeout ttimeoutlen=25
-set colorcolumn=88
 set textwidth=88
-set scrolloff=10
-set belloff=all
-let mapleader=" "
+set timeout ttimeoutlen=25
 " set syntax=on
 
 " Performance
@@ -36,6 +38,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 " Use Python3
 if has('python3')
 endif
+let g:python3_host_prog="~/.pyenv/versions/nvim_env/bin/python3"
 
 set foldmethod=syntax
 set foldlevelstart=2
@@ -50,9 +53,6 @@ set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
 "--------------  Key Tweaks  ---------------------
-
-nnoremap <Tab> >>2l
-nnoremap <S-T> <<2h
 
 " gm -> add mark
 nnoremap gm m

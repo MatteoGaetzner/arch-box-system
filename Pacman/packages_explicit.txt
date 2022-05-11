@@ -5,6 +5,7 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
+anaconda
 autoconf
 automake
 balena-etcher
@@ -13,6 +14,7 @@ bat
 bear
 biber
 bison
+blueman
 bluez
 bluez-libs
 bluez-tools
@@ -34,6 +36,7 @@ dialog
 direnv
 discord
 dmidecode
+docker
 dosfstools
 efibootmgr
 element-desktop
@@ -79,6 +82,7 @@ jupyterlab
 kitty
 lib32-gnutls
 libclc
+libpam-google-authenticator
 libreoffice-fresh
 libtool
 linux
@@ -143,13 +147,14 @@ pdftk
 perl-anyevent-i3
 perl-file-mimeinfo
 picom
+pipewire-pulse
 pkgconf
 playerctl
+portainer-bin
 powertop
 profile-sync-daemon
 pugixml
 pulseaudio-alsa
-pulseaudio-bluetooth
 pulsemixer
 pyenv
 pyenv-virtualenv
@@ -158,6 +163,7 @@ pypy3
 python-fangfrisch
 python-pip
 python-pynvim
+python-pytest
 python-wheel
 qbittorrent
 qwinff

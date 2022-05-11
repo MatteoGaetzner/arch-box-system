@@ -4,12 +4,11 @@
 # Licensed under the terms of the GNU GPL v3 only.
 #
 # i3blocks blocklet script to see the available updates of pacman and the AUR
-import subprocess
-from subprocess import check_output
-import subprocess
 import argparse
 import os
 import re
+import subprocess
+from subprocess import check_output
 
 
 def create_argparse():
@@ -127,10 +126,10 @@ update_count = len(updates)
 if update_count > 0:
     if update_count == 1:
         info = str(update_count) + " UPDATE AVAILABLE"
-        short_info = str(update_count) + " update"
+        short_info = str(update_count) + " UPDATE"
     else:
         info = str(update_count) + " UPDATES AVAILABLE"
-        short_info = str(update_count) + " updates"
+        short_info = str(update_count) + " UPDATES"
 
     matches = matching_updates(updates, args.watch)
     if matches:

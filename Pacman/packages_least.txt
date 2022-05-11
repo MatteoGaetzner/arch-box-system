@@ -4,6 +4,7 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
+anaconda
 autoconf
 automake
 balena-etcher
@@ -11,6 +12,7 @@ base
 bat
 bear
 bison
+blueman
 bluez-tools
 bluez-utils
 broot
@@ -48,6 +50,7 @@ john
 jupyter-notebook
 kitty
 libclc
+libpam-google-authenticator
 libreoffice-fresh
 lshw
 luakit
@@ -86,6 +89,7 @@ pdfgrep
 pdftk
 picom
 playerctl
+portainer-bin
 powertop
 profile-sync-daemon
 pulsemixer
@@ -93,6 +97,7 @@ pyenv-virtualenv
 pypy
 pypy3
 python-fangfrisch
+python-pytest
 qbittorrent
 qwinff
 rdesktop

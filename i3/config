@@ -32,7 +32,10 @@ for_window [class="^.*"] border pixel 1
 exec xset s off
 exec xset -dpms
 
-# Start firewall
+# Connect bluetooth keyboard
+# exec --no-startup-id bluetoothctl disconnect 20:73:16:10:DB:41 
+# exec --no-startup-id bluetoothctl connect 20:73:16:10:DB:41 
+
 # Set key repeat delay (20 ms) and repeat rate (30 repeats/s)
 # and remap keys
 exec --no-startup-id $home/.local/bin/configure_keyboard

@@ -17,6 +17,7 @@ alsa-ucm-conf
 alsa-utils
 amd-ucode
 amf-headers
+anaconda
 ant
 aom
 appstream-glib
@@ -46,6 +47,7 @@ biber
 binutils
 bison
 blas
+blueman
 bluez
 bluez-libs
 bluez-tools
@@ -54,6 +56,7 @@ boost-libs
 botan
 box2d
 breeze-icons
+bridge-utils
 broot
 brotli
 btrfs-progs
@@ -83,6 +86,7 @@ cmark
 cmocka
 codec2
 compiler-rt
+containerd
 convertlit
 coreutils
 cpulimit
@@ -122,6 +126,8 @@ dmraid
 dnssec-anchors
 docbook-xml
 docbook-xsl
+docker
+docker-compose
 dosfstools
 dotconf
 double-conversion
@@ -766,6 +772,7 @@ liborcus
 libosinfo
 libp11-kit
 libpagemaker
+libpam-google-authenticator
 libpaper
 libpcap
 libpciaccess
@@ -1184,7 +1191,7 @@ phonon-qt5-gstreamer
 picom
 pinentry
 pipewire
-pipewire-media-session
+pipewire-pulse
 pixman
 pkgconf
 playerctl
@@ -1195,6 +1202,7 @@ poppler
 poppler-glib
 poppler-qt5
 popt
+portainer-bin
 portaudio
 potrace
 powertop
@@ -1203,9 +1211,7 @@ profile-sync-daemon
 protobuf
 psmisc
 pugixml
-pulseaudio
 pulseaudio-alsa
-pulseaudio-bluetooth
 pulsemixer
 purpose
 pv
@@ -1217,6 +1223,7 @@ pypy3
 python
 python-anyio
 python-anytree
+python-apipkg
 python-appdirs
 python-argon2-cffi-bindings
 python-argon2_cffi
@@ -1258,6 +1265,7 @@ python-i3ipc
 python-idna
 python-imaplib2
 python-importlib-metadata
+python-iniconfig
 python-ipykernel
 python-ipywidgets
 python-jedi
@@ -1289,6 +1297,7 @@ python-pickleshare
 python-pillow
 python-pip
 python-platformdirs
+python-pluggy
 python-ply
 python-progress
 python-prometheus_client
@@ -1296,12 +1305,14 @@ python-prompt_toolkit
 python-psutil
 python-ptyprocess
 python-pure-eval
+python-py
 python-pycparser
 python-pygments
 python-pynvim
 python-pyopenssl
 python-pyparsing
 python-pyrsistent
+python-pytest
 python-pytz
 python-pyxdg
 python-pyzmq
@@ -1397,6 +1408,7 @@ ruby-irb
 ruby-reline
 rubygems
 run-parts
+runc
 rust
 rust-analyzer
 rust-src
@@ -1558,6 +1570,7 @@ which
 wine
 winetricks
 wireless-regdb
+wireplumber
 woff2
 wpa_supplicant
 wpebackend-fdo
