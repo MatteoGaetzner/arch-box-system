@@ -17,7 +17,6 @@ set nohlsearch
 set nostartofline
 set nu rnu
 set number relativenumber
-set paste
 set scrolloff=10
 set shiftwidth=4
 set shortmess+=c
@@ -79,8 +78,8 @@ nnoremap <F2> <C-o>:source ~/.config/nvim/init.vim<CR>
 "--------------  Clipboard  ----------------------
 
 augroup clipboardgroup
-  autocmd!
-  autocmd VimLeave * call system("xsel -ib", getreg('+'))
+	autocmd!
+	autocmd VimLeave * call system("xsel -ib", getreg('+'))
 augroup end
 
 set clipboard+=unnamedplus
@@ -103,6 +102,7 @@ silent! so .vimlocal
 autocmd BufReadPost *.vimlocal set filetype=vim
 
 "--------------  Line Numbers  -------------------
+
 
 augroup numbertoggle
   autocmd!
@@ -372,37 +372,15 @@ require'nvim-treesitter.configs'.setup {
   context_commentstring = {
     enable = true
   },
-  -- NOTE: Waiting for this plugin to get fixed
-   matchup = {
+	-- Vim Matchup
+	matchup = {
     enable = true,              -- mandatory, false will disable the whole extension
     disable = {},  -- optional, list of language that will be disabled
-    disable_virtual_text = true,
-    include_match_words = true
+    -- [options]
   },
 }
 END
 
-
-"--------------  Treesitter-Context  -------------
-
-" NOTE: Waiting for this plugin to get fixed
-
-lua << END
-require'treesitter-context'.setup{
-    enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
-    throttle = true, -- Throttles plugin updates (may improve performance)
-    max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.
-    patterns = { -- Match patterns for TS nodes. These get wrapped to match at word boundaries.
-        default = {
-            'class',
-            'function',
-            'method',
-        },
-    },
-    exact_patterns = {
-    }
-}
-END
 
 "--------------  Coc  ----------------------------
 
