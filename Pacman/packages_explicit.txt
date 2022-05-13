@@ -116,6 +116,7 @@ networkmanager
 nextcloud-client
 ninja
 nitrogen
+nodejs
 nodejs-nativefier
 nomacs
 nordvpn-bin
@@ -125,6 +126,7 @@ npm
 numactl
 nvidia
 nvidia-cg-toolkit
+nvidia-docker
 nvidia-lts
 nvidia-settings
 nvidia-utils

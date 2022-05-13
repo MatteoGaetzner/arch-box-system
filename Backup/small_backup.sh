@@ -19,6 +19,9 @@ rsync $RSYNCOPTS /etc/udev/rules.d/{81-bluetooth-disable-controller.rules,91-key
 # watchdog timer
 rsync $RSYNCOPTS /etc/modprobe.d/sp5100_tco.conf ~/Sync/System/Motherboard/sp5100_tco.conf
 
+# pipewire
+rsync $RSYNCOPTS /usr/share/pipewire/pipewire.conf ~/Sync/System/pipewire/pipewire.conf
+
 # turn off bell sounds in terminal
 rsync $RSYNCOPTS /etc/inputrc ~/Sync/System/Zsh/inputrc
 
@@ -63,9 +66,9 @@ rsync $RSYNCOPTS /bin/big_backup ~/Sync/System/Backup/big_backup.sh
 
 # Neovim
 rsync $RSYNCOPTS \
-	--exclude={after,autoload,spell,UltiSnips} \
-	~/.config/nvim/ ~/Sync/System/Neovim/
-	/bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
+    --exclude={after,autoload,spell,UltiSnips} \
+    ~/.config/nvim/ ~/Sync/System/Neovim/
+    /bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
 
 # X
 rsync $RSYNCOPTS ~/.xinitrc ~/Sync/System/X/.xinitrc
@@ -140,12 +143,12 @@ rsync $RSYNCOPTS /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 
 if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then
-	log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
+    log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
 else
-	git -C ~/Sync/System pull
-	git -C ~/Sync/System add .
-	git -C ~/Sync/System commit-status
-	git -C ~/Sync/System push
+    git -C ~/Sync/System pull
+    git -C ~/Sync/System add .
+    git -C ~/Sync/System commit-status
+    git -C ~/Sync/System push
 fi
 
 log_success "Backup to GitHub done."

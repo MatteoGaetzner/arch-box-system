@@ -52,6 +52,7 @@ bluez
 bluez-libs
 bluez-tools
 bluez-utils
+bmake
 boost-libs
 botan
 box2d
@@ -764,6 +765,8 @@ libnma-common
 libnotify
 libnsl
 libnumbertext
+libnvidia-container
+libnvidia-container-tools
 libodfgen
 libogg
 libomxil-bellagio
@@ -910,6 +913,7 @@ lm_sensors
 lmdb
 lowdown
 lpsolve
+lsb-release
 lshw
 lua
 lua51-filesystem
@@ -974,7 +978,7 @@ nitrogen
 nlohmann-json
 nm-connection-editor
 node-gyp
-nodejs-lts-erbium
+nodejs
 nodejs-nativefier
 nodejs-nopt
 nomacs
@@ -989,6 +993,9 @@ nss
 numactl
 nvidia
 nvidia-cg-toolkit
+nvidia-container-runtime
+nvidia-container-toolkit
+nvidia-docker
 nvidia-lts
 nvidia-settings
 nvidia-utils
@@ -1398,6 +1405,7 @@ ripgrep
 rnnoise
 rockchip-mpp
 rofi
+rpcsvc-proto
 rpi-imager
 rsync
 rtkit

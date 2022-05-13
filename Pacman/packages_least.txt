@@ -74,6 +74,7 @@ notmuch
 notmuch-mutt
 nvidia
 nvidia-cg-toolkit
+nvidia-docker
 nvidia-lts
 nvtop
 obs-studio

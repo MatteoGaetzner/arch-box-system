@@ -39,5 +39,6 @@ xrandr --auto
 # Configure Keyboard
 export DISPLAY=:0
 xset r rate 220 30
+test -f ~/.Xkeymap && xkbcomp ~/.Xkeymap $DISPLAY
 
 exec i3

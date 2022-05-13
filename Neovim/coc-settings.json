@@ -42,6 +42,7 @@
     "python.pythonPath": "~/.pyenv/versions/nvim_env/bin/python3",
 	"clangd.path": "/home/matteo/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
 	"coc.preferences.formatOnSaveFiletypes": ["python"],
+    "docker.enable": true,
 	"coc.preferences.formatOnType": true,
 	"coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex" ],
 	"explorer.buffer.root.template": "[icon & 1] OPEN EDITORS",
