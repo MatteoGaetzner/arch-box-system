@@ -46,9 +46,11 @@ rsync $RSYNCOPTS ~/.config/broot/conf.hjson ~/Sync/System/broot/conf.hjson
 rsync $RSYNCOPTS ~/.parallel/config ~/Sync/System/Parallel/config
 
 # mutt
-rsync $RSYNCOPTS ~/.config/mutt/ ~/Sync/System/mutt/
+rsync $RSYNCOPTS ~/.config/mutt/accounts/ ~/Sync/System/mutt/accounts/
+rsync $RSYNCOPTS ~/.config/mutt/mailbox_reset.muttrc ~/Sync/System/mutt/mailbox_reset.muttrc
+rsync $RSYNCOPTS ~/.config/mutt/muttrc ~/Sync/System/mutt/muttrc
 rsync $RSYNCOPTS ~/.mbsyncrc ~/Sync/System/mutt/.mbsyncrc
-rsync $RSYNCOPTS ~/.config/msmtp/ ~/Sync/System/mutt/msmtp/
+rsync $RSYNCOPTS ~/.config/msmtp/config ~/Sync/System/mutt/msmtp/config
 
 # crontabs
 rsync $RSYNCOPTS /var/spool/cron/matteo ~/Sync/System/cron/matteo
