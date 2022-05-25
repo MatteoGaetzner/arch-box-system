@@ -5,7 +5,6 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
-anaconda
 autoconf
 automake
 balena-etcher
@@ -19,7 +18,7 @@ bluez
 bluez-libs
 bluez-tools
 bluez-utils
-broot
+bottom
 btrfs-progs
 chromium
 clamav
@@ -38,6 +37,8 @@ discord
 dmidecode
 docker
 dosfstools
+duf
+dust
 efibootmgr
 element-desktop
 eog
@@ -46,6 +47,7 @@ evince
 exa
 exodus
 fakeroot
+fd
 ffmpeg
 ffmpegthumbnailer
 ffnvcodec-headers8.1
@@ -57,8 +59,10 @@ flex
 fzf
 gcc
 gdb
+geekbench
 geogebra
 git
+git-delta
 glew
 gnome-keyring
 groff
@@ -69,6 +73,7 @@ hdf5-openmpi
 hdparm
 hgrep-bin
 htop
+hyperfine
 i3-wm
 i3blocks
 i3lock
@@ -84,6 +89,7 @@ lib32-gnutls
 libclc
 libpam-google-authenticator
 libreoffice-fresh
+librist
 libtool
 linux
 linux-firmware
@@ -98,6 +104,7 @@ lynx
 m4
 make
 masterpdfeditor
+mcfly
 mediainfo
 mkvtoolnix-cli
 mkvtoolnix-gui
@@ -109,10 +116,11 @@ nautilus
 ncdu
 neofetch
 neomutt
-neovim-nightly-bin
+neovim
 nethogs
 network-manager-applet
 networkmanager
+networkmanager-openvpn
 nextcloud-client
 ninja
 nitrogen
@@ -120,13 +128,13 @@ nodejs
 nodejs-nativefier
 nomacs
 nordvpn-bin
+notification-daemon
 notmuch
 notmuch-mutt
 npm
 numactl
 nvidia
 nvidia-cg-toolkit
-nvidia-docker
 nvidia-lts
 nvidia-settings
 nvidia-utils
@@ -154,6 +162,7 @@ pkgconf
 playerctl
 portainer-bin
 powertop
+procs
 profile-sync-daemon
 pugixml
 pulseaudio-alsa
@@ -179,14 +188,17 @@ rsync
 ruby
 rust-analyzer
 samba
+sd
 seahorse
 shellcheck
 slack-desktop
+snapd
 speech-dispatcher
 spotify
 sqlitebrowser
 sshpass
 sudo
+sysbench
 telegram-desktop
 tesseract-data-deu
 tesseract-data-eng
@@ -217,6 +229,8 @@ timeshift
 timeshift-autosnap
 tk
 tldr
+tmux
+torbrowser-launcher
 translate-shell
 ttf-fira-code
 ttf-fira-mono
@@ -244,6 +258,7 @@ xcompmgr
 xdg-user-dirs
 xdg-utils
 xf86-video-vesa
+xh
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
@@ -287,9 +302,11 @@ xorg-xwininfo
 xorg-xwud
 xournalpp
 xsel
+xterm
 yarn
 yay
 zbar
 zotero
+zoxide
 zsh
 zsh-autosuggestions

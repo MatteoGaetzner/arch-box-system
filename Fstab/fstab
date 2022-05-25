@@ -31,3 +31,5 @@ tmpfs   					/tmp         	tmpfs   	rw,nodev,nosuid,uid=matteo,gid=matteo,mode=1
 
 tmpfs      					/dev/shm        tmpfs   	defaults	0 0
 
+# /dev/nvme1n1p2
+UUID=389991c6-a447-4c36-b56b-6ac78b0d6401	/mnt/nvme1n1p2      	btrfs

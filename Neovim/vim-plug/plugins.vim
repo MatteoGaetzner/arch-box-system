@@ -7,6 +7,8 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'SirVer/ultisnips'
@@ -19,12 +21,10 @@ Plug 'honza/vim-snippets'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'jiangmiao/auto-pairs'
 Plug 'kevinoid/vim-jsonc'
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'lervag/vimtex'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mboughaba/i3config.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neomake/neomake'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

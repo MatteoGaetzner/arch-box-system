@@ -1,6 +1,8 @@
 #! /bin/bash
 
-if [ -z ${TERM+x} ]; then
+NORMAL=""
+YELLOW=""
+if [[ -v TERM && $TERM != 'dumb' ]]; then
 	NORMAL=$(tput sgr0)
 	YELLOW=$(tput setaf 3)
 fi

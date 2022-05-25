@@ -1,5 +1,8 @@
 #!/usr/bin/zsh
 
+# Profiling shell load time; run `zprof` to get profiling info ('self' % column most important)
+zmodload zsh/zprof
+
 ###############  Variables  ######################
 
 # Colors
@@ -19,14 +22,16 @@ BLINK=$(tput blink)
 REVERSE=$(tput smso)
 UNDERLINE=$(tput smul)
 
-CACHEDIR=~/.cache/
-ZSHUPDATEDFILE=/tmp/zsh.updated45a4586f367a83116277a3e81b87756b6ba1b6c9
-XDG_CONFIG_HOME=$HOME/.config/
+export CACHEDIR=~/.cache/
+export ZSHUPDATEDFILE=/tmp/zsh.updated45a4586f367a83116277a3e81b87756b6ba1b6c9
+export XDG_CONFIG_HOME=$HOME/.config/
+export NODE_OPTIONS=--max-old-space-size=8192
 
 ##############  Zsh Options  #####################
 
 setopt HIST_IGNORE_SPACE
-source ~/.config/zsh/completions/completion_settings.zsh
+# NOTE: Sourcing completion_settings.zsh slows down shell startup significantly
+# source ~/.config/zsh/completions/completion_settings.zsh
 
 # Don't ask for confirmation before `rm path/*`
 setopt rm_starsilent
@@ -52,7 +57,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export ZSH_PYENV_VIRTUALENV=true
 export ZSH_PYENV_QUIET=false
 source ~/.config/zsh/completions/pyenv.zsh
-eval "$(pyenv init --path)"
+# eval "$(pyenv init --path)"
 
 ###############  OMZ  ############################
 
@@ -71,18 +76,14 @@ HIST_STAMPS="dd.mm.yyyy"
 
 # Plugins
 plugins=(
-    archlinux
-    docker
-    dotenv
-    emoji
     git
-    git-extras
     pass
     pip
     pyenv
     zsh-autosuggestions
-    zsh-syntax-highlighting
     zsh-vi-mode
+    fast-syntax-highlighting
+    evalcache
 )
 
 # Path to the oh-my-zsh installation
@@ -105,9 +106,6 @@ PERL5LIB="$HOME/.local/share/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export P
 PERL_LOCAL_LIB_ROOT="$HOME/.loca/share/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"$HOME/.local/share/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=$HOME/.local/share/perl5"; export PERL_MM_OPT;
-
-# Optional
-path+=("$HOME/.local/share/bsprak.toolchain/arm/bin")
 
 export PATH
 
@@ -181,6 +179,12 @@ function webcam_configure {
     v4l2-ctl -d /dev/video0 --set-ctrl=brightness=180,contrast=32,saturation=40,white_balance_temperature_auto=1,gain=180,power_line_frequency=2,sharpness=200,backlight_compensation=1,exposure_auto_priority=1
 }
 
+# Time zsh startup time
+function timezsh {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do time $shell -i -c exit; done
+}
+
 ###############  Bluetooth  ######################
 
 alias blue="bluetoothctl connect"
@@ -213,7 +217,22 @@ alias la='exa -la --color=always --group-directories-first --icons'  # all files
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
 alias l.="exa -a | egrep '^\.'"
 
+alias du='dust'
+alias df='duf'
+
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# Mcfly (better history)
+export MCFLY_KEY_SCHEME=vim
+export MCFLY_FUZZY=2
+export MCFLY_INTERFACE_VIEW=TOP
+export MCFLY_RESULTS_SORT=LAST_RUN
+alias h="mcfly search"
+
+alias htop="btm -c"
+alias ps="procs"
+alias http="xh" # For http requests
+alias benchmark="hyperfine"
 
 ###############  VI MODE  ########################
 
@@ -283,9 +302,6 @@ function tl {
     tmp="$@"; trans "$tmp"
 }
 
-# Enable z.lua fast cd
-eval "$(lua $HOME/.local/share/z.lua/z.lua --init zsh)"
-
 # Copying and pasting from command line
 alias cpy="xclip -sel c <"
 alias pst="xclip -sel c -o >"
@@ -333,7 +349,11 @@ function rec_replace {
 }
 
 alias i="/home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit"
-alias v="nvim"
+
+# Make vim play well with virtual environments
+# Solution from here: https://vi.stackexchange.com/questions/7644/use-vim-with-virtualenv/34996#34996
+
+alias v=nvim
 
 alias pc="pass -c"
 alias poc="pass otp -c"
@@ -345,7 +365,7 @@ alias vimec="nvim $HOME/.config/nvim/coc-settings.json"
 
 alias vifme="nvim $HOME/.config/vifm/vifmrc"
 
-alias zshe="nvim $HOME/.zshrc; zsh"
+alias zshe="nvim $HOME/.zshrc; exec zsh"
 
 alias i3e="nvim $HOME/.config/i3/config"
 alias i3be="nvim $HOME/.config/i3blocks/config"
@@ -511,7 +531,7 @@ function jn {
 
 function mgmt_onboarding {
     firefox -url "https://www.notion.so/techlabs/c30ffb07ffe5419caa51a7b36ab208d3?v=309bfe26069749228921a296d7d99eee" "https://www.notion.so/techlabs/Non-Disclosure-Agreement-NDA-5e844ea9f1944036a0a103a463e1c2ae" "https://admin.google.com/u/1/ac/users?action_id=ADD_USER" "https://admin.google.com/u/1/ac/groups/03whwml41tspvjp" "https://admin.google.com/u/1/ac/groups/035nkun22iwi22l" "https://techlabs-mgmt.slack.com/admin" "https://techlabs-mgmt.slack.com/admin/user_groups" "https://techlabs-community.slack.com/admin" "https://techlabs-community.slack.com/admin/user_groups"
-    log_notify "Don't forget to add the new member to NOTION and write an EMAIL!"
+    log_info "Don't forget to add the new member to NOTION and write an EMAIL!"
 }
 
 ###############  VPN  ############################
@@ -585,6 +605,14 @@ export MBSYNCRC=$HOME/.mbsyncrc
 export PASSWORD_STORE_DIR=$HOME/.password-store
 export NOTMUCH_CONFIG=$HOME/.notmuch-config
 export GNUPGHOME=$HOME/.gnupg/
+
+###############  Docker  #########################
+
+alias dbl="sudo docker build"
+alias drn="sudo docker run -d --rm --gpus all"
+alias dxe="sudo docker exec -it"
+alias dps="sudo docker ps"
+alias dkl="sudo docker kill"
 
 ###############  Mutt  ###########################
 
@@ -701,26 +729,10 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
         # echo -e "\033[2K"
 
         touch $ZSHUPDATEDFILE
+    fi
 fi
-fi
 
-# Let direnv hook into the shell
-eval "$(direnv hook zsh)"
-
-source /home/matteo/.config/broot/launcher/bash/br
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/opt/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#   eval "$__conda_setup"
-# else
-#   if [ -f "/opt/anaconda/etc/profile.d/conda.sh" ]; then
-#       . "/opt/anaconda/etc/profile.d/conda.sh"
-#   else
-#       export PATH="/opt/anaconda/bin:$PATH"
-#   fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
-
+_evalcache direnv hook zsh
+_evalcache mcfly init zsh
+_evalcache zoxide init zsh
+_evalcache pyenv init --path

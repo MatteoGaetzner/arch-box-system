@@ -21,9 +21,15 @@ font pango:Fira Code 10
 # Keyboard shortcuts
 bindsym $mod+f exec firefox
 bindsym $mod+b exec $home/.config/i3/scripts/bsprak.sh
-bindsym $mod+i exec kitty $home/.pyenv/versions/ml/bin/ipython --no-confirm-exit
+# bindsym $mod+i exec kitty $home/.pyenv/versions/ml/bin/ipython --no-confirm-exit
 bindsym Print exec flameshot gui
 bindsym $mod+n exec --no-startup-id flash_window
+
+# Alt+P for passthrough mode
+mode  "Passthrough Mode - Press Alt+P to exit" {
+        bindsym $mod+P mode "default"
+}
+bindsym $mod+P mode "Passthrough Mode - Press Alt+P to exit"
 
 # No titlebar
 for_window [class="^.*"] border pixel 1
@@ -60,12 +66,9 @@ exec --no-startup-id nitrogen --restore
 
 # Workspace 1
 exec --no-startup-id "i3-msg 'workspace 1; append_layout $home/.config/i3/layouts/workspace-1-startup.i3config'"
-exec --no-startup-id "i3-msg 'workspace 1; exec firefox -url https://tasksboard.com/app https://isis.tu-berlin.de/my/'"
-
+exec --no-startup-id "i3-msg 'workspace 1; exec firefox -url https://tasksboard.com/app https://isis.tu-berlin.de/my/ https://web.whatsapp.com/ https://web.telegram.org/z/ https://app.element.io/#/room/!AfKDPFUybRQqoyldMP:matrix.tu-berlin.de https://discord.com/channels/@me https://mattermost.hhi.fraunhofer.de/ml-hhi/channels/solp-klips https://owa.hhi.fraunhofer.de/owa/#path=/mail'"
 # Workspace 2
 exec --no-startup-id "i3-msg 'workspace 2; append_layout $home/.config/i3/layouts/workspace-2-startup.i3config'"
-exec --no-startup-id "i3-msg 'workspace 2; exec whatsapp-nativefier'"
-exec --no-startup-id "i3-msg 'workspace 2; exec telegram-desktop'"
 exec --no-startup-id "i3-msg 'workspace 2; exec spotify'"
 exec --no-startup-id "i3-msg 'workspace 2; exec kitty'"
 
@@ -106,7 +109,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill

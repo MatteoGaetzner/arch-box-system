@@ -64,6 +64,7 @@ rsync $RSYNCOPTS ~/.ssh/config ~/Sync/System/Ssh/config
 # gpg -e --recipient "Matteo Gaetzner" --output ~/Sync/System/Fangfrisch/fangfrisch.conf.gpg --yes /etc/fangfrisch/fangfrisch.conf
 
 # Backup scripts
+rsync $RSYNCOPTS /bin/spinner ~/Sync/System/Backup/spinner.sh
 rsync $RSYNCOPTS /bin/big_backup ~/Sync/System/Backup/big_backup.sh
 
 # Neovim

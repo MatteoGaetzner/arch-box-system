@@ -54,9 +54,9 @@ markup=pango
 interval=1
 
 
-[mymemory]
-markup=pango
-label=RAM  
+[memory]
+label=   
+instance=mem;free
 interval=1
 
 

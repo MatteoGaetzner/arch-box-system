@@ -24,9 +24,8 @@ set smartcase
 set smarttab
 set smartindent
 set tabstop=4
-set textwidth=88
 set timeout ttimeoutlen=25
-" set syntax=on
+set syntax=on
 
 " Performance
 set lazyredraw
@@ -39,7 +38,7 @@ if has('python3')
 endif
 let g:python3_host_prog="~/.pyenv/versions/nvim_env/bin/python3"
 
-set foldmethod=syntax
+" set foldmethod=syntax
 set foldlevelstart=2
 
 let sh_fold_enabled=1         " sh
@@ -56,6 +55,27 @@ set undodir=~/.vim/undo//
 " gm -> add mark
 nnoremap gm m
 
+" Go to tab by number
+nnoremap <leader>1 1gt
+nnoremap <leader>2 2gt
+nnoremap <leader>3 3gt
+nnoremap <leader>4 4gt
+nnoremap <leader>5 5gt
+nnoremap <leader>6 6gt
+nnoremap <leader>7 7gt
+nnoremap <leader>8 8gt
+nnoremap <leader>9 9gt
+nnoremap <leader>0 :tablast<CR>
+
+" Delete everything with <C-l>
+nnoremap <C-l> :1,$d<CR>i
+inoremap <C-l> <Esc>:1,$d<CR>i
+
+" Yank everything with <C-y>
+nnoremap <C-y> :1,$y<CR>
+inoremap <C-y> <Esc>:1,$y<CR>i
+
+
 "--------------  Custom Commands -----------------
 
 cnoremap -complete=file -nargs=1 O execute 'silent! !xdg-open <args>'
@@ -70,10 +90,12 @@ inoremap <C-K> <Esc>:move .-2<CR>==gi
 vnoremap <C-J> :move '>+1<CR>gv=gv
 vnoremap <C-K> :move '<-2<CR>gv=gv
 
-"--------------  Vimrc Editing  ------------------
+"--------------  Editing Vim Files  --------------
 
 nnoremap <F1> :e ~/.config/nvim/init.vim<CR>
 nnoremap <F2> <C-o>:source ~/.config/nvim/init.vim<CR>
+
+command! Vimec :tabe ~/.config/nvim/coc-settings.json
 
 "--------------  Clipboard  ----------------------
 
@@ -130,6 +152,15 @@ endfun
 
 map <F12> :call MySpellLang()<CR>
 imap <F12> :call MySpellLang()<CR>
+
+"--------------  Linting  ------------------------
+
+" Neomake for linting
+augroup lintinggroup
+    autocmd!
+    autocmd BufRead,BufNewFile,InsertLeave,InsertEnter,BufWritePost *.sh,*.vim :Neomake
+augroup END
+
 
 "--------------  Windows  ------------------------
 
@@ -627,7 +658,7 @@ endfun
 "--------------  UltiSnips  ----------------------
 
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
-let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsEditSplit="tabdo"
 let g:UltiSnipsExpandTrigger = "<s-tab>"
 let g:ulti_expand_or_jump_res = 0
 let g:UltiSnipsJumpForwardTrigger="<nop>"
@@ -662,6 +693,11 @@ function! Format()
   endif
   if exists('b:autoformat')
     Autoformat
+    return
+  endif
+  if exists('b:useCocFormat')
+    call CocActionAsync('format')
+    return
   endif
 endfun
 
@@ -670,7 +706,8 @@ augroup formatgroup
   autocmd!
   autocmd FileType h,c,cpp let b:useClangFormat=1
   autocmd FileType html,javascript,vue,css let b:usePrettier=1
-  autocmd FileType tex,sh,bash,zsh let b:autoformat=1
+  autocmd FileType tex let b:autoformat=1
+  autocmd FileType sh,bash,zsh,json let b:useCocFormat=1
   autocmd BufWritePre * call Format()
 augroup end
 

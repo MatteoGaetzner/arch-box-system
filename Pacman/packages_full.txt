@@ -1,4 +1,5 @@
 a52dec
+aalib
 abook
 abseil-cpp
 accounts-qml-module
@@ -17,9 +18,9 @@ alsa-ucm-conf
 alsa-utils
 amd-ucode
 amf-headers
-anaconda
 ant
 aom
+apparmor
 appstream-glib
 apr
 apr-util
@@ -37,6 +38,7 @@ autoconf
 automake
 avahi
 avisynthplus
+awesome-terminal-fonts
 balena-etcher
 base
 bash
@@ -55,10 +57,10 @@ bluez-utils
 bmake
 boost-libs
 botan
+bottom
 box2d
 breeze-icons
 bridge-utils
-broot
 brotli
 btrfs-progs
 bubblewrap
@@ -133,6 +135,8 @@ dosfstools
 dotconf
 double-conversion
 doxygen
+duf
+dust
 e2fsprogs
 ebook-tools
 ed
@@ -160,7 +164,9 @@ exodus
 expat
 faad2
 fakeroot
+farstream
 faudio
+fd
 ffcall
 ffmpeg
 ffmpeg4.4
@@ -180,6 +186,7 @@ flex
 flite1-patched
 fmt
 fontconfig
+freeglut
 freetype2
 frei0r-plugins
 fribidi
@@ -199,6 +206,7 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
+geekbench
 geoclue
 geocode-glib
 geogebra
@@ -207,6 +215,7 @@ ghc-libs
 ghostscript
 giflib
 git
+git-delta
 glew
 glib-networking
 glib2
@@ -227,7 +236,9 @@ gnu-free-fonts
 gnupg
 gnutls
 go
+go-tools
 gobject-introspection-runtime
+gperf
 gpgme
 gpm
 gptfdisk
@@ -245,9 +256,11 @@ gsfonts
 gsl
 gsm
 gspell
+gssdp
 gst-libav
 gst-plugins-base
 gst-plugins-base-libs
+gst-plugins-good
 gstreamer
 gtest
 gtk-doc
@@ -258,9 +271,12 @@ gtk2
 gtk3
 gtkmm
 gtkmm3
+gtkspell
 gts
 guile
+gupnp
 gupnp-dlna
+gupnp-igd
 guvcview-common
 gvfs
 gvim
@@ -423,6 +439,7 @@ http-parser
 hunspell
 hwdata
 hwloc
+hyperfine
 hyphen
 i3-wm
 i3blocks
@@ -663,6 +680,7 @@ libdca
 libde265
 libdispatch
 libdrm
+libdv
 libdvbpsi
 libdvdread
 libe-book
@@ -683,6 +701,7 @@ libffi
 libfontenc
 libfreeaptx
 libfreehand
+libgadu
 libgcrypt
 libgee
 libgexiv2
@@ -758,6 +777,7 @@ libnewt
 libnfnetlink
 libnftnl
 libnghttp2
+libnice
 libnl
 libnm
 libnma
@@ -807,6 +827,7 @@ libsamplerate
 libsasl
 libseccomp
 libsecret
+libshout
 libsigc++
 libsigsegv
 libsm
@@ -851,6 +872,7 @@ libvisual
 libvorbis
 libvpx
 libvterm
+libvterm01
 libwacom
 libwebp
 libwnck3
@@ -922,6 +944,7 @@ lua53
 lua53-lpeg
 luajit
 luakit
+luit
 lv2
 lvm2
 lvtk
@@ -932,9 +955,11 @@ m4
 mailcap
 make
 man-db
+mariadb-libs
 masterpdfeditor
 mathjax2
 mbedtls
+mcfly
 md4c
 mdadm
 media-player-info
@@ -964,13 +989,14 @@ ndctl
 neofetch
 neomutt
 neon
-neovim-nightly-bin
+neovim
 net-snmp
 nethogs
 netpbm
 nettle
 network-manager-applet
 networkmanager
+networkmanager-openvpn
 nextcloud-client
 nftables
 ninja
@@ -983,6 +1009,7 @@ nodejs-nativefier
 nodejs-nopt
 nomacs
 nordvpn-bin
+notification-daemon
 notmuch
 notmuch-mutt
 notmuch-runtime
@@ -995,7 +1022,6 @@ nvidia
 nvidia-cg-toolkit
 nvidia-container-runtime
 nvidia-container-toolkit
-nvidia-docker
 nvidia-lts
 nvidia-settings
 nvidia-utils
@@ -1019,6 +1045,7 @@ openjpeg2
 openmpi
 openssh
 openssl
+openvpn
 opus
 orc
 osinfo-db
@@ -1200,6 +1227,7 @@ pinentry
 pipewire
 pipewire-pulse
 pixman
+pkcs11-helper
 pkgconf
 playerctl
 pocketsphinx
@@ -1211,11 +1239,14 @@ poppler-qt5
 popt
 portainer-bin
 portaudio
+postgresql-libs
 potrace
 powertop
 procps-ng
+procs
 profile-sync-daemon
 protobuf
+protobuf-c
 psmisc
 pugixml
 pulseaudio-alsa
@@ -1266,6 +1297,7 @@ python-executing
 python-fangfrisch
 python-fastjsonschema
 python-gobject
+python-gpgme
 python-greenlet
 python-html5lib
 python-i3ipc
@@ -1274,6 +1306,7 @@ python-imaplib2
 python-importlib-metadata
 python-iniconfig
 python-ipykernel
+python-ipython-genutils
 python-ipywidgets
 python-jedi
 python-jinja
@@ -1318,7 +1351,10 @@ python-pygments
 python-pynvim
 python-pyopenssl
 python-pyparsing
+python-pyqt5
+python-pyqt5-sip
 python-pyrsistent
+python-pysocks
 python-pytest
 python-pytz
 python-pyxdg
@@ -1423,6 +1459,7 @@ rust-src
 samba
 sane
 sbc
+sd
 sdl2
 seahorse
 sed
@@ -1442,6 +1479,7 @@ slack-desktop
 slang
 smartmontools
 smbclient
+snapd
 snappy
 sndio
 solid
@@ -1458,6 +1496,7 @@ spirv-tools
 spotify
 sqlite
 sqlitebrowser
+squashfs-tools
 sratom
 srt
 sshpass
@@ -1471,6 +1510,7 @@ svt-vp9
 swig
 syndication
 syntax-highlighting
+sysbench
 sysfsutils
 systemd
 systemd-libs
@@ -1483,6 +1523,7 @@ tbb
 tcl
 tdb
 telegram-desktop
+telegram-tdlib
 tensorflow
 tesseract
 tesseract-data-afr
@@ -1521,6 +1562,9 @@ timeshift-autosnap
 tinyxml2
 tk
 tldr
+tmux
+tor
+torbrowser-launcher
 totem-pl-parser
 tpm2-tss
 tracker3
@@ -1568,6 +1612,7 @@ vte3
 vtk
 vulkan-headers
 vulkan-icd-loader
+wavpack
 wayland
 wayland-protocols
 webkit2gtk
@@ -1588,6 +1633,7 @@ xapian-core
 xapp
 xavs
 xavs2
+xbitmaps
 xcb-proto
 xcb-util
 xcb-util-cursor
@@ -1604,6 +1650,7 @@ xdg-utils
 xf86-input-libinput
 xf86-video-vesa
 xfsprogs
+xh
 xkeyboard-config
 xmlsec
 xorg-bdftopcf
@@ -1661,6 +1708,7 @@ xorg-xwud
 xorgproto
 xournalpp
 xsel
+xterm
 xvidcore
 xxhash
 xz
@@ -1676,6 +1724,7 @@ zita-alsa-pcmi
 zita-resampler
 zlib
 zotero
+zoxide
 zsh
 zsh-autosuggestions
 zstd

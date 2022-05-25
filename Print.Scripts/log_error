@@ -1,8 +1,11 @@
 #! /bin/bash
 
-if [ -z ${TERM+x} ]; then
+RED=""
+NORMAL=""
+if [[ -v TERM && $TERM != 'dumb' ]]; then
 	RED=$(tput setaf 1)
 	NORMAL=$(tput sgr0)
 fi
+
 
 printf "${RED}[ ERROR ] ${NORMAL}${1}\n"
