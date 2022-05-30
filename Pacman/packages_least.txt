@@ -88,6 +88,7 @@ obs-studio
 offlineimap
 okular
 openconnect
+p7zip
 pacman-contrib
 papirus-icon-theme
 parallel
@@ -102,11 +103,11 @@ powertop
 procs
 profile-sync-daemon
 pulsemixer
+pycharm-eap
 pyenv-virtualenv
 pypy
 pypy3
 python-fangfrisch
-python-pytest
 qbittorrent
 qwinff
 rdesktop
@@ -119,6 +120,7 @@ shellcheck
 slack-desktop
 snapd
 spotify
+spotify-tui
 sqlitebrowser
 sshpass
 sysbench
@@ -197,6 +199,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwud
 xournalpp
+xpdf
 yarn
 yay
 zbar

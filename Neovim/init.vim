@@ -706,8 +706,7 @@ augroup formatgroup
   autocmd!
   autocmd FileType h,c,cpp let b:useClangFormat=1
   autocmd FileType html,javascript,vue,css let b:usePrettier=1
-  autocmd FileType tex let b:autoformat=1
-  autocmd FileType sh,bash,zsh,json let b:useCocFormat=1
+  autocmd FileType bash,sh,zsh,tex let b:autoformat=1
   autocmd BufWritePre * call Format()
 augroup end
 

@@ -77,6 +77,7 @@ hyperfine
 i3-wm
 i3blocks
 i3lock
+inkscape
 ipset
 iptables-nft
 jaxx-liberty-appimage
@@ -144,6 +145,7 @@ offlineimap
 okular
 openconnect
 opencv
+p7zip
 pacman-contrib
 pandoc
 papirus-icon-theme
@@ -167,6 +169,7 @@ profile-sync-daemon
 pugixml
 pulseaudio-alsa
 pulsemixer
+pycharm-eap
 pyenv
 pyenv-virtualenv
 pypy
@@ -195,6 +198,7 @@ slack-desktop
 snapd
 speech-dispatcher
 spotify
+spotify-tui
 sqlitebrowser
 sshpass
 sudo
@@ -301,6 +305,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xournalpp
+xpdf
 xsel
 xterm
 yarn

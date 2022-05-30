@@ -105,6 +105,7 @@ cudnn
 cups
 cups-filters
 curl
+cython
 dav1d
 davs2
 db
@@ -243,6 +244,7 @@ gpgme
 gpm
 gptfdisk
 graphene
+graphicsmagick
 graphite
 graphviz
 grep
@@ -452,6 +454,7 @@ imagemagick
 imath
 imlib2
 iniparser
+inkscape
 intel-gmmlib
 intel-media-driver
 intel-media-sdk
@@ -552,6 +555,7 @@ ldns
 lensfun-git
 leptonica
 less
+lib2geom
 lib32-acl
 lib32-attr
 lib32-brotli
@@ -1050,6 +1054,7 @@ opus
 orc
 osinfo-db
 p11-kit
+p7zip
 pacman
 pacman-contrib
 pacman-mirrorlist
@@ -1254,6 +1259,7 @@ pulsemixer
 purpose
 pv
 pybind11
+pycharm-eap
 pyenv
 pyenv-virtualenv
 pypy
@@ -1427,6 +1433,7 @@ qtws-base
 quazip-qt5
 qwinff
 r
+ragel
 raptor
 rasqal
 rav1e
@@ -1494,6 +1501,7 @@ speexdsp
 sphinxbase
 spirv-tools
 spotify
+spotify-tui
 sqlite
 sqlitebrowser
 squashfs-tools
@@ -1707,6 +1715,7 @@ xorg-xwininfo
 xorg-xwud
 xorgproto
 xournalpp
+xpdf
 xsel
 xterm
 xvidcore

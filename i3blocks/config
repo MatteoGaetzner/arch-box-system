@@ -52,10 +52,15 @@ interval=1
 [mydisk]
 markup=pango
 interval=1
+DISK=/dev/nvme0n1p3
 
+[mydisk]
+markup=pango
+interval=1
+DISK=/dev/nvme1n1p2
 
 [memory]
-label=   
+label=RAM   
 instance=mem;free
 interval=1
 

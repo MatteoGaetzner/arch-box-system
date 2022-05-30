@@ -4,7 +4,7 @@ RSYNCOPTS="-av"
 
 DIRSIZE_LIMIT=25000
 
-log_notify "Backing up to GitHub ..."
+log_info "Backing up to GitHub ..."
 
 # installed packages
 pacman -Q | awk '{print $1}' > ~/Sync/System/Pacman/packages_full.txt
@@ -109,7 +109,7 @@ rsync $RSYNCOPTS /usr/lib/systemd/system/reflector.timer ~/Sync/System/Services/
 rsync $RSYNCOPTS ~/.local/bin/configure_keyboard ~/Sync/System/Services/configure_keyboard
 
 # print scripts
-rsync $RSYNCOPTS /bin/log_notify ~/Sync/System/Print.Scripts/log_notify
+rsync $RSYNCOPTS /bin/log_info ~/Sync/System/Print.Scripts/log_info
 rsync $RSYNCOPTS /bin/log_warn ~/Sync/System/Print.Scripts/log_warn
 rsync $RSYNCOPTS /bin/log_error ~/Sync/System/Print.Scripts/log_error
 rsync $RSYNCOPTS /bin/log_success ~/Sync/System/Print.Scripts/log_success
@@ -145,7 +145,7 @@ rsync $RSYNCOPTS /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
 
 dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
 
-if [[ $dirsize -ge $DIRSIZE_LIMIT ]]; then
+if [ "$dirsize" -ge "$DIRSIZE_LIMIT" ]; then
     log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
 else
     git -C ~/Sync/System pull

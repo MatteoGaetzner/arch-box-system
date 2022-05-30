@@ -14,7 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-DISK=/dev/nvme0n1p3
 FILESYSTEM=$(df -h $DISK | tail -1 | awk '{print $1}')
 SIZE=$(df -h $DISK | tail -1 | awk '{print $2}')
 USED=$(df -h $DISK | tail -1 | awk '{print $3}')
@@ -24,10 +23,10 @@ printf "%s  %s / %s  %s%%\n" "$FILESYSTEM" "$USED" "$SIZE"  "$USE_PERCENT"
 printf "%s  %s%%\n" "$FILESYSTEM" "$USE_PERCENT"
 if [[ $USE_PERCENT -gt 90 ]]
 then
-  printf "#E68183\n"
+    printf "#E68183\n"
 elif [[ $USE_PERCENT -gt 80 ]]
 then
-  printf "#D9BB80\n"
+    printf "#D9BB80\n"
 else
-  printf ""
+    printf ""
 fi

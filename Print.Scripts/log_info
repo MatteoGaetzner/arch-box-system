@@ -1,0 +1,20 @@
+#! /bin/bash
+
+BLUE=""
+NORMAL=""
+if [[ -v TERM && $TERM != 'dumb' ]]; then
+	BLUE=$(tput setaf 4)
+	NORMAL=$(tput sgr0)
+fi
+
+if [[ $# -ge 2 ]]; then
+	if [ "$2" = "--no-newline" ]; then
+		printf "${BLUE}[ INFO ] ${NORMAL}${1}"
+	elif [ "$1" = "--no-newline" ]; then
+		printf "${BLUE}[ INFO ] ${NORMAL}${2}"
+	else
+		printf "${BLUE}[ INFO ] ${NORMAL}${1}\n"
+	fi
+else
+	printf "${BLUE}[ INFO ] ${NORMAL}${1}\n"
+fi

@@ -162,7 +162,10 @@ function mine {
     sudo xmrig --cuda --donate-level 0 -o de.haven.herominers.com:1110 -u $(pass havenprotocol.org/address) -p my_xmrig_worker -a cn-heavy/xhv -k
 }
 
-alias sc="kitty +kitten ssh cluster"
+function sc {
+    pass -c ssh/private_password
+    ssh gaetzner@cluster.ml.tu-berlin.de -l zsh
+}
 
 # Full system scan
 function full_clamscan () {
@@ -181,8 +184,8 @@ function webcam_configure {
 
 # Time zsh startup time
 function timezsh {
-  shell=${1-$SHELL}
-  for i in $(seq 1 10); do time $shell -i -c exit; done
+    shell=${1-$SHELL}
+    for i in $(seq 1 10); do time $shell -i -c exit; done
 }
 
 ###############  Bluetooth  ######################
@@ -221,13 +224,6 @@ alias du='dust'
 alias df='duf'
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-# Mcfly (better history)
-export MCFLY_KEY_SCHEME=vim
-export MCFLY_FUZZY=2
-export MCFLY_INTERFACE_VIEW=TOP
-export MCFLY_RESULTS_SORT=LAST_RUN
-alias h="mcfly search"
 
 alias htop="btm -c"
 alias ps="procs"
@@ -511,7 +507,7 @@ function lcc {
 
 # latex compile all
 function lca {
-    parallel latexmk -pdf -output-directory=out {} ::: **/*.tex
+    parallel latexmk -shell-escape -pdf -output-directory=out {} ::: **/*.tex
 }
 
 # latex clean compile all
@@ -729,7 +725,7 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
         # echo -e "\033[2K"
 
         touch $ZSHUPDATEDFILE
-    fi
+fi
 fi
 
 _evalcache direnv hook zsh
