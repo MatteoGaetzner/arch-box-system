@@ -22,7 +22,7 @@ function bytesToHuman {
 }
 
 function getBytesOnDisk {
-  BLOCKSONDISK=$(df "/dev/$SDANAME" | tail -1 | awk '{print $4}')
+  BLOCKSONDISK=$(/usr/bin/df "/dev/$SDANAME" | tail -1 | awk '{print $4}')
   local SPACEONDISK_BYTES=$(( BLOCKSONDISK * 1000 ))
   echo "$SPACEONDISK_BYTES"
 }
@@ -80,17 +80,18 @@ if [ $nsnaps -ge $MAXN_SNAPS ]; then
 fi
 
 # Check whether there is enough space on the disk
-log_info --no-newline "Starting dry run"
+log_info "Starting dry run"
 rsync --dry-run --stats $OPTS "$SRC" "$SNAP/latest" > "$TMPLOGFILE"
 
 TRANSFERRED_BYTES=$(grep "Total transferred file size: " $TMPLOGFILE | sed 's/,//g' | sed 's/.*: \([0-9]*\).*$/\1/')
+
 log_info "Finished dry run"
 
 SPACEONDISK_BYTES=$(getBytesOnDisk)
 
 # Get human readable space
 TRANSFERRED_F=$(numfmt --to iec --format "%.1f" "$TRANSFERRED_BYTES")
-SPACEONDISK_F=$(df -h /dev/"$SDANAME" | tail -1 | awk '{print $4}')
+SPACEONDISK_F=$(/usr/bin/df -h /dev/"$SDANAME" | tail -1 | awk '{print $4}')
 
 if [[ $SPACEONDISK_BYTES -lt $TRANSFERRED_BYTES ]]; then
   log_warn "External drive doesn't have enough available space, $SPACEONDISK_F, to store $TRANSFERRED_F."
@@ -101,16 +102,17 @@ fi
 
 # Save space on disk to 
 if [ -f "$i3INFO_FILE" ]; then
-    df /dev/sda1 | tail -1 > "$SRC/.config/i3blocks/backup/backup.space.info"
+    /usr/bin/df /dev/sda1 | tail -1 > "$SRC/.config/i3blocks/backup/backup.space.info"
 fi
 
 # sync
-log_info --no-newline "Starting to transfer data with rsync"
+log_info "Starting to transfer data with rsync"
 rsync $OPTS "$SRC" "$SNAP/latest" >> "$SNAP/rsync.log"
 
 # check if enough has changed and if so
 # make a hardlinked copy named as the date
 COUNT=$( wc -l "$SNAP/rsync.log"|cut -d" " -f1 )
+printf "COUNT: $COUNT MIN: $MINCHANGES \n"
 if [ "$COUNT" -gt "$MINCHANGES" ] ; then
   DATETAG=$(date +%Y-%m-%d)
   if [ ! -e "$SNAP/$DATETAG" ] ; then

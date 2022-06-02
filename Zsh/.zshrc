@@ -188,6 +188,9 @@ function timezsh {
     for i in $(seq 1 10); do time $shell -i -c exit; done
 }
 
+# Persistent live status changes of systemctl status
+alias systemctl_persistent="journalctl --follow -u"
+
 ###############  Bluetooth  ######################
 
 alias blue="bluetoothctl connect"

@@ -941,6 +941,7 @@ lowdown
 lpsolve
 lsb-release
 lshw
+lsof
 lua
 lua51-filesystem
 lua52
