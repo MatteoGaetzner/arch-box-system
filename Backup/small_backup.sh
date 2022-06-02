@@ -82,7 +82,7 @@ rsync $RSYNCOPTS ~/.config/i3blocks/config ~/Sync/System/i3blocks/config
 rsync $RSYNCOPTS ~/.config/i3blocks/gpu-load/gpu-load ~/Sync/System/i3blocks/gpu-load/gpu-load
 rsync $RSYNCOPTS ~/.config/i3blocks/arch-update/arch-update ~/Sync/System/i3blocks/arch-update/arch-update
 rsync $RSYNCOPTS ~/.config/i3blocks/mymemory/mymemory ~/Sync/System/i3blocks/mymemory/mymemory
-rsync $RSYNCOPTS ~/.config/i3blocks/mydisk/mydisk ~/Sync/System/i3blocks/mydisk/mydisk
+rsync $RSYNCOPTS ~/.config/i3blocks/mydisk/ ~/Sync/System/i3blocks/mydisk/
 rsync $RSYNCOPTS ~/.config/i3blocks/backup/backup ~/Sync/System/i3blocks/backup/backup
 rsync $RSYNCOPTS ~/.config/i3blocks/mail/mail ~/Sync/System/i3blocks/mail/mail
 
