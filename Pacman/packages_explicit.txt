@@ -126,6 +126,7 @@ networkmanager-openvpn
 nextcloud-client
 ninja
 nitrogen
+nmap
 nodejs
 nodejs-nativefier
 nomacs
@@ -164,6 +165,7 @@ pipewire-pulse
 pkgconf
 playerctl
 portainer-bin
+postman-bin
 powertop
 procs
 profile-sync-daemon

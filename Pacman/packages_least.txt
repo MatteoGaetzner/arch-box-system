@@ -74,6 +74,7 @@ nethogs
 network-manager-applet
 networkmanager-openvpn
 nextcloud-client
+nmap
 nodejs-nativefier
 nomacs
 nordvpn-bin
@@ -99,6 +100,7 @@ pdftk
 picom
 playerctl
 portainer-bin
+postman-bin
 powertop
 procs
 profile-sync-daemon

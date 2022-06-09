@@ -42,6 +42,10 @@ rsync $RSYNCOPTS ~/.config/zsh/completions/ ~/Sync/System/Zsh/completions/
 # broot
 rsync $RSYNCOPTS ~/.config/broot/conf.hjson ~/Sync/System/broot/conf.hjson
 
+# tmux
+rsync $RSYNCOPTS ~/.config/tmux/tmux.conf ~/Sync/System/Tmux/tmux.conf
+
+
 # parallel
 rsync $RSYNCOPTS ~/.parallel/config ~/Sync/System/Parallel/config
 

@@ -201,6 +201,8 @@ gc
 gcab
 gcc
 gcc-libs
+gcc11
+gcc11-libs
 gcr
 gd
 gdb
@@ -871,6 +873,7 @@ libutf8proc
 libuv
 libva
 libvdpau
+libverto
 libvisio
 libvisual
 libvorbis
@@ -1008,6 +1011,7 @@ ninja
 nitrogen
 nlohmann-json
 nm-connection-editor
+nmap
 node-gyp
 nodejs
 nodejs-nativefier
@@ -1048,6 +1052,7 @@ openexr
 openh264
 openjpeg2
 openmpi
+openpmix
 openssh
 openssl
 openvpn
@@ -1246,6 +1251,7 @@ popt
 portainer-bin
 portaudio
 postgresql-libs
+postman-bin
 potrace
 powertop
 procps-ng

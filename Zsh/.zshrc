@@ -366,6 +366,8 @@ alias vifme="nvim $HOME/.config/vifm/vifmrc"
 
 alias zshe="nvim $HOME/.zshrc; exec zsh"
 
+alias sshe="nvim $HOME/.ssh/config"
+
 alias i3e="nvim $HOME/.config/i3/config"
 alias i3be="nvim $HOME/.config/i3blocks/config"
 
@@ -612,6 +614,7 @@ alias drn="sudo docker run -d --rm --gpus all"
 alias dxe="sudo docker exec -it"
 alias dps="sudo docker ps"
 alias dkl="sudo docker kill"
+alias dls="sudo docker images"
 
 ###############  Mutt  ###########################
 

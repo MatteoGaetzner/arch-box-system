@@ -1,26 +1,39 @@
 Host github.com
-  HostName github.com
-  IdentityFile ~/.ssh/gitkey
-  User MatteoGaetzner
+    HostName github.com
+    IdentityFile ~/.ssh/gitkey
+    User MatteoGaetzner
 
 Host git.code.sf.net
-  HostName git.code.sf.net
-  IdentityFile ~/.ssh/sourceforge_ed25519
-  PreferredAuthentications publickey
-  User matteo-gaetzner 
+    HostName git.code.sf.net
+    IdentityFile ~/.ssh/sourceforge_ed25519
+    PreferredAuthentications publickey
+    User matteo-gaetzner 
 
 Host git.tu-berlin.de
-  HostName git.tu-berlin.de
-  IdentityFile ~/.ssh/gitkey
-  User matteo
+    HostName git.tu-berlin.de
+    IdentityFile ~/.ssh/gitkey
+    User matteo
 
 Host cluster cluster.ml.tu-berlin.de
-  HostName cluster.ml.tu-berlin.de
-  IdentityFile ~/.ssh/id_rsa
-  User gaetzner
+    HostName cluster.ml.tu-berlin.de
+    IdentityFile ~/.ssh/id_rsa
+    User gaetzner
 
 Host berry
-  HostName 192.168.0.242
-  IdentityFile ~/.ssh/raspberrypi4_matteo
-  User matteo
-  ForwardX11Trusted yes
+    HostName 192.168.0.242
+    IdentityFile ~/.ssh/raspberrypi4_matteo
+    User matteo
+    ForwardX11Trusted yes
+
+Host vigitlab.fe.hhi.de
+    HostName vigitlab.fe.hhi.de
+    IdentityFile ~/.ssh/gitkey
+    User gaetzner
+    IdentitiesOnly yes
+
+Host ssh klips
+    HostName 172.16.33.85
+    IdentityFile ~/.ssh/gitkey_encrypted
+    User gaetzner
+    ForwardX11 yes
+

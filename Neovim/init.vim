@@ -15,6 +15,7 @@ set ignorecase
 set linebreak
 set nohlsearch
 set nostartofline
+set mouse=a
 set nu rnu
 set number relativenumber
 set scrolloff=10
@@ -817,6 +818,13 @@ let g:mkdp_auto_close = 1
 let g:mkdp_browser = 'firefox'
 let $NVIM_MKDP_LOG_FILE = expand('~/mkdp-log.log')
 let $NVIM_MKDP_LOG_LEVEL = 'debug'
+
+"--------------  Docker  -------------------------
+
+augroup markdowngroup
+  autocmd!
+  autocmd BufNewFile,BufRead Dockerfile* set filetype=dockerfile
+augroup end
 
 "--------------  i3-config  ----------------------
 

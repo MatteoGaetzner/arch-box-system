@@ -112,7 +112,6 @@ rsync $OPTS "$SRC" "$SNAP/latest" >> "$SNAP/rsync.log"
 # check if enough has changed and if so
 # make a hardlinked copy named as the date
 COUNT=$( wc -l "$SNAP/rsync.log"|cut -d" " -f1 )
-printf "COUNT: $COUNT MIN: $MINCHANGES \n"
 if [ "$COUNT" -gt "$MINCHANGES" ] ; then
   DATETAG=$(date +%Y-%m-%d)
   if [ ! -e "$SNAP/$DATETAG" ] ; then
