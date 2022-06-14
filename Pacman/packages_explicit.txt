@@ -161,6 +161,7 @@ pdftk
 perl-anyevent-i3
 perl-file-mimeinfo
 picom
+pigz
 pipewire-pulse
 pkgconf
 playerctl
@@ -206,6 +207,7 @@ sqlitebrowser
 sshpass
 sudo
 sysbench
+tealdeer
 telegram-desktop
 tesseract-data-deu
 tesseract-data-eng
@@ -235,7 +237,6 @@ thunderbird
 timeshift
 timeshift-autosnap
 tk
-tldr
 tmux
 torbrowser-launcher
 translate-shell

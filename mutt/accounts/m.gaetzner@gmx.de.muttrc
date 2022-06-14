@@ -21,6 +21,8 @@ macro   index,pager   ga   "<change-folder>=Archiv<enter>"         "open   archi
 macro   index,pager   gd   "<change-folder>=Entw&APw-rfe<enter>"   "open   german    folder"
 macro   index,pager   gt   "<change-folder>=Gel&APY-scht<enter>"   "open   trash     folder"
 macro   index,pager   gj   "<change-folder>=Spamverdacht<enter>"   "open   junk      folder"
+macro   index,pager   Ca   ";<copy-message>=Archiv<enter>"         "copy mail to archive"
+
 
 ############### Mutt-Wizard Things #############
 

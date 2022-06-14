@@ -126,6 +126,7 @@ spotify-tui
 sqlitebrowser
 sshpass
 sysbench
+tealdeer
 tex-match
 texlab
 texlive-bibtexextra
@@ -146,7 +147,6 @@ texlive-publishers
 texlive-science
 thunderbird
 timeshift-autosnap
-tldr
 torbrowser-launcher
 translate-shell
 ttf-fira-code

@@ -1234,6 +1234,7 @@ perl-yaml-tiny
 phonon-qt5
 phonon-qt5-gstreamer
 picom
+pigz
 pinentry
 pipewire
 pipewire-pulse
@@ -1321,6 +1322,9 @@ python-iniconfig
 python-ipykernel
 python-ipython-genutils
 python-ipywidgets
+python-jaraco.context
+python-jaraco.functools
+python-jaraco.text
 python-jedi
 python-jinja
 python-json5
@@ -1339,6 +1343,7 @@ python-more-itertools
 python-msgpack
 python-mypy_extensions
 python-nest-asyncio
+python-nspektr
 python-ordered-set
 python-packaging
 python-pandocfilters
@@ -1408,9 +1413,12 @@ python-yaml
 python-zipp
 python2
 qbittorrent
+qcustomplot
+qhexedit2
 qpdf
 qqc2-desktop-style
 qrencode
+qscintilla-qt5
 qt5-base
 qt5-declarative
 qt5-graphicaleffects
@@ -1509,6 +1517,7 @@ sphinxbase
 spirv-tools
 spotify
 spotify-tui
+sqlcipher
 sqlite
 sqlitebrowser
 squashfs-tools
@@ -1537,6 +1546,7 @@ tar
 tbb
 tcl
 tdb
+tealdeer
 telegram-desktop
 telegram-tdlib
 tensorflow
@@ -1576,7 +1586,6 @@ timeshift
 timeshift-autosnap
 tinyxml2
 tk
-tldr
 tmux
 tor
 torbrowser-launcher

@@ -4,6 +4,8 @@ RSYNCOPTS="-av"
 
 DIRSIZE_LIMIT=25000
 
+REPO_LOC="$HOME/Sync/System/"
+
 log_info "Backing up to GitHub ..."
 
 # installed packages
@@ -147,15 +149,15 @@ rsync $RSYNCOPTS /etc/default/cpupower ~/Sync/System/cpupower/cpupower
 rsync $RSYNCOPTS /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
 
 
-dirsize=$(du ~/Sync/System | tail -n 1 | sed 's/\t.*//')
+dirsize=$(du "$REPO_LOC" | tail -n 1 | sed 's/\t.*//')
 
 if [ "$dirsize" -ge "$DIRSIZE_LIMIT" ]; then
     log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
 else
-    git -C ~/Sync/System pull
-    git -C ~/Sync/System add .
-    git -C ~/Sync/System commit-status
-    git -C ~/Sync/System push
+    git -C "$REPO_LOC" pull
+    git -C "$REPO_LOC" add .
+    git -C "$REPO_LOC" commit-status
+    git -C "$REPO_LOC" push
 fi
 
 log_success "Backup to GitHub done."

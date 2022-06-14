@@ -385,9 +385,18 @@ alias vtt="nvim *.tex -c ':LLPStartPreview'"
 
 alias vp="nvim *.py"
 
+alias tma="tmux attach"
+alias tms="tmux new -s"
+alias tml="tmux ls"
+
 alias gu="git add -u; git commit -m \"$@\"; git push"
 alias gul="git add -u; git commit-status; git push"
 alias gcos="git commit-status"
+
+function compress_progress {
+    # tar --use-compress-program="pigz -k " -cf - $1 -P | pv -s $(/usr/bin/du -sb $1 | awk '{print $1}') | gzip > $2.tar.gz
+    tar cf - $1 -P | pv -s $(/usr/bin/du -sb $1 | awk '{print $1}') | gzip > $2.tar.gz
+}
 
 function smbe {
     sudo nvim /etc/samba/smb.conf
