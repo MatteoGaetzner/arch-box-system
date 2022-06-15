@@ -76,7 +76,6 @@ inoremap <C-l> <Esc>:1,$d<CR>i
 nnoremap <C-y> :1,$y<CR>
 inoremap <C-y> <Esc>:1,$y<CR>i
 
-
 "--------------  Custom Commands -----------------
 
 cnoremap -complete=file -nargs=1 O execute 'silent! !xdg-open <args>'
@@ -839,4 +838,11 @@ augroup muttgroup
   autocmd!
   autocmd BufReadPost *.muttrc set filetype=neomuttrc
   autocmd BufRead,BufNewFile *mutt-* setfiletype mail
+augroup end
+
+"--------------  University  ---------------------
+
+augroup universitygroup
+  autocmd!
+  autocmd FileType text nnoremap <leader><leader>x  :1,$y<CR>:1,$d<CR>ic4
 augroup end
