@@ -42,9 +42,11 @@ dust
 efibootmgr
 element-desktop
 eog
+eovpn
 espeak-ng
 evince
 exa
+exfat-utils
 exodus
 fakeroot
 fd
@@ -184,8 +186,10 @@ python-pynvim
 python-pytest
 python-wheel
 qbittorrent
+qgis
 qwinff
 r
+rclone
 rdesktop
 reflector
 ripgrep
@@ -251,7 +255,6 @@ unrar
 urlview
 usbutils
 vi
-vifm
 vlc
 vtk
 wget

@@ -37,7 +37,8 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 " Use Python3
 if has('python3')
 endif
-let g:python3_host_prog="~/.pyenv/versions/nvim_env/bin/python3"
+let g:python3_host_prog='/home/matteo/.mambaforge/envs/neovim/bin/python3'
+let g:python_host_prog='/home/matteo/.mambaforge/envs/neovim-python2/bin/python2'
 
 " set foldmethod=syntax
 set foldlevelstart=2

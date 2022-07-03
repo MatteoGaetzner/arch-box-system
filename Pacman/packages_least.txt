@@ -30,7 +30,9 @@ duf
 dust
 element-desktop
 eog
+eovpn
 exa
+exfat-utils
 exodus
 fd
 ffmpegthumbnailer
@@ -72,7 +74,6 @@ ncdu
 neofetch
 nethogs
 network-manager-applet
-networkmanager-openvpn
 nextcloud-client
 nmap
 nodejs-nativefier
@@ -111,7 +112,9 @@ pypy
 pypy3
 python-fangfrisch
 qbittorrent
+qgis
 qwinff
+rclone
 rdesktop
 reflector
 ripgrep
@@ -158,7 +161,6 @@ ttf-nerd-fonts-symbols
 ueberzug
 usbutils
 vi
-vifm
 vlc
 wget
 whatsapp-nativefier

@@ -106,7 +106,8 @@
     "pyright.organizeimports.provider": "pyright",
     "python.analysis.stubPath": "/home/matteo/.cache/pyright-stubs/",
     "python.analysis.typeCheckingMode": "basic",
-    "python.formatting.blackPath": "~/.pyenv/versions/nvim_env/bin/black",
+    "python.formatting.blackPath": "/home/matteo/.mambaforge/envs/neovim/bin/black",
+    "python.venvPath":"/home/matteo/.mambaforge/envs/",
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
     "python.linting.mypyEnabled": true,
@@ -118,6 +119,5 @@
         ]
     },
     "texlab.formatterLineLength": 80,
-    // "python.venvPath": "${env:HOME}/.pyenv/versions",
-    "python.pythonPath": "~/.pyenv/versions/nvim_env/bin/python3"
+    "python.pythonPath": "/home/matteo/.mambaforge/envs/neovim/bin/python3"
 }

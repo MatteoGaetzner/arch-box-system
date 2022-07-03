@@ -49,16 +49,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-###############  Pyenv  ##########################
-
-# Load pyenv; must do that before loading the plugin
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export ZSH_PYENV_VIRTUALENV=true
-export ZSH_PYENV_QUIET=false
-source ~/.config/zsh/completions/pyenv.zsh
-# eval "$(pyenv init --path)"
-
 ###############  OMZ  ############################
 
 # Oh-My-Zsh updates
@@ -79,7 +69,6 @@ plugins=(
     git
     pass
     pip
-    pyenv
     zsh-autosuggestions
     zsh-vi-mode
     fast-syntax-highlighting
@@ -347,10 +336,7 @@ function rec_replace {
     find $1 \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i "s/$2/$3/g"
 }
 
-alias i="/home/matteo/.pyenv/versions/ml/bin/ipython --no-confirm-exit"
-
-# Make vim play well with virtual environments
-# Solution from here: https://vi.stackexchange.com/questions/7644/use-vim-with-virtualenv/34996#34996
+alias i="/home/matteo/.mambaforge/envs/ml/bin/ipython3 --no-confirm-exit"
 
 alias v=nvim
 
@@ -649,7 +635,6 @@ compinit conda
 
 alias activate="source *_env/bin/activate"
 
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PYTHONPYCACHEPREFIX=$CACHEDIR/python/
 export MYPY_CACHE_DIR=$CACHEDIR/mypy/
 
@@ -721,6 +706,26 @@ function cpp_cmake_debug {
 
 ###############  Last minute  ####################
 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/matteo/.mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/matteo/.mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/home/matteo/.mambaforge/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/matteo/.mambaforge/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/home/matteo/.mambaforge/etc/profile.d/mamba.sh" ]; then
+    . "/home/matteo/.mambaforge/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
+
 # Ask for update after startup
 if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
     BOOTTIME=$(who -b | sed 's/.*\(..:..\)$/\1/' | sed 's/://')
@@ -733,17 +738,10 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
         fi
         echo -e "\033[2K"
 
-        # read -q "?Wanna start mailsync-daemon "
-        # if [[ $REPLY =~ [Yy] ]]; then
-        #     start_mailsync_daemon
-        # fi
-        # echo -e "\033[2K"
-
         touch $ZSHUPDATEDFILE
-fi
+    fi
 fi
 
 _evalcache direnv hook zsh
 _evalcache mcfly init zsh
 _evalcache zoxide init zsh
-_evalcache pyenv init --path

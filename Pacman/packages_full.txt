@@ -27,6 +27,7 @@ apr-util
 archlinux-keyring
 argon2
 aribb24
+assimp
 at-spi2-atk
 at-spi2-core
 atk
@@ -49,6 +50,7 @@ biber
 binutils
 bison
 blas
+blosc
 blueman
 bluez
 bluez-libs
@@ -77,6 +79,7 @@ cblas
 cdparanoia
 celt
 ceph-libs
+cfitsio
 chromaprint-fftw
 chromium
 cifs-utils
@@ -137,6 +140,7 @@ dotconf
 double-conversion
 doxygen
 duf
+duktape
 dust
 e2fsprogs
 ebook-tools
@@ -156,10 +160,12 @@ elfutils
 ell
 enchant
 eog
+eovpn
 espeak-ng
 evince
 exa
 exempi
+exfat-utils
 exiv2
 exodus
 expat
@@ -205,6 +211,7 @@ gcc11
 gcc11-libs
 gcr
 gd
+gdal
 gdb
 gdb-common
 gdbm
@@ -213,6 +220,7 @@ geekbench
 geoclue
 geocode-glib
 geogebra
+geos
 gettext
 ghc-libs
 ghostscript
@@ -240,6 +248,7 @@ gnupg
 gnutls
 go
 go-tools
+gobject-introspection
 gobject-introspection-runtime
 gperf
 gpgme
@@ -262,6 +271,7 @@ gsm
 gspell
 gssdp
 gst-libav
+gst-plugins-bad-libs
 gst-plugins-base
 gst-plugins-base-libs
 gst-plugins-good
@@ -273,6 +283,7 @@ gtk-engines
 gtk-update-icon-cache
 gtk2
 gtk3
+gtk4
 gtkmm
 gtkmm3
 gtkspell
@@ -707,9 +718,11 @@ libffi
 libfontenc
 libfreeaptx
 libfreehand
+libfreexl
 libgadu
 libgcrypt
 libgee
+libgeotiff
 libgexiv2
 libgit2
 libglvnd
@@ -829,6 +842,7 @@ librevenge
 librist
 librsvg
 librsync
+librttopo
 libsamplerate
 libsasl
 libseccomp
@@ -842,6 +856,7 @@ libsodium
 libsoup
 libsoup3
 libsoxr
+libspatialite
 libspectre
 libspeechd
 libssh
@@ -999,6 +1014,7 @@ neomutt
 neon
 neovim
 net-snmp
+netcdf
 nethogs
 netpbm
 nettle
@@ -1083,6 +1099,7 @@ pciutils
 pcre
 pcre2
 pcsclite
+pdal
 pdfgrep
 pdftk
 perl
@@ -1258,6 +1275,7 @@ powertop
 procps-ng
 procs
 profile-sync-daemon
+proj
 protobuf
 protobuf-c
 psmisc
@@ -1284,15 +1302,18 @@ python-async_generator
 python-attrs
 python-babel
 python-backcall
+python-beaker
 python-beautifulsoup4
 python-black
 python-bleach
 python-cachecontrol
 python-cairo
+python-certifi
 python-cffi
 python-chardet
 python-click
 python-colorama
+python-commonmark
 python-contextlib2
 python-cryptography
 python-dateutil
@@ -1310,6 +1331,8 @@ python-entrypoints
 python-executing
 python-fangfrisch
 python-fastjsonschema
+python-future
+python-gdal
 python-gobject
 python-gpgme
 python-greenlet
@@ -1334,6 +1357,7 @@ python-jupyter_core
 python-jupyter_packaging
 python-jupyterlab_server
 python-lxml
+python-mako
 python-markdown
 python-markupsafe
 python-marshmallow
@@ -1344,7 +1368,9 @@ python-msgpack
 python-mypy_extensions
 python-nest-asyncio
 python-nspektr
+python-numpy
 python-ordered-set
+python-owslib
 python-packaging
 python-pandocfilters
 python-parso
@@ -1361,6 +1387,7 @@ python-progress
 python-prometheus_client
 python-prompt_toolkit
 python-psutil
+python-psycopg2
 python-ptyprocess
 python-pure-eval
 python-py
@@ -1369,6 +1396,7 @@ python-pygments
 python-pynvim
 python-pyopenssl
 python-pyparsing
+python-pyproj
 python-pyqt5
 python-pyqt5-sip
 python-pyrsistent
@@ -1377,11 +1405,13 @@ python-pytest
 python-pytz
 python-pyxdg
 python-pyzmq
+python-qscintilla-qt5
 python-requests
 python-requests-unixsocket
 python-resolvelib
 python-retrying
 python-rfc6555
+python-rich
 python-send2trash
 python-setuptools
 python-shtab
@@ -1390,6 +1420,7 @@ python-sniffio
 python-soupsieve
 python-sqlalchemy
 python-stack-data
+python-tenacity
 python-termcolor
 python-terminado
 python-testpath
@@ -1415,20 +1446,26 @@ python-yaml
 python-zipp
 python2
 qbittorrent
+qca-qt5
 qcustomplot
+qgis
 qhexedit2
 qpdf
 qqc2-desktop-style
 qrencode
 qscintilla-qt5
+qt5-3d
 qt5-base
 qt5-declarative
 qt5-graphicaleffects
+qt5-imageformats
 qt5-location
 qt5-multimedia
 qt5-networkauth
 qt5-quickcontrols
 qt5-quickcontrols2
+qt5-sensors
+qt5-serialport
 qt5-speech
 qt5-svg
 qt5-tools
@@ -1436,12 +1473,14 @@ qt5-translations
 qt5-wayland
 qt5-webchannel
 qt5-webengine
+qt5-webkit
 qt5-websockets
 qt5-x11extras
 qt6-5compat
 qt6-base
 qt6-declarative
 qt6-imageformats
+qt6-multimedia
 qt6-svg
 qt6-translations
 qt6-wayland
@@ -1449,11 +1488,13 @@ qtkeychain-qt5
 qtws-base
 quazip-qt5
 qwinff
+qwt
 r
 ragel
 raptor
 rasqal
 rav1e
+rclone
 rdesktop
 re2
 readline
@@ -1511,6 +1552,7 @@ sonnet
 sord
 sound-theme-freedesktop
 source-highlight
+spatialindex
 spdlog
 speech-dispatcher
 speex
@@ -1626,7 +1668,6 @@ vala
 vapoursynth
 vi
 vid.stab
-vifm
 vim-runtime
 vlc
 vmaf
@@ -1673,6 +1714,7 @@ xcompmgr
 xdg-dbus-proxy
 xdg-user-dirs
 xdg-utils
+xerces-c
 xf86-input-libinput
 xf86-video-vesa
 xfsprogs
