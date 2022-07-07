@@ -4,8 +4,6 @@ alacritty
 alsa-firmware
 alsa-utils
 amd-ucode
-autoconf
-automake
 balena-etcher
 base
 bat
@@ -40,6 +38,7 @@ ffnvcodec-headers8.1
 firefox
 flameshot
 flashfocus-git
+flatpak
 flex
 geekbench
 geogebra
@@ -111,6 +110,7 @@ pyenv-virtualenv
 pypy
 pypy3
 python-fangfrisch
+python-opencv
 qbittorrent
 qgis
 qwinff

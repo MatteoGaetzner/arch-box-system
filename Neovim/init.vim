@@ -35,10 +35,10 @@ set lazyredraw
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 " Use Python3
-if has('python3')
-endif
 let g:python3_host_prog='/home/matteo/.mambaforge/envs/neovim/bin/python3'
 let g:python_host_prog='/home/matteo/.mambaforge/envs/neovim-python2/bin/python2'
+if has('python3')
+endif
 
 " set foldmethod=syntax
 set foldlevelstart=2
@@ -847,3 +847,9 @@ augroup universitygroup
   autocmd!
   autocmd FileType text nnoremap <leader><leader>x  :1,$y<CR>:1,$d<CR>ic4
 augroup end
+
+"--------------  Playground  ---------------------
+
+lua << EOF
+require("playground/hello_world")
+EOF

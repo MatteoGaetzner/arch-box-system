@@ -133,6 +133,9 @@ rsync $RSYNCOPTS /etc/issue ~/Sync/System/Login/issue
 # ipython profile (setup: ipython profile create default, then replace in ~/.ipython...)
 rsync $RSYNCOPTS ~/.ipython/profile_default/ipython_config.py ~/Sync/System/ipython/ipython_config.py
 
+# pdb++
+rsync $RSYNCOPTS ~/.pdbrc.py ~/Sync/System/Python/.pdbrc.py
+
 # pylintrc
 rsync $RSYNCOPTS ~/.pylintrc ~/Sync/System/Python/.pylintrc
 

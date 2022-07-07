@@ -57,6 +57,7 @@ firefox
 firewalld
 flameshot
 flashfocus-git
+flatpak
 flex
 fzf
 gcc
@@ -124,7 +125,6 @@ neovim
 nethogs
 network-manager-applet
 networkmanager
-networkmanager-openvpn
 nextcloud-client
 ninja
 nitrogen
@@ -148,7 +148,9 @@ obs-studio
 offlineimap
 okular
 openconnect
-opencv
+opencv-cuda
+openvpn
+openvpn3
 p7zip
 pacman-contrib
 pandoc
@@ -181,6 +183,7 @@ pyenv-virtualenv
 pypy
 pypy3
 python-fangfrisch
+python-opencv
 python-pip
 python-pynvim
 python-pytest

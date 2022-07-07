@@ -36,6 +36,7 @@ attica
 attr
 audit
 autoconf
+autoconf-archive
 automake
 avahi
 avisynthplus
@@ -189,6 +190,7 @@ firewalld
 flac
 flameshot
 flashfocus-git
+flatpak
 flex
 flite1-patched
 fmt
@@ -239,6 +241,7 @@ gmime3
 gmp
 gnome-autoar
 gnome-desktop
+gnome-desktop-4
 gnome-desktop-common
 gnome-keyring
 gnome-settings-daemon
@@ -651,6 +654,7 @@ lib32-zstd
 libabw
 libaccounts-glib
 libaccounts-qt
+libadwaita
 libaec
 libaio
 libao
@@ -1063,7 +1067,7 @@ opencl-headers
 opencl-nvidia
 openconnect
 opencore-amr
-opencv
+opencv-cuda
 openexr
 openh264
 openjpeg2
@@ -1072,9 +1076,11 @@ openpmix
 openssh
 openssl
 openvpn
+openvpn3
 opus
 orc
 osinfo-db
+ostree
 p11-kit
 p7zip
 pacman
@@ -1369,6 +1375,7 @@ python-mypy_extensions
 python-nest-asyncio
 python-nspektr
 python-numpy
+python-opencv
 python-ordered-set
 python-owslib
 python-packaging
@@ -1420,6 +1427,7 @@ python-sniffio
 python-soupsieve
 python-sqlalchemy
 python-stack-data
+python-systemd
 python-tenacity
 python-termcolor
 python-terminado
@@ -1712,6 +1720,9 @@ xcb-util-xrm
 xclip
 xcompmgr
 xdg-dbus-proxy
+xdg-desktop-portal
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
 xerces-c
