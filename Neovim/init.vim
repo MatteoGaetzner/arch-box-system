@@ -669,7 +669,7 @@ nnoremap <space>u <Cmd>UltiSnipsEdit<CR>
 
 "--------------  Git-Gutter  ---------------------
 
-let g:gitgutter_signs = 0
+let g:gitgutter_signs = 1
 
 "--------------  Gutentags  ----------------------
 

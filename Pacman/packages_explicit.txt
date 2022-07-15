@@ -37,7 +37,9 @@ discord
 dmidecode
 docker
 dosfstools
+drawio-desktop
 duf
+duperemove
 dust
 efibootmgr
 element-desktop
@@ -169,7 +171,6 @@ pigz
 pipewire-pulse
 pkgconf
 playerctl
-portainer-bin
 postman-bin
 powertop
 procs
@@ -205,6 +206,7 @@ samba
 sd
 seahorse
 shellcheck
+skypeforlinux-preview-bin
 slack-desktop
 snapd
 speech-dispatcher

@@ -113,6 +113,8 @@ export GOPATH
 # Update i3blocks package status
 alias updatei3barchupdate="pkill -SIGRTMIN+11 i3blocks"
 
+alias path="readlink -f"
+
 # Backup to external drive, Github, and timeshift
 function backup_full {
     sudo big_backup
@@ -204,6 +206,7 @@ function aird {
 ###############  Beauty  #########################
 
 alias rsyncp="rsync -ah --info=progress2 --no-i-r"
+alias rclones="rclone --progress --multi-thread-streams=50 sync"
 
 alias cat='bat --style header --style rules --style snip --style changes --style header'
 
@@ -371,7 +374,7 @@ alias vtt="nvim *.tex -c ':LLPStartPreview'"
 
 alias vp="nvim *.py"
 
-alias tma="tmux attach"
+alias tma="tmux attach -t"
 alias tms="tmux new -s"
 alias tml="tmux ls"
 
@@ -497,7 +500,7 @@ function lcl {
 
 # latex compile
 function lco {
-    latexmk -pdf -output-directory=out $@
+    latexmk --shell-escape -pdf -output-directory=out $@
 }
 
 # latex clean compile
@@ -610,6 +613,7 @@ alias dxe="sudo docker exec -it"
 alias dps="sudo docker ps"
 alias dkl="sudo docker kill"
 alias dls="sudo docker images"
+alias dpr="sudo docker container prune"
 
 ###############  Mutt  ###########################
 

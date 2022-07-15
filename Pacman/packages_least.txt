@@ -24,7 +24,10 @@ dex
 direnv
 discord
 dmidecode
+docker
+drawio-desktop
 duf
+duperemove
 dust
 element-desktop
 eog
@@ -99,7 +102,6 @@ pdfgrep
 pdftk
 picom
 playerctl
-portainer-bin
 postman-bin
 powertop
 procs
@@ -122,6 +124,7 @@ rpi-imager
 rust-analyzer
 sd
 shellcheck
+skypeforlinux-preview-bin
 slack-desktop
 snapd
 spotify

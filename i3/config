@@ -21,7 +21,7 @@ font pango:Fira Code 10
 # Keyboard shortcuts
 bindsym $mod+f exec firefox
 bindsym $mod+b exec $home/.config/i3/scripts/bsprak.sh
-bindsym $mod+i exec kitty $home/.pyenv/versions/ml/bin/ipython --no-confirm-exit
+bindsym $mod+i exec kitty $home/.mambaforge/envs/ml/bin/python3 --no-confirm-exit
 bindsym Print exec flameshot gui
 bindsym $mod+n exec --no-startup-id flash_window
 

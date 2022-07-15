@@ -140,8 +140,10 @@ dosfstools
 dotconf
 double-conversion
 doxygen
+drawio-desktop
 duf
 duktape
+duperemove
 dust
 e2fsprogs
 ebook-tools
@@ -155,6 +157,7 @@ eglexternalplatform
 electron
 electron12
 electron17
+electron18
 element-desktop
 element-web
 elfutils
@@ -363,6 +366,7 @@ haskell-hslua-aeson
 haskell-hslua-classes
 haskell-hslua-core
 haskell-hslua-marshalling
+haskell-hslua-module-doclayout
 haskell-hslua-module-path
 haskell-hslua-module-system
 haskell-hslua-module-text
@@ -1272,7 +1276,6 @@ poppler
 poppler-glib
 poppler-qt5
 popt
-portainer-bin
 portaudio
 postgresql-libs
 postman-bin
@@ -1548,6 +1551,7 @@ signon-kwallet-extension
 signon-plugin-oauth2
 signon-ui
 signond
+skypeforlinux-preview-bin
 slack-desktop
 slang
 smartmontools
