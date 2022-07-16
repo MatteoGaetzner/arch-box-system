@@ -747,5 +747,4 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
 fi
 
 _evalcache direnv hook zsh
-_evalcache mcfly init zsh
 _evalcache zoxide init zsh
