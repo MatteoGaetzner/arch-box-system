@@ -31,9 +31,14 @@ Host vigitlab.fe.hhi.de
     User gaetzner
     IdentitiesOnly yes
 
-Host ssh klips
+Host klips
     HostName 172.16.33.85
     IdentityFile ~/.ssh/gitkey_encrypted
     User gaetzner
     ForwardX11 yes
 
+Host gitlab-raspberry
+    HostName 192.168.0.242
+    IdentityFile ~/.ssh/gitkey
+    User matteo.gaetzner
+    IdentitiesOnly yes
