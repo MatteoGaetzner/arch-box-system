@@ -66,7 +66,7 @@
     "explorer.previewAction.onHover": false,
     "explorer.width": 30,
     "json.format.enable": true,
-    "ltex.enabled": true,
+    "ltex.enabled": false,
     "ltex.dictionary": {
         "en-US": [
             "Technische",

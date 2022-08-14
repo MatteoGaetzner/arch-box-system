@@ -102,17 +102,18 @@ pdfgrep
 pdftk
 picom
 playerctl
-postman-bin
 powertop
 procs
 profile-sync-daemon
 pulsemixer
-pycharm-eap
 pyenv-virtualenv
 pypy
 pypy3
 python-fangfrisch
 python-opencv
+python-poetry
+python-pylint
+python-pytest
 qbittorrent
 qgis
 qwinff
@@ -124,6 +125,7 @@ rpi-imager
 rust-analyzer
 sd
 shellcheck
+shfmt
 skypeforlinux-preview-bin
 slack-desktop
 snapd
@@ -164,7 +166,7 @@ ttf-nerd-fonts-symbols
 ueberzug
 usbutils
 vi
-vlc
+vlc-bittorrent
 wget
 whatsapp-nativefier
 winetricks

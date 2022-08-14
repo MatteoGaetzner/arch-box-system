@@ -119,7 +119,10 @@ function pm {
 alias pmb="backup_full; printf '\n'; pm $@"
 
 function update {
-    yay --ask --combinedupgrade -Syu
+    for i in $(seq ${CONDA_SHLVL}); do
+        conda deactivate
+    done
+    yay --combinedupgrade --noconfirm -Syu
     updatei3barchupdate
 }
 
@@ -164,6 +167,10 @@ function timezsh {
 
 # Persistent live status changes of systemctl status
 alias systemctl_persistent="journalctl --follow -u"
+
+function svg2pdf {
+    inkscape $1 --export-type=pdf
+}
 
 ###############  Bluetooth  ######################
 
@@ -712,6 +719,9 @@ if [ -f "/home/matteo/.mambaforge/etc/profile.d/mamba.sh" ]; then
     . "/home/matteo/.mambaforge/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
+
+# Default environment
+mamba activate gdreg
 
 # Ask for update after startup
 if ! [[ -f "$ZSHUPDATEDFILE" ]]; then

@@ -12,7 +12,9 @@ c.InteractiveShellApp.exec_lines = [
 c.InteractiveShell.autoindent = True
 c.InteractiveShell.colors = "Linux"
 c.InteractiveShell.confirm_exit = False
-c.InteractiveShell.editor = "vim"
+c.InteractiveShell.editor = "vi"
+c.TerminalInteractiveShell.editing_mode = "vi"
+c.TerminalInteractiveShell.emacs_bindings_in_vi_insert_mode = False
 
 c.PrefilterManager.multi_line_specials = True
 

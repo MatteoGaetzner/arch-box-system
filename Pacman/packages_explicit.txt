@@ -70,6 +70,7 @@ git
 git-delta
 glew
 gnome-keyring
+gnuplot
 groff
 grub
 grub-btrfs
@@ -171,14 +172,12 @@ pigz
 pipewire-pulse
 pkgconf
 playerctl
-postman-bin
 powertop
 procs
 profile-sync-daemon
 pugixml
 pulseaudio-alsa
 pulsemixer
-pycharm-eap
 pyenv
 pyenv-virtualenv
 pypy
@@ -186,6 +185,8 @@ pypy3
 python-fangfrisch
 python-opencv
 python-pip
+python-poetry
+python-pylint
 python-pynvim
 python-pytest
 python-wheel
@@ -206,6 +207,7 @@ samba
 sd
 seahorse
 shellcheck
+shfmt
 skypeforlinux-preview-bin
 slack-desktop
 snapd
@@ -261,6 +263,7 @@ urlview
 usbutils
 vi
 vlc
+vlc-bittorrent
 vtk
 wget
 whatsapp-nativefier
