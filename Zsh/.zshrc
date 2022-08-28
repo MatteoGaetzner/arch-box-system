@@ -22,6 +22,11 @@ setopt rm_starsilent
 # Turn off all beeps
 unsetopt BEEP
 
+###############  Completions Loading Hack  #######
+
+autoload -Uz compinit
+compinit
+
 ###############  P10K  ###########################
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -192,6 +197,18 @@ function aird {
     blued 94:16:25:50:A2:58 &
     blued E4:90:FD:40:B9:06 &
 }
+
+###############  Containerization  ###############
+
+source <(kubectl completion zsh)
+
+alias dbl="sudo docker build"
+alias drn="sudo docker run -d --rm --gpus all"
+alias dxe="sudo docker exec -it"
+alias dps="sudo docker ps"
+alias dkl="sudo docker kill"
+alias dls="sudo docker images"
+alias dpr="sudo docker container prune"
 
 ###############  Beauty  #########################
 
@@ -478,6 +495,7 @@ function latex_setup {
     ln -s ../images sections/images
     ln -s ../general.sty sections/general.sty
     ln -s ../specific.sty sections/specific.sty
+    ls -s ../out sections/out
     ln $HOME/Sync/Programs/Self/latex/Packages/general.sty general.sty
     cp $HOME/Sync/Programs/Self/latex/Packages/specific.sty specific.sty
     cp $HOME/Sync/Programs/Self/latex/Templates/Generic/main.tex main.tex
@@ -594,16 +612,6 @@ export MBSYNCRC=$HOME/.mbsyncrc
 export PASSWORD_STORE_DIR=$HOME/.password-store
 export NOTMUCH_CONFIG=$HOME/.notmuch-config
 export GNUPGHOME=$HOME/.gnupg/
-
-###############  Docker  #########################
-
-alias dbl="sudo docker build"
-alias drn="sudo docker run -d --rm --gpus all"
-alias dxe="sudo docker exec -it"
-alias dps="sudo docker ps"
-alias dkl="sudo docker kill"
-alias dls="sudo docker images"
-alias dpr="sudo docker container prune"
 
 ###############  Mutt  ###########################
 

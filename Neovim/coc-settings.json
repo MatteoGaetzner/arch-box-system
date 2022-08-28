@@ -12,11 +12,6 @@
                 "buildDirectory": "build"
             }
         },
-        // "dockerfile": {
-        // 	"command": "docker-langserver",
-        // 	"filetypes": ["dockerfile"],
-        // 	"args": ["--stdio"]
-        // },
         "intelephense": {
             "command": "intelephense",
             "args": [
@@ -49,7 +44,8 @@
     "clangd.path": "/home/matteo/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
     "coc.preferences.formatOnSaveFiletypes": [
         "python",
-        "json"
+        "json",
+        "rust"
     ],
     "coc.preferences.formatOnType": true,
     "coc.source.vimtex.filetypes": [

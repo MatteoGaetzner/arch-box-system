@@ -1,9 +1,11 @@
 " auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall
-endif
+augroup vim_plug_group
+    if empty(glob('~/.config/nvim/autoload/plug.vim'))
+      silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+            \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      autocmd VimEnter * PlugInstall
+    endif
+augroup END
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
@@ -43,6 +45,7 @@ Plug 'vim-autoformat/vim-autoformat'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'airblade/vim-rooter'
+Plug 'rust-lang-nursery/rustfmt'
 
 " Wait for these plugins to get fixed
 Plug 'andymass/vim-matchup'

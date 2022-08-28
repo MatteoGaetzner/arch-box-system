@@ -1,1 +1,1 @@
-print("Lua says hello!") 
+-- print("Lua says hello!") 
