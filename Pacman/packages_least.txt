@@ -33,7 +33,6 @@ duperemove
 dust
 element-desktop
 eog
-eovpn
 exa
 exfat-utils
 exodus
@@ -45,8 +44,10 @@ flameshot
 flashfocus-git
 flatpak
 flex
+foxitreader
 geekbench
 geogebra
+gimp
 git-delta
 gnu-efi
 grub
@@ -100,6 +101,7 @@ obs-studio
 offlineimap
 okular
 openconnect
+openvpn-update-resolv-conf-git
 p7zip
 pacman-contrib
 papirus-icon-theme
@@ -119,14 +121,14 @@ pypy
 pypy3
 python-fangfrisch
 python-opencv
-python-poetry
 python-pylint
-python-pytest
 qbittorrent
 qgis
+qopenvpn
 qwinff
 rclone
 rdesktop
+refind-btrfs
 refind-theme-nord
 reflector
 ripgrep
@@ -138,6 +140,7 @@ shfmt
 skypeforlinux-preview-bin
 slack-desktop
 snapd
+snapper
 spotify
 spotify-tui
 sqlitebrowser
@@ -163,7 +166,6 @@ texlive-pstricks
 texlive-publishers
 texlive-science
 thunderbird
-timeshift-autosnap
 torbrowser-launcher
 translate-shell
 ttf-fira-code
@@ -171,11 +173,12 @@ ttf-fira-mono
 ttf-fira-sans
 ttf-joypixels
 ttf-meslo-nerd-font-powerlevel10k
-ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-2048-em
 ueberzug
 usbutils
 vi
 vlc-bittorrent
+wclatex
 wget
 whatsapp-nativefier
 winetricks
@@ -202,6 +205,7 @@ xorg-xcursorgen
 xorg-xdriinfo
 xorg-xev
 xorg-xgamma
+xorg-xhost
 xorg-xinit
 xorg-xinput
 xorg-xkbevd

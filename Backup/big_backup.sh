@@ -35,8 +35,8 @@ function removeOldest {
 
 function makeSpace {
   local TRANSFER_SIZE=$1
-  local SIZE
-  SIZE=$(getBytesOnDisk)
+  local SPACE_ON_DISK
+  SPACE_ON_DISK=$(getBytesOnDisk)
   log_info "Removing enough backups to save $TRANSFER_SIZE additional bytes."
 
   # Sanity check whether correct input (greater than zero) was given
@@ -45,7 +45,7 @@ function makeSpace {
 	  exit 1
   fi
 
-  while [[ $SIZE -gt $TRANSFER_SIZE ]]; do
+  while [[ $SPACE_ON_DISK -lt $TRANSFER_SIZE ]]; do
 
     # Sanity check: Leave at least 4 snapshots
     local NSNAPS=$(( $(/bin/ls -l $SNAP | grep -c ^d) - 1 ))
@@ -55,8 +55,8 @@ function makeSpace {
     fi
 
     removeOldest
-    SIZE=$(getBytesOnDisk)
-    log_info "There are $(bytesToHuman "$SIZE") left on the the device."
+    SPACE_ON_DISK=$(getBytesOnDisk)
+    log_info "There are $(bytesToHuman "$SPACE_ON_DISK") left on the the device."
   done
 }
 

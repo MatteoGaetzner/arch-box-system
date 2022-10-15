@@ -47,7 +47,6 @@ dust
 efibootmgr
 element-desktop
 eog
-eovpn
 espeak-ng
 evince
 exa
@@ -64,11 +63,13 @@ flameshot
 flashfocus-git
 flatpak
 flex
+foxitreader
 fzf
 gcc
 gdb
 geekbench
 geogebra
+gimp
 git
 git-delta
 glew
@@ -141,7 +142,6 @@ nextcloud-client
 ninja
 nitrogen
 nmap
-nodejs
 nodejs-nativefier
 nomacs
 nordvpn-bin
@@ -162,7 +162,7 @@ okular
 openconnect
 opencv-cuda
 openvpn
-openvpn3
+openvpn-update-resolv-conf-git
 p7zip
 pacman-contrib
 pandoc
@@ -201,11 +201,13 @@ python-pytest
 python-wheel
 qbittorrent
 qgis
+qopenvpn
 qwinff
 r
 rclone
 rdesktop
 refind
+refind-btrfs
 refind-theme-nord
 reflector
 ripgrep
@@ -222,6 +224,7 @@ shfmt
 skypeforlinux-preview-bin
 slack-desktop
 snapd
+snapper
 speech-dispatcher
 spotify
 spotify-tui
@@ -256,8 +259,6 @@ texlive-pstricks
 texlive-publishers
 texlive-science
 thunderbird
-timeshift
-timeshift-autosnap
 tk
 tmux
 torbrowser-launcher
@@ -267,7 +268,7 @@ ttf-fira-mono
 ttf-fira-sans
 ttf-joypixels
 ttf-meslo-nerd-font-powerlevel10k
-ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-2048-em
 ueberzug
 unrar
 urlview
@@ -276,6 +277,7 @@ vi
 vlc
 vlc-bittorrent
 vtk
+wclatex
 wget
 whatsapp-nativefier
 which

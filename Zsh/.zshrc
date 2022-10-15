@@ -13,19 +13,12 @@ export NODE_OPTIONS=--max-old-space-size=8192
 ##############  Zsh Options  #####################
 
 setopt HIST_IGNORE_SPACE
-# NOTE: Sourcing completion_settings.zsh slows down shell startup significantly
-# source ~/.config/zsh/completions/completion_settings.zsh
 
 # Don't ask for confirmation before `rm path/*`
 setopt rm_starsilent
 
 # Turn off all beeps
 unsetopt BEEP
-
-###############  Completions Loading Hack  #######
-
-autoload -Uz compinit
-compinit
 
 ###############  P10K  ###########################
 
@@ -68,6 +61,15 @@ export ZSH="$HOME/.oh-my-zsh"
 
 source $ZSH/oh-my-zsh.sh
 
+###############  Completions Loading Hack  #######
+
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+
+###############  Completions  ####################
+
+# [[ -f $HOME/.config/zsh/completions/openvpn3.zsh ]] &&
+source $HOME/.config/zsh/completions/openvpn3.zsh
 
 ###############  Path Extensions  ################
 
@@ -215,7 +217,7 @@ alias dpr="sudo docker container prune"
 alias rsyncp="rsync -ah --info=progress2 --no-i-r"
 alias rclones="rclone --progress --multi-thread-streams=50 sync"
 
-alias cat='bat --style header --style rules --style snip --style changes --style header'
+alias cat='bat --style header --style snip --style changes --style header'
 
 alias ls='exa -l --color=always --group-directories-first --icons' # preferred listing
 alias la='exa -la --color=always --group-directories-first --icons'  # all files and dirs
@@ -420,6 +422,9 @@ function fn {
     echo "# Notes made on the $DATE" >> $DATE.md
     nvim $DATE.md
 }
+
+# Openvpn3
+alias ov="openvpn3"
 
 ###############  University  #####################
 

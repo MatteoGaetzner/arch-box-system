@@ -23,6 +23,9 @@ bindsym $mod+f exec firefox
 bindsym $mod+b exec $home/.config/i3/scripts/bsprak.sh
 bindsym $mod+i exec kitty $home/.mambaforge/envs/ml/bin/ipython3 --no-confirm-exit
 bindsym Print exec flameshot gui
+bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym $mod+n exec --no-startup-id flash_window
 
 # Alt+P for passthrough mode
@@ -66,7 +69,7 @@ exec --no-startup-id nitrogen --restore
 
 # Workspace 1
 exec --no-startup-id "i3-msg 'workspace 1; append_layout $home/.config/i3/layouts/workspace-1-startup.i3config'"
-exec --no-startup-id "i3-msg 'workspace 1; exec firefox -url https://tasksboard.com/app https://isis.tu-berlin.de/my/ https://web.whatsapp.com/ https://web.telegram.org/z/ https://app.element.io/#/room/!AfKDPFUybRQqoyldMP:matrix.tu-berlin.de https://discord.com/channels/@me https://mattermost.hhi.fraunhofer.de/ml-hhi/channels/solp-klips https://owa.hhi.fraunhofer.de/owa/#path=/mail'"
+exec --no-startup-id "i3-msg 'workspace 1; exec firefox -url https://tasksboard.com/app https://isis.tu-berlin.de/my/ https://web.whatsapp.com/ https://web.telegram.org/z/ https://mm.neuro.tu-berlin.de/ml/channels/cognitive-algorithms-ws2223 https://mattermost.hhi.fraunhofer.de/ml-hhi/channels/solp-klips https://owa.hhi.fraunhofer.de/owa/#path=/mail'" 
 # Workspace 2
 exec --no-startup-id "i3-msg 'workspace 2; append_layout $home/.config/i3/layouts/workspace-2-startup.i3config'"
 exec --no-startup-id "i3-msg 'workspace 2; exec spotify'"
