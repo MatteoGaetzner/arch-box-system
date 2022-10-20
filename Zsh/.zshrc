@@ -419,8 +419,18 @@ function s {
 # Fast note with markdown
 function fn {
     DATE=$(date +%Y-%m-%d)
-    echo "# Notes made on the $DATE" >> $DATE.md
-    nvim $DATE.md
+
+    if [ $# -eq 1 ]; then
+        filename = $DATE_$1.md
+        header = "# $1"
+    else
+        filename = $DATE.md
+        header = "# $DATE"
+    fi
+
+    echo "$header" > "$filename"
+
+    nvim "$filename"
 }
 
 # Openvpn3
@@ -539,11 +549,11 @@ function jn {
     jupyter notebook $1
 }
 
-###############  Techlabs  #######################
+###############  Robotics  #######################
 
-function mgmt_onboarding {
-    firefox -url "https://www.notion.so/techlabs/c30ffb07ffe5419caa51a7b36ab208d3?v=309bfe26069749228921a296d7d99eee" "https://www.notion.so/techlabs/Non-Disclosure-Agreement-NDA-5e844ea9f1944036a0a103a463e1c2ae" "https://admin.google.com/u/1/ac/users?action_id=ADD_USER" "https://admin.google.com/u/1/ac/groups/03whwml41tspvjp" "https://admin.google.com/u/1/ac/groups/035nkun22iwi22l" "https://techlabs-mgmt.slack.com/admin" "https://techlabs-mgmt.slack.com/admin/user_groups" "https://techlabs-community.slack.com/admin" "https://techlabs-community.slack.com/admin/user_groups"
-    log_info "Don't forget to add the new member to NOTION and write an EMAIL!"
+function robo_gcc {
+    # Example: robo_gcc g++ -std=c++11 SpringMass.cpp SpringDamperMass.cpp main.cpp -o main && ./main
+    sudo docker run --user $(id -u):$(id -g) -v $(pwd):/usr/src/project -w /usr/src/project -it --rm gcc $@
 }
 
 ###############  VPN  ############################

@@ -17,14 +17,15 @@ set nohlsearch
 set nostartofline
 set mouse=a
 set nu rnu
+set nowrap
 set number relativenumber
 set scrolloff=10
-set shiftwidth=4
+set softtabstop=0 shiftwidth=4
 set shortmess+=c
 set smartcase
 set smarttab
 set smartindent
-set tabstop=4
+set tabstop=8
 set timeout ttimeoutlen=25
 set syntax=on
 
@@ -574,7 +575,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "--------------  Coc-Extensions  -----------------
 
 let g:coc_global_extensions = [
-            \'coc-clangd',
             \'coc-cmake',
             \'coc-explorer',
             \'coc-json',
@@ -590,6 +590,8 @@ let g:coc_global_extensions = [
             \'coc-marketplace'
       \]
 
+" \'coc-clangd',
+"
 "--------------  Coc-Explorer  -------------------
 
 let g:coc_explorer_global_presets = {
@@ -719,7 +721,8 @@ endfun
 " File formatting settings
 augroup formatgroup
   autocmd!
-  autocmd FileType h,c,cpp let b:useClangFormat=1
+  " autocmd FileType h,c,cpp let b:useClangFormat=1
+  autocmd FileType h,c,cpp let b:useCocFormat=1
   autocmd FileType html,javascript,vue,css let b:usePrettier=1
   autocmd FileType bash,sh,zsh,tex let b:autoformat=1
   autocmd BufWritePre * call Format()

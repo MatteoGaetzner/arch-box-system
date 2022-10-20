@@ -14,6 +14,7 @@ blueman
 bluez-tools
 bluez-utils
 bottom
+catch2
 chromium
 cmake
 cpulimit
@@ -50,6 +51,7 @@ geogebra
 gimp
 git-delta
 gnu-efi
+gnu-netcat
 grub
 hdparm
 helm
@@ -147,6 +149,7 @@ sqlitebrowser
 sshpass
 sysbench
 tealdeer
+teams
 tex-match
 texlab
 texlive-bibtexextra

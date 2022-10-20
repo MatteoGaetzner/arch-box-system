@@ -78,6 +78,7 @@ cabextract
 cairo
 cairomm
 cantarell-fonts
+catch2
 cblas
 cdparanoia
 cfitsio
@@ -267,6 +268,7 @@ gnome-settings-daemon
 gnome-themes-extra
 gnu-efi
 gnu-free-fonts
+gnu-netcat
 gnupg
 gnuplot
 gnutls
@@ -593,6 +595,7 @@ json-c
 json-glib
 jsoncpp
 junit
+jupyter-nbclassic
 jupyter-nbclient
 jupyter-nbconvert
 jupyter-nbformat
@@ -1880,6 +1883,7 @@ tbb
 tcl
 tdb
 tealdeer
+teams
 telegram-desktop
 telegram-tdlib
 tensorflow

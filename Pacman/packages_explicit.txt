@@ -21,6 +21,7 @@ bluez-tools
 bluez-utils
 bottom
 btrfs-progs
+catch2
 chromium
 clamav
 clang
@@ -76,6 +77,7 @@ glew
 glfw-x11
 gnome-keyring
 gnu-efi
+gnu-netcat
 gnuplot
 groff
 grub
@@ -233,6 +235,7 @@ sshpass
 sudo
 sysbench
 tealdeer
+teams
 telegram-desktop
 tesseract-data-deu
 tesseract-data-eng
