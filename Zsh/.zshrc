@@ -14,6 +14,8 @@ export NODE_OPTIONS=--max-old-space-size=8192
 
 setopt HIST_IGNORE_SPACE
 
+setopt NO_NOTIFY NO_MONITOR
+
 # Don't ask for confirmation before `rm path/*`
 setopt rm_starsilent
 
@@ -112,8 +114,15 @@ function backup_full {
     small_backup
 }
 
+function deactivate_conda_fully {
+    for i in $(seq ${CONDA_SHLVL}); do
+        conda deactivate
+    done
+}
+
 # This evaluates to `pacman ...` or `sudo pacman ...` if needed
 function pm {
+    deactivate_conda_fully
     case $1 in
         -S | -D | -S[^sih]* | -R* | -U*)
             sudo pacman --noconfirm "$@" ;;
@@ -126,10 +135,8 @@ function pm {
 alias pmb="backup_full; printf '\n'; pm $@"
 
 function update {
-    for i in $(seq ${CONDA_SHLVL}); do
-        conda deactivate
-    done
-    yay --combinedupgrade --noconfirm -Syu
+    deactivate_conda_fully
+    sudo pacman -Sy --noconfirm && sudo powerpill -Su --noconfirm && paru -Su --noconfirm
     updatei3barchupdate
 }
 
@@ -142,13 +149,15 @@ alias grubmk="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 alias npmi="npm i --prefix $HOME/.local/share/npm"
 
-function mine {
-    sudo xmrig --cuda --donate-level 0 -o de.haven.herominers.com:1110 -u $(pass havenprotocol.org/address) -p my_xmrig_worker -a cn-heavy/xhv -k
-}
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 function sc {
     pass -c ssh/private_password
-    ssh gaetzner@cluster.ml.tu-berlin.de -l zsh
+    ssh gaetzner@cluster.ml.tu-berlin.de
+}
+
+function sk {
+    ssh -X gaetzner@172.16.33.85 -L 8125:127.0.0.1:8125 -L 6006:127.0.0.1:6006
 }
 
 # Full system scan
@@ -191,13 +200,20 @@ function bluer {
 }
 
 function airc {
-    blue 94:16:25:50:A2:58 &
-    blue E4:90:FD:40:B9:06 &
+    blue 94:16:25:50:A2:58 1> /dev/null 2> /dev/null &
 }
 
+
 function aird {
-    blued 94:16:25:50:A2:58 &
-    blued E4:90:FD:40:B9:06 &
+    blued 94:16:25:50:A2:58 1> /dev/null 2> /dev/null &
+}
+
+function speakc {
+    blue C0:28:8D:05:C4:B5 1> /dev/null 2> /dev/null &
+}
+
+function speakd {
+    blue C0:28:8D:05:C4:B5 1> /dev/null 2> /dev/null &
 }
 
 ###############  Containerization  ###############
@@ -289,8 +305,7 @@ alias c='cd'
 
 # Open files easily
 function o {
-    mimeopen -n $@ >/dev/null 2>/dev/null &
-    disown
+    nohup mimeopen -n $@ >/dev/null 2>/dev/null &
 }
 
 # Sorted du
@@ -421,11 +436,11 @@ function fn {
     DATE=$(date +%Y-%m-%d)
 
     if [ $# -eq 1 ]; then
-        filename = $DATE_$1.md
-        header = "# $1"
+        filename=$DATE_$1.md
+        header="# $1"
     else
-        filename = $DATE.md
-        header = "# $DATE"
+        filename=$DATE.md
+        header="# $DATE"
     fi
 
     echo "$header" > "$filename"
@@ -458,18 +473,10 @@ function u {
     fi
 
     case $course in
-        a* )
-            COURSE='ABSSS22' ;;
+        r* )
+            COURSE='WS2223Robotics' ;;
         e* )
-            COURSE='SoSe22EITS' ;;
-        o* )
-            COURSE='SoSe22ODSPRMVA' ;;
-        k* )
-            COURSE='S22KI' ;;
-        M* )
-            COURSE='SoSe2021ML2' ;;
-        m* )
-            COURSE='SoSe2022ML2' ;;
+            COURSE='WS22ISS' ;;
     esac
 
     COURSE_CLEAN=$(clean_course $COURSE)
@@ -510,7 +517,7 @@ function latex_setup {
     ln -s ../images sections/images
     ln -s ../general.sty sections/general.sty
     ln -s ../specific.sty sections/specific.sty
-    ls -s ../out sections/out
+    ln -s ../out sections/out
     ln $HOME/Sync/Programs/Self/latex/Packages/general.sty general.sty
     cp $HOME/Sync/Programs/Self/latex/Packages/specific.sty specific.sty
     cp $HOME/Sync/Programs/Self/latex/Templates/Generic/main.tex main.tex
@@ -752,13 +759,12 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
     NOWTIME=$(date +%H%M)
     let "PREVMIN = $NOWTIME - 1"
     if ! [[ ($BOOTTIME = $NOWTIME) && ($BOOTTIME = $PREVMIN) ]]; then
+        (sleep 10 && touch $ZSHUPDATEDFILE) &
         read -q "?Wanna copy gpg password in buffer? "
         if [[ $REPLY =~ [Yy] ]]; then
             pass -c master-password
         fi
         echo -e "\033[2K"
-
-        touch $ZSHUPDATEDFILE
     fi
 fi
 

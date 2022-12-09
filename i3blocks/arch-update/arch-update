@@ -9,6 +9,16 @@ import os
 import re
 import subprocess
 from subprocess import check_output
+from threading import Lock, Thread
+
+updates = []
+updates_lock = Lock()
+
+
+def append_to_updates(new_updates) -> None:
+    global updates
+    with updates_lock:
+        updates += new_updates
 
 
 def create_argparse():
@@ -61,20 +71,10 @@ def create_argparse():
     return parser.parse_args()
 
 
-# def run_command_with_timeout(cmd, timeout_sec):
-#     proc = subprocess.Popen(["timeout", str(timeout_src)] + cmd)
-#     proc.communicate()
-#     if proc.returncode == TIMEOUT_RETCODE:
-#         raise SubprocessTimeoutError(
-#             "Process #%d killed after %f seconds" % (proc.pid, timeout_sec)
-#         )
-#     return proc.returncode
-
-
 def get_updates():
     output = ""
     try:
-        output = check_output(["timeout", "5s", "checkupdates"]).decode("utf-8")
+        output = check_output(["timeout", "10s", "checkupdates"]).decode("utf-8")
     except subprocess.CalledProcessError as exc:
         # checkupdates exits with 2 and no output if no updates are available.
         # we ignore this case and go on
@@ -84,14 +84,14 @@ def get_updates():
         return []
 
     updates = [line.split(" ")[0] for line in output.split("\n") if line]
-
+    append_to_updates(updates)
     return updates
 
 
 def get_aur_updates():
     output = ""
     try:
-        output = check_output(["timeout", "5s", "yay", "-Qua"]).decode("utf-8")
+        output = check_output(["timeout", "10s", "yay", "-Qua"]).decode("utf-8")
     except subprocess.CalledProcessError as exc:
         # yaourt exits with 1 and no output if no updates are available.
         # we ignore this case and go on
@@ -101,7 +101,7 @@ def get_aur_updates():
         return []
 
     updates = [line.split(" ")[0] for line in output.split("\n") if line]
-
+    append_to_updates(updates)
     return updates
 
 
@@ -119,8 +119,14 @@ label = os.environ.get("LABEL", "")
 message = "{0}<span color='{1}'>{2}</span>"
 args = create_argparse()
 
-updates = get_updates()
-updates += get_aur_updates()
+thread1 = Thread(target=get_updates)
+thread2 = Thread(target=get_aur_updates)
+
+thread1.start()
+thread2.start()
+
+thread1.join()
+thread2.join()
 
 update_count = len(updates)
 if update_count > 0:

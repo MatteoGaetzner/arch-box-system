@@ -832,9 +832,10 @@ augroup markdowngroup
 augroup end
 
 let g:mkdp_auto_close = 1
+let g:mkdp_echo_preview_url = 0
 let g:mkdp_browser = 'firefox'
-let $NVIM_MKDP_LOG_FILE = expand('~/mkdp-log.log')
-let $NVIM_MKDP_LOG_LEVEL = 'debug'
+let g:mkdp_theme = 'dark'
+let $NVIM_MKDP_LOG_FILE = expand('/tmp/mkdp-log.log')
 
 "--------------  Docker  -------------------------
 
