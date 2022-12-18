@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 
 # Profiling shell load time; run `zprof` to get profiling info ('self' % column most important)
-zmodload zsh/zprof
+# zmodload zsh/zprof
 
 ###############  Variables  ######################
 
@@ -65,7 +65,6 @@ source $ZSH/oh-my-zsh.sh
 
 ###############  Completions Loading Hack  #######
 
-autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 
 ###############  Completions  ####################
@@ -140,10 +139,6 @@ function update {
     updatei3barchupdate
 }
 
-# Shutdown/Reboot + backup
-alias sdown="backup_full; shutdown now"
-alias rboot="backup_full; systemctl reboot"
-
 # Rebuild grub
 alias grubmk="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
@@ -199,15 +194,6 @@ function bluer {
     configure_keyboard
 }
 
-function airc {
-    blue 94:16:25:50:A2:58 1> /dev/null 2> /dev/null &
-}
-
-
-function aird {
-    blued 94:16:25:50:A2:58 1> /dev/null 2> /dev/null &
-}
-
 function speakc {
     blue C0:28:8D:05:C4:B5 1> /dev/null 2> /dev/null &
 }
@@ -227,6 +213,15 @@ alias dps="sudo docker ps"
 alias dkl="sudo docker kill"
 alias dls="sudo docker images"
 alias dpr="sudo docker container prune"
+
+###############  VirtualBox  #####################
+
+function reinstall_virtualbox {
+    sudo pacman -R virtualbox virtualbox-host-dkms virtualbox-ext-oracle
+    sudo pacman -S linux-lts-headers linux-headers
+    sudo pacman -S virtualbox virtualbox-host-dkms virtualbox-ext-oracle
+    sudo modprobe vboxdrv
+}
 
 ###############  Beauty  #########################
 
@@ -300,9 +295,6 @@ bindkey -s "^x" 'ls\n'
 # Use aliases with sudo
 alias sudo='sudo '
 
-# Once key stroke cd
-alias c='cd'
-
 # Open files easily
 function o {
     nohup mimeopen -n $@ >/dev/null 2>/dev/null &
@@ -326,6 +318,9 @@ alias vifm="$HOME/.local/bin/vifmrun"
 
 # Fast tree
 alias t="tree -C -a --dirsfirst"
+
+# Glow
+alias gw="glow ~/Sync/plans/"
 
 # Ripgrep with syntax highlighting
 function hg {
@@ -514,6 +509,8 @@ function ml1_extract {
 
 function latex_setup {
     mkdir -p {out,images,sections/out}
+    touch refs.bib
+    ln -s ../refs.bib sections/refs.bib
     ln -s ../images sections/images
     ln -s ../general.sty sections/general.sty
     ln -s ../specific.sty sections/specific.sty
@@ -750,9 +747,6 @@ if [ -f "/home/matteo/.mambaforge/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
-# Default environment
-mamba activate gdreg
-
 # Ask for update after startup
 if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
     BOOTTIME=$(who -b | sed 's/.*\(..:..\)$/\1/' | sed 's/://')
@@ -768,5 +762,6 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
     fi
 fi
 
+mamba activate gdreg
 _evalcache direnv hook zsh
 _evalcache zoxide init zsh

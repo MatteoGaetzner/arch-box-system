@@ -36,7 +36,6 @@ exa
 exfat-utils
 exodus
 ffmpegthumbnailer
-ffnvcodec-headers8.1
 firefox
 flameshot
 flashfocus-git
@@ -65,6 +64,8 @@ lib32-gnutls
 libclc
 libpam-google-authenticator
 libreoffice-fresh
+libxres
+libxvmc
 lshw
 luakit
 lvtk
@@ -83,7 +84,6 @@ nethogs
 network-manager-applet
 newmat
 nextcloud-client
-ninja
 nmap
 nodejs-nativefier
 nomacs
@@ -120,7 +120,7 @@ procs
 profile-sync-daemon
 pulseaudio-alsa
 pulsemixer
-pyenv-virtualenv
+pyenv
 pypy
 pypy3
 python-fangfrisch

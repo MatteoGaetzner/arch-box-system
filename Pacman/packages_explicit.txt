@@ -52,7 +52,6 @@ exodus
 fakeroot
 ffmpeg
 ffmpegthumbnailer
-ffnvcodec-headers8.1
 firefox
 firewalld
 flameshot
@@ -98,10 +97,13 @@ libclc
 libpam-google-authenticator
 libreoffice-fresh
 libtool
+libxres
+libxvmc
 linux
 linux-firmware
 linux-headers
 linux-lts
+linux-lts-headers
 lldb
 lshw
 lsof
@@ -186,7 +188,6 @@ pugixml
 pulseaudio-alsa
 pulsemixer
 pyenv
-pyenv-virtualenv
 pypy
 pypy3
 python-docutils
@@ -279,6 +280,7 @@ vi
 virtualbox
 virtualbox-ext-oracle
 virtualbox-guest-iso
+virtualbox-host-dkms
 vlc
 vlc-bittorrent
 vtk

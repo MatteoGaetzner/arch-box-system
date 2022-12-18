@@ -1,5 +1,5 @@
 {
-    // stacked split container with 1 children
+    // stacked split container with 2 children
     "border": "normal",
     "floating": "auto_off",
     "layout": "stacked",
@@ -13,17 +13,17 @@
             "floating": "auto_off",
             "geometry": {
                "height": 2120,
-               "width": 3836,
+               "width": 1916,
                "x": 0,
                "y": 0
             },
             "marks": [],
             "name": "kitty",
-            "percent": 1,
+            "percent": 0.5,
             "swallows": [
                {
-                "class": "^kitty$",
-                "instance": "^kitty$",
+                  "class": "^kitty$",
+                  "instance": "^kitty$",
                }
             ],
             "type": "con"
@@ -32,84 +32,24 @@
 }
 
 {
-    "border": "normal",
+    "border": "pixel",
+    "current_border_width": 2,
     "floating": "auto_off",
-    "layout": "splitv",
+    "geometry": {
+       "height": 600,
+       "width": 800,
+       "x": 0,
+       "y": 0
+    },
     "marks": [],
+    "name": "Spotify",
     "percent": 0.5,
-    "type": "con",
-    "nodes": [
-        {
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "tabbed",
-            "marks": [],
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "pixel",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 2196,
-                       "width": 3876,
-                       "x": 3822,
-                       "y": -16
-                    },
-                    "marks": [],
-                    "name": "Telegram (2)",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                        "class": "^TelegramDesktop$",
-                        "instance": "^telegram\\-desktop$",
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 1200,
-                       "width": 1920,
-                       "x": 960,
-                       "y": 480
-                    },
-                    "marks": [],
-                    "name": "WhatsApp",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                        "title": "^WhatsApp$",
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
-        },
-        {
-            "border": "pixel",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 600,
-               "width": 800,
-               "x": 0,
-               "y": 0
-            },
-            "marks": [],
-            "name": "Spotify",
-            "percent": 0.5,
-            "swallows": [
-               {
-                "class": "^Spotify$",
-               }
-            ],
-            "type": "con"
-        }
-    ]
+    "swallows": [
+       {
+          "class": "^Spotify$",
+          "instance": "^spotify$",
+       }
+    ],
+    "type": "con"
 }
 

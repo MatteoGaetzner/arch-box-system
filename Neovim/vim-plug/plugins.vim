@@ -46,6 +46,7 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'airblade/vim-rooter'
 Plug 'rust-lang-nursery/rustfmt'
+Plug 'ellisonleao/glow.nvim'
 
 " Wait for these plugins to get fixed
 Plug 'andymass/vim-matchup'

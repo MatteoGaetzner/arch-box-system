@@ -43,6 +43,7 @@ base
 bash
 bat
 bc
+bcprov
 biber
 binutils
 bison
@@ -107,6 +108,7 @@ curl
 cython
 dav1d
 db
+db5.3
 dbus
 dbus-glib
 dbus-python
@@ -163,7 +165,6 @@ ffcall
 ffmpeg
 ffmpeg4.4
 ffmpegthumbnailer
-ffnvcodec-headers8.1
 fftw
 file
 filesystem
@@ -240,6 +241,7 @@ gnuplot
 gnutls
 go
 go-tools
+gobject-introspection
 gobject-introspection-runtime
 gpgme
 gpm
@@ -525,6 +527,7 @@ iw
 jack2
 jansson
 jasper
+java-commons-lang
 java-environment-common
 java-hamcrest
 java-runtime-common
@@ -960,12 +963,14 @@ libxnvctrl
 libxpm
 libxrandr
 libxrender
+libxres
 libxshmfence
 libxslt
 libxss
 libxt
 libxtst
 libxv
+libxvmc
 libxxf86vm
 libyaml
 libyuv
@@ -980,6 +985,7 @@ linux-firmware
 linux-firmware-whence
 linux-headers
 linux-lts
+linux-lts-headers
 lldb
 llvm-libs
 lm_sensors
@@ -1016,6 +1022,7 @@ mdadm
 media-player-info
 mediainfo
 mesa
+meson
 metis
 minizip
 mkinitcpio
@@ -1318,7 +1325,6 @@ pulsemixer
 purpose
 pyalpm
 pyenv
-pyenv-virtualenv
 pypy
 pypy3
 python
@@ -1337,6 +1343,7 @@ python-backcall
 python-beautifulsoup4
 python-black
 python-bleach
+python-bottle
 python-cachecontrol
 python-cachy
 python-cairo
@@ -1366,6 +1373,7 @@ python-entrypoints
 python-exceptiongroup
 python-executing
 python-fangfrisch
+python-fasteners
 python-fastjsonschema
 python-filelock
 python-future
@@ -1407,6 +1415,8 @@ python-lark-parser
 python-lazy-object-proxy
 python-lockfile
 python-lxml
+python-mako
+python-markdown
 python-markupsafe
 python-marshmallow
 python-matplotlib-inline
@@ -1416,6 +1426,7 @@ python-more-itertools
 python-msgpack
 python-mypy_extensions
 python-nest-asyncio
+python-node-semver
 python-numpy
 python-opencv
 python-ordered-set
@@ -1423,6 +1434,7 @@ python-owslib
 python-packaging
 python-pandocfilters
 python-parso
+python-patch-ng
 python-pathspec
 python-pexpect
 python-pickleshare
@@ -1432,6 +1444,7 @@ python-pip
 python-pkginfo
 python-platformdirs
 python-pluggy
+python-pluginbase
 python-ply
 python-poetry
 python-poetry-core
@@ -1445,6 +1458,7 @@ python-pure-eval
 python-pycparser
 python-pydantic
 python-pygments
+python-pyjwt
 python-pylev
 python-pylint
 python-pynvim
@@ -1487,6 +1501,7 @@ python-toml
 python-tomli
 python-tomlkit
 python-tornado
+python-tqdm
 python-traitlets
 python-transitions
 python-trove-classifiers
