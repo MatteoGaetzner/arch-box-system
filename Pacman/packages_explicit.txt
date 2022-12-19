@@ -150,6 +150,7 @@ nvidia-cg-toolkit
 nvidia-lts
 nvidia-settings
 nvidia-utils
+nvim-packer-git
 nvtop
 obs-studio
 obsidian

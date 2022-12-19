@@ -115,5 +115,6 @@
         ]
     },
     "texlab.formatterLineLength": 80,
-    "python.pythonPath": "/home/matteo/.mambaforge/envs/neovim/bin/python3"
+    "python.pythonPath": "/home/matteo/.mambaforge/envs/neovim/bin/python3",
+    "snippets.ultisnips.pythonPrompt": false
 }

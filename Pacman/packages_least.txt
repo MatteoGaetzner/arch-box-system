@@ -94,6 +94,7 @@ notmuch-mutt
 nvidia
 nvidia-cg-toolkit
 nvidia-lts
+nvim-packer-git
 nvtop
 obs-studio
 obsidian
