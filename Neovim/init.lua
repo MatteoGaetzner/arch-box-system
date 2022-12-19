@@ -5,6 +5,7 @@ require("plugins")
 ---------------  Utils ---------------------------------------------------------
 
 require("utils")
+require("self-written.linear-algebra")
 
 --------------  University  ----------------------------------------------
 
