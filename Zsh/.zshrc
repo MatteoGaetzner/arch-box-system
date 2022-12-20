@@ -365,9 +365,9 @@ alias v=nvim
 alias pc="pass -c"
 alias poc="pass otp -c"
 
-alias vime="nvim $HOME/.config/nvim/init.vim"
+alias vime="nvim $HOME/.config/nvim/init.lua"
 alias vimed="nvim $HOME/.config/nvim/"
-alias vimep="nvim $HOME/.config/nvim/vim-plug/plugins.vim"
+alias vimep="nvim $HOME/.config/nvim/lua/plugins.lua"
 alias vimec="nvim $HOME/.config/nvim/coc-settings.json"
 
 alias vifme="nvim $HOME/.config/vifm/vifmrc"

@@ -25,11 +25,6 @@ return require('packer').startup(function(use)
     use 'SirVer/ultisnips'
     use 'adborden/vim-notmuch-address'
     use 'airblade/vim-gitgutter'
-    -- use {
-    --     'autozimu/LanguageClient-neovim', 
-    --     branch = 'next',
-    --     run = 'bash install.sh'
-    -- }
     use 'godlygeek/tabular'
     use 'honza/vim-snippets'
     use {
@@ -56,7 +51,7 @@ return require('packer').startup(function(use)
         run = ':!./install.sh'
     }
     use 'skywind3000/asyncrun.vim'
-    use 'svermeulen/vim-easyclip'
+    use 'ojroques/nvim-osc52'
     use 'tpope/vim-abolish'
     use 'tpope/vim-commentary'
     use 'tpope/vim-repeat'
