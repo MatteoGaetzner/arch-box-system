@@ -62,6 +62,7 @@ kubeadm
 kubectl
 lib32-gnutls
 libclc
+libmupdf
 libpam-google-authenticator
 libreoffice-fresh
 libxres
@@ -80,6 +81,7 @@ mutt-wizard-git
 nautilus-image-converter
 ncdu
 neofetch
+neovim-remote
 nethogs
 network-manager-applet
 newmat

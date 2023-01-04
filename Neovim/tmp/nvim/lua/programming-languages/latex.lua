@@ -2,6 +2,12 @@ require("utils")
 
 g.tex_flavor = "latex"
 
+-- Or with a generic interface:
+g.vimtex_view_general_viewer = 'okular'
+g.vimtex_view_general_options = '--unique file:@pdf#src:@line@tex'
+
+g.vimtex_compiler_method = 'latexmk'
+
 -- vim-latex-live-preview
 opt.updatetime = 1000
 g.livepreview_engine = 'pdflatex'

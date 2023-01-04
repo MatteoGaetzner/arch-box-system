@@ -68,12 +68,15 @@ exec --no-startup-id flashfocus
 exec --no-startup-id nitrogen --restore
 
 # Workspace 1
-exec --no-startup-id "i3-msg 'workspace 1; append_layout $home/.config/i3/layouts/workspace-1-startup.i3config'"
+# exec --no-startup-id "i3-msg 'workspace 1; append_layout $home/.config/i3/layouts/workspace-1-startup.i3config'"
+exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/matteo/.config/i3/layouts/workspace-1-startup.i3config'"
 exec --no-startup-id "i3-msg 'workspace 1; exec firefox -url https://tasksboard.com/app https://isis.tu-berlin.de/my/ https://web.whatsapp.com/ https://web.telegram.org/z/ https://mm.neuro.tu-berlin.de/ml/channels/cognitive-algorithms-ws2223 https://mattermost.hhi.fraunhofer.de/ml-hhi/channels/solp-klips https://owa.hhi.fraunhofer.de/owa/#path=/mail'" 
 # Workspace 2
-exec --no-startup-id "i3-msg 'workspace 2; append_layout $home/.config/i3/layouts/workspace-2-startup.i3config'"
+# exec --no-startup-id "i3-msg 'workspace 2; append_layout $home/.config/i3/layouts/workspace-2-startup.i3config.new'"
+exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/matteo/.config/i3/layouts/workspace-2-startup.i3config.new'"
 exec --no-startup-id "i3-msg 'workspace 2; exec spotify'"
 exec --no-startup-id "i3-msg 'workspace 2; exec kitty'"
+exec --no-startup-id "i3-msg 'workspace 2; exec obsidian'"
 
 # Immediate response to volume changes in i3blocks bar
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks

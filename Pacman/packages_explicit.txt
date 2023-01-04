@@ -94,6 +94,7 @@ kubeadm
 kubectl
 lib32-gnutls
 libclc
+libmupdf
 libpam-google-authenticator
 libreoffice-fresh
 libtool
@@ -129,6 +130,7 @@ ncdu
 neofetch
 neomutt
 neovim
+neovim-remote
 nethogs
 network-manager-applet
 networkmanager
@@ -294,6 +296,7 @@ xclip
 xcompmgr
 xdg-user-dirs
 xdg-utils
+xdotool
 xf86-video-vesa
 xh
 xorg-bdftopcf
@@ -343,6 +346,8 @@ xsel
 xterm
 yarn
 yay
+zathura
+zathura-pdf-mupdf
 zbar
 zotero-bin
 zoxide

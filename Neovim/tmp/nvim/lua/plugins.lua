@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
         branch = 'release'
     }
 
+    use 'svermeulen/vim-easyclip'
     use 'JoosepAlviste/nvim-ts-context-commentstring'
     use 'JuliaEditorSupport/julia-vim'
     use 'SirVer/ultisnips'
@@ -62,7 +63,8 @@ return require('packer').startup(function(use)
     use 'xuhdev/vim-latex-live-preview'
     use 'airblade/vim-rooter'
     use 'rust-lang-nursery/rustfmt'
-    use 'svermeulen/vim-cutlass'
+    use 'ellisonleao/glow.nvim'
+    -- use 'nvim-treesitter/playground'
 
     if packer_bootstrap then
         require('packer').sync()

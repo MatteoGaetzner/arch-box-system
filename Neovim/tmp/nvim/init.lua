@@ -24,15 +24,13 @@ require("builtin-settings.text-objects")
 --------------  Plugin Settings  ----------------------------------------------
 
 require("plugin-settings.coc")
-require("plugin-settings.coc-explorer")
-require("plugin-settings.git-gutter")
-require("plugin-settings.gutentags")
 require("plugin-settings.lualine")
 require("plugin-settings.treesitter")
+require("plugin-settings.coc-explorer")
 require("plugin-settings.ultisnips")
+require("plugin-settings.git-gutter")
+require("plugin-settings.gutentags")
 require("plugin-settings.vimtex")
-require("plugin-settings.vim-cutlass")
--- require("plugin-settings.nvim-osc52")
 
 ---------------  Themes  -------------------------------------------------------
 

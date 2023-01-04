@@ -212,6 +212,7 @@ ghc-libs
 ghostscript
 giflib
 gimp
+girara
 git
 git-delta
 glbinding
@@ -277,6 +278,7 @@ gtkmm
 gtkmm3
 gts
 guile
+gumbo-parser
 gupnp-dlna
 gvfs
 gzip
@@ -345,6 +347,7 @@ haskell-easy-file
 haskell-emojis
 haskell-erf
 haskell-fast-logger
+haskell-fgl
 haskell-file-embed
 haskell-generically
 haskell-ghc-bignum-orphans
@@ -799,6 +802,7 @@ libjpeg-turbo
 libkexiv2
 libksba
 liblangtag
+liblc3
 libldac
 libldap
 liblouis
@@ -822,6 +826,7 @@ libmpcdec
 libmpeg2
 libmspack
 libmspub
+libmupdf
 libmwaw
 libmypaint
 libmysofa
@@ -1051,6 +1056,7 @@ neofetch
 neomutt
 neon
 neovim
+neovim-remote
 net-snmp
 netcdf
 nethogs
@@ -1109,7 +1115,6 @@ openpmix
 openresolv
 openssh
 openssl
-openssl-1.0
 openssl-1.1
 openvpn
 openvpn-update-resolv-conf-git
@@ -1841,6 +1846,7 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
+xdotool
 xerces-c
 xf86-input-libinput
 xf86-video-vesa
@@ -1911,6 +1917,8 @@ xz
 yajl
 yarn
 yay
+zathura
+zathura-pdf-mupdf
 zbar
 zeromq
 zimg

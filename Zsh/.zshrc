@@ -9,6 +9,7 @@ export CACHEDIR=~/.cache/
 export ZSHUPDATEDFILE=/tmp/zsh.updated45a4586f367a83116277a3e81b87756b6ba1b6c9
 export XDG_CONFIG_HOME=$HOME/.config/
 export NODE_OPTIONS=--max-old-space-size=8192
+export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 
 ##############  Zsh Options  #####################
 
