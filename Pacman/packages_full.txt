@@ -51,6 +51,7 @@ blas
 blosc
 blueman
 bluez
+bluez-hid2hci
 bluez-libs
 bluez-tools
 bluez-utils
@@ -74,10 +75,12 @@ cairo
 cairomm
 cantarell-fonts
 cblas
+ccze
 cdparanoia
 cfitsio
 chaotic-keyring
 chaotic-mirrorlist
+chromaprint
 chromium
 cifs-utils
 clamav
@@ -144,6 +147,7 @@ egl-wayland
 eglexternalplatform
 electron
 electron18
+electron21
 element-desktop
 element-web
 elfutils
@@ -157,6 +161,7 @@ exfat-utils
 exiv2
 exodus
 expat
+faac
 faad2
 fakeroot
 faudio
@@ -176,6 +181,7 @@ flameshot
 flashfocus-git
 flatpak
 flite1
+fluidsynth
 fmt
 fontconfig
 forge
@@ -261,7 +267,9 @@ gsfonts
 gsl
 gsm
 gspell
+gssdp
 gst-libav
+gst-plugins-bad
 gst-plugins-bad-libs
 gst-plugins-base
 gst-plugins-base-libs
@@ -279,7 +287,9 @@ gtkmm3
 gts
 guile
 gumbo-parser
+gupnp
 gupnp-dlna
+gupnp-igd
 gvfs
 gzip
 harfbuzz
@@ -300,6 +310,7 @@ haskell-auto-update
 haskell-base-compat
 haskell-base-compat-batteries
 haskell-base-orphans
+haskell-base-unicode-symbols
 haskell-base16-bytestring
 haskell-base64
 haskell-base64-bytestring
@@ -330,6 +341,7 @@ haskell-constraints
 haskell-contravariant
 haskell-cookie
 haskell-cryptonite
+haskell-data-array-byte
 haskell-data-default
 haskell-data-default-class
 haskell-data-default-instances-containers
@@ -360,12 +372,14 @@ haskell-hslua
 haskell-hslua-aeson
 haskell-hslua-classes
 haskell-hslua-core
+haskell-hslua-list
 haskell-hslua-marshalling
 haskell-hslua-module-doclayout
 haskell-hslua-module-path
 haskell-hslua-module-system
 haskell-hslua-module-text
 haskell-hslua-module-version
+haskell-hslua-module-zip
 haskell-hslua-objectorientation
 haskell-hslua-packaging
 haskell-hsyaml
@@ -400,7 +414,10 @@ haskell-old-locale
 haskell-old-time
 haskell-onetuple
 haskell-optparse-applicative
+haskell-pandoc
+haskell-pandoc-lua-engine
 haskell-pandoc-lua-marshal
+haskell-pandoc-server
 haskell-pandoc-types
 haskell-pem
 haskell-pretty-show
@@ -426,6 +443,7 @@ haskell-skylighting
 haskell-skylighting-core
 haskell-skylighting-format-ansi
 haskell-skylighting-format-blaze-html
+haskell-skylighting-format-context
 haskell-skylighting-format-latex
 haskell-socks
 haskell-some
@@ -473,6 +491,7 @@ haskell-vector-algorithms
 haskell-vector-stream
 haskell-wai
 haskell-wai-app-static
+haskell-wai-cors
 haskell-wai-extra
 haskell-wai-logger
 haskell-warp
@@ -491,9 +510,12 @@ haskell-zlib
 hdf5-openmpi
 hdparm
 helm
+helvum
 hgrep-bin
 hicolor-icon-theme
 hidapi
+hollywood
+hslua-cli
 htop
 http-parser
 hunspell
@@ -527,7 +549,6 @@ ipython
 iso-codes
 isync
 iw
-jack2
 jansson
 jasper
 java-commons-lang
@@ -711,6 +732,7 @@ libatasmart
 libatomic_ops
 libavc1394
 libavif
+libavtp
 libb2
 libblockdev
 libbluray
@@ -748,6 +770,7 @@ libdispatch
 libdrm
 libdv
 libdvbpsi
+libdvdnav
 libdvdread
 libe-book
 libebml
@@ -795,10 +818,12 @@ libimobiledevice
 libindicator-gtk3
 libinih
 libinput
+libinstpatch
 libiptcdata
 libisl
 libixion
 libjpeg-turbo
+libkate
 libkexiv2
 libksba
 liblangtag
@@ -807,6 +832,8 @@ libldac
 libldap
 liblouis
 liblqr
+liblrdf
+libltc
 libluv
 liblzf
 libmad
@@ -816,6 +843,7 @@ libmatroska
 libmd
 libmediainfo
 libmfx
+libmicrodns
 libmm-glib
 libmms
 libmng
@@ -838,6 +866,7 @@ libnewt
 libnfnetlink
 libnftnl
 libnghttp2
+libnice
 libnl
 libnm
 libnma
@@ -848,6 +877,7 @@ libnumbertext
 libodfgen
 libogg
 libomxil-bellagio
+libopenmpt
 liborcus
 libosinfo
 libp11-kit
@@ -897,6 +927,7 @@ libspatialite
 libspectre
 libspeechd
 libspiro
+libsrtp
 libssh
 libssh2
 libstaroffice
@@ -1031,6 +1062,7 @@ mesa
 meson
 metis
 minizip
+mjpegtools
 mkinitcpio
 mkinitcpio-busybox
 mkvtoolnix-cli
@@ -1131,7 +1163,7 @@ pacman-mirrorlist
 pahole
 pam
 pambase
-pandoc
+pandoc-cli
 pango
 pangomm
 papirus-icon-theme
@@ -1299,7 +1331,9 @@ picom
 pigz
 pinentry
 pipewire
+pipewire-alsa
 pipewire-audio
+pipewire-jack
 pipewire-pulse
 pixman
 pkcs11-helper
@@ -1327,8 +1361,6 @@ proj
 protobuf
 psmisc
 pugixml
-pulseaudio-alsa
-pulsemixer
 purpose
 pyalpm
 pyenv
@@ -1412,10 +1444,11 @@ python-json-logger
 python-json5
 python-jsonpointer
 python-jsonschema
+python-jupyter-client
+python-jupyter-core
 python-jupyter-events
-python-jupyter_client
-python-jupyter_core
-python-jupyter_packaging
+python-jupyter-packaging
+python-jupyter-server-terminals
 python-jupyterlab_server
 python-keyring
 python-lark-parser
@@ -1424,10 +1457,12 @@ python-lockfile
 python-lxml
 python-mako
 python-markdown
+python-markdown-it-py
 python-markupsafe
 python-marshmallow
 python-matplotlib-inline
 python-mccabe
+python-mdurl
 python-mistune
 python-more-itertools
 python-msgpack
@@ -1514,6 +1549,7 @@ python-transitions
 python-trove-classifiers
 python-typeguard
 python-typing_extensions
+python-uc-micro-py
 python-urllib3
 python-urwid
 python-validate-pyproject
@@ -1599,6 +1635,7 @@ rofi
 rpi-imager
 rsync
 rtkit
+rtmpdump
 rubberband
 ruby
 ruby-abbrev
@@ -1687,6 +1724,7 @@ sord
 sound-theme-freedesktop
 soundtouch
 source-highlight
+spandsp
 spatialindex
 spdlog
 speech-dispatcher
@@ -1711,6 +1749,7 @@ sudo
 suil
 suitesparse
 svt-av1
+svt-hevc
 sysbench
 sysfsutils
 systemd
@@ -1757,6 +1796,7 @@ texlive-science
 thin-provisioning-tools
 threadweaver
 thunderbird
+tinycompress
 tinyxml2
 tk
 tmux
@@ -1819,6 +1859,7 @@ webp-pixbuf-loader
 webrtc-audio-processing
 wget
 which
+wildmidi
 wireless-regdb
 wireplumber
 woff2
@@ -1930,4 +1971,5 @@ zsh
 zsh-autosuggestions
 zstd
 zvbi
+zxing-cpp
 zziplib

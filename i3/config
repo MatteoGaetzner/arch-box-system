@@ -20,7 +20,6 @@ font pango:Fira Code 10
 
 # Keyboard shortcuts
 bindsym $mod+f exec firefox
-bindsym $mod+b exec $home/.config/i3/scripts/bsprak.sh
 bindsym $mod+i exec kitty $home/.mambaforge/envs/ml/bin/ipython3 --no-confirm-exit
 bindsym Print exec flameshot gui
 bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous

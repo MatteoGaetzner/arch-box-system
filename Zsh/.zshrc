@@ -241,7 +241,6 @@ alias df='duf'
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-alias htop="btm -c"
 alias ps="procs"
 alias http="xh" # For http requests
 alias benchmark="hyperfine"

@@ -9,6 +9,7 @@ opt.belloff = "all" -- disable bell ringing feedback (e.g. on error)
 opt.completeopt = "menuone,longest" -- show menu even if only one match, sort by length
 opt.incsearch = true -- moves to the search result upon typing the pattern
 opt.smartcase = true -- enables smart search pattern matching wrt. case
+opt.ignorecase = true -- enables case insensitive search pattern matching wrt. case
 opt.hlsearch = false -- turns off persistent highlighting of search results
 opt.startofline = false -- makes CTRL-D and CTRL-U keep column after moving up/down
 opt.mouse = "a" -- enables mouse support for all modes (insert, normal, visual etc.)

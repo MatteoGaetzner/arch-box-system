@@ -18,12 +18,41 @@ Channel blaalblab@gmail.com
 Expunge Both
 Far :blaalblab@gmail.com:
 Near :blaalblab@gmail.com-local:
-Patterns * !"[Gmail]/All Mail"
+#Patterns * !"[Gmail]/All Mail"
+Patterns * !"[Gmail]/All Mail" !"[Gmail]/Important" !"[Gmail]/Starred" !"[Gmail]/Bin"
 Create Both
 SyncState *
 MaxMessages 0
 ExpireUnread no
 # End profile
+
+
+IMAPStore matteo.gatzner@gmail.com
+Host imap.gmail.com
+Port 993
+User matteo.gatzner@gmail.com
+#PassCmd "pass matteo.gatzner@gmail.com"
+#Pass "PLACEHOLDER"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore matteo.gatzner@gmail.com-local
+Subfolders Verbatim
+Path /home/matteo/.local/share/mail/matteo.gatzner@gmail.com/
+Inbox /home/matteo/.local/share/mail/matteo.gatzner@gmail.com/INBOX
+
+Channel matteo.gatzner@gmail.com
+Expunge Both
+Far :matteo.gatzner@gmail.com:
+Near :matteo.gatzner@gmail.com-local:
+Patterns * !"[Gmail]/All Mail" !"[Gmail]/Important" !"[Gmail]/Starred" !"[Gmail]/Bin"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
 
 IMAPStore gaetzner@tu-berlin.de
 Host mail.tu-berlin.de
@@ -76,30 +105,3 @@ SyncState *
 MaxMessages 0
 ExpireUnread no
 # End profile
-
-
-IMAPStore matteo.gaetzner@techlabs.org
-Host imap.gmail.com
-Port 993
-User matteo.gaetzner@techlabs.org
-#PassCmd "pass matteo.gaetzner@techlabs.org"
-AuthMechs LOGIN
-SSLType IMAPS
-CertificateFile /etc/ssl/certs/ca-certificates.crt
-
-MaildirStore matteo.gaetzner@techlabs.org-local
-Subfolders Verbatim
-Path /home/matteo/.local/share/mail/matteo.gaetzner@techlabs.org/
-Inbox /home/matteo/.local/share/mail/matteo.gaetzner@techlabs.org/INBOX
-
-Channel matteo.gaetzner@techlabs.org
-Expunge Both
-Far :matteo.gaetzner@techlabs.org:
-Near :matteo.gaetzner@techlabs.org-local:
-Patterns * !"[Gmail]/All Mail"
-Create Both
-SyncState *
-MaxMessages 0
-ExpireUnread no
-# End profile
-

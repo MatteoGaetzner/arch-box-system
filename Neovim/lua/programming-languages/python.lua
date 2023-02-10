@@ -8,7 +8,7 @@ vim.api.nvim_create_autocmd('FileType', {
     pattern = 'python',
     group = python_augroup,
     callback = function()
-            map("n", "<CR>", ":call CocAction('runCommand', 'pyright.organizeimports')", { silent = true })
+            map("n", "<CR>", ":AsyncRun python3 %<CR>", { silent = true })
         end
 })
 

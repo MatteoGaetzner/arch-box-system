@@ -13,3 +13,12 @@ vim.api.nvim_create_autocmd('FileType', {
     group = markdown_augroup,
     command = "call CocActionAsync('runCommand', 'markdownlint.fixAll')"
 })
+
+vim.api.nvim_create_autocmd('FileType', {
+    pattern = 'markdown',
+    group = markdown_augroup,
+    callback = function()
+        fp = vim.api.nvim_buf_get_name(0)
+        map("n", "<CR>", ":w | AsyncRun pandoc_beamer_compile '" .. fp .."'<CR>")
+    end
+})

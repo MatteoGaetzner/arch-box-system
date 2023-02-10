@@ -2,11 +2,12 @@
 
 NNEWMAILS_GMX=$(find /home/matteo/.local/share/mail/m.gaetzner@gmx.de/INBOX/new -type f | wc -l)
 NNEWMAILS_UNI=$(find /home/matteo/.local/share/mail/gaetzner@tu-berlin.de/INBOX/new -type f | wc -l)
-NNEWMAILS_GGL=$(find /home/matteo/.local/share/mail/blaalblab@gmail.com/INBOX/new -type f | wc -l)
+NNEWMAILS_GBL=$(find /home/matteo/.local/share/mail/blaalblab@gmail.com/INBOX/new -type f | wc -l)
+NNEWMAILS_GMA=$(find /home/matteo/.local/share/mail/matteo.gatzner@gmail.com/INBOX/new -type f | wc -l)
 
-let "NNEWMAILS = NNEWMAILS_GMX + NNEWMAILS_GGL + NNEWMAILS_UNI"
+let "NNEWMAILS = NNEWMAILS_GMX + NNEWMAILS_GBL + NNEWMAILS_UNI + NNEWMAILS_GMA"
 
-printf "GMX %2s  UNI %2s  GGL %2s\n" $NNEWMAILS_GMX $NNEWMAILS_UNI $NNEWMAILS_GGL
+printf "GMX %2s  UNI %2s  GBL %2s  GMA %2s\n" $NNEWMAILS_GMX $NNEWMAILS_UNI $NNEWMAILS_GBL $NNEWMAILS_GMA
 printf "NEW MAILS: %2s\n" $NNEWMAILS
 if [[ $NNEWMAILS -gt 15 ]]; then
     printf "#E68183\n"

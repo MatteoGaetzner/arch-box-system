@@ -8,6 +8,7 @@ autoconf-archive
 base
 bison
 blueman
+bluez-hid2hci
 bluez-tools
 bluez-utils
 chaotic-keyring
@@ -49,8 +50,9 @@ gnu-netcat
 grub
 hdparm
 helm
+helvum
 hgrep-bin
-htop
+hollywood
 i3blocks
 jaxx-liberty-appimage
 jnettop
@@ -76,7 +78,6 @@ mcfly
 mediainfo
 mkvtoolnix-gui
 mokutil
-moreutils
 mutt-wizard-git
 nautilus-image-converter
 ncdu
@@ -121,8 +122,6 @@ powerpill
 powertop
 procs
 profile-sync-daemon
-pulseaudio-alsa
-pulsemixer
 pyenv
 pypy
 pypy3
@@ -229,7 +228,6 @@ xournalpp
 xpdf
 yarn
 yay
-zbar
 zotero-bin
 zoxide
 zsh-autosuggestions

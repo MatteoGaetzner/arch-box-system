@@ -14,6 +14,7 @@ biber
 bison
 blueman
 bluez
+bluez-hid2hci
 bluez-libs
 bluez-tools
 bluez-utils
@@ -73,10 +74,13 @@ gnu-netcat
 gnuplot
 groff
 grub
+gst-plugins-bad
 hdf5-openmpi
 hdparm
 helm
+helvum
 hgrep-bin
+hollywood
 htop
 i3-wm
 i3blocks
@@ -165,7 +169,7 @@ openvpn
 openvpn-update-resolv-conf-git
 p7zip
 pacman-contrib
-pandoc
+pandoc-cli
 papirus-icon-theme
 parallel
 paru
@@ -180,6 +184,8 @@ perl-anyevent-i3
 perl-file-mimeinfo
 picom
 pigz
+pipewire-alsa
+pipewire-jack
 pipewire-pulse
 pkgconf
 playerctl
@@ -188,8 +194,6 @@ powertop
 procs
 profile-sync-daemon
 pugixml
-pulseaudio-alsa
-pulsemixer
 pyenv
 pypy
 pypy3
@@ -291,6 +295,7 @@ wclatex
 wget
 which
 wireless-regdb
+wireplumber
 wpa_supplicant
 xclip
 xcompmgr
