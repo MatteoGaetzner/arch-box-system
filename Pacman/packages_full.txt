@@ -62,6 +62,7 @@ box2d
 breeze-icons
 bridge-utils
 brotli
+btop
 btrfs-progs
 bubblewrap
 byobu
@@ -93,6 +94,7 @@ compiler-rt
 confuse
 containerd
 coreutils
+cpufetch-git
 cpulimit
 cpupower
 cpupower-gui

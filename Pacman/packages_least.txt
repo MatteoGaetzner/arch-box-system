@@ -11,10 +11,12 @@ blueman
 bluez-hid2hci
 bluez-tools
 bluez-utils
+btop
 chaotic-keyring
 chaotic-mirrorlist
 chromium
 cmake
+cpufetch-git
 cpulimit
 cpupower
 cpupower-gui

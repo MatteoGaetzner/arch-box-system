@@ -27,10 +27,6 @@ return require('packer').startup(function(use)
     use 'airblade/vim-gitgutter'
     use 'godlygeek/tabular'
     use 'honza/vim-snippets'
-    use {
-        'iamcco/markdown-preview.nvim',
-        run = 'cd app && yarn install'  
-    }
     use 'jiangmiao/auto-pairs'
     use 'kevinoid/vim-jsonc'
     use 'kyazdani42/nvim-web-devicons'

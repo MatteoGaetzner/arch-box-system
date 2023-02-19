@@ -8,11 +8,12 @@ g.NVIM_MKDP_LOG_FILE = '/tmp/mkdp-log.log'
 
 local markdown_augroup = vim.api.nvim_create_augroup('markdown', { clear = true })
 
-vim.api.nvim_create_autocmd('FileType', {
-    pattern = 'markdown',
-    group = markdown_augroup,
-    command = "call CocActionAsync('runCommand', 'markdownlint.fixAll')"
-})
+-- Messes with latex: 
+-- vim.api.nvim_create_autocmd('FileType', {
+--     pattern = 'markdown',
+--     group = markdown_augroup,
+--     command = "call CocActionAsync('runCommand', 'markdownlint.fixAll')"
+-- })
 
 vim.api.nvim_create_autocmd('FileType', {
     pattern = 'markdown',
