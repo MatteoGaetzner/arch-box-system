@@ -44,7 +44,6 @@ flameshot
 flashfocus-git
 flatpak
 geogebra
-gimp
 git-delta
 glew-2.1
 gnu-efi

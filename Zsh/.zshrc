@@ -527,7 +527,7 @@ function lcl {
 
 # latex compile
 function lco {
-    latexmk --shell-escape -pdf -output-directory=out $@
+    latexmk --shell-escape -pdf -pdflatex=lualatex -output-directory=out $@
 }
 
 # latex clean compile
@@ -537,7 +537,7 @@ function lcc {
 
 # latex compile all
 function lca {
-    parallel latexmk -shell-escape -pdf -output-directory=out {} ::: **/*.tex
+    parallel lco {} ::: **/*.tex
 }
 
 # latex clean compile all

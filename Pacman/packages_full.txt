@@ -252,6 +252,7 @@ go
 go-tools
 gobject-introspection
 gobject-introspection-runtime
+gperftools
 gpgme
 gpm
 gptfdisk
@@ -516,6 +517,7 @@ helvum
 hgrep-bin
 hicolor-icon-theme
 hidapi
+highway
 hollywood
 hslua-cli
 htop
@@ -825,6 +827,7 @@ libiptcdata
 libisl
 libixion
 libjpeg-turbo
+libjxl
 libkate
 libkexiv2
 libksba
@@ -891,6 +894,7 @@ libpciaccess
 libpeas
 libpgm
 libpipeline
+libpipewire
 libplacebo
 libplist
 libpng
@@ -1385,9 +1389,11 @@ python-beautifulsoup4
 python-black
 python-bleach
 python-bottle
+python-build
 python-cachecontrol
 python-cachy
 python-cairo
+python-capng
 python-cffi
 python-chardet
 python-cleo
@@ -1431,6 +1437,7 @@ python-importlib-metadata
 python-inflect
 python-iniconfig
 python-injector
+python-installer
 python-ipykernel
 python-ipython-genutils
 python-isort
@@ -1509,6 +1516,7 @@ python-pynvim
 python-pyopenssl
 python-pyparsing
 python-pyproj
+python-pyproject-hooks
 python-pyqt5
 python-pyqt5-sip
 python-pyrsistent

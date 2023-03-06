@@ -4,7 +4,7 @@ g.tex_flavor = "latex"
 
 -- vim-latex-live-preview
 opt.updatetime = 1000
-g.livepreview_engine = 'pdflatex'
+g.livepreview_engine = 'lualatex'
 g.livepreview_previewer = 'okular'
 g.livepreview_texinputs = './out/'
 g.livepreview_use_biber = 1

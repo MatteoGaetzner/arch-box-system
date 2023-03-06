@@ -36,6 +36,8 @@ Host klips
     IdentityFile ~/.ssh/gitkey_encrypted
     User gaetzner
     ForwardX11 yes
+    LocalForward 8125 127.0.0.1:8125
+    LocalForward 8124 127.0.0.1:5050
 
 Host gitlab-raspberry
     HostName 192.168.0.242
