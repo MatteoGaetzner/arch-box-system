@@ -15,9 +15,7 @@ btop
 chaotic-keyring
 chaotic-mirrorlist
 chromium
-cmake
 cpufetch-git
-cpulimit
 cpupower
 cpupower-gui
 critest
@@ -28,6 +26,7 @@ dex
 direnv
 dmidecode
 docker
+dolphin
 drawio-desktop
 duf
 duperemove
@@ -38,6 +37,7 @@ eovpn
 exa
 exfat-utils
 exodus
+fd
 ffmpegthumbnailer
 firefox
 flameshot
@@ -72,6 +72,7 @@ libxres
 libxvmc
 lshw
 luakit
+luarocks
 lvtk
 massif-visualizer
 masterpdfeditor
@@ -178,6 +179,7 @@ ttf-fira-code
 ttf-fira-mono
 ttf-fira-sans
 ttf-joypixels
+ttf-linux-libertine
 ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols-2048-em
 ueberzug

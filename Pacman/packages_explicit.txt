@@ -27,7 +27,6 @@ clamav
 clang
 cmake
 cpufetch-git
-cpulimit
 cpupower
 cpupower-gui
 crictl
@@ -40,6 +39,7 @@ dialog
 direnv
 dmidecode
 docker
+dolphin
 dosfstools
 drawio-desktop
 duf
@@ -53,6 +53,7 @@ exa
 exfat-utils
 exodus
 fakeroot
+fd
 ffmpeg
 ffmpegthumbnailer
 firefox
@@ -60,6 +61,7 @@ firewalld
 flameshot
 flashfocus-git
 flatpak
+fontforge
 fzf
 gcc
 gdb
@@ -116,6 +118,7 @@ lshw
 lsof
 lua
 luakit
+luarocks
 lvtk
 lynx
 m4
@@ -279,6 +282,7 @@ ttf-fira-code
 ttf-fira-mono
 ttf-fira-sans
 ttf-joypixels
+ttf-linux-libertine
 ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols-2048-em
 ueberzug

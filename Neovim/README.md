@@ -1,4 +1,4 @@
-# Installation
+# 💤 LazyVim
 
-1. Install a recent version of `nodejs`, on arch run `sudo pacman -S nodejs`.
-Alternatively, check here: https://nodejs.org/en/.
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.

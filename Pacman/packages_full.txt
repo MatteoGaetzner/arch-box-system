@@ -31,6 +31,7 @@ aribb24
 assimp
 at-spi2-core
 atkmm
+attica
 attr
 audit
 autoconf
@@ -39,6 +40,8 @@ automake
 avahi
 avisynthplus
 babl
+baloo
+baloo-widgets
 base
 bash
 bat
@@ -93,9 +96,9 @@ cmatrix
 compiler-rt
 confuse
 containerd
+convertlit
 coreutils
 cpufetch-git
-cpulimit
 cpupower
 cpupower-gui
 cracklib
@@ -133,6 +136,7 @@ dmidecode
 dmraid
 dnssec-anchors
 docker
+dolphin
 dosfstools
 dotconf
 double-conversion
@@ -142,6 +146,7 @@ duktape
 duperemove
 dust
 e2fsprogs
+ebook-tools
 ed
 efibootmgr
 efivar
@@ -168,6 +173,7 @@ faad2
 fakeroot
 faudio
 fcgi
+fd
 ffcall
 ffmpeg
 ffmpeg4.4
@@ -186,6 +192,7 @@ flite1
 fluidsynth
 fmt
 fontconfig
+fontforge
 forge
 freeglut
 freeimage
@@ -542,7 +549,10 @@ intel-media-driver
 intel-media-sdk
 intel-oneapi-common
 intel-oneapi-compiler-dpcpp-cpp-runtime
+intel-oneapi-compiler-dpcpp-cpp-runtime-libs
+intel-oneapi-compiler-shared-opencl-cpu
 intel-oneapi-compiler-shared-runtime
+intel-oneapi-compiler-shared-runtime-libs
 intel-oneapi-mkl
 intel-oneapi-openmp
 intel-oneapi-tbb
@@ -600,12 +610,18 @@ kdbusaddons
 kdeclarative
 kded
 kdiagram
+kdnssd
+kdsoap
+kdsoap-ws-discovery-client
 keyutils
+kfilemetadata
 kglobalaccel
 kguiaddons
 ki18n
 kiconthemes
+kidletime
 kio
+kio-extras
 kirigami2
 kitemviews
 kitty
@@ -614,6 +630,7 @@ kitty-terminfo
 kjobwidgets
 kjs
 kmod
+knewstuff
 knotifications
 kompose
 kpackage
@@ -624,6 +641,7 @@ kservice
 ktextwidgets
 kubeadm
 kubectl
+kuserfeedback
 kwallet
 kwidgetsaddons
 kwindowsystem
@@ -746,6 +764,7 @@ libbsd
 libbytesize
 libcaca
 libcamera
+libcamera-ipa
 libcanberra
 libcap
 libcap-ng
@@ -798,6 +817,7 @@ libgcrypt
 libgdiplus
 libgeotiff
 libgexiv2
+libgirepository
 libgit2
 libglvnd
 libgme
@@ -859,6 +879,7 @@ libmpcdec
 libmpeg2
 libmspack
 libmspub
+libmtp
 libmupdf
 libmwaw
 libmypaint
@@ -952,6 +973,9 @@ libtommath
 libtool
 libtorrent-rasterbar
 libtpms
+libtraceevent
+libtracefs
+libuninameslist
 libunistring
 libunwind
 libupnp
@@ -1043,6 +1067,7 @@ lua52
 lua53
 luajit
 luakit
+luarocks
 luit
 lv2
 lvm2
@@ -1139,6 +1164,7 @@ obsidian
 ocl-icd
 offlineimap
 okular
+onetbb
 oniguruma
 openal
 opencl-headers
@@ -1535,6 +1561,8 @@ python-rfc3987
 python-rfc6555
 python-rich
 python-routes
+python-ruamel-yaml
+python-ruamel.yaml.clib
 python-secretstorage
 python-semantic-version
 python-send2trash
@@ -1760,6 +1788,8 @@ suil
 suitesparse
 svt-av1
 svt-hevc
+syndication
+syntax-highlighting
 sysbench
 sysfsutils
 systemd
@@ -1769,7 +1799,6 @@ t1lib
 taglib
 talloc
 tar
-tbb
 tcl
 tdb
 tealdeer
@@ -1825,6 +1854,7 @@ ttf-fira-mono
 ttf-fira-sans
 ttf-joypixels
 ttf-liberation
+ttf-linux-libertine
 ttf-meslo-nerd-font-powerlevel10k
 ttf-nerd-fonts-symbols-2048-em
 ttf-nerd-fonts-symbols-common

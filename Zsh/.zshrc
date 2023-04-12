@@ -79,6 +79,7 @@ source $HOME/.config/zsh/completions/openvpn3.zsh
 path+=('/usr/local/bin')
 path+=("$HOME/.local/share/go/bin")
 path+=("$HOME/.local/bin")
+path+=("$HOME/.cargo/bin")
 path+=("$HOME/.local/share/gem/ruby/3.0.0/bin/")
 
 # Perl
@@ -520,29 +521,26 @@ function latex_setup {
     cp $HOME/Sync/Programs/Self/latex/Templates/Generic/main.tex main.tex
 }
 
-# latex_cleanup
-function lcl {
-    rm -f out/*
-}
+COMMON_LATEXMK_FLAGS=(--shell-escape -pdf -pdflatex=lualatex -output-directory=out)
 
 # latex compile
 function lco {
-    latexmk --shell-escape -pdf -pdflatex=lualatex -output-directory=out $@
+    latexmk "${COMMON_LATEXMK_FLAGS[@]}" $@
 }
 
 # latex clean compile
 function lcc {
-    lcl; lco $1
+    latexmk "${COMMON_LATEXMK_FLAGS[@]}" -gg $@
 }
 
 # latex compile all
 function lca {
-    parallel lco {} ::: **/*.tex
+    parallel latexmk "${COMMON_LATEXMK_FLAGS[@]}" {} ::: **/*.tex
 }
 
 # latex clean compile all
 function lcca {
-    lcl; lca
+    parallel latexmk "${COMMON_LATEXMK_FLAGS[@]}" -gg {} ::: **/*.tex
 }
 
 function jl {
