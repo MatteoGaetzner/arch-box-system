@@ -17,7 +17,9 @@ def print_disk_usage(label_to_stats: dict) -> None:
         used = label_to_stats[label]["used"]
         size = label_to_stats[label]["size"]
         perc = round(100 * used / size)
-        long_out_str += f"{label}  {used}G / {size}G  {perc}%"
+        # Printing format
+        # long_out_str += f"{label}  {used}G / {size}G  {perc}%"
+        long_out_str += f"{label}  {perc}%"
         short_out_str += f"{label}  {perc}%"
         if label_ndx < len(label_to_stats.keys()) - 1:
             long_out_str += " | "

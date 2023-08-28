@@ -54,6 +54,16 @@ markup=pango
 interval=1
 
 
+[ssd-health]
+markup=pango
+interval=3600
+dev_path=/dev/nvme0
+
+[ssd-health]
+markup=pango
+interval=3600
+dev_path=/dev/nvme1
+
 [memory]
 instance=mem;free
 interval=1

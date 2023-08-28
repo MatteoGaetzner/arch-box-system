@@ -8,6 +8,7 @@
 
 [push]
 	default = simple
+  autoSetupRemote = true
 
 [credential]
 	helper = cache --timeout=1200

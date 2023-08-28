@@ -137,7 +137,9 @@ alias pmb="backup_full; printf '\n'; pm $@"
 
 function update {
     deactivate_conda_fully
-    sudo pacman -Sy --noconfirm && sudo powerpill -Su --noconfirm && paru -Su --noconfirm
+    # sudo pacman -Sy --noconfirm && sudo powerpill -Su --noconfirm && paru -Su --noconfirm
+    sudo pacman -Syu --noconfirm
+    paru -Syu --noconfirm
     updatei3barchupdate
 }
 
@@ -228,7 +230,7 @@ function reinstall_virtualbox {
 ###############  Beauty  #########################
 
 alias rsyncp="rsync -ah --info=progress2 --no-i-r"
-alias rclones="rclone --progress --multi-thread-streams=50 sync"
+alias rclones="rclone --progress --multi-thread-streams=50 sync --order-by size,asc"
 
 alias cat='bat --style header --style snip --style changes --style header'
 
@@ -386,6 +388,17 @@ alias xinite="sudo nvim $HOME/.xinitrc"
 
 alias backupe="nvim $HOME/Sync/System/Backup/small_backup.sh"
 
+function syshealth() {
+  # get a list of all nvme devices (not partitions)
+  dev_paths=("/dev/nvme0" "/dev/nvme1")
+  echo "SSD Percent Used:"
+  for dev_path in $dev_paths; do
+    # get device usage percentage
+    usage=$(sudo nvme smart-log $dev_path | grep "percentage_used" | awk '{print $3}')
+    echo "  $dev_path: $usage"
+  done
+}
+
 alias mutt="neomutt "
 alias mutte="nvim $HOME/.config/mutt/muttrc"
 
@@ -443,9 +456,6 @@ function fn {
 
     nvim "$filename"
 }
-
-# Openvpn3
-alias ov="openvpn3"
 
 ###############  University  #####################
 
@@ -509,28 +519,36 @@ function ml1_extract {
 }
 
 function latex_setup {
-    mkdir -p {out,images,sections/out}
+    mkdir -p {.build/,images,sections/.build/}
     touch refs.bib
     ln -s ../refs.bib sections/refs.bib
     ln -s ../images sections/images
     ln -s ../general.sty sections/general.sty
     ln -s ../specific.sty sections/specific.sty
-    ln -s ../out sections/out
+    ln -s ../.build sections/.build
     ln $HOME/Sync/Programs/Self/latex/Packages/general.sty general.sty
     cp $HOME/Sync/Programs/Self/latex/Packages/specific.sty specific.sty
     cp $HOME/Sync/Programs/Self/latex/Templates/Generic/main.tex main.tex
 }
 
-COMMON_LATEXMK_FLAGS=(--shell-escape -pdf -pdflatex=lualatex -output-directory=out)
+# pdflatex engine:
+COMMON_LATEXMK_FLAGS_PDFLATEX=(--shell-escape -pdf -pdflatex='pdflatex -synctex=1 -interaction=nonstopmode -file-line-error' -output-directory=.build/)
+# lualatex engine:
+COMMON_LATEXMK_FLAGS=(--shell-escape -pdf -pdflatex=lualatex -output-directory=.build/)
 
 # latex compile
 function lco {
     latexmk "${COMMON_LATEXMK_FLAGS[@]}" $@
 }
 
-# latex clean compile
+# latex clean compile (lualatex)
 function lcc {
     latexmk "${COMMON_LATEXMK_FLAGS[@]}" -gg $@
+}
+
+# latex clean compile (pdflatex)
+function lcc_pdflatex {
+    latexmk "${COMMON_LATEXMK_FLAGS_PDFLATEX[@]}" -gg $@
 }
 
 # latex compile all
@@ -598,6 +616,14 @@ function vpnn {
 function vpnnd {
     nordvpn disconnect
     delayed_updatei3bip
+}
+
+function vpnf {
+  sudo openvpn --config /home/matteo/Sync/Work/fraunhofer/vpn/HHIvpn48.ovpn --ca /home/matteo/Sync/Work/fraunhofer/vpn/HHIvpnCA48.pem
+}
+
+function vpnfd {
+  sudo pkill openvpn
 }
 
 ###############  Raspberry  ######################
@@ -760,6 +786,6 @@ if ! [[ -f "$ZSHUPDATEDFILE" ]]; then
     fi
 fi
 
-mamba activate gdreg
+mamba activate ml
 _evalcache direnv hook zsh
 _evalcache zoxide init zsh

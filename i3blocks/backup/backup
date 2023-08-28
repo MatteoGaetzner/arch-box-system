@@ -18,7 +18,7 @@ LOGFILE="$HOME/.config/i3blocks/backup/backup.space.info"
 MOUNTPOINT="/mnt/backup"
 
 if ! [[ -f $LOGFILE ]]; then
-    exit 0
+	exit 0
 fi
 
 FILESYSTEM=$(cat $LOGFILE | awk '{print $1}')
@@ -30,14 +30,13 @@ let "USED_MB = $USED * 1000"
 USED=$(numfmt --to iec --format "%.1f" $USED_MB)
 USE_PERCENT=$(cat $LOGFILE | awk '{print $5}' | sed 's/%//')
 
-printf "%s  %s / %s  %s%%\n" "BACKUP" "$USED" "$SIZE"  "$USE_PERCENT"
+# printf "%s  %s / %s  %s%%\n" "BACKUP" "$USED" "$SIZE"  "$USE_PERCENT"
+printf "%s  %s%%\n" "BACKUP" "$USE_PERCENT"
 printf "%s  %s%%\n" "$FILESYSTEM" "$USE_PERCENT"
-if [[ $USE_PERCENT -gt 90 ]]
-then
-    printf "#E68183\n"
-elif [[ $USE_PERCENT -gt 80 ]]
-then
-    printf "#D9BB80\n"
-elif grep -qs "$MOUNTPOINT " /proc/mounts ; then
-    printf "#83b6af\n"
+if [[ $USE_PERCENT -gt 90 ]]; then
+	printf "#E68183\n"
+elif [[ $USE_PERCENT -gt 80 ]]; then
+	printf "#D9BB80\n"
+elif grep -qs "$MOUNTPOINT " /proc/mounts; then
+	printf "#83b6af\n"
 fi

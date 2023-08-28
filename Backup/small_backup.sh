@@ -9,9 +9,9 @@ REPO_LOC="$HOME/Sync/System/"
 log_info "Backing up to GitHub ..."
 
 # installed packages
-pacman -Q | awk '{print $1}' > ~/Sync/System/Pacman/packages_full.txt
-pacman -Qe | awk '{print $1}' > ~/Sync/System/Pacman/packages_explicit.txt
-pacman -Qet | awk '{print $1}' > ~/Sync/System/Pacman/packages_least.txt
+pacman -Q | awk '{print $1}' >~/Sync/System/Pacman/packages_full.txt
+pacman -Qe | awk '{print $1}' >~/Sync/System/Pacman/packages_explicit.txt
+pacman -Qet | awk '{print $1}' >~/Sync/System/Pacman/packages_least.txt
 
 # keyboard (http://anti.teamidiot.de/mrtweek/2006/10/deutsche_umlaute_auf_tastatur_mit_us-layout/)
 rsync $RSYNCOPTS ~/.Xmodmap ~/Sync/System/Keyboard/.Xmodmap
@@ -47,7 +47,6 @@ rsync $RSYNCOPTS ~/.config/broot/conf.hjson ~/Sync/System/broot/conf.hjson
 # tmux
 rsync $RSYNCOPTS ~/.config/tmux/tmux.conf ~/Sync/System/Tmux/tmux.conf
 
-
 # parallel
 rsync $RSYNCOPTS ~/.parallel/config ~/Sync/System/Parallel/config
 
@@ -75,9 +74,8 @@ rsync $RSYNCOPTS /bin/big_backup ~/Sync/System/Backup/big_backup.sh
 
 # Neovim
 rsync $RSYNCOPTS \
-    --exclude={after,autoload,spell,UltiSnips} \
-    ~/.config/nvim/ ~/Sync/System/Neovim/
-    /bin/ls ~/.config/coc/extensions/node_modules | tr '\n' ' ' > ~/Sync/System/Neovim/coc-extensions.txt
+	--exclude={after,autoload,spell} \
+	~/.config/nvim/ ~/Sync/System/Neovim/
 
 # X
 rsync $RSYNCOPTS ~/.xinitrc ~/Sync/System/X/.xinitrc
@@ -92,6 +90,7 @@ rsync $RSYNCOPTS ~/.config/i3blocks/mydisk/ ~/Sync/System/i3blocks/mydisk/
 rsync $RSYNCOPTS ~/.config/i3blocks/backup/backup ~/Sync/System/i3blocks/backup/backup
 rsync $RSYNCOPTS ~/.config/i3blocks/mail/mail ~/Sync/System/i3blocks/mail/mail
 
+rsync $RSYNCOPTS ~/.config/i3blocks/ssd-health/ ~/Sync/System/i3blocks/ssd-health/
 # i3
 rsync $RSYNCOPTS ~/.config/i3/ ~/Sync/System/i3/
 
@@ -139,9 +138,6 @@ rsync $RSYNCOPTS ~/.pdbrc.py ~/Sync/System/Python/.pdbrc.py
 # pylintrc
 rsync $RSYNCOPTS ~/.pylintrc ~/Sync/System/Python/.pylintrc
 
-# pre-commit
-rsync $RSYNCOPTS ~/.config/pre-commit/ ~/Sync/System/Python/pre-commit/
-
 # flashfocus, picom
 rsync $RSYNCOPTS ~/.config/picom/picom.conf ~/Sync/System/Picom/picom.conf
 
@@ -151,16 +147,14 @@ rsync $RSYNCOPTS /etc/default/cpupower ~/Sync/System/cpupower/cpupower
 # make
 rsync $RSYNCOPTS /etc/makepkg.conf ~/Sync/System/Make/makepkg.conf
 
-
 dirsize=$(du "$REPO_LOC" | tail -n 1 | sed 's/\t.*//')
 
 if [ "$dirsize" -ge "$DIRSIZE_LIMIT" ]; then
-    log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
+	log_error "You probably tried to backup some very large files. Check if you really want to commit $dirsize bytes."
 else
-    git -C "$REPO_LOC" pull
-    git -C "$REPO_LOC" add .
-    git -C "$REPO_LOC" commit-status
-    git -C "$REPO_LOC" push
+	git -C "$REPO_LOC" pull
+	git -C "$REPO_LOC" add .
+	git -C "$REPO_LOC" push
 fi
 
 log_success "Backup to GitHub done."
