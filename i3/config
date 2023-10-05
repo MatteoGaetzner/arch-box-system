@@ -22,9 +22,6 @@ font pango:Fira Code 10
 bindsym $mod+f exec firefox
 bindsym $mod+i exec kitty $home/.mambaforge/envs/ml/bin/ipython3 --no-confirm-exit
 bindsym Print exec flameshot gui
-# bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-# bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
-# bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym $mod+n exec --no-startup-id flash_window
 
 # Alt+P for passthrough mode
@@ -70,15 +67,13 @@ exec --no-startup-id flashfocus
 exec --no-startup-id nitrogen --restore
 
 # Workspace 1
-# exec --no-startup-id "i3-msg 'workspace 1; append_layout $home/.config/i3/layouts/workspace-1-startup.i3config'"
 exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/matteo/.config/i3/layouts/workspace-1-startup.i3config'"
-exec --no-startup-id "i3-msg 'workspace 1; exec firefox -url https://web.whatsapp.com/ https://web.telegram.org/z/ https://mattermost.hhi.fraunhofer.de/ml-hhi/channels/solp-klips https://owa.hhi.fraunhofer.de/owa/#path=/mail'" 
+exec --no-startup-id "i3-msg 'workspace 1; exec obsidian'"
+exec --no-startup-id "i3-msg 'workspace 1; exec kitty'"
+
 # Workspace 2
-# exec --no-startup-id "i3-msg 'workspace 2; append_layout $home/.config/i3/layouts/workspace-2-startup.i3config.new'"
-exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/matteo/.config/i3/layouts/workspace-2-startup.i3config.new'"
-# exec --no-startup-id "i3-msg 'workspace 2; exec spotify'"
-exec --no-startup-id "i3-msg 'workspace 2; exec kitty'"
-exec --no-startup-id "i3-msg 'workspace 2; exec obsidian'"
+exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/matteo/.config/i3/layouts/workspace-2-startup.i3config'"
+exec --no-startup-id "i3-msg 'workspace 2; exec firefox -url https://web.whatsapp.com/ https://web.telegram.org/z/ https://mattermost.hhi.fraunhofer.de/ml-hhi/channels/solp-klips https://owa.hhi.fraunhofer.de/owa/#path=/mail'" 
 
 # Immediate response to volume changes in i3blocks bar
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks

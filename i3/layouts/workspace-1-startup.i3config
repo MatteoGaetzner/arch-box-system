@@ -1,21 +1,60 @@
 {
-  "border": "normal",
-  "current_border_width": 3,
-  "floating": "auto_off",
-  "geometry": {
-    "height": 2092,
-    "width": 3834,
-    "x": 0,
-    "y": 0
-  },
-  "marks": [],
-  "name": "workspace-1-startup-firefox",
-  "percent": 1,
-  "swallows": [
-    {
-      "class": "^firefox$"
-    }
-  ],
-  "type": "con"
+	"border": "normal",
+		"floating": "auto_off",
+		"layout": "splith",
+		"marks": [],
+		"percent": 1,
+		"type": "con",
+		"nodes": [
+		{
+			"border": "pixel",
+			"current_border_width": 2,
+			"floating": "auto_off",
+			"geometry": {
+				"height": 2122,
+				"width": 1918,
+				"x": 3841,
+				"y": 1
+			},
+			"marks": [],
+			"name": "Obsidian",
+			"percent": 0.5,
+			"swallows": [
+			{
+				"class": "^obsidian$"
+			}
+			],
+			"type": "con"
+		},
+		{
+			"border": "normal",
+			"floating": "auto_off",
+			"layout": "stacking",
+			"marks": [],
+			"percent": 1,
+			"type": "con",
+			"nodes": [
+			{
+				"border": "pixel",
+				"current_border_width": 2,
+				"floating": "auto_off",
+				"geometry": {
+					"height": 2120,
+					"width": 1916,
+					"x": 0,
+					"y": 0
+				},
+				"marks": [],
+				"name": "kitty",
+				"percent": 0.5,
+				"swallows": [
+				{
+					"class": "^kitty$"
+				}
+				],
+				"type": "con"
+			}		
+			]
+		}
+		]
 }
-

@@ -33,6 +33,26 @@
                                "y": 0
                             },
                             "marks": [],
+                            "name": "Spotify",
+                            "percent": 0.5,
+                            "swallows": [
+                               {
+                                "class": "^Spotify$"
+                               }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "pixel",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 2062,
+                               "width": 1916,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "marks": [],
                             "name": "kitty",
                             "percent": 0.5,
                             "swallows": [

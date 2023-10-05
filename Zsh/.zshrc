@@ -10,6 +10,12 @@ export ZSHUPDATEDFILE=/tmp/zsh.updated45a4586f367a83116277a3e81b87756b6ba1b6c9
 export XDG_CONFIG_HOME=$HOME/.config/
 export NODE_OPTIONS=--max-old-space-size=8192
 export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_TYPE=en_US.UTF-8
+export LESSCHARSET=utf-8
+export TERM="xterm-kitty"
 
 ##############  Zsh Options  #####################
 
@@ -229,6 +235,40 @@ function reinstall_virtualbox {
 
 ###############  Beauty  #########################
 
+function san {
+    rename -S "ä" "ae" -S "ü" "ue" -S "ö" "oe" -S "Ä" "ae" -S "Ü" "ue" -S "Ö" "oe" **/*
+
+    # Traverse through files and directories recursively, skipping hidden files and directories
+    find . -depth -mindepth 1 -name '*' | while read -r file; do
+        # Extract directory path
+        dir=$(dirname "$file")
+
+        # Skip if directory is hidden
+        if [[ "$dir" =~ (^|/)\\..+(/|$) ]]; then
+            continue
+        fi
+
+        # Extract filename
+        filename=$(basename "$file")
+
+        # Skip if file is hidden
+        if [[ "$filename" == .* ]]; then
+            continue
+        fi
+
+        # Convert filename to lowercase and replace underscores and spaces with hyphens
+        new_filename=$(echo "$filename" | awk '{print tolower($0)}' | sed 's/_/-/g' | sed 's/ /-/g' | sed 's/^-//' | sed 's/-$//')
+
+        # Generate new full path
+        newfile="$dir/$new_filename"
+
+        # If the filename changed, rename the file
+        if [ "$file" != "$newfile" ]; then
+            mv "$file" "$newfile"
+        fi
+    done
+}
+
 alias rsyncp="rsync -ah --info=progress2 --no-i-r"
 alias rclones="rclone --progress --multi-thread-streams=50 sync --order-by size,asc"
 
@@ -242,7 +282,7 @@ alias l.="exa -a | egrep '^\.'"
 alias du='dust'
 alias df='duf'
 
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+alias m="batman"
 
 alias ps="procs"
 alias http="xh" # For http requests

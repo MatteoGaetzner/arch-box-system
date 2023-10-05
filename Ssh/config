@@ -39,6 +39,7 @@ Host klips
     LocalForward 8124 127.0.0.1:5050 # for pgadmin
     LocalForward 8125 127.0.0.1:8125 # for idk
     LocalForward 8126 127.0.0.1:8126 # for remote jupyter notebooks
+    LocalForward 8127 127.0.0.1:8127 # for mlflow
     Compression yes
     Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr # Secure and performance-oriented ciphers
     MACs hmac-sha2-256,hmac-sha2-512,umac-128@openssh.com # Secure MAC algorithms

@@ -1,92 +1,30 @@
 {
-    "border": "normal",
-    "floating": "auto_off",
-    "layout": "splitv",
-    "marks": [],
-    "percent": null,
-    "type": "con",
-    "nodes": [
-        {
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "stacked",
-            "marks": [],
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "pixel",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 2120,
-                       "width": 1916,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "marks": [],
-                    "name": "kitty",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                        "class": "^kitty$",
-                        "instance": "^kitty$",
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 2120,
-                       "width": 1916,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "marks": [],
-                    "name": "kitty",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                        "class": "^kitty$",
-                        "instance": "^kitty$",
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
-        },
-        {
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splitv",
-            "marks": [],
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "pixel",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 600,
-                       "width": 800,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "marks": [],
-                    "name": "Spotify",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                        "class": "^Spotify$"
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
-        }
-    ]
+	"border": "normal",
+		"floating": "auto_off",
+		"layout": "stacked",
+		"marks": [],
+		"percent": 0.5,
+		"type": "con",
+		"nodes": [
+		{
+			"border": "pixel",
+			"current_border_width": 2,
+			"floating": "auto_off",
+			"geometry": {
+				"height": 2092,
+				"width": 3834,
+				"x": 0,
+				"y": 0
+			},
+			"marks": [],
+			"name": "Firefox",
+			"percent": 0.5,
+			"swallows": [
+			{
+				"class": "^firefox$"
+			}
+			],
+			"type": "con"
+		}
+		]
 }

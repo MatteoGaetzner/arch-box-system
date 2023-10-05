@@ -154,6 +154,7 @@ if [ "$dirsize" -ge "$DIRSIZE_LIMIT" ]; then
 else
 	git -C "$REPO_LOC" pull
 	git -C "$REPO_LOC" add .
+	git -C "$REPO_LOC" commit --all -m "update"
 	git -C "$REPO_LOC" push
 fi
 

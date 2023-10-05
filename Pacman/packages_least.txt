@@ -6,6 +6,7 @@ amd-ucode
 archlinux-tweak-tool-git
 autoconf-archive
 base
+bat-extras
 bison
 blueman
 bluez-hid2hci
@@ -25,11 +26,11 @@ direnv
 dmidecode
 dolphin
 drawio-desktop-bin
+dropbox
 duf
 duperemove
 dust
 element-desktop
-exa
 exfat-utils
 exodus
 fd
@@ -39,7 +40,6 @@ firejail
 flameshot
 flashfocus-git
 geogebra
-git-delta
 glew-2.1
 gnu-efi
 gnu-netcat
@@ -64,7 +64,6 @@ kubeadm
 kubectl
 lib32-gnutls
 libclc
-libmupdf
 libpam-google-authenticator
 libreoffice-fresh
 libxvmc
@@ -121,6 +120,7 @@ picom
 pkgconf
 playerctl
 powertop
+pre-commit
 procs
 profile-sync-daemon
 pyenv
@@ -128,7 +128,6 @@ pypy
 pypy3
 python-fangfrisch
 python-opencv
-python-pre-commit
 python-pylint
 python-sphinx
 qbittorrent
@@ -139,14 +138,11 @@ rclone
 rdesktop
 refind-btrfs
 refind-theme-nord
-ripgrep
 rpi-imager
-rustup
 sd
 sddm-sugar-dark
 sddm-theme-sugar-candy-git
 shellcheck
-shfmt
 skypeforlinux-preview-bin
 smartmontools
 snapper
