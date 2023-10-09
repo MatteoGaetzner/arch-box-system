@@ -139,6 +139,7 @@ rdesktop
 refind-btrfs
 refind-theme-nord
 rpi-imager
+rstudio-desktop-bin
 sd
 sddm-sugar-dark
 sddm-theme-sugar-candy-git

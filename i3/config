@@ -73,7 +73,7 @@ exec --no-startup-id "i3-msg 'workspace 1; exec kitty'"
 
 # Workspace 2
 exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/matteo/.config/i3/layouts/workspace-2-startup.i3config'"
-exec --no-startup-id "i3-msg 'workspace 2; exec firefox -url https://web.whatsapp.com/ https://web.telegram.org/z/ https://mattermost.hhi.fraunhofer.de/ml-hhi/channels/solp-klips https://owa.hhi.fraunhofer.de/owa/#path=/mail'" 
+exec --no-startup-id "i3-msg 'workspace 2; exec firefox -url https://web.whatsapp.com/ https://web.telegram.org/z/" 
 
 # Immediate response to volume changes in i3blocks bar
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks

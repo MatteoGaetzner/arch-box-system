@@ -233,6 +233,7 @@ reflector
 ripgrep
 rofi
 rpi-imager
+rstudio-desktop-bin
 rsync
 ruby
 rustup

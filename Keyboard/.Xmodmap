@@ -8,3 +8,5 @@ keycode 113 = Left Left U2190 U2190
 keycode 114 = Right Right U2192 U2192
 keycode 111 = Up Up U2191 U2191
 keycode 116 = Down Down U2193 U2193
+
+keycode 133 = Alt_L

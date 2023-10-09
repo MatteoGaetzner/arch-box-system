@@ -73,3 +73,5 @@
 		git commit -F $TMPFILE; \
 		rm -f $TMPFILE \
 		"
+[init]
+	defaultBranch = main

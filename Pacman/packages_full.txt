@@ -65,6 +65,7 @@ bluez-tools
 bluez-utils
 bmake
 bmon
+boost
 boost-libs
 botan
 botan2
@@ -555,6 +556,7 @@ hslua-cli
 htop
 http-parser
 hunspell
+hunspell-en_us
 hwdata
 hwloc
 hyphen
@@ -601,6 +603,7 @@ jaxx-liberty-appimage
 jbig2dec
 jbigkit
 jdk-openjdk
+jdk8-openjdk
 jemalloc
 jnettop
 jp2a
@@ -608,6 +611,8 @@ jq
 jre-openjdk
 jre-openjdk-headless
 jre11-openjdk-headless
+jre8-openjdk
+jre8-openjdk-headless
 json-c
 json-glib
 jsoncpp
@@ -1729,6 +1734,7 @@ qt5-webengine
 qt5-webkit
 qt5-websockets
 qt5-x11extras
+qt5-xmlpatterns
 qt6-5compat
 qt6-base
 qt6-declarative
@@ -1762,6 +1768,7 @@ rnnoise
 rofi
 rpcsvc-proto
 rpi-imager
+rstudio-desktop-bin
 rsync
 rtkit
 rtmpdump
@@ -1849,6 +1856,7 @@ smbclient
 snapper
 snappy
 sndio
+soci
 soil
 solid5
 sonnet5
@@ -2116,6 +2124,7 @@ xvidcore
 xxhash
 xz
 yajl
+yaml-cpp
 yarn
 yay
 zathura

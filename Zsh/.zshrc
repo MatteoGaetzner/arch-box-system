@@ -362,9 +362,6 @@ alias vifm="$HOME/.local/bin/vifmrun"
 # Fast tree
 alias t="tree -C -a --dirsfirst"
 
-# Glow
-alias gw="glow ~/Sync/plans/"
-
 # Ripgrep with syntax highlighting
 function hg {
     command hgrep --theme ayu-mirage --term-width "$COLUMNS" "$@" | less -R
@@ -393,14 +390,6 @@ function pg {
     tmp="$@"; pdfgrep -r --cache --color auto --ignore-case --regexp="$tmp"
 }
 
-function mv_and_replace {
-    mv $1 $2
-    rec_replace ~/Sync/University/SoSe22ODSPRMVA/implementation/big_brother $1 $2
-}
-function rec_replace {
-    find $1 \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i "s/$2/$3/g"
-}
-
 alias i="/home/matteo/.mambaforge/envs/ml/bin/ipython3 --no-confirm-exit"
 
 alias v=nvim
@@ -409,6 +398,7 @@ alias pc="pass -c"
 alias poc="pass otp -c"
 
 alias vime="nvim $HOME/.config/nvim/init.lua"
+alias vimek="nvim $HOME/.config/nvim/lua/keymaps.lua"
 alias vimed="nvim $HOME/.config/nvim/"
 alias vimep="nvim $HOME/.config/nvim/lua/plugins.lua"
 alias vimec="nvim $HOME/.config/nvim/coc-settings.json"
@@ -499,82 +489,25 @@ function fn {
 
 ###############  University  #####################
 
-function clean_course {
-    echo "$1" | sed 's/\[//g; s/\]//g'
-}
-
-function u {
-    WORK_DIR=/home/matteo/Sync/University
-    ISISDL_DIR=/home/matteo/Isis
-    unset COURSE
-    unset COURSE_CLEAN
-    argc=${#1}
-    course=${1:0:1}
-    subdir=${1:1:1}
-
-    if [[ $argc -ge 3 ]]; then
-        exercise_num=${1:2:$(( $argc - 2 ))}
-    else
-        exercise_num=0
-    fi
-
-    case $course in
-        r* )
-            COURSE='WS2223Robotics' ;;
-        e* )
-            COURSE='WS22ISS' ;;
-    esac
-
-    COURSE_CLEAN=$(clean_course $COURSE)
-
-    case $argc in
-        1 )
-            cl "$ISISDL_DIR/$COURSE/" ;;
-        2 )
-            case $subdir in
-                s )
-                    cl "$WORK_DIR/$COURSE_CLEAN/Solutions/" ;;
-                . )
-                    cl "$WORK_DIR/$COURSE_CLEAN/" ;;
-                v )
-                    cl "$ISISDL_DIR/$COURSE/Videos/" ;;
-                *)
-                    cl "$ISISDL_DIR/$COURSE/"
-            esac
-            ;;
-        [34] )
-            cl $(find $WORK_DIR/$COURSE_CLEAN/Solutions -maxdepth 1 -type d -name "*$exercise_num" | head -n 1)
-            ;;
-        *)
-            cl $ISISDL_DIR/$COURSE
-            ;;
-    esac
-}
-
-# Extract zipped, signed machine learning 1 notebooks
-function ml1_extract {
-    sha=$(shasum $1 | sed 's/\s.*$//')
-    gpg -d $1 > /tmp/$sha
-    unzip /tmp/$sha -d .
-}
-
 function latex_setup {
-    mkdir -p {.build/,images,sections/.build/}
+    mkdir build
     touch refs.bib
-    ln -s ../refs.bib sections/refs.bib
-    ln -s ../images sections/images
-    ln -s ../general.sty sections/general.sty
-    ln -s ../specific.sty sections/specific.sty
-    ln -s ../.build sections/.build
-    ln $HOME/Sync/Programs/Self/latex/Packages/general.sty general.sty
-    cp $HOME/Sync/Programs/Self/latex/Packages/specific.sty specific.sty
-    cp $HOME/Sync/Programs/Self/latex/Templates/Generic/main.tex main.tex
+    latex_templates_path=$HOME/Dropbox/personal/programming/latex-templates/
+    ln $latex_templates_path/packages/general.sty general.sty
+    cp $latex_templates_path/packages/specific.sty specific.sty
+    cp $latex_templates_path/templates/generic/main.tex main.tex
+    cp $latex_templates_path/templates/generic/.gitignore .gitignore
+
+    # Git
+    git init --initial-branch=main
+    git add refs.bib general.sty specific.sty main.tex .gitignore
+    git commit -m "initial commit"
 }
 
 # pdflatex engine:
-COMMON_LATEXMK_FLAGS_PDFLATEX=(--shell-escape -pdf -pdflatex='pdflatex -synctex=1 -interaction=nonstopmode -file-line-error' -output-directory=.build/)
+COMMON_LATEXMK_FLAGS_PDFLATEX=(--shell-escape -pdf -pdflatex='pdflatex -synctex=1 -interaction=nonstopmode -file-line-error' -output-directory=build/)
 # lualatex engine:
-COMMON_LATEXMK_FLAGS=(--shell-escape -pdf -pdflatex=lualatex -output-directory=.build/)
+COMMON_LATEXMK_FLAGS=(--shell-escape -pdf -pdflatex=lualatex -output-directory=build/)
 
 # latex compile
 function lco {
@@ -601,20 +534,6 @@ function lcca {
     parallel latexmk "${COMMON_LATEXMK_FLAGS[@]}" -gg {} ::: **/*.tex
 }
 
-function jl {
-    jupyter-lab $1
-}
-
-function jn {
-    jupyter notebook $1
-}
-
-###############  Robotics  #######################
-
-function robo_gcc {
-    # Example: robo_gcc g++ -std=c++11 SpringMass.cpp SpringDamperMass.cpp main.cpp -o main && ./main
-    sudo docker run --user $(id -u):$(id -g) -v $(pwd):/usr/src/project -w /usr/src/project -it --rm gcc $@
-}
 
 ###############  VPN  ############################
 
@@ -829,3 +748,6 @@ fi
 mamba activate ml
 _evalcache direnv hook zsh
 _evalcache zoxide init zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
