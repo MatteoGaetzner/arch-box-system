@@ -1,1 +1,0 @@
-coc-clangd coc-cmake coc-explorer coc-json coc-julia coc-ltex coc-markdownlint coc-marketplace coc-perl coc-pyright coc-rust-analyzer coc-snippets coc-sumneko-lua coc-texlab coc-tsserver coc-vimtex 

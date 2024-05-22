@@ -26,14 +26,17 @@ vim.opt.scrolloff = 5
 
 -- Keymaps
 vim.g.mapleader = " "
+vim.g.maplocalleader = ';'
 
 -- Clipboard
 vim.opt.clipboard = "unnamedplus"
 
 -- Set tabstop, shiftwidth and use spaces instead of tabs
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
 vim.o.expandtab = true
+vim.o.shiftwidth = 4
+vim.o.smartindent = true
+vim.o.softtabstop = 4
+vim.o.tabstop = 4
 
 -- NOTE: Set this path to the path to your python3 executable!
 -- Function to check if a file exists
@@ -67,6 +70,7 @@ vim.g.perl_host_prog = error_msg_if_not_exist(LOCAL.perl_host_prog, "perl", "")
 
 -- Textwidth (following PEP 8)
 vim.opt.textwidth = 79
+vim.o.formatoptions = vim.o.formatoptions:gsub('[tcrl]', '')
 
 -- Set backup directory to ~/.cache/nvim/backup
 local backupdir = vim.fn.expand("~/.cache/nvim/backup")
@@ -123,6 +127,7 @@ local shellcheck = require('efmls-configs.linters.shellcheck')
 local beautysh = require('efmls-configs.formatters.beautysh')
 local yamllint = require('efmls-configs.linters.yamllint')
 local latexindent = require('efmls-configs.formatters.latexindent')
+-- local clang_format = require('efmls-configs.formatters.clang_format')
 
 --- Markdown
 local alex = require('efmls-configs.linters.alex')
@@ -135,7 +140,8 @@ local languages = {
     zsh = { beautysh },
     yaml = { yamllint },
     markdown = { alex, prettier },
-    tex = { latexindent }
+    tex = { latexindent },
+    -- cpp = { clang_format }
 }
 
 local efmls_config = {
@@ -173,7 +179,6 @@ lspconfig.pyright.setup({
         },
     }
 })
-lspconfig.rust_analyzer.setup {}
 lspconfig.marksman.setup {}
 lspconfig.lua_ls.setup {
     settings = {
@@ -184,148 +189,25 @@ lspconfig.lua_ls.setup {
         },
     },
 }
+lspconfig.clangd.setup {}
 
--- Snippets
-local ls = require("luasnip")
--- ls.setup({
--- 	snip_env = {
--- 		s = function(...)
--- 			local snip = ls.s(...)
--- 			-- we can't just access the global `ls_file_snippets`, since it will be
--- 			-- resolved in the environment of the scope in which it was defined.
--- 			table.insert(getfenv(2).ls_file_snippets, snip)
--- 		end,
--- 		parse = function(...)
--- 			local snip = ls.parser.parse_snippet(...)
--- 			table.insert(getfenv(2).ls_file_snippets, snip)
--- 		end,
--- 	},
--- })
-
-require('luasnip.loaders.from_vscode').lazy_load()
-require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/luasnip-snippets/" })
-require("luasnip.loaders.from_snipmate").lazy_load()
-
--- Cmp
-vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
-
-local has_words_before = function()
-    unpack = unpack or table.unpack
-    local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-    return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-end
-
-local cmp = require('cmp')
-
-ls.config.set_config({
-    history = true,                          -- Keep last snippet in memory, to be able to jump back into it, once outside the snippet completion process
-    updateevents = "TextChanged, TextChangedI", -- Make snippets update while typing
-    enable_autosnippets = true,
-})
-
-local select_opts = { behavior = cmp.SelectBehavior.Select }
-
----@diagnostic disable-next-line
-cmp.setup({
-    snippet = {
-        expand = function(args)
-            ls.lsp_expand(args.body)
-        end
-    },
-    sources = {
-        { name = 'path' },
-        { name = 'nvim_lsp', keyword_length = 1 },
-        { name = 'buffer',   keyword_length = 1 },
-        { name = 'luasnip',  keyword_length = 1 },
-    },
-    ---@diagnostic disable-next-line
-    window = {
-        documentation = cmp.config.window.bordered()
-    },
-    ---@diagnostic disable-next-line
-    formatting = {
-        fields = { 'menu', 'abbr', 'kind' },
-        format = function(entry, item)
-            local menu_icon = {
-                nvim_lsp = '⚙️',
-                luasnip = '⚡️',
-                buffer = '📄',
-                path = '📍',
-            }
-
-            item.menu = menu_icon[entry.source.name]
-            return item
-        end,
-    },
-    ---@diagnostic disable-next-line
-    mapping = {
-        ['<Up>'] = cmp.mapping.select_prev_item(select_opts),
-        ['<Down>'] = cmp.mapping.select_next_item(select_opts),
-
-        ['<C-p>'] = cmp.mapping.select_prev_item(select_opts),
-        ['<C-n>'] = cmp.mapping.select_next_item(select_opts),
-
-        ['<C-u>'] = cmp.mapping.scroll_docs(-4),
-        ['<C-d>'] = cmp.mapping.scroll_docs(4),
-
-        -- ['<C-e>'] = cmp.mapping.abort(),
-        ['<C-l>'] = cmp.mapping.confirm({ select = true }),
-        ['<CR>'] = cmp.mapping.confirm({ select = false }),
-
-        ['<C-f>'] = cmp.mapping(function(fallback)
-            if ls.jumpable(1) then
-                ls.jump(1)
-            else
-                fallback()
-            end
-        end, { 'i', 's' }),
-
-        ['<C-b>'] = cmp.mapping(function(fallback)
-            if ls.jumpable(-1) then
-                ls.jump(-1)
-            else
-                fallback()
-            end
-        end, { 'i', 's' }),
-
-        ["<Tab>"] = cmp.mapping(function(fallback)
-            if cmp.visible() then
-                cmp.select_next_item()
-                -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
-                -- they way you will only jump inside the snippet region
-            elseif luasnip.expand_or_jumpable() then
-                luasnip.expand_or_jump()
-            elseif has_words_before() then
-                cmp.complete()
-            else
-                fallback()
-            end
-        end, { "i", "s" }),
-
-        ["<S-Tab>"] = cmp.mapping(function(fallback)
-            if cmp.visible() then
-                cmp.select_prev_item()
-            elseif luasnip.jumpable(-1) then
-                luasnip.jump(-1)
-            else
-                fallback()
-            end
-        end, { "i", "s" }),
-    },
-})
-
--- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline(':', { ---@diagnostic disable-line
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = cmp.config.sources({
-        { name = 'path' }
-    }, {
-        { name = 'cmdline' }
-    })
-})
 
 -- Format on save
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
 -- Keymaps
 require("keymaps")
+
+-- Define a function to load the language-specific configuration
+function load_language_specific_config(filetype)
+    local filepath = 'language-specifics.' .. filetype
+    pcall(require, filepath) -- try require(...) catch noop
+end
+
+-- Set up an autocmd for FileType event
+vim.api.nvim_exec2([[
+  augroup LoadLanguageSpecificConfig
+    autocmd!
+    autocmd FileType * lua load_language_specific_config(vim.bo.filetype)
+  augroup END
+]], {})

@@ -29,10 +29,8 @@ map("n", "M", "D", { desc = "normal: cut trailing" })
 
 -- Telescope fuzzy finder
 local builtin = require('telescope.builtin')
-map('n', '<leader>ff', builtin.find_files, {})
-map('n', '<leader>fg', builtin.live_grep, {})
-map('n', '<leader>fb', builtin.buffers, {})
-map('n', '<leader>fh', builtin.help_tags, {})
+map('n', '<leader>f', builtin.find_files, {})
+map('n', '<leader>g', builtin.live_grep, {})
 
 -- Diagnostics
 map('n', '[d', vim.diagnostic.goto_prev)
@@ -70,21 +68,4 @@ map("n", "<leader>lf", ":lua FormatLatex()<CR>", { desc = "format file using lat
 map({ "n", "x" }, "<leader>ll", ":VimtexCompile<cr>", { desc = "compile LaTeX document" })
 
 -- Luasnip
-local ls = require("luasnip")
-
---
 map("n", "gs", ":lua require(\"luasnip.loaders\").edit_snippet_files()<cr>")
-
--- "Do next thing with <c-j>"
-map({ "i", "s" }, "<c-j>", function()
-    if ls.expand_or_jumpable() then
-        ls.expand_or_jump()
-    end
-end, { silent = true })
-
--- "Go back"
-map({ "i", "s" }, "<c-k>", function()
-    if ls.jumpable(-1) then
-        ls.jump(-1)
-    end
-end, { silent = true })

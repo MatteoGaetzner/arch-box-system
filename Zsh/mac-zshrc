@@ -1,0 +1,307 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+##############  PATHS  ###########################
+
+export GOPATH=~/.local/share/go/
+export PATH=/opt/homebrew/opt/llvm/bin:$PATH # rust: llvm linker faster
+export PATH=$PATH:~/.local/share/cargo/bin/
+export PATH=$PATH:~/.local/bin/
+export PATH=$PATH:$GOPATH/bin/
+export PYTHONPYCACHEPREFIX=/tmp/
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+
+##############  Zsh Options  #####################
+
+# Don't ask for confirmation before `rm path/*`
+setopt rm_starsilent
+
+# Turn off all beeps
+unsetopt BEEP
+
+###############  Beauty  #########################
+
+alias cat='bat --theme 1337 --style header --style snip --style changes --style header'
+alias l='exa -l --color=always --group-directories-first --icons' # (same)
+alias la='exa -la --color=always --group-directories-first --icons'  # all files and dirs
+alias ls='exa -l --color=always --group-directories-first --icons' # preferred listing
+alias rclones="rclone --progress --multi-thread-streams=50 sync"
+
+function san {
+    rename -z -S "ä" "ae" -S "ü" "ue" -S "ö" "oe" -S "Ä" "ae" -S "Ü" "ue" -S "Ö" "oe" **/*
+
+    # Traverse through files and directories recursively, skipping hidden files and directories
+    find . -mindepth 1 -name '*' | while read -r file; do
+        # Extract directory path
+        dir=$(dirname "$file")
+
+        # Skip if directory is hidden
+        if [[ "${dir:0:1}" == '\.' ]]; then
+            continue
+        fi
+
+
+        # Extract filename
+        filename=$(basename "$file")
+
+        # Skip if file is hidden
+        if [[ "$filename" == .* ]]; then
+            continue
+        fi
+
+        # Convert filename to lowercase and replace underscores and spaces with hyphens
+        new_filename=$(echo "$filename" | awk '{print tolower($0)}' | sed -E 's/[][(){}_ ,;:!@#$%^&*?+-]+/-/g' | sed -E 's/_/-/g' | sed -E 's/-+/-/g' | sed -E 's/^-+//' | sed -E 's/-+$//')
+
+        # Remove dashes between extension dot and base name,
+        # e.g. 'foo-.txt' -> 'foo.txt'
+        ext=$new_filename:e
+        new_filename_noext=$(echo $new_filename:r | sed -E 's/-+$//')
+
+        # Only append extension if it's not empty
+        if [ -n "$ext" ]; then
+            new_filename="${new_filename_noext}.${ext}"
+        else
+            new_filename="${new_filename_noext}"
+        fi
+
+        # Generate new full path
+        newfile="$dir/$new_filename"
+
+        print "$newfile"
+
+        # If the filename changed, rename the file
+        if [ "$file" != "$newfile" ]; then
+            mv "$file" "$newfile"
+        fi
+    done
+}
+
+source ~/.local/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh # syntax highlighting
+source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme # theme
+source ~/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh # auto-suggestions
+
+###############  VI MODE  ########################
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+    if [[ ${KEYMAP} == vicmd ]] ||
+    [[ $1 = 'block' ]]; then
+        echo -ne '\e[2 q'
+    elif [[ ${KEYMAP} == main ]] ||
+    [[ ${KEYMAP} == viins ]] ||
+    [[ ${KEYMAP} = '' ]] ||
+    [[ $1 = 'beam' ]]; then
+        echo -ne '\e[6 q'
+    fi
+}
+zle -N zle-keymap-select
+zle-line-init() {
+    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    echo -ne "\e[6 q"
+}
+zle -N zle-line-init
+echo -ne '\e[6 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[6 q' ;} # Use beam shape cursor for each new prompt.
+
+###############  SPEED  ##########################
+
+# Fuzzy tab completion
+# copied from: https://superuser.com/questions/415650/does-a-fuzzy-matching-mode-exist-for-the-zsh-shell
+#
+# 0 -- vanilla completion (abc => abc)
+# 1 -- smart case completion (abc => Abc)
+# 2 -- word flex completion (abc => A-big-Car)
+# 3 -- full flex completion (abc => ABraCadabra)
+zstyle ':completion:*' matcher-list '' \
+    'm:{a-z\-}={A-Z\_}' \
+    'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+    'r:|?=** m:{a-z\-}={A-Z\_}'
+
+
+# Prevent homebrew from auto-updating
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
+
+# Execute current suggestion with ctrl+j, accept with ctrl-l
+bindkey "^l" autosuggest-accept
+bindkey "^j" autosuggest-execute
+
+execute-clear-screen () { echo; clear; zle redisplay }
+zle -N execute-clear-screen
+bindkey '^h' execute-clear-screen
+
+bindkey -s "^x" 'ls\n'
+
+# Search commands backwards with CTRL+R
+bindkey "^R" history-incremental-pattern-search-backward
+
+# Finding files
+function f {
+    tmp="$@"; sudo find / -iname "*$tmp*" -exec ls --color -d {} \;
+}
+function fl {
+    tmp="$@"; find . -iname "*$tmp*" -exec ls --color -d {} \;
+}
+
+# Opening files
+alias o="open"
+
+# Fast naviation
+eval "$(zoxide init zsh)"
+alias '..'='cd ..'
+alias '...'='cd ../..'
+alias '....'='cd ../../..'
+alias '.....'='cd ../../../..'
+setopt auto_cd # "path/to/somewhere<CR>" to navigate to somewhere
+
+# Git
+alias ga='git add'
+alias gaa='git add --all'
+alias gb='git branch'
+alias gbd='git branch --delete'
+alias gc='git commit --verbose'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gd='git diff'
+alias glg='git log --graph --decorate --all'
+alias gp='git push'
+alias gst='git status'
+
+# Config editing
+alias kittye="nvim $HOME/.config/kitty/kitty.conf; killall -s SIGUSR1 kitty"
+alias vime="cd $HOME/.config/nvim/ && nvim init.lua && cd - "
+alias vimek="cd $HOME/.config/nvim/ && nvim lua/keymaps.lua && cd - "
+alias vimev="cd $HOME/.config/nvim/ && nvim lua/plugins/vimtex.lua && cd - "
+alias vimes="cd $HOME/.config/nvim/ && nvim after/plugin/luasnip.lua && cd - "
+alias zshe="nvim $HOME/.zshrc; exec zsh"
+alias sshe="nvim $HOME/.ssh/config"
+alias tme="nvim $HOME/.tmux.conf"
+
+# Misc aliases
+alias icat="kitty +kitten icat" # Viewing images in kitty
+alias mamba="micromamba"
+alias sudo='sudo ' # Use aliases with sudo
+alias t="tree -C -a --dirsfirst" # Fast tree
+alias v="nvim" # Neovim
+alias i="ipython3"
+
+# Tmux
+alias tms="tmux new-session -t"
+alias tma="tmux attach -t"
+alias play="tmux attach -t playground"
+
+# Unix pass
+FPATH=~/.config/zsh/completions/:$FPATH
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+###############  LATEX  ##########################
+
+function latex_setup {
+    mkdir build
+    touch refs.bib
+    ln $HOME/Dropbox/personal/programming/latex-templates/templates/generic/general.sty general.sty
+    cp $HOME/Dropbox/personal/programming/latex-templates/templates/generic/{specific.sty,main.tex,.gitignore} .
+    git init --initial-branch=main
+    git add .
+    git commit -m "initial commit"
+}
+
+function ltpg {
+    pg_dir=~/Dropbox/shared/latex-scratchpad/
+    cd $pg_dir
+    nvim -c ":VimtexCompile" $pg_dir/main.tex && cd -
+}
+
+function german_letter_setup {
+    mkdir build/
+    cp -r $HOME/Dropbox/personal/programming/latex-templates/templates/german-letter/ .
+    lcca
+}
+
+# pdflatex engine:
+COMMON_LATEXMK_FLAGS_PDFLATEX=(--shell-escape -pdf -pdflatex='pdflatex -synctex=1 -interaction=nonstopmode -file-line-error' -output-directory=build/)
+# lualatex engine:
+COMMON_LATEXMK_FLAGS=(--shell-escape -pdf -pdflatex=lualatex -output-directory=build/)
+
+# latex compile
+function lco {
+    latexmk "${COMMON_LATEXMK_FLAGS[@]}" $@
+}
+
+# latex clean compile (lualatex)
+function lcc_lua {
+    latexmk "${COMMON_LATEXMK_FLAGS[@]}" -gg $@
+}
+
+# latex clean compile (pdflatex)
+function lcc {
+    if [[ -n $LCC_CMD ]]; then
+        eval $LCC_CMD
+        return
+    fi
+
+    latexmk "${COMMON_LATEXMK_FLAGS_PDFLATEX[@]}" -gg $@
+}
+
+# latex compile all
+function lca {
+    parallel latexmk "${COMMON_LATEXMK_FLAGS_PDFLATEX[@]}" {} ::: **/*.tex
+}
+
+# latex clean compile all
+function lcca {
+    parallel latexmk "${COMMON_LATEXMK_FLAGS_PDFLATEX[@]}" -gg {} ::: **/*.tex
+}
+
+###############  Python  #########################
+
+eval "$(direnv hook zsh)"
+
+###############  Rust  ###########################
+
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+# export LDFLAGS="-L/opt/homebrew/opt/llvm/lib/c++ -Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++"
+
+###############  Lean  ###########################
+
+# Build project and run built executable
+function brlean {
+    ex_dir=./.lake/build/bin/
+    lake build
+    find $ex_dir -maxdepth 1 -type f -perm +111 | head -n 1 | xargs -I {} bash -c '{}'
+}
+
+###############  MAMBA  ##########################
+
+export MAMBARC="$HOME/.config/conda/mambarc"
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/opt/homebrew/opt/micromamba/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/Users/gaetzner/.local/share/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
