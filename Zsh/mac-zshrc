@@ -11,9 +11,11 @@ export PATH=/opt/homebrew/opt/llvm/bin:$PATH # rust: llvm linker faster
 export PATH=$PATH:~/.local/share/cargo/bin/
 export PATH=$PATH:~/.local/bin/
 export PATH=$PATH:$GOPATH/bin/
+export PATH=$PATH:/opt/homebrew/bin/
 export PYTHONPYCACHEPREFIX=/tmp/
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export IDF_TOOLS_PATH=~/.local/share/espressif/
 
 ##############  Zsh Options  #####################
 
@@ -22,6 +24,17 @@ setopt rm_starsilent
 
 # Turn off all beeps
 unsetopt BEEP
+
+# Set the maximum number of history lines to save in the history file
+HISTFILE=~/.zsh_history
+HISTSIZE=50000     # Number of history lines in memory
+SAVEHIST=50000     # Number of history lines saved to the history file
+
+# Additional recommended settings
+setopt appendhistory       # Append history instead of overwriting
+setopt histignoredups      # Ignore duplicated commands in history
+setopt sharehistory        # Share history across all zsh sessions
+setopt inc_append_history  # Incrementally append history, instead of waiting for shell exit
 
 ###############  Beauty  #########################
 
@@ -195,6 +208,8 @@ alias tme="nvim $HOME/.tmux.conf"
 # Misc aliases
 alias icat="kitty +kitten icat" # Viewing images in kitty
 alias mamba="micromamba"
+alias ma="micromamba activate"
+alias mi="micromamba install"
 alias sudo='sudo ' # Use aliases with sudo
 alias t="tree -C -a --dirsfirst" # Fast tree
 alias v="nvim" # Neovim
@@ -288,6 +303,10 @@ function brlean {
     lake build
     find $ex_dir -maxdepth 1 -type f -perm +111 | head -n 1 | xargs -I {} bash -c '{}'
 }
+
+###############  ESP32  ###########################
+
+alias get_idf='. ~/.local/share/esp/esp-idf/export.sh'
 
 ###############  MAMBA  ##########################
 
